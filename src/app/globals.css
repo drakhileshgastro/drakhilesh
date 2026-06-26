@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-navy: #0B2545;
+  --color-navy-dark: #071a33;
+  --color-teal: #14B8A6;
+  --color-teal-dark: #0D9488;
+  --color-teal-light: #CCFBF1;
+  --color-teal-50: #F0FDFA;
+  --color-gold: #F59E0B;
+  --color-gold-light: #FEF3C7;
+  --color-brand-green: #10B981;
+  --color-slate: #475569;
+  --color-gray-muted: #94A3B8;
+  --color-gray-light: #E2E8F0;
+  --color-offwhite: #F0F9FF;
+
+  /* Platform Colors */
+  --color-whatsapp: #25D366;
+  --color-facebook: #1877F2;
+
+  /* Fonts */
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-hindi: var(--font-hind), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #0B2545;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hindi font utility */
+.font-hindi {
+  font-family: var(--font-hindi);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F9FF;
+}
+::-webkit-scrollbar-thumb {
+  background: #14B8A6;
+  border-radius: 3px;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #14B8A6, #0D9488);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Brand strip animation */
+@keyframes shimmer {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/* Section padding utility */
+.section-pad {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
