@@ -41,6 +41,14 @@ const REVIEWS = [
     condition: "Liver Cirrhosis",
     timeAgo: "2 months ago",
   },
+  {
+    name: "Kavita Sharma",
+    city: "Bokaro",
+    rating: 5,
+    text: "Mujhe bahut samay se pet mein dard aur gas ki problem thi. Kai jagah dikhaya par koi farak nahi pada. Dr. Akhilesh ne IBS diagnose kiya aur sahi diet aur dawa se 2 mahine mein bahut better feel kar rahi hoon. Hindi mein explain karte hain — bahut achha lagta hai.",
+    condition: "IBS Treatment",
+    timeAgo: "6 weeks ago",
+  },
 ];
 
 export default function Testimonials() {
@@ -65,7 +73,7 @@ export default function Testimonials() {
         </div>
 
         {/* Reviews grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:grid-rows-2">
           {REVIEWS.map((review) => (
             <div
               key={review.name}
