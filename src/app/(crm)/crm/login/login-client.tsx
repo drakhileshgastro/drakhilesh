@@ -22,7 +22,7 @@ export default function CrmLoginClient() {
     const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
 
     if (authError) {
-      setError("Invalid email or password. Please try again.");
+      setError(authError.message || "Invalid email or password.");
       setLoading(false);
       return;
     }

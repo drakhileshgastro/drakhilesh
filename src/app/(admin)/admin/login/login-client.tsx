@@ -22,7 +22,7 @@ export default function AdminLoginClient() {
     const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
 
     if (authError) {
-      setError("Invalid credentials. Please check your email and password.");
+      setError(authError.message || "Invalid credentials.");
       setLoading(false);
       return;
     }
