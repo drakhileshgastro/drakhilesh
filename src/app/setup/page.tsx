@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createClient } from "@supabase/supabase-js";
+// Server-side API handles Supabase calls — no browser fetch needed
 import { ShieldCheck, CheckCircle, AlertCircle, Eye, EyeOff } from "lucide-react";
 
 const SETUP_KEY = "scalify2026";
@@ -70,27 +70,23 @@ export default function SetupPage() {
     if (!isPasswordStrong(telecaller.password)) { setError("Telecaller password is too weak. Follow the requirements."); return; }
 
     setLoading(true);
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    );
-    const results = { doctor: "", telecaller: "" };
 
-    // Create doctor account
-    const { error: docError } = await supabase.auth.signUp({
-      email: doctor.email,
-      password: doctor.password,
-      options: { data: { role: "doctor", name: "Dr. Akhilesh Yadav" } },
+    // All Supabase calls happen server-side — browser never touches Supabase directly
+    const res = await fetch("/api/setup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        doctorEmail: doctor.email,
+        doctorPassword: doctor.password,
+        telecallerEmail: telecaller.email,
+        telecallerPassword: telecaller.password,
+      }),
     });
-    results.doctor = docError ? `Failed: ${docError.message}` : "Created ✓";
-
-    // Create telecaller account
-    const { error: tcError } = await supabase.auth.signUp({
-      email: telecaller.email,
-      password: telecaller.password,
-      options: { data: { role: "telecaller", name: "Telecaller" } },
-    });
-    results.telecaller = tcError ? `Failed: ${tcError.message}` : "Created ✓";
+    const data = await res.json();
+    const results = {
+      doctor: data.doctor ?? "Unknown",
+      telecaller: data.telecaller ?? "Unknown",
+    };
 
     setResults(results);
     setSuccess(true);
