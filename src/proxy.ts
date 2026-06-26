@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Only protect CRM and Admin routes
@@ -40,3 +40,4 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: ["/crm/:path*", "/admin/:path*"],
 };
+

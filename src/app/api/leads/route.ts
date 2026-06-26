@@ -27,6 +27,19 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, error: result.error }, { status: 500 });
     }
 
+    // Fire WhatsApp acknowledgement — non-blocking, don't wait for it
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drakhileshgastro.com";
+    fetch(`${baseUrl}/api/whatsapp`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        to: `91${patient_phone.trim().replace(/^0/, "")}`,
+        patientName: patient_name.trim(),
+        leadId: result.lead_id,
+        type: "acknowledgement",
+      }),
+    }).catch((err) => console.error("WhatsApp ack failed:", err));
+
     return NextResponse.json({ success: true, lead_id: result.lead_id });
   } catch (err) {
     console.error("POST /api/leads error:", err);
