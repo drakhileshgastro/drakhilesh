@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createSupabaseBrowser } from "@/lib/supabase-browser";
+import { createClient } from "@supabase/supabase-js";
 import { ShieldCheck, CheckCircle, AlertCircle, Eye, EyeOff } from "lucide-react";
 
 const SETUP_KEY = "scalify2026";
@@ -70,7 +70,10 @@ export default function SetupPage() {
     if (!isPasswordStrong(telecaller.password)) { setError("Telecaller password is too weak. Follow the requirements."); return; }
 
     setLoading(true);
-    const supabase = createSupabaseBrowser();
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    );
     const results = { doctor: "", telecaller: "" };
 
     // Create doctor account
