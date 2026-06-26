@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import { ShieldCheck, CheckCircle, AlertCircle, Eye, EyeOff } from "lucide-react";
 
-const SETUP_KEY = process.env.NEXT_PUBLIC_SETUP_KEY || "scalify2026";
+const SETUP_KEY = "scalify2026";
 
 function PasswordStrength({ password }: { password: string }) {
   const checks = [
@@ -49,7 +49,7 @@ export default function SetupPage() {
   const [results, setResults] = useState<{ doctor: string; telecaller: string }>({ doctor: "", telecaller: "" });
 
   function verifyKey() {
-    if (setupKey === SETUP_KEY) {
+    if (setupKey.trim() === SETUP_KEY) {
       setKeyVerified(true);
       setError("");
     } else {
