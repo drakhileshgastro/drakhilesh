@@ -192,10 +192,10 @@ export default function ContactClient() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
             {DIRECTIONS.map((d) => (
-              <div key={d.from} className="bg-white border border-gray-light rounded-xl p-3 text-center">
-                <p className="text-navy font-bold text-sm">{d.from}</p>
+              <div key={d.from} className="bg-white border border-gray-light rounded-xl px-3 py-3.5 text-center">
+                <p className="text-navy font-bold text-sm leading-tight">{d.from}</p>
                 <p className="text-teal text-xs font-semibold mt-1">{d.time}</p>
-                <p className="text-gray-muted text-[11px]">{d.dist} · {d.via}</p>
+                <p className="text-slate text-[11px] mt-0.5">{d.via}</p>
               </div>
             ))}
           </div>

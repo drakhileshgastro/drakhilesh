@@ -133,8 +133,8 @@ export default async function ServicePage({ params }: Props) {
       {/* ── INTRO ── */}
       <section className="section-pad bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-            {/* Main content */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+            {/* Main content — on mobile appears after sidebar CTA */}
             <div className="lg:col-span-2 space-y-5">
               <div>
                 <p className="text-teal text-xs font-semibold uppercase tracking-widest mb-2">About this Condition</p>
@@ -176,8 +176,8 @@ export default async function ServicePage({ params }: Props) {
               </div>
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-5">
+            {/* Sidebar — shown ABOVE main content on mobile for quick CTA access */}
+            <div className="space-y-5 order-first lg:order-last">
               {/* Why Choose */}
               <div className="bg-teal-50 border border-teal-light rounded-2xl p-5">
                 <h3 className="text-navy font-bold text-sm mb-4">Why Choose Dr. Akhilesh?</h3>

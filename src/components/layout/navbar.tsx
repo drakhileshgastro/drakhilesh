@@ -28,17 +28,17 @@ export default function Navbar() {
       )}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16 md:h-18">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2.5 flex-shrink-0 min-h-[44px]">
             <div className="w-9 h-9 bg-navy rounded-xl flex items-center justify-center flex-shrink-0">
               <span className="text-teal font-bold text-lg leading-none">✚</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-navy font-bold text-[15px] leading-tight">
+              <span className="text-navy font-bold text-sm sm:text-[15px] leading-tight">
                 {DOCTOR.name}
               </span>
-              <span className="text-slate text-[10px] tracking-wider uppercase font-medium leading-tight">
+              <span className="text-slate text-[11px] tracking-wider uppercase font-medium leading-tight hidden xs:block">
                 Gastroenterologist · Ranchi
               </span>
             </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-slate text-sm font-medium rounded-lg hover:text-navy hover:bg-offwhite transition-colors"
+                className="px-3 py-2.5 text-slate text-sm font-medium rounded-lg hover:text-navy hover:bg-offwhite transition-colors min-h-[44px] flex items-center"
               >
                 {link.label}
               </Link>
@@ -61,22 +61,22 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-2">
             <a
               href={`tel:${DOCTOR.phone}`}
-              className="flex items-center gap-1.5 px-3 py-2 text-navy text-sm font-medium border border-gray-light rounded-lg hover:border-navy transition-colors"
+              className="flex items-center gap-1.5 px-3 py-2.5 text-navy text-sm font-medium border border-gray-light rounded-lg hover:border-navy transition-colors min-h-[44px]"
             >
               <Phone size={14} />
               <span>Call</span>
             </a>
             <Link
               href="/book"
-              className="px-4 py-2 bg-teal text-white text-sm font-semibold rounded-lg hover:bg-teal-dark transition-colors shadow-sm"
+              className="px-4 py-2.5 bg-teal text-white text-sm font-semibold rounded-lg hover:bg-teal-dark transition-colors shadow-sm min-h-[44px] flex items-center"
             >
               Book Appointment
             </Link>
           </div>
 
-          {/* Mobile menu toggle */}
+          {/* Mobile menu toggle — 44px touch target */}
           <button
-            className="md:hidden p-2 text-navy rounded-lg hover:bg-offwhite transition-colors"
+            className="md:hidden w-11 h-11 flex items-center justify-center text-navy rounded-lg hover:bg-offwhite transition-colors"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Close menu" : "Open menu"}
           >
@@ -103,7 +103,7 @@ export default function Navbar() {
           <div className="flex gap-2">
             <a
               href={`tel:${DOCTOR.phone}`}
-              className="flex-1 flex items-center justify-center gap-1.5 py-2.5 text-navy text-sm font-semibold border border-navy rounded-lg"
+              className="flex-1 flex items-center justify-center gap-1.5 py-3 text-navy text-sm font-semibold border border-navy rounded-lg min-h-[48px]"
             >
               <Phone size={14} />
               Call Now
@@ -111,7 +111,7 @@ export default function Navbar() {
             <Link
               href="/book"
               onClick={() => setOpen(false)}
-              className="flex-1 flex items-center justify-center py-2.5 bg-teal text-white text-sm font-semibold rounded-lg"
+              className="flex-1 flex items-center justify-center py-3 bg-teal text-white text-sm font-semibold rounded-lg min-h-[48px]"
             >
               Book Appointment
             </Link>

@@ -66,7 +66,7 @@ export default function ChatbotWidget() {
       <button
         onClick={() => setOpen(!open)}
         aria-label={open ? "Close chatbot" : "Open chatbot"}
-        className="fixed bottom-4 right-4 z-40 w-14 h-14 bg-navy rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 flex items-center justify-center"
+        className="fixed bottom-4 right-4 z-40 w-14 h-14 bg-navy rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 flex items-center justify-center touch-manipulation"
       >
         {open ? (
           <ChevronDown size={22} className="text-white" />
@@ -77,7 +77,7 @@ export default function ChatbotWidget() {
 
       {/* Chat window */}
       {open && (
-        <div className="fixed bottom-20 right-4 z-40 w-[calc(100vw-2rem)] max-w-sm bg-white rounded-2xl shadow-2xl border border-gray-light flex flex-col overflow-hidden">
+        <div className="fixed bottom-20 right-4 z-40 w-[calc(100vw-1.5rem)] max-w-sm bg-white rounded-2xl shadow-2xl border border-gray-light flex flex-col overflow-hidden" style={{ maxHeight: 'calc(100vh - 120px)' }}>
           {/* Header */}
           <div className="bg-navy px-4 py-3 flex items-center gap-3">
             <div className="w-9 h-9 bg-teal rounded-full flex items-center justify-center flex-shrink-0">
@@ -98,7 +98,7 @@ export default function ChatbotWidget() {
           {/* Disclaimer */}
           {showDisclaimer && (
             <div className="px-3 py-2 bg-gold-light border-b border-gray-light flex items-start gap-2">
-              <p className="text-[11px] text-slate leading-relaxed flex-1 font-hindi">{DISCLAIMER}</p>
+              <p className="text-xs text-slate leading-relaxed flex-1 font-hindi">{DISCLAIMER}</p>
               <button
                 onClick={() => setShowDisclaimer(false)}
                 className="text-slate hover:text-navy flex-shrink-0 mt-0.5"
@@ -149,12 +149,12 @@ export default function ChatbotWidget() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               placeholder="Hindi ya English mein likhein..."
-              className="flex-1 text-sm px-3 py-2 border border-gray-light rounded-xl focus:outline-none focus:border-teal transition-colors"
+              className="flex-1 text-sm px-3 py-2.5 border border-gray-light rounded-xl focus:outline-none focus:border-teal transition-colors min-h-[44px]"
             />
             <button
               onClick={sendMessage}
               disabled={!input.trim() || loading}
-              className="w-9 h-9 bg-teal rounded-xl flex items-center justify-center text-white disabled:opacity-40 transition-opacity flex-shrink-0"
+              className="w-11 h-11 bg-teal rounded-xl flex items-center justify-center text-white disabled:opacity-40 transition-opacity flex-shrink-0 touch-manipulation"
             >
               <Send size={15} />
             </button>

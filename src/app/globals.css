@@ -25,9 +25,10 @@
   --font-hindi: var(--font-hind), ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling + prevent horizontal overflow */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,24 +37,29 @@ body {
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Prevent text from being too small on mobile browsers */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-/* Hindi font utility */
+/* Hindi font utility — extra line-height for Devanagari */
 .font-hindi {
   font-family: var(--font-hindi);
+  line-height: 1.85;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure all interactive elements meet 44px touch target minimum */
+button, a, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #F0F9FF;
-}
-::-webkit-scrollbar-thumb {
-  background: #14B8A6;
-  border-radius: 3px;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F0F9FF; }
+::-webkit-scrollbar-thumb { background: #14B8A6; border-radius: 3px; }
 
 /* Gradient text */
 .text-gradient {
@@ -63,17 +69,17 @@ body {
   background-clip: text;
 }
 
-/* Brand strip animation */
-@keyframes shimmer {
-  0% { opacity: 0.7; }
-  50% { opacity: 1; }
-  100% { opacity: 0.7; }
+/* Section padding — tighter on mobile, spacious on desktop */
+.section-pad {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-/* Section padding utility */
-.section-pad {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+@media (min-width: 640px) {
+  .section-pad {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -81,4 +87,15 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/* Minimum readable font size for captions */
+.text-caption {
+  font-size: 0.75rem; /* 12px minimum */
+  line-height: 1.5;
+}
+
+/* Safe area padding for notched devices */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0);
 }

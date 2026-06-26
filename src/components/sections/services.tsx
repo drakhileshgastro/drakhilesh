@@ -31,7 +31,7 @@ export default function Services() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-navy font-bold text-base mb-0.5 leading-tight">{service.title}</h3>
-                  <p className="text-gray-muted text-[11px] font-hindi mb-2">{service.hindiTitle}</p>
+                  <p className="text-gray-muted text-xs font-hindi mb-2">{service.hindiTitle}</p>
                   <p className="text-slate text-xs leading-relaxed">{service.description}</p>
                 </div>
               </div>

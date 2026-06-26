@@ -106,11 +106,11 @@ export default function Conditions() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between px-4 py-4 text-left hover:bg-offwhite transition-colors"
+                className="w-full flex items-center justify-between px-4 py-4 text-left hover:bg-offwhite transition-colors min-h-[56px] touch-manipulation"
               >
-                <div>
+                <div className="pr-3">
                   <span className="text-navy font-semibold text-sm">{condition.name}</span>
-                  <span className="ml-2 text-gray-muted text-xs font-hindi">({condition.nameHindi})</span>
+                  <span className="ml-2 text-slate text-xs font-hindi">({condition.nameHindi})</span>
                 </div>
                 <ChevronDown
                   size={18}

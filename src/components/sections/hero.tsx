@@ -124,9 +124,9 @@ export default function Hero() {
               {["DM Gastroenterology", "Orchid Medical Centre", "10+ Years", "Hindi Speaking"].map((b) => (
                 <span
                   key={b}
-                  className="inline-flex items-center gap-1 bg-white/10 text-gray-muted text-xs px-3 py-1.5 rounded-full border border-white/10"
+                  className="inline-flex items-center gap-1.5 bg-white/10 text-slate-200 text-xs px-3 py-2 rounded-full border border-white/10"
                 >
-                  <CheckCircle size={11} className="text-teal" />
+                  <CheckCircle size={12} className="text-teal flex-shrink-0" />
                   {b}
                 </span>
               ))}
@@ -234,8 +234,8 @@ export default function Hero() {
                     {isSubmitting ? "Submitting..." : "Request Appointment →"}
                   </button>
 
-                  <p className="text-gray-muted text-xs text-center">
-                    No OTP · No waiting · Our team calls within 2 hours
+                  <p className="text-slate text-xs text-center leading-relaxed">
+                    No OTP · Free call · Our team calls within 2 hours
                   </p>
                 </form>
               ) : (

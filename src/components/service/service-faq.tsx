@@ -39,9 +39,9 @@ export default function ServiceFaq({ faqs, serviceName }: ServiceFaqProps) {
             <div key={i} className="bg-white border border-gray-light rounded-xl overflow-hidden">
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between px-4 py-4 text-left hover:bg-offwhite transition-colors"
+                className="w-full flex items-center justify-between px-4 py-4 text-left hover:bg-offwhite transition-colors min-h-[56px] touch-manipulation"
               >
-                <span className="text-navy font-semibold text-sm pr-4 font-hindi">{faq.q}</span>
+                <span className="text-navy font-semibold text-sm pr-4 font-hindi leading-relaxed">{faq.q}</span>
                 <ChevronDown
                   size={18}
                   className={cn("text-teal flex-shrink-0 transition-transform duration-200", openIndex === i && "rotate-180")}

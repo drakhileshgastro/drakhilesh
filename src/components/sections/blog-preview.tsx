@@ -66,7 +66,7 @@ export default function BlogPreview() {
               className="group bg-white rounded-2xl overflow-hidden border border-gray-light hover:border-teal hover:shadow-md transition-all duration-200"
             >
               {/* Thumbnail placeholder */}
-              <div className="h-36 bg-gradient-to-br from-navy to-teal flex items-center justify-center">
+              <div className="h-32 sm:h-36 bg-gradient-to-br from-navy to-teal flex items-center justify-center">
                 <span className="text-5xl">{post.emoji}</span>
               </div>
 
@@ -92,8 +92,8 @@ export default function BlogPreview() {
 
                 {/* Author */}
                 <div className="mt-3 flex items-center gap-2">
-                  <div className="w-6 h-6 bg-teal-light rounded-full flex items-center justify-center">
-                    <span className="text-teal text-[10px] font-bold">DA</span>
+                  <div className="w-7 h-7 bg-teal-light rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-teal text-[11px] font-bold">DA</span>
                   </div>
                   <span className="text-gray-muted text-xs">Dr. Akhilesh · {post.date}</span>
                 </div>

@@ -18,7 +18,7 @@ export default function About() {
           <div className="relative order-2 lg:order-1">
             <div className="relative">
               {/* Main photo area */}
-              <div className="w-full aspect-[4/5] max-w-sm mx-auto lg:mx-0 bg-offwhite rounded-2xl border-2 border-dashed border-gray-light flex flex-col items-center justify-center overflow-hidden">
+              <div className="w-full aspect-[4/5] max-w-xs sm:max-w-sm mx-auto lg:mx-0 bg-offwhite rounded-2xl border-2 border-dashed border-gray-light flex flex-col items-center justify-center overflow-hidden">
                 <div className="w-20 h-20 bg-teal-light rounded-full flex items-center justify-center mb-3">
                   <span className="text-4xl">👨‍⚕️</span>
                 </div>
@@ -26,14 +26,14 @@ export default function About() {
                 <p className="text-gray-muted text-xs mt-1">To be added</p>
               </div>
 
-              {/* Floating badge — experience */}
-              <div className="absolute -bottom-4 -right-4 lg:right-auto lg:-left-6 bg-navy text-white rounded-2xl px-4 py-3 shadow-xl">
+              {/* Floating badge — experience — hidden on mobile to prevent overflow */}
+              <div className="hidden sm:block absolute -bottom-4 -right-4 lg:right-auto lg:-left-6 bg-navy text-white rounded-2xl px-4 py-3 shadow-xl">
                 <p className="text-3xl font-bold text-teal leading-none">{DOCTOR.experience}</p>
                 <p className="text-xs text-gray-muted leading-tight mt-0.5">Years<br />Experience</p>
               </div>
 
-              {/* Floating badge — patients */}
-              <div className="absolute -top-4 -right-4 bg-white border border-gray-light rounded-2xl px-4 py-3 shadow-lg">
+              {/* Floating badge — patients — hidden on mobile to prevent overflow */}
+              <div className="hidden sm:block absolute -top-4 -right-4 bg-white border border-gray-light rounded-2xl px-4 py-3 shadow-lg">
                 <p className="text-2xl font-bold text-teal leading-none">{DOCTOR.patientsServed}</p>
                 <p className="text-xs text-gray-muted leading-tight mt-0.5">Patients<br />Treated</p>
               </div>

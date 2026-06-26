@@ -83,7 +83,7 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
     <div className="bg-white rounded-2xl border border-gray-light shadow-sm overflow-hidden">
       <div className="bg-teal px-5 py-4">
         <p className="text-white font-bold text-base">Book an Appointment</p>
-        <p className="text-teal-light text-xs font-hindi mt-0.5">हमारी team 2 घंटे में call करेगी</p>
+        <p className="text-teal-light text-xs font-hindi mt-1 leading-relaxed">हमारी team 2 घंटे में call करेगी</p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className={cn("space-y-3", compact ? "p-4" : "p-5")}>
         <div>

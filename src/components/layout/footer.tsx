@@ -21,14 +21,14 @@ export default function Footer() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-white text-whatsapp font-bold text-sm rounded-lg hover:bg-offwhite transition-colors"
+              className="flex items-center gap-2 px-4 py-3 bg-white text-whatsapp font-bold text-sm rounded-lg hover:bg-offwhite transition-colors min-h-[48px]"
             >
               <MessageCircle size={16} />
               WhatsApp करें
             </a>
             <Link
               href="/book"
-              className="flex items-center gap-2 px-4 py-2 bg-navy text-white font-bold text-sm rounded-lg hover:bg-navy-dark transition-colors"
+              className="flex items-center gap-2 px-4 py-3 bg-navy text-white font-bold text-sm rounded-lg hover:bg-navy-dark transition-colors min-h-[48px]"
             >
               Book Appointment
             </Link>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-muted text-sm hover:text-teal transition-colors"
+                    className="text-slate-300 text-sm hover:text-teal transition-colors inline-block py-1"
                   >
                     {link.label}
                   </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
                 <li key={s.slug}>
                   <Link
                     href={`/services/${s.slug}`}
-                    className="text-gray-muted text-sm hover:text-teal transition-colors"
+                    className="text-slate-300 text-sm hover:text-teal transition-colors inline-block py-1"
                   >
                     {s.title}
                   </Link>

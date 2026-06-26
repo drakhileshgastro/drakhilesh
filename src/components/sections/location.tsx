@@ -81,15 +81,15 @@ export default function Location() {
               <h3 className="text-navy font-bold text-sm mb-3">
                 Directions from Major Districts
               </h3>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {DIRECTIONS.map((d) => (
                   <div
                     key={d.from}
-                    className="bg-offwhite rounded-xl px-3 py-2.5 border border-gray-light"
+                    className="bg-offwhite rounded-xl px-3 py-3 border border-gray-light"
                   >
                     <p className="text-navy font-semibold text-xs">{d.from}</p>
-                    <p className="text-teal text-xs font-medium">{d.time}</p>
-                    <p className="text-gray-muted text-[10px]">via {d.via}</p>
+                    <p className="text-teal text-xs font-semibold mt-0.5">{d.time}</p>
+                    <p className="text-gray-muted text-[11px]">via {d.via}</p>
                   </div>
                 ))}
               </div>
