@@ -1,15 +1,14 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowser } from "@/lib/supabase-browser";
+
+const supabase = createSupabaseBrowser();
 import { Search, Download, Phone, MessageCircle, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/cn";
 import type { Lead, LeadStatus } from "@/lib/supabase";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+
 
 const STATUS_COLORS: Record<string, string> = {
   New: "bg-teal-light text-teal",
@@ -149,9 +148,9 @@ export default function AdminLeads() {
             <div className="flex items-start justify-between">
               <div>
                 <h3 className="text-navy font-bold text-base">{selectedLead.patient_name}</h3>
-                <p className="text-gray-muted text-xs">{selectedLead.patient_city} · {selectedLead.source}</p>
+                <p className="text-gray-muted text-xs">{selectedLead.patient_city} Â· {selectedLead.source}</p>
               </div>
-              <button onClick={() => setSelectedLead(null)} className="text-gray-muted hover:text-navy text-xs">✕</button>
+              <button onClick={() => setSelectedLead(null)} className="text-gray-muted hover:text-navy text-xs">âœ•</button>
             </div>
 
             <div className="flex gap-2">
@@ -166,7 +165,7 @@ export default function AdminLeads() {
             </div>
 
             <div className="bg-offwhite rounded-xl p-3 space-y-2 text-xs">
-              {[["Condition", selectedLead.condition], ["Phone", selectedLead.patient_phone], ["City", selectedLead.patient_city], ["Preferred Date", selectedLead.preferred_date ?? "—"], ["Created", new Date(selectedLead.created_at).toLocaleString("en-IN")]].map(([k, v]) => (
+              {[["Condition", selectedLead.condition], ["Phone", selectedLead.patient_phone], ["City", selectedLead.patient_city], ["Preferred Date", selectedLead.preferred_date ?? "â€”"], ["Created", new Date(selectedLead.created_at).toLocaleString("en-IN")]].map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-2">
                   <span className="text-gray-muted">{k}</span>
                   <span className="text-navy font-medium text-right">{v}</span>
@@ -207,3 +206,5 @@ export default function AdminLeads() {
     </div>
   );
 }
+
+

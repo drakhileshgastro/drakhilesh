@@ -3,17 +3,12 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import {
   LayoutDashboard, Users, Calendar, LogOut,
   Bell, Menu, X, Phone
 } from "lucide-react";
 import { cn } from "@/lib/cn";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
 
 const NAV = [
   { href: "/crm", label: "Dashboard", icon: LayoutDashboard },
@@ -28,6 +23,7 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
+    const supabase = createSupabaseBrowser();
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { router.push("/crm/login"); return; }
       setUserEmail(data.user.email ?? "");
@@ -35,8 +31,10 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
   }, [router]);
 
   async function logout() {
+    const supabase = createSupabaseBrowser();
     await supabase.auth.signOut();
     router.push("/crm/login");
+    router.refresh();
   }
 
   const Sidebar = () => (

@@ -1,13 +1,12 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowser } from "@/lib/supabase-browser";
+
+const supabase = createSupabaseBrowser();
 import { IndianRupee, Plus, TrendingUp, Calendar } from "lucide-react";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+
 
 interface RevenueEntry {
   revenue_id: string;
@@ -71,14 +70,14 @@ export default function RevenueTracker() {
       {/* Summary cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[
-          { label: "This Month", value: `₹${thisMonthTotal.toLocaleString("en-IN")}`, sub: new Date().toLocaleString("en-IN", { month: "long" }), color: "bg-amber-50 border-amber-200 text-amber-800" },
-          { label: "Last Month", value: `₹${lastMonthTotal.toLocaleString("en-IN")}`, sub: new Date(new Date().setMonth(new Date().getMonth() - 1)).toLocaleString("en-IN", { month: "long" }), color: "bg-offwhite border-gray-light text-navy" },
+          { label: "This Month", value: `â‚¹${thisMonthTotal.toLocaleString("en-IN")}`, sub: new Date().toLocaleString("en-IN", { month: "long" }), color: "bg-amber-50 border-amber-200 text-amber-800" },
+          { label: "Last Month", value: `â‚¹${lastMonthTotal.toLocaleString("en-IN")}`, sub: new Date(new Date().setMonth(new Date().getMonth() - 1)).toLocaleString("en-IN", { month: "long" }), color: "bg-offwhite border-gray-light text-navy" },
           { label: "Total Patients", value: totalPatients, sub: "All time visits", color: "bg-teal-50 border-teal-light text-teal-dark" },
-          { label: "Avg Fee", value: `₹${avgFee.toLocaleString("en-IN")}`, sub: "Per consultation", color: "bg-purple-50 border-purple-200 text-purple-800" },
+          { label: "Avg Fee", value: `â‚¹${avgFee.toLocaleString("en-IN")}`, sub: "Per consultation", color: "bg-purple-50 border-purple-200 text-purple-800" },
         ].map((s) => (
           <div key={s.label} className={`rounded-2xl p-4 border ${s.color}`}>
             <IndianRupee size={16} className="opacity-60 mb-2" />
-            <p className="text-2xl font-bold leading-none">{loading ? "—" : s.value}</p>
+            <p className="text-2xl font-bold leading-none">{loading ? "â€”" : s.value}</p>
             <p className="text-xs font-medium mt-1 opacity-80">{s.label}</p>
             <p className="text-[10px] opacity-60 mt-0.5">{s.sub}</p>
           </div>
@@ -103,7 +102,7 @@ export default function RevenueTracker() {
                 <input value={form.patient_name} onChange={(e) => setForm({ ...form, patient_name: e.target.value })}
                   placeholder="Patient name *" className="px-3 py-2.5 text-xs border border-gray-light bg-white rounded-xl focus:outline-none focus:border-teal text-navy col-span-2 sm:col-span-1" />
                 <input value={form.consultation_fee} onChange={(e) => setForm({ ...form, consultation_fee: e.target.value })}
-                  type="number" placeholder="Fee (₹) *" className="px-3 py-2.5 text-xs border border-gray-light bg-white rounded-xl focus:outline-none focus:border-teal text-navy col-span-2 sm:col-span-1" />
+                  type="number" placeholder="Fee (â‚¹) *" className="px-3 py-2.5 text-xs border border-gray-light bg-white rounded-xl focus:outline-none focus:border-teal text-navy col-span-2 sm:col-span-1" />
                 <select value={form.condition_tag} onChange={(e) => setForm({ ...form, condition_tag: e.target.value })}
                   className="px-3 py-2.5 text-xs border border-gray-light bg-white rounded-xl focus:outline-none focus:border-teal text-navy">
                   {CONDITIONS.map((c) => <option key={c} value={c}>{c}</option>)}
@@ -144,8 +143,8 @@ export default function RevenueTracker() {
                     <td className="px-4 py-3 text-slate">{new Date(e.visit_date).toLocaleDateString("en-IN", { day: "2-digit", month: "short" })}</td>
                     <td className="px-4 py-3 font-semibold text-navy">{e.patient_name}</td>
                     <td className="px-4 py-3"><span className="bg-teal-light text-teal text-[10px] px-2 py-0.5 rounded-full font-medium">{e.condition_tag}</span></td>
-                    <td className="px-4 py-3 font-bold text-navy">₹{Number(e.consultation_fee).toLocaleString("en-IN")}</td>
-                    <td className="px-4 py-3 text-gray-muted truncate max-w-[120px]">{e.notes || "—"}</td>
+                    <td className="px-4 py-3 font-bold text-navy">â‚¹{Number(e.consultation_fee).toLocaleString("en-IN")}</td>
+                    <td className="px-4 py-3 text-gray-muted truncate max-w-[120px]">{e.notes || "â€”"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -165,7 +164,7 @@ export default function RevenueTracker() {
               <div key={c.condition} className="mb-3">
                 <div className="flex justify-between mb-1">
                   <span className="text-navy text-xs font-medium">{c.condition}</span>
-                  <span className="text-navy text-xs font-bold">₹{c.total.toLocaleString("en-IN")}</span>
+                  <span className="text-navy text-xs font-bold">â‚¹{c.total.toLocaleString("en-IN")}</span>
                 </div>
                 <div className="bg-gray-light rounded-full h-1.5">
                   <div className="bg-teal h-1.5 rounded-full" style={{ width: `${(c.total / entries.reduce((s, e) => s + Number(e.consultation_fee), 0)) * 100}%` }} />
@@ -182,11 +181,11 @@ export default function RevenueTracker() {
             <div className="space-y-2 text-xs">
               <div className="flex justify-between">
                 <span className="text-gray-muted">This month</span>
-                <span className="text-navy font-bold">₹{thisMonthTotal.toLocaleString("en-IN")}</span>
+                <span className="text-navy font-bold">â‚¹{thisMonthTotal.toLocaleString("en-IN")}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-muted">Last month</span>
-                <span className="text-navy font-bold">₹{lastMonthTotal.toLocaleString("en-IN")}</span>
+                <span className="text-navy font-bold">â‚¹{lastMonthTotal.toLocaleString("en-IN")}</span>
               </div>
               {lastMonthTotal > 0 && (
                 <div className={`flex justify-between font-bold ${thisMonthTotal >= lastMonthTotal ? "text-green-600" : "text-red-500"}`}>
@@ -201,3 +200,5 @@ export default function RevenueTracker() {
     </div>
   );
 }
+
+

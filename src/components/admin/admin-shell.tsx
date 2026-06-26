@@ -3,23 +3,20 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import {
   LayoutDashboard, Users, IndianRupee, FileText,
-  BarChart2, Settings, LogOut, Menu, Bell, Stethoscope
+  BarChart2, Settings, LogOut, Menu, Bell, Stethoscope, UserCog, Globe
 } from "lucide-react";
 import { cn } from "@/lib/cn";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
 
 const NAV = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { href: "/admin/leads", label: "All Leads", icon: Users },
   { href: "/admin/revenue", label: "Revenue", icon: IndianRupee },
   { href: "/admin/blog", label: "Blog CMS", icon: FileText },
+  { href: "/admin/users", label: "User Management", icon: UserCog },
+  { href: "/admin/pages", label: "Website Pages", icon: Globe },
   { href: "/admin/analytics", label: "Analytics", icon: BarChart2 },
   { href: "/admin/settings", label: "Settings", icon: Settings },
 ];
@@ -31,6 +28,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
+    const supabase = createSupabaseBrowser();
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { router.push("/admin/login"); return; }
       setUserEmail(data.user.email ?? "");
@@ -38,8 +36,10 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   }, [router]);
 
   async function logout() {
+    const supabase = createSupabaseBrowser();
     await supabase.auth.signOut();
     router.push("/admin/login");
+    router.refresh();
   }
 
   const isActive = (href: string, exact?: boolean) =>

@@ -1,27 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors */
-  --color-navy: #0B2545;
-  --color-navy-dark: #071a33;
-  --color-teal: #14B8A6;
-  --color-teal-dark: #0D9488;
-  --color-teal-light: #CCFBF1;
-  --color-teal-50: #F0FDFA;
-  --color-gold: #F59E0B;
-  --color-gold-light: #FEF3C7;
-  --color-brand-green: #10B981;
-  --color-slate: #475569;
-  --color-gray-muted: #94A3B8;
-  --color-gray-light: #E2E8F0;
-  --color-offwhite: #F0F9FF;
+  /* ── Brand v2.0 Colors (June 2026 audit) ── */
+  --color-navy:         #0A2540;
+  --color-navy-mid:     #1B3A5C;
+  --color-navy-dark:    #071829;
+  --color-teal:         #0EA5E9;
+  --color-teal-dark:    #0284C7;
+  --color-teal-light:   #BAE6FD;
+  --color-teal-50:      #E0F2FE;
+  --color-gold:         #F59E0B;
+  --color-gold-light:   #FEF3C7;
+  --color-brand-green:  #10B981;
+  --color-green-light:  #D1FAE5;
+  --color-slate:        #334155;
+  --color-gray-muted:   #94A3B8;
+  --color-gray-light:   #CBD5E1;
+  --color-offwhite:     #F8FAFC;
+  --color-slate-100:    #F1F5F9;
 
   /* Platform Colors */
   --color-whatsapp: #25D366;
   --color-facebook: #1877F2;
 
-  /* Fonts */
-  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  /* Fonts — Nunito (display) + Space Grotesk (body) + Hind (Hindi) */
+  --font-sans:  var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
   --font-hindi: var(--font-hind), ui-sans-serif, system-ui, sans-serif;
 }
 

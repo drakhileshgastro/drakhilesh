@@ -1,7 +1,9 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowser } from "@/lib/supabase-browser";
+
+const supabase = createSupabaseBrowser();
 import {
   Search, Filter, Phone, MessageCircle, ChevronDown,
   X, CheckCircle, Clock, Save, Plus
@@ -10,10 +12,7 @@ import { cn } from "@/lib/cn";
 import { CONDITIONS } from "@/lib/constants";
 import type { Lead, LeadStatus } from "@/lib/supabase";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+
 
 const STATUS_OPTIONS: LeadStatus[] = ["New", "Called", "Confirmed", "Visited", "No-answer", "Cancelled", "Follow-up"];
 
@@ -170,7 +169,7 @@ export default function LeadsPage() {
                   <p className="text-gray-muted text-xs truncate">{lead.condition}</p>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-slate text-[11px]">{lead.patient_city}</span>
-                    <span className="text-gray-muted text-[11px]">·</span>
+                    <span className="text-gray-muted text-[11px]">Â·</span>
                     <span className={cn("text-[10px] px-1.5 py-0.5 rounded font-medium", SOURCE_COLORS[lead.source] ?? "bg-offwhite text-slate")}>
                       {lead.source}
                     </span>
@@ -197,7 +196,7 @@ export default function LeadsPage() {
                   {selectedLead.status}
                 </span>
               </div>
-              <p className="text-gray-muted text-xs">{selectedLead.patient_city} · {selectedLead.source}</p>
+              <p className="text-gray-muted text-xs">{selectedLead.patient_city} Â· {selectedLead.source}</p>
             </div>
             <button onClick={() => setSelectedLead(null)} className="text-gray-muted hover:text-navy p-1 rounded-lg hover:bg-offwhite">
               <X size={18} />
@@ -320,3 +319,5 @@ export default function LeadsPage() {
     </div>
   );
 }
+
+

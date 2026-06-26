@@ -1,16 +1,15 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { createClient } from "@supabase/supabase-js";
+import { createSupabaseBrowser } from "@/lib/supabase-browser";
+
+const supabase = createSupabaseBrowser();
 import { Users, PhoneCall, CalendarCheck, AlertCircle, Clock, TrendingUp, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/cn";
 import type { Lead } from "@/lib/supabase";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+
 
 const STATUS_COLORS: Record<string, string> = {
   New: "bg-teal-light text-teal",
@@ -74,7 +73,7 @@ export default function CrmDashboard() {
             <div className="flex items-start justify-between mb-3">
               <s.icon size={20} className="opacity-80" />
             </div>
-            <p className="text-3xl font-bold leading-none">{loading ? "—" : s.value}</p>
+            <p className="text-3xl font-bold leading-none">{loading ? "â€”" : s.value}</p>
             <p className="text-sm font-semibold mt-1 opacity-90">{s.label}</p>
             <p className="text-xs opacity-70 mt-0.5">{s.sub}</p>
           </div>
@@ -87,7 +86,7 @@ export default function CrmDashboard() {
           <div className="px-5 py-4 border-b border-gray-light flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-teal rounded-full animate-pulse" />
-              <h2 className="text-navy font-bold text-sm">New Leads — Call Now</h2>
+              <h2 className="text-navy font-bold text-sm">New Leads â€” Call Now</h2>
             </div>
             <Link href="/crm/leads" className="text-teal text-xs font-semibold hover:underline flex items-center gap-1">
               View all <ArrowRight size={12} />
@@ -119,7 +118,7 @@ export default function CrmDashboard() {
                         {lead.status}
                       </span>
                     </div>
-                    <p className="text-gray-muted text-xs mt-0.5 truncate">{lead.condition} · {lead.patient_city}</p>
+                    <p className="text-gray-muted text-xs mt-0.5 truncate">{lead.condition} Â· {lead.patient_city}</p>
                   </div>
                   <div className="text-right flex-shrink-0">
                     <a
@@ -151,7 +150,7 @@ export default function CrmDashboard() {
               )}
             </div>
             {overdue.length === 0 ? (
-              <p className="px-4 py-4 text-gray-muted text-xs text-center">No overdue follow-ups ✓</p>
+              <p className="px-4 py-4 text-gray-muted text-xs text-center">No overdue follow-ups âœ“</p>
             ) : (
               <div className="divide-y divide-gray-light">
                 {overdue.slice(0, 5).map((lead) => (
@@ -160,7 +159,7 @@ export default function CrmDashboard() {
                       <p className="text-navy font-semibold text-xs">{lead.patient_name}</p>
                       <p className="text-red-500 text-[10px] flex items-center gap-1 mt-0.5">
                         <Clock size={9} />
-                        {lead.follow_up_date ? new Date(lead.follow_up_date).toLocaleDateString("en-IN") : "—"}
+                        {lead.follow_up_date ? new Date(lead.follow_up_date).toLocaleDateString("en-IN") : "â€”"}
                       </p>
                     </div>
                     <a href={`tel:${lead.patient_phone}`}
@@ -194,3 +193,5 @@ export default function CrmDashboard() {
     </div>
   );
 }
+
+
