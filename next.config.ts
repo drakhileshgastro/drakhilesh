@@ -33,10 +33,7 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    return [
-      // Redirect old-style URLs if needed
-      { source: "/services", destination: "/services", permanent: false },
-    ];
+    return [];
   },
   images: {
     formats: ["image/avif", "image/webp"],
