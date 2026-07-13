@@ -56,7 +56,12 @@ export interface CreateLeadInput {
 export async function createLead(
   data: CreateLeadInput
 ): Promise<{ success: boolean; lead_id?: string; error?: string }> {
+  // Pre-generate UUID so we don't need SELECT after insert.
+  // Anon role only has INSERT permission (not SELECT), so .select().single() always fails.
+  const lead_id = crypto.randomUUID();
+
   const insertData: Record<string, unknown> = {
+    lead_id,
     patient_name: data.patient_name,
     patient_phone: data.patient_phone,
     patient_city: data.patient_city,
@@ -70,16 +75,13 @@ export async function createLead(
   if (data.preferred_date) insertData.preferred_date = data.preferred_date;
   if (data.preferred_time) insertData.preferred_time = data.preferred_time;
 
-  const { data: lead, error } = await supabase
-    .from("gastro_leads")
-    .insert([insertData])
-    .select("lead_id")
-    .single();
+  const { error } = await supabase.from("gastro_leads").insert([insertData]);
 
   if (error) {
-    // Column doesn't exist yet (migration not run) — retry without new columns
+    // Column doesn't exist yet (migration not run) — retry without optional columns
     if (error.code === "42703" || error.message?.includes("column")) {
       const safeData = {
+        lead_id,
         patient_name: data.patient_name,
         patient_phone: data.patient_phone,
         patient_city: data.patient_city,
@@ -90,15 +92,11 @@ export async function createLead(
         visit_count: 0,
         ...(data.preferred_date && { preferred_date: data.preferred_date }),
       };
-      const { data: lead2, error: error2 } = await supabase
-        .from("gastro_leads")
-        .insert([safeData])
-        .select("lead_id")
-        .single();
+      const { error: error2 } = await supabase.from("gastro_leads").insert([safeData]);
       if (error2) return { success: false, error: error2.message };
-      return { success: true, lead_id: lead2.lead_id };
+      return { success: true, lead_id };
     }
     return { success: false, error: error.message };
   }
-  return { success: true, lead_id: lead.lead_id };
+  return { success: true, lead_id };
 }
