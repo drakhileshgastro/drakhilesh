@@ -1,18 +1,18 @@
 import Link from "next/link";
-import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
-import { DOCTOR, NAV_LINKS, SERVICES } from "@/lib/constants";
+import { Phone, MapPin, Clock, MessageCircle, Star } from "lucide-react";
+import { DOCTOR, FOOTER_COLUMNS } from "@/lib/constants";
 
 export default function Footer() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(DOCTOR.whatsappPrefilledMessage)}`;
 
   return (
-    <footer className="bg-navy text-white">
-      {/* Top CTA strip */}
-      <div className="bg-teal py-4 px-4">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+    <footer className="bg-forest text-white">
+      {/* Pre-footer CTA strip */}
+      <div className="bg-primary py-5 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <p className="font-bold text-white text-base">पेट या लिवर की कोई भी समस्या?</p>
-            <p className="text-teal-light text-sm font-hindi">
+            <p className="font-bold text-white text-lg font-hindi">पेट या लिवर की कोई भी समस्या?</p>
+            <p className="text-white/80 text-sm mt-0.5">
               Dr. Akhilesh Yadav से आज ही मिलें — Orchid Medical Centre, Ranchi
             </p>
           </div>
@@ -21,14 +21,14 @@ export default function Footer() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-3 bg-white text-whatsapp font-bold text-sm rounded-lg hover:bg-offwhite transition-colors min-h-[48px]"
+              className="flex items-center gap-2 px-5 py-3 bg-white text-whatsapp font-bold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[48px]"
             >
               <MessageCircle size={16} />
               WhatsApp करें
             </a>
             <Link
               href="/book"
-              className="flex items-center gap-2 px-4 py-3 bg-navy text-white font-bold text-sm rounded-lg hover:bg-navy-dark transition-colors min-h-[48px]"
+              className="flex items-center gap-2 px-5 py-3 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors min-h-[48px]"
             >
               Book Appointment
             </Link>
@@ -36,107 +36,131 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main Footer */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand column */}
-          <div className="lg:col-span-1">
+      {/* Main Footer Grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10">
+
+          {/* Column 1 — About */}
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 bg-teal rounded-xl flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-lg leading-none">✚</span>
+              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xl leading-none">✚</span>
               </div>
               <div>
                 <div className="text-white font-bold text-sm leading-tight">{DOCTOR.name}</div>
-                <div className="text-gray-muted text-[10px] uppercase tracking-wider">Gastroenterologist · Ranchi</div>
+                <div className="text-white/50 text-[11px] uppercase tracking-wider">DM Gastroenterology</div>
               </div>
             </div>
-            <p className="text-gray-muted text-sm leading-relaxed mb-4">
-              {DOCTOR.qualification}<br />
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
+              Liver & Digestive Specialist<br />
               {DOCTOR.hospital}, Ranchi
             </p>
-            <div className="flex items-center gap-1.5 text-sm text-gray-muted">
-              <Clock size={13} className="text-teal flex-shrink-0" />
-              <span>Mon–Sat: 10am–2pm & 5pm–8pm</span>
+            <div className="space-y-2 text-sm text-white/60">
+              <div className="flex items-start gap-2">
+                <MapPin size={13} className="text-primary mt-0.5 flex-shrink-0" />
+                <span>HB Road, Ranchi, Jharkhand — 834001</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock size={13} className="text-primary flex-shrink-0" />
+                <span>Mon–Sat: 10am–2pm &amp; 5pm–8pm</span>
+              </div>
+              <a
+                href={`tel:${DOCTOR.phone}`}
+                className="flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <Phone size={13} className="text-primary flex-shrink-0" />
+                {DOCTOR.phone}
+              </a>
+            </div>
+            {/* Google Reviews badge */}
+            <a
+              href={DOCTOR.googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 px-4 py-2.5 bg-white/8 border border-white/15 rounded-xl hover:bg-white/12 transition-colors text-sm"
+            >
+              <Star size={14} className="text-accent fill-accent" />
+              <span className="text-white font-semibold">{DOCTOR.googleRating}</span>
+              <span className="text-white/50">Google Reviews</span>
+            </a>
+            <div className="mt-3">
+              <Link
+                href="/book"
+                className="inline-flex items-center px-5 py-2.5 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors"
+              >
+                Book Appointment
+              </Link>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Column 2 — Symptoms */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h3>
+            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Symptoms</h3>
             <ul className="space-y-2">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
+              {FOOTER_COLUMNS.symptoms.map((item) => (
+                <li key={item.href}>
                   <Link
-                    href={link.href}
-                    className="text-slate-300 text-sm hover:text-teal transition-colors inline-block py-1"
+                    href={item.href}
+                    className="text-white/60 text-sm hover:text-primary transition-colors"
                   >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href="/book" className="text-gray-muted text-sm hover:text-teal transition-colors">
-                  Book Appointment
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Services</h3>
-            <ul className="space-y-2">
-              {SERVICES.map((s) => (
-                <li key={s.slug}>
-                  <Link
-                    href={`/services/${s.slug}`}
-                    className="text-slate-300 text-sm hover:text-teal transition-colors inline-block py-1"
-                  >
-                    {s.title}
+                    {item.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Column 3 — Conditions */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-gray-muted text-sm">
-                <MapPin size={14} className="text-teal mt-0.5 flex-shrink-0" />
-                <span>{DOCTOR.hospital}, HB Road, Ranchi, Jharkhand — 834001</span>
-              </li>
-              <li>
-                <a
-                  href={`tel:${DOCTOR.phone}`}
-                  className="flex items-center gap-2 text-gray-muted text-sm hover:text-teal transition-colors"
-                >
-                  <Phone size={14} className="text-teal flex-shrink-0" />
-                  {DOCTOR.phone}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={whatsappHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-muted text-sm hover:text-teal transition-colors"
-                >
-                  <MessageCircle size={14} className="text-whatsapp flex-shrink-0" />
-                  WhatsApp Appointment
-                </a>
-              </li>
-              <li>
-                <a
-                  href={DOCTOR.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal text-sm hover:underline"
-                >
-                  Get Directions →
-                </a>
-              </li>
+            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Conditions</h3>
+            <ul className="space-y-2">
+              {FOOTER_COLUMNS.conditions.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-white/60 text-sm hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4 — Procedures */}
+          <div>
+            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Procedures</h3>
+            <ul className="space-y-2">
+              {FOOTER_COLUMNS.procedures.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-white/60 text-sm hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 5 — Patient Resources */}
+          <div>
+            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Patient Resources</h3>
+            <ul className="space-y-2">
+              {FOOTER_COLUMNS.resources.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    {...("external" in item && item.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                    className="text-white/60 text-sm hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -144,15 +168,28 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-center">
-          <p className="text-gray-muted text-xs">
-            © {new Date().getFullYear()} {DOCTOR.name}. All rights reserved.
-          </p>
-          <p className="text-gray-muted text-xs">
-            Designed & built by{" "}
-            <span className="text-teal font-medium">Scalify Labs</span>
-            {" · "}
-            <Link href="/privacy" className="hover:text-teal transition-colors">Privacy Policy</Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
+            <p className="text-white/40 text-xs">
+              © {new Date().getFullYear()} {DOCTOR.name}. All rights reserved.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-white/40">
+              <Link href="/privacy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
+              <span>·</span>
+              <Link href="/terms" className="hover:text-white/70 transition-colors">Terms</Link>
+              <span>·</span>
+              <Link href="/sitemap" className="hover:text-white/70 transition-colors">Sitemap</Link>
+              <span>·</span>
+              <span>
+                Built by{" "}
+                <a href="https://scalifylabs.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Scalify Labs
+                </a>
+              </span>
+            </div>
+          </div>
+          <p className="mt-3 text-center text-white/25 text-xs">
+            Medical Disclaimer: Content on this website is for informational purposes only and does not constitute medical advice. Always consult Dr. Akhilesh Yadav or a qualified physician for diagnosis and treatment.
           </p>
         </div>
       </div>
