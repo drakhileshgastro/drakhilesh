@@ -3,18 +3,18 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/cn";
-import { ProcedureFAQ } from "@/lib/types-procedures";
+import { FAQItemV2 } from "@/lib/types-procedures-v2";
 
-interface ProcedureFAQProps {
+interface ProcedureFAQSectionProps {
   title: string;
-  faqs: ProcedureFAQ[];
+  faqs: FAQItemV2[];
 }
 
-export default function ProcedureFAQSection({ title, faqs }: ProcedureFAQProps) {
+export default function ProcedureFAQSection({ title, faqs }: ProcedureFAQSectionProps) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-bg-sand py-16 lg:py-20 border-t border-border/40">
+    <section className="bg-white py-16 lg:py-20 border-t border-border/40">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         <div className="text-center mb-12">
@@ -22,7 +22,7 @@ export default function ProcedureFAQSection({ title, faqs }: ProcedureFAQProps) 
             FAQ
           </span>
           <h2 className="font-hindi text-3xl font-bold text-forest leading-tight">
-            पूछे जाने वाले मुख्य सवाल
+            पूछे जाने वाले मुख्य सवाल — FAQs
           </h2>
           <p className="font-sans text-muted text-base mt-2">
             Frequently Asked Questions about {title} procedures.

@@ -1,36 +1,35 @@
-import { Activity } from "lucide-react";
-import { ProcedureStepItem } from "@/lib/types-procedures";
+import { StepItemV2 } from "@/lib/types-procedures-v2";
 
 interface ProcedureStepsProps {
   title: string;
-  steps: ProcedureStepItem[];
+  steps: StepItemV2[];
 }
 
 export default function ProcedureSteps({ title, steps }: ProcedureStepsProps) {
   return (
-    <section className="bg-white py-16 lg:py-20 border-t border-border/40">
+    <section className="bg-bg-sand py-16 lg:py-20 border-t border-border/40">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         <div className="text-center mb-12">
           <span className="text-primary font-display text-xs font-bold tracking-wider uppercase block mb-3">
-            The Process
+            Step-by-Step
           </span>
           <h2 className="text-3xl font-display font-bold text-forest leading-tight font-hindi">
-            {title} कैसे किया जाता है?
+            प्रक्रिया के दौरान क्या होता है?
           </h2>
-          <p className="font-sans text-muted text-base mt-3">
-            Understand the clinical roadmap to reduce procedure anxiety.
+          <p className="font-sans text-muted text-base mt-2">
+            Walkthrough of the clinical steps taken during a {title} procedure.
           </p>
         </div>
 
-        {/* Steps roadmap container */}
+        {/* Steps Grid */}
         <div className="space-y-6">
-          {steps.map((step, index) => (
-            <div key={index} className="flex gap-4 sm:gap-6 items-start">
+          {steps.map((step, idx) => (
+            <div key={idx} className="flex gap-4 sm:gap-6 items-start">
               
-              {/* Step indicator tag */}
-              <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center flex-shrink-0 font-display font-bold text-sm text-primary bg-bg-sand/40">
-                0{index + 1}
+              {/* Step Counter Badge */}
+              <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center flex-shrink-0 font-display font-bold text-sm text-primary bg-white shadow-xs">
+                0{idx + 1}
               </div>
 
               {/* Step Content */}
@@ -38,7 +37,7 @@ export default function ProcedureSteps({ title, steps }: ProcedureStepsProps) {
                 <h3 className="text-forest font-sans font-bold text-base uppercase tracking-wider mb-2">
                   {step.phase}
                 </h3>
-                <p className="font-hindi text-muted text-base leading-relaxed">
+                <p className="font-hindi text-muted text-sm sm:text-base leading-relaxed">
                   {step.desc}
                 </p>
               </div>
