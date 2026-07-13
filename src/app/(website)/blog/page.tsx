@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   title: "Gastroenterology Blog Ranchi | Liver & Stomach Health",
   description: "Explore our gastroenterology blog in Ranchi for evidence-based articles in Hindi on fatty liver, jaundice, endoscopy, and digestive wellness.",
   alternates: { canonical: "https://drakhileshgastro.com/blog" },
+  openGraph: {
+    title: "Gastroenterology Blog Ranchi | Liver & Stomach Health",
+    description: "Explore our gastroenterology blog in Ranchi for evidence-based articles in Hindi on fatty liver, jaundice, endoscopy, and digestive wellness.",
+    url: "https://drakhileshgastro.com/blog",
+    type: "website",
+    images: [
+      {
+        url: "https://drakhileshgastro.com/dr-akhilesh-improved.png",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Akhilesh Yadav Gastroenterology Blog",
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gastroenterology Blog Ranchi | Liver & Stomach Health",
+    description: "Explore our gastroenterology blog in Ranchi for evidence-based articles in Hindi on fatty liver, jaundice, endoscopy, and digestive wellness.",
+    images: ["https://drakhileshgastro.com/dr-akhilesh-improved.png"],
+  },
 };
 
 const CATEGORIES = ["All", "Liver Health", "Jaundice", "Procedures", "Diet", "IBS"];
@@ -82,8 +102,16 @@ export default function BlogPage() {
                 >
                   {/* Thumbnail Banner */}
                   <div className="h-44 bg-gradient-to-br from-primary-light/35 to-bg-sand flex items-center justify-center relative overflow-hidden">
-                    <span className="text-5xl group-hover:scale-110 transition-transform">{post.emoji}</span>
-                    <div className="absolute inset-0 bg-forest/5" />
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt={post.titleEn}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <span className="text-5xl group-hover:scale-110 transition-transform">{post.emoji}</span>
+                    )}
+                    <div className="absolute inset-0 bg-forest/5 pointer-events-none" />
                   </div>
 
                   <div className="p-6 flex flex-col flex-1 justify-between">

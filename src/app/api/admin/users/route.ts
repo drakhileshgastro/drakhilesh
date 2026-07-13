@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { requireAdmin } from "@/lib/auth";
 
 // Admin client with service role key — never expose to browser
 function createAdminClient() {
@@ -11,6 +12,9 @@ function createAdminClient() {
 
 export async function GET() {
   try {
+    const auth = await requireAdmin();
+    if (!auth.ok) return auth.response;
+
     const admin = createAdminClient();
     const { data, error } = await admin.auth.admin.listUsers();
     if (error) return NextResponse.json({ users: [] });
@@ -31,6 +35,9 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   try {
+    const auth = await requireAdmin();
+    if (!auth.ok) return auth.response;
+
     const { email, password, role } = await req.json();
 
     if (!email || !password || !role) {
@@ -52,7 +59,7 @@ export async function POST(req: NextRequest) {
     if (error) return NextResponse.json({ success: false, error: error.message }, { status: 400 });
 
     return NextResponse.json({ success: true, userId: data.user.id });
-  } catch (err) {
+  } catch {
     return NextResponse.json({ success: false, error: "Service role key not configured. Add SUPABASE_SERVICE_ROLE_KEY to Vercel env vars." }, { status: 500 });
   }
 }

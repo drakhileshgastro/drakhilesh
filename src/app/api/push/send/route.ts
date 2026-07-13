@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { requireInternalRequest } from "@/lib/auth";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -18,6 +19,9 @@ interface PushPayload {
 // To generate: npx web-push generate-vapid-keys
 export async function POST(req: NextRequest) {
   try {
+    const unauthorized = requireInternalRequest(req);
+    if (unauthorized) return unauthorized;
+
     const payload: PushPayload = await req.json();
 
     const vapidPrivate = process.env.VAPID_PRIVATE_KEY;

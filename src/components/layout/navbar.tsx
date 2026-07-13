@@ -106,38 +106,16 @@ export default function Navbar() {
     dropdownTimeout.current = setTimeout(() => setActiveDropdown(null), 120);
   };
 
+  const menuLinks = [
+    { label: "Symptoms", href: "/symptoms", dropdown: "symptoms" as const },
+    { label: "Conditions", href: "/conditions", dropdown: "conditions" as const },
+    { label: "Procedures", href: "/procedures", dropdown: "procedures" as const },
+    { label: "Blog", href: "/blog" },
+    { label: "About Doctor", href: "/about" },
+  ];
+
   return (
     <header ref={navRef} className="fixed top-0 left-0 right-0 z-50">
-      {/* Top Bar */}
-      <div
-        className={cn(
-          "bg-primary text-white transition-all duration-300 overflow-hidden",
-          topBarVisible ? "max-h-12 opacity-100" : "max-h-0 opacity-0"
-        )}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-11 text-xs sm:text-[13px]">
-          <div className="flex items-center gap-4 min-w-0">
-            <span className="hidden sm:flex items-center gap-1.5 truncate">
-              <MapPin size={12} className="flex-shrink-0" />
-              Orchid Medical Centre, HB Road, Ranchi
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock size={12} className="flex-shrink-0" />
-              <span className="hidden xs:inline">OPD: </span>10:00 AM – 8:00 PM
-            </span>
-          </div>
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <a
-              href={`tel:${DOCTOR.phone}`}
-              className="flex items-center gap-1 hover:text-accent-light transition-colors font-medium font-sans"
-            >
-              <Phone size={12} />
-              <span>{DOCTOR.phone}</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Nav */}
       <div
         className={cn(
@@ -147,32 +125,32 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-[80px] lg:h-[92px]">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 flex-shrink-0 min-h-[44px]" onClick={() => setMobileOpen(false)}>
-              <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-sans font-bold text-2xl leading-none">✚</span>
+            {/* Logo (+20% size) */}
+            <Link href="/" className="flex items-center gap-3.5 flex-shrink-0 min-h-[52px]" onClick={() => setMobileOpen(false)}>
+              <div className="w-[52px] h-[52px] bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span className="text-white font-sans font-bold text-3xl leading-none">✚</span>
               </div>
               <div className="flex flex-col leading-tight">
-                <span className="text-forest font-display font-bold text-base tracking-tight">{DOCTOR.name}</span>
-                <span className="text-muted text-[10px] tracking-wider uppercase font-semibold font-sans mt-0.5">
+                <span className="text-forest font-display font-bold text-lg tracking-tight">{DOCTOR.name}</span>
+                <span className="text-muted text-[11px] tracking-wider uppercase font-semibold font-sans mt-0.5">
                   DM Gastroenterology
                 </span>
               </div>
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-1">
-              {NAV_LINKS.map((link) =>
+            <nav className="hidden lg:flex items-center gap-1.5">
+              {menuLinks.map((link) =>
                 link.dropdown ? (
                   <div
                     key={link.href}
                     className="relative"
-                    onMouseEnter={() => openDropdown(link.dropdown as Dropdown)}
+                    onMouseEnter={() => { if(dropdownTimeout.current) clearTimeout(dropdownTimeout.current); setActiveDropdown(link.dropdown as Dropdown); }}
                     onMouseLeave={closeDropdown}
                   >
                     <button
                       className={cn(
-                        "flex items-center gap-1 px-3.5 py-2.5 text-sm font-semibold rounded-lg transition-colors min-h-[44px] cursor-pointer font-display",
+                        "flex items-center gap-1 px-4 py-2.5 text-sm font-semibold rounded-lg transition-colors min-h-[44px] cursor-pointer font-display",
                         activeDropdown === link.dropdown
                           ? "text-primary bg-bg-sand"
                           : "text-forest hover:text-primary hover:bg-bg-sand/50"
@@ -196,7 +174,7 @@ export default function Navbar() {
                           ? "opacity-100 translate-y-0 pointer-events-auto"
                           : "opacity-0 -translate-y-2 pointer-events-none"
                       )}
-                      onMouseEnter={() => openDropdown(link.dropdown as Dropdown)}
+                      onMouseEnter={() => { if(dropdownTimeout.current) clearTimeout(dropdownTimeout.current); }}
                       onMouseLeave={closeDropdown}
                     >
                       <DropdownContent type={link.dropdown} />
@@ -206,7 +184,7 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="px-3.5 py-2.5 text-sm font-semibold text-forest hover:text-primary hover:bg-bg-sand/50 rounded-lg transition-colors min-h-[44px] flex items-center font-display"
+                    className="px-4 py-2.5 text-sm font-semibold text-forest hover:text-primary hover:bg-bg-sand/50 rounded-lg transition-colors min-h-[44px] flex items-center font-display"
                   >
                     {link.label}
                   </Link>
@@ -214,6 +192,21 @@ export default function Navbar() {
               )}
             </nav>
 
+            {/* Desktop Primary Actions */}
+            <div className="hidden lg:flex items-center gap-3">
+              <a
+                href={`tel:${DOCTOR.phone}`}
+                className="flex items-center gap-2 px-4 py-2.5 border border-primary/30 text-primary hover:bg-primary-50 rounded-xl font-semibold text-sm transition-colors font-display"
+              >
+                <Phone size={14} /> Call Now
+              </a>
+              <Link
+                href="/book"
+                className="flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl font-semibold text-sm transition-colors shadow-sm font-display"
+              >
+                Book Appointment
+              </Link>
+            </div>
 
             {/* Mobile toggle */}
             <button
@@ -229,7 +222,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-[124px] bg-white z-40 overflow-y-auto border-t border-border">
+        <div className="lg:hidden fixed inset-0 top-[80px] bg-white z-40 overflow-y-auto border-t border-border">
           <div className="px-4 pt-4 pb-28">
             {/* Quick CTAs */}
             <div className="grid grid-cols-2 gap-2 mb-6">
@@ -251,7 +244,7 @@ export default function Navbar() {
 
             {/* Nav Links */}
             <nav className="flex flex-col space-y-1">
-              {NAV_LINKS.map((link) => (
+              {menuLinks.map((link) => (
                 <div key={link.href} className="border-b border-border-light last:border-0 pb-2">
                   <Link
                     href={link.href}

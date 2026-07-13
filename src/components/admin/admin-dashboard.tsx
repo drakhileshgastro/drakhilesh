@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -8,18 +8,7 @@ const supabase = createSupabaseBrowser();
 import { Users, CalendarCheck, IndianRupee, TrendingUp, PhoneCall, ArrowRight, Activity } from "lucide-react";
 import { cn } from "@/lib/cn";
 import type { Lead } from "@/lib/supabase";
-
-
-
-const STATUS_COLORS: Record<string, string> = {
-  New: "bg-teal-light text-teal",
-  Called: "bg-blue-100 text-blue-700",
-  Confirmed: "bg-green-100 text-green-700",
-  Visited: "bg-purple-100 text-purple-700",
-  "No-answer": "bg-amber-100 text-amber-700",
-  Cancelled: "bg-red-100 text-red-700",
-  "Follow-up": "bg-orange-100 text-orange-700",
-};
+import { STATUS_COLORS_DARK } from "@/components/admin/admin-leads";
 
 const SOURCE_COLORS: Record<string, string> = {
   "Website Form": "#14B8A6",
@@ -124,7 +113,7 @@ export default function AdminDashboard() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     <p className="text-white font-medium text-sm truncate">{lead.patient_name}</p>
-                    <span className={cn("text-[10px] px-1.5 py-0.5 rounded font-semibold flex-shrink-0", STATUS_COLORS[lead.status])}>
+                    <span className={cn("text-[10px] px-1.5 py-0.5 rounded font-semibold flex-shrink-0", STATUS_COLORS_DARK[lead.status])}>
                       {lead.status}
                     </span>
                   </div>
@@ -152,7 +141,7 @@ export default function AdminDashboard() {
             <div className="space-y-2.5">
               {pipeline.filter((p) => p.count > 0).map((p) => (
                 <div key={p.status} className="flex items-center gap-3">
-                  <span className={cn("text-[10px] px-2 py-0.5 rounded font-semibold w-20 text-center flex-shrink-0", STATUS_COLORS[p.status])}>
+                  <span className={cn("text-[10px] px-2 py-0.5 rounded font-semibold w-20 text-center flex-shrink-0", STATUS_COLORS_DARK[p.status])}>
                     {p.status}
                   </span>
                   <div className="flex-1 bg-white/5 rounded-full h-1.5">

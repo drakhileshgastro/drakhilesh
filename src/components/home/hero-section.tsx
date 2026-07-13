@@ -8,58 +8,75 @@ import { DOCTOR, CONDITIONS, TRUST_STATS } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
-    <section className="bg-white pt-12 pb-16 lg:pt-16 lg:pb-20">
+    <section className="bg-bg-sand/20 pt-16 pb-20 lg:pt-20 lg:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Main Hero grid */}
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
 
-          {/* Left Block — Headline + Stats */}
+          {/* Left Block — Headline + Subtitle + Stats */}
           <div className="lg:col-span-7 space-y-6">
             <div className="text-primary font-display text-xs font-bold tracking-wider uppercase">
               Ranchi's Trusted Gastroenterologist
             </div>
 
-            <h1 className="font-hindi text-[2.5rem] sm:text-[3rem] lg:text-[3.25rem] font-bold text-forest leading-[1.15]">
+            <h1 className="font-hindi text-[2.75rem] sm:text-[3.25rem] lg:text-[3.75rem] font-bold text-forest leading-[1.1] tracking-tight">
               पेट, लीवर या पाचन की<br />
               <span className="text-primary">समस्या से परेशान हैं?</span>
             </h1>
+
+            {/* Doctor Info Subtitle Grid */}
+            <div className="flex flex-col gap-2 border-l-3 border-primary/30 pl-4 py-1">
+              <span className="text-forest font-display font-extrabold text-xl">{DOCTOR.name}</span>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm text-muted font-sans font-semibold">
+                <span>DM Gastroenterologist</span>
+                <span className="text-primary/35">•</span>
+                <span>10+ Years</span>
+                <span className="text-primary/35">•</span>
+                <span>4000+ Patients</span>
+                <span className="text-primary/35">•</span>
+                <span>Evidence-Based Treatment</span>
+              </div>
+            </div>
 
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl">
               Consult Dr. Akhilesh Yadav, Ranchi's trusted stomach doctor, liver specialist, and gastrologist (DM Gastroenterology) at Orchid Medical Centre for complete digestive care.
             </p>
 
-            {/* Stats row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {TRUST_STATS.map((stat) => (
-                <div key={stat.label} className="bg-white border border-border rounded-2xl p-4 shadow-sm text-center">
-                  <div className="text-2xl font-display font-bold text-primary">{stat.value}</div>
-                  <div className="text-[11px] sm:text-xs text-muted font-hindi mt-1 leading-normal uppercase font-semibold">{stat.labelHindi}</div>
-                </div>
-              ))}
-            </div>
-
-            {/* Google Rating */}
-            <div className="flex items-center gap-3 pt-2">
-              <div className="flex items-center gap-0.5">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} size={14} className="text-accent fill-accent" />
-                ))}
+            {/* Stats row redesigned (No dashboard cards) */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+              {/* Card 1: Google Reviews (Stars first) */}
+              <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
+                <div className="text-amber-500 font-bold text-xs tracking-tight flex gap-0.5">⭐⭐⭐⭐⭐</div>
+                <div className="text-base font-display font-bold text-forest mt-1.5 leading-none">4.9 Rating</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">200+ Reviews</div>
               </div>
-              <span className="text-muted text-sm font-sans">
-                <strong>{DOCTOR.googleRating}</strong> rating from {DOCTOR.totalReviews} patients
-              </span>
+              {/* Card 2: Years Experience */}
+              <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
+                <div className="text-2xl font-display font-bold text-primary">10+ Years</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Experience</div>
+              </div>
+              {/* Card 3: Patients Served */}
+              <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
+                <div className="text-2xl font-display font-bold text-primary">4000+</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Patients Treated</div>
+              </div>
+              {/* Card 4: Availability */}
+              <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
+                <div className="text-base font-display font-bold text-forest leading-none">Mon – Sat</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-2">Daily OPD Clinic</div>
+              </div>
             </div>
           </div>
 
-          {/* Right Block — Large Doctor Image */}
+          {/* Right Block — Custom Consultation Reassuring Image */}
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
               <img
-                src="/dr-akhilesh-improved.png"
-                alt="Dr. Akhilesh Yadav - Best Gastroenterologist & Liver Specialist in Ranchi, Jharkhand"
-                title="Dr. Akhilesh Yadav - Gastroenterologist Ranchi"
-                className="w-full h-full object-cover object-top"
+                src="/images/hero-consultation.png"
+                alt="Dr. Akhilesh Yadav consulting a patient in a warm and bright clinic room"
+                title="Dr. Akhilesh Yadav - Gastroenterology Consultation Ranchi"
+                className="w-full h-full object-cover object-center"
               />
             </div>
 
@@ -128,10 +145,10 @@ function HeroHorizontalBookingBar() {
   };
 
   const checklistItems = [
-    "No OTP needed",
-    "Free consultation call",
-    "Team calls within 2 hours",
-    "Hindi speaking · हिंदी में बात करें",
+    "Appointment Confirmation within 30 minutes",
+    "No Spam Guaranteed",
+    "WhatsApp Confirmation",
+    "Hindi Support (हिंदी सहायता)",
   ];
 
   return (
@@ -139,8 +156,8 @@ function HeroHorizontalBookingBar() {
 
       {/* Header bar */}
       <div className="bg-primary px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 border-b border-border/10">
-        <h2 className="text-white font-display font-bold text-lg">Book an Appointment</h2>
-        <span className="text-accent font-hindi text-sm font-semibold">हमारी team 2 घंटे में call करेगी</span>
+        <h2 className="text-white font-display font-bold text-lg">Appointment Confirmation within 30 minutes</h2>
+        <span className="text-accent font-hindi text-sm font-semibold">तुरंत पुष्टि (WhatsApp & Call)</span>
       </div>
 
       {/* Form Content */}

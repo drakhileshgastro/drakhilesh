@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { internalAuthHeaders, requireCronRequest } from "@/lib/auth";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -9,11 +10,8 @@ const supabase = createClient(
 // Runs every Sunday at 8am IST (2:30am UTC) via vercel.json cron
 // Sends weekly performance summary to WHATSAPP_ALERT_NUMBERS
 export async function GET(req: NextRequest) {
-  const auth = req.headers.get("authorization");
-  const secret = process.env.CRON_SECRET;
-  if (secret && auth !== `Bearer ${secret}`) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
+  const unauthorized = requireCronRequest(req);
+  if (unauthorized) return unauthorized;
 
   const now = new Date();
   const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
@@ -76,7 +74,7 @@ export async function GET(req: NextRequest) {
     try {
       const res = await fetch(`${baseUrl}/api/whatsapp`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
         body: JSON.stringify({
           to: num,
           patientName: "Team",

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { internalAuthHeaders, requireCronRequest } from "@/lib/auth";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -9,11 +10,8 @@ const supabase = createClient(
 // Runs daily at 8am IST (2:30am UTC) via vercel.json cron
 // Finds confirmed appointments within the next 20–44h window and sends WhatsApp reminders
 export async function GET(req: NextRequest) {
-  const auth = req.headers.get("authorization");
-  const secret = process.env.CRON_SECRET;
-  if (secret && auth !== `Bearer ${secret}`) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
+  const unauthorized = requireCronRequest(req);
+  if (unauthorized) return unauthorized;
 
   const now = new Date();
   const windowStart = new Date(now.getTime() + 20 * 60 * 60 * 1000); // +20h
@@ -51,7 +49,7 @@ export async function GET(req: NextRequest) {
     try {
       await fetch(`${baseUrl}/api/whatsapp`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
         body: JSON.stringify({
           to: `91${lead.patient_phone.replace(/^0/, "").slice(-10)}`,
           patientName: lead.patient_name,

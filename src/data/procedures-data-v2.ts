@@ -73,7 +73,7 @@ function getTemplateData(slug: string, title: string, hindiTitle: string): Proce
     ],
     doctorAdvice: `Procedural anxiety is very common, but modern endoscopy is safe and painless. Do not delay your diagnostic screening; finding issues early makes treatment simple and successful.`,
     relatedConditions: ["fatty-liver", "jaundice", "ibs"],
-    relatedBlogs: ["endoscopy-kya-hota-hai", "jaundice-causes-treatment-hindi"]
+    relatedBlogs: ["endoscopy-kya-hota-hai", "jaundice-symptoms-causes"]
   };
 }
 

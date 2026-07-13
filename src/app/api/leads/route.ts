@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { createLead, type CreateLeadInput } from "@/lib/supabase";
+import { internalAuthHeaders } from "@/lib/auth";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -54,7 +55,7 @@ export async function POST(req: NextRequest) {
       const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drakhileshgastro.com";
       fetch(`${baseUrl}/api/whatsapp`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
         body: JSON.stringify({
           to: "clinic_alert",
           patientName: patient_name.trim(),
@@ -93,7 +94,7 @@ export async function POST(req: NextRequest) {
     // 1. WhatsApp acknowledgement to patient (non-blocking)
     fetch(`${baseUrl}/api/whatsapp`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
       body: JSON.stringify({
         to: `91${cleanPhone}`,
         patientName: patient_name.trim(),
@@ -105,7 +106,7 @@ export async function POST(req: NextRequest) {
     // 2. WhatsApp clinic alert to doctor + Arvind (non-blocking)
     fetch(`${baseUrl}/api/whatsapp`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
       body: JSON.stringify({
         to: "clinic_alert",
         patientName: patient_name.trim(),
@@ -121,7 +122,7 @@ export async function POST(req: NextRequest) {
     // 3. Browser push notification to logged-in CRM users (non-blocking)
     fetch(`${baseUrl}/api/push/send`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
       body: JSON.stringify({
         title: `New Lead: ${patient_name.trim()}`,
         body: `${condition} — ${patient_city.trim()}`,

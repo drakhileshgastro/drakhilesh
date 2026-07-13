@@ -20,6 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogBySlug(slug);
   if (!post) return {};
+  const imageUrl = post.image 
+    ? `https://drakhileshgastro.com${post.image}` 
+    : "https://drakhileshgastro.com/dr-akhilesh-improved.png";
+
   return {
     title: `${post.metaTitle} | Dr. Akhilesh Yadav`,
     description: post.metaDescription,
@@ -30,6 +34,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
       url: `https://drakhileshgastro.com/blog/${slug}`,
       type: "article",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.metaTitle,
+        }
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.metaTitle,
+      description: post.metaDescription,
+      images: [imageUrl],
     },
   };
 }
@@ -44,7 +62,7 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     "headline": post.titleHi,
     "description": post.excerptHi,
-    "image": "https://drakhileshgastro.com/dr-akhilesh-improved.png",
+    "image": post.image ? `https://drakhileshgastro.com${post.image}` : "https://drakhileshgastro.com/dr-akhilesh-improved.png",
     "author": {
       "@type": "Physician",
       "name": DOCTOR.name,
@@ -103,6 +121,16 @@ export default async function BlogPostPage({ params }: Props) {
             <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-display font-bold text-forest leading-tight font-hindi">
               {post.titleHi}
             </h1>
+
+            {post.image && (
+              <div className="aspect-[16/9] w-full bg-primary-light rounded-3xl overflow-hidden relative shadow-xs border border-border/20 my-6">
+                <img
+                  src={post.image}
+                  alt={post.titleEn}
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            )}
 
             {/* Clinical review bar (E-E-A-T) */}
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-4 border-t border-border/45 text-xs text-muted font-sans font-medium">

@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-import { cookies } from "next/headers";
+import { internalAuthHeaders, requireCrmUser } from "@/lib/auth";
 
 const TIME_SLOT_MAP: Record<string, string> = {
   "Morning (10am–2pm)": "10:00:00",
@@ -9,26 +8,9 @@ const TIME_SLOT_MAP: Record<string, string> = {
 
 export async function POST(req: NextRequest) {
   try {
-    const cookieStore = await cookies();
-
-    const supabase = createServerClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-      {
-        cookies: {
-          getAll: () => cookieStore.getAll(),
-          setAll: () => {},
-        },
-      }
-    );
-
-    // Verify CRM session
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-    if (!user) {
-      return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
-    }
+    const auth = await requireCrmUser();
+    if (!auth.ok) return auth.response;
+    const { supabase } = auth;
 
     const body = await req.json();
     const { lead_id, confirmed_date, confirmed_time } = body;
@@ -88,7 +70,7 @@ export async function POST(req: NextRequest) {
     const cleanPhone = lead.patient_phone.trim().replace(/^0/, "").replace(/^\+91/, "");
     fetch(`${baseUrl}/api/whatsapp`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...internalAuthHeaders() },
       body: JSON.stringify({
         to: `91${cleanPhone}`,
         patientName: lead.patient_name,

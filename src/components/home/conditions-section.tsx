@@ -3,60 +3,53 @@
 import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
-interface SpecialtyCard {
+interface SpecialtyColumn {
   title: string;
   hindiTitle: string;
-  image: string;
-  colorClass: string;
+  viewAllHref: string;
   conditions: { label: string; hindiLabel: string; slug: string }[];
 }
 
-const SPECIALTIES_DATA: SpecialtyCard[] = [
+const COLUMNS_DATA: SpecialtyColumn[] = [
   {
-    title: "Liver Diseases",
+    title: "Liver Health",
     hindiTitle: "लिवर रोग",
-    image: "/images/liver-icon.png",
-    colorClass: "border-sky-200 bg-sky-50/10",
+    viewAllHref: "/conditions",
     conditions: [
-      { label: "Liver Cirrhosis", hindiLabel: "लिवर सिरोसिस", slug: "liver-cirrhosis" },
-      { label: "Fatty Liver", hindiLabel: "फैटी लिवर", slug: "fatty-liver" },
-      { label: "Hepatitis B & C", hindiLabel: "हेपेटाइटिस B & C", slug: "hepatitis" },
-      { label: "Jaundice", hindiLabel: "पीलिया", slug: "jaundice" },
-      { label: "Liver Cancer / Tumours", hindiLabel: "लिवर कैंसर", slug: "liver-cirrhosis" },
+      { label: "Fatty Liver", hindiLabel: "फैटी लिवर का उपचार", slug: "fatty-liver" },
+      { label: "Liver Cirrhosis", hindiLabel: "लीवर सिरोसिस प्रबंधन", slug: "liver-cirrhosis" },
+      { label: "Hepatitis B & C", hindiLabel: "हेपेटाइटिस संक्रमण", slug: "hepatitis" },
+      { label: "Jaundice", hindiLabel: "पीलिया निदान व इलाज", slug: "jaundice" },
     ],
   },
   {
-    title: "Stomach & Digestive Diseases",
+    title: "Digestive & Stomach",
     hindiTitle: "पेट और पाचन रोग",
-    image: "/images/stomach-icon.png",
-    colorClass: "border-rose-200 bg-rose-50/10",
+    viewAllHref: "/conditions",
     conditions: [
-      { label: "IBS / Irritable Bowel", hindiLabel: "आईबीएस", slug: "ibs" },
+      { label: "IBS (Irritable Bowel)", hindiLabel: "आईबीएस / आंत की समस्या", slug: "ibs" },
+      { label: "GERD / Acid Reflux", hindiLabel: "एसिड रिफ्लक्स / जलन", slug: "acid-reflux" },
+      { label: "Peptic Ulcer", hindiLabel: "पेट के अल्सर का इलाज", slug: "peptic-ulcer" },
       { label: "Gas & Bloating", hindiLabel: "गैस व पेट फूलना", slug: "gas-bloating" },
-      { label: "Acidity & Heartburn", hindiLabel: "एसिडिटी / जलन", slug: "acidity" },
-      { label: "Acid Reflux / GERD", hindiLabel: "एसिड रिफ्लक्स", slug: "gerd" },
       { label: "Constipation & Diarrhoea", hindiLabel: "कब्ज और दस्त", slug: "constipation" },
-      { label: "Peptic Ulcer", hindiLabel: "पेप्टिक अल्सर", slug: "peptic-ulcer" },
     ],
   },
   {
     title: "Gallbladder & Pancreas",
     hindiTitle: "पित्त और अग्न्याशय रोग",
-    image: "/images/pancreas-icon.png",
-    colorClass: "border-amber-200 bg-amber-50/10",
+    viewAllHref: "/conditions",
     conditions: [
-      { label: "Gallstones & Bile Duct Stones", hindiLabel: "पित्त की पथरी", slug: "gallstone" },
-      { label: "Bile Duct Blockage / Stricture", hindiLabel: "पित्त नली में रुकावट", slug: "gallstone" },
-      { label: "Pancreatitis (Acute/Chronic)", hindiLabel: "अग्नाशय की सूजन", slug: "pancreatitis" },
-      { label: "Gallbladder Infection", hindiLabel: "गॉलब्लेडर इन्फेक्शन", slug: "gallstone" },
-      { label: "Upper GI Bleeding", hindiLabel: "जीआई ब्लीडिंग", slug: "gi-bleeding" },
+      { label: "Gallstones", hindiLabel: "पित्त की पथरी", slug: "gallstone" },
+      { label: "Pancreatitis (Acute/Chronic)", hindiLabel: "अग्न्याशय की सूजन", slug: "pancreatitis" },
+      { label: "GI Bleeding Treatment", hindiLabel: "आंतरिक रक्तस्राव उपचार", slug: "gi-bleeding" },
+      { label: "Bile Duct Blockage", hindiLabel: "पित्त नली में रुकावट", slug: "gallstone" },
     ],
   },
 ];
 
 export default function ConditionsSection() {
   return (
-    <section className="bg-bg-sand py-20 lg:py-24 border-t border-border/40">
+    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -72,67 +65,53 @@ export default function ConditionsSection() {
           </p>
         </div>
 
-        {/* Categories Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {SPECIALTIES_DATA.map((specialty, idx) => (
-            <div
-              key={idx}
-              className={`border border-border/60 rounded-3xl p-6 bg-white shadow-xs flex flex-col justify-between`}
-            >
+        {/* Clean Cardless Columns Grid */}
+        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          {COLUMNS_DATA.map((col, idx) => (
+            <div key={idx} className="space-y-6 flex flex-col justify-between min-h-[360px]">
               <div>
-                
-                {/* Organ Illustration Image */}
-                <div className="aspect-[4/3] rounded-2xl bg-bg-sand/35 overflow-hidden flex items-center justify-center p-6 border border-border/30 mb-6">
-                  <img
-                    src={specialty.image}
-                    alt={specialty.title}
-                    className="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Card Title */}
-                <div className="mb-6">
-                  <h3 className="text-forest font-sans font-bold text-lg leading-snug">
-                    {specialty.title}
+                {/* Column Title Header */}
+                <div className="border-b border-border/70 pb-4 mb-6">
+                  <h3 className="text-forest font-display font-extrabold text-2xl">
+                    {col.title}
                   </h3>
                   <p className="font-hindi text-primary text-xs font-bold uppercase tracking-wider mt-0.5">
-                    {specialty.hindiTitle}
+                    {col.hindiTitle}
                   </p>
                 </div>
 
-                {/* Checklist of conditions */}
-                <div className="space-y-3.5">
-                  {specialty.conditions.map((cond, cIdx) => (
+                {/* List of conditions with spacing and hover effects */}
+                <div className="space-y-4.5">
+                  {col.conditions.map((cond, cIdx) => (
                     <Link
                       key={cIdx}
                       href={`/conditions/${cond.slug}`}
-                      className="flex items-start gap-2.5 group cursor-pointer"
+                      className="flex items-start gap-3 group cursor-pointer"
                     >
                       <CheckCircle2
-                        size={15}
-                        className="text-primary mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform"
+                        size={16}
+                        className="text-primary/70 mt-0.5 flex-shrink-0 group-hover:scale-110 group-hover:text-primary transition-all"
                       />
                       <div>
-                        <span className="text-forest font-sans font-medium text-sm leading-snug group-hover:text-primary transition-colors block">
+                        <span className="text-forest font-sans font-semibold text-[15px] leading-snug group-hover:text-primary transition-colors block">
                           {cond.label}
                         </span>
-                        <span className="font-hindi text-muted text-xs leading-none block mt-0.5">
+                        <span className="font-hindi text-muted text-xs leading-none block mt-1">
                           {cond.hindiLabel}
                         </span>
                       </div>
                     </Link>
                   ))}
                 </div>
-
               </div>
 
               {/* View Category Link */}
-              <div className="mt-8 pt-4 border-t border-border/40">
+              <div className="pt-4 border-t border-border/40">
                 <Link
-                  href="/conditions"
-                  className="inline-flex items-center gap-1.5 text-primary text-xs font-bold font-sans uppercase tracking-wider hover:text-primary-dark transition-colors"
+                  href={col.viewAllHref}
+                  className="inline-flex items-center gap-1.5 text-primary text-[11px] font-bold font-sans uppercase tracking-wider hover:text-primary-dark transition-all hover:gap-2"
                 >
-                  View treatments <ArrowRight size={13} />
+                  View All Treatments <ArrowRight size={12} />
                 </Link>
               </div>
 
