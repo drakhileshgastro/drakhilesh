@@ -1,3 +1,17 @@
 {
-  "alias": ["drakhileshgastro.vercel.app"]
+  "alias": ["drakhileshgastro.vercel.app"],
+  "crons": [
+    {
+      "path": "/api/cron/appointment-reminder",
+      "schedule": "30 2 * * *"
+    },
+    {
+      "path": "/api/cron/follow-up",
+      "schedule": "30 4 * * *"
+    },
+    {
+      "path": "/api/cron/weekly-report",
+      "schedule": "30 2 * * 0"
+    }
+  ]
 }
