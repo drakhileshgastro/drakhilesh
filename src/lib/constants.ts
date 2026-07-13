@@ -18,6 +18,12 @@ export const DOCTOR = {
   googleRating: "4.9",
   totalReviews: "200+",
   youtubeChannel: "https://youtube.com/@drakhileshgastro",
+  socialLinks: {
+    facebook: "https://facebook.com/drakhileshgastro",
+    instagram: "https://instagram.com/drakhileshgastro",
+    youtube: "https://youtube.com/@drakhileshgastro",
+    linkedin: "https://linkedin.com/in/drakhileshgastro",
+  },
 } as const;
 
 export const TRUST_STATS = [
@@ -252,10 +258,8 @@ export const CONDITIONS = [
   "Colonoscopy",
   "ERCP",
   "Pancreatitis",
-  "Liver Cancer",
   "Ulcerative Colitis",
   "Abdominal Pain / Pet Dard",
-  "Liver Transplant Consultation",
   "Other / Not Sure",
 ] as const;
 

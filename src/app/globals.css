@@ -71,7 +71,8 @@ body {
 
 .font-hindi {
   font-family: var(--font-hindi);
-  line-height: 1.9;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
   word-break: break-word;
   overflow-wrap: break-word;
 }

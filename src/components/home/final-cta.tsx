@@ -92,12 +92,12 @@ export default function FinalCTA() {
           {/* Right — Doctor image + stats */}
           <div>
             <div className="bg-white rounded-3xl p-6 border border-border shadow-sm space-y-6">
-              {/* Doctor photo */}
-              <div className="aspect-[4/3] bg-primary-light rounded-2xl overflow-hidden relative shadow-sm">
+              {/* Clinical Facility Photo */}
+              <div className="aspect-[4/3] bg-primary-light rounded-2xl overflow-hidden relative shadow-sm border border-border/25">
                 <img
-                  src="/dr-akhilesh-improved.png"
-                  alt="Dr. Akhilesh Yadav"
-                  className="w-full h-full object-cover object-top"
+                  src="/images/procedure-room.png"
+                  alt="Orchid Medical Centre Procedure Room"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
 

@@ -12,25 +12,24 @@ import ClinicInfo from "@/components/home/clinic-info";
 import FinalCTA from "@/components/home/final-cta";
 
 export const metadata: Metadata = {
-  title: "Dr. Akhilesh Yadav — Gastroenterologist & Liver Specialist in Ranchi | Orchid Medical Centre",
+  title: "Best Gastroenterologist in Ranchi | Dr. Akhilesh Yadav",
   description:
-    "पेट, लीवर और पाचन की समस्या? डॉ. अखिलेश यादव — DM Gastroenterology, Orchid Medical Centre, Ranchi. Fatty liver, jaundice, endoscopy, IBS, liver disease. हिंदी में परामर्श। Book appointment today.",
+    "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Ranchi at Orchid Medical Centre. Expert treatment for liver disease, fatty liver, acidity, and endoscopy.",
   keywords: [
-    "gastroenterologist ranchi",
-    "liver specialist ranchi",
+    "gastroenterologist in Ranchi",
+    "liver specialist Ranchi",
     "Dr Akhilesh Yadav",
-    "endoscopy ranchi",
-    "fatty liver treatment jharkhand",
-    "पेट के डॉक्टर रांची",
-    "orchid medical centre ranchi",
-    "best gastroenterologist jharkhand",
+    "endoscopy Ranchi",
+    "fatty liver treatment Jharkhand",
+    "best gastroenterologist Jharkhand",
+    "orchid medical centre Ranchi",
   ],
   alternates: {
     canonical: "https://drakhileshgastro.com",
   },
   openGraph: {
-    title: "Dr. Akhilesh Yadav — Gastroenterologist Ranchi",
-    description: "Expert gastroenterology & liver care in Ranchi, Jharkhand. DM Gastroenterology. Hindi consultation. Book appointment.",
+    title: "Best Gastroenterologist in Ranchi | Dr. Akhilesh Yadav",
+    description: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Ranchi at Orchid Medical Centre. Expert treatment for liver disease, fatty liver, and endoscopy.",
     url: "https://drakhileshgastro.com",
     type: "website",
   },

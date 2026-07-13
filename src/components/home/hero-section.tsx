@@ -34,7 +34,7 @@ export default function HeroSection() {
               {TRUST_STATS.map((stat) => (
                 <div key={stat.label} className="bg-white border border-border rounded-2xl p-4 shadow-sm text-center">
                   <div className="text-2xl font-display font-bold text-primary">{stat.value}</div>
-                  <div className="text-[10px] text-muted font-hindi mt-1 leading-normal uppercase font-semibold">{stat.labelHindi}</div>
+                  <div className="text-[11px] sm:text-xs text-muted font-hindi mt-1 leading-normal uppercase font-semibold">{stat.labelHindi}</div>
                 </div>
               ))}
             </div>

@@ -6,8 +6,8 @@ import { DOCTOR } from "@/lib/constants";
 import StickyCTA from "@/components/service/sticky-cta";
 
 export const metadata: Metadata = {
-  title: "Digestive, Stomach & Liver Symptoms Guide | Ranchi",
-  description: "Understand common digestive symptoms like stomach pain, acidity, bloating, jaundice, constipation, and blood in stool. Guide by Dr. Akhilesh Yadav, Ranchi.",
+  title: "Digestive Symptoms Guide Ranchi | Dr. Akhilesh Yadav",
+  description: "Identify common digestive symptoms in Ranchi such as stomach pain, acidity, gas, bloating, and jaundice. Learn when to consult a specialist.",
   alternates: { canonical: "https://drakhileshgastro.com/symptoms" },
 };
 

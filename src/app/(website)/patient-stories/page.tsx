@@ -5,8 +5,8 @@ import { DOCTOR } from "@/lib/constants";
 import StickyCTA from "@/components/service/sticky-cta";
 
 export const metadata: Metadata = {
-  title: "Patient Stories & Recovery Reviews | Dr. Akhilesh Yadav Ranchi",
-  description: "Read verified recovery stories, experiences, and reviews from patients treated by Dr. Akhilesh Yadav for liver, stomach, and digestive conditions in Ranchi.",
+  title: "Dr Akhilesh Yadav Reviews Ranchi | Patient Success Stories",
+  description: "Read verified Dr Akhilesh Yadav reviews in Ranchi. See recovery stories and testimonials for fatty liver, jaundice, endoscopy, and IBS treatment.",
   alternates: { canonical: "https://drakhileshgastro.com/patient-stories" },
 };
 

@@ -4,8 +4,8 @@ import BookingForm from "@/components/service/booking-form";
 import { DOCTOR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Book Appointment | Dr. Akhilesh Yadav — Gastroenterologist Ranchi",
-  description: "Book an appointment with Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre, Ranchi. Online appointment form — our team calls within 2 hours.",
+  title: "Book Gastroenterologist Appointment in Ranchi | Dr Akhilesh Yadav",
+  description: "Book a gastroenterologist appointment in Ranchi with Dr Akhilesh Yadav at Orchid Medical Centre. Fill out our 60-second online form for a quick callback.",
   alternates: { canonical: "https://drakhileshgastro.com/book" },
 };
 
