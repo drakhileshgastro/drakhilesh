@@ -240,8 +240,8 @@ export const PROCEDURES_DATA: Record<string, ProcedureData> = {
     relatedConditions: ["jaundice", "gallstone"],
     relatedBlogs: []
   },
-  "tumour-removal": {
-    slug: "tumour-removal",
+  "esd-emr": {
+    slug: "esd-emr",
     title: "Endoscopic Tumour Removal (EMR/ESD)",
     hindiTitle: "एंडोस्कोपिक ट्यूमर रिमूवल",
     metaTitle: "Endoscopic Tumour & Polyp Removal in Ranchi | Dr. Akhilesh Yadav",
@@ -313,6 +313,227 @@ export const PROCEDURES_DATA: Record<string, ProcedureData> = {
       { q: "जीआई ब्लीडिंग के क्या लक्षण हैं?", a: "उल्टी में चमकीला लाल खून आना, कॉफी के रंग की उल्टी होना, या काले रंग का मल आना इसके मुख्य लक्षण हैं।" }
     ],
     relatedConditions: ["peptic-ulcer", "jaundice"],
+    relatedBlogs: []
+  },
+  "eus-fna-fnb": {
+    slug: "eus-fna-fnb",
+    title: "EUS-guided FNA & FNB",
+    hindiTitle: "ईयूएस सुई बायोप्सी (FNA + FNB)",
+    metaTitle: "EUS guided FNA & FNB in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Expert EUS-guided FNA (Fine Needle Aspiration) and FNB (Fine Needle Biopsy) in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre.",
+    duration: "30 - 45 Mins",
+    sedation: "Deep Sedation / Conscious Sedation",
+    recoveryTime: "Same Day (3-4 Hours)",
+    overview: "Endoscopic Ultrasound (EUS) guided Fine Needle Aspiration (FNA) and Fine Needle Biopsy (FNB) are advanced techniques used to collect tissue samples from internal organs, lesions, or lymph nodes (such as the pancreas, lymph nodes in mediastinum, or sub-mucosal tumors of GI tract). A thin biopsy needle is passed under real-time ultrasound guidance directly through the scope, avoiding the need for external surgical incisions.",
+    whenRequired: [
+      "Pancreatic masses or cysts",
+      "Enlarged mediastinal or abdominal lymph nodes",
+      "Subepithelial tumors in esophagus, stomach, or duodenum",
+      "Staging of esophageal, gastric, or pancreatic cancers"
+    ],
+    preparation: [
+      { step: "6 Hours Fasting", detail: "Complete fasting is required. Inform doctor about any blood-thinning medications." }
+    ],
+    steps: [
+      { phase: "Sedation & Positioning", desc: "Performed under light conscious sedation to ensure absolute pain-free comfort." },
+      { phase: "Target Visualization", desc: "The EUS scope is positioned, and ultrasound waves are used to locate the target lesion." },
+      { phase: "Needle Passage", desc: "Under real-time ultrasound imaging, a micro-needle is passed through the scope into the lesion to aspirate cells (FNA) or obtain core tissue (FNB)." }
+    ],
+    safetySedation: "Highly safe, advanced diagnostic test. Complications like pancreatitis or minor bleeding are extremely low (less than 1%).",
+    benefits: [
+      "Provides definitive cellular diagnosis of deep tumors",
+      "High safety profile under direct continuous ultrasound mapping",
+      "Avoids the need for diagnostic surgical operations"
+    ],
+    recoveryGuidelines: "Observe in recovery ward for 3-4 hours. Patients can resume soft diet on the same day.",
+    doctorAdvice: "EUS-guided biopsy has revolutionized cancer diagnostics, allowing us to get precise tumor staging and tissue samples safely and painlessly.",
+    faqs: [
+      { q: "क्या सुई डालने से दर्द होता है?", a: "नहीं। मरीज को प्रक्रिया के दौरान गहरी नींद या बेहोशी दी जाती है, जिससे सुई महसूस ही नहीं होती।" },
+      { q: "FNA और FNB में क्या अंतर है?", a: "FNA में केवल व्यक्तिगत सेल्स (cells) निकाले जाते हैं, जबकि FNB में ऊतक का एक टुकड़ा (core tissue) निकाला जाता है जिससे अधिक सटीक जांच होती है।" }
+    ],
+    relatedConditions: ["pancreatitis", "weight-loss"],
+    relatedBlogs: []
+  },
+  "ehl-biopsy": {
+    slug: "ehl-biopsy",
+    title: "EHL (Electrohydraulic Lithotripsy) & Biopsy",
+    hindiTitle: "कैमरे से पित्त की पथरी तोड़ना और बायोप्सी",
+    metaTitle: "EHL and Bile Duct Biopsy in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Advanced Electrohydraulic Lithotripsy (EHL) to break large bile duct stones under direct vision in Ranchi by Dr. Akhilesh Yadav.",
+    duration: "30 - 45 Mins",
+    sedation: "Deep Sedation",
+    recoveryTime: "24 Hours Admission",
+    overview: "Electrohydraulic Lithotripsy (EHL) is a therapeutic technique where high-energy shockwaves are generated via a probe inside the bile duct under direct visual control (Cholangioscopy) to pulverize large or difficult bile stones that cannot be removed by standard ERCP. Directly following stone fragmentation, targeted biopsies of suspected duct tissues can be performed.",
+    whenRequired: [
+      "Large, impacted common bile duct (CBD) stones",
+      "Indeterminate biliary strictures requiring direct biopsy"
+    ],
+    preparation: [
+      { step: "NPO Stated", detail: "8 hours fasting required. Coagulation profile must be normal." }
+    ],
+    steps: [
+      { phase: "Access via Cholangioscopy", desc: "The cholangioscope is advanced into the CBD." },
+      { phase: "Shockwave Delivery", desc: "The EHL probe is positioned directly against the stone, and electric discharges are applied to break it into tiny fragments." },
+      { phase: "Biopsy collection", desc: "Mini-forceps are used to collect precise tissue from the duct lining if cancer is suspected." }
+    ],
+    safetySedation: "Performed in specialized tertiary setups. Offers safe non-surgical stone clearance.",
+    benefits: [
+      "Clear massive stones without open abdominal surgery",
+      "Highly precise biopsies of indeterminate narrowings",
+      "Minimal post-procedure discomfort"
+    ],
+    recoveryGuidelines: "Overnight monitoring is recommended. Soft diet can be resumed next morning.",
+    doctorAdvice: "For patients with huge stones stuck in the liver ducts, EHL acts as a non-surgical laser-like crusher, offering complete relief.",
+    faqs: [
+      { q: "क्या पथरी टूटने के बाद कोई अवशेष बचता है?", a: "नहीं। प्रक्रिया के दौरान टूटी हुई पथरी के टुकड़ों को गुब्बारे (balloon) से खींचकर आंत में बहा दिया जाता है।" }
+    ],
+    relatedConditions: ["jaundice", "gallstone"],
+    relatedBlogs: []
+  },
+  "glue-injection": {
+    slug: "glue-injection",
+    title: "Variceal Glue Injection",
+    hindiTitle: "ग्लू इंजेक्शन (फटी नसों का इलाज)",
+    metaTitle: "Variceal Glue Injection in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Emergency Cyanoacrylate Glue Injection therapy for gastric variceal bleeding in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre.",
+    duration: "15 - 25 Mins",
+    sedation: "Deep Sedation",
+    recoveryTime: "24 - 48 Hours Ward Observation",
+    overview: "Variceal Glue Injection is a specialized therapeutic endoscopic procedure used to treat bleeding from enlarged veins in the stomach (gastric varices), which are common in patients with advanced liver cirrhosis. A medical-grade cyanoacrylate glue is injected directly into the bleeding vein, instantly solidifying it to stop the hemorrhage and save the patient's life.",
+    whenRequired: [
+      "Active bleeding from gastric varices in cirrhosis",
+      "High-risk stomach varices prone to rupture"
+    ],
+    preparation: [
+      { step: "Emergency Resuscitation", detail: "IV access, blood pressure stabilization, and airway management are prioritized." }
+    ],
+    steps: [
+      { phase: "Scope Passage", desc: "The endoscope is quickly passed into the stomach to localize the gastric varices." },
+      { phase: "Glue Injection", desc: "A catheter is used to inject cyanoacrylate glue directly into the target variceal vein." },
+      { phase: "Immediate Hemostasis", desc: "The glue solidifies upon contact with blood, sealing the vein instantly." }
+    ],
+    safetySedation: "Performed under deep sedation. Vital signs are continuously tracked.",
+    benefits: [
+      "Instantly arrests severe, life-threatening stomach bleeding",
+      "Highly successful where standard band ligation cannot be done",
+      "Avoids emergency major portal shunting surgeries"
+    ],
+    recoveryGuidelines: "Requires minimum 24-hour ward/ICU monitoring to ensure no re-bleeding occurs.",
+    doctorAdvice: "Glue injection is a highly technical, lifesaving tool. For cirrhosis patients with stomach bleeding, it is the primary line of emergency defense.",
+    faqs: [
+      { q: "क्या ग्लू शरीर के लिए हानिकारक है?", a: "नहीं। यह विशेष मेडिकल-ग्रेड ग्लू (Cyanoacrylate) होता है जो केवल ब्लीडिंग रोकने के लिए डिजाइन किया गया है और सुरक्षित है।" }
+    ],
+    relatedConditions: ["liver-cirrhosis", "gi-bleeding"],
+    relatedBlogs: []
+  },
+  "polypectomy": {
+    slug: "polypectomy",
+    title: "Polypectomy",
+    hindiTitle: "पॉलिपेक्टोमी (पॉलिप्स निकालना)",
+    metaTitle: "Endoscopic Polypectomy in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Painless removal of colon and stomach polyps during endoscopy or colonoscopy in Ranchi by Dr. Akhilesh Yadav.",
+    duration: "15 - 30 Mins",
+    sedation: "Light Sedation",
+    recoveryTime: "Same Day",
+    overview: "Polypectomy is the surgical removal of polyps (abnormal tissue growths) from the lining of the stomach or colon. Typically performed during a routine endoscopy or colonoscopy, the doctor uses a wire loop snare with electrical current to shave off the polyp, which is then sent to the pathology laboratory for biopsy evaluation. This is the single most effective way to prevent colon cancer.",
+    whenRequired: [
+      "Stomach or duodenal polyps found on endoscopy",
+      "Colorectal polyps discovered during screening colonoscopy"
+    ],
+    preparation: [
+      { step: "Bowel Preparation", detail: "Standard colon clearance is mandatory if removing colon polyps." }
+    ],
+    steps: [
+      { phase: "Polyp Isolation", desc: "The scope is positioned at the polyp site." },
+      { phase: "Snaring", desc: "A thin wire loop (snare) is placed around the base of the polyp." },
+      { phase: "Resection & Cautery", desc: "An electrical current is passed through the snare to cut the polyp cleanly and seal blood vessels simultaneously." }
+    ],
+    safetySedation: "Extremely safe outpatient procedure. Minimal risk of delayed bleeding (less than 0.5%).",
+    benefits: [
+      "Prevents colon cancer by removing precancerous growths",
+      "Entirely painless and requires no external cuts or stitches",
+      "Same-session diagnosis and removal"
+    ],
+    recoveryGuidelines: "Return home same day. Avoid heavy lifting and strenuous activity for 48 hours.",
+    doctorAdvice: "Removing polyps early is the gold standard of cancer prevention. Every polyp removed is a potential cancer prevented.",
+    faqs: [
+      { q: "क्या पॉलिप निकालने में दर्द होता है?", a: "नहीं। आंत की अंदरूनी परत में दर्द महसूस करने वाले तंत्रिका तंत्र (nerves) नहीं होते, इसलिए काटने पर भी कोई दर्द नहीं होता।" }
+    ],
+    relatedConditions: ["ulcerative-colitis", "weight-loss"],
+    relatedBlogs: []
+  },
+  "balloon-dilation": {
+    slug: "balloon-dilation",
+    title: "Balloon Dilatation",
+    hindiTitle: "बलून डाइलेशन",
+    metaTitle: "Endoscopic Balloon Dilatation in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Painless endoscopic widening of esophageal, pyloric, or colonic strictures in Ranchi by Dr. Akhilesh Yadav.",
+    duration: "20 - 30 Mins",
+    sedation: "Conscious Sedation",
+    recoveryTime: "Same Day",
+    overview: "Balloon Dilatation is a therapeutic endoscopic procedure used to widen narrowed areas (strictures) of the gastrointestinal tract, such as the food pipe (esophagus), stomach outlet (pylorus), or colon. Narrowings can result from acid reflux scarring, radiation therapy, surgical scarring, or chronic inflammation. The doctor passes a deflated balloon through the scope, positions it across the stricture, and inflates it under pressure to stretch the narrowing.",
+    whenRequired: [
+      "Esophageal strictures causing swallowing difficulty",
+      "Pyloric stenosis causing persistent vomiting",
+      "Colonic strictures from colitis or surgeries"
+    ],
+    preparation: [
+      { step: "8 Hours Fasting", detail: "Required to ensure clear view and prevent aspiration of stomach contents." }
+    ],
+    steps: [
+      { phase: "Stricture Location", desc: "The endoscope is navigated to the narrowing." },
+      { phase: "Balloon Positioning", desc: "A guide wire and deflated balloon catheter are passed across the stricture." },
+      { phase: "Inflation", desc: "The balloon is inflated with water or air under pressure to stretch the fibers." }
+    ],
+    safetySedation: "Conscious sedation ensures comfort. Done carefully to avoid tearing the lining.",
+    benefits: [
+      "Instantly improves ability to swallow and digest food",
+      "Avoids the need for invasive surgical reconstruction",
+      "Outpatient procedure with same-day return home"
+    ],
+    recoveryGuidelines: "Observe for 2 hours. Resume soft food diet once swallowing feels comfortable.",
+    doctorAdvice: "For patients unable to swallow due to scar tissues, balloon dilation opens the passage immediately, restoring their ability to eat normally.",
+    faqs: [
+      { q: "क्या एक ही बार में नली पूरी खुल जाती है?", a: "कुछ मामलों में 1-2 बार के डाइलेशन से काम हो जाता है, लेकिन संकुचन (stricture) पुराना होने पर 2-3 सेशन्स की आवश्यकता हो सकती है।" }
+    ],
+    relatedConditions: ["acid-reflux", "abdominal-pain"],
+    relatedBlogs: []
+  },
+  "apc": {
+    slug: "apc",
+    title: "APC (Argon Plasma Coagulation)",
+    hindiTitle: "एपीसी ब्लीडिंग नियंत्रण",
+    metaTitle: "Argon Plasma Coagulation (APC) in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Therapeutic Argon Plasma Coagulation (APC) for GI bleeding, GAVE, and radiation proctitis in Ranchi by Dr. Akhilesh Yadav.",
+    duration: "15 - 25 Mins",
+    sedation: "Sedation",
+    recoveryTime: "Same Day",
+    overview: "Argon Plasma Coagulation (APC) is a non-contact endoscopic thermal therapy that uses ionized argon gas (plasma) to deliver high-frequency electrical current to the tissue. It is highly effective for stopping bleeding from superficial vascular lesions (like gastric antral vascular ectasia or radiation proctitis) and coagulating residual tumor tissue after tumor removal.",
+    whenRequired: [
+      "Radiation proctitis causing rectal bleeding",
+      "GAVE (Gastric Antral Vascular Ectasia) or Watermelon Stomach",
+      "Superficial bleeding vascular malformations (angiodysplasias)"
+    ],
+    preparation: [
+      { step: "Standard Preparation", detail: "Fasting is required. Full bowel prep is needed for colonic/rectal APC." }
+    ],
+    steps: [
+      { phase: "Lesion Localization", desc: "The endoscope is guided to the bleeding zone." },
+      { phase: "Argon Gas Delivery", desc: "The APC probe is held close to the tissue, and argon gas is released." },
+      { phase: "Coagulation", desc: "High-frequency current travels along the gas jet, coagulating the surface and sealing bleeding points." }
+    ],
+    safetySedation: "Safe non-contact technique with shallow depth of burn, minimizing risk of perforation.",
+    benefits: [
+      "Extremely effective for dry, clean coagulation of wide areas",
+      "Does not touch the tissue, reducing risk of scope adherence",
+      "Fast recovery with minimal pain"
+    ],
+    recoveryGuidelines: "Same-day discharge. Mild abdominal bloating from gas may occur but resolves quickly.",
+    doctorAdvice: "APC is like a spray-cautery that seals weeping blood vessels instantly, especially useful for patients suffering from bleeding after radiation therapy.",
+    faqs: [
+      { q: "क्या यह दर्दनाक है?", a: "नहीं। सीडेशन के कारण मरीज को कुछ भी महसूस नहीं होता। आंत में थर्मल बर्निंग का अहसास नहीं होता।" }
+    ],
+    relatedConditions: ["gi-bleeding", "jaundice"],
     relatedBlogs: []
   }
 };

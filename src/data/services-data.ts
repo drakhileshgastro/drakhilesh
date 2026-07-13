@@ -846,6 +846,179 @@ export const ALL_SERVICES: ServiceData[] = [
       },
     ],
   },
+
+  {
+    slug: "peptic-ulcer",
+    title: "Peptic Ulcer Disease",
+    titleHindi: "पेप्टिक अल्सर का इलाज",
+    h1: "Peptic Ulcer Disease Treatment in Ranchi | Dr. Akhilesh Yadav",
+    metaTitle: "Peptic Ulcer Disease Treatment in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Expert peptic ulcer treatment in Ranchi by Dr. Akhilesh Yadav. Stomach ulcers, H. pylori infection, bloating, stomach burning solutions.",
+    targetKeyword: "peptic ulcer treatment Ranchi",
+    emoji: "🩺",
+    color: "teal",
+    introEn: "Peptic ulcer disease involves painful sores or ulcers that develop in the lining of the stomach (gastric ulcers) or the first part of the small intestine (duodenal ulcers). The primary causes are infection with H. pylori bacteria and long-term use of NSAID pain relievers. Dr. Akhilesh Yadav provides comprehensive diagnostic endoscopy, H. pylori eradication therapy, and lifestyle modification counseling to cure peptic ulcers permanently.",
+    introHi: "पेप्टिक अल्सर पेट (gastric) या छोटी आंत के ऊपरी भाग (duodenum) में होने वाले घाव या छाले होते हैं। यह अत्यधिक एसिड, H. pylori बैक्टीरिया के संक्रमण या दर्द निवारक दवाओं (painkillers) के अधिक इस्तेमाल से होता है। डॉ. अखिलेश यादव एंडोस्कोपी द्वारा इसका सटीक निदान और इलाज करते हैं।",
+    symptoms: [
+      "पेट के ऊपरी हिस्से में तेज जलन या दर्द",
+      "भूख न लगना या खाने के बाद दर्द बढ़ना/कम होना",
+      "उल्टी या जी मिचलाना",
+      "काला मल (internal bleeding का संकेत)",
+      "बार-बार गैस बनना और डकार"
+    ],
+    treatments: [
+      "Upper GI Endoscopy to locate and grade the ulcer",
+      "H. pylori bacterial eradication therapy (antivirals/antibiotics)",
+      "Proton Pump Inhibitors (PPIs) to reduce acid production",
+      "Stopping NSAIDs / blood thinners under supervision",
+      "Dietary modifications — avoiding spicy and sour foods"
+    ],
+    whyChoose: [
+      "DM Gastroenterologist with vast clinical experience",
+      "Same-day endoscopy diagnostic reports",
+      "Evidence-based antibiotic plans for H. pylori",
+      "Affordable medicine options for rural patients"
+    ],
+    faqs: [
+      {
+        q: "क्या पेप्टिक अल्सर कैंसर बन सकता है?",
+        a: "पेट के कुछ अल्सर (gastric ulcers) रेयर केसेज में कैंसर बन सकते हैं, इसलिए एंडोस्कोपी द्वारा बायोप्सी लेना जरूरी होता है। आंत के अल्सर (duodenal) कैंसर नहीं बनते।"
+      },
+      {
+        q: "अल्सर ठीक होने में कितना समय लगता है?",
+        a: "दवाओं के नियमित सेवन से अधिकांश पेप्टिक अल्सर 4 से 8 हफ्तों में पूरी तरह ठीक हो जाते हैं।"
+      }
+    ]
+  },
+
+  {
+    slug: "gi-bleeding",
+    title: "Upper GI Tract Bleed",
+    titleHindi: "अपर जीआई ट्रैक्ट ब्लीडिंग",
+    h1: "Emergency Upper GI Tract Bleed Treatment in Ranchi | Dr. Akhilesh Yadav",
+    metaTitle: "Emergency Upper GI Tract Bleed Treatment in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Emergency medical treatment for blood in vomit or black stools (Upper GI Bleed) in Ranchi. Specialist care by Dr. Akhilesh Yadav at Orchid Medical Centre.",
+    targetKeyword: "gi bleeding treatment Ranchi",
+    emoji: "🩸",
+    color: "gold",
+    introEn: "Upper Gastrointestinal (GI) Tract Bleed is a medical emergency originating from the esophagus, stomach, or duodenum. It is commonly triggered by ruptured varices (in liver cirrhosis patients), severe peptic ulcers, or Mallory-Weiss tears. Immediate resuscitation followed by urgent therapeutic endoscopy (banding, clipping, or thermal therapy) is critical to save lives. Dr. Akhilesh Yadav provides emergency round-the-clock endoscopic management for GI bleeding at Orchid Medical Centre, Ranchi.",
+    introHi: "अपर जीआई ब्लीडिंग आहार नली, पेट या छोटी आंत से होने वाला आंतरिक रक्तस्राव है। यह एक गंभीर मेडिकल इमरजेंसी है जो खून की उल्टी (hematemesis) या काले मल (melena) के रूप में दिखती है। डॉ. अखिलेश यादव इसके आपातकालीन एंडोस्कोपिक इलाज (बैंडिंग, इंजेक्शन, क्लिपिंग) में विशेषज्ञ हैं।",
+    symptoms: [
+      "खून की उल्टी आना (चमकीला लाल या कॉफी रंग)",
+      "काले रंग का बदबूदार मल आना (Melena)",
+      "अचानक चक्कर आना या बेहोश होना",
+      "कमजोरी और सांस फूलना"
+    ],
+    treatments: [
+      "Emergency stabilization with IV fluids & blood transfusion",
+      "Urgent therapeutic Upper GI Endoscopy within 12-24 hours",
+      "Variceal Band Ligation (EVL) or glue injection",
+      "Hemoclip application or thermal coagulation on bleeding ulcers",
+      "High-dose PPI infusion to stabilize blood clots"
+    ],
+    whyChoose: [
+      "24/7 emergency response for GI bleeding cases",
+      "Equipped ICU and round-the-clock anesthesia support",
+      "Proven expertise in EVL banding & glue injection",
+      "Immediate diagnosis and treatment in one session"
+    ],
+    faqs: [
+      {
+        q: "काले रंग का मल आना क्यों गंभीर है?",
+        a: "काला और चिपचिपा मल आना यह दर्शाता है कि पेट या आंत के ऊपरी हिस्से में ब्लीडिंग हो रही है। इसे अनदेखा न करें, यह जानलेवा हो सकता है।"
+      },
+      {
+        q: "क्या इलाज के बाद दोबारा ब्लीडिंग हो सकती है?",
+        a: "हाँ, विशेष रूप से लिवर सिरोसिस के मरीजों में। इसलिए डॉक्टर के बताए अनुसार दवाएं (Beta-blockers) और नियमित एंडोस्कोपी फॉलो-अप जरूरी है।"
+      }
+    ]
+  },
+
+  {
+    slug: "h-pylori-dyspepsia",
+    title: "H. pylori Related Dyspepsia",
+    titleHindi: "एच. पायलोरी एसिडिटी और अपच",
+    h1: "H. pylori Dyspepsia Treatment in Ranchi | Dr. Akhilesh Yadav",
+    metaTitle: "H. pylori Dyspepsia Treatment in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Expert diagnosis and treatment for H. pylori related dyspepsia, bloating, and stomach discomfort in Ranchi by Dr. Akhilesh Yadav. Eradication therapy available.",
+    targetKeyword: "h pylori dyspepsia Ranchi",
+    emoji: "🧬",
+    color: "teal",
+    introEn: "Helicobacter pylori (H. pylori) is a spiral-shaped bacterium that infects the stomach lining, causing chronic inflammation, persistent indigestion (dyspepsia), bloating, and acid reflux. If untreated, it can lead to peptic ulcers and increases the risk of stomach cancer. Eradicating the infection with a specific combination of antibiotics and acid suppressants is key to relieving symptoms. Dr. Akhilesh Yadav uses stool antigen tests, breath tests, and endoscopy-guided biopsy for accurate diagnosis and complete treatment.",
+    introHi: "हेलिकोबैक्टर पायलोरी (H. pylori) एक बैक्टीरिया है जो पेट की अंदरूनी परत को संक्रमित कर सूजन (gastritis) और अपच (dyspepsia) पैदा करता है। इससे बार-बार खट्टी डकार, पेट फूलना और गैस की समस्या रहती है। डॉ. अखिलेश यादव यूरिया ब्रीथ टेस्ट या बायोप्सी द्वारा इसका पता लगाकर 14 दिनों का एंटीबायोटिक कोर्स देकर इसे जड़ से खत्म करते हैं।",
+    symptoms: [
+      "पेट के ऊपरी हिस्से में दर्द या बेचैनी",
+      "बार-बार पेट फूलना और गैस बनना (Bloating)",
+      "कम मात्रा में खाने पर भी पेट भरा हुआ महसूस होना",
+      "जी मिचलाना और खट्टी डकारें आना"
+    ],
+    treatments: [
+      "Endoscopy with Rapid Urease Test (RUT) / Biopsy",
+      "Stool Antigen Test or Urea Breath Test (UBT)",
+      "14-day H. pylori eradication therapy (Triple/Quadruple regimen)",
+      "PPIs to lower stomach acid and allow healing",
+      "Follow-up testing to confirm complete eradication"
+    ],
+    whyChoose: [
+      "Expertise in treating drug-resistant H. pylori infections",
+      "Non-invasive breath testing guidance",
+      "Evidence-based medical prescriptions",
+      "Desi diet chart to manage gastritis symptoms"
+    ],
+    faqs: [
+      {
+        q: "H. pylori का संक्रमण कैसे फैलता है?",
+        a: "यह दूषित पानी, भोजन या संक्रमित व्यक्ति के लार के संपर्क में आने से फैलता है। स्वच्छता बनाए रखना इसका सबसे बड़ा बचाव है।"
+      },
+      {
+        q: "एंटीबायोटिक कोर्स बीच में छोड़ने पर क्या होता है?",
+        a: "कोर्स अधूरा छोड़ने से बैक्टीरिया में ड्रग रेजिस्टेंस विकसित हो जाता है, जिससे दोबारा इलाज करना बहुत कठिन हो जाता है। पूरा 14 दिन का कोर्स करना अनिवार्य है।"
+      }
+    ]
+  },
+
+  {
+    slug: "weight-loss",
+    title: "Unexplained Weight Loss",
+    titleHindi: "वजन कम होना",
+    h1: "Unexplained Weight Loss Investigation in Ranchi | Dr. Akhilesh Yadav",
+    metaTitle: "Unexplained Weight Loss Investigation Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Thorough diagnostic investigation for sudden weight loss, loss of appetite in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre.",
+    targetKeyword: "weight loss specialist Ranchi",
+    emoji: "⚖️",
+    color: "gold",
+    introEn: "Sudden or unexplained weight loss, especially when accompanied by a loss of appetite, is a critical clinical symptom that requires deep investigation. It can be a sign of underlying gastrointestinal malabsorption, chronic inflammation, peptic ulcers, thyroid issues, or early-stage malignancy. Dr. Akhilesh Yadav performs a systematic clinical workup including screening blood panels, ultrasound scans, and endoscopies to pinpoint the biological cause and start target-directed therapy.",
+    introHi: "अचानक या बिना किसी कारण के वजन कम होना एक गंभीर लक्षण है जिसकी तुरंत जांच होनी चाहिए। यह पेट या लिवर की बीमारी, खाना ठीक से न पचना, या आंत में सूजन/अल्सर का संकेत हो सकता है। डॉ. अखिलेश यादव इसके सटीक कारणों की जांच कर सही परामर्श देते हैं।",
+    symptoms: [
+      "बिना किसी डाइटिंग के वजन में तेजी से कमी",
+      "भूख न लगना या खाने की इच्छा न होना",
+      "कमजोरी और निरंतर थकान",
+      "पेट में लगातार भारीपन या हल्का दर्द"
+    ],
+    treatments: [
+      "Detailed metabolic & thyroid blood profiling",
+      "Stool analysis for malabsorption or infection markers",
+      "Abdomen Ultrasound & CT screening as indicated",
+      "Diagnostic Endoscopy / Colonoscopy to rule out mucosal lesions",
+      "Dietary enhancements and high-calorie nutritional plan"
+    ],
+    whyChoose: [
+      "Rigorous, diagnostic approach rather than guessing",
+      "In-house advanced lab & radiology scan access",
+      "Expertise in dealing with malabsorption & IBD",
+      "Dedicated focus on restoring digestive health"
+    ],
+    faqs: [
+      {
+        q: "वजन कम होने पर डॉक्टर से कब मिलना चाहिए?",
+        a: "यदि पिछले 6 महीनों में बिना किसी कारण के आपके वजन में 5% से अधिक की गिरावट आई है, तो तुरंत डॉक्टर से संपर्क करें।"
+      },
+      {
+        q: "क्या यह कैंसर का संकेत हो सकता है?",
+        a: "यह कैंसर का संकेत हो सकता है, लेकिन इसके अन्य कई सामान्य और इलाज योग्य कारण भी होते हैं जैसे थायराइड, पेट के कीड़े, या मालएब्जॉर्प्शन। बिना घबराए जांच करवाएं।"
+      }
+    ]
+  }
 ];
 
 export function getServiceBySlug(slug: string): ServiceData | undefined {
