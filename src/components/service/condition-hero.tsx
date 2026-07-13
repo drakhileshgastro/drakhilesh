@@ -5,6 +5,8 @@ import { DOCTOR } from "@/lib/constants";
 
 interface ConditionHeroProps {
   title: string;
+  h1?: string;
+  slug?: string;
   hindiTitle: string;
   metaDescription: string;
   whyChoose: string[];
@@ -12,6 +14,8 @@ interface ConditionHeroProps {
 
 export default function ConditionHero({
   title,
+  h1,
+  slug,
   hindiTitle,
   metaDescription,
   whyChoose,
@@ -19,6 +23,18 @@ export default function ConditionHero({
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(
     `Namaskar, mujhe ${title} ke baare me Dr. Akhilesh Yadav se consult karna hai.`
   )}`;
+
+  // Dynamic organ icon mapping based on slug
+  let organIcon = "/images/stomach-icon.png";
+  if (slug) {
+    const liverSlugs = ["fatty-liver", "jaundice", "liver-cirrhosis", "hepatitis", "liver-transplant"];
+    const pancreasSlugs = ["pancreatitis"];
+    if (liverSlugs.includes(slug)) {
+      organIcon = "/images/liver-icon.png";
+    } else if (pancreasSlugs.includes(slug)) {
+      organIcon = "/images/pancreas-icon.png";
+    }
+  }
 
   return (
     <section className="bg-bg-sand/30 pt-12 pb-16 lg:py-20 border-b border-border/40 relative overflow-hidden">
@@ -42,16 +58,22 @@ export default function ConditionHero({
           {/* Left Block — Title & Trust Metrics */}
           <div className="lg:col-span-7 space-y-6">
             
-            <div className="inline-flex items-center gap-2 bg-primary-50 border border-primary/20 px-3 py-1 rounded-full text-primary font-display text-[10px] font-bold uppercase tracking-wider">
-              Clinical Specialization
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 bg-white border border-border/60 rounded-2xl p-2 flex items-center justify-center shadow-2xs">
+                <img src={organIcon} alt={title} className="w-full h-full object-contain" />
+              </div>
+              <div className="space-y-1">
+                <div className="inline-flex items-center gap-2 bg-primary-50 border border-primary/20 px-3 py-1 rounded-full text-primary font-display text-[10px] font-bold uppercase tracking-wider">
+                  Clinical Specialization
+                </div>
+                <h1 className="font-hindi text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-forest leading-tight">
+                  {h1 || title}
+                  <span className="text-primary font-hindi text-xl sm:text-2xl lg:text-[2rem] font-semibold block mt-1">
+                    {hindiTitle}
+                  </span>
+                </h1>
+              </div>
             </div>
-
-            <h1 className="font-hindi text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-forest leading-tight">
-              {title}
-              <span className="text-primary font-hindi text-2xl sm:text-3xl lg:text-[2.25rem] font-semibold block mt-1.5">
-                {hindiTitle}
-              </span>
-            </h1>
 
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl">
               {metaDescription}

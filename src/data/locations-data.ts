@@ -30,7 +30,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive via NH-2 towards Bokaro, then NH-23 to Ranchi (approx 160 km, 2.5 hours driving time).",
     trainInstructions: "Ranchi Shatabdi Express departs Dhanbad Junction at 17:50 and reaches Ranchi in 3 hours.",
     metaTitle: "Best Gastroenterologist in Dhanbad | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Specialist stomach, liver & digestive care for Dhanbad patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology. 2.5 hrs travel via NH-2 to Ranchi. Book priority OPD slot.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Dhanbad, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "धनबाद के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "2.5 Hours travel via NH-2 with priority clinic appointments",
@@ -59,7 +59,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Take the direct NH-33 Expressway South via Ormanjhi straight to Plaza Chowk, Ranchi.",
     trainInstructions: "Direct daily train services available from Hazaribagh Town Railway Station to Ranchi Junction.",
     metaTitle: "Best Gastroenterologist in Hazaribagh | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Expert stomach, liver & digestive care for Hazaribagh patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology. 1.75 hrs travel via NH-33. Book OPD slot.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Hazaribagh, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "हज़ारीबाग़ के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Quick 1.75 Hours travel via the NH-33 direct corridor",
@@ -88,7 +88,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive via NH-100 to Hazaribagh, then connect to the NH-33 Expressway heading South to Ranchi.",
     trainInstructions: "Giridih to Ranchi Junction trains or direct luxury sleeper buses departing daily.",
     metaTitle: "Best Gastroenterologist in Giridih | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Specialist stomach, liver & digestive care for Giridih patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology. Travel via Hazaribagh to Ranchi.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Giridih, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "गिरिडीह के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Trusted clinical diagnostics for complex hepatobiliary issues",
@@ -113,7 +113,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive East via Daltonganj on NH-39 through Latehar directly to Ranchi.",
     trainInstructions: "Multiple express trains pass through Daltonganj Railway Station connecting directly to Ranchi.",
     metaTitle: "Best Gastroenterologist in Palamu (Daltonganj) | Dr. Akhilesh Yadav",
-    metaDescription: "Expert digestive, liver & stomach specialist care for Palamu patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology at Ranchi.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Palamu, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "पलामू के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Direct NH-39 highway connectivity to Ranchi",
@@ -138,7 +138,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive via Bokaro-Ranchi Highway / NH-23 through Ramgarh to Ranchi.",
     trainInstructions: "Direct express trains like Shatabdi and Maurya Express run daily from Bokaro Steel City to Ranchi.",
     metaTitle: "Best Gastroenterologist in Bokaro | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Specialist stomach, liver & digestive care for Bokaro patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology. 2 hrs drive via NH-23.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Bokaro, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "बोकारो के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Quick 2 Hours travel via the Ramgarh route",
@@ -163,7 +163,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive North-West via NH-43 Tata-Ranchi Highway through Chandil and Bundu straight to Ranchi.",
     trainInstructions: "Multiple daily trains connect Tatanagar Junction to Ranchi Junction in approximately 3 hours.",
     metaTitle: "Best Gastroenterologist in Jamshedpur (Tatanagar) | Dr. Akhilesh Yadav",
-    metaDescription: "Expert liver, stomach & clinical endoscopy care for Jamshedpur patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology at Ranchi.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Jamshedpur, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "जमशेदपुर के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Double-lane highway connectivity via Chandil corridor",
@@ -188,7 +188,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive via NH-114A to Dumka/Giridih, and follow the highway route via Madhupur/Jamtara to Ranchi.",
     trainInstructions: "Regular express trains run daily from Deoghar Jasidih Junction directly to Ranchi Junction.",
     metaTitle: "Best Gastroenterologist in Deoghar | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Specialist stomach, liver & digestive care for Deoghar patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology at Ranchi.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Deoghar, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "देवघर के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Clinical treatments for hepatitis, liver cirrhosis & jaundice",
@@ -213,7 +213,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive North via NH-20 through Chakradharpur and Khunti straight to Ranchi.",
     trainInstructions: "Regular train connectivity via Chakradharpur Railway Station to Ranchi.",
     metaTitle: "Best Gastroenterologist in Chaibasa | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Expert stomach, liver & digestive care for Chaibasa patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology at Ranchi.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Chaibasa, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "चाईबासा के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Direct NH-20 road connection through Khunti district",
@@ -238,7 +238,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive North directly via the Khunti-Ranchi Road (NH-20) straight to Ranchi.",
     trainInstructions: "Khunti has direct local bus routes running every 15 minutes to Ranchi.",
     metaTitle: "Best Gastroenterologist in Khunti | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Specialist stomach, liver & digestive care for Khunti patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology in Ranchi (45 mins away).",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Khunti, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "खूंटी के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Ultra-convenient 45-minute drive via NH-20",
@@ -263,7 +263,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive East via the Lohardaga-Ranchi Road / Kanke Road directly into Ranchi.",
     trainInstructions: "Daily local passenger trains run between Lohardaga Railway Station and Ranchi Junction.",
     metaTitle: "Best Gastroenterologist in Lohardaga | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Expert stomach, liver & digestive care for Lohardaga patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology. 1.5 hrs away.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Lohardaga, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "लोहरदगा के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Short 1.5 hours travel via Lohardaga road link",
@@ -288,7 +288,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive North via NH-143 through Gumla, and follow NH-23 straight to Ranchi.",
     trainInstructions: "Direct luxury local bus lines operate from Simdega bus stand to Ranchi daily.",
     metaTitle: "Best Gastroenterologist in Simdega | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Specialist stomach, liver & digestive care for Simdega patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology in Ranchi.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Simdega, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "सिमडेगा के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Complete clinical treatment for jaundice, liver cirrhosis & bleeding",
@@ -313,7 +313,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     roadInstructions: "Drive South via NH-33 Expressway through the scenic Ramgarh valley straight into Ranchi.",
     trainInstructions: "Daily local buses and trains connect Ramgarh Cantt to Ranchi Junction.",
     metaTitle: "Best Gastroenterologist in Ramgarh | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Expert stomach, liver & digestive care for Ramgarh patients. Consult Dr. Akhilesh Yadav, DM Gastroenterology. 50 mins away via NH-33.",
+    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Ramgarh, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
     h1: "रामगढ़ के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
     whyChoose: [
       "Extremely close location — only 50 minutes away",

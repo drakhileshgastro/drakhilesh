@@ -19,7 +19,7 @@ function getTemplateData(slug: string, title: string, hindiTitle: string): Sympt
     title,
     hindiTitle,
     metaTitle: `${title} Symptoms & Treatment in Ranchi | Dr. Akhilesh Yadav`,
-    metaDescription: `Experiencing ${title} in Ranchi? Read expert advice from Dr. Akhilesh Yadav, Senior Gastroenterologist, to understand common triggers and when to seek care.`,
+    metaDescription: `Experiencing ${title} symptoms in Ranchi? Read expert diagnostic and treatment advice from senior gastroenterologist Dr. Akhilesh Yadav.`,
     simpleExplanation: `This page is designed to educate you on the common causes and triggers of ${title}. It does not diagnose any disease. If you are experiencing persistent or severe pain, please schedule a clinical consultation.`,
     quickSummary: `A detailed breakdown of how lifestyle factors, dietary choices, and underlying digestive tract conditions can manifest as ${title}, and how to differentiate daily discomfort from serious issues.`,
     doctorReassurance: `Most symptoms are temporary and respond well to simple dietary corrections or targeted medical therapy. However, checking with a specialist early prevents complications and ensures peace of mind.`,

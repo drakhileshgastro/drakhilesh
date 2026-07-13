@@ -128,6 +128,17 @@ export default function LocationClient({ location }: LocationClientProps) {
                   alt="Dr. Akhilesh Yadav"
                   className="w-full h-full object-cover object-top"
                 />
+                
+                {/* Outstation Reassurance Badge */}
+                <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xs border border-border/50 rounded-2xl px-4 py-2.5 shadow-md flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-primary-50 flex items-center justify-center flex-shrink-0">
+                    <Navigation className="text-primary" size={16} />
+                  </div>
+                  <div>
+                    <div className="text-[10px] text-muted font-sans font-bold uppercase tracking-wider">Outstation Assistance</div>
+                    <div className="text-forest font-sans font-bold text-xs">Direct Connect &amp; Transit Priority</div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -235,6 +246,96 @@ export default function LocationClient({ location }: LocationClientProps) {
                       </Link>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Clinical Guides & Services Directory Grid */}
+              <div className="space-y-6 pt-10 border-t border-border/40 font-sans">
+                <div>
+                  <h3 className="text-forest font-sans font-bold text-lg font-hindi">चिकित्सा सेवाएं और स्वास्थ्य मार्गदर्शिका</h3>
+                  <p className="text-muted text-xs sm:text-sm mt-1">
+                    Explore clinical explanations and treatment protocols for common gastrointestinal conditions and diagnostic tests:
+                  </p>
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <Link
+                    href="/conditions/fatty-liver"
+                    className="p-5 bg-white border border-border/80 rounded-2xl hover:border-primary transition-all shadow-3xs group flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <span className="text-lg">🫀</span>
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Fatty Liver Treatment</h4>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">फैटी लिवर का उपचार, डाइट चार्ट और दवाएं</p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="/conditions/liver-cirrhosis"
+                    className="p-5 bg-white border border-border/80 rounded-2xl hover:border-primary transition-all shadow-3xs group flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <span className="text-lg">🏥</span>
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Liver Cirrhosis Care</h4>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">लिवर सिरोसिस का प्रबंधन और जटिलताओं से बचाव</p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="/procedures/endoscopy"
+                    className="p-5 bg-white border border-border/80 rounded-2xl hover:border-primary transition-all shadow-3xs group flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <span className="text-lg">🩺</span>
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Endoscopy Procedure</h4>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">दर्दरहित एंडोस्कोपी जांच, तैयारी और प्रक्रिया</p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="/procedures/colonoscopy"
+                    className="p-5 bg-white border border-border/80 rounded-2xl hover:border-primary transition-all shadow-3xs group flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <span className="text-lg">🔬</span>
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Colonoscopy Procedure</h4>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">कोलोनोस्कोपी बड़ी आंत की जांच और कैंसर स्क्रीनिंग</p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="/symptoms"
+                    className="p-5 bg-white border border-border/80 rounded-2xl hover:border-primary transition-all shadow-3xs group flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <span className="text-lg">⚠️</span>
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Symptoms Directory</h4>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">पेट दर्द, गैस, कब्ज, ब्लीडिंग आदि लक्षणों की जानकारी</p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="/blog"
+                    className="p-5 bg-white border border-border/80 rounded-2xl hover:border-primary transition-all shadow-3xs group flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <span className="text-lg">📚</span>
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Health Blog (Hindi)</h4>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">लिवर और पाचन स्वास्थ्य पर उपयोगी लेख</p>
+                    </div>
+                  </Link>
                 </div>
               </div>
 

@@ -80,6 +80,8 @@ export default async function ServicePage({ params }: Props) {
       <article className="min-h-screen pb-16 sm:pb-0">
         <ConditionHero
           title={service.title}
+          h1={service.h1}
+          slug={service.slug}
           hindiTitle={service.titleHindi}
           metaDescription={service.metaDescription}
           whyChoose={[...service.whyChoose]}

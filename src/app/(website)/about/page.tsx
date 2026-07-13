@@ -10,8 +10,8 @@ import StickyCTA from "@/components/service/sticky-cta";
 import SymptomFAQSection from "@/components/symptom/symptom-faq"; // Reuse accordion component
 
 export const metadata: Metadata = {
-  title: "About Dr. Akhilesh Yadav | DM Gastroenterologist & Hepatologist Ranchi",
-  description: "Learn about Dr. Akhilesh Yadav, DM Gastroenterology, Ranchi's leading liver specialist and endoscopist. Profile, credentials, clinical experience & patient principles.",
+  title: "About Dr Akhilesh Yadav | Gastroenterologist in Ranchi",
+  description: "Read about Dr Akhilesh Yadav, senior gastroenterologist in Ranchi. Learn about his clinical qualifications (DM Gastroenterology), experience, and patient care philosophy.",
   alternates: { canonical: "https://drakhileshgastro.com/about" },
 };
 
@@ -400,11 +400,11 @@ export default function AboutPage() {
             <div className="bg-bg-sand/30 border border-border rounded-3xl p-8 lg:p-12 shadow-sm grid md:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               <div className="md:col-span-5 w-full">
-                <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-xs max-w-xs mx-auto">
+                <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-xs max-w-xs mx-auto border border-border/20">
                   <img
-                    src="/dr-akhilesh-improved.png"
-                    alt="Dr. Akhilesh Yadav"
-                    className="w-full h-full object-cover object-top"
+                    src="/images/procedure-room.png"
+                    alt="Orchid Medical Centre Procedure Room"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>

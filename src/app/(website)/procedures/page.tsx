@@ -6,8 +6,8 @@ import { DOCTOR } from "@/lib/constants";
 import StickyCTA from "@/components/service/sticky-cta";
 
 export const metadata: Metadata = {
-  title: "Advanced Endoscopy & Diagnostic Procedures | Ranchi",
-  description: "Learn about Upper GI Endoscopy, Colonoscopy, ERCP, EUS, and Enteroscopy procedures performed under light sedation by Dr. Akhilesh Yadav, Ranchi.",
+  title: "Endoscopy Procedures in Ranchi | Dr. Akhilesh Yadav",
+  description: "Learn about advanced endoscopy procedures in Ranchi under light sedation by Dr. Akhilesh Yadav. OGD Endoscopy, Colonoscopy, ERCP, and EUS guidelines.",
   alternates: { canonical: "https://drakhileshgastro.com/procedures" },
 };
 

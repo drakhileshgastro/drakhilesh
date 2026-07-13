@@ -6,8 +6,8 @@ import { DOCTOR } from "@/lib/constants";
 import StickyCTA from "@/components/service/sticky-cta";
 
 export const metadata: Metadata = {
-  title: "Health Library & Gastroenterology Articles | Ranchi",
-  description: "Hindi health articles on liver diseases, fatty liver, jaundice, endoscopy, IBS, and digestive wellness. Researched by the medical team of Dr. Akhilesh Yadav.",
+  title: "Gastroenterology Blog Ranchi | Liver & Stomach Health",
+  description: "Explore our gastroenterology blog in Ranchi for evidence-based articles in Hindi on fatty liver, jaundice, endoscopy, and digestive wellness.",
   alternates: { canonical: "https://drakhileshgastro.com/blog" },
 };
 

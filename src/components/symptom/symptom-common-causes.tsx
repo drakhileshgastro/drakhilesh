@@ -38,7 +38,7 @@ export default function SymptomCommonCauses({
             <div className="space-y-4">
               {causesLifestyle.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <span className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center text-[10px] font-sans font-bold text-primary flex-shrink-0 mt-0.5">
+                  <span className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center text-xs font-sans font-bold text-primary flex-shrink-0 mt-0.5">
                     {idx + 1}
                   </span>
                   <p className="font-sans text-muted text-sm sm:text-base leading-relaxed">{item}</p>
@@ -56,7 +56,7 @@ export default function SymptomCommonCauses({
             <div className="space-y-4">
               {causesMedical.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <span className="w-5 h-5 rounded-full bg-accent/15 flex items-center justify-center text-[10px] font-sans font-bold text-accent-dark flex-shrink-0 mt-0.5">
+                  <span className="w-5 h-5 rounded-full bg-accent/15 flex items-center justify-center text-xs font-sans font-bold text-accent-dark flex-shrink-0 mt-0.5">
                     {idx + 1}
                   </span>
                   <p className="font-sans text-muted text-sm sm:text-base leading-relaxed">{item}</p>

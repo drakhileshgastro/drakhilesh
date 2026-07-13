@@ -4,18 +4,32 @@ import { DOCTOR } from "@/lib/constants";
 
 interface ProcedureHeroProps {
   title: string;
+  slug?: string;
   hindiTitle: string;
   simpleExplanation: string;
 }
 
 export default function ProcedureHero({
   title,
+  slug,
   hindiTitle,
   simpleExplanation,
 }: ProcedureHeroProps) {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(
     `Namaskar, mujhe ${title} ke baare me jankari chahiye.`
   )}`;
+
+  // Dynamic procedure image selection based on slug
+  let procedureImage = "/dr-akhilesh-improved.png"; // Fallback to doctor's photo
+  if (slug) {
+    if (slug === "endoscopy") {
+      procedureImage = "/images/endoscopy-equipment.png";
+    } else if (slug === "colonoscopy") {
+      procedureImage = "/images/colonoscopy-equipment.png";
+    } else {
+      procedureImage = "/images/procedure-room.png";
+    }
+  }
 
   return (
     <section className="bg-white pt-8 pb-16 lg:py-20">
@@ -74,13 +88,13 @@ export default function ProcedureHero({
             </div>
           </div>
 
-          {/* Right Block — Doctor photograph */}
+          {/* Right Block — Procedure / Doctor photograph */}
           <div className="lg:col-span-5 w-full">
-            <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
+            <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto border border-border/20">
               <img
-                src="/dr-akhilesh-improved.png"
-                alt="Dr. Akhilesh Yadav"
-                className="w-full h-full object-cover object-top"
+                src={procedureImage}
+                alt={title}
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>

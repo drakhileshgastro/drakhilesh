@@ -6,8 +6,8 @@ import { DOCTOR } from "@/lib/constants";
 import StickyCTA from "@/components/service/sticky-cta";
 
 export const metadata: Metadata = {
-  title: "Liver, Stomach & Digestive Conditions Treated | Ranchi",
-  description: "Complete clinical treatment for 15+ conditions including Fatty Liver, Jaundice, Liver Cirrhosis, GERD, Acidity, Peptic Ulcer, and IBS by Dr. Akhilesh Yadav, Ranchi.",
+  title: "Gastroenterology Conditions Treated in Ranchi | Dr. Akhilesh",
+  description: "Complete guide to gastroenterology conditions treated in Ranchi by Dr. Akhilesh Yadav. Treatment for fatty liver, liver cirrhosis, IBS, GERD, and gallstones.",
   alternates: { canonical: "https://drakhileshgastro.com/conditions" },
 };
 

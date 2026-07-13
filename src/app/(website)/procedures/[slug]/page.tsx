@@ -82,6 +82,7 @@ export default async function ProcedurePage({ params }: Props) {
         {/* Section 1: Hero */}
         <ProcedureHero
           title={procedure.title}
+          slug={procedure.slug}
           hindiTitle={procedure.hindiTitle}
           simpleExplanation={procedure.simpleExplanation}
         />
