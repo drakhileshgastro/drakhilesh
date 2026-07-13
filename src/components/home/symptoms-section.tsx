@@ -168,12 +168,24 @@ export default function SymptomsSection() {
         {/* Symptom Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {SYMPTOMS_LIST.map((symptom) => {
+            const isCommon = ["stomach-pain", "gas-bloating", "acidity"].includes(symptom.slug);
             return (
               <Link
                 key={symptom.slug}
                 href={`/symptoms/${symptom.slug}`}
-                className="group rounded-2xl p-6 text-center transition-all duration-200 flex flex-col items-center justify-between cursor-pointer border min-h-[190px] bg-white border-border hover:border-primary hover:shadow-sm"
+                className={cn(
+                  "group rounded-2xl p-6 text-center transition-all duration-200 flex flex-col items-center justify-between cursor-pointer border min-h-[190px] relative bg-white",
+                  isCommon 
+                    ? "border-primary/30 hover:border-primary hover:shadow-md bg-primary-50/5" 
+                    : "border-border hover:border-primary hover:shadow-md"
+                )}
               >
+                {isCommon && (
+                  <span className="absolute top-2.5 right-2.5 bg-accent/10 text-accent font-sans text-[8px] font-extrabold uppercase px-2 py-0.5 rounded-md tracking-wider flex items-center gap-0.5">
+                    🔥 Most Common
+                  </span>
+                )}
+
                 {/* SVG Illustration wrapper */}
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl border border-border/50 bg-bg-sand/20 mb-5 transition-all duration-200 group-hover:border-primary group-hover:bg-white shadow-2xs">
                   {getSymptomIcon(symptom.slug)}
@@ -192,30 +204,17 @@ export default function SymptomsSection() {
           })}
         </div>
 
-        {/* View all */}
-        <div className="text-center mt-12">
+        {/* View all and compact reassurance merged */}
+        <div className="text-center mt-12 space-y-4">
           <Link
             href="/symptoms"
-            className="inline-flex items-center gap-2 px-6 py-3 text-primary hover:text-primary-dark font-display font-bold text-sm transition-all hover:gap-3 cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-white hover:bg-primary-dark font-display font-bold text-sm rounded-xl transition-all hover:shadow-md shadow-xs cursor-pointer"
           >
             सभी लक्षण देखें — View All Symptoms <ArrowRight size={16} />
           </Link>
-        </div>
-
-        {/* Reassurance strip */}
-        <div className="mt-16 bg-bg-sand/30 border border-border rounded-3xl p-8 text-center max-w-2xl mx-auto shadow-xs">
-          <p className="font-hindi text-forest text-base font-semibold mb-2">
-            अगर आपको अपनी समस्या नहीं मिली, तो भी घबराएं नहीं।
+          <p className="font-sans text-muted text-xs max-w-lg mx-auto leading-relaxed font-medium">
+            Not sure what's wrong? Dr. Akhilesh Yadav will diagnose your problem in the first consultation and guide you with expert care.
           </p>
-          <p className="font-sans text-muted text-sm leading-relaxed mb-6">
-            Not sure what's wrong? Dr. Akhilesh Yadav will diagnose your problem in the first consultation and guide you with care.
-          </p>
-          <Link
-            href="/book"
-            className="inline-flex items-center justify-center px-6 py-3.5 bg-primary text-white font-display font-semibold text-sm rounded-xl hover:bg-primary-dark transition-colors shadow-xs min-h-[48px]"
-          >
-            Book Consultation
-          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/home/hero-section";
+import PatientsAsk from "@/components/home/patients-ask";
 import SymptomsSection from "@/components/home/symptoms-section";
 import MeetDoctorSection from "@/components/home/meet-doctor";
 import PatientJourney from "@/components/home/patient-journey";
@@ -40,6 +41,8 @@ export default function HomePage() {
     <>
       {/* S2 — Hero */}
       <HeroSection />
+      {/* S2.5 — Patients Often Ask */}
+      <PatientsAsk />
       {/* S3 — Symptoms */}
       <SymptomsSection />
       {/* S4 — Meet Doctor */}

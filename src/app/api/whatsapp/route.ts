@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { DOCTOR } from "@/lib/constants";
+import { requireInternalRequest } from "@/lib/auth";
 
 const WA_TOKEN = process.env.WHATSAPP_ACCESS_TOKEN;
 const WA_PHONE_ID = process.env.WHATSAPP_PHONE_NUMBER_ID;
@@ -123,6 +124,9 @@ async function sendToOne(phone: string, message: string): Promise<boolean> {
 
 export async function POST(req: NextRequest) {
   try {
+    const unauthorized = requireInternalRequest(req);
+    if (unauthorized) return unauthorized;
+
     const body = (await req.json()) as SendWhatsAppParams;
 
     if (!WA_TOKEN || !WA_PHONE_ID) {

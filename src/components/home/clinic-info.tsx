@@ -19,7 +19,7 @@ export default function ClinicInfo() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent("Namaskar, mujhe clinic directions chahiye")}`;
 
   return (
-    <section className="bg-bg-sand py-20 lg:py-24 border-t border-border/40">
+    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -66,11 +66,11 @@ export default function ClinicInfo() {
           <div className="lg:col-span-6 space-y-6">
             
             {/* Unified Clinic Details Card */}
-            <div className="bg-white border border-border/80 rounded-3xl p-6 lg:p-8 shadow-xs space-y-6">
+            <div className="bg-white border border-border rounded-3xl p-6 lg:p-8 shadow-xs space-y-6">
               
               {/* Address Section */}
               <div className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary-50/80 flex items-center justify-center flex-shrink-0 mt-0.5 border border-primary/10">
                   <MapPin className="text-primary" size={18} />
                 </div>
                 <div className="space-y-1">
@@ -92,7 +92,7 @@ export default function ClinicInfo() {
 
               {/* Timings Section */}
               <div className="flex gap-4 items-start border-t border-border/40 pt-6">
-                <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary-50/80 flex items-center justify-center flex-shrink-0 mt-0.5 border border-primary/10">
                   <Clock className="text-primary" size={18} />
                 </div>
                 <div className="flex-1 space-y-3">
@@ -115,7 +115,7 @@ export default function ClinicInfo() {
 
               {/* Contact/Phone Section */}
               <div className="flex gap-4 items-start border-t border-border/40 pt-6">
-                <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary-50/80 flex items-center justify-center flex-shrink-0 mt-0.5 border border-primary/10">
                   <Phone className="text-primary" size={18} />
                 </div>
                 <div className="space-y-1">
@@ -130,22 +130,22 @@ export default function ClinicInfo() {
                 </div>
               </div>
 
-            </div>
-
-            {/* Accessibility & Facilities Block */}
-            <div className="space-y-3">
-              <span className="text-[10px] text-forest uppercase font-bold tracking-wider font-sans block">Accessibility &amp; Facilities</span>
-              <div className="grid grid-cols-2 gap-3">
-                {accessibilityDetails.map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={idx} className="flex items-center gap-2.5 px-4 py-3 bg-white border border-border/60 rounded-2xl text-xs text-forest font-semibold shadow-2xs">
-                      <Icon className="text-primary" size={14} />
-                      <span className="font-sans">{item.label}</span>
-                    </div>
-                  );
-                })}
+              {/* Accessibility & Facilities Block (Embedded for prominence) */}
+              <div className="border-t border-border/40 pt-6 space-y-3">
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider font-sans block">Accessibility &amp; Facilities</span>
+                <div className="grid grid-cols-2 gap-3">
+                  {accessibilityDetails.map((item, idx) => {
+                    const Icon = item.icon;
+                    return (
+                      <div key={idx} className="flex items-center gap-2.5 px-3 py-2 bg-bg-sand/30 border border-border/30 rounded-xl text-xs text-forest font-semibold">
+                        <Icon className="text-primary" size={13} />
+                        <span className="font-sans text-[11px]">{item.label}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
+
             </div>
 
             {/* Timings Actions */}

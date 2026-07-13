@@ -57,7 +57,7 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
+    <section className="bg-bg-sand/30 py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -65,7 +65,7 @@ export default function FAQSection() {
           <div className="text-primary font-display text-xs font-bold tracking-wider uppercase mb-3">
             Frequently Asked Questions
           </div>
-          <h2 className="font-hindi text-[2rem] sm:text-[2.25rem] lg:text-[2.5rem] font-bold text-forest mb-4 leading-tight">
+          <h2 className="font-hindi text-[2.25rem] sm:text-[2.5rem] lg:text-[2.75rem] font-bold text-forest mb-4 leading-tight">
             अक्सर पूछे जाने वाले सवाल
           </h2>
           <p className="font-sans text-muted text-base leading-relaxed">
@@ -79,31 +79,40 @@ export default function FAQSection() {
             <div
               key={i}
               className={cn(
-                "bg-white border rounded-2xl overflow-hidden transition-all duration-200 shadow-sm",
-                open === i ? "border-primary" : "border-border hover:border-primary-light"
+                "bg-white border rounded-2.5xl overflow-hidden transition-all duration-350 shadow-sm",
+                open === i ? "border-primary ring-1 ring-primary/20" : "border-border hover:border-primary-light"
               )}
             >
               <button
-                className="w-full flex items-start justify-between gap-4 px-6 py-5 text-left cursor-pointer"
+                className="w-full flex items-start justify-between gap-4 px-6 py-5.5 text-left cursor-pointer"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className="font-hindi text-forest font-bold text-lg sm:text-xl leading-snug flex-1">
+                <span className="font-hindi text-forest font-bold text-[19px] sm:text-[21px] leading-snug flex-1">
                   {faq.q}
                 </span>
                 <ChevronDown
-                  size={20}
+                  size={22}
                   className={cn(
-                    "text-muted flex-shrink-0 mt-1 transition-transform duration-200",
+                    "text-muted flex-shrink-0 mt-1 transition-transform duration-300",
                     open === i ? "rotate-180 text-primary" : ""
                   )}
                 />
               </button>
-              {open === i && (
-                <div className="px-6 pb-6 pt-3 border-t border-border/40">
-                  <p className="font-hindi text-forest/90 text-base sm:text-lg leading-relaxed mb-3">{faq.a}</p>
-                  <p className="font-sans text-muted text-xs leading-normal">{faq.eng}</p>
+              
+              {/* Smooth Grid-rows height transition */}
+              <div
+                className={cn(
+                  "grid transition-all duration-300 ease-in-out",
+                  open === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                )}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-6 pb-6 pt-3.5 border-t border-border/40 bg-bg-sand/5">
+                    <p className="font-hindi text-forest/95 text-base sm:text-[18px] leading-relaxed mb-3.5">{faq.a}</p>
+                    <p className="font-sans text-muted text-xs sm:text-sm leading-normal font-medium">{faq.eng}</p>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

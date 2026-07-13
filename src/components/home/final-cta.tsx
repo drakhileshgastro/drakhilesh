@@ -8,7 +8,7 @@ export default function FinalCTA() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(DOCTOR.whatsappPrefilledMessage)}`;
 
   return (
-    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
+    <section className="bg-bg-sand/30 py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -22,7 +22,7 @@ export default function FinalCTA() {
               <span className="text-primary">आज ही डॉक्टर से परामर्श लें</span>
             </h2>
             <p className="font-sans text-forest/90 text-base sm:text-lg leading-relaxed mb-6 font-semibold">
-              Don't ignore symptoms that keep returning. Talk to Dr. Akhilesh today.
+              Your digestive health deserves timely care. Schedule a consultation with Dr. Akhilesh Yadav today.
             </p>
             <p className="font-hindi text-muted text-sm mb-8 leading-relaxed">
               देर न करें — पेट और लीवर की गंभीर बीमारियों से बचने के लिए समय पर सुपर-स्पेशलिस्ट डॉक्टर का परामर्श आवश्यक है।

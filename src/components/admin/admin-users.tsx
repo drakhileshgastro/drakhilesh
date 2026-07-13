@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import { UserPlus, Shield, User, Mail, Eye, EyeOff, CheckCircle, AlertCircle, RefreshCw } from "lucide-react";
 
 interface StaffUser {

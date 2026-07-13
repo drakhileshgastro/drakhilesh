@@ -12,7 +12,7 @@ const credentialsTimeline = [
 
 export default function MeetDoctorSection() {
   return (
-    <section className="bg-white py-20 lg:py-24">
+    <section className="bg-bg-sand/25 py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
@@ -52,14 +52,15 @@ export default function MeetDoctorSection() {
               पेट, लीवर और पाचन रोग विशेषज्ञ (DM Gastroenterology)
             </p>
 
-            {/* Empathy-focused Doctor Story */}
-            <div className="prose text-muted font-sans text-base leading-relaxed mb-6 space-y-4">
-              <p>
-                Many patients come to see me after months of ignoring persistent digestive symptoms, often due to anxiety or confusion. 
-                I believe that patients deserve clear explanations, ample consultation time, and treatments they fully understand. 
-                My focus is always on delivering empathetic care that respects your comfort.
+            {/* Empathy-focused Doctor Story with personal quote box */}
+            <div className="prose text-muted font-sans text-base leading-relaxed mb-6 space-y-4 bg-white border-l-4 border-primary p-6 rounded-r-2xl shadow-2xs">
+              <h3 className="text-forest font-sans font-bold text-sm uppercase tracking-wider mb-2">
+                Why I Became a Gastroenterologist
+              </h3>
+              <p className="italic text-forest/90 font-medium">
+                "Many patients reach me after suffering for months because they assume stomach problems are 'normal.' My goal is to diagnose the root cause early and explain treatment in language every patient understands."
               </p>
-              <p className="font-hindi text-forest font-semibold leading-relaxed">
+              <p className="font-hindi text-forest font-semibold leading-relaxed pt-3 border-t border-border/40">
                 "मेरा उद्देश्य केवल बीमारी का इलाज करना नहीं है। मैं चाहता हूँ कि हर मरीज अपनी बीमारी को समझे, सही सलाह पाए, और बिना किसी संकोच के — अपनी भाषा में — इलाज कराए।"
               </p>
             </div>

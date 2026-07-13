@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { DOCTOR } from "@/lib/constants";
+import { requireAdmin } from "@/lib/auth";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 export async function POST(req: NextRequest) {
   try {
+    const auth = await requireAdmin();
+    if (!auth.ok) return auth.response;
+
     const { topic } = await req.json();
 
     if (!topic) return NextResponse.json({ error: "Topic required" }, { status: 400 });
