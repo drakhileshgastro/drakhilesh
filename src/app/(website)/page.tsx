@@ -6,7 +6,6 @@ import PatientJourney from "@/components/home/patient-journey";
 import ConditionsSection from "@/components/home/conditions-section";
 import ProceduresSection from "@/components/home/procedures-section";
 import TrustSection from "@/components/home/trust-section";
-import VideoSection from "@/components/home/video-section";
 import BlogPreview from "@/components/home/blog-preview";
 import FAQSection from "@/components/home/faq-section";
 import ClinicInfo from "@/components/home/clinic-info";
@@ -54,8 +53,6 @@ export default function HomePage() {
       <ProceduresSection />
       {/* S8 — Trust & Reviews */}
       <TrustSection />
-      {/* S9 — Educational Video */}
-      <VideoSection />
       {/* S10 — Blog Preview */}
       <BlogPreview />
       {/* S11 — FAQ */}

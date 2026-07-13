@@ -118,26 +118,7 @@ export default function BlogPreview() {
           ))}
         </div>
 
-        {/* Newsletter / Subscription */}
-        <div className="mt-16 bg-bg-sand border border-border rounded-3xl p-8 lg:p-12 text-center max-w-2xl mx-auto shadow-sm">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border mb-4 bg-white">
-            <Mail className="text-primary" size={20} />
-          </div>
-          <h3 className="font-hindi text-forest text-2xl font-bold mb-3">
-            Health Tips हिंदी में पाएं — WhatsApp पर
-          </h3>
-          <p className="font-sans text-muted text-sm leading-relaxed mb-6 max-w-md mx-auto">
-            Weekly digestive and liver health advice in Hindi, written directly by Dr. Akhilesh Yadav. Free and privacy-focused.
-          </p>
-          <a
-            href={`https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent("Namaskar, mujhe health tips chahiye")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-white font-display font-semibold text-sm rounded-xl hover:bg-primary-dark transition-colors shadow-sm min-h-[48px]"
-          >
-            <MessageCircle size={16} /> Subscribe on WhatsApp
-          </a>
-        </div>
+        {/* Removed Newsletter / Subscription */}
       </div>
     </section>
   );
