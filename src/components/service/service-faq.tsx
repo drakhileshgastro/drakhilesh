@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
 import { cn } from "@/lib/cn";
 import type { ServiceFAQ } from "@/data/services-data";
 
@@ -24,37 +24,73 @@ export default function ServiceFaq({ faqs, serviceName }: ServiceFaqProps) {
   };
 
   return (
-    <section className="section-pad bg-offwhite">
+    <section className="bg-bg-sand/20 py-20 lg:py-24 border-t border-b border-border/40">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8">
-          <p className="text-teal text-xs font-semibold uppercase tracking-widest mb-2">FAQ</p>
-          <h2 className="text-navy text-2xl font-bold">{serviceName} — अक्सर पूछे जाने वाले सवाल</h2>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="text-primary font-display text-xs font-bold tracking-wider uppercase block">
+            FAQ Help Desk
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-forest leading-tight font-hindi mt-2">
+            {serviceName} — अक्सर पूछे जाने वाले सवाल
+          </h2>
+          <p className="font-sans text-muted text-sm sm:text-base mt-2 max-w-lg mx-auto">
+            Find immediate expert answers to common patient concerns regarding clinical symptoms and treatment parameters.
+          </p>
         </div>
-        <div className="space-y-2">
-          {faqs.map((faq, i) => (
-            <div key={i} className="bg-white border border-gray-light rounded-xl overflow-hidden">
-              <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between px-4 py-4 text-left hover:bg-offwhite transition-colors min-h-[56px] touch-manipulation"
+
+        {/* Accordion List */}
+        <div className="space-y-4 max-w-3xl mx-auto">
+          {faqs.map((faq, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div 
+                key={i} 
+                className="bg-white border border-border/60 rounded-2xl overflow-hidden shadow-3xs transition-all hover:border-primary-light"
               >
-                <span className="text-navy font-semibold text-sm pr-4 font-hindi leading-relaxed">{faq.q}</span>
-                <ChevronDown
-                  size={18}
-                  className={cn("text-teal flex-shrink-0 transition-transform duration-200", openIndex === i && "rotate-180")}
-                />
-              </button>
-              {openIndex === i && (
-                <div className="px-4 pb-4">
-                  <p className="text-slate text-sm leading-relaxed font-hindi">{faq.a}</p>
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-bg-sand/10 transition-colors min-h-[56px] cursor-pointer touch-manipulation gap-4"
+                >
+                  <span className="text-forest font-sans font-bold text-sm sm:text-base font-hindi leading-snug flex items-center gap-3">
+                    <HelpCircle className="text-primary flex-shrink-0" size={16} />
+                    <span>{faq.q}</span>
+                  </span>
+                  <ChevronDown
+                    size={16}
+                    className={cn(
+                      "text-primary flex-shrink-0 transition-transform duration-300", 
+                      isOpen && "rotate-180"
+                    )}
+                  />
+                </button>
+                
+                {/* Accordion panel with smooth spacing */}
+                <div 
+                  className={cn(
+                    "grid transition-all duration-300 ease-in-out",
+                    isOpen ? "grid-rows-[1fr] opacity-100 border-t border-border/40" : "grid-rows-[0fr] opacity-0"
+                  )}
+                >
+                  <div className="overflow-hidden">
+                    <div className="px-6 py-5 bg-bg-sand/10">
+                      <p className="text-muted text-sm sm:text-base leading-relaxed font-hindi">
+                        {faq.a}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              )}
-            </div>
-          ))}
+
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );

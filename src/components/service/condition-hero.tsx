@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CheckCircle2, Phone, MessageCircle, Award, ShieldCheck } from "lucide-react";
+import { Phone, MessageCircle, Star, ShieldCheck, Clock, Award } from "lucide-react";
 import BookingForm from "./booking-form";
 import { DOCTOR } from "@/lib/constants";
 
@@ -17,12 +17,16 @@ export default function ConditionHero({
   whyChoose,
 }: ConditionHeroProps) {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(
-    `Namaskar, mujhe ${title} ke baare me jankari chahiye.`
+    `Namaskar, mujhe ${title} ke baare me Dr. Akhilesh Yadav se consult karna hai.`
   )}`;
 
   return (
-    <section className="bg-white pt-8 pb-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="bg-bg-sand/30 pt-12 pb-16 lg:py-20 border-b border-border/40 relative overflow-hidden">
+      
+      {/* Decorative background shape */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/3 -translate-y-1/3 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-xs text-muted mb-8 font-sans">
@@ -33,17 +37,18 @@ export default function ConditionHero({
           <span className="text-primary font-semibold">{title}</span>
         </nav>
 
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Block — Title & Trust Badges */}
+          {/* Left Block — Title & Trust Metrics */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 bg-primary-light border border-border px-3 py-1.5 rounded-full text-primary font-display text-xs font-bold uppercase tracking-wider">
-              Clinical Care
+            
+            <div className="inline-flex items-center gap-2 bg-primary-50 border border-primary/20 px-3 py-1 rounded-full text-primary font-display text-[10px] font-bold uppercase tracking-wider">
+              Clinical Specialization
             </div>
 
-            <h1 className="font-hindi text-[2.5rem] sm:text-[3rem] lg:text-[3.25rem] font-bold text-forest leading-tight">
-              {title}<br />
-              <span className="text-primary font-hindi text-[2rem] sm:text-[2.25rem] lg:text-[2.5rem] font-semibold block mt-1">
+            <h1 className="font-hindi text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-forest leading-tight">
+              {title}
+              <span className="text-primary font-hindi text-2xl sm:text-3xl lg:text-[2.25rem] font-semibold block mt-1.5">
                 {hindiTitle}
               </span>
             </h1>
@@ -52,48 +57,83 @@ export default function ConditionHero({
               {metaDescription}
             </p>
 
-            {/* Why Choose checklist */}
-            <div className="space-y-3 pt-2">
-              <p className="text-forest font-sans font-bold text-xs uppercase tracking-wider">Why Consult Dr. Akhilesh Yadav:</p>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {whyChoose.slice(0, 4).map((w, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-sm text-forest/90">
-                    <CheckCircle2 size={16} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span>{w}</span>
-                  </div>
-                ))}
+            {/* Premium Trust Metrics Bar */}
+            <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-border/40 max-w-lg font-sans">
+              <div className="space-y-1">
+                <div className="flex items-center gap-1">
+                  <Star className="text-accent fill-accent" size={16} />
+                  <span className="text-forest font-bold text-base">4.9 Rating</span>
+                </div>
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Google Verified</span>
+              </div>
+              <div className="space-y-1 border-l border-border/40 pl-4">
+                <div className="flex items-center gap-1">
+                  <ShieldCheck className="text-primary" size={16} />
+                  <span className="text-forest font-bold text-base">10+ Years</span>
+                </div>
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">DM Experience</span>
+              </div>
+              <div className="space-y-1 border-l border-border/40 pl-4">
+                <div className="flex items-center gap-1">
+                  <Award className="text-primary" size={16} />
+                  <span className="text-forest font-bold text-base">4k+ Patients</span>
+                </div>
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Successfully Cured</span>
               </div>
             </div>
 
             {/* Quick Actions */}
-            <div className="flex flex-wrap gap-3 pt-4">
+            <div className="flex flex-wrap gap-3 pt-2">
               <a
                 href={`tel:${DOCTOR.phone}`}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary text-primary font-display font-semibold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[48px]"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-primary text-white font-display font-semibold text-xs uppercase tracking-wider rounded-xl hover:bg-primary-dark transition-colors shadow-xs min-h-[48px]"
               >
-                <Phone size={14} /> Call Clinic
+                <Phone size={13} /> Call {DOCTOR.phone}
               </a>
               <a
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-border text-primary hover:bg-primary-50 transition-colors bg-bg-sand/30 font-display font-semibold text-sm rounded-xl min-h-[48px]"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-border text-primary hover:bg-primary-50 transition-colors bg-white font-display font-semibold text-xs uppercase tracking-wider rounded-xl min-h-[48px]"
               >
-                <MessageCircle size={14} /> WhatsApp Info
+                <MessageCircle size={13} /> WhatsApp
               </a>
             </div>
+
           </div>
 
-          {/* Right Block — Booking Form */}
-          <div className="lg:col-span-5 w-full">
-            <div className="bg-white border border-border rounded-3xl p-6 lg:p-8 shadow-sm">
-              <div className="text-[10px] text-primary uppercase font-bold tracking-wider mb-1 font-sans">
-                Takes less than 30 seconds
+          {/* Right Block — Photograph + Premium Booking Card */}
+          <div className="lg:col-span-5 w-full flex flex-col items-center">
+            
+            {/* Visual reassurance container */}
+            <div className="w-full bg-white border border-border/80 rounded-3xl p-6 lg:p-8 shadow-xs relative">
+              
+              {/* Card headers */}
+              <div className="mb-4">
+                <span className="text-[10px] text-primary uppercase font-bold tracking-wider font-sans block mb-1">
+                  Secure Consultation Slot
+                </span>
+                <h2 className="text-forest font-sans font-bold text-lg leading-tight">अपॉइंटमेंट बुक करें</h2>
+                <p className="text-muted text-xs font-sans mt-0.5">30-second booking form · 30-minute callback</p>
               </div>
-              <h2 className="text-forest font-display font-bold text-xl mb-1">अपॉइंटमेंट बुक करें</h2>
-              <p className="text-muted text-sm mb-6 font-sans">Direct specialist query · 30-minute callback</p>
+
+              {/* Form component */}
               <BookingForm defaultCondition={title} compact />
+
+              {/* Form footnotes */}
+              <div className="mt-4 pt-3 border-t border-border/40 flex items-center justify-between text-[10px] text-muted font-sans font-medium uppercase tracking-wider">
+                <div className="flex items-center gap-1">
+                  <Clock size={11} className="text-primary" />
+                  <span>2-Hour Callback</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <ShieldCheck size={11} className="text-primary" />
+                  <span>No Spam Guarantee</span>
+                </div>
+              </div>
+
             </div>
+
           </div>
 
         </div>

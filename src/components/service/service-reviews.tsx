@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, CheckCircle } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
 interface Review {
@@ -39,6 +39,15 @@ const allReviews: Record<string, Review[]> = {
       date: "3 weeks ago",
       text: "पीलिया में बहुत परेशान थी। डॉक्टर ने हिंदी में पूरी बात समझाई और इलाज दिया। 2 हफ्ते में ठीक हो गई।",
     }
+  ],
+  "liver-cirrhosis": [
+    {
+      name: "Amit Singh",
+      location: "Ranchi, JH",
+      rating: 5,
+      date: "2 months ago",
+      text: `डॉ. अखिलेश यादव जी से मिलकर पेट की समस्या के लिए परामर्श लिया। डॉक्टर बहुत ध्यान से सुनते हैं और सटीक इलाज देते हैं।`,
+    }
   ]
 };
 
@@ -54,18 +63,19 @@ export default function ServiceReviews({ title, conditionSlug }: ServiceReviewsP
   ];
 
   return (
-    <section className="bg-white py-16 lg:py-20 border-t border-border/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="bg-white py-20 lg:py-24 border-b border-border/40">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <div className="text-center mb-12">
-          <span className="text-primary font-display text-xs font-bold tracking-wider uppercase block mb-3">
-            Patient Feedback
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="text-primary font-display text-xs font-bold tracking-wider uppercase block">
+            Patient Stories
           </span>
-          <h2 className="font-hindi text-3xl font-bold text-forest leading-tight">
-            मरीजों के अनुभव
+          <h2 className="font-hindi text-3xl sm:text-4xl font-display font-bold text-forest leading-tight mt-2">
+            मरीजों के अनुभव — Google Verified Reviews
           </h2>
-          <p className="font-sans text-muted text-base mt-2">
-            Verified patient reviews for {title} treatments.
+          <p className="font-sans text-muted text-sm sm:text-base mt-2 max-w-lg mx-auto">
+            Read verified feedback from patients treated under the clinical care of Dr. Akhilesh Yadav.
           </p>
         </div>
 
@@ -74,17 +84,19 @@ export default function ServiceReviews({ title, conditionSlug }: ServiceReviewsP
           {reviews.map((review, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl border border-border p-6 shadow-xs flex flex-col justify-between"
+              className="bg-bg-sand/30 border border-border/50 rounded-3xl p-6 lg:p-8 flex flex-col justify-between shadow-2xs hover:shadow-xs transition-all duration-300"
             >
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center font-display font-bold text-primary text-sm shadow-xs">
+              <div className="space-y-4">
+                
+                {/* Header Profile Row */}
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-display font-bold text-primary text-sm shadow-3xs">
                     {review.name[0]}
                   </div>
                   <div>
                     <div className="flex items-center gap-1.5">
                       <p className="text-forest font-sans font-bold text-sm leading-none">{review.name}</p>
-                      <span className="w-1.5 h-1.5 bg-green-600 rounded-full" title="Verified Review" />
+                      <CheckCircle size={13} className="text-emerald-600 fill-emerald-50" />
                     </div>
                     <p className="text-muted text-[10px] uppercase tracking-wider font-semibold font-sans mt-1">
                       {review.location} · {review.date}
@@ -92,20 +104,26 @@ export default function ServiceReviews({ title, conditionSlug }: ServiceReviewsP
                   </div>
                 </div>
 
-                <div className="flex gap-0.5 mb-3">
+                {/* Rating Stars */}
+                <div className="flex gap-0.5">
                   {Array.from({ length: review.rating }).map((_, j) => (
-                    <Star key={j} size={13} className="text-accent fill-accent" />
+                    <Star key={j} size={14} className="text-accent fill-accent" />
                   ))}
                 </div>
 
-                <p className="font-hindi text-forest text-sm leading-relaxed mb-4 italic">
+                {/* Content Text */}
+                <p className="font-hindi text-forest/90 text-sm leading-relaxed italic">
                   "{review.text}"
                 </p>
+
               </div>
               
-              <div className="border-t border-border-light pt-4 mt-2 text-left">
-                <span className="text-[10px] text-muted font-sans uppercase tracking-wider">Google Review Verified</span>
+              {/* Verified Badge Footer */}
+              <div className="border-t border-border/40 pt-4 mt-6 flex items-center justify-between text-[10px] text-muted font-sans font-bold uppercase tracking-wider">
+                <span>Google Review</span>
+                <span className="text-emerald-600">Verified Patient</span>
               </div>
+
             </div>
           ))}
         </div>
