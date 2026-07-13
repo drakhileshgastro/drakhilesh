@@ -65,22 +65,23 @@ export default function ChatbotWidget() {
       {/* Toggle button */}
       <button
         onClick={() => setOpen(!open)}
+        id="chatbot-trigger"
         aria-label={open ? "Close chatbot" : "Open chatbot"}
-        className="fixed bottom-4 right-4 z-40 w-14 h-14 bg-navy rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 flex items-center justify-center touch-manipulation"
+        className="fixed bottom-20 left-4 lg:bottom-6 lg:left-6 z-40 w-12 h-12 lg:w-14 lg:h-14 bg-forest text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 flex items-center justify-center touch-manipulation cursor-pointer"
       >
         {open ? (
           <ChevronDown size={22} className="text-white" />
         ) : (
-          <Bot size={22} className="text-teal" />
+          <Bot size={22} className="text-white" />
         )}
       </button>
 
       {/* Chat window */}
       {open && (
-        <div className="fixed bottom-20 right-4 z-40 w-[calc(100vw-1.5rem)] max-w-sm bg-white rounded-2xl shadow-2xl border border-gray-light flex flex-col overflow-hidden" style={{ maxHeight: 'calc(100vh - 120px)' }}>
+        <div className="fixed bottom-36 left-4 lg:bottom-24 lg:left-6 z-40 w-[calc(100vw-2rem)] max-w-sm bg-white rounded-3xl shadow-2xl border border-border flex flex-col overflow-hidden" style={{ maxHeight: 'calc(100vh - 160px)' }}>
           {/* Header */}
-          <div className="bg-navy px-4 py-3 flex items-center gap-3">
-            <div className="w-9 h-9 bg-teal rounded-full flex items-center justify-center flex-shrink-0">
+          <div className="bg-forest px-4 py-3.5 flex items-center gap-3">
+            <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
               <Bot size={18} className="text-white" />
             </div>
             <div className="flex-1 min-w-0">
@@ -117,10 +118,10 @@ export default function ChatbotWidget() {
               >
                 <div
                   className={cn(
-                    "max-w-[85%] px-3 py-2 rounded-2xl text-sm leading-relaxed whitespace-pre-line",
+                    "max-w-[85%] px-3.5 py-2.5 rounded-2xl text-xs leading-relaxed whitespace-pre-line font-sans",
                     msg.role === "user"
-                      ? "bg-teal text-white rounded-br-sm"
-                      : "bg-offwhite text-navy rounded-bl-sm"
+                      ? "bg-primary text-white rounded-br-none"
+                      : "bg-bg-sand/35 text-forest border border-border/40 rounded-bl-none"
                   )}
                 >
                   {msg.content}
@@ -129,11 +130,11 @@ export default function ChatbotWidget() {
             ))}
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-offwhite px-3 py-2 rounded-2xl rounded-bl-sm">
+                <div className="bg-bg-sand/35 border border-border/40 px-3.5 py-2.5 rounded-2xl rounded-bl-none">
                   <div className="flex gap-1">
-                    <span className="w-1.5 h-1.5 bg-gray-muted rounded-full animate-bounce [animation-delay:0ms]"></span>
-                    <span className="w-1.5 h-1.5 bg-gray-muted rounded-full animate-bounce [animation-delay:150ms]"></span>
-                    <span className="w-1.5 h-1.5 bg-gray-muted rounded-full animate-bounce [animation-delay:300ms]"></span>
+                    <span className="w-1.5 h-1.5 bg-muted rounded-full animate-bounce [animation-delay:0ms]"></span>
+                    <span className="w-1.5 h-1.5 bg-muted rounded-full animate-bounce [animation-delay:150ms]"></span>
+                    <span className="w-1.5 h-1.5 bg-muted rounded-full animate-bounce [animation-delay:300ms]"></span>
                   </div>
                 </div>
               </div>
@@ -142,21 +143,21 @@ export default function ChatbotWidget() {
           </div>
 
           {/* Input */}
-          <div className="border-t border-gray-light p-3 flex gap-2">
+          <div className="border-t border-border/50 p-3 flex gap-2">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               placeholder="Hindi ya English mein likhein..."
-              className="flex-1 text-sm px-3 py-2.5 border border-gray-light rounded-xl focus:outline-none focus:border-teal transition-colors min-h-[44px]"
+              className="flex-1 text-xs px-3.5 py-2.5 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors min-h-[44px] text-forest placeholder:text-muted bg-white font-sans"
             />
             <button
               onClick={sendMessage}
               disabled={!input.trim() || loading}
-              className="w-11 h-11 bg-teal rounded-xl flex items-center justify-center text-white disabled:opacity-40 transition-opacity flex-shrink-0 touch-manipulation"
+              className="w-11 h-11 bg-primary hover:bg-primary-dark rounded-xl flex items-center justify-center text-white disabled:opacity-40 transition-opacity flex-shrink-0 touch-manipulation cursor-pointer"
             >
-              <Send size={15} />
+              <Send size={14} />
             </button>
           </div>
         </div>

@@ -2,7 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Menu, X, Phone, MessageCircle, ChevronDown, MapPin, Clock } from "lucide-react";
+import { 
+  Menu, X, Phone, MessageCircle, ChevronDown, MapPin, Clock,
+  Flame, Wind, Droplet, TrendingDown, AlertTriangle, Activity, AlertCircle, Frown, RefreshCw, Eye,
+  Shield, Heart, Sparkles, Search, Radio, Disc, Scissors, Compass, PlusCircle, HelpCircle
+} from "lucide-react";
 import { cn } from "@/lib/cn";
 import {
   DOCTOR,
@@ -13,6 +17,44 @@ import {
   HEALTH_LIBRARY_LINKS,
   PATIENT_RESOURCE_LINKS,
 } from "@/lib/constants";
+
+const SYMPTOM_ICONS: Record<string, any> = {
+  "stomach-pain": Activity,
+  "gas-bloating": Wind,
+  "acidity": Flame,
+  "constipation": RefreshCw,
+  "diarrhoea": Droplet,
+  "vomiting": Frown,
+  "blood-in-stool": AlertTriangle,
+  "difficulty-swallowing": AlertCircle,
+  "weight-loss": TrendingDown,
+  "jaundice": Eye,
+};
+
+const CONDITION_ICONS: Record<string, any> = {
+  "fatty-liver": Shield,
+  "jaundice": Eye,
+  "liver-cirrhosis": Heart,
+  "hepatitis": Shield,
+  "ibs": Wind,
+  "gerd": Flame,
+  "peptic-ulcer": Flame,
+  "gallstone": Sparkles,
+  "gi-bleeding": AlertTriangle,
+  "pancreatitis": Activity,
+  "ulcerative-colitis": Sparkles,
+  "abdominal-pain": Activity,
+  "weight-loss": TrendingDown,
+};
+
+const PROCEDURE_ICONS: Record<string, any> = {
+  "endoscopy": Eye,
+  "colonoscopy": Search,
+  "ercp": Activity,
+  "eus": Radio,
+  "enteroscopy": Disc,
+  "gi-bleeding-treatment": PlusCircle,
+};
 
 type Dropdown = "symptoms" | "conditions" | "procedures" | "library" | "about" | null;
 
@@ -172,31 +214,6 @@ export default function Navbar() {
               )}
             </nav>
 
-            {/* Desktop CTAs */}
-            <div className="hidden lg:flex items-center border border-border bg-bg-sand p-1 rounded-2xl gap-1">
-              <a
-                href={`tel:${DOCTOR.phone}`}
-                className="flex items-center justify-center gap-1.5 px-4 h-10 text-primary text-xs font-bold hover:bg-primary-50 transition-colors bg-white border border-border rounded-xl shadow-xs"
-              >
-                <Phone size={13} />
-                Call Now
-              </a>
-              <a
-                href={whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 px-4 h-10 text-primary text-xs font-bold hover:bg-primary-50 transition-colors bg-white border border-border rounded-xl shadow-xs"
-              >
-                <MessageCircle size={13} />
-                WhatsApp
-              </a>
-              <Link
-                href="/book"
-                className="flex items-center justify-center px-4 h-10 bg-primary text-white text-xs font-bold rounded-xl hover:bg-primary-dark transition-colors shadow-xs"
-              >
-                Book Appointment
-              </Link>
-            </div>
 
             {/* Mobile toggle */}
             <button
@@ -263,22 +280,26 @@ function DropdownContent({ type }: { type: string }) {
   switch (type) {
     case "symptoms":
       return (
-        <div className="p-4">
-          <p className="text-xs font-bold text-muted uppercase tracking-wider mb-3 font-sans">Common Symptoms</p>
-          <div className="grid grid-cols-2 gap-1">
-            {SYMPTOMS_LIST.slice(0, 8).map((s) => (
-              <Link
-                key={s.slug}
-                href={`/symptoms/${s.slug}`}
-                className="flex items-center gap-2 px-2 py-2 text-sm text-forest hover:text-primary hover:bg-bg-sand rounded-lg transition-colors"
-              >
-                <span className="font-hindi text-[13px]">{s.hindiLabel}</span>
-              </Link>
-            ))}
+        <div className="p-4 w-[340px]">
+          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-3 px-1 font-sans">Common Symptoms</p>
+          <div className="grid grid-cols-1 gap-0.5">
+            {SYMPTOMS_LIST.slice(0, 8).map((s) => {
+              const IconComponent = SYMPTOM_ICONS[s.slug] || Activity;
+              return (
+                <Link
+                  key={s.slug}
+                  href={`/symptoms/${s.slug}`}
+                  className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
+                >
+                  <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
+                  <span>{s.label}</span>
+                </Link>
+              );
+            })}
           </div>
           <Link
             href="/symptoms"
-            className="mt-3 flex items-center justify-center py-2 text-primary text-xs font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
+            className="mt-3 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
           >
             All Symptoms →
           </Link>
@@ -287,22 +308,26 @@ function DropdownContent({ type }: { type: string }) {
 
     case "conditions":
       return (
-        <div className="p-4">
-          <p className="text-xs font-bold text-muted uppercase tracking-wider mb-3 font-sans">Conditions Treated</p>
-          <div className="space-y-0.5">
-            {CONDITIONS_LIST.slice(0, 6).map((c) => (
-              <Link
-                key={c.slug}
-                href={`/conditions/${c.slug}`}
-                className="flex items-center gap-2 px-2 py-1.5 text-sm text-forest hover:text-primary hover:bg-bg-sand rounded-lg transition-colors"
-              >
-                <span>{c.title}</span>
-              </Link>
-            ))}
+        <div className="p-4 w-[340px]">
+          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-3 px-1 font-sans">Conditions Treated</p>
+          <div className="grid grid-cols-1 gap-0.5">
+            {CONDITIONS_LIST.slice(0, 6).map((c) => {
+              const IconComponent = CONDITION_ICONS[c.slug] || Shield;
+              return (
+                <Link
+                  key={c.slug}
+                  href={`/conditions/${c.slug}`}
+                  className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
+                >
+                  <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
+                  <span>{c.title}</span>
+                </Link>
+              );
+            })}
           </div>
           <Link
             href="/conditions"
-            className="mt-3 flex items-center justify-center py-2 text-primary text-xs font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
+            className="mt-3 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
           >
             View All Conditions →
           </Link>
@@ -311,71 +336,29 @@ function DropdownContent({ type }: { type: string }) {
 
     case "procedures":
       return (
-        <div className="p-4">
-          <p className="text-xs font-bold text-muted uppercase tracking-wider mb-3 font-sans">Advanced Procedures</p>
-          <div className="space-y-0.5">
-            {PROCEDURES_LIST.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/procedures/${p.slug}`}
-                className="flex items-center gap-2 px-2 py-1.5 text-sm text-forest hover:text-primary hover:bg-bg-sand rounded-lg transition-colors"
-              >
-                <span>{p.title}</span>
-              </Link>
-            ))}
+        <div className="p-4 w-[340px]">
+          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-3 px-1 font-sans">Advanced Procedures</p>
+          <div className="grid grid-cols-1 gap-0.5">
+            {PROCEDURES_LIST.slice(0, 6).map((p) => {
+              const IconComponent = PROCEDURE_ICONS[p.slug] || Search;
+              return (
+                <Link
+                  key={p.slug}
+                  href={`/procedures/${p.slug}`}
+                  className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
+                >
+                  <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
+                  <span>{p.title}</span>
+                </Link>
+              );
+            })}
           </div>
           <Link
             href="/procedures"
-            className="mt-3 flex items-center justify-center py-2 text-primary text-xs font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
+            className="mt-3 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
           >
             All Procedures →
           </Link>
-        </div>
-      );
-
-    case "library":
-      return (
-        <div className="p-4">
-          <p className="text-xs font-bold text-muted uppercase tracking-wider mb-3 font-sans">Health Library</p>
-          <div className="space-y-0.5">
-            {HEALTH_LIBRARY_LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="flex items-center px-2 py-2 text-sm text-forest hover:text-primary hover:bg-bg-sand rounded-lg transition-colors"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      );
-
-    case "about":
-      return (
-        <div className="p-4">
-          <p className="text-xs font-bold text-muted uppercase tracking-wider mb-3 font-sans">About Dr. Akhilesh</p>
-          <div className="space-y-0.5">
-            <Link
-              href="/about"
-              className="flex items-center px-2 py-2 text-sm text-forest hover:text-primary hover:bg-bg-sand rounded-lg transition-colors font-medium"
-            >
-              Biography & Experience
-            </Link>
-            <div className="border-t border-border/60 my-2 pt-2">
-              <p className="text-[10px] font-bold text-muted uppercase tracking-wider px-2 mb-2 font-sans">Patient Resources</p>
-              {PATIENT_RESOURCE_LINKS.slice(1).map((l) => (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  {...("external" in l && l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                  className="flex items-center px-2 py-1.5 text-sm text-forest hover:text-primary hover:bg-bg-sand rounded-lg transition-colors"
-                >
-                  {l.label}
-                </Link>
-              ))}
-            </div>
-          </div>
         </div>
       );
 
@@ -388,31 +371,34 @@ function DropdownContent({ type }: { type: string }) {
 function MobileDropdownContent({ type, onClose }: { type: string; onClose: () => void }) {
   const items =
     type === "symptoms"
-      ? SYMPTOMS_LIST.map((s) => ({ label: s.hindiLabel + " · " + s.label, href: `/symptoms/${s.slug}` }))
+      ? SYMPTOMS_LIST.map((s) => ({ label: s.label, href: `/symptoms/${s.slug}`, slug: s.slug, type: "symptom" }))
       : type === "conditions"
-      ? CONDITIONS_LIST.map((c) => ({ label: c.title, href: `/conditions/${c.slug}` }))
+      ? CONDITIONS_LIST.map((c) => ({ label: c.title, href: `/conditions/${c.slug}`, slug: c.slug, type: "condition" }))
       : type === "procedures"
-      ? PROCEDURES_LIST.map((p) => ({ label: p.title, href: `/procedures/${p.slug}` }))
-      : type === "library"
-      ? [...HEALTH_LIBRARY_LINKS]
-      : [
-          { label: "Biography & Experience", href: "/about" },
-          ...PATIENT_RESOURCE_LINKS.slice(1)
-        ];
+      ? PROCEDURES_LIST.map((p) => ({ label: p.title, href: `/procedures/${p.slug}`, slug: p.slug, type: "procedure" }))
+      : [];
 
   return (
-    <div className="bg-bg-sand rounded-xl mx-2 my-2 overflow-hidden border border-border">
-      {items.map((item, i) => (
-        <Link
-          key={i}
-          href={item.href}
-          {...("external" in item && item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-          className="block px-4 py-2.5 text-sm text-forest hover:text-primary border-b border-border/40 last:border-0 transition-colors"
-          onClick={onClose}
-        >
-          {item.label}
-        </Link>
-      ))}
+    <div className="bg-bg-sand/35 rounded-xl mx-2 my-2 overflow-hidden border border-border/50">
+      {items.map((item, i) => {
+        let IconComponent = HelpCircle;
+        if ("type" in item) {
+          if (item.type === "symptom") IconComponent = SYMPTOM_ICONS[item.slug] || Activity;
+          else if (item.type === "condition") IconComponent = CONDITION_ICONS[item.slug] || Shield;
+          else if (item.type === "procedure") IconComponent = PROCEDURE_ICONS[item.slug] || Search;
+        }
+        return (
+          <Link
+            key={i}
+            href={item.href}
+            className="flex items-center gap-2.5 px-4 py-3 text-xs text-forest hover:text-primary border-b border-border/30 last:border-0 transition-colors font-sans font-medium"
+            onClick={onClose}
+          >
+            <IconComponent size={13} className="text-primary flex-shrink-0" />
+            <span>{item.label}</span>
+          </Link>
+        );
+      })}
     </div>
   );
 }
