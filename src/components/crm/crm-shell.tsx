@@ -23,18 +23,23 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
+    if (pathname === "/crm/login") return;
     const supabase = createSupabaseBrowser();
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { router.push("/crm/login"); return; }
       setUserEmail(data.user.email ?? "");
     });
-  }, [router]);
+  }, [router, pathname]);
 
   async function logout() {
     const supabase = createSupabaseBrowser();
     await supabase.auth.signOut();
     router.push("/crm/login");
     router.refresh();
+  }
+
+  if (pathname === "/crm/login") {
+    return <>{children}</>;
   }
 
   const Sidebar = () => (
