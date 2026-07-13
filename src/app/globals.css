@@ -1,29 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Brand v2.0 Colors (July 2026 rebuild) ── */
+  /* ── Brand v3.0 — Healing Green Palette (July 2026) ── */
+
+  /* Primary: Healing Green */
+  --color-primary:        #27AE60;
+  --color-primary-dark:   #1E8449;
+  --color-primary-light:  #EAF7EF;
+  --color-primary-50:     #F0FBF5;
+
+  /* Accent: Marigold — CTAs and highlights only */
+  --color-accent:         #D97706;
+  --color-accent-dark:    #B45309;
+  --color-accent-light:   #FEF3C7;
+
+  /* Backgrounds — warm, breathable */
+  --color-bg:             #FAFDF7;
+  --color-bg-sand:        #F5EFE6;
+  --color-surface:        #FFFFFF;
+
+  /* Typography — deep forest */
+  --color-forest:         #1A2E1A;
+  --color-muted:          #4A6355;
+  --color-border:         #D4E8DA;
+  --color-border-light:   #EBF5EC;
+
+  /* Admin / CRM — navy system */
   --color-navy:           #0F2745;
   --color-navy-dark:      #0A1C33;
   --color-navy-mid:       #1B3A5C;
+
+  /* Medical blue — trust elements, credentials */
   --color-blue:           #1EA7F2;
   --color-blue-dark:      #0D92D9;
-  --color-blue-light:     #BAE8FC;
   --color-blue-50:        #E0F5FF;
-  --color-green:          #28C76F;
-  --color-green-dark:     #1EA85A;
-  --color-bg:             #F8FAFC;
-  --color-surface:        #FFFFFF;
-  --color-text:           #1E293B;
-  --color-text-muted:     #64748B;
-  --color-border:         #E2E8F0;
-  --color-border-dark:    #CBD5E1;
-  --color-slate:          #334155;
 
-  /* Platform Colors */
+  /* Platform */
   --color-whatsapp:       #25D366;
   --color-facebook:       #1877F2;
 
-  /* Fonts — Nunito (display) + Space Grotesk (body) + Hind (Hindi) */
+  /* Fonts */
   --font-sans:    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
   --font-hindi:   var(--font-hind), ui-sans-serif, system-ui, sans-serif;
@@ -36,10 +52,10 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-size: 1.125rem; /* 18px mobile-first */
-  line-height: 1.7;
-  color: #1E293B;
-  background: #F8FAFC;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #1A2E1A;
+  background: #FAFDF7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -49,55 +65,50 @@ body {
 
 @media (min-width: 768px) {
   body {
-    font-size: 1.25rem; /* 20px desktop */
+    font-size: 1.0625rem;
   }
 }
 
-/* Hindi font — extra line-height for Devanagari */
 .font-hindi {
   font-family: var(--font-hindi);
-  line-height: 1.85;
+  line-height: 1.9;
   word-break: break-word;
   overflow-wrap: break-word;
 }
 
-/* Tap highlight */
 button, a, [role="button"] {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #F8FAFC; }
-::-webkit-scrollbar-thumb { background: #1EA7F2; border-radius: 3px; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #FAFDF7; }
+::-webkit-scrollbar-thumb { background: #27AE60; border-radius: 4px; }
 
-/* Section padding */
 .section-pad {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 @media (min-width: 768px) {
   .section-pad {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
   }
 }
 @media (min-width: 1024px) {
   .section-pad {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
   }
 }
 
-/* Safe area for notched devices */
 .pb-safe {
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
-/* Blue gradient text */
-.text-gradient {
-  background: linear-gradient(135deg, #1EA7F2, #0D92D9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Subtle card shadow */
+.card-shadow {
+  box-shadow: 0 2px 12px rgba(39, 174, 96, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.card-shadow-hover {
+  box-shadow: 0 8px 24px rgba(39, 174, 96, 0.14), 0 2px 6px rgba(0, 0, 0, 0.06);
 }
