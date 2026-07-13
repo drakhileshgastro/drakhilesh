@@ -402,9 +402,10 @@ export default function AboutPage() {
               <div className="md:col-span-5 w-full">
                 <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-xs max-w-xs mx-auto border border-border/20">
                   <img
-                    src="/images/procedure-room.png"
-                    alt="Orchid Medical Centre Procedure Room"
-                    className="w-full h-full object-cover object-center"
+                    src="/dr-akhilesh-improved.png"
+                    alt="Dr. Akhilesh Yadav - Hepatologist & Gastroenterologist Ranchi, Jharkhand"
+                    title="Dr. Akhilesh Yadav Biography"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
               </div>

@@ -31,6 +31,10 @@ const DIRECTIONS = [
   { from: "Jamshedpur", time: "~3 hrs", via: "NH-33", dist: "~175 km" },
   { from: "Deoghar", time: "~2.5 hrs", via: "NH-114A", dist: "~160 km" },
   { from: "Chaibasa", time: "~3 hrs", via: "NH-75", dist: "~180 km" },
+  { from: "Ramgarh", time: "~50 mins", via: "NH-33", dist: "~45 km" },
+  { from: "Khunti", time: "~45 mins", via: "NH-20", dist: "~35 km" },
+  { from: "Lohardaga", time: "~1.5 hrs", via: "Lohardaga Rd", dist: "~75 km" },
+  { from: "Simdega", time: "~3 hrs", via: "NH-143", dist: "~145 km" },
 ];
 
 export default function ContactClient() {
@@ -319,13 +323,22 @@ export default function ContactClient() {
 
           {/* Routes Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-            {DIRECTIONS.map((d) => (
-              <div key={d.from} className="bg-white border border-border/80 rounded-2xl p-4 text-center space-y-1">
-                <h4 className="text-forest font-sans font-bold text-sm leading-snug">{d.from}</h4>
-                <p className="text-primary font-display text-xs font-bold">{d.time}</p>
-                <p className="text-muted text-[10px] font-sans">{d.via} · {d.dist}</p>
-              </div>
-            ))}
+            {DIRECTIONS.map((d) => {
+              const slug = d.from.toLowerCase().replace(/\s+/g, "-");
+              return (
+                <Link
+                  key={d.from}
+                  href={`/locations/${slug}`}
+                  className="block bg-white border border-border/80 hover:border-primary rounded-2xl p-4 text-center space-y-1 transition-all hover:-translate-y-0.5 hover:shadow-xs group cursor-pointer"
+                >
+                  <h4 className="text-forest group-hover:text-primary font-sans font-bold text-sm leading-snug transition-colors">
+                    {d.from}
+                  </h4>
+                  <p className="text-primary font-display text-xs font-bold">{d.time}</p>
+                  <p className="text-muted text-[10px] font-sans">{d.via} · {d.dist}</p>
+                </Link>
+              );
+            })}
           </div>
 
           <div className="text-center">

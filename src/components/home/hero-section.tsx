@@ -54,10 +54,11 @@ export default function HeroSection() {
 
           {/* Right Block — Large Doctor Image */}
           <div className="lg:col-span-5 relative">
-            <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-sm mx-auto">
+            <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
               <img
                 src="/dr-akhilesh-improved.png"
-                alt="Dr. Akhilesh Yadav"
+                alt="Dr. Akhilesh Yadav - Best Gastroenterologist & Liver Specialist in Ranchi, Jharkhand"
+                title="Dr. Akhilesh Yadav - Gastroenterologist Ranchi"
                 className="w-full h-full object-cover object-top"
               />
             </div>

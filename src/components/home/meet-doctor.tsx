@@ -21,7 +21,8 @@ export default function MeetDoctorSection() {
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto lg:mx-0">
               <img
                 src="/dr-akhilesh-improved.png"
-                alt="Dr. Akhilesh Yadav"
+                alt="Dr. Akhilesh Yadav - DM Gastroenterology, Liver Doctor in Ranchi"
+                title="Dr. Akhilesh Yadav - Hepatologist & Gastroenterologist"
                 className="w-full h-full object-cover object-top"
               />
             </div>
