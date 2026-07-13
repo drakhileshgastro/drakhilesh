@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/home/hero-section";
-import CommonProblems from "@/components/home/common-problems";
 import SymptomsSection from "@/components/home/symptoms-section";
 import MeetDoctorSection from "@/components/home/meet-doctor";
 import PatientJourney from "@/components/home/patient-journey";
@@ -43,8 +42,6 @@ export default function HomePage() {
     <>
       {/* S2 — Hero */}
       <HeroSection />
-      {/* Common Problems Checklist */}
-      <CommonProblems />
       {/* S3 — Symptoms */}
       <SymptomsSection />
       {/* S4 — Meet Doctor */}
