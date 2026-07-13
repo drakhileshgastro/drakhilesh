@@ -12,7 +12,7 @@ export default function WebsiteLayout({
   return (
     <>
       <Navbar />
-      <main className="flex-1 pt-[128px] lg:pt-[134px]">{children}</main>
+      <main className="flex-1 pt-[124px] lg:pt-[136px]">{children}</main>
       <Footer />
       <MobileBottomBar />
       <ChatbotWidget />

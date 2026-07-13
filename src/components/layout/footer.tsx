@@ -268,7 +268,7 @@ export default function Footer() {
               <span>·</span>
               <Link href="/terms" className="hover:text-white/70 transition-colors">Terms</Link>
               <span>·</span>
-              <Link href="/sitemap" className="hover:text-white/70 transition-colors">Sitemap</Link>
+              <Link href="/sitemap.xml" className="hover:text-white/70 transition-colors">Sitemap</Link>
               <span>·</span>
               <span>
                 Built by{" "}
