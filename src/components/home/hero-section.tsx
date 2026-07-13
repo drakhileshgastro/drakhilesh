@@ -10,101 +10,100 @@ export default function HeroSection() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(DOCTOR.whatsappPrefilledMessage)}`;
 
   return (
-    <section className="bg-white pt-10 pb-16 lg:pt-14 lg:pb-20">
+    <section className="bg-white pt-12 pb-16 lg:pt-20 lg:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
           {/* Left — Headline + Stats + CTAs */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 lg:pr-4">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-50 border border-primary-light rounded-full text-primary text-xs font-semibold mb-5">
-              <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
-              Ranchi का भरोसेमंद Gastro Specialist
+            <div className="text-primary font-display text-xs font-bold tracking-wider uppercase mb-5">
+              Ranchi's Trusted Gastroenterologist
             </div>
 
             {/* Hindi Headline */}
-            <h1 className="font-hindi text-[2rem] sm:text-[2.4rem] lg:text-[2.75rem] font-bold text-forest leading-[1.3] mb-3">
+            <h1 className="font-hindi text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] font-bold text-forest leading-[1.25] mb-4">
               पेट, लीवर या पाचन की<br />
               <span className="text-primary">समस्या से परेशान हैं?</span>
             </h1>
-            <p className="text-muted text-base sm:text-lg mb-2">
-              Troubled by stomach, liver or digestive problems?
+            <p className="font-sans text-muted text-base sm:text-lg mb-6 leading-relaxed">
+              Troubled by stomach, liver or digestive problems? Get expert care from a super-specialist.
             </p>
 
             {/* Doctor intro */}
-            <p className="text-forest/80 text-[15px] leading-relaxed mb-8 max-w-lg">
+            <p className="font-sans text-forest/80 text-sm sm:text-base leading-relaxed mb-8 max-w-lg">
               <strong>Dr. Akhilesh Yadav</strong> — DM Gastroenterology, Orchid Medical Centre, Ranchi —
               provides expert, compassionate care in Hindi for all digestive &amp; liver conditions.
             </p>
 
             {/* Trust stats row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               {TRUST_STATS.map((stat) => (
-                <div key={stat.label} className="bg-bg-sand rounded-xl p-3 text-center">
-                  <div className="text-xl font-bold text-primary">{stat.value}</div>
-                  <div className="text-[11px] text-muted font-hindi mt-0.5">{stat.labelHindi}</div>
+                <div key={stat.label} className="bg-white border border-border rounded-2xl p-4 shadow-sm text-center">
+                  <div className="text-2xl font-display font-bold text-primary">{stat.value}</div>
+                  <div className="text-[11px] text-muted font-hindi mt-1 leading-normal">{stat.labelHindi}</div>
                 </div>
               ))}
             </div>
 
             {/* CTA buttons */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <Link
                 href="/book"
-                className="flex items-center gap-2 px-6 py-3.5 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors shadow-sm min-h-[52px]"
+                className="flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-white font-display font-semibold text-sm rounded-xl hover:bg-primary-dark transition-colors shadow-sm min-h-[50px] text-center"
               >
-                <span>📅</span> Book Appointment
+                Book Appointment
               </Link>
-              <a
-                href={`tel:${DOCTOR.phone}`}
-                className="flex items-center gap-2 px-5 py-3.5 bg-primary-50 text-primary font-bold text-sm rounded-xl hover:bg-primary-light transition-colors min-h-[52px]"
-              >
-                <Phone size={16} /> Call Now
-              </a>
               <a
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3.5 bg-green-50 text-whatsapp font-bold text-sm rounded-xl hover:bg-green-100 transition-colors min-h-[52px]"
+                className="flex items-center justify-center gap-2 px-6 py-3.5 border border-primary text-primary font-display font-semibold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[50px]"
               >
                 <MessageCircle size={16} /> WhatsApp
+              </a>
+              <a
+                href={`tel:${DOCTOR.phone}`}
+                className="flex items-center justify-center gap-2 px-6 py-3.5 text-primary hover:text-primary-dark font-display font-semibold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[50px]"
+              >
+                <Phone size={16} /> Call Now
               </a>
             </div>
 
             {/* Google rating */}
-            <div className="mt-6 flex items-center gap-3">
-              <div className="flex items-center gap-1">
+            <div className="mt-8 flex items-center gap-3 border-t border-border/60 pt-6">
+              <div className="flex items-center gap-0.5">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} size={15} className="text-accent fill-accent" />
+                  <Star key={i} size={14} className="text-accent fill-accent" />
                 ))}
               </div>
-              <span className="text-forest/80 text-sm">
-                <strong>{DOCTOR.googleRating}</strong> rating · {DOCTOR.totalReviews} Google reviews
+              <span className="text-muted text-sm font-sans">
+                <strong>{DOCTOR.googleRating}</strong> rating from {DOCTOR.totalReviews} patients
               </span>
             </div>
           </div>
 
           {/* Right — Doctor Photo + Booking Form */}
-          <div className="order-1 lg:order-2">
-            {/* Doctor photo placeholder */}
-            <div className="relative mb-6">
-              <div className="aspect-[4/3] lg:aspect-[3/2] bg-primary-light rounded-2xl overflow-hidden flex items-center justify-center">
-                <div className="text-center text-primary">
-                  <div className="text-7xl mb-3">👨‍⚕️</div>
-                  <p className="text-sm font-medium text-primary/70">Dr. Akhilesh Yadav</p>
-                  <p className="text-xs text-primary/50">with patient at Orchid Medical Centre</p>
-                </div>
+          <div className="order-1 lg:order-2 space-y-8">
+            {/* Doctor photo */}
+            <div className="relative">
+              <div className="aspect-[4/3] lg:aspect-[3/2] bg-primary-light rounded-2xl overflow-hidden relative shadow-sm">
+                <img
+                  src="/dr-akhilesh-improved.png"
+                  alt="Dr. Akhilesh Yadav"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               {/* Floating credential badge */}
-              <div className="absolute -bottom-4 -left-2 lg:-left-4 bg-white border border-border rounded-2xl px-4 py-3 shadow-md">
-                <div className="text-[11px] text-muted uppercase tracking-wider font-semibold">Qualification</div>
-                <div className="text-forest font-bold text-sm mt-0.5">DM Gastroenterology</div>
-                <div className="text-muted text-xs">MBBS · MD · DM</div>
+              <div className="absolute -bottom-4 -left-4 bg-white border border-border rounded-2xl px-5 py-3.5 shadow-sm hidden sm:block">
+                <div className="text-[10px] text-muted uppercase tracking-wider font-bold font-display">Qualification</div>
+                <div className="text-primary font-display font-bold text-sm mt-0.5">DM Gastroenterology</div>
+                <div className="text-muted text-xs font-sans mt-0.5">MBBS · MD · DM</div>
               </div>
               {/* Floating availability badge */}
-              <div className="absolute -top-3 -right-2 lg:-right-4 bg-primary text-white rounded-2xl px-3 py-2 shadow-md">
-                <div className="text-[10px] font-semibold">Available</div>
-                <div className="text-xs font-bold">Mon – Sat</div>
+              <div className="absolute -top-3 -right-4 bg-primary text-white border border-primary rounded-2xl px-4 py-2 shadow-sm">
+                <div className="text-[10px] text-accent font-bold uppercase tracking-wider font-display">Status</div>
+                <div className="text-xs font-semibold font-display">Available Mon – Sat</div>
               </div>
             </div>
 
@@ -148,14 +147,14 @@ function HeroBookingForm() {
 
   if (success) {
     return (
-      <div className="bg-primary-50 border border-primary-light rounded-2xl p-6 text-center">
+      <div className="bg-white border border-border rounded-2xl p-6 text-center shadow-sm">
         <CheckCircle size={40} className="text-primary mx-auto mb-3" />
         <h3 className="text-forest font-bold text-lg font-hindi mb-1">अपॉइंटमेंट अनुरोध भेजा गया!</h3>
-        <p className="text-muted text-sm">हमारी टीम 30 मिनट में आपसे संपर्क करेगी।</p>
-        <p className="text-muted text-sm">Our team will call you within 30 minutes to confirm.</p>
+        <p className="text-muted text-sm font-sans mb-1">Our team will call you within 30 minutes to confirm.</p>
+        <p className="text-muted text-sm font-hindi">हमारी टीम 30 मिनट में आपसे संपर्क करेगी।</p>
         <a
           href={`tel:${DOCTOR.phone}`}
-          className="mt-4 inline-flex items-center gap-2 px-5 py-3 bg-primary text-white font-bold text-sm rounded-xl"
+          className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-display font-semibold text-sm rounded-xl"
         >
           <Phone size={14} /> {DOCTOR.phone}
         </a>
@@ -164,17 +163,17 @@ function HeroBookingForm() {
   }
 
   return (
-    <div className="bg-white border border-border rounded-2xl p-5 shadow-sm">
-      <h3 className="text-forest font-bold text-base mb-1">अपॉइंटमेंट बुक करें</h3>
-      <p className="text-muted text-sm mb-4">Free consultation · 30-minute callback</p>
-      <form onSubmit={handleSubmit} className="space-y-3">
+    <div className="bg-white border border-border rounded-2xl p-6 shadow-sm">
+      <h3 className="text-forest font-display font-bold text-lg mb-1">अपॉइंटमेंट बुक करें</h3>
+      <p className="text-muted text-sm mb-5 font-sans">Direct appointment request · 30-minute callback</p>
+      <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
           placeholder="आपका नाम (Full Name)"
           required
           value={form.patient_name}
           onChange={(e) => setForm({ ...form, patient_name: e.target.value })}
-          className="w-full px-4 py-3 border border-border rounded-xl text-forest text-sm placeholder-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-bg transition-colors"
+          className="w-full px-4 py-3 border border-border rounded-xl text-forest text-sm placeholder-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white transition-colors"
         />
         <input
           type="tel"
@@ -182,7 +181,7 @@ function HeroBookingForm() {
           required
           value={form.patient_phone}
           onChange={(e) => setForm({ ...form, patient_phone: e.target.value })}
-          className="w-full px-4 py-3 border border-border rounded-xl text-forest text-sm placeholder-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-bg transition-colors"
+          className="w-full px-4 py-3 border border-border rounded-xl text-forest text-sm placeholder-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white transition-colors"
         />
         <input
           type="text"
@@ -190,7 +189,7 @@ function HeroBookingForm() {
           required
           value={form.patient_city}
           onChange={(e) => setForm({ ...form, patient_city: e.target.value })}
-          className="w-full px-4 py-3 border border-border rounded-xl text-forest text-sm placeholder-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-bg transition-colors"
+          className="w-full px-4 py-3 border border-border rounded-xl text-forest text-sm placeholder-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white transition-colors"
         />
         <div className="relative">
           <select
@@ -198,7 +197,7 @@ function HeroBookingForm() {
             value={form.condition}
             onChange={(e) => setForm({ ...form, condition: e.target.value })}
             className={cn(
-              "w-full px-4 py-3 border border-border rounded-xl text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-bg transition-colors appearance-none",
+              "w-full px-4 py-3 border border-border rounded-xl text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white transition-colors appearance-none cursor-pointer",
               form.condition ? "text-forest" : "text-muted"
             )}
           >
@@ -209,17 +208,17 @@ function HeroBookingForm() {
           </select>
           <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none" />
         </div>
-        {error && <p className="text-red-500 text-xs">{error}</p>}
+        {error && <p className="text-red-600 text-xs font-sans">{error}</p>}
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3.5 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors disabled:opacity-60 min-h-[52px]"
+          className="w-full py-3.5 bg-primary text-white font-display font-bold text-sm rounded-xl hover:bg-primary-dark transition-colors disabled:opacity-60 min-h-[50px] cursor-pointer"
         >
-          {loading ? "भेजा जा रहा है..." : "अपॉइंटमेंट बुक करें →"}
+          {loading ? "भेजा जा रहा है..." : "अपॉइंटमेंट बुक करें"}
         </button>
       </form>
-      <p className="mt-3 text-center text-muted text-xs">
-        या सीधे कॉल करें: <a href={`tel:${DOCTOR.phone}`} className="text-primary font-semibold">{DOCTOR.phone}</a>
+      <p className="mt-4 text-center text-muted text-xs font-sans">
+        Or call directly: <a href={`tel:${DOCTOR.phone}`} className="text-primary font-semibold hover:underline">{DOCTOR.phone}</a>
       </p>
     </div>
   );

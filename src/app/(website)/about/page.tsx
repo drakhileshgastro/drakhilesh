@@ -91,12 +91,14 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative w-72 h-80 bg-white/5 border-2 border-dashed border-white/20 rounded-2xl flex flex-col items-center justify-center">
-                <span className="text-6xl mb-3">👨‍⚕️</span>
-                <p className="text-gray-muted text-sm font-medium">Doctor Photo</p>
-                <p className="text-gray-muted text-xs mt-1">Professional portrait</p>
+              <div className="relative w-72 h-80 bg-white/5 rounded-2xl overflow-hidden">
+                <img
+                  src="/dr-akhilesh-improved.png"
+                  alt="Dr. Akhilesh Yadav"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-4 -left-4 bg-teal text-white rounded-2xl px-4 py-3 shadow-xl">
