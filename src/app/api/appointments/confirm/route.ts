@@ -64,12 +64,14 @@ export async function POST(req: NextRequest) {
     }
 
     // Also mark confirmation_sent=true (silently skip if column not migrated yet)
-    supabase
-      .from("gastro_leads")
-      .update({ confirmation_sent: true })
-      .eq("lead_id", lead_id)
-      .then()
-      .catch(() => {});
+    (async () => {
+      try {
+        await supabase
+          .from("gastro_leads")
+          .update({ confirmation_sent: true })
+          .eq("lead_id", lead_id);
+      } catch {}
+    })();
 
     // Format date for human-readable WhatsApp message
     const [year, month, day] = confirmed_date.split("-").map(Number);

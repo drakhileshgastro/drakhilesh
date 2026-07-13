@@ -93,11 +93,12 @@ export default function FinalCTA() {
           <div>
             <div className="bg-white rounded-3xl p-6 border border-border shadow-sm space-y-6">
               {/* Clinical Facility Photo */}
-              <div className="aspect-[4/3] bg-primary-light rounded-2xl overflow-hidden relative shadow-sm border border-border/25">
+              <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-sm border border-border/25">
                 <img
-                  src="/images/procedure-room.png"
-                  alt="Orchid Medical Centre Procedure Room"
-                  className="w-full h-full object-cover object-center"
+                  src="/dr-akhilesh-improved.png"
+                  alt="Dr. Akhilesh Yadav - Best Gastroenterologist & Liver Specialist in Ranchi, Jharkhand"
+                  title="Dr. Akhilesh Yadav - Gastroenterology Consultation"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
 
