@@ -6,9 +6,15 @@ export const PROCEDURES_DATA_V2: Record<string, ProcedureDataV2> = {
   ercp: getTemplateData("ercp", "ERCP", "ईआरसीपी"),
   eus: getTemplateData("eus", "EUS (Endoscopic Ultrasound)", "ईयूएस"),
   enteroscopy: getTemplateData("enteroscopy", "Enteroscopy", "एंटेरोस्कोपी"),
-  cholangioscopy: getTemplateData("cholangioscopy", "Cholangioscopy", "कोलेंगियोस्कोपी"),
-  "tumour-removal": getTemplateData("tumour-removal", "Endoscopic Tumour & Polyp Removal", "ट्यूमर रिमूवल"),
-  "gi-bleeding": getTemplateData("gi-bleeding", "GI Bleeding Treatment", "जीआई ब्लीडिंग")
+  cholangioscopy: getTemplateData("cholangioscopy", "Cholangioscopy (SpyGlass)", "कोलांगियोस्कोपी"),
+  "esd-emr": getTemplateData("esd-emr", "Endoscopic Tumour Removal (EMR/ESD)", "ट्यूमर रिमूवल (ESD & EMR)"),
+  "gi-bleeding": getTemplateData("gi-bleeding", "GI Bleeding Treatment", "जीआई ब्लीडिंग का इलाज"),
+  "eus-fna-fnb": getTemplateData("eus-fna-fnb", "EUS-guided FNA & FNB", "ईयूएस सुई बायोप्सी (FNA + FNB)"),
+  "ehl-biopsy": getTemplateData("ehl-biopsy", "EHL (Electrohydraulic Lithotripsy) & Biopsy", "कैमरे से पित्त की पथरी तोड़ना और बायोप्सी"),
+  apc: getTemplateData("apc", "APC (Argon Plasma Coagulation)", "एपीसी ब्लीडिंग नियंत्रण"),
+  polypectomy: getTemplateData("polypectomy", "Polypectomy", "पॉलिपेक्टोमी (पॉलिप्स निकालना)"),
+  "balloon-dilation": getTemplateData("balloon-dilation", "Balloon Dilatation", "बलून डाइलेशन"),
+  "glue-injection": getTemplateData("glue-injection", "Variceal Glue Injection", "ग्लू इंजेक्शन (फटी नसों का इलाज)"),
 };
 
 function getTemplateData(slug: string, title: string, hindiTitle: string): ProcedureDataV2 {
