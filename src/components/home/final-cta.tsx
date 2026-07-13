@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Phone, MessageCircle, Calendar, Bot } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
