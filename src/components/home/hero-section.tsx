@@ -73,7 +73,7 @@ export default function HeroSection() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
               <img
-                src="/images/hero-consultation.png"
+                src="/images/hero-consultation.jpg"
                 alt="Dr. Akhilesh Yadav consulting a patient in a warm and bright clinic room"
                 title="Dr. Akhilesh Yadav - Gastroenterology Consultation Ranchi"
                 className="w-full h-full object-cover object-center"
