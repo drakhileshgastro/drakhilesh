@@ -29,7 +29,7 @@ export default function StickyBar({ title }: StickyBarProps) {
   return (
     <div
       className={cn(
-        "fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-border shadow-lg py-4 transition-all duration-300 transform hidden sm:block",
+        "fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-border shadow-lg py-4 transition-all duration-300 transform hidden lg:block",
         visible ? "translate-y-0" : "translate-y-full"
       )}
     >
