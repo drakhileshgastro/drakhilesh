@@ -42,7 +42,7 @@ function getTemplateData(slug: string, title: string, hindiTitle: string): Sympt
       "Passing blood in stools or vomiting blood",
       "Difficulty swallowing solids or liquids"
     ],
-    possibleConditions: ["fatty-liver", "jaundice", "ibs", "gerd", "gallstone"],
+    possibleConditions: ["fatty-liver", "jaundice", "ibs", "acid-reflux", "gallstone"],
     evaluationSteps: [
       { step: "1. Clinical History", desc: "Detailed discussion of symptom onset, intensity, triggers, and past medical history." },
       { step: "2. Physical Examination", desc: "Gentle abdominal palpation to check for localized tenderness, swelling, or organ enlargement." },

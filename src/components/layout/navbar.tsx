@@ -37,7 +37,7 @@ const CONDITION_ICONS: Record<string, any> = {
   "liver-cirrhosis": Heart,
   "hepatitis": Shield,
   "ibs": Wind,
-  "gerd": Flame,
+  "acid-reflux": Flame,
   "peptic-ulcer": Flame,
   "gallstone": Sparkles,
   "gi-bleeding": AlertTriangle,
@@ -229,7 +229,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-[112px] bg-white z-40 overflow-y-auto border-t border-border">
+        <div className="lg:hidden fixed inset-0 top-[124px] bg-white z-40 overflow-y-auto border-t border-border">
           <div className="px-4 pt-4 pb-28">
             {/* Quick CTAs */}
             <div className="grid grid-cols-2 gap-2 mb-6">
