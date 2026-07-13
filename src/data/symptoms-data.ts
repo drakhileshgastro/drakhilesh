@@ -2,7 +2,7 @@ import { SymptomDataV2 } from "@/lib/types-symptoms";
 
 export const SYMPTOMS_DATA_V2: Record<string, SymptomDataV2> = {
   "stomach-pain": getTemplateData("stomach-pain", "Stomach Pain", "पेट दर्द"),
-  gas: getTemplateData("gas", "Gas & Bloating", "गैस और पेट फूलना"),
+  "gas-bloating": getTemplateData("gas-bloating", "Gas & Bloating", "गैस और पेट फूलना"),
   acidity: getTemplateData("acidity", "Acidity & Heartburn", "एसिडिटी और सीने में जलन"),
   constipation: getTemplateData("constipation", "Constipation", "कब्ज की समस्या"),
   diarrhoea: getTemplateData("diarrhoea", "Diarrhoea", "दस्त और लूज मोशन"),
