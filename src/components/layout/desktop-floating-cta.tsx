@@ -1,10 +1,25 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Phone, MessageCircle, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
 export default function DesktopFloatingCTA() {
+  const pathname = usePathname();
+  
+  // Hide global floating CTA on pages that have their own sticky bottom CTA bars
+  const hasSpecificCTA =
+    pathname.startsWith("/procedures") ||
+    pathname.startsWith("/conditions") ||
+    pathname.startsWith("/symptoms") ||
+    pathname.startsWith("/blog") ||
+    pathname === "/about" ||
+    pathname === "/contact" ||
+    pathname === "/patient-stories";
+
+  if (hasSpecificCTA) return null;
+
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(DOCTOR.whatsappPrefilledMessage)}`;
 
   return (

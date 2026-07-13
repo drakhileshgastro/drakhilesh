@@ -8,7 +8,7 @@ export default function Footer() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(DOCTOR.whatsappPrefilledMessage)}`;
 
   return (
-    <footer className="bg-forest text-white border-t border-white/10 relative z-30">
+    <footer className="bg-primary-dark text-white border-t border-white/10 relative z-30">
       {/* Pre-footer Call-to-Action Bar */}
       <div className="border-b border-white/10 bg-black/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
