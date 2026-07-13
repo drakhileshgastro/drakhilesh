@@ -28,7 +28,7 @@ export default function ConditionHero({
         <nav className="flex items-center gap-2 text-xs text-muted mb-8 font-sans">
           <Link href="/" className="hover:text-primary transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/services" className="hover:text-primary transition-colors">Conditions</Link>
+          <Link href="/conditions" className="hover:text-primary transition-colors">Conditions</Link>
           <span>/</span>
           <span className="text-primary font-semibold">{title}</span>
         </nav>

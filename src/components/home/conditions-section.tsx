@@ -105,7 +105,7 @@ export default function ConditionsSection() {
                   {specialty.conditions.map((cond, cIdx) => (
                     <Link
                       key={cIdx}
-                      href={`/services/${cond.slug}`}
+                      href={`/conditions/${cond.slug}`}
                       className="flex items-start gap-2.5 group cursor-pointer"
                     >
                       <CheckCircle2

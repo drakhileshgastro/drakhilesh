@@ -41,7 +41,7 @@ export default function RelatedConditions({ conditions }: RelatedConditionsProps
           {list.map((cond, idx) => (
             <Link
               key={idx}
-              href={`/services/${cond.slug}`}
+              href={`/conditions/${cond.slug}`}
               className="bg-bg-sand/20 border border-border hover:border-primary-light transition-all rounded-2xl p-6 shadow-xs flex flex-col justify-between group"
             >
               <div>

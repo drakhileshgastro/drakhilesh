@@ -7,7 +7,7 @@ const PAGES = [
   { title: "Home Page", url: "/", desc: "Hero, services, about, reviews, conditions", seo: "Best Gastroenterologist in Ranchi", status: "live", priority: "High" },
   { title: "About Doctor", url: "/about", desc: "Bio, education, specializations, clinic photos", seo: "About Dr. Akhilesh Yadav DM Gastroenterology", status: "live", priority: "Medium" },
   { title: "Book Appointment", url: "/book", desc: "Full booking form + clinic info. Used in Google Ads.", seo: "Book Appointment Dr Akhilesh Yadav Ranchi", status: "live", priority: "High" },
-  { title: "Services Overview", url: "/services", desc: "Grid of all 15 service cards", seo: "Gastroenterology Services Ranchi", status: "live", priority: "High" },
+  { title: "Services Overview", url: "/conditions", desc: "Grid of all 15 service cards", seo: "Gastroenterology Services Ranchi", status: "live", priority: "High" },
   { title: "Blog", url: "/blog", desc: "All health articles listing", seo: "Health Blog Dr Akhilesh Yadav", status: "live", priority: "Medium" },
   { title: "Contact", url: "/contact", desc: "Contact form, map, directions from 8 districts", seo: "Contact Gastroenterologist Ranchi", status: "live", priority: "Low" },
 ];
@@ -81,7 +81,7 @@ export default function WebsitePages() {
         </div>
         <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {SERVICE_PAGES.map((page) => (
-            <Link key={page.slug} href={`/services/${page.slug}`} target="_blank"
+            <Link key={page.slug} href={`/conditions/${page.slug}`} target="_blank"
               className="group flex items-start gap-2 p-3 border border-gray-light rounded-xl hover:border-teal transition-colors">
               <CheckCircle size={14} className="text-green-500 mt-0.5 flex-shrink-0" />
               <div className="min-w-0">

@@ -22,7 +22,7 @@ export default function Services() {
           {SERVICES.map((service) => (
             <Link
               key={service.slug}
-              href={`/services/${service.slug}`}
+              href={`/conditions/${service.slug}`}
               className="group bg-white rounded-2xl p-5 border border-gray-light hover:border-teal hover:shadow-md transition-all duration-200"
             >
               <div className="flex items-start gap-4">
@@ -45,7 +45,7 @@ export default function Services() {
         {/* View all link */}
         <div className="text-center">
           <Link
-            href="/services"
+            href="/conditions"
             className="inline-flex items-center gap-2 px-6 py-3 border-2 border-navy text-navy font-semibold text-sm rounded-xl hover:bg-navy hover:text-white transition-colors"
           >
             View All 15 Conditions

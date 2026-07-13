@@ -7,7 +7,7 @@ import { DOCTOR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Gastroenterology Services in Ranchi | Dr. Akhilesh Yadav",
   description: "Complete gastroenterology & hepatology services by Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi. Fatty liver, jaundice, endoscopy, IBS, liver disease and 15 more conditions treated.",
-  alternates: { canonical: "https://drakhileshgastro.com/services" },
+  alternates: { canonical: "https://drakhileshgastro.com/conditions" },
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -56,7 +56,7 @@ export default function ServicesPage() {
             <p className="text-teal text-xs font-semibold uppercase tracking-widest mb-2">15 Conditions</p>
             <h2 className="text-navy text-2xl sm:text-3xl font-bold mb-3">All Conditions We Treat</h2>
             <p className="text-slate text-sm max-w-lg mx-auto font-hindi">
-              नीचे किसी भी बीमारी पर click करें — पूरी जानकारी और appointment का option
+              नीचे किसी भी बीमारी पर click करें — पूरी जानकारी and appointment का option
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function ServicesPage() {
             {ALL_SERVICES.map((service) => (
               <Link
                 key={service.slug}
-                href={`/services/${service.slug}`}
+                href={`/conditions/${service.slug}`}
                 className={`group rounded-2xl p-5 border transition-all duration-200 hover:shadow-md ${CATEGORY_COLORS[service.color] || CATEGORY_COLORS.teal}`}
               >
                 <div className="flex items-start gap-4 mb-4">
