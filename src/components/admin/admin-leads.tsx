@@ -4,9 +4,10 @@ import { useEffect, useState, useCallback } from "react";
 import { createSupabaseBrowser } from "@/lib/supabase-browser";
 
 const supabase = createSupabaseBrowser();
-import { Search, Download, Phone, MessageCircle, CheckCircle } from "lucide-react";
+import { Search, Download, Phone, MessageCircle, CheckCircle, X } from "lucide-react";
 import { cn } from "@/lib/cn";
 import type { Lead, LeadStatus } from "@/lib/supabase";
+import { calculateLeadScore, getScoreLabel } from "@/lib/lead-score";
 
 
 
@@ -109,7 +110,7 @@ export default function AdminLeads() {
           <table className="w-full text-xs">
             <thead className="bg-offwhite border-b border-gray-light sticky top-0">
               <tr>
-                {["Patient", "Phone", "Condition", "City", "Source", "Status", "Date"].map((h) => (
+                {["Patient", "Phone", "Condition", "City", "Source", "Status", "Score", "Date"].map((h) => (
                   <th key={h} className="px-4 py-2.5 text-left text-gray-muted font-semibold uppercase tracking-wider text-[10px]">{h}</th>
                 ))}
               </tr>
@@ -135,6 +136,11 @@ export default function AdminLeads() {
                       {lead.status}
                     </span>
                   </td>
+                  <td className="px-4 py-3">
+                    {(() => { const s = getScoreLabel(calculateLeadScore(lead)); return (
+                      <span className={cn("text-[10px] font-bold px-2 py-0.5 rounded border", s.color, s.bg, s.border)}>{s.label}</span>
+                    ); })()}
+                  </td>
                   <td className="px-4 py-3 text-gray-muted">{new Date(lead.created_at).toLocaleDateString("en-IN", { day: "2-digit", month: "short" })}</td>
                 </tr>
               ))}
@@ -148,9 +154,9 @@ export default function AdminLeads() {
             <div className="flex items-start justify-between">
               <div>
                 <h3 className="text-navy font-bold text-base">{selectedLead.patient_name}</h3>
-                <p className="text-gray-muted text-xs">{selectedLead.patient_city} Â· {selectedLead.source}</p>
+                <p className="text-gray-muted text-xs">{selectedLead.patient_city} &middot; {selectedLead.source}</p>
               </div>
-              <button onClick={() => setSelectedLead(null)} className="text-gray-muted hover:text-navy text-xs">âœ•</button>
+              <button onClick={() => setSelectedLead(null)} className="text-gray-muted hover:text-navy p-1 rounded-lg hover:bg-offwhite transition-colors"><X size={16} /></button>
             </div>
 
             <div className="flex gap-2">
@@ -165,7 +171,7 @@ export default function AdminLeads() {
             </div>
 
             <div className="bg-offwhite rounded-xl p-3 space-y-2 text-xs">
-              {[["Condition", selectedLead.condition], ["Phone", selectedLead.patient_phone], ["City", selectedLead.patient_city], ["Preferred Date", selectedLead.preferred_date ?? "â€”"], ["Created", new Date(selectedLead.created_at).toLocaleString("en-IN")]].map(([k, v]) => (
+              {[[“Condition”, selectedLead.condition], [“Phone”, selectedLead.patient_phone], [“City”, selectedLead.patient_city], [“Preferred Date”, selectedLead.preferred_date ?? “—“], [“Created”, new Date(selectedLead.created_at).toLocaleString(“en-IN”)]].map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-2">
                   <span className="text-gray-muted">{k}</span>
                   <span className="text-navy font-medium text-right">{v}</span>

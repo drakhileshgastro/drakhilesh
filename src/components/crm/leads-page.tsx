@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import {
   Search, Phone, MessageCircle, X, CheckCircle, Clock, Save, Plus,
-  Calendar, Send, AlertCircle
+  Calendar, Send, AlertCircle, ArrowLeft
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { CONDITIONS } from "@/lib/constants";
@@ -53,6 +53,9 @@ export default function LeadsPage() {
   const [confirmDate, setConfirmDate] = useState("");
   const [confirmTime, setConfirmTime] = useState("");
   const [confirming, setConfirming] = useState(false);
+  const [showAddLead, setShowAddLead] = useState(false);
+  const [addForm, setAddForm] = useState({ patient_name: "", patient_phone: "", patient_city: "", condition: "", preferred_time: "" });
+  const [addingLead, setAddingLead] = useState(false);
 
   const fetchLeads = useCallback(async () => {
     const { data } = await supabase
@@ -149,7 +152,100 @@ export default function LeadsPage() {
     setConfirming(false);
   }
 
+  async function addLead(e: React.FormEvent) {
+    e.preventDefault();
+    if (!addForm.patient_name || !addForm.patient_phone || !addForm.patient_city || !addForm.condition) return;
+    setAddingLead(true);
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...addForm, source: "Walk-in" }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success("Lead added successfully!");
+        setShowAddLead(false);
+        setAddForm({ patient_name: "", patient_phone: "", patient_city: "", condition: "", preferred_time: "" });
+        fetchLeads();
+      } else {
+        toast.error(data.error || "Failed to add lead.");
+      }
+    } catch {
+      toast.error("Network error. Try again.");
+    }
+    setAddingLead(false);
+  }
+
+  // Count leads per status for filter badges
+  const statusCounts = STATUS_OPTIONS.reduce((acc, s) => {
+    acc[s] = leads.filter((l) => l.status === s).length;
+    return acc;
+  }, {} as Record<string, number>);
+
   return (
+    <>
+    {/* Add Lead Modal */}
+    {showAddLead && (
+      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4 bg-black/40">
+        <div className="bg-white rounded-2xl border border-gray-200 w-full max-w-sm shadow-2xl">
+          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+            <h3 className="text-navy font-bold text-sm">Add New Lead</h3>
+            <button onClick={() => setShowAddLead(false)} className="text-gray-400 hover:text-navy p-1 rounded-lg hover:bg-gray-50"><X size={16} /></button>
+          </div>
+          <form onSubmit={addLead} className="p-5 space-y-3">
+            {[
+              { key: "patient_name", label: "Patient Name", type: "text", placeholder: "Full name" },
+              { key: "patient_phone", label: "Phone Number", type: "tel", placeholder: "10-digit mobile" },
+              { key: "patient_city", label: "City", type: "text", placeholder: "City or area" },
+            ].map(({ key, label, type, placeholder }) => (
+              <div key={key}>
+                <label className="text-[11px] text-gray-500 font-semibold block mb-1">{label}</label>
+                <input
+                  type={type}
+                  required
+                  placeholder={placeholder}
+                  value={addForm[key as keyof typeof addForm]}
+                  onChange={(e) => setAddForm((p) => ({ ...p, [key]: e.target.value }))}
+                  className="w-full px-3 py-2.5 text-xs border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-teal-500 text-navy"
+                />
+              </div>
+            ))}
+            <div>
+              <label className="text-[11px] text-gray-500 font-semibold block mb-1">Condition</label>
+              <select
+                required
+                value={addForm.condition}
+                onChange={(e) => setAddForm((p) => ({ ...p, condition: e.target.value }))}
+                className="w-full px-3 py-2.5 text-xs border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-teal-500 text-navy"
+              >
+                <option value="">Select condition...</option>
+                {CONDITIONS.map((c) => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+            <div>
+              <label className="text-[11px] text-gray-500 font-semibold block mb-1">Preferred Time (optional)</label>
+              <select
+                value={addForm.preferred_time}
+                onChange={(e) => setAddForm((p) => ({ ...p, preferred_time: e.target.value }))}
+                className="w-full px-3 py-2.5 text-xs border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-teal-500 text-navy"
+              >
+                <option value="">Not specified</option>
+                {TIME_SLOT_OPTIONS.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
+              </select>
+            </div>
+            <button
+              type="submit"
+              disabled={addingLead}
+              className="w-full py-3 bg-navy text-white text-xs font-bold rounded-xl disabled:opacity-50 mt-2 min-h-[44px]"
+            >
+              {addingLead ? "Adding..." : "Add Lead"}
+            </button>
+          </form>
+        </div>
+      </div>
+    )}
+
     <div className="flex gap-4 h-full min-h-0">
       {/* Leads list */}
       <div className={cn(
@@ -162,7 +258,10 @@ export default function LeadsPage() {
             <h2 className="text-navy font-bold text-sm">
               All Leads <span className="text-gray-400 font-normal">({filtered.length})</span>
             </h2>
-            <button className="flex items-center gap-1.5 px-3 py-1.5 bg-navy text-white text-xs font-semibold rounded-lg">
+            <button
+              onClick={() => setShowAddLead(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-navy text-white text-xs font-semibold rounded-lg"
+            >
               <Plus size={12} /> Add Lead
             </button>
           </div>
@@ -181,18 +280,28 @@ export default function LeadsPage() {
 
           {/* Status filter */}
           <div className="flex gap-1.5 overflow-x-auto pb-0.5 scrollbar-none">
-            {["All", ...STATUS_OPTIONS].map((s) => (
-              <button
-                key={s}
-                onClick={() => setStatusFilter(s)}
-                className={cn(
-                  "px-3 py-1.5 rounded-full text-[11px] font-semibold whitespace-nowrap flex-shrink-0 transition-colors",
-                  statusFilter === s ? "bg-navy text-white" : "bg-gray-100 text-gray-600 border border-gray-200"
-                )}
-              >
-                {s}
-              </button>
-            ))}
+            {["All", ...STATUS_OPTIONS].map((s) => {
+              const count = s === "All" ? leads.length : (statusCounts[s] ?? 0);
+              return (
+                <button
+                  key={s}
+                  onClick={() => setStatusFilter(s)}
+                  className={cn(
+                    "flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[11px] font-semibold whitespace-nowrap flex-shrink-0 transition-colors",
+                    statusFilter === s ? "bg-navy text-white" : "bg-gray-100 text-gray-600 border border-gray-200"
+                  )}
+                >
+                  {s}
+                  {count > 0 && (
+                    <span className={cn("text-[9px] font-bold px-1 py-0.5 rounded-full leading-none",
+                      statusFilter === s ? "bg-white/20 text-white" : "bg-gray-200 text-gray-500"
+                    )}>
+                      {count}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -250,15 +359,22 @@ export default function LeadsPage() {
           {/* Panel header */}
           <div className="px-5 py-4 border-b border-gray-200 flex items-start justify-between">
             <div>
+              {/* Mobile back button */}
+              <button
+                onClick={() => setSelectedLead(null)}
+                className="lg:hidden flex items-center gap-1 text-teal-600 text-xs font-semibold mb-2"
+              >
+                <ArrowLeft size={13} /> Back to Leads
+              </button>
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="text-navy font-bold text-base">{selectedLead.patient_name}</h3>
                 <span className={cn("text-xs font-semibold px-2.5 py-1 rounded-full border", STATUS_COLORS[selectedLead.status])}>
                   {selectedLead.status}
                 </span>
               </div>
-              <p className="text-gray-400 text-xs">{selectedLead.patient_city} · {selectedLead.source}</p>
+              <p className="text-gray-400 text-xs">{selectedLead.patient_city} &middot; {selectedLead.source}</p>
             </div>
-            <button onClick={() => setSelectedLead(null)} className="text-gray-400 hover:text-navy p-1 rounded-lg hover:bg-gray-50">
+            <button onClick={() => setSelectedLead(null)} className="hidden lg:flex text-gray-400 hover:text-navy p-1 rounded-lg hover:bg-gray-50">
               <X size={18} />
             </button>
           </div>
@@ -454,5 +570,6 @@ export default function LeadsPage() {
         </div>
       )}
     </div>
+    </>
   );
 }
