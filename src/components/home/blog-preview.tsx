@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, Utensils, ShieldAlert, Search, BookOpen, Mail, MessageCircle } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
 const articles = [
@@ -11,7 +13,6 @@ const articles = [
     category: "Diet & Nutrition",
     readTime: "5 मिनट",
     condition: "Fatty Liver",
-    icon: "🥗",
   },
   {
     slug: "jaundice-causes-treatment-hindi",
@@ -21,7 +22,6 @@ const articles = [
     category: "Liver Health",
     readTime: "4 मिनट",
     condition: "Jaundice",
-    icon: "🌕",
   },
   {
     slug: "endoscopy-kya-hota-hai",
@@ -31,32 +31,42 @@ const articles = [
     category: "Procedures",
     readTime: "6 मिनट",
     condition: "Endoscopy",
-    icon: "🔭",
   },
 ];
 
+function getArticleIcon(slug: string) {
+  const iconProps = { className: "text-primary/40 group-hover:scale-105 transition-transform duration-200", size: 32 };
+  switch (slug) {
+    case "fatty-liver-diet-in-hindi": return <Utensils {...iconProps} />;
+    case "jaundice-causes-treatment-hindi": return <ShieldAlert {...iconProps} />;
+    case "endoscopy-kya-hota-hai": return <Search {...iconProps} />;
+    default: return <BookOpen {...iconProps} />;
+  }
+}
+
 export default function BlogPreview() {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
-            <span className="inline-block px-3 py-1 bg-primary-50 text-primary text-xs font-semibold rounded-full mb-3 uppercase tracking-wider">
+            <div className="text-primary font-display text-xs font-bold tracking-wider uppercase mb-3">
               Health Library
-            </span>
-            <h2 className="font-hindi text-3xl lg:text-4xl font-bold text-forest mb-2">
+            </div>
+            <h2 className="font-hindi text-[2rem] sm:text-[2.25rem] lg:text-[2.5rem] font-bold text-forest mb-2 leading-tight">
               स्वास्थ्य जानकारी — हिंदी में
             </h2>
-            <p className="text-muted text-base">
-              Expert health articles by Dr. Akhilesh Yadav — in simple Hindi.
+            <p className="font-sans text-muted text-base">
+              Expert articles on digestive and liver health by Dr. Akhilesh Yadav — explained in simple Hindi.
             </p>
           </div>
           <Link
             href="/blog"
-            className="flex-shrink-0 inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+            className="flex-shrink-0 inline-flex items-center gap-2 text-primary font-display font-semibold text-sm transition-colors hover:text-primary-dark"
           >
-            सभी लेख देखें <ArrowRight size={16} />
+            All Articles <ArrowRight size={16} />
           </Link>
         </div>
 
@@ -66,38 +76,41 @@ export default function BlogPreview() {
             <Link
               key={article.slug}
               href={`/blog/${article.slug}`}
-              className="group bg-bg rounded-2xl border border-border overflow-hidden hover:border-primary hover:shadow-md transition-all"
+              className="group bg-white rounded-2xl border border-border overflow-hidden hover:border-primary hover:shadow-sm transition-all duration-200 flex flex-col justify-between"
             >
-              {/* Article image placeholder */}
-              <div className="aspect-[16/9] bg-primary-light flex items-center justify-center">
-                <span className="text-5xl">{article.icon}</span>
-              </div>
-
-              <div className="p-5">
-                {/* Meta */}
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs bg-primary-50 text-primary px-2 py-1 rounded-lg font-semibold">
-                    {article.category}
-                  </span>
-                  <span className="flex items-center gap-1 text-muted text-xs">
-                    <Clock size={11} /> {article.readTime}
-                  </span>
+              <div>
+                {/* Article image area */}
+                <div className="aspect-[16/9] border-b border-border bg-bg-sand flex items-center justify-center">
+                  {getArticleIcon(article.slug)}
                 </div>
 
-                {/* Title */}
-                <h3 className="font-hindi text-forest font-bold text-base leading-snug mb-2 group-hover:text-primary transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-muted text-xs mb-1">{article.titleEn}</p>
+                <div className="p-6">
+                  {/* Meta */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-[10px] border border-border text-primary px-2 py-0.5 rounded bg-bg-sand font-semibold font-sans uppercase tracking-wider">
+                      {article.category}
+                    </span>
+                    <span className="flex items-center gap-1 text-muted text-xs font-sans">
+                      <Clock size={12} className="opacity-70" /> {article.readTime}
+                    </span>
+                  </div>
 
-                {/* Excerpt */}
-                <p className="font-hindi text-forest/70 text-sm leading-relaxed mt-3 line-clamp-2">
-                  {article.excerpt}
-                </p>
+                  {/* Title */}
+                  <h3 className="font-hindi text-forest font-bold text-base leading-snug mb-2 group-hover:text-primary transition-colors duration-200">
+                    {article.title}
+                  </h3>
+                  <p className="font-sans text-muted text-xs leading-normal mb-3">{article.titleEn}</p>
 
-                {/* Read more */}
-                <div className="mt-4 flex items-center gap-1.5 text-primary text-sm font-semibold">
-                  पढ़ें <ArrowRight size={14} />
+                  {/* Excerpt */}
+                  <p className="font-hindi text-muted text-sm leading-relaxed line-clamp-2">
+                    {article.excerpt}
+                  </p>
+                </div>
+              </div>
+
+              <div className="px-6 pb-6 pt-2">
+                <div className="inline-flex items-center gap-1 text-primary text-xs font-semibold font-sans uppercase tracking-wider group-hover:text-primary-dark transition-colors duration-200">
+                  Read Article <ArrowRight size={12} />
                 </div>
               </div>
             </Link>
@@ -105,25 +118,26 @@ export default function BlogPreview() {
         </div>
 
         {/* Newsletter / Subscription */}
-        <div className="mt-12 bg-primary-50 rounded-3xl p-6 sm:p-8 text-center border border-primary-light">
-          <div className="text-3xl mb-3">📩</div>
-          <h3 className="font-hindi text-forest text-xl font-bold mb-2">
+        <div className="mt-16 bg-bg-sand border border-border rounded-3xl p-8 lg:p-12 text-center max-w-2xl mx-auto shadow-sm">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border mb-4 bg-white">
+            <Mail className="text-primary" size={20} />
+          </div>
+          <h3 className="font-hindi text-forest text-2xl font-bold mb-3">
             Health Tips हिंदी में पाएं — WhatsApp पर
           </h3>
-          <p className="text-muted text-sm mb-5 max-w-md mx-auto">
-            Weekly digestive health tips in Hindi — directly on WhatsApp. Free. No spam.
+          <p className="font-sans text-muted text-sm leading-relaxed mb-6 max-w-md mx-auto">
+            Weekly digestive and liver health advice in Hindi, written directly by Dr. Akhilesh Yadav. Free and privacy-focused.
           </p>
           <a
             href={`https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent("Namaskar, mujhe health tips chahiye")}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-whatsapp text-white font-bold text-sm rounded-xl hover:opacity-90 transition-opacity"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-white font-display font-semibold text-sm rounded-xl hover:bg-primary-dark transition-colors shadow-sm min-h-[48px]"
           >
-            💬 WhatsApp पर Subscribe करें
+            <MessageCircle size={16} /> Subscribe on WhatsApp
           </a>
         </div>
       </div>
     </section>
   );
 }
-

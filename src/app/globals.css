@@ -1,48 +1,48 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Brand v3.0 — Healing Green Palette (July 2026) ── */
+  /* ── Premium Personal Doctor Brand Palette (July 2026) ── */
 
-  /* Primary: Healing Green */
-  --color-primary:        #27AE60;
-  --color-primary-dark:   #1E8449;
-  --color-primary-light:  #EAF7EF;
-  --color-primary-50:     #F0FBF5;
+  /* Primary Green */
+  --color-primary:        #184C3A;
+  --color-primary-dark:   #0E3024;
+  --color-primary-light:  #E8EFEB; /* Soft tint of primary green */
+  --color-primary-50:     #F0F5F2; /* Very soft tint of primary green */
 
-  /* Accent: Marigold — CTAs and highlights only */
-  --color-accent:         #D97706;
-  --color-accent-dark:    #B45309;
-  --color-accent-light:   #FEF3C7;
+  /* Accent Gold */
+  --color-accent:         #C68A2E;
+  --color-accent-dark:    #9F6D22;
+  --color-accent-light:   #FBF3E6;
 
-  /* Backgrounds — warm, breathable */
-  --color-bg:             #FAFDF7;
-  --color-bg-sand:        #F5EFE6;
+  /* Backgrounds */
+  --color-bg:             #FFFFFF;
+  --color-bg-sand:        #F8F7F2;
   --color-surface:        #FFFFFF;
 
-  /* Typography — deep forest */
-  --color-forest:         #1A2E1A;
-  --color-muted:          #4A6355;
-  --color-border:         #D4E8DA;
-  --color-border-light:   #EBF5EC;
+  /* Typography */
+  --color-forest:         #1D1D1D;
+  --color-muted:          #6F6F6F;
+  --color-border:         #EAE7DF;
+  --color-border-light:   #F3F1EC;
 
-  /* Admin / CRM — navy system */
-  --color-navy:           #0F2745;
-  --color-navy-dark:      #0A1C33;
-  --color-navy-mid:       #1B3A5C;
+  /* Admin / CRM — navy system (kept for CRM/Admin pages if needed) */
+  --color-navy:           #184C3A;
+  --color-navy-dark:      #0E3024;
+  --color-navy-mid:       #153F30;
 
-  /* Medical blue — trust elements, credentials */
-  --color-blue:           #1EA7F2;
-  --color-blue-dark:      #0D92D9;
-  --color-blue-50:        #E0F5FF;
+  /* Medical blue — changed to match primary or gold tint */
+  --color-blue:           #C68A2E;
+  --color-blue-dark:      #9F6D22;
+  --color-blue-50:        #FBF3E6;
 
   /* Platform */
   --color-whatsapp:       #25D366;
   --color-facebook:       #1877F2;
 
   /* Fonts */
-  --font-sans:    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
-  --font-hindi:   var(--font-hind), ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-hindi:   var(--font-mukta), ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -54,8 +54,8 @@ body {
   font-family: var(--font-sans);
   font-size: 1rem;
   line-height: 1.75;
-  color: #1A2E1A;
-  background: #FAFDF7;
+  color: var(--color-forest);
+  background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

@@ -52,50 +52,51 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-bg-sand py-16 lg:py-24">
+    <section className="bg-bg-sand py-20 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        
         {/* Header */}
-        <div className="text-center mb-10">
-          <span className="inline-block px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full mb-3 uppercase tracking-wider border border-primary-light">
-            FAQ
-          </span>
-          <h2 className="font-hindi text-3xl lg:text-4xl font-bold text-forest mb-3">
+        <div className="text-center mb-12">
+          <div className="text-primary font-display text-xs font-bold tracking-wider uppercase mb-3">
+            Frequently Asked Questions
+          </div>
+          <h2 className="font-hindi text-[2rem] sm:text-[2.25rem] lg:text-[2.5rem] font-bold text-forest mb-4 leading-tight">
             अक्सर पूछे जाने वाले सवाल
           </h2>
-          <p className="text-muted text-base">
-            Frequently Asked Questions — answered by Dr. Akhilesh Yadav
+          <p className="font-sans text-muted text-base leading-relaxed">
+            Frequently Asked Questions about consultations, procedures, and treatments.
           </p>
         </div>
 
         {/* FAQ Accordion */}
-        <div className="space-y-3">
+        <div className="space-y-4">
           {faqs.map((faq, i) => (
             <div
               key={i}
               className={cn(
-                "bg-white border rounded-2xl overflow-hidden transition-all duration-200",
-                open === i ? "border-primary shadow-sm" : "border-border hover:border-primary-light"
+                "bg-white border rounded-2xl overflow-hidden transition-all duration-200 shadow-sm",
+                open === i ? "border-primary" : "border-border hover:border-primary-light"
               )}
             >
               <button
-                className="w-full flex items-start gap-4 px-5 py-4 text-left"
+                className="w-full flex items-start justify-between gap-4 px-6 py-5 text-left cursor-pointer"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className="font-hindi text-forest font-semibold text-[15px] leading-snug flex-1">
+                <span className="font-hindi text-forest font-semibold text-base sm:text-lg leading-snug flex-1">
                   {faq.q}
                 </span>
                 <ChevronDown
                   size={18}
                   className={cn(
-                    "text-muted flex-shrink-0 mt-0.5 transition-transform duration-200",
+                    "text-muted flex-shrink-0 mt-1 transition-transform duration-200",
                     open === i ? "rotate-180 text-primary" : ""
                   )}
                 />
               </button>
               {open === i && (
-                <div className="px-5 pb-5">
-                  <p className="font-hindi text-forest/80 text-sm leading-relaxed mb-2">{faq.a}</p>
-                  <p className="text-muted text-xs">{faq.eng}</p>
+                <div className="px-6 pb-6 pt-2 border-t border-border/40">
+                  <p className="font-hindi text-forest/90 text-base leading-relaxed mb-3">{faq.a}</p>
+                  <p className="font-sans text-muted text-xs leading-normal">{faq.eng}</p>
                 </div>
               )}
             </div>
@@ -103,20 +104,20 @@ export default function FAQSection() {
         </div>
 
         {/* More questions CTA */}
-        <div className="mt-10 text-center">
-          <p className="text-muted text-sm mb-4">
+        <div className="mt-16 text-center border-t border-border/60 pt-10">
+          <p className="text-muted text-sm font-hindi mb-6 leading-relaxed">
             और कोई सवाल है? डॉ. अखिलेश से सीधे पूछें।
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/faqs"
-              className="px-5 py-2.5 border border-border text-forest text-sm font-medium rounded-xl hover:border-primary hover:text-primary transition-colors"
+              className="px-6 py-3.5 border border-primary text-primary font-display font-semibold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[48px]"
             >
-              All FAQs →
+              All FAQs
             </Link>
             <Link
               href="/book"
-              className="px-6 py-2.5 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors"
+              className="px-6 py-3.5 bg-primary text-white font-display font-semibold text-sm rounded-xl hover:bg-primary-dark transition-colors shadow-sm min-h-[48px]"
             >
               Book Consultation
             </Link>

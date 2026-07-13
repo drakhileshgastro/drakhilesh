@@ -21,7 +21,7 @@ export default function Footer() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-3 bg-white text-whatsapp font-bold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[48px]"
+              className="flex items-center gap-2 px-5 py-3 bg-white text-primary font-bold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[48px]"
             >
               <MessageCircle size={16} />
               WhatsApp करें

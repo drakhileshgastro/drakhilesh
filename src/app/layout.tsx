@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
-import { Nunito, Hind, Space_Grotesk } from "next/font/google";
+import { Manrope, Inter, Mukta } from "next/font/google";
 import Script from "next/script";
 import { Toaster } from "sonner";
 import "./globals.css";
 
 const GA_ID = "G-ZYE92TKM0W";
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
-const hind = Hind({
-  variable: "--font-hind",
-  subsets: ["devanagari", "latin"],
-  weight: ["400", "700"],
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
+const mukta = Mukta({
+  variable: "--font-mukta",
+  subsets: ["devanagari", "latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
@@ -144,7 +144,7 @@ const GLOBAL_SCHEMA = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="hi-IN" className={`${nunito.variable} ${hind.variable} ${spaceGrotesk.variable}`}>
+    <html lang="hi-IN" className={`${manrope.variable} ${inter.variable} ${mukta.variable}`}>
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-72x72.png" />
