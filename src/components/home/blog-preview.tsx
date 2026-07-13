@@ -35,7 +35,7 @@ const articles = [
 ];
 
 function getArticleIcon(slug: string) {
-  const iconProps = { className: "text-primary/40 group-hover:scale-105 transition-transform duration-200", size: 32 };
+  const iconProps = { className: "text-primary/40 group-hover:scale-105 transition-transform duration-200", size: 36 };
   switch (slug) {
     case "fatty-liver-diet-in-hindi": return <Utensils {...iconProps} />;
     case "jaundice-causes-treatment-hindi": return <ShieldAlert {...iconProps} />;
@@ -46,7 +46,7 @@ function getArticleIcon(slug: string) {
 
 export default function BlogPreview() {
   return (
-    <section className="bg-white py-20 lg:py-24">
+    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -71,23 +71,23 @@ export default function BlogPreview() {
         </div>
 
         {/* Article Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article) => (
             <Link
               key={article.slug}
               href={`/blog/${article.slug}`}
-              className="group bg-white rounded-2xl border border-border overflow-hidden hover:border-primary hover:shadow-sm transition-all duration-200 flex flex-col justify-between"
+              className="group bg-white rounded-2xl border border-border overflow-hidden hover:border-primary hover:shadow-md transition-all duration-200 flex flex-col justify-between"
             >
               <div>
-                {/* Article image area */}
-                <div className="aspect-[16/9] border-b border-border bg-bg-sand flex items-center justify-center">
+                {/* Article image area — larger, aspect-3/2 */}
+                <div className="aspect-[3/2] border-b border-border bg-bg-sand flex items-center justify-center">
                   {getArticleIcon(article.slug)}
                 </div>
 
-                <div className="p-6">
+                <div className="p-6 pb-2">
                   {/* Meta */}
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-[10px] border border-border text-primary px-2 py-0.5 rounded bg-bg-sand font-semibold font-sans uppercase tracking-wider">
+                    <span className="text-[10px] border border-border text-primary px-2.5 py-0.5 rounded bg-bg-sand font-semibold font-sans uppercase tracking-wider">
                       {article.category}
                     </span>
                     <span className="flex items-center gap-1 text-muted text-xs font-sans">
@@ -108,9 +108,10 @@ export default function BlogPreview() {
                 </div>
               </div>
 
-              <div className="px-6 pb-6 pt-2">
-                <div className="inline-flex items-center gap-1 text-primary text-xs font-semibold font-sans uppercase tracking-wider group-hover:text-primary-dark transition-colors duration-200">
-                  Read Article <ArrowRight size={12} />
+              {/* Minimal Circle Arrow Link */}
+              <div className="px-6 pb-6 pt-2 text-right">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-border text-primary group-hover:border-primary group-hover:bg-primary-50 transition-colors duration-200">
+                  <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform duration-200" />
                 </div>
               </div>
             </Link>

@@ -54,8 +54,6 @@ export const CONDITIONS_LIST = [
   { title: "Ulcerative Colitis", hindiTitle: "अल्सरेटिव कोलाइटिस", slug: "ulcerative-colitis", description: "IBD का दीर्घकालिक प्रबंधन", icon: "🌿" },
   { title: "Abdominal Pain", hindiTitle: "पेट दर्द", slug: "abdominal-pain", description: "सटीक निदान और उपचार", icon: "🫃" },
   { title: "Unexplained Weight Loss", hindiTitle: "वजन कम होना", slug: "weight-loss", description: "गहन जांच और देखभाल", icon: "⚖️" },
-  { title: "Liver Cancer", hindiTitle: "लीवर कैंसर", slug: "liver-cancer", description: "ऑन्कोलॉजी सह-प्रबंधन", icon: "🔬" },
-  { title: "Liver Transplant Consultation", hindiTitle: "लीवर ट्रांसप्लांट परामर्श", slug: "liver-transplant", description: "प्रत्यारोपण पूर्व मार्गदर्शन", icon: "💙" },
 ] as const;
 
 export const PROCEDURES_LIST = [
@@ -130,12 +128,11 @@ export const PATIENT_RESOURCE_LINKS = [
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About Doctor", href: "/about" },
   { label: "Symptoms", href: "/symptoms", dropdown: "symptoms" as const },
   { label: "Conditions", href: "/conditions", dropdown: "conditions" as const },
   { label: "Procedures", href: "/procedures", dropdown: "procedures" as const },
   { label: "Health Library", href: "/blog", dropdown: "library" as const },
-  { label: "Patient Resources", href: "/patient-resources", dropdown: "resources" as const },
+  { label: "About Doctor", href: "/about", dropdown: "about" as const },
   { label: "Contact", href: "/contact" },
 ];
 

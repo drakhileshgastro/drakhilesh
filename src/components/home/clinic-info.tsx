@@ -1,63 +1,72 @@
+"use client";
+
 import Link from "next/link";
 import { MapPin, Clock, Phone, Car, Accessibility, MessageCircle, ShieldCheck, Search, Building2, Activity } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
 const timings = [
   { day: "Monday – Saturday", morning: "10:00 AM – 2:00 PM", evening: "5:00 PM – 8:00 PM" },
-  { day: "Sunday", morning: "By Appointment", evening: "Emergency Only" },
+  { day: "Sunday", morning: "By Appointment Only", evening: "Emergency Only" },
+];
+
+const accessibilityDetails = [
+  { icon: Car, label: "Dedicated Patient Parking" },
+  { icon: Accessibility, label: "Wheelchair Accessible Entrance" },
+  { icon: Building2, label: "Modern Lift / Elevator Available" },
+  { icon: MapPin, label: "Landmark: Near Plaza Chowk" },
 ];
 
 const facilities = [
   { icon: ShieldCheck, label: "Advanced Endoscopy Suite" },
   { icon: Search, label: "EUS Ultrasound" },
   { icon: Building2, label: "Consultation Rooms" },
-  { icon: Activity, label: "In-house Lab" },
-  { icon: Car, label: "Free Parking" },
-  { icon: Accessibility, label: "Wheelchair Accessible" },
+  { icon: Activity, label: "In-house Lab & Diagnostics" },
 ];
 
 export default function ClinicInfo() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent("Namaskar, mujhe clinic directions chahiye")}`;
 
   return (
-    <section className="bg-white py-20 lg:py-24">
+    <section className="bg-bg-sand py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
         <div className="text-center mb-12">
           <div className="text-primary font-display text-xs font-bold tracking-wider uppercase mb-3">
-            Visit Us
+            Visit Our Clinic
           </div>
           <h2 className="font-hindi text-[2rem] sm:text-[2.25rem] lg:text-[2.5rem] font-bold text-forest mb-2 leading-tight">
-            क्लीनिक की जानकारी
+            क्लीनिक और अस्पताल की जानकारी
           </h2>
           <p className="font-sans text-muted text-base leading-relaxed">
-            Orchid Medical Centre — HB Road, Ranchi, Jharkhand
+            Orchid Medical Centre — HB Road, Ranchi, Jharkhand — 834001
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           
-          {/* Map placeholder */}
-          <div className="relative">
-            <div className="aspect-[4/3] border border-border bg-bg-sand rounded-3xl overflow-hidden shadow-sm flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border bg-white mb-4">
-                  <MapPin className="text-primary" size={20} />
-                </div>
-                <p className="text-forest font-display font-bold text-lg leading-snug">{DOCTOR.hospital}</p>
-                <p className="text-muted text-sm mt-1.5 font-sans leading-relaxed">HB Road, Ranchi, Jharkhand — 834001</p>
-                <p className="text-muted text-xs font-sans mt-1">Opposite Plaza Cinema</p>
-              </div>
+          {/* Real Google Map Embed */}
+          <div className="space-y-4">
+            <div className="aspect-[4/3] border border-border bg-white rounded-3xl overflow-hidden shadow-sm relative">
+              <iframe
+                title="Orchid Medical Centre Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.3384218844837!2d85.33405787602334!3d23.376008602758197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e13dc7381be7%3A0xc3cf02130ff2c918!2sOrchid%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1700000000000"
+                className="w-full h-full border-0"
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
-            <a
-              href={DOCTOR.googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 px-6 py-3 bg-primary text-white font-display font-semibold text-sm rounded-xl shadow-md hover:bg-primary-dark transition-colors min-h-[44px]"
-            >
-              <MapPin size={14} /> Open in Google Maps
-            </a>
+            <div className="flex justify-center">
+              <a
+                href={DOCTOR.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-display font-semibold text-sm rounded-xl shadow-sm hover:bg-primary-dark transition-colors min-h-[44px]"
+              >
+                <MapPin size={14} /> Open in Google Maps
+              </a>
+            </div>
           </div>
 
           {/* Info column */}
@@ -67,10 +76,11 @@ export default function ClinicInfo() {
             <div className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-border shadow-sm">
               <MapPin size={20} className="text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-forest font-sans font-bold text-xs uppercase tracking-wider mb-2">Address</p>
+                <p className="text-forest font-sans font-bold text-xs uppercase tracking-wider mb-2">Address &amp; Landmark</p>
                 <p className="text-muted text-sm leading-relaxed">
-                  {DOCTOR.hospital}<br />
-                  HB Road, Ranchi, Jharkhand — 834001
+                  <strong>{DOCTOR.hospital}</strong><br />
+                  HB Road, Opposite Plaza Cinema, Plaza Chowk,<br />
+                  Ranchi, Jharkhand — 834001
                 </p>
                 <a
                   href={DOCTOR.googleMapsUrl}
@@ -117,23 +127,23 @@ export default function ClinicInfo() {
               </div>
             </div>
 
-            {/* Facilities */}
+            {/* Accessibility Badges */}
             <div>
-              <p className="text-forest font-sans font-bold text-xs uppercase tracking-wider mb-3">Available Facilities</p>
+              <p className="text-forest font-sans font-bold text-xs uppercase tracking-wider mb-3">Accessibility &amp; Facilities</p>
               <div className="grid grid-cols-2 gap-3">
-                {facilities.map((f, idx) => {
-                  const Icon = f.icon;
+                {accessibilityDetails.map((item, idx) => {
+                  const Icon = item.icon;
                   return (
-                    <div key={idx} className="flex items-center gap-2.5 px-4 py-3 bg-white border border-border rounded-xl text-xs text-forest font-medium shadow-sm">
+                    <div key={idx} className="flex items-center gap-2.5 px-4 py-3 bg-white border border-border rounded-xl text-xs text-forest font-semibold shadow-xs">
                       <Icon className="text-primary" size={14} />
-                      <span className="font-sans">{f.label}</span>
+                      <span className="font-sans">{item.label}</span>
                     </div>
                   );
                 })}
               </div>
             </div>
 
-            {/* CTAs */}
+            {/* Timings CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a
                 href={whatsappHref}
