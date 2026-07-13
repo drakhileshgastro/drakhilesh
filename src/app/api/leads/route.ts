@@ -41,14 +41,14 @@ export async function POST(req: NextRequest) {
       .single();
 
     if (existing) {
-      // Update notes to record new channel — don't create a duplicate lead
-      await supabase
-        .from("gastro_leads")
-        .update({
-          notes: `Re-enquiry via ${source ?? "Website"} for: ${condition}. Original source: ${existing.source}.`,
-        })
-        .eq("lead_id", existing.lead_id)
-        .catch(() => {}); // Silent — anon may not be able to update
+      try {
+        await supabase
+          .from("gastro_leads")
+          .update({
+            notes: `Re-enquiry via ${source ?? "Website"} for: ${condition}. Original source: ${existing.source}.`,
+          })
+          .eq("lead_id", existing.lead_id);
+      } catch {}
 
       // Still fire clinic alert for re-enquiry
       const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drakhileshgastro.com";
