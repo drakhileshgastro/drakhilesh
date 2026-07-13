@@ -6,18 +6,30 @@ import Link from "next/link";
 import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import {
   LayoutDashboard, Users, Calendar, LogOut,
-  Bell, Menu, X, Phone, CheckSquare, MessageCircle, BarChart2
+  Bell, Menu, CheckSquare, MessageCircle, BarChart2, ShieldCheck
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 const NAV = [
-  { href: "/crm", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/crm", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { href: "/crm/leads", label: "Leads", icon: Users },
   { href: "/crm/appointments", label: "Appointments", icon: Calendar },
   { href: "/crm/tasks", label: "Tasks", icon: CheckSquare },
   { href: "/crm/chats", label: "AI Chats", icon: MessageCircle },
   { href: "/crm/analytics", label: "Analytics", icon: BarChart2 },
 ];
+
+// Bottom nav shows the 4 most-used items for mobile telecallers
+const BOTTOM_NAV = [
+  { href: "/crm", label: "Home", icon: LayoutDashboard, exact: true },
+  { href: "/crm/leads", label: "Leads", icon: Users },
+  { href: "/crm/appointments", label: "Appts", icon: Calendar },
+  { href: "/crm/tasks", label: "Tasks", icon: CheckSquare },
+];
+
+function isActive(pathname: string, href: string, exact?: boolean) {
+  return exact ? pathname === href : pathname.startsWith(href);
+}
 
 export default function CrmShell({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -32,7 +44,6 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { router.push("/crm/login"); return; }
       setUserEmail(data.user.email ?? "");
-      // Auto-subscribe to push notifications if permission already granted
       if (typeof Notification !== "undefined" && Notification.permission === "granted") {
         subscribeToPush(data.user.email ?? "").catch(() => {});
         setNotifStatus("granted");
@@ -96,7 +107,7 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-1">
         {NAV.map((item) => {
-          const active = pathname === item.href;
+          const active = isActive(pathname, item.href, item.exact);
           return (
             <Link
               key={item.href}
@@ -116,12 +127,18 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
         })}
       </nav>
 
-      {/* User + logout */}
-      <div className="px-3 py-4 border-t border-gray-light">
-        <div className="px-3 py-2 mb-2">
+      {/* User + links + logout */}
+      <div className="px-3 py-4 border-t border-gray-light space-y-1">
+        <div className="px-3 py-2">
           <p className="text-navy text-xs font-semibold truncate">{userEmail}</p>
           <p className="text-gray-muted text-[10px]">Telecaller</p>
         </div>
+        <Link
+          href="/admin"
+          className="flex items-center gap-2 px-3 py-2 text-xs text-gray-muted hover:text-navy hover:bg-offwhite rounded-xl transition-colors"
+        >
+          <ShieldCheck size={13} /> Admin Panel →
+        </Link>
         <button
           onClick={logout}
           className="w-full flex items-center gap-2 px-3 py-2.5 text-sm text-slate hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors"
@@ -163,7 +180,7 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
             </button>
             <div>
               <p className="text-navy font-bold text-sm">
-                {NAV.find((n) => n.href === pathname)?.label ?? "CRM"}
+                {NAV.find((n) => isActive(pathname, n.href, n.exact))?.label ?? "CRM"}
               </p>
               <p className="text-gray-muted text-xs hidden sm:block">
                 {new Date().toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long" })}
@@ -171,9 +188,6 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <a href="tel:+917491925047" className="flex items-center gap-1.5 px-3 py-2 bg-teal text-white text-xs font-semibold rounded-lg">
-              <Phone size={13} /> Call Patient
-            </a>
             <button
               onClick={notifStatus === "idle" ? requestNotifications : undefined}
               title={notifStatus === "idle" ? "Enable push notifications" : notifStatus === "granted" ? "Notifications enabled" : "Notifications blocked"}
@@ -186,11 +200,33 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
           </div>
         </header>
 
-        {/* Page content */}
-        <main className="flex-1 overflow-auto p-4 sm:p-6">
+        {/* Page content — add bottom padding on mobile for bottom nav */}
+        <main className="flex-1 overflow-auto p-4 sm:p-6 pb-20 lg:pb-6">
           {children}
         </main>
       </div>
+
+      {/* Mobile bottom navigation — telecallers use this most */}
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-light flex safe-area-pb">
+        {BOTTOM_NAV.map((item) => {
+          const active = isActive(pathname, item.href, item.exact);
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "flex-1 flex flex-col items-center justify-center gap-1 py-2.5 text-center transition-colors",
+                active ? "text-teal" : "text-gray-muted"
+              )}
+            >
+              <item.icon size={20} strokeWidth={active ? 2.5 : 1.8} />
+              <span className={cn("text-[10px] font-semibold leading-none", active ? "text-teal" : "text-gray-muted")}>
+                {item.label}
+              </span>
+            </Link>
+          );
+        })}
+      </nav>
     </div>
   );
 }
