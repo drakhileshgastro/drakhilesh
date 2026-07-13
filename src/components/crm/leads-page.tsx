@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/cn";
 import { CONDITIONS } from "@/lib/constants";
 import type { Lead, LeadStatus } from "@/lib/supabase";
+import { calculateLeadScore, getScoreLabel } from "@/lib/lead-score";
 import { toast } from "sonner";
 
 const supabase = createSupabaseBrowser();
@@ -220,6 +221,11 @@ export default function LeadsPage() {
                     <span className={cn("text-[10px] font-semibold px-2 py-0.5 rounded-full border flex-shrink-0", STATUS_COLORS[lead.status])}>
                       {lead.status}
                     </span>
+                    {(() => { const s = getScoreLabel(calculateLeadScore(lead)); return (
+                      <span className={cn("text-[10px] font-bold px-1.5 py-0.5 rounded border flex-shrink-0", s.color, s.bg, s.border)}>
+                        {s.label}
+                      </span>
+                    ); })()}
                   </div>
                   <p className="text-gray-400 text-xs truncate">{lead.condition}</p>
                   <div className="flex items-center gap-2 mt-1">

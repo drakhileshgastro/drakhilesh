@@ -1,5 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
 import { createLead, type CreateLeadInput } from "@/lib/supabase";
+
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
 export async function POST(req: NextRequest) {
   try {
@@ -19,9 +25,55 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
 
+    // ── Lead Deduplication ────────────────────────────────────────
+    // If same phone submitted within last 30 days, update notes instead of creating duplicate
+    const cleanPhone = patient_phone.trim().replace(/^0/, "").slice(-10);
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+
+    const { data: existing } = await supabase
+      .from("gastro_leads")
+      .select("lead_id, source, status")
+      .eq("patient_phone", cleanPhone)
+      .gte("created_at", thirtyDaysAgo)
+      .in("status", ["New", "Called", "No-answer", "Follow-up"])
+      .order("created_at", { ascending: false })
+      .limit(1)
+      .single();
+
+    if (existing) {
+      // Update notes to record new channel — don't create a duplicate lead
+      await supabase
+        .from("gastro_leads")
+        .update({
+          notes: `Re-enquiry via ${source ?? "Website"} for: ${condition}. Original source: ${existing.source}.`,
+        })
+        .eq("lead_id", existing.lead_id)
+        .catch(() => {}); // Silent — anon may not be able to update
+
+      // Still fire clinic alert for re-enquiry
+      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drakhileshgastro.com";
+      fetch(`${baseUrl}/api/whatsapp`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: "clinic_alert",
+          patientName: patient_name.trim(),
+          leadId: existing.lead_id,
+          type: "clinic_alert",
+          condition,
+          patientCity: patient_city.trim(),
+          preferredTime: preferred_time || "Not specified",
+          appointmentDate: `Re-enquiry (existing lead: ${existing.status})`,
+        }),
+      }).catch(() => {});
+
+      return NextResponse.json({ success: true, lead_id: existing.lead_id, deduplicated: true });
+    }
+
+    // ── Create New Lead ───────────────────────────────────────────
     const input: CreateLeadInput = {
       patient_name: patient_name.trim(),
-      patient_phone: patient_phone.trim(),
+      patient_phone: cleanPhone,
       patient_city: patient_city.trim(),
       condition,
       preferred_date: preferred_date || undefined,
@@ -37,7 +89,6 @@ export async function POST(req: NextRequest) {
     }
 
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drakhileshgastro.com";
-    const cleanPhone = patient_phone.trim().replace(/^0/, "");
 
     // 1. WhatsApp acknowledgement to patient (non-blocking)
     fetch(`${baseUrl}/api/whatsapp`, {
@@ -66,6 +117,17 @@ export async function POST(req: NextRequest) {
         preferredTime: preferred_time || "Not specified",
       }),
     }).catch((err) => console.error("WhatsApp clinic alert failed:", err));
+
+    // 3. Browser push notification to logged-in CRM users (non-blocking)
+    fetch(`${baseUrl}/api/push/send`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: `New Lead: ${patient_name.trim()}`,
+        body: `${condition} — ${patient_city.trim()}`,
+        url: "/crm/leads",
+      }),
+    }).catch(() => {}); // Silent — push may not be set up
 
     return NextResponse.json({ success: true, lead_id: result.lead_id });
   } catch (err) {
