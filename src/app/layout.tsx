@@ -28,10 +28,7 @@ const mukta = Mukta({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Dr. Akhilesh Yadav — Best Gastroenterologist in Ranchi | Liver & Stomach Specialist",
-    template: "%s | Dr. Akhilesh Yadav — Gastroenterologist Ranchi",
-  },
+  title: "Dr. Akhilesh Yadav — Best Gastroenterologist in Ranchi | Liver & Stomach Specialist",
   description:
     "Dr. Akhilesh Yadav is a leading Gastroenterologist & Hepatologist at Orchid Medical Centre, Ranchi. Expert treatment for liver disease, fatty liver, jaundice, endoscopy & all digestive conditions. Serving patients from Jharkhand, Bihar & Chhattisgarh.",
   keywords: [
