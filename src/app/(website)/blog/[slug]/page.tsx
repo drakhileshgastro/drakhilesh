@@ -129,6 +129,17 @@ export default async function BlogPostPage({ params }: Props) {
               {/* Left Column: Article Body (lg:col-span-8) */}
               <div className="lg:col-span-8 space-y-8">
                 
+                {/* Medical Disclaimer Banner */}
+                <div className="bg-red-50/20 border border-red-200/50 rounded-2xl p-4 flex gap-3 items-start text-xs text-muted">
+                  <AlertTriangle className="text-red-600 flex-shrink-0 mt-0.5" size={15} />
+                  <div className="space-y-0.5">
+                    <span className="text-[9px] text-red-700 font-bold uppercase tracking-wider block font-sans">Medical Disclaimer</span>
+                    <p className="leading-relaxed font-sans">
+                      This health guide is researched and prepared by Dr. Akhilesh's clinical medical team and reviewed by Dr. Akhilesh Yadav. It is for general educational purposes only and does not constitute expert clinical advice. Always consult a physician for individual diagnostics.
+                    </p>
+                  </div>
+                </div>
+
                 {/* Excerpt Summary */}
                 <div className="bg-bg-sand/35 border-l-4 border-primary rounded-r-2xl px-6 py-5 shadow-3xs">
                   <span className="text-[9px] text-primary uppercase font-bold tracking-wider font-sans block mb-1">Quick Summary</span>
