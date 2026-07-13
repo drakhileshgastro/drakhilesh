@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { DOCTOR } from "@/lib/constants";
 
 const WA_TOKEN = process.env.WHATSAPP_ACCESS_TOKEN;
 const WA_PHONE_ID = process.env.WHATSAPP_PHONE_NUMBER_ID;
@@ -7,12 +8,13 @@ interface SendWhatsAppParams {
   to: string;
   patientName: string;
   leadId: string;
-  type?: "acknowledgement" | "confirmation" | "reminder" | "review" | "clinic_alert";
+  type?: "acknowledgement" | "confirmation" | "reminder" | "follow_up" | "review" | "clinic_alert" | "raw";
   appointmentDate?: string;
   appointmentTime?: string;
   condition?: string;
   patientCity?: string;
   preferredTime?: string;
+  rawMessage?: string;
 }
 
 function buildMessage(params: SendWhatsAppParams): string {
@@ -47,6 +49,18 @@ function buildMessage(params: SendWhatsAppParams): string {
         `— Dr. Akhilesh Yadav Team`
       );
 
+    case "follow_up":
+      return (
+        `Namaskar ${patientName} ji 🙏\n\n` +
+        `Umeed hai aap ab theek feel kar rahe hain!\n\n` +
+        `Koi takleef ho ya dobara jaanch karwani ho, toh hum yahaan hain:\n` +
+        `📞 ${DOCTOR.phone}\n` +
+        `🌐 https://drakhileshgastro.com/book\n\n` +
+        `Aur agar experience achha raha, toh Google Review zaroor dein:\n` +
+        `⭐ ${reviewLink}\n\n` +
+        `— Dr. Akhilesh Yadav Team`
+      );
+
     case "review":
       return (
         `Namaskar ${patientName} ji 🙏\n\n` +
@@ -56,6 +70,9 @@ function buildMessage(params: SendWhatsAppParams): string {
         `Bahut bahut shukriya!\n` +
         `— Dr. Akhilesh Yadav Team`
       );
+
+    case "raw":
+      return params.rawMessage ?? "";
 
     case "clinic_alert":
       return (

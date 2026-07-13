@@ -24,6 +24,7 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [userEmail, setUserEmail] = useState("");
+  const [notifStatus, setNotifStatus] = useState<"idle" | "granted" | "denied">("idle");
 
   useEffect(() => {
     if (pathname === "/crm/login") return;
@@ -31,8 +32,40 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { router.push("/crm/login"); return; }
       setUserEmail(data.user.email ?? "");
+      // Auto-subscribe to push notifications if permission already granted
+      if (typeof Notification !== "undefined" && Notification.permission === "granted") {
+        subscribeToPush(data.user.email ?? "").catch(() => {});
+        setNotifStatus("granted");
+      } else if (typeof Notification !== "undefined" && Notification.permission === "denied") {
+        setNotifStatus("denied");
+      }
     });
   }, [router, pathname]);
+
+  async function subscribeToPush(email: string) {
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return;
+    const reg = await navigator.serviceWorker.ready;
+    const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+    if (!vapidKey) return;
+    const sub = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: vapidKey,
+    });
+    await fetch("/api/push/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ subscription: sub.toJSON(), user_email: email }),
+    });
+  }
+
+  async function requestNotifications() {
+    if (!("Notification" in window)) return;
+    const perm = await Notification.requestPermission();
+    setNotifStatus(perm === "granted" ? "granted" : "denied");
+    if (perm === "granted") {
+      subscribeToPush(userEmail).catch(() => {});
+    }
+  }
 
   async function logout() {
     const supabase = createSupabaseBrowser();
@@ -141,9 +174,14 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
             <a href="tel:+917491925047" className="flex items-center gap-1.5 px-3 py-2 bg-teal text-white text-xs font-semibold rounded-lg">
               <Phone size={13} /> Call Patient
             </a>
-            <button className="w-9 h-9 flex items-center justify-center text-slate hover:text-navy rounded-lg hover:bg-offwhite relative">
-              <Bell size={18} />
-              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-teal rounded-full" />
+            <button
+              onClick={notifStatus === "idle" ? requestNotifications : undefined}
+              title={notifStatus === "idle" ? "Enable push notifications" : notifStatus === "granted" ? "Notifications enabled" : "Notifications blocked"}
+              className="w-9 h-9 flex items-center justify-center text-slate hover:text-navy rounded-lg hover:bg-offwhite relative"
+            >
+              <Bell size={18} className={notifStatus === "granted" ? "text-teal" : ""} />
+              {notifStatus === "idle" && <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-orange-400 rounded-full" />}
+              {notifStatus === "granted" && <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-teal rounded-full" />}
             </button>
           </div>
         </header>
