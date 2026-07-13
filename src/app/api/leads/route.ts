@@ -5,7 +5,15 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    const { patient_name, patient_phone, patient_city, condition, preferred_date, source } = body;
+    const {
+      patient_name,
+      patient_phone,
+      patient_city,
+      condition,
+      preferred_date,
+      preferred_time,
+      source,
+    } = body;
 
     if (!patient_name || !patient_phone || !patient_city || !condition) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
@@ -17,6 +25,7 @@ export async function POST(req: NextRequest) {
       patient_city: patient_city.trim(),
       condition,
       preferred_date: preferred_date || undefined,
+      preferred_time: preferred_time || undefined,
       source: source || "Website Form",
     };
 
@@ -27,18 +36,36 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, error: result.error }, { status: 500 });
     }
 
-    // Fire WhatsApp acknowledgement — non-blocking, don't wait for it
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drakhileshgastro.com";
+    const cleanPhone = patient_phone.trim().replace(/^0/, "");
+
+    // 1. WhatsApp acknowledgement to patient (non-blocking)
     fetch(`${baseUrl}/api/whatsapp`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        to: `91${patient_phone.trim().replace(/^0/, "")}`,
+        to: `91${cleanPhone}`,
         patientName: patient_name.trim(),
         leadId: result.lead_id,
         type: "acknowledgement",
       }),
     }).catch((err) => console.error("WhatsApp ack failed:", err));
+
+    // 2. WhatsApp clinic alert to doctor + Arvind (non-blocking)
+    fetch(`${baseUrl}/api/whatsapp`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        to: "clinic_alert",
+        patientName: patient_name.trim(),
+        leadId: result.lead_id,
+        type: "clinic_alert",
+        condition,
+        patientCity: patient_city.trim(),
+        appointmentDate: preferred_date || "Not specified",
+        preferredTime: preferred_time || "Not specified",
+      }),
+    }).catch((err) => console.error("WhatsApp clinic alert failed:", err));
 
     return NextResponse.json({ success: true, lead_id: result.lead_id });
   } catch (err) {
