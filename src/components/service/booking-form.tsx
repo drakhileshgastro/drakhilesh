@@ -4,10 +4,15 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { CheckCircle2, MessageCircle, Send } from "lucide-react";
+import { CheckCircle2, MessageCircle, Send, Sun, Moon } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/cn";
 import { CONDITIONS, DOCTOR } from "@/lib/constants";
+
+const TIME_SLOTS = [
+  { value: "Morning (10am–2pm)", label: "Morning OPD", time: "10am – 2pm", icon: Sun },
+  { value: "Evening (5pm–8pm)", label: "Evening OPD", time: "5pm – 8pm", icon: Moon },
+] as const;
 
 const schema = z.object({
   patient_name: z.string().min(2, "Please enter your name"),
@@ -15,6 +20,7 @@ const schema = z.object({
   patient_city: z.string().min(2, "Please enter your city"),
   condition: z.string().min(1, "Please select a condition"),
   preferred_date: z.string().optional(),
+  preferred_time: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -28,10 +34,18 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
   const [submitted, setSubmitted] = useState(false);
   const [leadId, setLeadId] = useState("");
 
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({
+  const {
+    register,
+    handleSubmit,
+    watch,
+    setValue,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
     resolver: zodResolver(schema),
-    defaultValues: { condition: defaultCondition ?? "" },
+    defaultValues: { condition: defaultCondition ?? "", preferred_time: "" },
   });
+
+  const selectedTime = watch("preferred_time");
 
   async function onSubmit(data: FormData) {
     try {
@@ -82,7 +96,7 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      
+
       {/* Patient Name */}
       <div className="space-y-1">
         <input
@@ -94,7 +108,7 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
             errors.patient_name ? "border-red-400 bg-red-50/10" : "border-border/80"
           )}
         />
-        {errors.patient_name && <p className="text-red-500 text-xs font-sans mt-0.5">{errors.patient_name.message}</p>}
+        {errors.patient_name && <p className="text-red-500 text-xs font-sans">{errors.patient_name.message}</p>}
       </div>
 
       {/* Patient Phone */}
@@ -109,7 +123,7 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
             errors.patient_phone ? "border-red-400 bg-red-50/10" : "border-border/80"
           )}
         />
-        {errors.patient_phone && <p className="text-red-500 text-xs font-sans mt-0.5">{errors.patient_phone.message}</p>}
+        {errors.patient_phone && <p className="text-red-500 text-xs font-sans">{errors.patient_phone.message}</p>}
       </div>
 
       {/* Patient City */}
@@ -123,7 +137,7 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
             errors.patient_city ? "border-red-400 bg-red-50/10" : "border-border/80"
           )}
         />
-        {errors.patient_city && <p className="text-red-500 text-xs font-sans mt-0.5">{errors.patient_city.message}</p>}
+        {errors.patient_city && <p className="text-red-500 text-xs font-sans">{errors.patient_city.message}</p>}
       </div>
 
       {/* Condition Selection */}
@@ -138,28 +152,57 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
           >
             <option value="">Select Condition / बीमारी चुनें *</option>
             {CONDITIONS.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
+              <option key={c} value={c}>{c}</option>
             ))}
           </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-muted/60 text-xs font-sans">
-            ▼
-          </div>
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-muted/60 text-xs">▼</div>
         </div>
-        {errors.condition && <p className="text-red-500 text-xs font-sans mt-0.5">{errors.condition.message}</p>}
+        {errors.condition && <p className="text-red-500 text-xs font-sans">{errors.condition.message}</p>}
       </div>
 
-      {/* Preferred Date (Only if not compact) */}
+      {/* Date + Time Preference (only if not compact) */}
       {!compact && (
-        <div className="space-y-1">
-          <input
-            {...register("preferred_date")}
-            type="date"
-            min={new Date().toISOString().split("T")[0]}
-            className="w-full px-4 h-11 border border-border/80 rounded-xl text-forest text-sm bg-white focus:outline-none focus:border-primary transition-colors font-sans"
-          />
-        </div>
+        <>
+          <div className="space-y-1">
+            <input
+              {...register("preferred_date")}
+              type="date"
+              min={new Date().toISOString().split("T")[0]}
+              className="w-full px-4 h-11 border border-border/80 rounded-xl text-forest text-sm bg-white focus:outline-none focus:border-primary transition-colors font-sans"
+            />
+            <p className="text-muted/70 text-[11px] font-sans pl-1">Preferred date (optional)</p>
+          </div>
+
+          {/* Time slot picker */}
+          <div className="space-y-2">
+            <p className="text-forest text-xs font-sans font-semibold">Preferred Time Slot <span className="text-muted/60 font-normal">(optional)</span></p>
+            <div className="grid grid-cols-2 gap-2">
+              {TIME_SLOTS.map((slot) => {
+                const Icon = slot.icon;
+                const isSelected = selectedTime === slot.value;
+                return (
+                  <button
+                    key={slot.value}
+                    type="button"
+                    onClick={() => setValue("preferred_time", isSelected ? "" : slot.value)}
+                    className={cn(
+                      "flex items-center gap-2.5 px-3 py-3 rounded-xl border text-left transition-all",
+                      isSelected
+                        ? "border-primary bg-primary-light text-primary"
+                        : "border-border/80 bg-white text-muted hover:border-primary/50"
+                    )}
+                  >
+                    <Icon size={15} className={isSelected ? "text-primary" : "text-muted/60"} />
+                    <div>
+                      <p className="text-[11px] font-bold font-sans leading-none">{slot.label}</p>
+                      <p className="text-[10px] font-sans mt-0.5 opacity-75">{slot.time}</p>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </>
       )}
 
       {/* Submit Button */}

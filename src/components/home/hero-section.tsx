@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <section className="bg-white pt-12 pb-16 lg:pt-16 lg:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        
+
         {/* Main Hero grid */}
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
 
@@ -24,7 +24,7 @@ export default function HeroSection() {
               पेट, लीवर या पाचन की<br />
               <span className="text-primary">समस्या से परेशान हैं?</span>
             </h1>
-            
+
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl">
               Expert super-specialist care for stomach, liver, and digestive conditions by Dr. Akhilesh Yadav, DM Gastroenterology, at Orchid Medical Centre, Ranchi.
             </p>
@@ -61,14 +61,14 @@ export default function HeroSection() {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            
+
             {/* Qualification badge */}
             <div className="absolute -bottom-4 -left-2 bg-white border border-border rounded-2xl px-5 py-3 shadow-xs hidden sm:block">
               <div className="text-[10px] text-muted uppercase tracking-wider font-bold font-sans">Qualification</div>
               <div className="text-primary font-display font-bold text-sm mt-0.5">DM Gastroenterology</div>
               <div className="text-muted text-[10px] font-sans mt-0.5 uppercase font-medium">MBBS · MD · DM</div>
             </div>
-            
+
             {/* Availability badge */}
             <div className="absolute -top-3 -right-2 bg-primary text-white border border-primary rounded-2xl px-4 py-2 shadow-xs">
               <div className="text-[9px] text-accent font-bold uppercase tracking-wider font-sans">Status</div>
@@ -78,7 +78,7 @@ export default function HeroSection() {
 
         </div>
 
-        {/* ── Section 2: Horizontal Inline Booking Bar ── */}
+        {/* Horizontal Inline Booking Bar */}
         <HeroHorizontalBookingBar />
 
       </div>
@@ -86,8 +86,19 @@ export default function HeroSection() {
   );
 }
 
+const TIME_SLOTS = [
+  { value: "Morning (10am–2pm)", label: "Morning (10am–2pm)" },
+  { value: "Evening (5pm–8pm)", label: "Evening (5pm–8pm)" },
+];
+
 function HeroHorizontalBookingBar() {
-  const [form, setForm] = useState({ patient_name: "", patient_phone: "", patient_city: "", condition: "" });
+  const [form, setForm] = useState({
+    patient_name: "",
+    patient_phone: "",
+    patient_city: "",
+    condition: "",
+    preferred_time: "",
+  });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -124,7 +135,7 @@ function HeroHorizontalBookingBar() {
 
   return (
     <div className="bg-white border border-border rounded-3xl overflow-hidden shadow-sm">
-      
+
       {/* Header bar */}
       <div className="bg-primary px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 border-b border-border/10">
         <h2 className="text-white font-display font-bold text-lg">Book an Appointment</h2>
@@ -141,8 +152,8 @@ function HeroHorizontalBookingBar() {
             <p className="text-muted text-sm font-hindi">हमारी टीम 30 मिनट में आपसे संपर्क करेगी।</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
-            
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 items-end">
+
             {/* Full Name */}
             <div className="space-y-1.5">
               <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
@@ -161,7 +172,7 @@ function HeroHorizontalBookingBar() {
             {/* Mobile Number */}
             <div className="space-y-1.5">
               <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
-                Mobile / मोबाइल नंबर *
+                Mobile / मोबाइल *
               </label>
               <input
                 type="tel"
@@ -176,7 +187,7 @@ function HeroHorizontalBookingBar() {
             {/* City */}
             <div className="space-y-1.5">
               <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
-                City / District / शहर *
+                City / शहर *
               </label>
               <input
                 type="text"
@@ -191,7 +202,7 @@ function HeroHorizontalBookingBar() {
             {/* Condition Dropdown */}
             <div className="space-y-1.5">
               <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
-                Condition / समस्या चुनें *
+                Condition / समस्या *
               </label>
               <div className="relative">
                 <select
@@ -212,6 +223,29 @@ function HeroHorizontalBookingBar() {
               </div>
             </div>
 
+            {/* Time Slot */}
+            <div className="space-y-1.5">
+              <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
+                Time Slot / समय
+              </label>
+              <div className="relative">
+                <select
+                  value={form.preferred_time}
+                  onChange={(e) => setForm({ ...form, preferred_time: e.target.value })}
+                  className={cn(
+                    "w-full px-4 h-11 border border-border rounded-xl text-sm bg-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary appearance-none cursor-pointer transition-colors",
+                    form.preferred_time ? "text-forest" : "text-muted"
+                  )}
+                >
+                  <option value="">Any Time</option>
+                  {TIME_SLOTS.map((s) => (
+                    <option key={s.value} value={s.value}>{s.label}</option>
+                  ))}
+                </select>
+                <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none" />
+              </div>
+            </div>
+
             {/* Submit Button */}
             <div>
               <button
@@ -219,7 +253,7 @@ function HeroHorizontalBookingBar() {
                 disabled={loading}
                 className="w-full h-11 bg-primary text-white font-display font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-primary-dark transition-colors disabled:opacity-60 cursor-pointer shadow-xs"
               >
-                {loading ? "Please wait..." : "Book My Appointment"}
+                {loading ? "Please wait..." : "Book Appointment"}
               </button>
             </div>
 
