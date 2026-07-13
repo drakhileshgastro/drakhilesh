@@ -6,7 +6,7 @@ import Link from "next/link";
 import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import {
   LayoutDashboard, Users, Calendar, LogOut,
-  Bell, Menu, X, Phone
+  Bell, Menu, X, Phone, CheckSquare, MessageCircle, BarChart2
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 
@@ -14,6 +14,9 @@ const NAV = [
   { href: "/crm", label: "Dashboard", icon: LayoutDashboard },
   { href: "/crm/leads", label: "Leads", icon: Users },
   { href: "/crm/appointments", label: "Appointments", icon: Calendar },
+  { href: "/crm/tasks", label: "Tasks", icon: CheckSquare },
+  { href: "/crm/chats", label: "AI Chats", icon: MessageCircle },
+  { href: "/crm/analytics", label: "Analytics", icon: BarChart2 },
 ];
 
 export default function CrmShell({ children }: { children: React.ReactNode }) {

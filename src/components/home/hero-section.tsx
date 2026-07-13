@@ -26,7 +26,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl">
-              Expert super-specialist care for stomach, liver, and digestive conditions by Dr. Akhilesh Yadav, DM Gastroenterology, at Orchid Medical Centre, Ranchi.
+              Consult Dr. Akhilesh Yadav, Ranchi's trusted stomach doctor, liver specialist, and gastrologist (DM Gastroenterology) at Orchid Medical Centre for complete digestive care.
             </p>
 
             {/* Stats row */}

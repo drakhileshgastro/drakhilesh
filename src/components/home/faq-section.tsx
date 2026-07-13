@@ -7,6 +7,11 @@ import Link from "next/link";
 
 const faqs = [
   {
+    q: "क्या डॉ. अखिलेश रांची में पेट और लीवर के विशेषज्ञ डॉक्टर (Pet ka Doctor) हैं?",
+    a: "हाँ, डॉ. अखिलेश यादव रांची में पेट, आंत और लीवर के सबसे बेहतरीन विशेषज्ञ डॉक्टरों में से एक हैं (Best Stomach Doctor / Gastrologist in Ranchi)। उन्हें सुपर-स्पेशलिटी DM (Gastroenterology) की डिग्री प्राप्त है और वे पेट दर्द, गैस, एसिडिटी, कब्ज व लीवर से जुड़ी गंभीर समस्याओं के विशेषज्ञ हैं।",
+    eng: "Yes, Dr. Akhilesh Yadav is recognized as a leading stomach doctor, gastrologist, and liver specialist (pet ka doctor) in Ranchi, Jharkhand, providing advanced care at Orchid Medical Centre.",
+  },
+  {
     q: "डॉ. अखिलेश यादव किन बीमारियों का इलाज करते हैं?",
     a: "डॉ. अखिलेश यादव DM Gastroenterology विशेषज्ञ हैं। वे फैटी लिवर, पीलिया, लीवर सिरोसिस, हेपेटाइटिस B/C, IBS, GERD, पेप्टिक अल्सर, पित्त की पथरी, अग्नाशय की सूजन, आंत की बीमारियां, GI ब्लीडिंग और सभी पाचन तंत्र की बीमारियों का उपचार करते हैं।",
     eng: "Dr. Akhilesh Yadav treats all gastroenterology and liver conditions including fatty liver, jaundice, liver cirrhosis, hepatitis, IBS, GERD, gallstone, pancreatitis, and GI bleeding.",
