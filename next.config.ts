@@ -17,6 +17,7 @@ const securityHeaders = [
       "img-src 'self' data: https: blob:",
       "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://graph.facebook.com",
       "frame-src 'self' https://www.google.com",
+      "worker-src 'self'",
       "object-src 'none'",
       "base-uri 'self'",
     ].join("; "),

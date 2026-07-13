@@ -18,12 +18,20 @@ const INITIAL_MESSAGE: Message = {
   content: `Namaskar! 🙏 Main Dr. Akhilesh ka virtual assistant hoon.\n\nMain aapko liver, pet aur digestive conditions ke baare mein guide kar sakta hoon, ya appointment book karne mein help kar sakta hoon.\n\nAap kya jaanna chahte hain?`,
 };
 
+function generateSessionId() {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0;
+    return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
+  });
+}
+
 export default function ChatbotWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [showDisclaimer, setShowDisclaimer] = useState(true);
+  const [sessionId] = useState(() => generateSessionId());
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,7 +51,7 @@ export default function ChatbotWidget() {
       const res = await fetch("/api/chatbot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: [...messages, userMsg] }),
+        body: JSON.stringify({ messages: [...messages, userMsg], session_id: sessionId }),
       });
       const data = await res.json();
       setMessages((prev) => [...prev, { role: "assistant", content: data.reply }]);
