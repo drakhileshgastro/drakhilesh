@@ -40,7 +40,7 @@ export default function PossibleConditionsList({
             return (
               <Link
                 key={slug}
-                href={`/services/${slug}`}
+                href={`/conditions/${slug}`}
                 className="bg-white border border-border hover:border-primary-light transition-all rounded-xl p-5 flex items-center justify-between group shadow-xs cursor-pointer"
               >
                 <div>

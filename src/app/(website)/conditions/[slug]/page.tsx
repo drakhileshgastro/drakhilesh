@@ -28,11 +28,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.metaTitle,
     description: service.metaDescription,
-    alternates: { canonical: `https://drakhileshgastro.com/services/${service.slug}` },
+    alternates: { canonical: `https://drakhileshgastro.com/conditions/${service.slug}` },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://drakhileshgastro.com/services/${service.slug}`,
+      url: `https://drakhileshgastro.com/conditions/${service.slug}`,
     },
   };
 }
@@ -48,7 +48,7 @@ export default async function ServicePage({ params }: Props) {
     "@type": "MedicalWebPage",
     "name": service.h1,
     "description": service.metaDescription,
-    "url": `https://drakhileshgastro.com/services/${service.slug}`,
+    "url": `https://drakhileshgastro.com/conditions/${service.slug}`,
     "about": { 
       "@type": "MedicalCondition", 
       "name": service.title,
@@ -64,8 +64,8 @@ export default async function ServicePage({ params }: Props) {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://drakhileshgastro.com" },
-        { "@type": "ListItem", position: 2, name: "Conditions", item: "https://drakhileshgastro.com/services" },
-        { "@type": "ListItem", position: 3, name: service.title, item: `https://drakhileshgastro.com/services/${service.slug}` },
+        { "@type": "ListItem", position: 2, name: "Conditions", item: "https://drakhileshgastro.com/conditions" },
+        { "@type": "ListItem", position: 3, name: service.title, item: `https://drakhileshgastro.com/conditions/${service.slug}` },
       ],
     },
   };

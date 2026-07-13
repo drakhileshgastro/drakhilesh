@@ -126,7 +126,7 @@ export default function Conditions() {
                     {condition.desc}
                   </p>
                   <Link
-                    href={`/services/${condition.slug}`}
+                    href={`/conditions/${condition.slug}`}
                     className="inline-flex items-center gap-1 text-teal text-xs font-semibold hover:underline"
                   >
                     Read more & Book Appointment →
