@@ -131,9 +131,9 @@ export const NAV_LINKS = [
   { label: "Symptoms", href: "/symptoms", dropdown: "symptoms" as const },
   { label: "Conditions", href: "/conditions", dropdown: "conditions" as const },
   { label: "Procedures", href: "/procedures", dropdown: "procedures" as const },
-  { label: "Health Library", href: "/blog", dropdown: "library" as const },
-  { label: "About Doctor", href: "/about", dropdown: "about" as const },
-  { label: "Contact", href: "/contact" },
+  { label: "About Doctor", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const FOOTER_COLUMNS = {
