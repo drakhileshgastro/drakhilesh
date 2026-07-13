@@ -40,8 +40,8 @@ export default function SetupPage() {
   const router = useRouter();
   const [setupKey, setSetupKey] = useState("");
   const [keyVerified, setKeyVerified] = useState(false);
-  const [doctor, setDoctor] = useState({ email: "doctor@drakhileshgastro.com", password: "", confirm: "" });
-  const [telecaller, setTelecaller] = useState({ email: "telecaller@drakhileshgastro.com", password: "", confirm: "" });
+  const [doctor, setDoctor] = useState({ email: "doctor@drakhileshgastro.com", password: "Akhilesh@Gastro2026", confirm: "Akhilesh@Gastro2026" });
+  const [telecaller, setTelecaller] = useState({ email: "telecaller@drakhileshgastro.com", password: "Telecaller@Gastro2026", confirm: "Telecaller@Gastro2026" });
   const [showPass, setShowPass] = useState({ doctor: false, telecaller: false });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
