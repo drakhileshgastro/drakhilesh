@@ -22,18 +22,12 @@ export default function HeroSection() {
             </div>
 
             {/* Hindi Headline */}
-            <h1 className="font-hindi text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] font-bold text-forest leading-[1.25] mb-4">
+            <h1 className="font-hindi text-3xl sm:text-4xl lg:text-[3rem] font-bold text-forest leading-[1.2] mb-4">
               पेट, लीवर या पाचन की<br />
               <span className="text-primary">समस्या से परेशान हैं?</span>
             </h1>
-            <p className="font-sans text-muted text-base sm:text-lg mb-6 leading-relaxed">
-              Troubled by stomach, liver or digestive problems? Get expert care from a super-specialist.
-            </p>
-
-            {/* Doctor intro */}
-            <p className="font-sans text-forest/80 text-sm sm:text-base leading-relaxed mb-8 max-w-lg">
-              <strong>Dr. Akhilesh Yadav</strong> — DM Gastroenterology, Orchid Medical Centre, Ranchi —
-              provides expert, compassionate care in Hindi for all digestive &amp; liver conditions.
+            <p className="font-sans text-muted text-base sm:text-lg mb-8 leading-relaxed max-w-lg">
+              Expert super-specialist care for stomach, liver, and digestive conditions by Dr. Akhilesh Yadav, DM Gastroenterology, at Orchid Medical Centre, Ranchi.
             </p>
 
             {/* Trust stats row */}
@@ -164,6 +158,9 @@ function HeroBookingForm() {
 
   return (
     <div className="bg-white border border-border rounded-2xl p-6 shadow-sm">
+      <div className="text-[10px] text-primary uppercase font-bold tracking-wider mb-1 font-sans">
+        Takes less than 30 seconds
+      </div>
       <h3 className="text-forest font-display font-bold text-lg mb-1">अपॉइंटमेंट बुक करें</h3>
       <p className="text-muted text-sm mb-5 font-sans">Direct appointment request · 30-minute callback</p>
       <form onSubmit={handleSubmit} className="space-y-4">

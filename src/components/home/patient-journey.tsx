@@ -54,7 +54,7 @@ const steps = [
 
 export default function PatientJourney() {
   return (
-    <section className="bg-bg-sand py-20 lg:py-24">
+    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -73,7 +73,7 @@ export default function PatientJourney() {
         {/* Timeline — Desktop horizontal, Mobile vertical */}
         <div className="hidden lg:flex items-start gap-4 relative">
           {/* Connector line */}
-          <div className="absolute top-8 left-0 right-0 h-px bg-border mx-16" />
+          <div className="absolute top-8 left-[8.3%] right-[8.3%] h-[2px] bg-border" />
 
           {steps.map((step) => {
             const Icon = step.icon;
@@ -96,7 +96,7 @@ export default function PatientJourney() {
 
         {/* Mobile vertical timeline */}
         <div className="lg:hidden space-y-6 relative">
-          <div className="absolute left-7 top-0 bottom-0 w-px bg-border" />
+          <div className="absolute left-7 top-7 bottom-7 w-[2px] bg-border" />
           {steps.map((step) => {
             const Icon = step.icon;
             return (

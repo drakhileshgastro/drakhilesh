@@ -1,14 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { 
   ArrowRight, Flame, Wind, Scale, HelpCircle, AlertCircle, Frown, Droplet, 
   TrendingDown, Eye, Activity, HeartPulse
 } from "lucide-react";
 import { SYMPTOMS_LIST } from "@/lib/constants";
+import { cn } from "@/lib/cn";
 
 function getSymptomIcon(slug: string) {
-  const iconProps = { className: "text-primary", size: 20 };
+  const iconProps = { className: "text-primary group-hover:scale-110 transition-transform duration-200", size: 24 };
   switch (slug) {
     case "stomach-pain": return <Activity {...iconProps} />;
     case "gas-bloating": return <Wind {...iconProps} />;
@@ -25,12 +27,14 @@ function getSymptomIcon(slug: string) {
 }
 
 export default function SymptomsSection() {
+  const [selected, setSelected] = useState<string | null>(null);
+
   return (
     <section className="bg-bg-sand py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <div className="text-primary font-display text-xs font-bold tracking-wider uppercase mb-3">
             Symptom Assessment
           </div>
@@ -43,33 +47,41 @@ export default function SymptomsSection() {
         </div>
 
         {/* Symptom Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {SYMPTOMS_LIST.map((symptom) => (
-            <Link
-              key={symptom.slug}
-              href={`/symptoms/${symptom.slug}`}
-              className="group bg-white border border-border rounded-2xl p-6 text-center hover:border-primary hover:shadow-sm transition-all duration-200 flex flex-col items-center justify-between"
-            >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border mb-4 group-hover:border-primary group-hover:bg-primary-50 transition-colors duration-200">
-                {getSymptomIcon(symptom.slug)}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          {SYMPTOMS_LIST.map((symptom) => {
+            const isSelected = selected === symptom.slug;
+            return (
+              <div
+                key={symptom.slug}
+                onClick={() => setSelected(isSelected ? null : symptom.slug)}
+                className={cn(
+                  "group rounded-2xl p-6 text-center transition-all duration-200 flex flex-col items-center justify-between cursor-pointer border min-h-[180px]",
+                  isSelected 
+                    ? "border-primary bg-primary-50/70 shadow-xs" 
+                    : "bg-white border-border hover:border-primary hover:bg-primary-50/30 hover:shadow-xs"
+                )}
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-border bg-white mb-5 transition-all duration-200 group-hover:border-primary">
+                  {getSymptomIcon(symptom.slug)}
+                </div>
+                <div className="flex-1 flex flex-col justify-center">
+                  <p className="font-hindi text-forest text-base font-bold leading-snug mb-1">
+                    {symptom.hindiLabel}
+                  </p>
+                  <p className="font-sans text-muted text-xs uppercase tracking-wider font-semibold">
+                    {symptom.label}
+                  </p>
+                </div>
               </div>
-              <div className="flex-1 flex flex-col justify-center">
-                <p className="font-hindi text-forest text-base font-semibold leading-snug mb-1">
-                  {symptom.hindiLabel}
-                </p>
-                <p className="font-sans text-muted text-xs uppercase tracking-wider font-medium">
-                  {symptom.label}
-                </p>
-              </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
 
-        {/* View all */}
-        <div className="text-center mt-10">
+        {/* View all (Ghost style link) */}
+        <div className="text-center mt-12">
           <Link
             href="/symptoms"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary font-display font-semibold text-sm rounded-xl hover:bg-primary-50 transition-colors min-h-[48px]"
+            className="inline-flex items-center gap-2 px-6 py-3 text-primary hover:text-primary-dark font-display font-bold text-sm transition-all hover:gap-3 cursor-pointer"
           >
             सभी लक्षण देखें — View All Symptoms <ArrowRight size={16} />
           </Link>

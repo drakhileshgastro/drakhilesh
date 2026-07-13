@@ -8,7 +8,7 @@ export default function FinalCTA() {
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(DOCTOR.whatsappPrefilledMessage)}`;
 
   return (
-    <section className="bg-bg-sand py-20 lg:py-24 border-t border-border">
+    <section className="bg-white py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -18,14 +18,14 @@ export default function FinalCTA() {
               Consultation & Care
             </div>
             <h2 className="font-hindi text-[2.25rem] sm:text-[2.5rem] lg:text-[2.75rem] font-bold text-forest leading-tight mb-4">
-              आज ही अपनी समस्या के बारे में<br />
-              <span className="text-primary">डॉक्टर से बात करें</span>
+              लक्षणों को नज़रअंदाज़ न करें।<br />
+              <span className="text-primary">आज ही डॉक्टर से परामर्श लें</span>
             </h2>
-            <p className="font-sans text-muted text-base sm:text-lg leading-relaxed mb-6">
-              Don't ignore your digestive or liver symptoms. An early consultation with Dr. Akhilesh Yadav can prevent serious complications and help you recover faster.
+            <p className="font-sans text-forest/90 text-base sm:text-lg leading-relaxed mb-6 font-semibold">
+              Don't ignore symptoms that keep returning. Talk to Dr. Akhilesh today.
             </p>
-            <p className="font-hindi text-forest/80 text-sm mb-8">
-              देर न करें — पेट और लीवर की बीमारियाँ समय पर जांच और सही परामर्श से ठीक होती हैं।
+            <p className="font-hindi text-muted text-sm mb-8 leading-relaxed">
+              देर न करें — पेट और लीवर की गंभीर बीमारियों से बचने के लिए समय पर सुपर-स्पेशलिस्ट डॉक्टर का परामर्श आवश्यक है।
             </p>
 
             {/* 4 action buttons */}

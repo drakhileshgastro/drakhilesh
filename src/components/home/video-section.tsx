@@ -30,10 +30,8 @@ const featuredVideos = [
 ];
 
 export default function VideoSection() {
-  const [playing, setPlaying] = useState(false);
-
   return (
-    <section className="bg-bg-sand py-20 lg:py-24">
+    <section className="bg-bg-sand py-20 lg:py-24 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -49,35 +47,58 @@ export default function VideoSection() {
           </p>
         </div>
 
-        {/* Featured Video */}
+        {/* Featured Video — Custom Thumbnail Style */}
         <div className="max-w-3xl mx-auto mb-12">
-          <div className="relative bg-primary-dark rounded-3xl overflow-hidden aspect-video group cursor-pointer shadow-sm border border-border">
-            {/* Thumbnail */}
-            <div className="absolute inset-0 bg-primary/90 flex flex-col items-center justify-center p-6 text-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-200 mb-6">
-                <Play size={24} className="text-primary ml-1 fill-primary" />
+          <div className="relative bg-white rounded-3xl overflow-hidden aspect-video group cursor-pointer shadow-sm border border-border">
+            {/* Background layout: Doctor's face dominates the right, high contrast text on the left */}
+            <div className="absolute inset-0 bg-white flex items-center justify-between">
+              {/* Left Text */}
+              <div className="w-[55%] p-6 md:p-10 text-left z-10">
+                <div className="text-[10px] text-primary uppercase font-bold tracking-wider mb-2 font-sans">Featured Video</div>
+                <h3 className="font-hindi text-forest text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
+                  {featuredVideos[0].title}
+                </h3>
+                <p className="text-muted text-xs sm:text-sm font-sans mt-2">{featuredVideos[0].titleEn}</p>
+                
+                {/* Watch Indicator */}
+                <div className="mt-6 flex items-center gap-2 text-primary text-xs font-bold font-sans uppercase tracking-wider">
+                  <Play size={12} className="fill-primary" /> Watch Now · {featuredVideos[0].duration} Mins
+                </div>
               </div>
-              <h3 className="font-hindi text-white text-xl sm:text-2xl font-bold px-4 leading-snug">
-                {featuredVideos[0].title}
-              </h3>
-              <p className="text-white/70 text-xs sm:text-sm font-sans mt-2">{featuredVideos[0].titleEn}</p>
+              
+              {/* Right Doctor Image */}
+              <div className="w-[45%] h-full relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-10" />
+                <img
+                  src="/dr-akhilesh-improved.png"
+                  alt="Dr. Akhilesh Yadav Video Guide"
+                  className="w-full h-full object-cover object-top filter contrast-[1.03]"
+                />
+              </div>
+            </div>
+
+            {/* Play Button Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-105">
+                <Play size={20} className="ml-1 fill-white" />
+              </div>
             </div>
             {/* Duration badge */}
-            <div className="absolute bottom-4 right-4 bg-black/60 text-white text-xs font-semibold px-2 py-1 rounded-lg font-sans">
+            <div className="absolute bottom-4 right-4 bg-black/60 text-white text-xs font-semibold px-2.5 py-1 rounded-lg font-sans z-20">
               {featuredVideos[0].duration}
             </div>
           </div>
         </div>
 
-        {/* More Videos */}
+        {/* More Videos Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {featuredVideos.map((video, i) => (
             <div
               key={i}
               className="bg-white rounded-2xl border border-border overflow-hidden hover:border-primary hover:shadow-sm transition-all duration-200 cursor-pointer group flex flex-col justify-between"
             >
-              <div className="relative aspect-video bg-primary-50 flex items-center justify-center border-b border-border">
-                <Video className="text-primary/40 group-hover:scale-105 transition-transform duration-200" size={32} />
+              <div className="relative aspect-video bg-bg-sand flex items-center justify-center border-b border-border">
+                <Video className="text-primary/30 group-hover:scale-105 transition-transform duration-200" size={32} />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10 duration-200">
                   <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
                     <Play size={16} className="text-primary ml-0.5 fill-primary" />
