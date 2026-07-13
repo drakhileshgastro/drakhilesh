@@ -28,18 +28,23 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
+    if (pathname === "/admin/login") return;
     const supabase = createSupabaseBrowser();
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { router.push("/admin/login"); return; }
       setUserEmail(data.user.email ?? "");
     });
-  }, [router]);
+  }, [router, pathname]);
 
   async function logout() {
     const supabase = createSupabaseBrowser();
     await supabase.auth.signOut();
     router.push("/admin/login");
     router.refresh();
+  }
+
+  if (pathname === "/admin/login") {
+    return <>{children}</>;
   }
 
   const isActive = (href: string, exact?: boolean) =>
