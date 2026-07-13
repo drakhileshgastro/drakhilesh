@@ -70,7 +70,9 @@ export async function POST(req: NextRequest) {
 
     // Clean up stale subscriptions
     if (stale.length > 0) {
-      await supabase.from("push_subscriptions").delete().in("endpoint", stale).catch(() => {});
+      try {
+        await supabase.from("push_subscriptions").delete().in("endpoint", stale);
+      } catch {}
     }
 
     return NextResponse.json({ success: true, sent, total: subs.length });

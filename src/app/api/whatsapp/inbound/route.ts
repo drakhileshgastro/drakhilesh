@@ -70,13 +70,15 @@ async function getOrCreateSession(phone: string): Promise<{ session_id: string; 
   if (data) return { session_id: data.session_id, messages: data.messages ?? [] };
 
   const session_id = crypto.randomUUID();
-  await supabase.from("chat_sessions").insert([{
-    session_id,
-    patient_phone: phone,
-    source: "whatsapp",
-    status: "active",
-    messages: [],
-  }]).catch(() => {}); // Silent if table doesn't exist yet
+  try {
+    await supabase.from("chat_sessions").insert([{
+      session_id,
+      patient_phone: phone,
+      source: "whatsapp",
+      status: "active",
+      messages: [],
+    }]);
+  } catch {} // Silent if table doesn't exist yet
 
   return { session_id, messages: [] };
 }
@@ -169,14 +171,16 @@ Rules:
 
         // Save session
         const allMessages = [...updatedHistory, { role: "assistant", content: reply }];
-        await supabase.from("chat_sessions").upsert({
-          session_id,
-          patient_phone: phone.slice(-10),
-          messages: allMessages,
-          source: "whatsapp",
-          status: "active",
-          updated_at: new Date().toISOString(),
-        }, { onConflict: "session_id" }).catch(() => {});
+        try {
+          await supabase.from("chat_sessions").upsert({
+            session_id,
+            patient_phone: phone.slice(-10),
+            messages: allMessages,
+            source: "whatsapp",
+            status: "active",
+            updated_at: new Date().toISOString(),
+          }, { onConflict: "session_id" });
+        } catch {}
       }
     }
   }
