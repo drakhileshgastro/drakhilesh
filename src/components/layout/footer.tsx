@@ -37,7 +37,7 @@ export default function Footer() {
             </a>
             <Link
               href="/book"
-              className="flex items-center gap-2 px-5 py-3 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors min-h-[48px]"
+              className="flex items-center gap-2 px-5 py-3 bg-accent text-forest font-extrabold text-sm rounded-xl hover:bg-accent-dark transition-colors min-h-[48px]"
             >
               Book Appointment
             </Link>
@@ -92,16 +92,16 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4.5 py-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors text-sm"
               >
-                <Star size={14} className="text-accent fill-accent" />
-                <span className="text-white font-bold">{DOCTOR.googleRating}</span>
-                <span className="text-white/75">Google Reviews</span>
-              </a>
-              <Link
-                href="/book"
-                className="inline-flex items-center px-4.5 py-3 bg-accent text-white font-bold text-sm rounded-xl hover:bg-accent-dark transition-colors"
-              >
-                Book Appointment
-              </Link>
+                            <Star size={14} className="text-accent fill-accent" />
+            <span className="text-white font-bold">{DOCTOR.googleRating}</span>
+            <span className="text-white/75">Google Reviews</span>
+          </a>
+          <Link
+            href="/book"
+            className="inline-flex items-center px-4.5 py-3 bg-accent text-forest font-extrabold text-sm rounded-xl hover:bg-accent-dark transition-colors"
+          >
+            Book Appointment
+          </Link>
             </div>
 
             {/* Social Media Links */}

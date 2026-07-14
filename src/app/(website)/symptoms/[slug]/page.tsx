@@ -75,12 +75,31 @@ export default async function SymptomPage({ params }: Props) {
     },
   };
 
+  const faqPageJsonLd = symptom.faqs && symptom.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": symptom.faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a,
+      },
+    })),
+  } : null;
+
   return (
     <>
       <script 
         type="application/ld+json" 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
       />
+      {faqPageJsonLd && (
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }} 
+        />
+      )}
 
       <article className="min-h-screen pb-16 sm:pb-0">
         

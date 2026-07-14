@@ -8,6 +8,7 @@ import { CheckCircle2, MessageCircle, Send, Sun, Moon } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/cn";
 import { CONDITIONS, DOCTOR } from "@/lib/constants";
+import { trackBookingConversion } from "@/lib/analytics";
 
 const TIME_SLOTS = [
   { value: "Morning (10am–2pm)", label: "Morning OPD", time: "10am – 2pm", icon: Sun },
@@ -56,6 +57,7 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
       });
       const result = await res.json();
       if (result.success) {
+        trackBookingConversion(data.condition);
         setLeadId(result.lead_id || "REQ-" + Date.now().toString(36).toUpperCase());
         setSubmitted(true);
       } else {

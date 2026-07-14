@@ -73,11 +73,11 @@ export async function proxy(request: NextRequest) {
     const role = getUserRole(user);
 
     if (isAdmin && !isAdminRole(role)) {
-      return NextResponse.redirect(new URL("/crm", request.url));
+      return NextResponse.redirect(new URL("/admin/login", request.url));
     }
 
     if (isCRM && !isCrmRole(role)) {
-      return NextResponse.redirect(new URL("/", request.url));
+      return NextResponse.redirect(new URL("/crm/login", request.url));
     }
   }
 

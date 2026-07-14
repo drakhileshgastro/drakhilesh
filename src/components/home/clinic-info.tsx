@@ -103,7 +103,7 @@ export default function ClinicInfo() {
                         <span className="text-forest font-sans font-semibold">{t.day}</span>
                         <div className="text-right space-y-0.5 font-sans">
                           <span className="text-forest font-bold block">{t.morning}</span>
-                          <span className={t.evening === "Emergency Only" ? "text-accent font-bold block" : "text-muted block"}>
+                                                    <span className={t.evening === "Emergency Only" ? "text-red-700 font-bold block" : "text-muted block"}>
                             {t.evening}
                           </span>
                         </div>

@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import {
+  LiverIllustration,
+  StomachIllustration,
+  PancreasIllustration
+} from "@/components/ui/organ-illustrations";
 
 interface SpecialtyColumn {
   title: string;
@@ -65,13 +70,19 @@ export default function ConditionsSection() {
           </p>
         </div>
 
-        {/* Clean Cardless Columns Grid */}
+        {/* Clean Columns Grid with Custom Vector Illustrations */}
         <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
           {COLUMNS_DATA.map((col, idx) => (
             <div key={idx} className="space-y-6 flex flex-col justify-between min-h-[360px]">
               <div>
                 {/* Column Title Header */}
                 <div className="border-b border-border/70 pb-4 mb-6">
+                  {/* Premium Cartoon Vector organ badge */}
+                  <div className="w-16 h-16 mb-4 bg-white border border-border/60 rounded-2xl p-1 shadow-2xs flex items-center justify-center">
+                    {idx === 0 && <LiverIllustration className="w-full h-full object-contain" />}
+                    {idx === 1 && <StomachIllustration className="w-full h-full object-contain" />}
+                    {idx === 2 && <PancreasIllustration className="w-full h-full object-contain" />}
+                  </div>
                   <h3 className="text-forest font-display font-extrabold text-2xl">
                     {col.title}
                   </h3>
