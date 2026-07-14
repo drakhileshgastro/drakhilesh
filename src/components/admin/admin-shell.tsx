@@ -6,34 +6,38 @@ import Link from "next/link";
 import { createSupabaseBrowser } from "@/lib/supabase-browser";
 import {
   LayoutDashboard, Users, IndianRupee, FileText,
-  BarChart2, Settings, LogOut, Menu, Stethoscope,
-  UserCog, Globe, Phone, X, ChevronRight,
+  BarChart2, Settings, LogOut, Stethoscope,
+  UserCog, Globe, Phone, X, Menu,
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 const NAV = [
-  { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
-  { href: "/admin/leads", label: "All Leads", icon: Users },
-  { href: "/admin/revenue", label: "Revenue", icon: IndianRupee },
-  { href: "/admin/blog", label: "Blog CMS", icon: FileText },
-  { href: "/admin/users", label: "Users", icon: UserCog },
-  { href: "/admin/pages", label: "Website Pages", icon: Globe },
-  { href: "/admin/analytics", label: "Analytics", icon: BarChart2 },
-  { href: "/admin/settings", label: "Settings", icon: Settings },
+  { href: "/admin",           label: "Dashboard",     icon: LayoutDashboard, exact: true },
+  { href: "/admin/leads",     label: "Leads",         icon: Users },
+  { href: "/admin/revenue",   label: "Revenue",       icon: IndianRupee },
+  { href: "/admin/blog",      label: "Blog CMS",      icon: FileText },
+  { href: "/admin/users",     label: "Users",         icon: UserCog },
+  { href: "/admin/pages",     label: "Website",       icon: Globe },
+  { href: "/admin/analytics", label: "Analytics",     icon: BarChart2 },
+  { href: "/admin/settings",  label: "Settings",      icon: Settings },
 ];
 
+// 4 primary items for mobile bottom bar
 const BOTTOM_NAV = [
-  { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
-  { href: "/admin/leads", label: "Leads", icon: Users },
-  { href: "/admin/revenue", label: "Revenue", icon: IndianRupee },
-  { href: "/admin/analytics", label: "Analytics", icon: BarChart2 },
+  { href: "/admin",         label: "Home",     icon: LayoutDashboard, exact: true },
+  { href: "/admin/leads",   label: "Leads",    icon: Users },
+  { href: "/admin/revenue", label: "Revenue",  icon: IndianRupee },
+  { href: "/admin/settings",label: "Settings", icon: Settings },
 ];
 
 function isActive(pathname: string, href: string, exact?: boolean) {
   return exact ? pathname === href : pathname.startsWith(href);
 }
 
-function Sidebar({
+const BRAND = "#184C3A";
+const BRAND_LIGHT = "#EAF2EE";
+
+function SidebarContent({
   pathname,
   userEmail,
   onClose,
@@ -45,22 +49,25 @@ function Sidebar({
   onLogout: () => void;
 }) {
   return (
-    <div className="flex flex-col h-full">
-      {/* Logo */}
-      <div className="px-4 py-5 border-b border-white/8">
+    <div className="flex flex-col h-full bg-white">
+      {/* Brand */}
+      <div className="px-5 py-5 border-b border-gray-100">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-            <Stethoscope size={15} className="text-blue-400" />
+          <div
+            className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+            style={{ background: BRAND_LIGHT }}
+          >
+            <Stethoscope size={16} style={{ color: BRAND }} />
           </div>
           <div>
-            <p className="text-white font-semibold text-sm leading-tight">Dr. Akhilesh</p>
-            <p className="text-slate-500 text-[10px] tracking-wide uppercase">Admin Panel</p>
+            <p className="font-bold text-gray-900 text-sm leading-tight">Dr. Akhilesh</p>
+            <p className="text-[10px] text-gray-400 font-medium tracking-wide uppercase">Admin Panel</p>
           </div>
         </div>
       </div>
 
-      {/* Navigation */}
-      <nav className="flex-1 px-2 py-4 space-y-0.5 overflow-y-auto">
+      {/* Nav items */}
+      <nav className="flex-1 px-3 py-4 space-y-0.5 overflow-y-auto">
         {NAV.map((item) => {
           const active = isActive(pathname, item.href, item.exact);
           return (
@@ -69,39 +76,50 @@ function Sidebar({
               href={item.href}
               onClick={onClose}
               className={cn(
-                "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all",
+                "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all select-none",
                 active
-                  ? "bg-blue-500/15 text-blue-400 font-medium"
-                  : "text-slate-400 hover:bg-white/5 hover:text-slate-200"
+                  ? "font-semibold"
+                  : "text-gray-500 hover:bg-gray-50 hover:text-gray-800"
               )}
+              style={active ? { background: BRAND_LIGHT, color: BRAND } : {}}
             >
-              <item.icon size={15} />
+              <item.icon size={16} />
               <span className="flex-1">{item.label}</span>
-              {active && <ChevronRight size={12} className="opacity-40" />}
+              {active && (
+                <span
+                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                  style={{ background: BRAND }}
+                />
+              )}
             </Link>
           );
         })}
       </nav>
 
-      {/* Bottom section */}
-      <div className="px-2 py-4 border-t border-white/8 space-y-0.5">
-        <div className="px-3 py-2.5 mb-1">
-          <div className="w-7 h-7 rounded-lg bg-slate-700 flex items-center justify-center text-slate-300 text-xs font-bold mb-2">
+      {/* User + actions */}
+      <div className="border-t border-gray-100 px-3 py-4 space-y-0.5">
+        <div className="px-3 py-2.5 flex items-center gap-2.5 mb-1">
+          <div
+            className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+            style={{ background: BRAND }}
+          >
             {userEmail ? userEmail[0].toUpperCase() : "A"}
           </div>
-          <p className="text-slate-300 text-xs font-medium truncate">{userEmail || "Admin"}</p>
-          <p className="text-slate-600 text-[10px]">Doctor · Admin</p>
+          <div className="min-w-0">
+            <p className="text-gray-800 text-xs font-semibold truncate">{userEmail || "Admin"}</p>
+            <p className="text-gray-400 text-[10px]">Doctor · Admin</p>
+          </div>
         </div>
 
-        <Link href="/" className="flex items-center gap-2 px-3 py-2 text-xs text-slate-500 hover:text-slate-300 hover:bg-white/5 rounded-xl transition-colors">
+        <Link href="/" className="flex items-center gap-2.5 px-3 py-2 text-xs text-gray-500 hover:bg-gray-50 hover:text-gray-800 rounded-xl transition-colors">
           <Globe size={13} /> View Website
         </Link>
-        <Link href="/crm" className="flex items-center gap-2 px-3 py-2 text-xs text-slate-500 hover:text-blue-400 hover:bg-white/5 rounded-xl transition-colors">
-          <Phone size={13} /> CRM / Telecaller
+        <Link href="/crm" className="flex items-center gap-2.5 px-3 py-2 text-xs text-gray-500 hover:bg-gray-50 hover:text-gray-800 rounded-xl transition-colors">
+          <Phone size={13} /> Telecaller CRM
         </Link>
         <button
           onClick={onLogout}
-          className="w-full flex items-center gap-2 px-3 py-2 text-xs text-slate-500 hover:text-red-400 hover:bg-red-500/5 transition-colors rounded-xl"
+          className="w-full flex items-center gap-2.5 px-3 py-2 text-xs text-red-400 hover:bg-red-50 hover:text-red-600 rounded-xl transition-colors"
         >
           <LogOut size={13} /> Sign Out
         </button>
@@ -111,19 +129,16 @@ function Sidebar({
 }
 
 export default function AdminShell({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
+  const router   = useRouter();
   const pathname = usePathname();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [userEmail, setUserEmail] = useState("");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [userEmail, setUserEmail]   = useState("");
 
   useEffect(() => {
     if (pathname === "/admin/login") return;
     const supabase = createSupabaseBrowser();
     supabase.auth.getUser().then(({ data }) => {
-      if (!data.user) {
-        router.push("/admin/login");
-        return;
-      }
+      if (!data.user) { router.push("/admin/login"); return; }
       setUserEmail(data.user.email ?? "");
     });
   }, [router, pathname]);
@@ -135,93 +150,112 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     router.refresh();
   }
 
-  if (pathname === "/admin/login") {
-    return <>{children}</>;
-  }
+  if (pathname === "/admin/login") return <>{children}</>;
 
-  const currentPage = NAV.find((n) => isActive(pathname, n.href, n.exact))?.label ?? "Admin";
+  const currentLabel = NAV.find((n) => isActive(pathname, n.href, n.exact))?.label ?? "Admin";
 
   return (
-    <div className="min-h-screen flex" style={{ background: "#0B1120" }}>
-      {/* Sidebar — desktop */}
-      <aside className="hidden lg:flex flex-col w-52 flex-shrink-0 border-r border-white/8">
-        <Sidebar
+    <div className="min-h-screen bg-gray-50 flex">
+
+      {/* ── Desktop sidebar ── */}
+      <aside className="hidden lg:flex flex-col w-56 flex-shrink-0 border-r border-gray-100 shadow-xs">
+        <SidebarContent
           pathname={pathname}
           userEmail={userEmail}
-          onClose={() => setSidebarOpen(false)}
+          onClose={() => {}}
           onLogout={logout}
         />
       </aside>
 
-      {/* Sidebar — mobile overlay */}
-      {sidebarOpen && (
+      {/* ── Mobile drawer overlay ── */}
+      {drawerOpen && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
-          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" onClick={() => setSidebarOpen(false)} />
-          <div className="relative z-10 w-52 flex-shrink-0 border-r border-white/8" style={{ background: "#0B1120" }}>
+          <div
+            className="fixed inset-0 bg-black/40 backdrop-blur-xs"
+            onClick={() => setDrawerOpen(false)}
+          />
+          <div className="relative z-10 w-64 h-full shadow-2xl">
             <button
-              onClick={() => setSidebarOpen(false)}
-              className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center rounded-lg bg-white/8 text-slate-400 hover:text-white"
+              onClick={() => setDrawerOpen(false)}
+              className="absolute top-4 right-3 w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors z-10"
             >
-              <X size={14} />
+              <X size={15} />
             </button>
-            <Sidebar
+            <SidebarContent
               pathname={pathname}
               userEmail={userEmail}
-              onClose={() => setSidebarOpen(false)}
+              onClose={() => setDrawerOpen(false)}
               onLogout={logout}
             />
           </div>
         </div>
       )}
 
-      {/* Main content wrapper */}
-      <div className="flex-1 flex flex-col min-w-0 bg-slate-50 rounded-l-2xl lg:rounded-l-3xl overflow-hidden">
+      {/* ── Main area ── */}
+      <div className="flex-1 flex flex-col min-w-0">
+
         {/* Top header */}
-        <header className="bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between flex-shrink-0">
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setSidebarOpen(true)}
-              className="lg:hidden w-8 h-8 flex items-center justify-center text-slate-500 rounded-lg hover:bg-slate-100 transition-colors"
-            >
-              <Menu size={18} />
-            </button>
-            <p className="text-slate-800 font-semibold text-sm">{currentPage}</p>
+        <header className="bg-white border-b border-gray-100 px-4 py-3 flex items-center gap-3 flex-shrink-0 sticky top-0 z-30">
+          <button
+            onClick={() => setDrawerOpen(true)}
+            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-xl text-gray-500 hover:bg-gray-100 transition-colors flex-shrink-0"
+          >
+            <Menu size={19} />
+          </button>
+
+          <div className="flex-1 min-w-0">
+            <p className="text-gray-900 font-bold text-base leading-tight">{currentLabel}</p>
           </div>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/crm"
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-medium rounded-lg transition-colors"
-            >
-              <Phone size={12} /> CRM View
-            </Link>
+
+          {/* Avatar (mobile only) */}
+          <div
+            className="lg:hidden w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+            style={{ background: BRAND }}
+          >
+            {userEmail ? userEmail[0].toUpperCase() : "A"}
           </div>
         </header>
 
         {/* Page content */}
-        <main className="flex-1 overflow-auto p-4 sm:p-6 pb-24 lg:pb-6">
+        <main className="flex-1 overflow-auto p-4 sm:p-5 pb-28 lg:pb-6">
           {children}
         </main>
       </div>
 
-      {/* Mobile bottom bar */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 flex shadow-lg">
-        {BOTTOM_NAV.map((item) => {
-          const active = isActive(pathname, item.href, item.exact);
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "flex-1 flex flex-col items-center justify-center gap-1 py-2.5 transition-colors",
-                active ? "text-blue-500" : "text-slate-400"
-              )}
-            >
-              <item.icon size={19} strokeWidth={active ? 2.5 : 1.8} />
-              <span className="text-[10px] font-semibold leading-none">{item.label}</span>
-            </Link>
-          );
-        })}
+      {/* ── Mobile bottom navigation (app-style) ── */}
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-100" style={{ boxShadow: "0 -1px 12px rgba(0,0,0,0.06)" }}>
+        <div className="flex safe-area-inset-bottom">
+          {BOTTOM_NAV.map((item) => {
+            const active = isActive(pathname, item.href, item.exact);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex-1 flex flex-col items-center justify-center pt-2.5 pb-3 gap-1 select-none transition-colors"
+                style={{ minHeight: 60 }}
+              >
+                <div
+                  className="w-10 h-7 flex items-center justify-center rounded-xl transition-all"
+                  style={active ? { background: BRAND_LIGHT } : {}}
+                >
+                  <item.icon
+                    size={20}
+                    strokeWidth={active ? 2.5 : 1.8}
+                    style={{ color: active ? BRAND : "#9CA3AF" }}
+                  />
+                </div>
+                <span
+                  className="text-[10px] font-semibold leading-none"
+                  style={{ color: active ? BRAND : "#9CA3AF" }}
+                >
+                  {item.label}
+                </span>
+              </Link>
+            );
+          })}
+        </div>
       </nav>
+
     </div>
   );
 }
