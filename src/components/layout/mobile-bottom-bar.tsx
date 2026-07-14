@@ -28,10 +28,10 @@ export default function MobileBottomBar() {
         </a>
         <Link
           href="/book"
-          className="flex flex-col items-center justify-center gap-1 bg-accent text-white"
+          className="flex flex-col items-center justify-center gap-1 bg-accent text-forest"
         >
           <Calendar size={20} />
-          <span className="text-[10px] font-bold">Appointment</span>
+          <span className="text-[10px] font-extrabold">Appointment</span>
         </Link>
         <button
           className="flex flex-col items-center justify-center gap-1 text-forest hover:text-primary transition-colors active:bg-primary-50"

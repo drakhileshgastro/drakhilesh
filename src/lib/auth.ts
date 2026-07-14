@@ -6,6 +6,8 @@ export type AppRole = "admin" | "doctor" | "telecaller" | "editor" | "reviewer" 
 
 export function getUserRole(user: User | null): AppRole | null {
   if (!user) return null;
+  // Prefer app_metadata (service-role-only, user cannot self-modify).
+  // Fall back to user_metadata only for legacy accounts created before this fix.
   const role = user.app_metadata?.role ?? user.user_metadata?.role;
   return typeof role === "string" ? role : null;
 }

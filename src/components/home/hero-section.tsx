@@ -88,9 +88,9 @@ export default function HeroSection() {
             </div>
 
             {/* Availability badge */}
-            <div className="absolute -top-3 -right-2 bg-primary text-white border border-primary rounded-2xl px-4 py-2 shadow-xs">
-              <div className="text-[9px] text-accent font-bold uppercase tracking-wider font-sans">Status</div>
-              <div className="text-xs font-semibold font-sans">Available Mon – Sat</div>
+            <div className="absolute -top-3 -right-2 bg-white border border-border rounded-2xl px-4 py-2.5 shadow-xs">
+              <div className="text-[9px] text-muted font-bold uppercase tracking-wider font-sans leading-none">Status</div>
+              <div className="text-primary font-display font-bold text-xs mt-1">Available Mon – Sat</div>
             </div>
           </div>
 
@@ -157,7 +157,7 @@ function HeroHorizontalBookingBar() {
       {/* Header bar */}
       <div className="bg-primary px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 border-b border-border/10">
         <h2 className="text-white font-display font-bold text-lg">Appointment Confirmation within 30 minutes</h2>
-        <span className="text-accent font-hindi text-sm font-semibold">तुरंत पुष्टि (WhatsApp & Call)</span>
+        <span className="text-white/90 font-hindi text-sm font-bold">तुरंत पुष्टि (WhatsApp & Call)</span>
       </div>
 
       {/* Form Content */}
@@ -172,12 +172,13 @@ function HeroHorizontalBookingBar() {
         ) : (
           <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 items-end">
 
-            {/* Full Name */}
+                        {/* Full Name */}
             <div className="space-y-1.5">
-              <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
+              <label htmlFor="hero-patient-name" className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
                 Full Name / पूरा नाम *
               </label>
               <input
+                id="hero-patient-name"
                 type="text"
                 placeholder="Ramesh Kumar"
                 required
@@ -189,10 +190,11 @@ function HeroHorizontalBookingBar() {
 
             {/* Mobile Number */}
             <div className="space-y-1.5">
-              <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
+              <label htmlFor="hero-patient-phone" className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
                 Mobile / मोबाइल *
               </label>
               <input
+                id="hero-patient-phone"
                 type="tel"
                 placeholder="98765 43210"
                 required
@@ -204,10 +206,11 @@ function HeroHorizontalBookingBar() {
 
             {/* City */}
             <div className="space-y-1.5">
-              <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
+              <label htmlFor="hero-patient-city" className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
                 City / शहर *
               </label>
               <input
+                id="hero-patient-city"
                 type="text"
                 placeholder="Hazaribagh"
                 required
@@ -219,11 +222,12 @@ function HeroHorizontalBookingBar() {
 
             {/* Condition Dropdown */}
             <div className="space-y-1.5">
-              <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
+              <label htmlFor="hero-condition" className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
                 Condition / समस्या *
               </label>
               <div className="relative">
                 <select
+                  id="hero-condition"
                   required
                   value={form.condition}
                   onChange={(e) => setForm({ ...form, condition: e.target.value })}
@@ -243,11 +247,12 @@ function HeroHorizontalBookingBar() {
 
             {/* Time Slot */}
             <div className="space-y-1.5">
-              <label className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
+              <label htmlFor="hero-preferred-time" className="text-[11px] text-forest font-sans font-bold uppercase tracking-wider block">
                 Time Slot / समय
               </label>
               <div className="relative">
                 <select
+                  id="hero-preferred-time"
                   value={form.preferred_time}
                   onChange={(e) => setForm({ ...form, preferred_time: e.target.value })}
                   className={cn(

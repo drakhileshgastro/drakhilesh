@@ -74,8 +74,8 @@ export default function ClinicInfo() {
                   <MapPin className="text-primary" size={18} />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-[10px] text-muted uppercase font-bold tracking-wider font-sans block">Address &amp; Landmark</span>
-                  <h4 className="text-forest font-sans font-bold text-base leading-snug">{DOCTOR.hospital}</h4>
+                                    <span className="text-[10px] text-muted uppercase font-bold tracking-wider font-sans block">Address &amp; Landmark</span>
+                  <h3 className="text-forest font-sans font-bold text-base leading-snug">{DOCTOR.hospital}</h3>
                   <p className="text-muted text-xs leading-relaxed font-sans">
                     HB Road, Opposite Plaza Cinema, Plaza Chowk, Ranchi, Jharkhand — 834001
                   </p>

@@ -1,15 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 
-const VERIFY_TOKEN = process.env.FACEBOOK_VERIFY_TOKEN ?? "drakhilesh_fb_verify_2024";
+const VERIFY_TOKEN = process.env.FACEBOOK_VERIFY_TOKEN;
 const PAGE_ACCESS_TOKEN = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
 const APP_SECRET = process.env.FACEBOOK_APP_SECRET;
 
 // Verify Facebook signature to prevent spoofing
 function verifySignature(rawBody: string, signature: string | null): boolean {
-  if (!APP_SECRET || !signature) return !APP_SECRET; // If no secret configured, allow (dev mode)
+  if (!APP_SECRET) return true; // Dev mode — set FACEBOOK_APP_SECRET in production
+  if (!signature) return false; // Fail closed: secret is set but no signature provided
   const expected = "sha256=" + crypto.createHmac("sha256", APP_SECRET).update(rawBody).digest("hex");
-  return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected));
+  try {
+    return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected));
+  } catch {
+    return false;
+  }
 }
 
 // GET — Facebook webhook verification challenge
@@ -19,7 +24,7 @@ export async function GET(req: NextRequest) {
   const token = url.searchParams.get("hub.verify_token");
   const challenge = url.searchParams.get("hub.challenge");
 
-  if (mode === "subscribe" && token === VERIFY_TOKEN && challenge) {
+  if (VERIFY_TOKEN && mode === "subscribe" && token === VERIFY_TOKEN && challenge) {
     return new NextResponse(challenge, { status: 200, headers: { "Content-Type": "text/plain" } });
   }
   return NextResponse.json({ error: "Verification failed" }, { status: 403 });

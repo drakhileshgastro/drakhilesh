@@ -71,7 +71,7 @@ export default function AdminDashboard() {
     { label: "Total Leads", value: leads.length, icon: Users, color: "bg-teal/10 text-teal border-teal/20", trend: `+${todayLeads.length} today` },
     { label: "Confirmed", value: confirmed.length, icon: CalendarCheck, color: "bg-green-500/10 text-green-400 border-green-500/20", trend: "Upcoming appointments" },
     { label: "Patients Visited", value: visited.length, icon: Activity, color: "bg-purple-500/10 text-purple-400 border-purple-500/20", trend: "Successfully treated" },
-    { label: `Revenue (${new Date().toLocaleString("en-IN", { month: "short" })})`, value: `â‚¹${thisMonthRevenue.toLocaleString("en-IN")}`, icon: IndianRupee, color: "bg-amber-500/10 text-amber-400 border-amber-500/20", trend: `${conversionRate}% conversion` },
+    { label: `Revenue (${new Date().toLocaleString("en-IN", { month: "short" })})`, value: `₹${thisMonthRevenue.toLocaleString("en-IN")}`, icon: IndianRupee, color: "bg-amber-500/10 text-amber-400 border-amber-500/20", trend: `${conversionRate}% conversion` },
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function AdminDashboard() {
               <s.icon size={18} className="opacity-80" />
               <span className="text-[10px] opacity-60">{s.trend}</span>
             </div>
-            <p className="text-2xl font-bold text-white leading-none">{loading ? "â€”" : s.value}</p>
+            <p className="text-2xl font-bold text-white leading-none">{loading ? "—" : s.value}</p>
             <p className="text-xs mt-1 opacity-70">{s.label}</p>
           </div>
         ))}
@@ -117,7 +117,7 @@ export default function AdminDashboard() {
                       {lead.status}
                     </span>
                   </div>
-                  <p className="text-gray-muted text-xs truncate">{lead.condition} Â· {lead.patient_city}</p>
+                  <p className="text-gray-muted text-xs truncate">{lead.condition} &middot; {lead.patient_city}</p>
                 </div>
                 <div className="text-right flex-shrink-0">
                   <a href={`tel:${lead.patient_phone}`}

@@ -53,7 +53,8 @@ export async function POST(req: NextRequest) {
       email,
       password,
       email_confirm: true,
-      user_metadata: { role, name: role === "doctor" ? "Dr. Akhilesh Yadav" : "Telecaller" },
+      app_metadata: { role }, // app_metadata is service-role-only; user cannot self-modify
+      user_metadata: { name: role === "doctor" ? "Dr. Akhilesh Yadav" : "Telecaller" },
     });
 
     if (error) return NextResponse.json({ success: false, error: error.message }, { status: 400 });
