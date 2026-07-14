@@ -57,7 +57,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-white font-display font-bold text-lg leading-tight">{DOCTOR.name}</div>
-                <div className="text-white/50 text-xs uppercase tracking-wider mt-0.5 font-sans font-semibold">DM Gastroenterology</div>
+                <div className="text-white/75 text-xs uppercase tracking-wider mt-0.5 font-sans font-semibold">DM Gastroenterology</div>
               </div>
             </div>
 
@@ -94,7 +94,7 @@ export default function Footer() {
               >
                 <Star size={14} className="text-accent fill-accent" />
                 <span className="text-white font-bold">{DOCTOR.googleRating}</span>
-                <span className="text-white/50">Google Reviews</span>
+                <span className="text-white/75">Google Reviews</span>
               </a>
               <Link
                 href="/book"
@@ -259,10 +259,10 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
-            <p className="text-white/40 text-xs font-sans">
+                        <p className="text-white/70 text-xs font-sans">
               © {new Date().getFullYear()} {DOCTOR.name}. All rights reserved.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-white/40 font-sans">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-white/70 font-sans">
               <Link href="/privacy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
               <span>·</span>
               <Link href="/terms" className="hover:text-white/70 transition-colors">Terms</Link>
@@ -277,7 +277,7 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <p className="mt-4 text-center text-white/20 text-[11px] leading-relaxed max-w-4xl mx-auto font-sans">
+          <p className="mt-4 text-center text-white/55 text-[11px] leading-relaxed max-w-4xl mx-auto font-sans">
             Medical Disclaimer: Content on this website is for informational purposes only and does not constitute professional medical advice, diagnosis, or treatment. Always consult Dr. Akhilesh Yadav or another qualified healthcare provider regarding any questions about a medical condition.
           </p>
         </div>

@@ -3,10 +3,19 @@ import { createClient } from "@supabase/supabase-js";
 import { createLead, type CreateLeadInput } from "@/lib/supabase";
 import { internalAuthHeaders } from "@/lib/auth";
 
+// Anon client for lead inserts (subject to RLS INSERT-only policy)
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 );
+
+// Service-role client for dedup check — anon RLS blocks SELECT on gastro_leads
+function getServiceClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!key) return null;
+  return createClient(url, key, { auth: { autoRefreshToken: false, persistSession: false } });
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -31,15 +40,21 @@ export async function POST(req: NextRequest) {
     const cleanPhone = patient_phone.trim().replace(/^0/, "").slice(-10);
     const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
 
-    const { data: existing } = await supabase
-      .from("gastro_leads")
-      .select("lead_id, source, status")
-      .eq("patient_phone", cleanPhone)
-      .gte("created_at", thirtyDaysAgo)
-      .in("status", ["New", "Called", "No-answer", "Follow-up"])
-      .order("created_at", { ascending: false })
-      .limit(1)
-      .single();
+    // Dedup requires a SELECT; anon RLS only allows INSERT, so use service-role client
+    const serviceClient = getServiceClient();
+    let existing: { lead_id: string; source: string; status: string } | null = null;
+    if (serviceClient) {
+      const { data } = await serviceClient
+        .from("gastro_leads")
+        .select("lead_id, source, status")
+        .eq("patient_phone", cleanPhone)
+        .gte("created_at", thirtyDaysAgo)
+        .in("status", ["New", "Called", "No-answer", "Follow-up"])
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .single();
+      existing = data;
+    }
 
     if (existing) {
       try {

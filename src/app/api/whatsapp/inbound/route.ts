@@ -2,8 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { createClient } from "@supabase/supabase-js";
 import { DOCTOR } from "@/lib/constants";
+import crypto from "crypto";
 
-const VERIFY_TOKEN = process.env.FACEBOOK_VERIFY_TOKEN ?? "drakhilesh_fb_verify_2024";
+const VERIFY_TOKEN = process.env.FACEBOOK_VERIFY_TOKEN;
+const APP_SECRET = process.env.FACEBOOK_APP_SECRET;
 const WA_TOKEN = process.env.WHATSAPP_ACCESS_TOKEN;
 const WA_PHONE_ID = process.env.WHATSAPP_PHONE_NUMBER_ID;
 
@@ -13,6 +15,17 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 );
 
+function verifySignature(rawBody: string, signature: string | null): boolean {
+  if (!APP_SECRET) return true; // Dev mode — set FACEBOOK_APP_SECRET in production
+  if (!signature) return false;
+  const expected = "sha256=" + crypto.createHmac("sha256", APP_SECRET).update(rawBody).digest("hex");
+  try {
+    return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected));
+  } catch {
+    return false;
+  }
+}
+
 // GET — WhatsApp webhook verification (same verify token as Facebook)
 export async function GET(req: NextRequest) {
   const url = new URL(req.url);
@@ -20,7 +33,7 @@ export async function GET(req: NextRequest) {
   const token = url.searchParams.get("hub.verify_token");
   const challenge = url.searchParams.get("hub.challenge");
 
-  if (mode === "subscribe" && token === VERIFY_TOKEN && challenge) {
+  if (VERIFY_TOKEN && mode === "subscribe" && token === VERIFY_TOKEN && challenge) {
     return new NextResponse(challenge, { status: 200, headers: { "Content-Type": "text/plain" } });
   }
   return NextResponse.json({ error: "Verification failed" }, { status: 403 });
@@ -29,7 +42,14 @@ export async function GET(req: NextRequest) {
 // POST — Inbound WhatsApp message handler
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
+    const rawBody = await req.text();
+    const signature = req.headers.get("x-hub-signature-256");
+
+    if (!verifySignature(rawBody, signature)) {
+      return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
+    }
+
+    const body = JSON.parse(rawBody);
     if (body.object !== "whatsapp_business_account") {
       return NextResponse.json({ status: "ignored" });
     }

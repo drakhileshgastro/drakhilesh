@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import webpush from "web-push";
 import { requireInternalRequest } from "@/lib/auth";
 
 const supabase = createClient(
@@ -47,32 +48,26 @@ export async function POST(req: NextRequest) {
       tag: "drakhilesh-crm",
     });
 
+    webpush.setVapidDetails(vapidSubject, vapidPublic, vapidPrivate);
+
     let sent = 0;
     const stale: string[] = [];
 
     for (const sub of subs) {
       try {
-        const pushRes = await sendWebPush({
-          endpoint: sub.endpoint,
-          p256dh: sub.p256dh,
-          auth: sub.auth,
-          payload: notification,
-          vapidPublic,
-          vapidPrivate,
-          vapidSubject,
-        });
-
-        if (pushRes === 410 || pushRes === 404) {
-          stale.push(sub.endpoint); // Subscription expired
-        } else if (pushRes >= 200 && pushRes < 300) {
-          sent++;
+        await webpush.sendNotification(
+          { endpoint: sub.endpoint, keys: { p256dh: sub.p256dh, auth: sub.auth } },
+          notification
+        );
+        sent++;
+      } catch (err: unknown) {
+        const status = (err as { statusCode?: number }).statusCode;
+        if (status === 410 || status === 404) {
+          stale.push(sub.endpoint); // Subscription expired — clean up
         }
-      } catch {
-        // Individual send failure — skip
       }
     }
 
-    // Clean up stale subscriptions
     if (stale.length > 0) {
       try {
         await supabase.from("push_subscriptions").delete().in("endpoint", stale);
@@ -84,33 +79,4 @@ export async function POST(req: NextRequest) {
     console.error("Push send error:", err);
     return NextResponse.json({ success: false });
   }
-}
-
-// Minimal Web Push implementation using Node.js built-in crypto (no external package needed)
-async function sendWebPush(opts: {
-  endpoint: string;
-  p256dh: string;
-  auth: string;
-  payload: string;
-  vapidPublic: string;
-  vapidPrivate: string;
-  vapidSubject: string;
-}): Promise<number> {
-  // For now, use the endpoint directly with a minimal unsigned request
-  // Full VAPID signing requires the web-push package or complex crypto operations
-  // This sends the notification without VAPID if the push service allows it (Chrome doesn't)
-  // TODO: Install `npm install web-push` and replace with proper VAPID implementation
-
-  // Simplified attempt — most push services require VAPID
-  const res = await fetch(opts.endpoint, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/octet-stream",
-      "Content-Encoding": "aes128gcm",
-      "TTL": "86400",
-    },
-    body: opts.payload,
-  });
-
-  return res.status;
 }

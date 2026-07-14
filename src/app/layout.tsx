@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Inter, Mukta } from "next/font/google";
+import { headers } from "next/headers";
 import Script from "next/script";
 import { Toaster } from "sonner";
 import "./globals.css";
@@ -144,7 +145,10 @@ const GLOBAL_SCHEMA = {
   ],
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const headersList = await headers();
+  const nonce = headersList.get("x-nonce") ?? "";
+
   return (
     <html lang="hi-IN" className={`${manrope.variable} ${inter.variable} ${mukta.variable}`}>
       <head>
@@ -152,6 +156,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-72x72.png" />
         <meta name="theme-color" content="#0EA5E9" />
         <script
+          nonce={nonce}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(GLOBAL_SCHEMA) }}
         />
@@ -160,8 +165,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <Toaster position="top-center" richColors />
       </body>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script
+        nonce={nonce}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script nonce={nonce} id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

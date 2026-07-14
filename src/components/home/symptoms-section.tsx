@@ -181,7 +181,7 @@ export default function SymptomsSection() {
                 )}
               >
                 {isCommon && (
-                  <span className="absolute top-2.5 right-2.5 bg-accent/10 text-accent font-sans text-[8px] font-extrabold uppercase px-2 py-0.5 rounded-md tracking-wider flex items-center gap-0.5">
+                  <span className="absolute top-2.5 right-2.5 bg-primary text-white font-sans text-[8px] font-extrabold uppercase px-2 py-1 rounded-md tracking-wider flex items-center gap-0.5 shadow-2xs">
                     🔥 Most Common
                   </span>
                 )}
