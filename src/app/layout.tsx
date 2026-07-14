@@ -3,9 +3,11 @@ import { Manrope, Inter, Mukta } from "next/font/google";
 import { headers } from "next/headers";
 import Script from "next/script";
 import { Toaster } from "sonner";
+import AnalyticsProvider from "@/components/analytics-provider";
 import "./globals.css";
 
 const GA_ID = "G-ZYE92TKM0W";
+const AW_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -86,7 +88,7 @@ const GLOBAL_SCHEMA = {
       "@id": "https://drakhileshgastro.com/#physician",
       name: "Dr. Akhilesh Yadav",
       description: "DM Gastroenterologist & Hepatologist specialising in liver disease, fatty liver, jaundice, endoscopy, IBS and all digestive conditions.",
-      image: "https://drakhileshgastro.com/images/dr-akhilesh-hero.jpg",
+      image: "https://drakhileshgastro.com/dr-akhilesh-improved.png",
       url: "https://drakhileshgastro.com",
       telephone: "+917491925047",
       medicalSpecialty: ["Gastroenterology", "Hepatology"],
@@ -108,7 +110,7 @@ const GLOBAL_SCHEMA = {
       priceRange: "₹₹",
       currenciesAccepted: "INR",
       paymentAccepted: "Cash, UPI, Card",
-      image: "https://drakhileshgastro.com/images/clinic-reception.jpg",
+      image: "https://drakhileshgastro.com/images/procedure-room.png",
       address: {
         "@type": "PostalAddress",
         streetAddress: "HB Road",
@@ -164,6 +166,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       <body className="min-h-screen flex flex-col antialiased">
         {children}
         <Toaster position="top-center" richColors />
+        <AnalyticsProvider />
       </body>
       <Script
         nonce={nonce}
@@ -176,6 +179,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${GA_ID}', { page_path: window.location.pathname });
+          ${AW_ID ? `gtag('config', '${AW_ID}');` : ""}
         `}
       </Script>
     </html>

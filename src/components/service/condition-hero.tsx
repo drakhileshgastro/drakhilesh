@@ -2,6 +2,11 @@ import Link from "next/link";
 import { Phone, MessageCircle, Star, ShieldCheck, Clock, Award } from "lucide-react";
 import BookingForm from "./booking-form";
 import { DOCTOR } from "@/lib/constants";
+import {
+  LiverIllustration,
+  StomachIllustration,
+  PancreasIllustration,
+} from "@/components/ui/organ-illustrations";
 
 interface ConditionHeroProps {
   title: string;
@@ -23,18 +28,6 @@ export default function ConditionHero({
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(
     `Namaskar, mujhe ${title} ke baare me Dr. Akhilesh Yadav se consult karna hai.`
   )}`;
-
-  // Dynamic organ icon mapping based on slug
-  let organIcon = "/images/stomach-icon.png";
-  if (slug) {
-    const liverSlugs = ["fatty-liver", "jaundice", "liver-cirrhosis", "hepatitis", "liver-transplant"];
-    const pancreasSlugs = ["pancreatitis"];
-    if (liverSlugs.includes(slug)) {
-      organIcon = "/images/liver-icon.png";
-    } else if (pancreasSlugs.includes(slug)) {
-      organIcon = "/images/pancreas-icon.png";
-    }
-  }
 
   return (
     <section className="bg-bg-sand/30 pt-12 pb-16 lg:py-20 border-b border-border/40 relative overflow-hidden">
@@ -59,8 +52,14 @@ export default function ConditionHero({
           <div className="lg:col-span-7 space-y-6">
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 bg-white border border-border/60 rounded-2xl p-2 flex items-center justify-center shadow-2xs">
-                <img src={organIcon} alt={title} className="w-full h-full object-contain" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 bg-white border border-border/60 rounded-2xl p-1 flex items-center justify-center shadow-2xs">
+                {slug && ["fatty-liver", "jaundice", "liver-cirrhosis", "hepatitis", "liver-transplant"].includes(slug) ? (
+                  <LiverIllustration className="w-full h-full object-contain" />
+                ) : slug && ["pancreatitis"].includes(slug) ? (
+                  <PancreasIllustration className="w-full h-full object-contain" />
+                ) : (
+                  <StomachIllustration className="w-full h-full object-contain" />
+                )}
               </div>
               <div className="space-y-1">
                 <div className="inline-flex items-center gap-2 bg-primary-50 border border-primary/20 px-3 py-1 rounded-full text-primary font-display text-[10px] font-bold uppercase tracking-wider">
