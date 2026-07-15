@@ -20,7 +20,14 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    return [];
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.drakhileshgastro.com" }],
+        destination: "https://drakhileshgastro.com/:path*",
+        permanent: true,
+      },
+    ];
   },
   images: {
     formats: ["image/avif", "image/webp"],

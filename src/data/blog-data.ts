@@ -1766,6 +1766,94 @@ export const BLOG_POSTS: BlogPost[] = [
   }
 ];
 
+  {
+    slug: "fatty-liver-mein-kya-khana-chahiye",
+    image: "/images/fatty-liver-diet-blog.png",
+    titleHi: "फैटी लिवर में क्या खाना चाहिए? क्या खाएं, क्या न खाएं — पूरी जानकारी",
+    titleEn: "What to Eat in Fatty Liver? Complete Hindi Diet Guide",
+    excerptHi: "फैटी लिवर में क्या खाना चाहिए, क्या नहीं खाना चाहिए — यह सवाल हर fatty liver patient के मन में होता है। Dr. Akhilesh Yadav की सलाह में जानें कौन से foods liver को ठीक करते हैं और कौन से नुकसान पहुंचाते हैं।",
+    excerptEn: "What should you eat if you have fatty liver? Dr. Akhilesh Yadav, Gastroenterologist Ranchi, explains the complete diet guide in Hindi.",
+    category: "Liver Health",
+    readTimeMins: 7,
+    publishedAt: "July 2026",
+    emoji: "🥦",
+    tags: ["Fatty Liver", "Diet", "Hindi", "NAFLD", "kya khana chahiye", "liver diet"],
+    metaTitle: "फैटी लिवर में क्या खाना चाहिए? | Dr. Akhilesh Yadav Ranchi",
+    metaDescription: "फैटी लिवर में क्या खाएं, क्या न खाएं — chawal खा सकते हैं या नहीं? 7-दिन का diet plan। Dr. Akhilesh Yadav, Gastroenterologist, Orchid Medical Centre, Ranchi।",
+    sections: [
+      {
+        type: "text",
+        content: "अगर आपको फैटी लिवर की बीमारी है और आपके मन में यह सवाल है — 'फैटी लिवर में क्या खाना चाहिए, क्या नहीं खाना चाहिए?' — तो यह article आपके लिए ही लिखा गया है।\n\nमैं Dr. Akhilesh Yadav हूँ — DM Gastroenterologist & Hepatologist, Orchid Medical Centre, Ranchi। अपने clinic में हर रोज़ मैं fatty liver के मरीज़ों को यही सवाल पूछते देखता हूँ। इस article में मैं आपको वही जानकारी दूंगा जो मैं अपने patients को clinic में देता हूँ।",
+      },
+      {
+        type: "tip",
+        heading: "💡 सबसे पहले एक ज़रूरी बात",
+        content: "फैटी लिवर (NAFLD — Non-Alcoholic Fatty Liver Disease) एक reversible बीमारी है। यानी सही खानपान और जीवनशैली से इसे पूरी तरह ठीक किया जा सकता है — बिना किसी बड़ी दवाई के। Diet ही इसकी सबसे बड़ी दवाई है।",
+      },
+      {
+        heading: "✅ फैटी लिवर में क्या खाना चाहिए?",
+        type: "list",
+        content: "ये foods आपके liver की fat को कम करने में directly मदद करते हैं:",
+        list: [
+          "हरी सब्ज़ियाँ (पालक, मेथी, करेला, लौकी, तोरई, गाजर) — liver को detox करती हैं",
+          "दालें (मूंग, मसूर, चना) — plant protein, fat बिल्कुल कम, liver के लिए safe",
+          "ओट्स और दलिया — fiber से भरपूर, blood sugar control करते हैं, liver fat कम होती है",
+          "अखरोट (Walnuts) — omega-3 fatty acids, liver inflammation कम करते हैं",
+          "लहसुन — liver enzymes activate करता है, fat metabolism बेहतर होती है",
+          "हल्दी वाला दूध — curcumin liver cells protect करता है",
+          "ग्रीन टी (बिना चीनी) — antioxidants से liver fat कम होती है",
+          "सेब, पपीता, अनार — fiber + antioxidants, liver healing के लिए",
+          "Coffee (1-2 cup black, without sugar) — research में liver enzymes improve होते हैं",
+          "मछली (रोहू, कतला) — omega-3 protein source, liver के लिए बेहतरीन",
+          "Flax seeds / अलसी — omega-3 का vegetarian source",
+        ],
+      },
+      {
+        heading: "❌ फैटी लिवर में क्या नहीं खाना चाहिए?",
+        type: "list",
+        content: "ये चीज़ें liver में fat और बढ़ाती हैं — इनसे पूरी तरह बचें:",
+        list: [
+          "शराब (Alcohol) — बिल्कुल बंद करें, non-alcoholic fatty liver में भी शराब बहुत नुकसान करती है",
+          "तला-भुना खाना — समोसा, पकोड़ा, पूरी, chips — liver पर सबसे ज़्यादा load",
+          "मैदा से बनी चीज़ें — bread, biscuit, noodles, pizza, pasta — liver में fat तेज़ी से जमती है",
+          "मिठाई और refined sugar — ladoo, barfi, cold drinks, packaged juice",
+          "Red meat (mutton, beef) — saturated fat बहुत ज़्यादा होती है",
+          "Packaged और processed food — hidden sugar, trans fat, preservatives",
+          "Full-fat dairy ज़्यादा मात्रा में — मलाई, butter, cream",
+          "Packaged fruit juice — fiber नहीं, सिर्फ concentrated sugar",
+        ],
+      },
+      {
+        heading: "🍚 क्या फैटी लिवर में चावल खा सकते हैं? (Can You Eat Rice?)",
+        type: "text",
+        content: "यह सबसे common सवाल है जो मेरे patients पूछते हैं। जवाब है — हाँ, खा सकते हैं, लेकिन कम मात्रा में और सही तरीके से।\n\nWhite rice का glycemic index high होता है, जिससे blood sugar जल्दी बढ़ता है और liver में fat जमा होने की संभावना बढ़ती है। इसलिए:\n\n✓ चावल खाएं — लेकिन रोटी से कम मात्रा में (आधा कटोरी काफी है)\n✓ Brown rice ज़्यादा better है — इसमें fiber होता है\n✓ दोपहर में खाएं, रात में न खाएं\n✓ अकेले चावल की जगह दाल-सब्ज़ी के साथ खाएं — इससे glycemic load कम होता है\n✗ सिर्फ चावल-दाल या सिर्फ white rice न खाएं\n\nसारांश: Fatty liver में चावल completely बंद करने की ज़रूरत नहीं है — बस quantity और combination सही रखें।",
+      },
+      {
+        heading: "📅 7-दिन का फैटी लिवर Diet Plan (Hindi)",
+        type: "text",
+        content: "यह एक sample diet plan है। हर दिन का pattern यही रहेगा:\n\n🌅 सुबह उठकर (खाली पेट): 1 गिलास गर्म पानी + नींबू + हल्दी\n\n🍳 नाश्ता (8-9 बजे): दलिया / moong dal chilla / oats + 1 कप green tea\n\n🥗 Lunch (1-2 बजे): 2 गेहूं की रोटी + सब्ज़ी + 1 कटोरी दाल + salad (आधा कटोरी चावल optional)\n\n🥜 Evening Snack (5 बजे): मुट्ठी भर अखरोट / roasted chana\n\n🌙 Dinner (7-8 बजे): 1-2 रोटी + हल्की सब्ज़ी + दाल soup। रात 8 बजे के बाद कुछ न खाएं।\n\nइस pattern को 3 months follow करने से ultrasound में clearly improvement आती है।",
+      },
+      {
+        heading: "💪 Diet के साथ ये भी ज़रूरी है",
+        type: "list",
+        content: "सिर्फ diet काफी नहीं — ये habits भी साथ में रखें:",
+        list: [
+          "रोज़ 30-45 मिनट तेज़ चलना (Brisk Walk) — liver fat जलाने का सबसे effective तरीका",
+          "BMI 25 से नीचे रखने की कोशिश करें — weight loss = liver fat loss",
+          "रात को 7-8 बजे तक खाना खा लें — late night eating liver के लिए बहुत नुकसानदेह",
+          "दिन में 8-10 गिलास पानी पिएं",
+          "Stress कम करें — cortisol hormone liver में fat जमा करता है",
+          "नींद पूरी लें (7-8 घंटे) — poor sleep liver metabolism को बिगाड़ती है",
+        ],
+      },
+      {
+        heading: "⚠️ Doctor से कब मिलें?",
+        type: "warning",
+        content: "अगर ultrasound में Grade 2 या Grade 3 fatty liver है, liver function tests (SGOT/SGPT) abnormal हैं, या पेट में दर्द, थकान, और भूख न लगने की शिकायत है — तो सिर्फ diet पर depend न करें। इस condition में medication और close monitoring ज़रूरी होती है।\n\nRanchi में Orchid Medical Centre में Dr. Akhilesh Yadav से appointment लें। OPD: सोमवार–शनिवार, सुबह 10 बजे – शाम 8 बजे।",
+      },
+    ],
+  },
+
 export function getBlogBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }

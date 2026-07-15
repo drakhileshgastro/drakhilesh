@@ -10,9 +10,10 @@ import StickyCTA from "@/components/service/sticky-cta";
 import SymptomFAQSection from "@/components/symptom/symptom-faq"; // Reuse accordion component
 
 export const metadata: Metadata = {
-  title: "About Dr Akhilesh Yadav | Gastroenterologist in Ranchi",
-  description: "Read about Dr Akhilesh Yadav, senior gastroenterologist in Ranchi. Learn about his clinical qualifications (DM Gastroenterology), experience, and patient care philosophy.",
+  title: "Dr. Akhilesh Yadav — DM Gastroenterologist in Ranchi | Orchid Medical Centre",
+  description: "Dr. Akhilesh Yadav is Ranchi's leading DM Gastroenterologist & Hepatologist at Orchid Medical Centre, HB Road. 10+ years experience, 4,000+ patients treated. Book OPD today.",
   alternates: { canonical: "https://drakhileshgastro.com/about" },
+  keywords: ["dr akhilesh yadav", "gastroenterologist ranchi", "liver specialist ranchi", "dm gastroenterology ranchi", "orchid medical centre ranchi"],
 };
 
 const EDUCATION = [
