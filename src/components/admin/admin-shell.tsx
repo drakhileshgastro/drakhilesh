@@ -34,8 +34,8 @@ function isActive(pathname: string, href: string, exact?: boolean) {
   return exact ? pathname === href : pathname.startsWith(href);
 }
 
-const BRAND = "#184C3A";
-const BRAND_LIGHT = "#EAF2EE";
+const BRAND = "#111827";
+const BRAND_LIGHT = "#F3F4F6";
 
 function SidebarContent({
   pathname,

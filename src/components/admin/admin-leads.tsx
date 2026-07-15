@@ -12,8 +12,8 @@ import type { Lead, LeadStatus } from "@/lib/supabase";
 import { calculateLeadScore, getScoreLabel } from "@/lib/lead-score";
 import { toast } from "sonner";
 
-const BRAND       = "#184C3A";
-const BRAND_LIGHT = "#EAF2EE";
+const BRAND       = "#111827";
+const BRAND_LIGHT = "#F3F4F6";
 
 export const STATUS_BADGE: Record<string, string> = {
   New:          "bg-blue-50   text-blue-700   border-blue-200",
@@ -462,7 +462,7 @@ export default function AdminLeads() {
                         onClick={() => openLead(lead)}
                         className={cn(
                           "hover:bg-gray-50 cursor-pointer transition-colors",
-                          selectedLead?.lead_id === lead.lead_id && "bg-green-50/50 border-l-2 border-l-[#184C3A]"
+                          selectedLead?.lead_id === lead.lead_id && "bg-gray-50 border-l-2 border-l-gray-900"
                         )}
                       >
                         <td className="px-4 py-3 font-semibold text-gray-800">{lead.patient_name}</td>

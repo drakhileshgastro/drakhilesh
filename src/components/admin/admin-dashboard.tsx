@@ -13,8 +13,8 @@ import { cn } from "@/lib/cn";
 import type { Lead } from "@/lib/supabase";
 import { STATUS_BADGE } from "@/components/admin/admin-leads";
 
-const BRAND      = "#184C3A";
-const BRAND_LIGHT = "#EAF2EE";
+const BRAND      = "#111827";
+const BRAND_LIGHT = "#F3F4F6";
 
 export default function AdminDashboard() {
   const [leads,   setLeads]   = useState<Lead[]>([]);
