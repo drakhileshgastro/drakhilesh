@@ -57,73 +57,73 @@ export default function AdminSettings() {
     <div className="space-y-5 max-w-3xl">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-navy font-bold text-lg">Settings</h2>
-          <p className="text-slate text-xs mt-0.5">Clinic configuration and WhatsApp templates</p>
+          <h2 className="text-gray-900 font-bold text-lg">Settings</h2>
+          <p className="text-gray-500 text-xs mt-0.5">Clinic configuration and WhatsApp templates</p>
         </div>
         <button onClick={handleSave}
-          className="flex items-center gap-2 px-4 py-2.5 bg-teal text-white text-sm font-bold rounded-xl hover:bg-teal-dark transition-colors min-h-[44px]">
+          className="flex items-center gap-2 px-4 py-2.5 bg-gray-900 text-white text-sm font-bold rounded-xl hover:bg-gray-800 transition-colors min-h-[44px]">
           {saved ? <><CheckCircle size={15} /> Saved!</> : <><Save size={15} /> Save Settings</>}
         </button>
       </div>
 
       {/* Clinic info */}
-      <div className="bg-white rounded-2xl border border-gray-light p-5">
-        <h3 className="text-navy font-bold text-sm mb-4 flex items-center gap-2">
-          <Phone size={15} className="text-teal" /> Clinic Information
+      <div className="bg-white rounded-2xl border border-gray-200 p-5">
+        <h3 className="text-gray-900 font-bold text-sm mb-4 flex items-center gap-2">
+          <Phone size={15} className="text-gray-500" /> Clinic Information
         </h3>
         <div className="space-y-3">
           <div>
-            <label className="text-navy text-xs font-semibold block mb-1.5">Phone Number</label>
+            <label className="text-gray-900 text-xs font-semibold block mb-1.5">Phone Number</label>
             <input value={settings.phone} onChange={(e) => setSettings({ ...settings, phone: e.target.value })}
-              className="w-full px-4 py-2.5 text-sm border border-gray-light bg-offwhite rounded-xl focus:outline-none focus:border-teal text-navy" />
+              className="w-full px-4 py-2.5 text-sm border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-gray-400 text-gray-900" />
           </div>
           <div>
-            <label className="text-navy text-xs font-semibold block mb-1.5">
+            <label className="text-gray-900 text-xs font-semibold block mb-1.5">
               <MapPin size={12} className="inline mr-1" />Address
             </label>
             <input value={settings.address} onChange={(e) => setSettings({ ...settings, address: e.target.value })}
-              className="w-full px-4 py-2.5 text-sm border border-gray-light bg-offwhite rounded-xl focus:outline-none focus:border-teal text-navy" />
+              className="w-full px-4 py-2.5 text-sm border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-gray-400 text-gray-900" />
           </div>
         </div>
       </div>
 
       {/* OPD Timings */}
-      <div className="bg-white rounded-2xl border border-gray-light p-5">
-        <h3 className="text-navy font-bold text-sm mb-4 flex items-center gap-2">
-          <Clock size={15} className="text-teal" /> OPD Timings
+      <div className="bg-white rounded-2xl border border-gray-200 p-5">
+        <h3 className="text-gray-900 font-bold text-sm mb-4 flex items-center gap-2">
+          <Clock size={15} className="text-gray-500" /> OPD Timings
         </h3>
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="text-navy text-xs font-semibold block mb-1.5">Morning Opens</label>
+              <label className="text-gray-900 text-xs font-semibold block mb-1.5">Morning Opens</label>
               <input type="time" value={settings.timings_morning_open}
                 onChange={(e) => setSettings({ ...settings, timings_morning_open: e.target.value })}
-                className="w-full px-4 py-2.5 text-sm border border-gray-light bg-offwhite rounded-xl focus:outline-none focus:border-teal text-navy" />
+                className="w-full px-4 py-2.5 text-sm border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-gray-400 text-gray-900" />
             </div>
             <div>
-              <label className="text-navy text-xs font-semibold block mb-1.5">Morning Closes</label>
+              <label className="text-gray-900 text-xs font-semibold block mb-1.5">Morning Closes</label>
               <input type="time" value={settings.timings_morning_close}
                 onChange={(e) => setSettings({ ...settings, timings_morning_close: e.target.value })}
-                className="w-full px-4 py-2.5 text-sm border border-gray-light bg-offwhite rounded-xl focus:outline-none focus:border-teal text-navy" />
+                className="w-full px-4 py-2.5 text-sm border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-gray-400 text-gray-900" />
             </div>
             <div>
-              <label className="text-navy text-xs font-semibold block mb-1.5">Evening Opens</label>
+              <label className="text-gray-900 text-xs font-semibold block mb-1.5">Evening Opens</label>
               <input type="time" value={settings.timings_evening_open}
                 onChange={(e) => setSettings({ ...settings, timings_evening_open: e.target.value })}
-                className="w-full px-4 py-2.5 text-sm border border-gray-light bg-offwhite rounded-xl focus:outline-none focus:border-teal text-navy" />
+                className="w-full px-4 py-2.5 text-sm border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-gray-400 text-gray-900" />
             </div>
             <div>
-              <label className="text-navy text-xs font-semibold block mb-1.5">Evening Closes</label>
+              <label className="text-gray-900 text-xs font-semibold block mb-1.5">Evening Closes</label>
               <input type="time" value={settings.timings_evening_close}
                 onChange={(e) => setSettings({ ...settings, timings_evening_close: e.target.value })}
-                className="w-full px-4 py-2.5 text-sm border border-gray-light bg-offwhite rounded-xl focus:outline-none focus:border-teal text-navy" />
+                className="w-full px-4 py-2.5 text-sm border border-gray-200 bg-gray-50 rounded-xl focus:outline-none focus:border-gray-400 text-gray-900" />
             </div>
           </div>
           <div className="flex flex-wrap gap-2">
             {DAYS.map((day) => (
-              <span key={day} className="px-3 py-1.5 bg-teal-light text-teal text-xs font-medium rounded-full">{day}</span>
+              <span key={day} className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">{day}</span>
             ))}
-            <span className={`px-3 py-1.5 text-xs font-medium rounded-full ${settings.sunday_closed ? "bg-red-100 text-red-600" : "bg-teal-light text-teal"}`}>
+            <span className={`px-3 py-1.5 text-xs font-medium rounded-full ${settings.sunday_closed ? "bg-red-100 text-red-600" : "bg-gray-100 text-gray-700"}`}>
               Sunday {settings.sunday_closed ? "(Closed)" : "(Open)"}
             </span>
           </div>
@@ -131,27 +131,27 @@ export default function AdminSettings() {
       </div>
 
       {/* WhatsApp Templates */}
-      <div className="bg-white rounded-2xl border border-gray-light p-5">
-        <h3 className="text-navy font-bold text-sm mb-4 flex items-center gap-2">
-          <MessageSquare size={15} className="text-teal" /> WhatsApp Message Templates
+      <div className="bg-white rounded-2xl border border-gray-200 p-5">
+        <h3 className="text-gray-900 font-bold text-sm mb-4 flex items-center gap-2">
+          <MessageSquare size={15} className="text-gray-500" /> WhatsApp Message Templates
         </h3>
         <div className="space-y-3">
           {WHATSAPP_TEMPLATES.map((template) => (
-            <div key={template.name} className="bg-offwhite rounded-xl p-4 border border-gray-light">
+            <div key={template.name} className="bg-gray-50 rounded-xl p-4 border border-gray-200">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-navy font-bold text-xs">{template.name}</p>
-                <span className="text-[10px] bg-teal-light text-teal px-2 py-0.5 rounded-full font-medium">{template.trigger}</span>
+                <p className="text-gray-900 font-bold text-xs">{template.name}</p>
+                <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full font-medium">{template.trigger}</span>
               </div>
-              <pre className="text-slate text-[11px] leading-relaxed whitespace-pre-wrap font-hindi">{template.preview}</pre>
+              <pre className="text-gray-500 text-[11px] leading-relaxed whitespace-pre-wrap font-hindi">{template.preview}</pre>
             </div>
           ))}
         </div>
       </div>
 
       {/* Automation toggles */}
-      <div className="bg-white rounded-2xl border border-gray-light p-5">
-        <h3 className="text-navy font-bold text-sm mb-4 flex items-center gap-2">
-          <Users size={15} className="text-teal" /> Automation Settings
+      <div className="bg-white rounded-2xl border border-gray-200 p-5">
+        <h3 className="text-gray-900 font-bold text-sm mb-4 flex items-center gap-2">
+          <Users size={15} className="text-gray-500" /> Automation Settings
         </h3>
         <div className="space-y-3">
           {[
@@ -161,12 +161,12 @@ export default function AdminSettings() {
           ].map((item) => (
             <div key={item.key} className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-navy font-semibold text-sm">{item.label}</p>
-                <p className="text-gray-muted text-xs mt-0.5">{item.desc}</p>
+                <p className="text-gray-900 font-semibold text-sm">{item.label}</p>
+                <p className="text-gray-400 text-xs mt-0.5">{item.desc}</p>
               </div>
               <button
                 onClick={() => setSettings({ ...settings, [item.key]: !settings[item.key as keyof typeof settings] })}
-                className={`w-11 h-6 rounded-full transition-colors flex-shrink-0 relative ${settings[item.key as keyof typeof settings] ? "bg-teal" : "bg-gray-light"}`}
+                className={`w-11 h-6 rounded-full transition-colors flex-shrink-0 relative ${settings[item.key as keyof typeof settings] ? "bg-gray-800" : "bg-gray-200"}`}
               >
                 <span className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow-sm transition-transform ${settings[item.key as keyof typeof settings] ? "translate-x-5" : "translate-x-0.5"}`} />
               </button>
