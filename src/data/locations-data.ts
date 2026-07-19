@@ -210,21 +210,39 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     travelDistance: "140 km",
     travelDuration: "2.75 Hours",
     travelRoute: "NH-20 Highway",
-    roadInstructions: "Drive North via NH-20 through Chakradharpur and Khunti straight to Ranchi.",
-    trainInstructions: "Regular train connectivity via Chakradharpur Railway Station to Ranchi.",
-    metaTitle: "Best Gastroenterologist in Chaibasa | Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Chaibasa, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
-    h1: "चाईबासा के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
+    roadInstructions: "Drive North via NH-20 through Chakradharpur and Khunti straight to Ranchi. The road is well-maintained and typically takes 2.5–3 hours depending on traffic at Khunti.",
+    trainInstructions: "Chakradharpur Railway Station connects to Ranchi via express trains. Alternatively, take a shared taxi or bus from Chaibasa bus stand directly to Ranchi — regular services run every 30–45 minutes.",
+    metaTitle: "Gastroenterologist in Chaibasa | Dr. Akhilesh Yadav – Ranchi Specialist",
+    metaDescription: "Looking for a gastroenterologist in Chaibasa? Consult Dr. Akhilesh Yadav (DM Gastroenterology) at Orchid Medical Centre, Ranchi — 140 km via NH-20. Expert care for stomach, liver & digestive diseases. Book today.",
+    h1: "चाईबासा के मरीजों के लिए गैस्ट्रोएंटेरोलॉजिस्ट डॉक्टर — डॉ. अखिलेश यादव",
     whyChoose: [
-      "Direct NH-20 road connection through Khunti district",
-      "Highly trusted gastrointestinal clinical counseling",
-      "Emergency bleed control and endoscopy diagnostics",
-      "Same-day discharge to save hotel costs"
+      "Direct NH-20 connectivity — reach Ranchi in under 3 hours from Chaibasa",
+      "Specialist DM Gastroenterology care not available locally in West Singhbhum",
+      "Same-day endoscopy, colonoscopy, and diagnostic procedures with same-day discharge",
+      "Hindi and local language support — no language barrier for Jharkhand patients",
+      "Priority appointment slots reserved for patients travelling from Chaibasa and nearby districts",
+      "Comprehensive liver, gallbladder, and digestive disease management under one roof"
     ],
     faqs: [
       {
-        q: "How to reach the Ranchi clinic from Chaibasa?",
-        a: "You can drive North along NH-20 via Chakradharpur and Khunti, reaching Ranchi in under 3 hours.",
+        q: "Is there a gastroenterologist in Chaibasa?",
+        a: "Chaibasa (West Singhbhum district) currently does not have a dedicated DM Gastroenterologist. Patients from Chaibasa travel 140 km to Orchid Medical Centre, Ranchi, to consult Dr. Akhilesh Yadav — a specialist with DM Gastroenterology degree, 10+ years of experience, and 4,000+ patients treated.",
+      },
+      {
+        q: "How far is Chaibasa from Dr. Akhilesh Yadav's clinic in Ranchi?",
+        a: "Chaibasa is approximately 140 km from Orchid Medical Centre, Ranchi. By road via NH-20 through Chakradharpur and Khunti, it takes about 2.5–3 hours. Shared taxis and buses from Chaibasa Bus Stand to Ranchi also operate regularly.",
+      },
+      {
+        q: "Can Chaibasa patients get endoscopy done and return the same day?",
+        a: "Yes. Diagnostic endoscopy and colonoscopy at Orchid Medical Centre are performed under light sedation and take 15–20 minutes. After a 1-hour recovery period and report collection, patients from Chaibasa can safely travel back the same day.",
+      },
+      {
+        q: "What stomach and liver problems can Dr. Akhilesh Yadav treat for Chaibasa patients?",
+        a: "Dr. Akhilesh Yadav treats a wide range of conditions common in tribal and rural Jharkhand — fatty liver disease, jaundice (pilia), liver cirrhosis, hepatitis B and C, IBS, acid reflux, gallstones, abdominal pain, and more. He also performs advanced procedures like ERCP and EUS.",
+      },
+      {
+        q: "How do I book an appointment from Chaibasa?",
+        a: "Call or WhatsApp +91-7764028474 to book a slot. Mention that you are travelling from Chaibasa so we can schedule a priority morning appointment (10:00 AM–12:00 PM) to allow same-day return travel.",
       }
     ]
   },
