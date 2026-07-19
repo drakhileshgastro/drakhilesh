@@ -234,9 +234,31 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        heading: "Dr. Akhilesh की final advice",
+        heading: "Dr. Akhilesh Yadav की final advice",
         type: "tip",
         content: "अगर doctor ने endoscopy recommend की है — तो डरें नहीं, करवाएं। जितना जल्दी diagnosis होगी, उतना जल्दी और आसान इलाज होगा। Orchid Medical Centre, Ranchi में हम patient comfort को सबसे ज़्यादा priority देते हैं। Appointment लें, आएं, और देखें कि endoscopy कितनी simple है।",
+      },
+    ],
+    faqs: [
+      {
+        q: "क्या एंडोस्कोपी में दर्द होता है? — Kya Endoscopy Mein Dard Hota Hai",
+        a: "नहीं, आधुनिक एंडोस्कोपी में दर्द नहीं होता। Dr. Akhilesh Yadav conscious sedation (हल्की नींद) के साथ एंडोस्कोपी करते हैं जिससे procedure के दौरान आपको कुछ भी महसूस नहीं होता। अधिकतर मरीजों को यह experience 'बिल्कुल तकलीफ नहीं हुई' — ऐसा होता है।",
+      },
+      {
+        q: "क्या Endoscopy बिना sedation के दर्दनाक होती है?",
+        a: "बिना sedation के एंडोस्कोपी असुविधाजनक हो सकती है लेकिन असहनीय नहीं। Throat spray से gag reflex काफी कम हो जाती है। Orchid Medical Centre में हम IV conscious sedation की सलाह देते हैं — जिससे आप पूरी procedure में सोते हैं और जागने पर सब ठीक हो जाता है।",
+      },
+      {
+        q: "Endoscopy के side effects क्या हैं? — Endoscopy Ke Side Effects in Hindi",
+        a: "एंडोस्कोपी के बाद सामान्य side effects: गले में हल्की खराश (1-2 दिन में ठीक), हल्का पेट फूलना, और sedation से थोड़ी नींद। ये सभी 24 घंटे में ठीक हो जाते हैं। Serious complications (bleeding, perforation) 10,000 में 1 से भी कम chance में होती हैं।",
+      },
+      {
+        q: "Endoscopy के बाद क्या खाना चाहिए?",
+        a: "एंडोस्कोपी के बाद 1-2 घंटे कुछ न खाएं जब तक throat numbness खत्म न हो। उसके बाद खिचड़ी, दाल, curd या soup लें। अगले दिन से सामान्य खाना शुरू करें। पहले दिन बहुत गर्म या मसालेदार खाना avoid करें।",
+      },
+      {
+        q: "Endoscopy कब करानी चाहिए? — When Is Endoscopy Needed",
+        a: "बार-बार acidity, खाना निगलने में तकलीफ, खून की उल्टी, पेट दर्द जो दवाओं से ठीक न हो, या unexplained weight loss — इन सभी में endoscopy ज़रूरी है। H. Pylori infection, gastritis, peptic ulcer और stomach cancer की early detection के लिए भी एंडोस्कोपी कराई जाती है।",
       },
     ],
   },
@@ -1322,7 +1344,29 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "warning",
         content: "पेट में जमा पानी में बैक्टीरिया पनपने का बहुत अधिक खतरा होता है। इसे Spontaneous Bacterial Peritonitis (SBP) कहते हैं। यदि असाइटिस के मरीज को पेट दर्द के साथ तेज बुखार या बेहोशी/भ्रम (Hepatic Encephalopathy) महसूस हो, तो इसे मेडिकल इमरजेंसी मानकर तुरंत अस्पताल ले जाना चाहिए।"
       }
-    ]
+    ],
+    faqs: [
+      {
+        q: "Ascites क्या बीमारी है? — Ascites Disease in Hindi",
+        a: "Ascites (असाइटिस) वह स्थिति है जब लिवर सिरोसिस या liver failure के कारण पेट के अंदर पानी जमा हो जाता है। इसे Hindi में 'पेट में पानी भरना' या 'जलोदर' कहते हैं। Portal Hypertension और खून में प्रोटीन (albumin) की कमी इसके मुख्य कारण हैं।",
+      },
+      {
+        q: "Moderate Ascites का मतलब क्या है? — Moderate Ascites Meaning in Hindi",
+        a: "Ascites की 3 grades होती हैं: Grade 1 (mild) — केवल ultrasound में दिखता है; Grade 2 (moderate) — पेट थोड़ा फूला हुआ दिखता है और हाथ रखने पर पानी की लहर महसूस होती है; Grade 3 (severe/tense) — पेट बहुत बड़ा हो जाता है और सांस लेना मुश्किल होता है। Moderate ascites में दवाएं (diuretics) और कम नमक की डाइट दी जाती है।",
+      },
+      {
+        q: "लिवर में पानी भरने पर क्या खाएं? — Liver Me Pani Bhar Jana Diet",
+        a: "पेट में पानी (ascites) के मरीज को नमक (sodium) बहुत कम खाना चाहिए — दिन में 2 ग्राम से कम। अचार, पापड़, नमकीन, सोया सॉस और packaged foods बिल्कुल बंद। प्रोटीन के लिए दाल, अंडे का सफेद हिस्सा, मछली खाएं। पानी की मात्रा डॉक्टर की सलाह से तय करें।",
+      },
+      {
+        q: "पेट का पानी (Ascites) कितनी बार निकालना पड़ता है?",
+        a: "जब पेट बहुत ज़्यादा फूल जाए और सांस लेना मुश्किल हो जाए, तो 'Therapeutic Paracentesis' यानी tapping की जाती है — ultrasound की मदद से सुई डालकर 3-5 लीटर पानी निकाला जाता है। यह कोई इलाज नहीं, बल्कि relief procedure है — पानी दोबारा भर सकता है। नमक कम खाने और दवाओं से इसे रोका जाता है।",
+      },
+      {
+        q: "Ascites में डॉक्टर से कब मिलें? — Ranchi में Liver Specialist",
+        a: "अगर पेट तेजी से बढ़ रहा हो, पैरों में सूजन हो, बुखार के साथ पेट दर्द हो (SBP का खतरा), या सांस लेने में तकलीफ हो — तो तुरंत liver specialist से मिलें। रांची में Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre में ascites और liver cirrhosis का विशेष उपचार करते हैं। अपॉइंटमेंट: 7764028474।",
+      },
+    ],
   },
   {
     slug: "does-cold-milk-cure-acidity-myths-facts",
@@ -1342,7 +1386,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "GERD",
       "Hindi"
     ],
-    metaTitle: "Does Cold Milk Cure Acidity? Myths vs Facts",
+    metaTitle: "ठंडा दूध एसिडिटी में पीना चाहिए? सच और नुकसान | Dr. Akhilesh Yadav",
     metaDescription: "क्या ठंडा दूध पीना एसिडिटी का स्थायी इलाज है? जानिए दूध पीने से पेट में एसिड बढ़ने के वैज्ञानिक कारण और एसिडिटी के सही घरेलू उपचार।",
     sections: [
       {
@@ -1370,7 +1414,25 @@ export const BLOG_POSTS: BlogPost[] = [
           "ठंडी छाछ (मट्ठा): छाछ में थोड़ा भुना जीरा और काला नमक डालकर पीने से आंतों को तुरंत ठंडक मिलती है।"
         ]
       }
-    ]
+    ],
+    faqs: [
+      {
+        q: "एसिडिटी में ठंडा दूध पीना चाहिए या नहीं? — Acidity Me Thanda Dudh",
+        a: "ठंडा दूध एसिडिटी में तुरंत राहत दे सकता है लेकिन यह स्थायी इलाज नहीं है। दूध में मौजूद calcium और fat कुछ देर बाद और ज़्यादा acid बनाती है — इसे 'acid rebound' कहते हैं। इसलिए रात को सोने से पहले ठंडा दूध पीने से GERD या acidity और बढ़ सकती है। नारियल पानी, छाछ और सौंफ का पानी बेहतर विकल्प हैं।",
+      },
+      {
+        q: "एसिडिटी के लिए सबसे अच्छा घरेलू उपाय क्या है?",
+        a: "एसिडिटी के लिए सबसे कारगर घरेलू उपाय: (1) खाने के बाद 10 मिनट टहलें, (2) सौंफ का पानी या ठंडी छाछ पिएं, (3) खाना खाने के तुरंत बाद न सोएं — 2 घंटे का gap रखें, (4) चाय-कॉफी कम करें, (5) तली-भुनी चीज़ें और मसालेदार खाना कम करें। अगर 2 हफ्ते में राहत न मिले तो gastroenterologist से मिलें।",
+      },
+      {
+        q: "क्या दूध एसिड रिफ्लक्स (GERD) में नुकसानदेह है?",
+        a: "हाँ, खासकर full-fat दूध GERD में नुकसान कर सकता है। दूध में मौजूद fat lower esophageal sphincter (LES) को relax कर देती है — जिससे acid आसानी से food pipe में वापस आ जाता है। Low-fat दूध थोड़ा बेहतर है, लेकिन GERD के मरीजों को dairy कम करने की सलाह दी जाती है।",
+      },
+      {
+        q: "एसिडिटी बार-बार होती है — डॉक्टर से कब मिलें?",
+        a: "अगर एसिडिटी हफ्ते में 2 से ज़्यादा बार हो, रात को सोते समय acid throat तक आए, खाना निगलने में तकलीफ हो, या आवाज बैठ जाए — तो यह simple acidity नहीं बल्कि GERD हो सकती है। ऐसे में Gastroenterologist से मिलना ज़रूरी है। रांची में Dr. Akhilesh Yadav से संपर्क करें: 7764028474।",
+      },
+    ],
   },
   {
     slug: "piles-fissure-fistula-differences-treatment",
@@ -1871,6 +1933,163 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "⚠️ Doctor से कब मिलें?",
         type: "warning",
         content: "अगर ultrasound में Grade 2 या Grade 3 fatty liver है, liver function tests (SGOT/SGPT) abnormal हैं, या पेट में दर्द, थकान, और भूख न लगने की शिकायत है — तो सिर्फ diet पर depend न करें। इस condition में medication और close monitoring ज़रूरी होती है।\n\nRanchi में Orchid Medical Centre में Dr. Akhilesh Yadav से appointment लें। OPD: सोमवार–शनिवार, सुबह 10 बजे – शाम 8 बजे।",
+      },
+    ],
+  },
+  {
+    slug: "bilirubin-test-meaning-ranchi",
+    titleHi: "बिलीरुबिन टेस्ट क्या होता है? — Normal Range, High Bilirubin का मतलब",
+    titleEn: "Bilirubin Test: Normal Range, High Levels and What It Means | Ranchi",
+    excerptHi: "बिलीरुबिन टेस्ट में क्या देखा जाता है? Normal Range क्या है? अगर बिलीरुबिन बढ़ा हुआ आए तो क्या करें? रांची में Liver Function Test और Gastroenterologist।",
+    excerptEn: "Understand your bilirubin test results. Learn about normal bilirubin range, causes of high bilirubin (jaundice, hepatitis, cirrhosis) and when to see a liver specialist in Ranchi.",
+    category: "Liver Health",
+    readTimeMins: 6,
+    publishedAt: "February 15, 2027",
+    emoji: "🧪",
+    image: "/images/liver-icon.png",
+    tags: [
+      "Bilirubin Test",
+      "Liver Function Test",
+      "Jaundice",
+      "Ranchi",
+      "Hindi"
+    ],
+    metaTitle: "Bilirubin Test in Ranchi | Normal Range & High Bilirubin Meaning",
+    metaDescription: "बिलीरुबिन टेस्ट में क्या देखा जाता है? Normal Range क्या है? अगर बिलीरुबिन बढ़ा हुआ आए तो क्या करें? रांची में Liver Function Test और Gastroenterologist।",
+    sections: [
+      {
+        type: "text",
+        content: "जब भी डॉक्टर लिवर की जांच के लिए LFT (Liver Function Test) करवाते हैं, उसमें एक बहुत महत्वपूर्ण मान होता है — बिलीरुबिन (Bilirubin)। बहुत से मरीज रिपोर्ट में 'Total Bilirubin High' देखकर घबरा जाते हैं लेकिन यह नहीं जानते कि इसका क्या मतलब है। बिलीरुबिन वह पीला रंग का पदार्थ है जो हमारे पुराने लाल रक्त कोशिकाओं (Red Blood Cells) के टूटने पर बनता है और लिवर इसे पित्त (Bile) के रूप में शरीर से बाहर निकालता है। जब लिवर इस काम में विफल हो जाता है, तो बिलीरुबिन खून में जमा होने लगता है — जिसका सबसे पहला संकेत पीलिया (Jaundice) है।"
+      },
+      {
+        heading: "📊 बिलीरुबिन की Normal Range क्या है?",
+        type: "list",
+        content: "बिलीरुबिन दो प्रकार का होता है और रिपोर्ट में दोनों अलग-अलग दिखते हैं:",
+        list: [
+          "Total Bilirubin (कुल बिलीरुबिन): सामान्य मान 0.1 से 1.2 mg/dL। इससे ज़्यादा होने पर आगे जांच ज़रूरी है।",
+          "Direct Bilirubin (सीधा / Conjugated): सामान्य मान 0 से 0.3 mg/dL। यह लिवर की कोशिकाओं द्वारा प्रसंस्कृत होता है।",
+          "Indirect Bilirubin (अप्रत्यक्ष / Unconjugated): सामान्य मान 0.1 से 0.9 mg/dL। यह RBCs के टूटने से बनता है।",
+          "नवजात शिशुओं में बिलीरुबिन की range अलग होती है और 'Neonatal Jaundice' एक अलग स्थिति है।"
+        ]
+      },
+      {
+        heading: "⚠️ बिलीरुबिन बढ़ने के कारण (Causes of High Bilirubin)",
+        type: "list",
+        content: "बिलीरुबिन कई कारणों से बढ़ सकता है — इसका सही कारण जानने के लिए डॉक्टर अन्य जांचें भी करते हैं:",
+        list: [
+          "हेपेटाइटिस A, B, C या E: वायरल इन्फेक्शन से लिवर की कोशिकाएं क्षतिग्रस्त होती हैं।",
+          "लिवर सिरोसिस (Liver Cirrhosis): लिवर के गंभीर रूप से क्षतिग्रस्त होने पर बिलीरुबिन प्रोसेस नहीं होता।",
+          "पित्त नली में रुकावट (Bile Duct Obstruction): पथरी, ट्यूमर या stricture के कारण पित्त बाहर नहीं निकल पाता।",
+          "हेमोलिटिक एनीमिया (Hemolytic Anemia): RBCs बहुत तेज़ी से टूटती हैं — Indirect bilirubin बढ़ता है।",
+          "Gilbert's Syndrome: यह एक genetic condition है जिसमें बिलीरुबिन थोड़ा बढ़ा रहता है लेकिन खतरनाक नहीं होता।"
+        ]
+      },
+      {
+        heading: "🟡 पीलिया (Jaundice) और बिलीरुबिन का संबंध",
+        type: "tip",
+        content: "जब Total Bilirubin 2-3 mg/dL से ऊपर जाता है, तो आंखों का सफेद हिस्सा (sclera) पीला दिखने लगता है — इसे Icterus कहते हैं। 3 mg/dL से ऊपर जाने पर त्वचा भी पीली हो जाती है जिसे हम पीलिया (Jaundice) कहते हैं। पेशाब गहरे पीले या चाय के रंग का हो जाता है और मल (stool) हल्के या सफेद रंग का हो सकता है।"
+      },
+      {
+        heading: "🏥 रांची में Bilirubin Test और Liver Specialist",
+        type: "text",
+        content: "रांची में Liver Function Test (LFT) किसी भी अच्छी pathology lab से करवाया जा सकता है। लेकिन रिपोर्ट समझने और आगे का इलाज तय करने के लिए DM Gastroenterologist से मिलना ज़रूरी है। Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre Ranchi में लिवर की सभी समस्याओं का निदान और उपचार करते हैं। अपॉइंटमेंट के लिए: 7764028474।"
+      }
+    ],
+    faqs: [
+      {
+        q: "Bilirubin Test क्यों करवाया जाता है?",
+        a: "Bilirubin test LFT (Liver Function Test) का हिस्सा है। इसे पीलिया के कारण का पता लगाने, hepatitis की जांच करने, लिवर की कार्यक्षमता मापने और पित्त नली की रुकावट (bile duct obstruction) की जांच के लिए करवाया जाता है।",
+      },
+      {
+        q: "Total Bilirubin 2 mg/dL — क्या यह खतरनाक है?",
+        a: "Total Bilirubin 1.2 mg/dL की normal limit से थोड़ा ऊपर (1.2-2.0) होना हमेशा गंभीर नहीं होता — Gilbert's Syndrome जैसी harmless condition में यह थोड़ा बढ़ा रहता है। लेकिन 2 mg/dL से ऊपर जाने पर, खासकर अगर आंखें पीली हैं या पेशाब गहरा है, तो gastroenterologist से ज़रूर मिलें।",
+      },
+      {
+        q: "Direct और Indirect Bilirubin में क्या अंतर है?",
+        a: "Indirect (unconjugated) bilirubin तब बढ़ता है जब RBCs बहुत तेज़ी से टूटती हैं (hemolysis) — जैसे malaria में। Direct (conjugated) bilirubin तब बढ़ता है जब लिवर या पित्त नली में समस्या हो — जैसे hepatitis, cirrhosis, या bile duct stone। दोनों का बढ़ना अलग-अलग बीमारियों की तरफ इशारा करता है।",
+      },
+      {
+        q: "Bilirubin कम करने के लिए क्या करें?",
+        a: "बिलीरुबिन कम करने का तरीका इसके कारण पर निर्भर है। Hepatitis में आराम और antiviral दवाएं, पित्त नली की रुकावट में ERCP या surgery, और cirrhosis में liver care। खुद से कोई दवा न लें — पहले कारण पता करें। रांची में Dr. Akhilesh Yadav: 7764028474।",
+      },
+    ],
+  },
+  {
+    slug: "liver-specialist-vs-gastroenterologist-ranchi",
+    titleHi: "लिवर स्पेशलिस्ट डॉक्टर कौन होते हैं? Ranchi में DM Gastroenterologist से मिलें",
+    titleEn: "Liver Specialist Doctor in Ranchi | Dr. Akhilesh Yadav DM Gastroenterologist",
+    excerptHi: "Ranchi में लिवर की बीमारी के लिए कौन से डॉक्टर से मिलें? General Physician, Gastroenterologist और Hepatologist में क्या फर्क है? जानिए DM Gastroenterology क्या होता है।",
+    excerptEn: "Looking for a liver specialist doctor in Ranchi? Understand the difference between a General Physician, Gastroenterologist, and Hepatologist — and why Dr. Akhilesh Yadav's DM degree makes the difference.",
+    category: "Liver Health",
+    readTimeMins: 5,
+    publishedAt: "February 22, 2027",
+    emoji: "🩺",
+    image: "/images/liver-icon.png",
+    tags: [
+      "Liver Specialist",
+      "Gastroenterologist",
+      "Hepatologist",
+      "Ranchi",
+      "Hindi"
+    ],
+    metaTitle: "Liver Specialist Doctor in Ranchi | Dr. Akhilesh Yadav DM Gastro",
+    metaDescription: "Ranchi में लिवर की बीमारी के लिए कौन से डॉक्टर से मिलें? General Physician, Gastroenterologist और Hepatologist में क्या फर्क है? जानिए DM Gastroenterology क्या होता है।",
+    sections: [
+      {
+        type: "text",
+        content: "जब किसी को पीलिया हो, लिवर की रिपोर्ट खराब आए, या पेट में पानी भर जाए — तो सबसे पहला सवाल यही होता है: 'किस डॉक्टर के पास जाएं?' रांची में 'Liver Specialist Doctor' ढूंढने पर लोग confuse हो जाते हैं क्योंकि इस specialization के कई नाम हैं — Hepatologist, Gastroenterologist, और General Physician। यह article आपको सही डॉक्टर चुनने में मदद करेगा।"
+      },
+      {
+        heading: "👨‍⚕️ General Physician vs. Gastroenterologist vs. Hepatologist",
+        type: "list",
+        content: "तीनों डॉक्टरों की training और specialization अलग-अलग है:",
+        list: [
+          "General Physician (MBBS/MD Medicine): सामान्य बीमारियों का इलाज करते हैं। लिवर की साधारण जांच और दवाएं दे सकते हैं, लेकिन जटिल लिवर रोग में specialist की ज़रूरत होती है।",
+          "DM Gastroenterologist: MBBS → MD Medicine → DM Gastroenterology — 3 स्तरों की training के बाद। पेट, आंत और लिवर की सभी बीमारियों में expert। Hepatology (liver diseases) इसी specialization का हिस्सा है।",
+          "Hepatologist (Liver Specialist): कुछ DM Gastroenterologists liver diseases में extra training लेते हैं और खुद को 'Hepatologist' कहते हैं। India में standalone Hepatology DM Gastroenterology के अंतर्गत ही आती है।",
+          "सरल शब्दों में: DM Gastroenterologist = Liver Specialist + GI Specialist — एक ही डॉक्टर जो पेट और लिवर दोनों की देखभाल करता है।"
+        ]
+      },
+      {
+        heading: "🔬 DM Gastroenterology — यह Degree क्यों ज़रूरी है?",
+        type: "tip",
+        content: "DM (Doctorate of Medicine) Gastroenterology भारत की सबसे उच्च medical degree है — इसमें 3 साल की super-specialization training होती है जिसमें endoscopy, colonoscopy, liver biopsy, ERCP और liver diseases का गहन अध्ययन होता है। Ranchi में Dr. Akhilesh Yadav ने यही degree हासिल की है, जो उन्हें लिवर और पाचन तंत्र की सभी बीमारियों के लिए Jharkhand के चुनिंदा qualified specialists में से एक बनाती है।"
+      },
+      {
+        heading: "🏥 Ranchi में Dr. Akhilesh Yadav — Liver Specialist",
+        type: "list",
+        content: "Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre Ranchi में इन लिवर बीमारियों का उपचार करते हैं:",
+        list: [
+          "Fatty Liver (NAFLD/NASH) — Grade 1, 2, 3",
+          "Hepatitis B और C — antiviral therapy",
+          "Liver Cirrhosis और Ascites (पेट में पानी)",
+          "Jaundice (पीलिया) — कारण की जांच और इलाज",
+          "Liver Cancer — early detection और management",
+          "ERCP — पित्त नली की पथरी निकालना (बिना ऑपरेशन)"
+        ]
+      },
+      {
+        heading: "📞 अपॉइंटमेंट कैसे लें?",
+        type: "text",
+        content: "रांची में Orchid Medical Centre, Morabadi में Dr. Akhilesh Yadav सोमवार से शनिवार सुबह 10 बजे से शाम 8 बजे OPD देते हैं। अपॉइंटमेंट के लिए: 7764028474 पर call या WhatsApp करें। Same-day appointment भी available है।"
+      }
+    ],
+    faqs: [
+      {
+        q: "Ranchi में Liver Specialist Doctor कौन हैं?",
+        a: "Ranchi में Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre (Morabadi) में लिवर के सभी रोगों के specialist हैं। वे Jharkhand के चुनिंदा DM Gastroenterologists में से हैं जो fatty liver, hepatitis, cirrhosis, ascites और liver cancer का treatment करते हैं। अपॉइंटमेंट: 7764028474।",
+      },
+      {
+        q: "Liver Doctor और Gastroenterologist में क्या फर्क है?",
+        a: "India में अलग से 'Liver Doctor' की कोई standalone degree नहीं होती। DM Gastroenterologist ही liver specialist होते हैं — उनकी training में hepatology (liver diseases) शामिल होती है। General Physician लिवर की साधारण जांच कर सकते हैं, लेकिन hepatitis B/C treatment, liver cirrhosis management, या ERCP के लिए DM Gastroenterologist ज़रूरी है।",
+      },
+      {
+        q: "पीलिया (Jaundice) के लिए किस डॉक्टर से मिलें?",
+        a: "पीलिया के लिए पहले general physician से मिल सकते हैं। लेकिन अगर 1 हफ्ते में ठीक न हो, बुखार हो, पेट दर्द हो या dark urine हो — तो DM Gastroenterologist से ज़रूर मिलें। रांची में Dr. Akhilesh Yadav Hepatitis A/E, bile duct stones और liver diseases से होने वाले jaundice का इलाज करते हैं।",
+      },
+      {
+        q: "Liver Biopsy Ranchi में कहां होती है?",
+        a: "Liver Biopsy एक ultrasound-guided procedure है जिसमें लिवर के tissue का छोटा sample लेकर microscope से जांचा जाता है। Ranchi में Dr. Akhilesh Yadav Orchid Medical Centre में liver biopsy करते हैं। यह बिना general anesthesia के, outpatient basis पर किया जा सकता है।",
       },
     ],
   },
