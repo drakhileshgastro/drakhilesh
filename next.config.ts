@@ -21,10 +21,21 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // www → non-www (consolidates canonical authority)
       {
         source: "/:path*",
         has: [{ type: "host", value: "www.drakhileshgastro.com" }],
         destination: "https://drakhileshgastro.com/:path*",
+        permanent: true,
+      },
+      // Procedure-type services → /procedures/ (these live at /procedures/, not /conditions/)
+      { source: "/services/endoscopy", destination: "/procedures/endoscopy", permanent: true },
+      { source: "/services/colonoscopy", destination: "/procedures/colonoscopy", permanent: true },
+      { source: "/services/ercp", destination: "/procedures/ercp", permanent: true },
+      // All other /services/ → /conditions/ (old indexed URLs preserved)
+      {
+        source: "/services/:slug",
+        destination: "/conditions/:slug",
         permanent: true,
       },
     ];

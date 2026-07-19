@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getSymptomBySlug, getAllSymptomSlugs } from "@/data/symptoms-data";
+
+export const revalidate = 86400;
 import { DOCTOR } from "@/lib/constants";
 
 // Reusable Symptom Components

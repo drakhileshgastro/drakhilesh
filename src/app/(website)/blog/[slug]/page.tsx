@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+
+export const revalidate = 86400; // ISR: regenerate every 24h
 import { Clock, ArrowLeft, MessageCircle, Phone, AlertTriangle, Lightbulb, HelpCircle, CheckCircle2, Calendar } from "lucide-react";
-import { getBlogBySlug, getAllBlogSlugs, BLOG_POSTS } from "@/data/blog-data";
+import { getBlogBySlug, getAllBlogSlugs } from "@/data/blog-data";
+import { getRelatedBlogsForBlog, getRelatedConditionsForBlog } from "@/data/related-content";
 import { DOCTOR } from "@/lib/constants";
 import { cn } from "@/lib/cn";
 import StickyCTA from "@/components/service/sticky-cta";
@@ -105,14 +108,30 @@ export default async function BlogPostPage({ params }: Props) {
     "disclaimer": "Medical Disclaimer: Content on this website is for informational purposes only and does not constitute professional medical advice, diagnosis, or treatment. Always consult Dr. Akhilesh Yadav or another qualified healthcare provider regarding any questions about a medical condition."
   };
 
-  const related = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 2);
+  const related = getRelatedBlogsForBlog(slug, 2);
+  const relatedConditions = getRelatedConditionsForBlog(slug);
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drakhileshgastro.com" },
+      { "@type": "ListItem", "position": 2, "name": "Health Library", "item": "https://drakhileshgastro.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": post.metaTitle, "item": `https://drakhileshgastro.com/blog/${post.slug}` },
+    ],
+  };
+
   const whatsappShareText = `${post.titleHi}\n\nRead this health guide reviewed by Dr. Akhilesh Yadav:\nhttps://drakhileshgastro.com/blog/${post.slug}`;
 
   return (
     <>
-      <script 
-        type="application/ld+json" 
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       <article className="min-h-screen pb-16 sm:pb-0 bg-white">
@@ -249,6 +268,30 @@ export default async function BlogPostPage({ params }: Props) {
                     </span>
                   ))}
                 </div>
+
+                {/* Related Condition Link — back-link to condition page */}
+                {relatedConditions.length > 0 && (
+                  <div className="border border-primary/25 bg-primary-50/20 rounded-2xl p-5 space-y-3">
+                    <p className="text-[9px] text-primary uppercase font-bold tracking-wider font-sans">Doctor Consultation</p>
+                    {relatedConditions.slice(0, 1).map((cond) => (
+                      <Link
+                        key={cond.slug}
+                        href={`/conditions/${cond.slug}`}
+                        className="flex items-center gap-3 group"
+                      >
+                        <span className="text-2xl flex-shrink-0">{cond.emoji}</span>
+                        <div>
+                          <h4 className="text-forest font-sans font-bold text-sm leading-tight group-hover:text-primary transition-colors">
+                            {cond.title} — Treatment in Ranchi
+                          </h4>
+                          <p className="text-muted text-[10px] font-sans mt-0.5">
+                            Symptoms, diagnosis & treatment by Dr. Akhilesh Yadav →
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
 
                 {/* WhatsApp Share Card */}
                 <div className="bg-forest text-white rounded-3xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-sm">

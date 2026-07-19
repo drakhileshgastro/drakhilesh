@@ -10,10 +10,10 @@ import { cn } from "@/lib/cn";
 import { CONDITIONS, DOCTOR } from "@/lib/constants";
 import { trackBookingConversion } from "@/lib/analytics";
 
-const TIME_SLOTS = [
-  { value: "Morning (10am–2pm)", label: "Morning OPD", time: "10am – 2pm", icon: Sun },
-  { value: "Evening (5pm–8pm)", label: "Evening OPD", time: "5pm – 8pm", icon: Moon },
-] as const;
+const SESSION_SLOTS = {
+  Morning: ["10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM"],
+  Evening: ["5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM"],
+} as const;
 
 const schema = z.object({
   patient_name: z.string().min(2, "Please enter your name"),
@@ -34,6 +34,7 @@ interface BookingFormProps {
 export default function BookingForm({ defaultCondition, compact = false }: BookingFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [leadId, setLeadId] = useState("");
+  const [activeSession, setActiveSession] = useState<"Morning" | "Evening" | "">("");
 
   const {
     register,
@@ -178,31 +179,61 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
           {/* Time slot picker */}
           <div className="space-y-2">
             <p className="text-forest text-xs font-sans font-semibold">Preferred Time Slot <span className="text-muted/60 font-normal">(optional)</span></p>
+            {/* Step 1: Session */}
             <div className="grid grid-cols-2 gap-2">
-              {TIME_SLOTS.map((slot) => {
-                const Icon = slot.icon;
-                const isSelected = selectedTime === slot.value;
+              {(["Morning", "Evening"] as const).map((session) => {
+                const Icon = session === "Morning" ? Sun : Moon;
+                const range = session === "Morning" ? "10am – 2pm" : "5pm – 8pm";
+                const isActive = activeSession === session;
                 return (
                   <button
-                    key={slot.value}
+                    key={session}
                     type="button"
-                    onClick={() => setValue("preferred_time", isSelected ? "" : slot.value)}
+                    onClick={() => {
+                      const next = isActive ? "" : session;
+                      setActiveSession(next);
+                      setValue("preferred_time", "");
+                    }}
                     className={cn(
                       "flex items-center gap-2.5 px-3 py-3 rounded-xl border text-left transition-all",
-                      isSelected
+                      isActive
                         ? "border-primary bg-primary-light text-primary"
                         : "border-border/80 bg-white text-muted hover:border-primary/50"
                     )}
                   >
-                    <Icon size={15} className={isSelected ? "text-primary" : "text-muted/60"} />
+                    <Icon size={15} className={isActive ? "text-primary" : "text-muted/60"} />
                     <div>
-                      <p className="text-[11px] font-bold font-sans leading-none">{slot.label}</p>
-                      <p className="text-[10px] font-sans mt-0.5 opacity-75">{slot.time}</p>
+                      <p className="text-[11px] font-bold font-sans leading-none">{session} OPD</p>
+                      <p className="text-[10px] font-sans mt-0.5 opacity-75">{range}</p>
                     </div>
                   </button>
                 );
               })}
             </div>
+            {/* Step 2: Specific slot */}
+            {activeSession && (
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {SESSION_SLOTS[activeSession].map((slot) => {
+                  const val = `${activeSession} – ${slot}`;
+                  const isSelected = selectedTime === val;
+                  return (
+                    <button
+                      key={slot}
+                      type="button"
+                      onClick={() => setValue("preferred_time", isSelected ? "" : val)}
+                      className={cn(
+                        "px-3 py-1.5 rounded-lg border text-[11px] font-sans font-semibold transition-all",
+                        isSelected
+                          ? "border-primary bg-primary text-white"
+                          : "border-border/80 bg-white text-muted hover:border-primary/50"
+                      )}
+                    >
+                      {slot}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </>
       )}

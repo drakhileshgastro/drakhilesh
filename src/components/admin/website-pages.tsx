@@ -4,30 +4,65 @@ import Link from "next/link";
 import { ExternalLink, Eye, CheckCircle, Globe, FileText, Phone } from "lucide-react";
 
 const PAGES = [
-  { title: "Home Page", url: "/", desc: "Hero, services, about, reviews, conditions", seo: "Best Gastroenterologist in Ranchi", status: "live", priority: "High" },
-  { title: "About Doctor", url: "/about", desc: "Bio, education, specializations, clinic photos", seo: "About Dr. Akhilesh Yadav DM Gastroenterology", status: "live", priority: "Medium" },
-  { title: "Book Appointment", url: "/book", desc: "Full booking form + clinic info. Used in Google Ads.", seo: "Book Appointment Dr Akhilesh Yadav Ranchi", status: "live", priority: "High" },
-  { title: "Services Overview", url: "/conditions", desc: "Grid of all 15 service cards", seo: "Gastroenterology Services Ranchi", status: "live", priority: "High" },
-  { title: "Blog", url: "/blog", desc: "All health articles listing", seo: "Health Blog Dr Akhilesh Yadav", status: "live", priority: "Medium" },
-  { title: "Contact", url: "/contact", desc: "Contact form, map, directions from 8 districts", seo: "Contact Gastroenterologist Ranchi", status: "live", priority: "Low" },
+  { title: "Home Page", url: "/", desc: "Hero, services, about, reviews, conditions", seo: "Best Gastroenterologist in Ranchi | Dr. Akhilesh Yadav DM", status: "live", priority: "High", hasDesc: true, hasSchema: true, hasCanonical: true },
+  { title: "About Doctor", url: "/about", desc: "Bio, education, specializations, clinic photos", seo: "About Dr. Akhilesh Yadav – DM Gastroenterology Ranchi", status: "live", priority: "Medium", hasDesc: true, hasSchema: true, hasCanonical: true },
+  { title: "Book Appointment", url: "/book", desc: "Full booking form + clinic info. Used in Google Ads.", seo: "Book Appointment – Dr. Akhilesh Yadav Gastroenterologist Ranchi", status: "live", priority: "High", hasDesc: true, hasSchema: false, hasCanonical: true },
+  { title: "Services Overview", url: "/conditions", desc: "Grid of all 15 service cards", seo: "Gastroenterology Services Ranchi | Dr. Akhilesh Yadav", status: "live", priority: "High", hasDesc: true, hasSchema: false, hasCanonical: true },
+  { title: "Blog", url: "/blog", desc: "All health articles listing", seo: "Health Blog – Gastro Tips in Hindi | Dr. Akhilesh Yadav", status: "live", priority: "Medium", hasDesc: true, hasSchema: false, hasCanonical: true },
+  { title: "Contact", url: "/contact", desc: "Contact form, map, directions from 8 districts", seo: "Contact Dr. Akhilesh Yadav – Gastroenterologist Ranchi", status: "live", priority: "Low", hasDesc: true, hasSchema: false, hasCanonical: true },
 ];
 
+function SeoScore({ seo, hasDesc, hasSchema, hasCanonical }: { seo: string; hasDesc: boolean; hasSchema: boolean; hasCanonical: boolean }) {
+  const tLen = seo.length;
+  const titleOk = tLen >= 50 && tLen <= 65;
+  const checks = [
+    { label: `T:${tLen}`, ok: titleOk, tip: titleOk ? "Title length OK" : `Title ${tLen} chars — aim 50–65` },
+    { label: "D", ok: hasDesc, tip: hasDesc ? "Meta description present" : "No meta description" },
+    { label: "C", ok: hasCanonical, tip: hasCanonical ? "Canonical tag set" : "Missing canonical" },
+    { label: "S", ok: hasSchema, tip: hasSchema ? "Schema markup present" : "No schema markup" },
+  ];
+  const score = checks.filter((c) => c.ok).length;
+  return (
+    <div className="flex items-center gap-1.5 mt-1.5">
+      {checks.map((c) => (
+        <span
+          key={c.label}
+          title={c.tip}
+          className={`text-[9px] font-bold px-1.5 py-0.5 rounded font-mono cursor-default ${
+            c.ok ? "bg-green-100 text-green-700" : "bg-red-100 text-red-600"
+          }`}
+        >
+          {c.ok ? "✓" : "✗"} {c.label}
+        </span>
+      ))}
+      <span className={`text-[9px] font-bold ml-1 ${score === 4 ? "text-green-600" : score >= 2 ? "text-amber-600" : "text-red-600"}`}>
+        {score}/4
+      </span>
+    </div>
+  );
+}
+
 const SERVICE_PAGES = [
-  { slug: "fatty-liver", title: "Fatty Liver Treatment", keyword: "fatty liver treatment Ranchi" },
-  { slug: "jaundice", title: "Jaundice (Pilia)", keyword: "pilia doctor Ranchi" },
-  { slug: "liver-cirrhosis", title: "Liver Cirrhosis", keyword: "liver cirrhosis doctor Ranchi" },
-  { slug: "hepatitis", title: "Hepatitis B & C", keyword: "hepatitis B C treatment Jharkhand" },
-  { slug: "ibs", title: "IBS Treatment", keyword: "IBS treatment Ranchi" },
-  { slug: "acid-reflux", title: "Acid Reflux / GERD", keyword: "acidity specialist Ranchi" },
-  { slug: "gallstone", title: "Gallstone", keyword: "pittashay ki pathri doctor Ranchi" },
-  { slug: "endoscopy", title: "Endoscopy", keyword: "endoscopy doctor Ranchi" },
-  { slug: "colonoscopy", title: "Colonoscopy", keyword: "colonoscopy Ranchi" },
-  { slug: "ercp", title: "ERCP", keyword: "ERCP specialist Jharkhand" },
-  { slug: "pancreatitis", title: "Pancreatitis", keyword: "pancreatitis treatment Ranchi" },
-  { slug: "liver-cancer", title: "Liver Cancer", keyword: "liver cancer specialist Jharkhand" },
-  { slug: "ulcerative-colitis", title: "Ulcerative Colitis", keyword: "colitis treatment Ranchi" },
-  { slug: "abdominal-pain", title: "Abdominal Pain", keyword: "pet dard specialist Ranchi" },
-  { slug: "liver-transplant", title: "Liver Transplant", keyword: "liver transplant consultation Ranchi" },
+  { slug: "fatty-liver", title: "Fatty Liver Treatment", keyword: "fatty liver treatment Ranchi", type: "conditions" },
+  { slug: "jaundice", title: "Jaundice (Pilia)", keyword: "pilia doctor Ranchi", type: "conditions" },
+  { slug: "liver-cirrhosis", title: "Liver Cirrhosis", keyword: "liver cirrhosis doctor Ranchi", type: "conditions" },
+  { slug: "hepatitis", title: "Hepatitis B & C", keyword: "hepatitis B C treatment Jharkhand", type: "conditions" },
+  { slug: "ibs", title: "IBS Treatment", keyword: "IBS treatment Ranchi", type: "conditions" },
+  { slug: "acid-reflux", title: "Acid Reflux / GERD", keyword: "acidity specialist Ranchi", type: "conditions" },
+  { slug: "gallstone", title: "Gallstone", keyword: "pittashay ki pathri doctor Ranchi", type: "conditions" },
+  { slug: "pancreatitis", title: "Pancreatitis", keyword: "pancreatitis treatment Ranchi", type: "conditions" },
+  { slug: "liver-cancer", title: "Liver Cancer", keyword: "liver cancer specialist Jharkhand", type: "conditions" },
+  { slug: "ulcerative-colitis", title: "Ulcerative Colitis", keyword: "colitis treatment Ranchi", type: "conditions" },
+  { slug: "abdominal-pain", title: "Abdominal Pain", keyword: "pet dard specialist Ranchi", type: "conditions" },
+  { slug: "liver-transplant", title: "Liver Transplant", keyword: "liver transplant consultation Ranchi", type: "conditions" },
+  { slug: "peptic-ulcer", title: "Peptic Ulcer", keyword: "peptic ulcer treatment Ranchi", type: "conditions" },
+  { slug: "gi-bleeding", title: "GI Bleeding", keyword: "GI bleeding specialist Ranchi", type: "conditions" },
+  { slug: "h-pylori-dyspepsia", title: "H. Pylori & Dyspepsia", keyword: "H pylori treatment Ranchi", type: "conditions" },
+  { slug: "weight-loss", title: "Unexplained Weight Loss", keyword: "unexplained weight loss doctor Ranchi", type: "conditions" },
+  // Procedures (live at /procedures/, not /conditions/)
+  { slug: "endoscopy", title: "Endoscopy", keyword: "endoscopy doctor Ranchi", type: "procedures" },
+  { slug: "colonoscopy", title: "Colonoscopy", keyword: "colonoscopy Ranchi", type: "procedures" },
+  { slug: "ercp", title: "ERCP", keyword: "ERCP specialist Jharkhand", type: "procedures" },
 ];
 
 export default function WebsitePages() {
@@ -57,7 +92,8 @@ export default function WebsitePages() {
                 </div>
                 <p className="text-gray-400 text-xs mb-1">{page.desc}</p>
                 <p className="text-gray-700 text-[11px] font-mono">{page.url}</p>
-                <p className="text-gray-500 text-[11px] mt-0.5">SEO: {page.seo}</p>
+                <p className="text-gray-500 text-[11px] mt-0.5 truncate max-w-sm">SEO: {page.seo}</p>
+                <SeoScore seo={page.seo} hasDesc={page.hasDesc} hasSchema={page.hasSchema} hasCanonical={page.hasCanonical} />
               </div>
               <div className="flex gap-2 flex-shrink-0">
                 <Link href={page.url} target="_blank"
@@ -81,12 +117,15 @@ export default function WebsitePages() {
         </div>
         <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {SERVICE_PAGES.map((page) => (
-            <Link key={page.slug} href={`/conditions/${page.slug}`} target="_blank"
+            <Link key={page.slug} href={`/${page.type}/${page.slug}`} target="_blank"
               className="group flex items-start gap-2 p-3 border border-gray-200 rounded-xl hover:border-gray-400 transition-colors">
               <CheckCircle size={14} className="text-green-500 mt-0.5 flex-shrink-0" />
               <div className="min-w-0">
                 <p className="text-gray-900 font-semibold text-xs">{page.title}</p>
                 <p className="text-gray-400 text-[10px] truncate">{page.keyword}</p>
+                {page.type === "procedures" && (
+                  <span className="text-[9px] text-blue-500 font-bold">→ /procedures/</span>
+                )}
               </div>
               <ExternalLink size={11} className="text-gray-300 group-hover:text-gray-500 ml-auto flex-shrink-0" />
             </Link>
