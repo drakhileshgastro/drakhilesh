@@ -26,6 +26,7 @@ function generateSessionId() {
 }
 
 export default function ChatbotWidget() {
+  const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE]);
   const [input, setInput] = useState("");
@@ -34,9 +35,17 @@ export default function ChatbotWidget() {
   const [sessionId] = useState(() => generateSessionId());
   const bottomRef = useRef<HTMLDivElement>(null);
 
+  // Delay button appearance by 25s — avoid cluttering the page on first load
+  useEffect(() => {
+    const t = setTimeout(() => setVisible(true), 25000);
+    return () => clearTimeout(t);
+  }, []);
+
   useEffect(() => {
     if (open) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, open]);
+
+  if (!visible) return null;
 
   async function sendMessage() {
     const text = input.trim();

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, getAllServiceSlugs } from "@/data/services-data";
+
+export const revalidate = 86400;
+import { getRelatedBlogsForCondition } from "@/data/related-content";
 import { DOCTOR } from "@/lib/constants";
 
 // Modular Service components
@@ -11,6 +14,7 @@ import DiagnosisTreatment from "@/components/service/diagnosis-treatment";
 import RecoveryDiet from "@/components/service/recovery-diet";
 import ServiceReviews from "@/components/service/service-reviews";
 import ServiceFaq from "@/components/service/service-faq";
+import RelatedBlogs from "@/components/service/related-blogs";
 import StickyCTA from "@/components/service/sticky-cta";
 
 interface Props {
@@ -41,6 +45,8 @@ export default async function ServicePage({ params }: Props) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) notFound();
+
+  const relatedBlogs = getRelatedBlogsForCondition(slug, 3);
 
   // JSON-LD dynamic schema definitions
   const jsonLd = {
@@ -114,6 +120,8 @@ export default async function ServicePage({ params }: Props) {
 
         {/* Dynamic FAQ */}
         <ServiceFaq faqs={[...service.faqs]} serviceName={service.title} />
+
+        <RelatedBlogs blogs={relatedBlogs} conditionTitle={service.title} />
 
         <StickyCTA title={service.title} />
       </article>

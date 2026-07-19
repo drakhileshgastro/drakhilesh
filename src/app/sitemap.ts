@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`, lastModified: stableDate, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/privacy`, lastModified: stableDate, changeFrequency: "monthly", priority: 0.3 },
     { url: `${BASE}/terms`, lastModified: stableDate, changeFrequency: "monthly", priority: 0.3 },
+    { url: `${BASE}/faqs`, lastModified: stableDate, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/videos`, lastModified: stableDate, changeFrequency: "monthly", priority: 0.6 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({

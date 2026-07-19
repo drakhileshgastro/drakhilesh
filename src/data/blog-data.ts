@@ -1763,9 +1763,7 @@ export const BLOG_POSTS: BlogPost[] = [
         content: "सप्ताह में कम से कम 5 दिन रोजाना 40 मिनट तेज चलने या दौड़ने की आदत डालें। शारीरिक सक्रियता लिवर में जमा फैट को ऊर्जा के रूप में जलाती है और रक्त में खराब कोलेस्ट्रॉल (LDL) को कम करके अच्छे कोलेस्ट्रॉल (HDL) को बढ़ाती है।"
       }
     ]
-  }
-];
-
+  },
   {
     slug: "fatty-liver-mein-kya-khana-chahiye",
     image: "/images/fatty-liver-diet-blog.png",
@@ -1853,6 +1851,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+];
 
 export function getBlogBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);

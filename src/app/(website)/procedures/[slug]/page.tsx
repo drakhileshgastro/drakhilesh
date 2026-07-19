@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProcedureBySlug, getAllProcedureSlugs } from "@/data/procedures-data-v2";
+
+export const revalidate = 86400;
 import { generateProcedureSchema, generateFAQSchema, generatePhysicianSchema } from "@/lib/schema-procedures";
 
 // Components mapping to the 14-section patient anxiety-reduction layout

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, MessageCircle, Star, CheckCircle, ChevronDown, Check } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { DOCTOR, CONDITIONS, TRUST_STATS } from "@/lib/constants";
+import LiveCounter from "@/components/layout/live-counter";
 
 export default function HeroSection() {
   return (
@@ -16,8 +17,11 @@ export default function HeroSection() {
 
           {/* Left Block — Headline + Subtitle + Stats */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="text-primary font-display text-xs font-bold tracking-wider uppercase">
-              Ranchi's Trusted Gastroenterologist
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="text-primary font-display text-xs font-bold tracking-wider uppercase">
+                Ranchi's Trusted Gastroenterologist
+              </div>
+              <LiveCounter />
             </div>
 
             <h1 className="font-hindi text-[2.75rem] sm:text-[3.25rem] lg:text-[3.75rem] font-bold text-forest leading-[1.1] tracking-tight">
@@ -104,10 +108,8 @@ export default function HeroSection() {
   );
 }
 
-const TIME_SLOTS = [
-  { value: "Morning (10am–2pm)", label: "Morning (10am–2pm)" },
-  { value: "Evening (5pm–8pm)", label: "Evening (5pm–8pm)" },
-];
+const MORNING_SLOTS = ["10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM"];
+const EVENING_SLOTS = ["5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM"];
 
 function HeroHorizontalBookingBar() {
   const [form, setForm] = useState({
@@ -261,9 +263,16 @@ function HeroHorizontalBookingBar() {
                   )}
                 >
                   <option value="">Any Time</option>
-                  {TIME_SLOTS.map((s) => (
-                    <option key={s.value} value={s.value}>{s.label}</option>
-                  ))}
+                  <optgroup label="Morning OPD (10am–2pm)">
+                    {MORNING_SLOTS.map((s) => (
+                      <option key={s} value={`Morning – ${s}`}>{s}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Evening OPD (5pm–8pm)">
+                    {EVENING_SLOTS.map((s) => (
+                      <option key={s} value={`Evening – ${s}`}>{s}</option>
+                    ))}
+                  </optgroup>
                 </select>
                 <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none" />
               </div>
