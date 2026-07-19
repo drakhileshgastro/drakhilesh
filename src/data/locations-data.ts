@@ -109,23 +109,41 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
     hindiName: "पलामू",
     travelDistance: "190 km",
     travelDuration: "4 Hours",
-    travelRoute: "NH-39 Route",
-    roadInstructions: "Drive East via Daltonganj on NH-39 through Latehar directly to Ranchi.",
-    trainInstructions: "Multiple express trains pass through Daltonganj Railway Station connecting directly to Ranchi.",
-    metaTitle: "Best Gastroenterologist in Palamu (Daltonganj) | Dr. Akhilesh Yadav",
-    metaDescription: "Consult Dr. Akhilesh Yadav, the best gastroenterologist in Palamu, for expert stomach, liver & digestive care at Orchid Medical Centre, Ranchi.",
-    h1: "पलामू के मरीजों के लिए पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज",
+    travelRoute: "NH-39 Route via Latehar",
+    roadInstructions: "Drive East from Daltonganj on NH-39 through Latehar directly to Ranchi. The highway is well-connected and the journey takes approximately 3.5–4 hours.",
+    trainInstructions: "Multiple express trains pass through Daltonganj Railway Station connecting to Ranchi Junction. Shared taxis and long-distance buses from Daltonganj to Ranchi run frequently throughout the day.",
+    metaTitle: "Gastroenterologist in Palamu (Daltonganj) | Dr. Akhilesh Yadav Ranchi",
+    metaDescription: "Looking for a gastroenterologist in Palamu or Daltonganj? Consult Dr. Akhilesh Yadav (DM Gastroenterology) at Orchid Medical Centre, Ranchi — expert liver, stomach & digestive care. Same-day procedures. Book today.",
+    h1: "पलामू (डाल्टनगंज) के मरीजों के लिए गैस्ट्रोएंटेरोलॉजिस्ट — डॉ. अखिलेश यादव",
     whyChoose: [
-      "Direct NH-39 highway connectivity to Ranchi",
-      "Advanced therapeutic endoscopy for gallbladder & pancreatic stones",
-      "DM super-specialist care not easily available locally",
-      "Full digital telemetry and online report analysis"
+      "Expert DM Gastroenterology care unavailable locally in Palamu or Daltonganj",
+      "Advanced procedures: Endoscopy, Colonoscopy, ERCP, FibroScan — all at one centre",
+      "Priority morning slots for outstation Palamu patients — complete everything in one day",
+      "Same-day diagnostic reports — travel, test, and return on the same day",
+      "Liver disease specialist (Hepatology) for cirrhosis, hepatitis B & C, and ascites",
+      "Hindi-friendly consultation with written instructions in local language"
     ],
     faqs: [
       {
-        q: "Can patients from Palamu schedule priority consultations?",
-        a: "Yes. Because Palamu is 190 km away, we prioritize scheduling slots for outstation patients so they can finish consults and tests on the same day.",
-      }
+        q: "Is there a gastroenterologist in Palamu or Daltonganj?",
+        a: "Palamu and Daltonganj currently do not have a specialist DM Gastroenterologist. Patients from Palamu district travel to Ranchi — approximately 190 km via NH-39 — to consult Dr. Akhilesh Yadav at Orchid Medical Centre. Dr. Yadav holds DM Gastroenterology and has treated 4,000+ patients across Jharkhand.",
+      },
+      {
+        q: "How far is Palamu (Daltonganj) from Dr. Akhilesh Yadav's clinic?",
+        a: "Palamu (Daltonganj) is approximately 190 km from Orchid Medical Centre, Ranchi. By road via NH-39 through Latehar, it takes about 3.5–4 hours. Express trains and shared taxis from Daltonganj to Ranchi Junction are also available daily.",
+      },
+      {
+        q: "Can Palamu patients get endoscopy done and return the same day?",
+        a: "Yes. Diagnostic endoscopy and colonoscopy take 15–20 minutes under light sedation at Orchid Medical Centre. After 1 hour of recovery and collecting the report, Palamu patients can comfortably travel back the same evening. Book a 10:00 AM priority slot for same-day return.",
+      },
+      {
+        q: "What diseases does Dr. Akhilesh Yadav treat for Palamu patients?",
+        a: "Dr. Akhilesh Yadav treats conditions common in Jharkhand — liver diseases (fatty liver, jaundice/pilia, hepatitis B & C, liver cirrhosis, ascites), stomach problems (IBS, acidity, peptic ulcer, gallstone, abdominal pain), and performs advanced procedures like ERCP for bile duct stones.",
+      },
+      {
+        q: "How do I book a priority appointment from Palamu?",
+        a: "Call or WhatsApp +91-7764028474. Mention that you are travelling from Palamu so we can schedule a priority 10:00 AM slot — allowing you to complete consultation, diagnostics, and collect your report all within the same visit.",
+      },
     ]
   },
   bokaro: {
