@@ -121,6 +121,16 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
+  const faqLd = post.faqs && post.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": post.faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.a },
+    })),
+  } : null;
+
   const whatsappShareText = `${post.titleHi}\n\nRead this health guide reviewed by Dr. Akhilesh Yadav:\nhttps://drakhileshgastro.com/blog/${post.slug}`;
 
   return (
@@ -133,6 +143,12 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       <article className="min-h-screen pb-16 sm:pb-0 bg-white">
         
@@ -259,6 +275,29 @@ export default async function BlogPostPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
+
+                {/* FAQ section */}
+                {post.faqs && post.faqs.length > 0 && (
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <HelpCircle size={16} className="text-primary flex-shrink-0" />
+                      <h2 className="text-forest font-hindi font-bold text-lg">अक्सर पूछे जाने वाले सवाल</h2>
+                    </div>
+                    <div className="space-y-2">
+                      {post.faqs.map((faq, idx) => (
+                        <details key={idx} className="group border border-border/50 rounded-2xl bg-white overflow-hidden">
+                          <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer list-none">
+                            <span className="font-hindi text-forest font-semibold text-sm leading-snug">{faq.q}</span>
+                            <span className="text-primary text-lg font-bold flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                          </summary>
+                          <div className="px-5 pb-4 border-t border-border/30">
+                            <p className="font-hindi text-muted text-sm leading-relaxed pt-3">{faq.a}</p>
+                          </div>
+                        </details>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Tag pill list */}
                 <div className="flex flex-wrap gap-2 pt-2">
