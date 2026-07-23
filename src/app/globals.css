@@ -25,10 +25,10 @@
   --color-border:         #EAE7DF;
   --color-border-light:   #F3F1EC;
 
-  /* Admin / CRM — navy system (kept for CRM/Admin pages if needed) */
-  --color-navy:           #184C3A;
-  --color-navy-dark:      #0E3024;
-  --color-navy-mid:       #153F30;
+  /* Admin / CRM — clean slate system */
+  --color-navy:           #0F172A;
+  --color-navy-dark:      #020617;
+  --color-navy-mid:       #1E293B;
 
   /* Medical blue — changed to match primary or gold tint */
   --color-blue:           #C68A2E;
