@@ -1,5 +1,14 @@
-const CACHE = "drakhilesh-v3";
-const STATIC = ["/", "/book", "/manifest.json", "/icons/icon-192x192.png"];
+const CACHE = "drakhilesh-v4";
+const STATIC = [
+  "/",
+  "/book",
+  "/blog",
+  "/about",
+  "/contact",
+  "/manifest.json",
+  "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png",
+];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(STATIC).catch(() => {})));
@@ -15,7 +24,6 @@ self.addEventListener("activate", (e) => {
   self.clients.claim();
 });
 
-// Push notification handler
 self.addEventListener("push", (e) => {
   if (!e.data) return;
   try {
@@ -28,6 +36,7 @@ self.addEventListener("push", (e) => {
         tag: data.tag ?? "crm-notification",
         data: { url: data.url ?? "/crm" },
         requireInteraction: false,
+        vibrate: [200, 100, 200],
       })
     );
   } catch {
@@ -52,19 +61,23 @@ self.addEventListener("notificationclick", (e) => {
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
   const url = new URL(e.request.url);
-  // Never cache API or CRM routes
-  if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/crm") || url.pathname.startsWith("/admin")) return;
+  // Skip admin, CRM, API — always fresh
+  if (
+    url.pathname.startsWith("/api/") ||
+    url.pathname.startsWith("/crm") ||
+    url.pathname.startsWith("/admin") ||
+    url.pathname.startsWith("/_next/")
+  ) return;
 
   e.respondWith(
     caches.match(e.request).then((cached) => {
       const fresh = fetch(e.request).then((res) => {
         if (res.ok && url.origin === self.location.origin) {
-          const clone = res.clone();
-          caches.open(CACHE).then((c) => c.put(e.request, clone));
+          caches.open(CACHE).then((c) => c.put(e.request, res.clone()));
         }
         return res;
-      });
-      return cached || fresh;
+      }).catch(() => cached);
+      return cached ?? fresh;
     })
   );
 });
