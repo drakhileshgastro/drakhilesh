@@ -48,6 +48,18 @@ export default async function ServicePage({ params }: Props) {
 
   const relatedBlogs = getRelatedBlogsForCondition(slug, 3);
 
+  const faqLd = service.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": service.faqs.map((f) => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
+      }
+    : null;
+
   // JSON-LD dynamic schema definitions
   const jsonLd = {
     "@context": "https://schema.org",
@@ -78,10 +90,16 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
-      <script 
-        type="application/ld+json" 
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       <article className="min-h-screen pb-16 sm:pb-0">
         <ConditionHero
