@@ -45,7 +45,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "text",
-        content: "मैं Dr. Akhilesh Yadav, Gastroenterologist & Hepatologist, Orchid Medical Centre, Ranchi से हूँ। अपने clinic में हज़ारों fatty liver patients को देखने के बाद मैं यह कह सकता हूँ — diet सबसे powerful medicine है।",
+        content: "मैं Dr. Akhilesh Yadav, Gastroenterologist & Hepatologist, Orchid Medical Centre, Ranchi से हूँ। अपने clinic में हज़ारों fatty liver patients को देखने के बाद मैं यह कह सकता हूँ — diet सबसे powerful medicine है। अगर आप Ranchi में एक experienced [gastroenterologist से मिलना चाहते हैं](/blog/best-gastroenterologist-ranchi), तो Orchid Medical Centre आएं।",
       },
       {
         heading: "✅ फैटी लिवर में क्या खाना चाहिए?",
@@ -119,7 +119,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "text",
-        content: "मैं Dr. Akhilesh Yadav, Gastroenterologist, Ranchi से हूँ। अपने clinic में मैं हर हफ्ते कई ऐसे patients देखता हूँ जो सिर्फ आँखें पीली होने पर आते हैं — और अक्सर तब तक condition काफी advance हो चुकी होती है। इसीलिए यह 8 लक्षण जानना ज़रूरी है।",
+        content: "मैं Dr. Akhilesh Yadav, Gastroenterologist, Ranchi से हूँ। अपने clinic में मैं हर हफ्ते कई ऐसे patients देखता हूँ जो सिर्फ आँखें पीली होने पर आते हैं — और अक्सर तब तक condition काफी advance हो चुकी होती है। इसीलिए यह 8 लक्षण जानना ज़रूरी है। Ranchi में Jaundice specialist से मिलने के लिए [best gastroenterologist in Ranchi](/blog/best-gastroenterologist-ranchi) guide ज़रूर पढ़ें।",
       },
       {
         heading: "पीलिया के 8 मुख्य लक्षण",
@@ -203,7 +203,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "❌ मिथ 3: Endoscopy खतरनाक है",
         type: "text",
-        content: "सच: Endoscopy दुनिया भर में performed होने वाले सबसे safe procedures में से एक है। Serious complications बहुत rare हैं — 1 in 10,000 से भी कम। एक experienced gastroenterologist के हाथों यह procedure बेहद safe है।",
+        content: "सच: Endoscopy दुनिया भर में performed होने वाले सबसे safe procedures में से एक है। Serious complications बहुत rare हैं — 1 in 10,000 से भी कम। एक experienced gastroenterologist के हाथों यह procedure बेहद safe है। Ranchi में endoscopy के लिए [best gastroenterologist](/blog/best-gastroenterologist-ranchi) से appointment लें।",
       },
       {
         heading: "❌ मिथ 4: Endoscopy सिर्फ serious बीमारी में होती है",
