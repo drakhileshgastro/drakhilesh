@@ -109,9 +109,9 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMins: 5,
     publishedAt: "June 2026",
     emoji: "👁️",
-    tags: ["Jaundice", "Pilia", "Liver", "Symptoms", "Hindi"],
+    tags: ["Jaundice", "Liver", "Symptoms", "Hindi"],
     metaTitle: "पीलिया के 8 लक्षण | Jaundice Signs in Hindi — Dr. Akhilesh Yadav Ranchi",
-    metaDescription: "पीलिया (Pilia/Jaundice) के 8 लक्षण जो ignore नहीं करने चाहिए। कब doctor से मिलें? Dr. Akhilesh Yadav, Gastroenterologist, Orchid Medical Centre, Ranchi।",
+    metaDescription: "पीलिया (Jaundice) के 8 लक्षण जो ignore नहीं करने चाहिए। कब doctor से मिलें? Dr. Akhilesh Yadav, Gastroenterologist, Orchid Medical Centre, Ranchi।",
     sections: [
       {
         type: "text",

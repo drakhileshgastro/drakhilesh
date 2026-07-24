@@ -138,7 +138,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
       },
       {
         q: "What diseases does Dr. Akhilesh Yadav treat for Palamu patients?",
-        a: "Dr. Akhilesh Yadav treats conditions common in Jharkhand — liver diseases (fatty liver, jaundice/pilia, hepatitis B & C, liver cirrhosis, ascites), stomach problems (IBS, acidity, peptic ulcer, gallstone, abdominal pain), and performs advanced procedures like ERCP for bile duct stones.",
+        a: "Dr. Akhilesh Yadav treats conditions common in Jharkhand — liver diseases (fatty liver, jaundice, hepatitis B & C, liver cirrhosis, ascites), stomach problems (IBS, acidity, peptic ulcer, gallstone, abdominal pain), and performs advanced procedures like ERCP for bile duct stones.",
       },
       {
         q: "How do I book a priority appointment from Palamu?",
@@ -256,7 +256,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
       },
       {
         q: "What stomach and liver problems can Dr. Akhilesh Yadav treat for Chaibasa patients?",
-        a: "Dr. Akhilesh Yadav treats a wide range of conditions common in tribal and rural Jharkhand — fatty liver disease, jaundice (pilia), liver cirrhosis, hepatitis B and C, IBS, acid reflux, gallstones, abdominal pain, and more. He also performs advanced procedures like ERCP and EUS.",
+        a: "Dr. Akhilesh Yadav treats a wide range of conditions common in tribal and rural Jharkhand — fatty liver disease, jaundice, liver cirrhosis, hepatitis B and C, IBS, acid reflux, gallstones, abdominal pain, and more. He also performs advanced procedures like ERCP and EUS.",
       },
       {
         q: "How do I book an appointment from Chaibasa?",
