@@ -248,7 +248,7 @@ export const FOOTER_COLUMNS = {
 /* Legacy — kept for CRM / admin forms */
 export const CONDITIONS = [
   "Fatty Liver (NAFLD/NASH)",
-  "Jaundice / Pilia",
+  "Jaundice",
   "Liver Cirrhosis",
   "Hepatitis B & C",
   "IBS (Irritable Bowel Syndrome)",

@@ -44,7 +44,7 @@ function SeoScore({ seo, hasDesc, hasSchema, hasCanonical }: { seo: string; hasD
 
 const SERVICE_PAGES = [
   { slug: "fatty-liver", title: "Fatty Liver Treatment", keyword: "fatty liver treatment Ranchi", type: "conditions" },
-  { slug: "jaundice", title: "Jaundice (Pilia)", keyword: "pilia doctor Ranchi", type: "conditions" },
+  { slug: "jaundice", title: "Jaundice Treatment", keyword: "jaundice doctor Ranchi", type: "conditions" },
   { slug: "liver-cirrhosis", title: "Liver Cirrhosis", keyword: "liver cirrhosis doctor Ranchi", type: "conditions" },
   { slug: "hepatitis", title: "Hepatitis B & C", keyword: "hepatitis B C treatment Jharkhand", type: "conditions" },
   { slug: "ibs", title: "IBS Treatment", keyword: "IBS treatment Ranchi", type: "conditions" },

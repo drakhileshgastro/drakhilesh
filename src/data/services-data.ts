@@ -79,15 +79,15 @@ export const ALL_SERVICES: ServiceData[] = [
 
   {
     slug: "jaundice",
-    title: "Jaundice (Pilia) Treatment",
+    title: "Jaundice Treatment",
     titleHindi: "पीलिया का इलाज",
-    h1: "Jaundice Doctor in Ranchi | Pilia Specialist — Dr. Akhilesh Yadav",
-    metaTitle: "Jaundice Doctor in Ranchi | Best Pilia Specialist Jharkhand — Dr. Akhilesh Yadav",
-    metaDescription: "Expert jaundice (pilia) treatment in Ranchi by Dr. Akhilesh Yadav, DM Gastroenterologist. Fast diagnosis, liver jaundice, obstructive jaundice & neonatal jaundice. Book now.",
-    targetKeyword: "jaundice doctor Ranchi pilia specialist Jharkhand",
+    h1: "Jaundice Doctor in Ranchi | Expert Jaundice Treatment — Dr. Akhilesh Yadav",
+    metaTitle: "Jaundice Doctor in Ranchi | Best Jaundice Specialist Jharkhand — Dr. Akhilesh Yadav",
+    metaDescription: "Expert jaundice treatment in Ranchi by Dr. Akhilesh Yadav, DM Gastroenterologist. Fast diagnosis for liver jaundice, obstructive jaundice & neonatal jaundice. Book now.",
+    targetKeyword: "jaundice doctor Ranchi jaundice specialist Jharkhand",
     emoji: "👁️",
     color: "gold",
-    introEn: "Jaundice (Pilia) is a condition where the skin and whites of the eyes turn yellow due to excess bilirubin in the blood. It is a symptom, not a disease itself — and identifying the underlying cause is critical. Jaundice can result from liver disease (hepatitis, cirrhosis), bile duct obstruction (gallstones, tumours), or blood disorders (haemolytic anaemia).\n\nDr. Akhilesh Yadav, DM Gastroenterology at Orchid Medical Centre, Ranchi, provides rapid diagnosis of all types of jaundice using LFT, bilirubin levels, MRCP, and ERCP. He has treated hundreds of jaundice patients from across Jharkhand, Bihar and Chhattisgarh, including complex obstructive and hepatic jaundice cases.",
+    introEn: "Jaundice is a condition where the skin and whites of the eyes turn yellow due to excess bilirubin in the blood. It is a symptom, not a disease itself — and identifying the underlying cause is critical. Jaundice can result from liver disease (hepatitis, cirrhosis), bile duct obstruction (gallstones, tumours), or blood disorders (haemolytic anaemia).\n\nDr. Akhilesh Yadav, DM Gastroenterology at Orchid Medical Centre, Ranchi, provides rapid diagnosis of all types of jaundice using LFT, bilirubin levels, MRCP, and ERCP. He has treated hundreds of jaundice patients from across Jharkhand, Bihar and Chhattisgarh, including complex obstructive and hepatic jaundice cases.",
     introHi: "पीलिया (Jaundice) में त्वचा और आँखें पीली हो जाती हैं — यह खून में bilirubin बढ़ने के कारण होता है। पीलिया के कई कारण हो सकते हैं — लिवर की बीमारी, पित्त नली में रुकावट, या खून की कमी। सही कारण पहचाने बिना इलाज नहीं होता। डॉ. अखिलेश यादव पीलिया के सभी प्रकारों में माहिर हैं और जल्दी से सटीक diagnosis करते हैं।",
     symptoms: [
       "आँखों और त्वचा का पीला होना",
