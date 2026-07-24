@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   other: {
-    "theme-color": "#0EA5E9",
+    "theme-color": "#27AE60",
     "mobile-web-app-capable": "yes",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
@@ -152,18 +152,17 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const nonce = headersList.get("x-nonce") ?? "";
 
   return (
-    <html lang="hi-IN" className={`${manrope.variable} ${inter.variable} ${mukta.variable}`}>
+    <html lang="en-IN" className={`${manrope.variable} ${inter.variable} ${mukta.variable}`}>
       <head>
         <link rel="preconnect" href="https://dfevnuornvrthufbrdop.supabase.co" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://dfevnuornvrthufbrdop.supabase.co" />
         <link rel="alternate" hrefLang="en-IN" href="https://drakhileshgastro.com" />
-        <link rel="alternate" hrefLang="hi-IN" href="https://drakhileshgastro.com" />
         <link rel="alternate" hrefLang="x-default" href="https://drakhileshgastro.com" />
         <link rel="alternate" type="application/rss+xml" title="Dr. Akhilesh Yadav — Health Blog RSS Feed" href="https://drakhileshgastro.com/rss.xml" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-72x72.png" />
-        <meta name="theme-color" content="#0EA5E9" />
+        <meta name="theme-color" content="#27AE60" />
         <script
           nonce={nonce}
           type="application/ld+json"

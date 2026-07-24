@@ -53,8 +53,22 @@ const FAQS = [
 ];
 
 export default function FAQsPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": FAQS.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.a },
+    })),
+  };
+
   return (
     <div className="bg-bg min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Header */}
       <section className="bg-primary-light border-b border-border py-14 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
