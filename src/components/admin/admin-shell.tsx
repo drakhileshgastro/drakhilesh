@@ -30,6 +30,11 @@ const BOTTOM_NAV = [
   { href: "/admin/settings",  label: "Settings", icon: Settings },
 ];
 
+const NAV_GROUPS = [
+  { title: "Clinical", items: NAV.slice(0, 4) },
+  { title: "Manage",   items: NAV.slice(4) },
+];
+
 function isActive(pathname: string, href: string, exact?: boolean) {
   return exact ? pathname === href : pathname.startsWith(href);
 }
@@ -44,26 +49,47 @@ function NavItem({
   onClick?: () => void;
 }) {
   const active = isActive(pathname, item.href, item.exact);
+  const [hovered, setHovered] = useState(false);
+
   return (
     <Link
       href={item.href}
       onClick={onClick}
-      className={cn(
-        "group flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all select-none",
-        active
-          ? "bg-emerald-50 text-emerald-700"
-          : "text-slate-500 hover:bg-slate-50 hover:text-slate-800"
-      )}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-[13px] font-semibold select-none mb-0.5"
+      style={{
+        background: active
+          ? "rgba(39,174,96,0.15)"
+          : hovered
+          ? "rgba(148,163,184,0.09)"
+          : "transparent",
+        boxShadow: active ? "inset 3px 0 0 #27AE60" : "none",
+        transition: "background 120ms ease, box-shadow 120ms ease",
+        textDecoration: "none",
+      }}
     >
       <item.icon
-        size={17}
-        className={cn(
-          "flex-shrink-0 transition-colors",
-          active ? "text-emerald-600" : "text-slate-400 group-hover:text-slate-600"
-        )}
+        size={16}
+        strokeWidth={active ? 2.4 : 2}
+        style={{
+          flexShrink: 0,
+          color: active ? "#4ade80" : hovered ? "#94a3b8" : "#64748b",
+          transition: "color 120ms ease",
+        }}
       />
-      <span className="flex-1">{item.label}</span>
-      {active && <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0" />}
+      <span
+        style={{
+          flex: 1,
+          color: active ? "#fff" : hovered ? "#e2e8f0" : "#94a3b8",
+          transition: "color 120ms ease",
+        }}
+      >
+        {item.label}
+      </span>
+      {active && (
+        <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#27AE60", flexShrink: 0 }} />
+      )}
     </Link>
   );
 }
@@ -80,56 +106,86 @@ function SidebarContent({
   onLogout: () => void;
 }) {
   return (
-    <div className="flex flex-col h-full bg-white">
-      {/* Brand header */}
-      <div className="px-5 py-4 border-b border-slate-100">
+    <div className="flex flex-col h-full" style={{ background: "#0f172a" }}>
+
+      {/* Brand */}
+      <div className="px-5 py-5" style={{ borderBottom: "1px solid rgba(148,163,184,0.13)" }}>
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center flex-shrink-0">
-            <Stethoscope size={17} className="text-white" />
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+            style={{ background: "rgba(39,174,96,0.2)", border: "1px solid rgba(39,174,96,0.3)" }}>
+            <Stethoscope size={17} style={{ color: "#4ade80" }} />
           </div>
           <div>
-            <p className="font-bold text-slate-900 text-sm leading-tight">Dr. Akhilesh</p>
-            <p className="text-[10px] text-emerald-600 font-semibold tracking-widest uppercase">Admin Panel</p>
+            <p className="font-bold text-sm leading-tight" style={{ color: "#fff" }}>Dr. Akhilesh</p>
+            <p style={{ fontSize: 10, color: "#4ade80", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginTop: 2 }}>
+              Admin Panel
+            </p>
           </div>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 px-3 py-3 space-y-0.5 overflow-y-auto">
-        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3 mb-2 mt-1">Main</p>
-        {NAV.slice(0, 4).map((item) => (
-          <NavItem key={item.href} item={item} pathname={pathname} onClick={onClose} />
-        ))}
-        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3 mb-2 mt-4">Manage</p>
-        {NAV.slice(4).map((item) => (
-          <NavItem key={item.href} item={item} pathname={pathname} onClick={onClose} />
+      <nav className="flex-1 overflow-y-auto" style={{ padding: "14px 10px 10px" }}>
+        {NAV_GROUPS.map((group) => (
+          <section key={group.title} style={{ marginBottom: 18 }}>
+            <p style={{
+              fontSize: 10, fontWeight: 800, color: "#334155",
+              textTransform: "uppercase", letterSpacing: "0.1em",
+              padding: "0 12px 8px",
+            }}>
+              {group.title}
+            </p>
+            {group.items.map((item) => (
+              <NavItem key={item.href} item={item} pathname={pathname} onClick={onClose} />
+            ))}
+          </section>
         ))}
       </nav>
 
       {/* Footer */}
-      <div className="border-t border-slate-100 px-3 py-3 space-y-0.5">
+      <div style={{ borderTop: "1px solid rgba(148,163,184,0.13)", padding: "10px" }}>
         {/* User pill */}
-        <div className="flex items-center gap-2.5 px-3 py-2.5 mb-1 bg-slate-50 rounded-xl">
-          <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+        <div className="flex items-center gap-2.5 mb-2" style={{
+          padding: "10px 12px", borderRadius: 14,
+          background: "rgba(255,255,255,0.06)",
+          border: "1px solid rgba(148,163,184,0.12)",
+        }}>
+          <div className="flex items-center justify-center text-xs font-bold flex-shrink-0"
+            style={{ width: 34, height: 34, borderRadius: 11, background: "#27AE60", color: "#fff" }}>
             {userEmail ? userEmail[0].toUpperCase() : "A"}
           </div>
-          <div className="min-w-0 flex-1">
-            <p className="text-slate-700 text-xs font-semibold truncate">{userEmail || "Admin"}</p>
-            <p className="text-slate-400 text-[10px]">Doctor · Admin</p>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <p className="text-xs font-semibold truncate" style={{ color: "#fff" }}>
+              {userEmail || "Admin"}
+            </p>
+            <p style={{ color: "#27AE60", fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", marginTop: 1 }}>
+              DOCTOR · ADMIN
+            </p>
           </div>
         </div>
 
-        <Link href="/" target="_blank" className="flex items-center gap-2.5 px-3 py-2 text-xs text-slate-500 hover:bg-slate-50 hover:text-slate-800 rounded-xl transition-colors">
-          <Globe size={13} /> View Website
+        <Link href="/" target="_blank" className="flex items-center gap-2.5 rounded-xl transition-colors"
+          style={{ padding: "9px 12px", color: "#64748b", fontSize: 13, fontWeight: 600, textDecoration: "none", marginBottom: 2 }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(148,163,184,0.09)"; (e.currentTarget as HTMLElement).style.color = "#94a3b8"; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = ""; (e.currentTarget as HTMLElement).style.color = "#64748b"; }}
+        >
+          <Globe size={14} /> View Website
         </Link>
-        <Link href="/crm" className="flex items-center gap-2.5 px-3 py-2 text-xs text-slate-500 hover:bg-slate-50 hover:text-slate-800 rounded-xl transition-colors">
-          <Phone size={13} /> Telecaller CRM
+        <Link href="/crm" className="flex items-center gap-2.5 rounded-xl transition-colors"
+          style={{ padding: "9px 12px", color: "#64748b", fontSize: 13, fontWeight: 600, textDecoration: "none", marginBottom: 2 }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(148,163,184,0.09)"; (e.currentTarget as HTMLElement).style.color = "#94a3b8"; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = ""; (e.currentTarget as HTMLElement).style.color = "#64748b"; }}
+        >
+          <Phone size={14} /> Telecaller CRM
         </Link>
         <button
           onClick={onLogout}
-          className="w-full flex items-center gap-2.5 px-3 py-2 text-xs text-red-400 hover:bg-red-50 hover:text-red-600 rounded-xl transition-colors"
+          className="w-full flex items-center gap-2.5 rounded-xl transition-colors"
+          style={{ padding: "9px 12px", color: "#f87171", fontSize: 13, fontWeight: 600, border: 0, background: "none", cursor: "pointer" }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(239,68,68,0.1)"; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = ""; }}
         >
-          <LogOut size={13} /> Sign Out
+          <LogOut size={14} /> Sign Out
         </button>
       </div>
     </div>
@@ -166,19 +222,20 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   return (
     <div className="min-h-screen flex" style={{ background: "#F1F5F9" }}>
 
-      {/* ── Desktop sidebar ── */}
-      <aside className="hidden lg:flex flex-col w-56 flex-shrink-0 border-r border-slate-200" style={{ background: "#FFFFFF" }}>
+      {/* Desktop sidebar */}
+      <aside className="hidden lg:flex flex-col flex-shrink-0" style={{ width: 220, background: "#0f172a", borderRight: "1px solid rgba(148,163,184,0.12)", position: "sticky", top: 0, height: "100vh" }}>
         <SidebarContent pathname={pathname} userEmail={userEmail} onClose={() => {}} onLogout={logout} />
       </aside>
 
-      {/* ── Mobile drawer overlay ── */}
+      {/* Mobile drawer overlay */}
       {drawerOpen && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
-          <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" onClick={() => setDrawerOpen(false)} />
-          <div className="relative z-10 w-64 h-full shadow-2xl">
+          <div className="fixed inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setDrawerOpen(false)} />
+          <div className="relative z-10 h-full shadow-2xl" style={{ width: 240 }}>
             <button
               onClick={() => setDrawerOpen(false)}
-              className="absolute top-3.5 right-3 w-8 h-8 flex items-center justify-center rounded-xl bg-slate-100 text-slate-500 hover:bg-slate-200 transition-colors z-10"
+              className="absolute top-3.5 right-3 w-8 h-8 flex items-center justify-center rounded-xl z-10"
+              style={{ background: "rgba(255,255,255,0.1)", color: "#94a3b8" }}
             >
               <X size={15} />
             </button>
@@ -187,12 +244,20 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
         </div>
       )}
 
-      {/* ── Main content column ── */}
+      {/* Main content */}
       <div className="flex-1 flex flex-col min-w-0">
 
         {/* Top header */}
-        <header className="sticky top-0 z-30 bg-white border-b border-slate-200 px-4 py-3 flex items-center gap-3"
-          style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.05)" }}>
+        <header
+          className="sticky top-0 z-30 flex items-center gap-3"
+          style={{
+            background: "#fff",
+            borderBottom: "1px solid #e2e8f0",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
+            padding: "0 20px",
+            height: 56,
+          }}
+        >
           <button
             onClick={() => setDrawerOpen(true)}
             className="lg:hidden w-9 h-9 flex items-center justify-center rounded-xl text-slate-500 hover:bg-slate-100 transition-colors flex-shrink-0"
@@ -200,35 +265,43 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
             <Menu size={20} />
           </button>
 
-          {/* Breadcrumb */}
           <div className="flex items-center gap-1.5 min-w-0 flex-1">
             <span className="text-slate-400 text-xs hidden sm:block">Admin</span>
             <ChevronRight size={12} className="text-slate-300 hidden sm:block" />
             <p className="text-slate-900 font-bold text-sm sm:text-base">{currentLabel}</p>
           </div>
 
-          {/* CRM Link */}
-          <Link href="/crm"
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-lg border border-emerald-200 transition-colors">
+          <Link
+            href="/crm"
+            className="hidden sm:flex items-center gap-1.5 text-xs font-semibold rounded-lg border transition-colors"
+            style={{
+              padding: "6px 12px",
+              color: "#27AE60",
+              background: "rgba(39,174,96,0.08)",
+              border: "1px solid rgba(39,174,96,0.25)",
+            }}
+          >
             <Phone size={12} /> CRM View
           </Link>
 
-          {/* Mobile avatar */}
-          <div className="lg:hidden w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+          <div className="lg:hidden w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+            style={{ background: "#27AE60" }}>
             {userEmail ? userEmail[0].toUpperCase() : "A"}
           </div>
         </header>
 
         {/* Page content */}
-        <main className="flex-1 overflow-auto px-4 py-5 sm:px-5 sm:py-6 pb-28 lg:pb-6">
-          {children}
+        <main className="flex-1 overflow-auto" style={{ padding: "24px 20px 96px", maxWidth: "100%" }}>
+          <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+            {children}
+          </div>
         </main>
       </div>
 
-      {/* ── Mobile bottom navigation ── */}
+      {/* Mobile bottom nav */}
       <nav
-        className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200"
-        style={{ boxShadow: "0 -2px 12px rgba(0,0,0,0.06)" }}
+        className="lg:hidden fixed bottom-0 left-0 right-0 z-40"
+        style={{ background: "#fff", borderTop: "1px solid #e2e8f0", boxShadow: "0 -2px 12px rgba(0,0,0,0.06)" }}
       >
         <div className="flex" style={{ paddingBottom: "env(safe-area-inset-bottom, 0)" }}>
           {BOTTOM_NAV.map((item) => {
@@ -237,23 +310,19 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex-1 flex flex-col items-center justify-center pt-2 pb-3 gap-1 select-none"
-                style={{ minHeight: 58 }}
+                className="flex-1 flex flex-col items-center justify-center gap-1 select-none"
+                style={{ minHeight: 58, paddingTop: 8, paddingBottom: 12 }}
               >
-                <div className={cn(
-                  "w-10 h-7 flex items-center justify-center rounded-xl transition-all",
-                  active ? "bg-emerald-50" : ""
-                )}>
+                <div className="flex items-center justify-center rounded-xl"
+                  style={{ width: 40, height: 28, background: active ? "rgba(39,174,96,0.1)" : "transparent" }}>
                   <item.icon
                     size={19}
                     strokeWidth={active ? 2.5 : 1.8}
-                    className={active ? "text-emerald-600" : "text-slate-400"}
+                    style={{ color: active ? "#27AE60" : "#94a3b8" }}
                   />
                 </div>
-                <span className={cn(
-                  "text-[10px] font-semibold leading-none",
-                  active ? "text-emerald-600" : "text-slate-400"
-                )}>
+                <span className="text-[10px] font-semibold leading-none"
+                  style={{ color: active ? "#27AE60" : "#94a3b8" }}>
                   {item.label}
                 </span>
               </Link>
