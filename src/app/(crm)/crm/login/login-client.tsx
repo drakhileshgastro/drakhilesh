@@ -27,8 +27,8 @@ export default function CrmLoginClient() {
       return;
     }
 
-    router.push("/crm");
-    router.refresh();
+    // Hard redirect so middleware sees the Supabase auth cookie on the server
+    window.location.href = "/crm";
   }
 
   return (
