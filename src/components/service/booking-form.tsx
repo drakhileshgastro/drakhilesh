@@ -60,6 +60,8 @@ export default function BookingForm({ defaultCondition, compact = false }: Booki
       if (result.success) {
         trackBookingConversion(data.condition);
         setLeadId(result.lead_id || "REQ-" + Date.now().toString(36).toUpperCase());
+        // Suppress exit-intent popup — patient already converted
+        try { sessionStorage.setItem("exit-intent-shown", "1"); } catch {}
         setSubmitted(true);
       } else {
         toast.error("Something went wrong. Please call us directly.");
