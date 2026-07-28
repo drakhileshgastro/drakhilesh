@@ -33,8 +33,8 @@ const faqs = [
   },
   {
     q: "Orchid Medical Centre में appointment कैसे लें?",
-    a: "आप तीन तरीकों से अपॉइंटमेंट ले सकते हैं: (1) इस वेबसाइट पर फॉर्म भरें — 30 मिनट में कॉल आएगी। (2) सीधे +91 7491925047 पर कॉल करें। (3) WhatsApp पर message भेजें। Orchid Medical Centre, HB Road, Ranchi में Mon–Sat 10am–8pm उपलब्ध हैं।",
-    eng: "Book via: (1) website form, (2) call +91 7491925047, or (3) WhatsApp. Available Mon–Sat at Orchid Medical Centre, HB Road, Ranchi.",
+    a: "आप तीन तरीकों से अपॉइंटमेंट ले सकते हैं: (1) इस वेबसाइट पर फॉर्म भरें — 30 मिनट में कॉल आएगी। (2) सीधे +91 9031669888 पर कॉल करें। (3) WhatsApp पर message भेजें। Orchid Medical Centre, HB Road, Ranchi में Mon–Sat 10am–8pm उपलब्ध हैं।",
+    eng: "Book via: (1) website form, (2) call +91 9031669888, or (3) WhatsApp. Available Mon–Sat at Orchid Medical Centre, HB Road, Ranchi.",
   },
   {
     q: "क्या Ranchi के बाहर के मरीज भी आ सकते हैं?",
