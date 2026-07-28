@@ -154,7 +154,10 @@ export default function LeadsPage() {
 
   async function addLead(e: React.FormEvent) {
     e.preventDefault();
-    if (!addForm.patient_name || !addForm.patient_phone || !addForm.patient_city || !addForm.condition) return;
+    if (!addForm.patient_name.trim()) { toast.error("Patient name is required."); return; }
+    if (!addForm.patient_phone.trim()) { toast.error("Phone number is required."); return; }
+    if (!addForm.patient_city.trim())  { toast.error("City is required."); return; }
+    if (!addForm.condition)            { toast.error("Please select a condition."); return; }
     setAddingLead(true);
     try {
       const res = await fetch("/api/leads", {
@@ -162,17 +165,18 @@ export default function LeadsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...addForm, source: "Walk-in" }),
       });
-      const data = await res.json();
-      if (data.success) {
+      const result = await res.json();
+      if (result.success) {
         toast.success("Lead added successfully!");
         setShowAddLead(false);
         setAddForm({ patient_name: "", patient_phone: "", patient_city: "", condition: "", preferred_time: "" });
         fetchLeads();
       } else {
-        toast.error(data.error || "Failed to add lead.");
+        toast.error(result.error || `Failed to add lead (HTTP ${res.status}).`);
       }
-    } catch {
-      toast.error("Network error. Try again.");
+    } catch (err) {
+      toast.error("Network error — could not reach server.");
+      console.error("addLead error:", err);
     }
     setAddingLead(false);
   }
@@ -340,7 +344,9 @@ export default function LeadsPage() {
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-gray-600 text-[11px]">{lead.patient_city}</span>
                     {lead.preferred_time && (
-                      <span className="text-[10px] text-teal-600 font-medium">· {lead.preferred_time === "Morning (10am–2pm)" ? "🌅 Morning" : "🌆 Evening"}</span>
+                      <span className="text-[10px] text-teal-600 font-medium">
+                        · {lead.preferred_time.toLowerCase().startsWith("morning") ? "🌅" : "🌆"} {lead.preferred_time}
+                      </span>
                     )}
                   </div>
                 </div>
