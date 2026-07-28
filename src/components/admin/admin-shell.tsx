@@ -271,20 +271,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
             <p className="text-slate-900 font-bold text-sm sm:text-base">{currentLabel}</p>
           </div>
 
-          <Link
-            href="/crm"
-            className="hidden sm:flex items-center gap-1.5 text-xs font-semibold rounded-lg border transition-colors"
-            style={{
-              padding: "6px 12px",
-              color: "#27AE60",
-              background: "rgba(39,174,96,0.08)",
-              border: "1px solid rgba(39,174,96,0.25)",
-            }}
-          >
-            <Phone size={12} /> CRM View
-          </Link>
-
-          <div className="lg:hidden w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+<div className="lg:hidden w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
             style={{ background: "#27AE60" }}>
             {userEmail ? userEmail[0].toUpperCase() : "A"}
           </div>
