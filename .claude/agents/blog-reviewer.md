@@ -1,6 +1,6 @@
 ---
 name: blog-reviewer
-description: Medical content quality reviewer v2.0 for drakhileshgastro.com. Takes a blog draft from blog-writer v2.0, scores it against a 15-point E-E-A-T + YMYL quality gate, checks AEO direct-answer paragraphs, GEO entity anchor, imagePrompt field, medical accuracy, brand voice, SEO, and TypeScript format. Requires 6+ FAQs. Returns a score, specific feedback, and a corrected final draft if score is 10+/15.
+description: Medical content quality reviewer v2.0 for drakhileshgastro.com. Takes a blog draft from blog-writer v2.0, scores it against 9 quality dimensions — E-E-A-T/YMYL, AEO, GEO, imagePrompt, and AI-writing pattern detection (avoid-ai-writing Dimension 10). Requires 6+ FAQs, 1,500-1,800 words, entity anchor, zero Tier-1A AI vocabulary. Returns score, feedback, and corrected draft.
 model: claude-sonnet-5
 tools:
   - Read
@@ -20,8 +20,9 @@ Read:
 1. `blog-agent/quality-gate.md` — The full 15-point rubric
 2. `blog-agent/brand-voice.md` — Tone and language rules
 3. `blog-agent/medical-guidelines.md` — YMYL red lines that CANNOT be published
+4. `~/.claude/skills/avoid-ai-writing/SKILL.md` — AI-writing pattern rules (used in Dimension 10)
 
-This is blog-writer v2.0 output. In addition to the standard review, check the 3 new optimisation layers (Dimensions 7–9 below).
+This is blog-writer v2.0 output. In addition to the standard review, check the 3 new optimisation layers (Dimensions 7–9) and the AI-writing pattern audit (Dimension 10).
 
 ## Review Protocol — 6 Dimensions
 
@@ -154,6 +155,59 @@ Check the `imagePrompt` field:
 
 If `imagePrompt` is completely missing: require the writer to add it (NEEDS REVISION). If present but imprecise: suggest corrections but do not block approval.
 
+### Dimension 10: AI-Writing Pattern Audit — avoid-ai-writing
+
+Read `~/.claude/skills/avoid-ai-writing/SKILL.md` for the full pattern list. Apply **detect mode** (flag only, do not rewrite in this step — rewrites happen in the corrections phase). Medical blog content must pass all Tier-1A checks and have zero Tier-2 clusters before approval.
+
+**Tier 1A — Hard blocks (any single occurrence fails this dimension):**
+These words appear 5–20× more in AI text. Remove or replace every instance:
+- `delve` / `delves` / `delving`
+- `leverage` (used as a verb: "leverage this insight")
+- `robust` (as a vague intensifier: "robust solution")
+- `paradigm` / `paradigm shift`
+- `tapestry` / `mosaic` (metaphor for complexity)
+- `navigate` (metaphorical: "navigate your health journey")
+- `underscore` (as a verb: "this underscores the importance")
+- `foster` (as a verb: "foster understanding")
+- `harness` (as a verb: "harness the power of")
+- `it's worth noting that` / `it is worth noting`
+- `in conclusion` / `to summarize` / `in summary` / `to recap`
+- `I hope this helps` / `I trust this helps`
+- `game-changer` / `game changer`
+- `crucial` (overused; use "important" or be specific)
+- `ensure` when "make sure" is more natural
+- Excessive em-dashes: more than 1 per 1,000 words — flag the count
+
+**Tier 2 — Cluster check (2+ in same paragraph triggers flag):**
+- `comprehensive` / `holistic` / `nuanced` / `multifaceted`
+- `empower` / `elevate` / `transform` / `revolutionize`
+- `innovative` / `cutting-edge` / `state-of-the-art`
+- `seamless` / `streamlined` / `efficient`
+- `key` as an adjective ("key factors", "key takeaways")
+- Consecutive sentences starting with the same word
+- Three or more sentences of nearly identical length in a row (uniform rhythm)
+
+**Structural tells — flag if present:**
+- Opening with "In today's [world/landscape/era]..." → immediate fail
+- Opening with "As a [doctor/specialist]..." → AI tell, rewrite
+- Numbered list of exactly 3 or exactly 5 items where prose would read better
+- Every paragraph starting with a topic sentence + 3 supporting sentences + transition (formulaic structure)
+- Phrases: "It's important to remember", "Don't forget that", "Keep in mind"
+- "Not only X but also Y" construction used more than once
+- Hedging cluster: "may", "might", "could", "perhaps" in the same paragraph (3+ = flag)
+
+**Hindi-specific AI tells (check the Hindi-language sections):**
+- Overuse of `आपको बता दें` / `ध्यान रखें` as paragraph openers in every section
+- Repeating "डॉ. आखिलेश यादव कहते हैं" as the only attribution structure
+- Section endings always closing with the same CTA phrasing verbatim
+
+**Scoring for this dimension (0–2 points):**
+- 0 Tier-1A hits + 0 Tier-2 clusters + 0 structural tells → **2/2 PASS**
+- 0 Tier-1A hits + 1–2 Tier-2 clusters OR 1–2 structural tells → **1/2 NEEDS MINOR FIX** (fix before publish, does not block approval)
+- Any Tier-1A hit OR 3+ Tier-2 clusters OR 3+ structural tells → **0/2 FAIL** → NEEDS REVISION
+
+**When flagging:** Quote the exact sentence/phrase, name the rule violated, and provide a specific rewrite for the Hindi context. Do not suggest generic English alternatives if the passage is in Hindi — rewrite in Hindi.
+
 ## Output Format
 
 ```markdown
@@ -213,6 +267,14 @@ imagePrompt: [PRESENT / MISSING]: [PASS/FAIL]
 - No human faces: [PASS/FAIL]
 - Green palette + Hindi overlay: [PASS/FAIL]
 **imagePrompt: [PASS / NEEDS MINOR FIX / MISSING]**
+
+## AI-Writing Pattern Audit (Dimension 10)
+- Tier-1A hits: [list each word/phrase found, or "none"]
+- Tier-2 clusters: [list paragraphs with 2+ cluster words, or "none"]
+- Structural tells: [list any found, or "none"]
+- Em-dash count: [N per 1,000 words]
+- Hindi-specific tells: [list any found, or "none"]
+**Score: [0/2 FAIL / 1/2 NEEDS MINOR FIX / 2/2 PASS]**
 
 ## DECISION
 **[APPROVED ✅ / NEEDS REVISION ⚠️ / REJECTED ❌]**
