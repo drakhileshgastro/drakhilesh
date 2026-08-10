@@ -6751,6 +6751,357 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 13: BLOGS 61–65 (FINAL) ─────────────────────────────────────────────
+
+  {
+    slug: "gallstone-doctor-ranchi",
+    titleHi: "Gallstone Doctor Ranchi — Pittha Ki Pathri Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "Gallstone Doctor in Ranchi — Gallbladder Stone Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein gallstone (pittha ki pathri) ke specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Gallstone diagnosis, ERCP (bile duct stone), aur surgical referral — complete guide.",
+    excerptEn: "Gallstone specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Gallbladder & bile duct stone diagnosis, ERCP & surgical referral for Jharkhand patients.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🪨",
+    tags: ["gallstone doctor ranchi", "pittha ki pathri ranchi", "gallbladder stone ranchi", "bile duct stone ranchi", "ERCP ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Gallstone Doctor Ranchi | Pittha Ki Pathri | Dr. Akhilesh Yadav",
+    metaDescription: "Gallstone (pittha ki pathri) specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Gallbladder & bile duct stone diagnosis, ERCP & management.",
+    sections: [
+      {
+        heading: "Pittha Ki Pathri — Ranchi Mein Kitna Common Hai",
+        type: "text",
+        content: "Pittha ki pathri (gallstone) India mein bohot common hai — women mein zyada (4F rule: Female, Forty, Fat, Fertile). Jharkhand mein bhi high prevalence hai. Ranchi ke kai patients Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — ke paas gallstone-related problems lekar aate hain: upper right belly pain, jaundice (bile duct stone), aur acute pancreatitis (gallstone-induced). Gallstone do types mein hote hain: gallbladder stones (zyada common) aur bile duct stones (choledocholithiasis) — dono ka management alag hota hai.",
+      },
+      {
+        heading: "Gallstone Symptoms — Kab Doctor Se Milein",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein gallstone ke yeh symptoms mein immediately milne ko kehte hain:",
+        list: [
+          "Biliary colic: upper right abdomen mein sudden severe pain — fatty meal ke baad zyada",
+          "Pain jo right shoulder tak jaata hai (referred pain)",
+          "Nausea aur vomiting biliary colic ke saath",
+          "Jaundice (skin/eyes peele) + pale stools + dark urine — bile duct stone sign",
+          "Fever + jaundice + pain (Charcot's triad) — cholangitis emergency",
+          "Acute pancreatitis: severe upper abdominal pain — gallstone trigger",
+          "Murphy's sign: right upper quadrant press karne par pain — cholecystitis",
+        ],
+      },
+      {
+        heading: "Gallstone Diagnosis Aur Role of Gastroenterologist",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein gallstone workup karte hain: Ultrasound abdomen: gallbladder stones diagnose — 95%+ sensitivity. Size, number, sludge vs stones. Bile duct: dilated ya nahi. LFT: bilirubin, ALP elevated — bile duct obstruction suspect. MRCP (MRI Cholangiopancreatography): bile duct stone ka best non-invasive imaging — Dr. Akhilesh Yadav arrange karte hain Ranchi mein. ERCP: bile duct stone confirmed → therapeutic ERCP — Dr. Akhilesh Yadav Orchid Medical Centre mein karte hain. EUS: ERCP se pehle bile duct stone confirm karna — especially small stones. Surgery referral: gallbladder stones ke liye laparoscopic cholecystectomy — surgical team ke paas refer.",
+      },
+      {
+        heading: "Bile Duct Stone — ERCP Se Kaise Nikala Jaata Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein bile duct stone ERCP se nikalte hain: ERCP (Endoscopic Retrograde Cholangiopancreatography) — scope mouth se → duodenum → bile duct opening. Sphincterotomy: bile duct ka opening zyada kiya jaata hai. Stone extraction: basket ya balloon catheter se stone nikalta hai. Stent placement: incomplete clearance mein temporary stent. Success rate: 85-95%. Post-ERCP: gallbladder stones ke liye surgery refer. Dr. Akhilesh Yadav Ranchi mein regular ERCP karte hain — Jharkhand ke patients ke liye locally available advanced procedure.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Gallstone",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Gallstone mein gastroenterologist ka role hai bile duct stone manage karna aur pancreatitis ya cholangitis treat karna — gallbladder surgery surgeon ka kaam hai. Dono mil ke patient ka best treatment plan banate hain. Ranchi mein main ERCP karta hoon — bile duct clear karta hoon — aur phir surgeon gallbladder nikalte hain. Ek shahar mein sab available hai — Patna ya Kolkata jaane ki zaroorat nahi.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya gallstone apne aap nikal jaata hai?",
+        a: "Gallbladder stone apne aap nahi nikalta — surgical removal (laparoscopic cholecystectomy) zaroor hoti hai symptomatic stones mein. Bile duct stone kabhi kabhi pass ho sakta hai naturally — lekin risk zyada hota hai (cholangitis, pancreatitis). Treatment zaroor karwayein — ignore mat karein.",
+      },
+      {
+        q: "Fatty diet chhod dene se gallstone theek ho jaata hai?",
+        a: "Nahi — fat avoid karne se biliary colic episodes kam hote hain (stone trigger nahi hota), lekin stone nahi jaata. Long-term: gallstone wahan hi rahega. Symptomatic gallstone ka definitive treatment surgery hai. Dr. Akhilesh Yadav Ranchi mein appropriate surgical referral dete hain.",
+      },
+      {
+        q: "Pregnancy mein gallstone — kya ERCP safe hai?",
+        a: "Pregnancy mein symptomatic bile duct stone/cholangitis emergency mein ERCP possible hai — radiation minimize karke (ya EUS-guided) ya MRCP-guided. Risk-benefit discussion zaroori. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein pregnancy-related GI emergency cases coordinate karte hain.",
+      },
+      {
+        q: "Gallstone mein kya diet follow karein?",
+        a: "Low-fat diet: ghee, tel, cream, fried foods — limit karein. Biliary colic trigger hota hai fatty meals se. Fiber zyada: vegetables, whole grains. Jharkhand mein: sattu ka paani (bina ghee), chhachh (low fat), lauki/palak — okay. Litti: ghee kam karein. Post-surgery: normal diet resume hoti hai 2-4 weeks mein.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-diarrhea-doctor",
+    titleHi: "Ranchi Mein Diarrhea Doctor — Dast Ka Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Diarrhea Doctor in Ranchi — Loose Motion Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein diarrhea (dast/loose motion) specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Acute vs chronic diarrhea — kab alarm hai, kab routine — diagnosis aur treatment.",
+    excerptEn: "Diarrhea specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Acute vs chronic loose motion — when it's an emergency, causes, diagnosis & treatment.",
+    category: "symptoms",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🚨",
+    tags: ["diarrhea doctor ranchi", "loose motion doctor ranchi", "dast ka doctor ranchi", "chronic diarrhea ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Diarrhea Doctor Ranchi | Loose Motion Specialist | Dr. Akhilesh Yadav",
+    metaDescription: "Diarrhea (loose motion/dast) specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Acute vs chronic diarrhea causes, red flags & treatment.",
+    sections: [
+      {
+        heading: "Dast — Kab Normal Hai, Kab Doctor Ke Paas Jaayein",
+        type: "text",
+        content: "Ranchi mein dast (loose motions/diarrhea) ek common complaint hai — especially monsoon mein jab waterborne infections zyada hoti hain. Dast: din mein 3 ya zyada loose/watery stools. Acute: <2 hafte — mostly viral ya bacterial infection — self-limiting. Persistent: 2-4 hafte. Chronic: >4 hafte — serious cause suspect karein. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein kehte hain: 'Jharkhand mein monsoon diarrhea common hai — waterborne. Lekin chronic diarrhea IBS, IBD, celiac, aur even cancer ho sakta hai — ignore nahi karna chahiye.'",
+      },
+      {
+        heading: "Diarrhea — Kab Emergency Hai (Red Flags)",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein yeh red flags mein immediately milne ko kehte hain:",
+        list: [
+          "Blood ya mucus in stool — bloody diarrhea",
+          "Severe dehydration: extreme thirst, no urination, dizziness",
+          "High fever (>38.5°C) with diarrhea",
+          "Severe abdominal pain with diarrhea",
+          "Elderly ya children mein — dehydration fast hoti hai",
+          "Immunocompromised patients (HIV, cancer, steroids)",
+          "Diarrhea after foreign travel ya hospital stay",
+          "Chronic diarrhea >4 hafte — any cause",
+          "Weight loss ke saath diarrhea — alarm symptom",
+        ],
+      },
+      {
+        heading: "Chronic Diarrhea — Common Causes Jo Dr. Akhilesh Yadav Diagnose Karte Hain",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein chronic diarrhea ke yeh causes systematically rule out karte hain: IBS-D (Irritable Bowel Syndrome — Diarrhea predominant): most common. Diagnosis of exclusion. IBD (Crohn's/Ulcerative Colitis): blood/mucus, weight loss, night-time diarrhea. Celiac Disease: wheat se triggered, anemia saath. Microscopic Colitis: elderly women mein watery diarrhea, colonoscopy normal lag sakti hai — biopsy zaroor. Intestinal TB: Jharkhand mein TB prevalent — GI involvement. Chronic Infection: Giardia, Cryptosporidium — well water use karne walon mein. Post-infectious IBS: acute gastroenteritis ke baad gut sensitized. Functional Diarrhea: stress-related, no organic cause.",
+      },
+      {
+        heading: "Diarrhea Mein Diet — ORS Aur Beyond",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein acute diarrhea mein guide karte hain: ORS (Oral Rehydration Solution): zaroor — WHO-recommended. Ghar par banana: 1 litre paani + 6 chammach sugar + half chammach namak. Dahi (yogurt): probiotics — recovery speed karte hain. BRAT diet: Banana, Rice (white), Applesauce, Toast — bland, easy to digest. Sattu ka paani (plain, no salt/sugar in excess) — electrolytes + easy digestion. Avoid: dairy (lactose temporarily intolerant after infection), oily food, raw vegetables. Oral rehydration prefer karein — IV drip sirf severe dehydration mein. Zinc supplementation (children mein especially) — diarrhea duration reduce karta hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Diarrhea",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein dast ke jo cases main dekhta hoon, unme ek pattern hai — monsoon mein acute infections, aur saal bhar chronic IBS ya undiagnosed IBD. Dono alag conditions hain — alag treatment. ORS se acute diarrhea manage ho jaati hai — lekin agar ek mahine se zyada ho raha hai, toh bina colonoscopy ke diagnosis nahi hogi. Guessing mat karo — diagnose karo.'  \n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya antibiotics har diarrhea mein lene chahiye?",
+        a: "Nahi — viral diarrhea mein antibiotics kaam nahi karte (most acute diarrhea viral hoti hai). Antibiotics: bacterial causes mein (bloody diarrhea, high fever, travel history, C. diff). Self-prescription avoid karein — antibiotic resistance badhti hai. Dr. Akhilesh Yadav Ranchi mein stool test ke baad appropriate antibiotic decide karte hain.",
+      },
+      {
+        q: "Kya IBS ka diarrhea infectious diarrhea se alag hota hai?",
+        a: "Haan: IBS-D — lower abdominal cramps ke saath loose stools, stress/meals se worse, usually blood nahi, night-time diarrhea unusual. Infectious diarrhea: sudden onset, fever possible, recent contaminated food/water, resolves in days-weeks. Chronic IBS pattern: months-years. Dr. Akhilesh Yadav Ranchi mein history se distinguish karte hain — stool tests aur colonoscopy se confirm karte hain.",
+      },
+      {
+        q: "Bacchon mein diarrhea — kab hospital jaayein?",
+        a: "Turat hospital: 6 ghante se zyada koi peshab nahi, sunken eyes, dry mouth/tongue, lethargy. Under 2 saal: 24 ghante mein better nahi toh doctor. All ages: blood in stool, high fever, severe pain. ORS paani jab bhi diarrhea start ho — start immediately. Dr. Akhilesh Yadav adult aur paediatric GI cases dono dekhte hain Ranchi mein.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-nausea-doctor",
+    titleHi: "Ranchi Mein Nausea Doctor — Ulti Ki Feeling Ka Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Nausea Doctor in Ranchi — Chronic Nausea & Vomiting Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein nausea (ulti aane ki feeling) specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Chronic nausea, vomiting causes — GI, neurological, metabolic — diagnosis guide.",
+    excerptEn: "Nausea and vomiting specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Chronic nausea causes, GI workup, red flags & treatment for Jharkhand patients.",
+    category: "symptoms",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🤢",
+    tags: ["nausea doctor ranchi", "ulti ka doctor ranchi", "vomiting specialist ranchi", "chronic nausea ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Nausea Doctor Ranchi | Ulti Specialist | Dr. Akhilesh Yadav",
+    metaDescription: "Nausea and vomiting specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Chronic nausea causes, GI workup & treatment for Jharkhand patients.",
+    sections: [
+      {
+        heading: "Nausea — GI Doctor Ke Paas Kab Jaayein",
+        type: "text",
+        content: "Nausea (ulti aane ki feeling) aur vomiting ek common complaint hai — lekin behind it many causes hote hain. Ranchi se aaye 38-saal ke Ramesh — 3 mahine se subah subah nausea, kabhi kabhi ulti — doctor ne pregnancy test suggest kiya (male patient — clearly nahi tha relevant). Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — ne endoscopy ki: gastric outlet partial obstruction — peptic ulcer stricture. GI causes of nausea bahut varied hote hain — gastroenterologist proper evaluation karta hai. Ranchi mein Dr. Akhilesh Yadav systematic approach lete hain nausea diagnosis mein.",
+      },
+      {
+        heading: "Nausea — GI Causes Jo Dr. Akhilesh Yadav Ranchi Mein Diagnose Karte Hain",
+        type: "list",
+        content: "Nausea ke GI causes:",
+        list: [
+          "GERD (acid reflux): nausea especially morning mein ya khane ke baad",
+          "Gastroparesis: stomach emptying slow — diabetic mein common",
+          "H. Pylori gastritis: chronic nausea, bloating, burping",
+          "Peptic Ulcer: nausea + epigastric pain",
+          "Gastric outlet obstruction: pyloric stenosis (post-ulcer stricture, cancer)",
+          "Functional Dyspepsia: no organic cause — very common in Ranchi",
+          "Hepatitis / Liver disease: nausea + jaundice + right upper quadrant",
+          "Pancreatitis: severe nausea + vomiting + upper abdominal pain",
+          "Intestinal obstruction: vomiting + no bowel movement + distension",
+          "Cyclical Vomiting Syndrome: episodic severe vomiting — migraine related",
+        ],
+      },
+      {
+        heading: "Nausea — Red Flags Jo GI Specialist Ko Dikhanein",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh cases urgent dekhte hain:",
+        list: [
+          "Blood in vomit (hematemesis) — emergency",
+          "Projectile vomiting — gastric outlet obstruction suspect",
+          "Nausea + jaundice — liver/bile duct problem",
+          "Nausea + weight loss >5% — cancer/serious cause",
+          "Severe dehydration with vomiting — IV fluid zaroor",
+          "Unable to keep any liquid down >24 hrs",
+          "Nausea after head injury — neurological cause",
+          "New medicines recently started — drug-induced",
+        ],
+      },
+      {
+        heading: "Chronic Nausea — Workup Kya Hoga",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein chronic nausea workup: History: timing (morning, post-meal, random), relation to food, associated symptoms (pain, bloating, heartburn, weight loss). Blood tests: LFT, blood sugar (diabetic gastroparesis), thyroid (hypothyroidism = nausea), serum electrolytes. Endoscopy (OGD Scopy): mucosal causes, H. Pylori, outlet obstruction. Ultrasound: liver, gallbladder, pancreas. Gastric emptying study: gastroparesis confirm karna (nuclear medicine scan — specialized centres). CT abdomen: mass, obstruction, pancreatitis. Treatment: cause-specific — prokinetics (metoclopramide, domperidone) for gastroparesis; H. Pylori treatment if positive; PPI for GERD-related nausea.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Nausea",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Nausea ek symptom hai, disease nahi. Main hamesha puchta hoon — kab hoti hai? Khane se pehle ya baad? Darr se ya stress se? Koi nai dawai? Pehle yeh answers clear karein — phir test. Ranchi mein patients aksar sirf anti-nausea medicines lete rehte hain bina cause dhundhe — yeh band karo, cause dhundho.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Subah subah nausea — kya ye always pregnancy ka sign hai?",
+        a: "Mahilaon mein pregnancy confirm karna zaroor hai morning nausea mein — pregnancy test simple hai. Lekin morning nausea purusho mein ya post-menopausal mahilaon mein: GERD, H. Pylori, gastroparesis, hypothyroidism, alcohol use, medications, ya systemic causes. Dr. Akhilesh Yadav Ranchi mein complete evaluation karte hain.",
+      },
+      {
+        q: "Kya nausea ke liye endoscopy zaroor hai?",
+        a: "Chronic nausea (>4 hafte) mein ya red flags hone par — haan, endoscopy important hai mucosal cause rule out karne ke liye. Acute nausea (days) mein usually endoscopy nahi zaroor. Dr. Akhilesh Yadav case ke hisaab se decide karte hain Ranchi mein.",
+      },
+      {
+        q: "Diabetes mein nausea kyun hoti hai?",
+        a: "Diabetic gastroparesis — stomach ki muscles damage (autonomic neuropathy) se — slow emptying. Symptoms: nausea, early satiety, bloating, vomiting undigested food hours baad. HbA1c control improve karna, small frequent meals, prokinetics (metoclopramide) — treatment. Dr. Akhilesh Yadav Ranchi mein diabetic GI complications diagnose aur manage karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-abdominal-pain-doctor",
+    titleHi: "Ranchi Mein Abdominal Pain Doctor — Pet Dard Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Abdominal Pain Doctor in Ranchi — Stomach Pain Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein pet dard (abdominal pain) specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Acute vs chronic abdominal pain — causes, red flags, diagnosis aur treatment.",
+    excerptEn: "Abdominal pain specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Acute vs chronic stomach pain, red flags, GI causes, diagnosis & treatment.",
+    category: "symptoms",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["abdominal pain doctor ranchi", "pet dard doctor ranchi", "stomach pain ranchi", "chronic abdominal pain ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Abdominal Pain Doctor Ranchi | Pet Dard Specialist | Dr. Akhilesh Yadav",
+    metaDescription: "Abdominal pain specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. GI causes, red flags & diagnosis of acute & chronic stomach pain in Jharkhand.",
+    sections: [
+      {
+        heading: "Pet Dard — Ek Symptom, Hazaar Causes",
+        type: "text",
+        content: "Pet dard (abdominal pain) sabse common GI complaint hai — lekin causes mein bahut variety hai. Upper right: gallbladder, liver. Upper middle (epigastric): stomach, pancreas, heart (referred). Upper left: spleen, stomach, pancreas tail. Lower right: appendix, right ovary, ileum (Crohn's). Lower left: colon (diverticulitis, colitis). Diffuse: IBS, peritonitis, obstruction. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein kehte hain: 'Pet dard ki location, character, aur timing bata deta hai 70% diagnosis — agar carefully history liya jaaye.' Ranchi mein Dr. Akhilesh Yadav systematic GI evaluation karte hain.",
+      },
+      {
+        heading: "Pet Dard Mein Emergency Red Flags — Immediately Milein",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein yeh symptoms mein urgent dekhte hain:",
+        list: [
+          "Sudden severe 'worst-ever' pain — perforation, aortic aneurysm, mesenteric ischemia",
+          "Rigid board-like abdomen — peritonitis",
+          "Pain + vomiting blood ya black stools",
+          "Pain + fever >38.5°C — infection/abscess",
+          "Pain + jaundice — bile duct obstruction, cholangitis",
+          "Pain + inability to pass gas or stool — obstruction",
+          "Pain + altered consciousness",
+          "Recurrent severe pain in elderly — ischemia suspect",
+          "Pain + unintentional weight loss — malignancy",
+        ],
+      },
+      {
+        heading: "Chronic Abdominal Pain — GI Causes Aur Diagnosis",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein chronic abdominal pain systematically diagnose karte hain: Functional causes (most common): IBS — abdominal cramps, altered bowel habit, no structural cause. Functional dyspepsia — epigastric pain, bloating. Structural causes: Peptic ulcer — epigastric, worse empty stomach. Crohn's disease — lower right, diarrhea, weight loss. Gastric/colon cancer — progressive, weight loss, alarm symptoms. Chronic pancreatitis — upper abdominal radiating to back, post-meal worse. Workup: Blood (CBC, LFT, CRP, amylase), stool (infection, occult blood), ultrasound, endoscopy, colonoscopy. Advanced: CT scan, MRCP, capsule endoscopy — as indicated by Dr. Akhilesh Yadav.",
+      },
+      {
+        heading: "Pet Dard Mein Jharkhand-Specific Considerations",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein Jharkhand-specific conditions note karte hain jo pet dard cause kar sakti hain: Intestinal TB: ileocaecal area (lower right pain) — Jharkhand mein TB prevalent. Misdiagnosed as Crohn's, appendicitis. Entamoeba histolytica (amoebic colitis): contaminated water — right-sided colitis pain. Giardiasis: upper GI discomfort, bloating, foul-smelling loose stools — well water users. Kala-azar: splenomegaly — left-sided heaviness, fever. Alcohol-related pancreatitis: Jharkhand tribal areas mein mahua alcohol — chronic pancreatitis. Celiac disease: lower/diffuse abdominal cramping — wheat staple diet area mein underdiagnosed.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Abdominal Pain",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Pet dard ko normal mat samjho. Jharkhand mein maine aisa dekha hai — log saalon tak dard ko thandi machhli ya kuch khane se jodkar ignore karte hain — aur baad mein cancer milta hai advanced stage mein. Ek rule: pet dard jo 4 hafte se zyada hai, ya jo weight loss ya blood ke saath hai — endoscopy zaroor. Delay se kuch nahi milta.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Antacid se pet dard theek ho jaata hai toh serious toh nahi hai na?",
+        a: "Zaroor nahi. Antacid temporarily acid suppress karta hai — lekin peptic ulcer, early gastric cancer, aur even cardiac pain kabhi kabhi antacid se temporarily better feel hoti hai. Agar pain regularly antacid se aata-jaata hai — pattern banaya hua hai — endoscopy zaroor karwao. Dr. Akhilesh Yadav Ranchi mein antacid-responsive pain bhi properly evaluate karte hain.",
+      },
+      {
+        q: "Pet dard mein ultrasound kaafi hai ya endoscopy bhi zaroor?",
+        a: "Ultrasound: gallbladder, liver, kidney, pancreas — external structures. Endoscopy: stomach, esophagus, duodenum — mucosal surface — ulcer, cancer, H. Pylori. Dono alag cheezein dekhte hain — ek dusre ka substitute nahi. Dr. Akhilesh Yadav Ranchi mein history ke hisaab se decide karte hain dono mein se kaunsa ya dono zaroor hain.",
+      },
+      {
+        q: "IBS mein pet dard kitna severe ho sakta hai?",
+        a: "IBS mein pain moderate to severe ho sakti hai — crampy, lower abdominal, stool ke baad better. IBS mein: red flags nahi (blood, weight loss, fever, night-time awakening). Dr. Akhilesh Yadav Ranchi mein IBS diagnosis exclusion ke baad dete hain — organic causes pehle rule out hote hain. IBS management: diet, stress reduction, antispasmodics.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-liver-cancer-screening",
+    titleHi: "Ranchi Mein Liver Cancer Screening — HCC Detection | Dr. Akhilesh Yadav",
+    titleEn: "Liver Cancer Screening in Ranchi — HCC Early Detection | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein liver cancer (HCC) screening: Dr. Akhilesh Yadav — Orchid Medical Centre. Cirrhosis patients mein 6-maheene ka surveillance — ultrasound + AFP — early detection guide.",
+    excerptEn: "Liver cancer (HCC) screening in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Cirrhosis surveillance with ultrasound & AFP, risk factors & early detection for Jharkhand patients.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔬",
+    tags: ["liver cancer screening ranchi", "HCC screening ranchi", "hepatocellular carcinoma ranchi", "liver cancer doctor ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Liver Cancer Screening Ranchi | HCC Detection | Dr. Akhilesh Yadav",
+    metaDescription: "Liver cancer (HCC) screening in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Cirrhosis surveillance program, ultrasound + AFP every 6 months for at-risk patients.",
+    sections: [
+      {
+        heading: "Liver Cancer Screening — Kyun Zaroor Hai Jharkhand Mein",
+        type: "text",
+        content: "Hepatocellular Carcinoma (HCC) — liver cancer — zyada cases mein cirrhosis background mein hota hai. Jharkhand mein cirrhosis ke main causes: Hepatitis B (widespread), Hepatitis C, aur alcohol. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein kehte hain: 'Main regularly dekh raha hoon ki cirrhosis patients jo surveillance mein nahi hain, unhe HCC advanced stage mein diagnose hota hai — jab curative treatment impossible ho jaata hai.' Screening ka matlab: cirrhosis patients mein regular ultrasound + AFP — har 6 mahine — HCC early stage mein pakadna. Early HCC mein cure possible hai — ablation, resection, transplant.",
+      },
+      {
+        heading: "HCC — Kise Screening Karwani Chahiye",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein in patients ko HCC surveillance mein rakhte hain:",
+        list: [
+          "Liver cirrhosis — any cause (Hepatitis B, C, alcohol, NASH) — ALL cirrhosis patients",
+          "Chronic Hepatitis B — even without cirrhosis (certain high-risk groups)",
+          "HBV + family history of HCC",
+          "HBV + African/Asian ethnicity males >40 years",
+          "Advanced fibrosis (F3) with Hepatitis B/C",
+          "Non-cirrhotic NAFLD with advanced fibrosis — emerging group",
+        ],
+      },
+      {
+        heading: "HCC Surveillance Protocol — Dr. Akhilesh Yadav Ka Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein cirrhosis patients ke liye HCC surveillance: Ultrasound Abdomen: every 6 months. New nodule identify karna. Liver texture assess karna. Ascites, splenomegaly monitor. AFP (Alpha-Fetoprotein): blood test — every 6 months. AFP >20 ng/mL suspicious. >200 ng/mL strongly suspicious for HCC. AFP normal in 30-40% HCC — isliye ultrasound bhi zaroor. Recall policy: Nodule <1cm → repeat ultrasound 3-4 months. Nodule 1-2cm → CT/MRI triphasic for characterization. Nodule >2cm with arterial enhancement + washout → HCC diagnosis — biopsy typically not needed. Dr. Akhilesh Yadav Ranchi mein cirrhosis patients ko surveillance schedule mein remind karte hain.",
+      },
+      {
+        heading: "Early HCC — Treatment Options Jo Ranchi Se Accessible Hain",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein HCC diagnosis ke baad multidisciplinary approach dete hain: Very Early HCC (single nodule <2cm): Radiofrequency Ablation (RFA) ya Microwave Ablation — curative intent. Liver transplant (Milan criteria patients). Early HCC (single ≤5cm ya 3 nodules ≤3cm): Surgical resection (agar liver function adequate). TACE (Transarterial Chemoembolization) — bridge to transplant ya palliative. Intermediate HCC: TACE, Y90 radioembolization. Advanced HCC: Sorafenib, Lenvatinib, immunotherapy (atezolizumab + bevacizumab). Dr. Akhilesh Yadav Ranchi mein diagnosis karte hain — treatment ke liye appropriate oncology/surgical referral coordinate karte hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Liver Cancer Screening",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Liver cancer screening mein ek simple rule hai: agar aapko cirrhosis hai — har 6 mahine — ultrasound + AFP. Bas itna karo. Main apne Ranchi ke har cirrhosis patient ko reminder deta hoon — calendar pe mark karo, follow karo. Jo patients yeh karte hain, unme hum HCC early stage mein pakad lete hain — treatment possible hai. Jo nahi karte — kabhi kabhi bahut der ho jaati hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Liver cancer screening ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Agar AFP normal hai toh kya liver cancer nahi hai?",
+        a: "Normal AFP HCC rule out nahi karta — 30-40% HCC mein AFP normal rehta hai. Isliye ultrasound bhi zaroor hai — dono milke screening protocol hai. AFP alone use karna insufficient hai. Dr. Akhilesh Yadav Ranchi mein dono tests simultaneously karte hain har 6 mahine.",
+      },
+      {
+        q: "Kya non-alcoholic fatty liver (NAFLD) mein bhi liver cancer ho sakta hai?",
+        a: "Haan — NAFLD-cirrhosis mein HCC risk hota hai — lower than Hepatitis B/C lekin significant. NAFLD-associated HCC kuch cases mein non-cirrhotic liver mein bhi hota hai. Obesity + diabetes + NAFLD combination mein risk zyada. Dr. Akhilesh Yadav Ranchi mein advanced NAFLD fibrosis patients ko surveillance mein rakhte hain.",
+      },
+      {
+        q: "Hepatitis B treatment se liver cancer ka risk kam hota hai?",
+        a: "Haan — antiviral therapy (tenofovir, entecavir) se Hepatitis B viral load suppress hoti hai — cirrhosis progression slow hoti hai aur HCC risk 50-70% reduce hoti hai (evidence-based data). Isliye Hepatitis B ka timely treatment bahut important hai. Dr. Akhilesh Yadav Ranchi mein eligible Hepatitis B patients ko antiviral therapy recommend karte hain.",
+      },
+      {
+        q: "Liver cancer ka koi early symptom hota hai?",
+        a: "Early HCC mein zyatar koi symptom nahi hota — isliye surveillance zaroor hai cirrhosis patients mein. Advanced stage mein: right upper quadrant pain, weight loss, jaundice, ascites suddenly worsen. Yeh sab late signs hain. Isliye symptom ka wait mat karo — surveillance karo.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
