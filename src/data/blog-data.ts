@@ -5678,6 +5678,356 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 10: BLOGS 46–50 ─────────────────────────────────────────────────────
+
+  {
+    slug: "endoscopy-clinic-ranchi",
+    titleHi: "Endoscopy Clinic Ranchi — Best OGD Scopy Centre | Dr. Akhilesh Yadav",
+    titleEn: "Best Endoscopy Clinic in Ranchi — OGD Scopy Centre | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein best endoscopy clinic: Orchid Medical Centre — Dr. Akhilesh Yadav — DM Gastroenterology. HD endoscopy, sedation, same-day results. OGD Scopy Ranchi.",
+    excerptEn: "Best endoscopy clinic in Ranchi — Orchid Medical Centre with Dr. Akhilesh Yadav. HD endoscopy, sedation available, same-day results. Serving all of Jharkhand.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔭",
+    tags: ["endoscopy clinic ranchi", "best endoscopy centre ranchi", "OGD scopy clinic ranchi", "gastroenterologist ranchi", "endoscopy near me ranchi"],
+    metaTitle: "Best Endoscopy Clinic Ranchi | Orchid Medical Centre | Dr. Akhilesh Yadav",
+    metaDescription: "Best endoscopy clinic in Ranchi — Orchid Medical Centre, HB Road. HD endoscopy, sedation & expert DM Gastroenterologist Dr. Akhilesh Yadav. Book now.",
+    sections: [
+      {
+        heading: "Ranchi Mein Endoscopy Clinic — Sahi Centre Kaise Choose Karein",
+        type: "text",
+        content: "Ranchi mein endoscopy kai jagahon par hoti hai — lekin quality, equipment, aur doctor ki expertise mein fark hota hai. Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — advanced endoscopy facility dete hain. Importance: endoscopy scope ki quality, endoscopist ki experience, sedation facility — yeh sab milke ensure karte hain ki procedure accurate, comfortable aur safe ho. Jharkhand ke patients ke liye Orchid Medical Centre ek trusted choice ban gayi hai.",
+      },
+      {
+        heading: "Orchid Medical Centre Endoscopy — Kya Milta Hai",
+        type: "list",
+        content: "Orchid Medical Centre Ranchi mein endoscopy facility:",
+        list: [
+          "High-Definition (HD) Video Endoscope — clear visualization",
+          "Dedicated endoscopy suite — clean, sterile environment",
+          "IV Sedation (conscious sedation) — comfortable, virtually painless",
+          "Dr. Akhilesh Yadav — DM Gastroenterology — expert endoscopist",
+          "Same-day procedure aur results — report same day",
+          "Therapeutic endoscopy: biopsy, H. Pylori test, polyp removal, bleeding control",
+          "Upper GI + Lower GI (Colonoscopy) — same location",
+          "ERCP aur EUS — advanced procedures also available",
+        ],
+      },
+      {
+        heading: "Endoscopy Se Kya Diagnose Hota Hai — Complete Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein endoscopy se yeh conditions diagnose aur treat karte hain: Esophagus: GERD, esophagitis, Barrett's Esophagus, stricture, achalasia, esophageal cancer early stage. Stomach: gastritis, peptic ulcer, H. Pylori infection, gastric polyps, gastric cancer. Duodenum: duodenal ulcer, celiac disease (biopsy from duodenum), duodenitis. Therapeutic: bleeding control (injection, thermal, clips), polyp removal (esophageal/gastric), stent placement, esophageal dilation. Advanced: Chromoendoscopy, NBI (Narrow Band Imaging) — subtle lesion detection.",
+      },
+      {
+        heading: "Endoscopy Appointment — Kaise Book Karein Ranchi Mein",
+        type: "text",
+        content: "Orchid Medical Centre Ranchi mein endoscopy appointment ke liye: Call: +91 74919 25047 (Mon–Sat: 10 AM–2 PM, 5 PM–8 PM). WhatsApp: +91 74919 25047. What to tell: symptoms, duration, previous endoscopy reports (agar hain). Preparation instructions milee: NPO timing, medication instructions. Urgent cases: same day ya next day typically available. Pre-procedure: blood tests (agar required — anticoagulants, platelet issues). Insurance: most health insurance covers endoscopy — cashless facility available for select insurers.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Endoscopy Clinic",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Endoscopy clinic choose karte waqt sirf cost mat dekho — doctor ki qualification aur scope quality bhi matter karti hai. HD endoscope se subtle changes dikhti hain jo standard scope mein miss ho jaati hain. Ranchi mein Orchid Medical Centre mein main ensure karta hoon ki har endoscopy properly done ho — chahe diagnostic ho ya therapeutic.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya endoscopy mein scope sterilize hota hai?",
+        a: "Haan — modern endoscopes reprocessing (cleaning + high-level disinfection ya sterilization) se guzarte hain har patient ke baad. Orchid Medical Centre Ranchi mein standard protocols follow hote hain. If unsure, puchhne mein sharm nahi — yeh valid question hai.",
+      },
+      {
+        q: "Kya endoscopy aur colonoscopy same din ho sakti hain?",
+        a: "Haan — ek hi sedation session mein upper + lower endoscopy possible hai ('bidirectional endoscopy'). Bowel prep colonoscopy ke liye karni padti hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh combined procedure karte hain agar zaroor ho.",
+      },
+      {
+        q: "Endoscopy report kitna detailed hota hai Orchid Medical Centre mein?",
+        a: "Orchid Medical Centre mein Dr. Akhilesh Yadav ka endoscopy report same-day dikhaaya jaata hai — patient ko clearly explain karte hain kya mila. Written report bhi milta hai. Biopsy results: 5-7 din pathology se. Follow-up plan bhi discuss hota hai.",
+      },
+      {
+        q: "Kya endoscopy ke liye koi age restriction hai?",
+        a: "Koi strict age limit nahi hai — infants se elderly tak endoscopy safe hai appropriate sedation ke saath. Elderly mein sedation dose adjust hota hai. Dr. Akhilesh Yadav appropriate sedation protocol use karte hain Orchid Medical Centre Ranchi mein.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-ercp-cost",
+    titleHi: "Ranchi Mein ERCP Cost — Bile Duct Procedure Kharcha | Dr. Akhilesh Yadav",
+    titleEn: "ERCP Cost in Ranchi — Bile Duct Procedure Price | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein ERCP (Endoscopic Retrograde Cholangiopancreatography) ka kharcha: Dr. Akhilesh Yadav — Orchid Medical Centre. Bile duct stones, stenting — complete guide aur cost.",
+    excerptEn: "ERCP cost in Ranchi at Orchid Medical Centre. Bile duct stone removal, stenting & pancreatitis management by Dr. Akhilesh Yadav — affordable advanced GI care.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💊",
+    tags: ["ERCP cost ranchi", "ERCP ranchi", "bile duct stone ranchi", "cholangiopancreatography ranchi", "gastroenterologist ranchi"],
+    metaTitle: "ERCP Cost in Ranchi | Bile Duct Procedure | Dr. Akhilesh Yadav",
+    metaDescription: "ERCP cost in Ranchi at Orchid Medical Centre. Bile duct stone removal, stent placement by Dr. Akhilesh Yadav, DM Gastroenterologist. Affordable advanced GI care.",
+    sections: [
+      {
+        heading: "ERCP Kya Hai — Aur Ranchi Mein Kyun Ek Badi Baat Hai",
+        type: "text",
+        content: "Deoghar se aaye 58-saal ke Ramji Lal ji — gallstone-induced pancreatitis ke baad bile duct mein stone fansa raha tha. Jaundice aur pain continue kar raha tha. Previously Patna refer kiya gaya tha — khaandaan ke liye mushkil tha. Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne ERCP karke bile duct stone nikaal diya. Ranchi mein ERCP available hona Jharkhand ke patients ke liye ek badi baat hai — pehle Kolkata ya Patna jaana padta tha.",
+      },
+      {
+        heading: "ERCP Kab Zaroor Hoti Hai?",
+        type: "list",
+        content: "ERCP (Endoscopic Retrograde Cholangiopancreatography) zaroor hai jab:",
+        list: [
+          "Bile duct mein stone (choledocholithiasis) — obstructive jaundice, cholangitis",
+          "Acute Cholangitis (bile duct infection) — emergency ERCP",
+          "Post-cholecystectomy bile leak — stent se seal karna",
+          "Biliary stricture — benign ya malignant",
+          "Pancreatic duct stone ya stricture",
+          "Pancreatic pseudocyst drainage (EUS-guided)",
+          "Pre-operative bile duct stone removal before gallbladder surgery",
+          "Sphincterotomy (bile duct opening widening) for stone clearance",
+        ],
+      },
+      {
+        heading: "ERCP Cost Ranchi — Orchid Medical Centre",
+        type: "text",
+        content: "ERCP ek advanced procedure hai — cost basic endoscopy se zyada hoti hai. Orchid Medical Centre, Ranchi mein ERCP cost Jharkhand ke competitive pricing mein hai — Patna ya Kolkata se travel + hotel + procedure cost se zyada tar kam aata hai. What determines cost: diagnostic ERCP vs therapeutic (stone removal, stenting). Number of procedures in one session. Anesthesia (ERCP mein deeper sedation typically). Duration aur complexity. Insurance: major health insurance plans mein ERCP covered hoti hai — cashless facility available hoti hai. Exact current pricing ke liye: +91 74919 25047 — transparent pricing, koi hidden charges nahi.",
+      },
+      {
+        heading: "ERCP Procedure — Kya Expect Karein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein ERCP ke liye patient preparation karte hain: Pre-ERCP: blood tests (coagulation, LFT), NPO 6-8 ghante. Antibiotics agar cholangitis ho. Sedation: deeper conscious sedation ya short general anesthesia — anesthesiologist present. Scope: side-viewing duodenoscope through mouth → duodenum → bile duct cannulation. What done: stone removal (sphincterotomy + basket/balloon), stent placement, brush cytology. Duration: 30-60 minute. Post-ERCP: 4-6 ghante observation. Possible post-ERCP pancreatitis (3-5% risk) — Dr. Akhilesh Yadav monitor karte hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — ERCP",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'ERCP ek complex procedure hai — isliye experience matter karta hai. Main chahta hoon ki Jharkhand ke patients ko ERCP ke liye bahar nahi jaana pare. Orchid Medical Centre Ranchi mein main regular ERCP karta hoon — bile duct stones, stenting, post-op bile leaks — sab conditions treat hoti hain yahan.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. ERCP ke liye experienced gastroenterologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "ERCP ke baad kitne din hospital mein rehna padta hai?",
+        a: "Uncomplicated ERCP: same day ya next day discharge. Cholangitis (infection) ya complex cases: 2-3 din observation. Post-ERCP pancreatitis mein: longer stay required. Dr. Akhilesh Yadav Ranchi mein case complexity ke hisaab se hospitalization plan karte hain.",
+      },
+      {
+        q: "ERCP ke baad kya khaayein?",
+        a: "Procedure ke baad: liquid diet start (nimbu paani, clear soup). Agle din: bland soft diet (khichdi, plain daal soup). 2-3 din mein: normal low-fat diet. Avoid: oily/fatty food 1-2 hafte. Dr. Akhilesh Yadav discharge pe detailed instructions dete hain.",
+      },
+      {
+        q: "Kya ERCP se pancreatitis ho sakti hai?",
+        a: "Post-ERCP pancreatitis (PEP) — 3-5% risk, most cases mild. High-risk patients mein indomethacin suppository (pre-procedure) aur adequate hydration se risk reduce hota hai. Dr. Akhilesh Yadav Ranchi mein preventive measures use karte hain. Post-ERCP abdominal pain badhe toh immediately contact karein.",
+      },
+      {
+        q: "Kya ERCP ke baad gallbladder nikalna zaroor hai?",
+        a: "Gallstone mein (bile duct + gallbladder stones): ERCP se bile duct clear, phir laparoscopic cholecystectomy (gallbladder removal). Dono alag procedures hain. Dr. Akhilesh Yadav ERCP karte hain, surgical team gallbladder removal karte hain — Ranchi mein coordinate hota hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-eus-test",
+    titleHi: "Ranchi Mein EUS Test — Endoscopic Ultrasound Kya Hai | Dr. Akhilesh Yadav",
+    titleEn: "EUS Test in Ranchi — Endoscopic Ultrasound Explained | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein EUS (Endoscopic Ultrasound) test: Dr. Akhilesh Yadav — Orchid Medical Centre. Pancreas, bile duct, submucosal tumors ki best imaging — kab aur kyon zaroori hai.",
+    excerptEn: "EUS test in Ranchi at Orchid Medical Centre — endoscopic ultrasound explained by Dr. Akhilesh Yadav. When it's needed, what it shows & how it differs from regular ultrasound.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔬",
+    tags: ["EUS test ranchi", "endoscopic ultrasound ranchi", "pancreas test ranchi", "EUS cost ranchi", "gastroenterologist ranchi"],
+    metaTitle: "EUS Test in Ranchi | Endoscopic Ultrasound | Dr. Akhilesh Yadav",
+    metaDescription: "EUS (Endoscopic Ultrasound) test in Ranchi at Orchid Medical Centre. Expert pancreas, bile duct & GI tumour imaging by Dr. Akhilesh Yadav, DM Gastroenterologist.",
+    sections: [
+      {
+        heading: "EUS Test Kya Hai — Aur Regular Ultrasound Se Better Kyun",
+        type: "text",
+        content: "Ranchi ke kai patients CT scan aur regular ultrasound ke baad bhi unresolved diagnosis leke Orchid Medical Centre aate hain. Dr. Akhilesh Yadav — DM Gastroenterology — EUS se woh details reveal karte hain jo baaki tests se miss ho jaate hain. EUS = endoscope + ultrasound probe ka combination. Probe GI tract ke andar se imaging karta hai — bowel gas interference nahi. Pancreas, bile duct, gallbladder — jo regular ultrasound mein clearly nahi dikhte — EUS mein crystal clear hote hain. Orchid Medical Centre, HB Road, Ranchi mein EUS available hai — Jharkhand ke limited centers mein se ek.",
+      },
+      {
+        heading: "EUS Kis Condition Mein Recommend Hoti Hai?",
+        type: "list",
+        content: "EUS in conditions mein zaroor hoti hai:",
+        list: [
+          "Pancreatic mass ya cyst — CT ke baad characterization, FNA for tissue",
+          "Suspected bile duct stones — CT/MRCP inconclusive",
+          "Chronic Pancreatitis — pancreatic duct detail assessment",
+          "Esophageal cancer staging — T aur N staging pre-operatively",
+          "Gastric cancer staging — lymph node assessment",
+          "Submucosal GI tumors (GIST, carcinoid, lipoma) — layer identification",
+          "Gallbladder polyps >1cm — malignancy risk",
+          "Mediastinal lymphadenopathy — sampling via EUS-FNA",
+        ],
+      },
+      {
+        heading: "EUS-FNA/FNB — Biopsy Bina Surgery Ke",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein EUS-guided Fine Needle Aspiration (FNA) ya Fine Needle Biopsy (FNB) karte hain. Ek needle EUS scope ke andar hoti hai — real-time ultrasound guidance mein target (pancreatic mass, lymph node) mein daali jaati hai. Tissue sample milta hai — pathology mein cancer diagnose ya rule out hota hai. Advantages: bina surgery ke tissue diagnosis. Accurate — 85-95% diagnostic yield. Avoid CT-guided percutaneous biopsy (which can be harder for pancreas). Ranchi mein EUS-FNA hona — Jharkhand ke patients ke liye ek major advantage hai.",
+      },
+      {
+        heading: "EUS Experience — Orchid Medical Centre Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein EUS experience describe karte hain: Preparation: upper EUS ke liye endoscopy jaise NPO 6-8 ghante. Sedation: comfortable — IV sedation, conscious level. Scope: echoendoscope mouth se — esophagus, stomach, duodenum mein ja ke adjacent structures image karta hai. Duration: 30-60 minute (diagnostic EUS). FNA ke saath: 45-75 minute. Recovery: 1-2 ghante post-sedation. Report: imaging findings same day discuss karte hain Dr. Akhilesh Yadav. FNA cytology: 3-5 din pathology. EUS cost inquiry: +91 74919 25047.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — EUS",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'EUS mujhe wo cheezein dikhati hai jo CT scan miss karta hai — ek 8mm bile duct stone, ek 12mm pancreatic cyst ki wall lining, ek submucosal tumor ki exact layer. Ranchi mein patients ke liye EUS ka available hona ek breakthrough hai. Ab Delhi ya Kolkata nahi jaana padta pancreatic cyst biopsy ke liye.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Advanced GI diagnosis ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "EUS aur normal ultrasound mein specifically kya fark hai?",
+        a: "Normal ultrasound: bahar se skin ke through imaging — bowel gas interfere karta hai. Pancreas aur bile duct poorly seen. EUS: probe GI tract ke andar — 2-5mm distance se organs image hote hain. Bahut superior resolution — 1mm tak structures clearly. Dr. Akhilesh Yadav Ranchi mein decide karte hain kab EUS vs normal ultrasound appropriate hai.",
+      },
+      {
+        q: "Pancreatic cyst ke liye EUS zaroor hai?",
+        a: "Haan — 1cm se bade pancreatic cysts ke liye EUS recommended hai characterization ke liye: cyst type (mucinous vs serous), mural nodule presence, main duct connection. FNA se fluid analysis — mucinous vs serous confirm karta hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein pancreatic cyst assessment karte hain.",
+      },
+      {
+        q: "EUS mein kitna dard hota hai?",
+        a: "Sedation ke saath nahi. Similar to regular endoscopy experience — aap comfortable ya neend mein hoge. Procedure ke baad: mild bloating ya sore throat — 1-2 din mein theek. FNA ke saath: koi extra pain nahi hoti typically.",
+      },
+      {
+        q: "EUS report samajhne mein help chahiye — kya Dr. Akhilesh Yadav explain karte hain?",
+        a: "Haan — Dr. Akhilesh Yadav same day procedure ke baad imaging findings explain karte hain. Biopsy report aane ke baad follow-up appointment mein final interpretation aur next steps discuss hote hain. Patient education Dr. Akhilesh Yadav ke practice ka important part hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "capsule-endoscopy-ranchi",
+    titleHi: "Capsule Endoscopy Ranchi — Small Bowel Imaging | Dr. Akhilesh Yadav",
+    titleEn: "Capsule Endoscopy in Ranchi — Small Intestine Imaging | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein capsule endoscopy (capsule camera) — small intestine ki imaging ke liye Dr. Akhilesh Yadav — Orchid Medical Centre. Kab zaroor hai aur kya expect karein.",
+    excerptEn: "Capsule endoscopy (wireless camera capsule) in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Small bowel Crohn's, obscure GI bleeding & small intestine assessment.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💊",
+    tags: ["capsule endoscopy ranchi", "small bowel imaging ranchi", "wireless capsule ranchi", "small intestine test ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Capsule Endoscopy Ranchi | Small Bowel Imaging | Dr. Akhilesh Yadav",
+    metaDescription: "Capsule endoscopy in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Wireless camera capsule for small bowel Crohn's, obscure GI bleeding & small intestine disorders.",
+    sections: [
+      {
+        heading: "Capsule Endoscopy — Woh Cheez Jo Normal Scope Nahi Dekh Sakti",
+        type: "text",
+        content: "Ranchi se aaye 34-saal ke Ajit Kumar — recurrent anemia, endoscopy normal, colonoscopy normal. Bleeding source nahi mila. Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — ne capsule endoscopy recommend ki. Result: small bowel Angioectasia (abnormal blood vessels) — obscure GI bleeding ka source. Yeh sirf capsule endoscopy se detect hua. Capsule endoscopy — ek camera in a capsule jo patient nighalta hai aur poori small intestine ki 50,000+ images leta hai — woh area jahan regular scope nahi pahunch sakta.",
+      },
+      {
+        heading: "Capsule Endoscopy Kab Zaroor Hai?",
+        type: "list",
+        content: "Capsule endoscopy in conditions mein recommend hoti hai:",
+        list: [
+          "Obscure GI Bleeding: endoscopy + colonoscopy normal, lekin anemia/bleeding continue",
+          "Crohn's Disease: small bowel extent assess karna — MR Enterography ke alternative/complement",
+          "Celiac Disease: small bowel villous atrophy assess karna",
+          "Iron Deficiency Anemia: source undetermined after upper/lower endoscopy",
+          "Small Bowel Tumors: suspected polyps, carcinoid, lymphoma",
+          "NSAID-induced small bowel damage: assessment",
+          "Peutz-Jeghers Syndrome: small bowel polyp surveillance",
+        ],
+      },
+      {
+        heading: "Capsule Endoscopy Experience — Kaise Hoti Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein capsule endoscopy ke liye patient guide karte hain: Preparation: ek din pehle liquid diet, bowel prep (colonoscopy-lite). Day of procedure: sensors body par tape hote hain (data recorder bhi). Patient ek small camera capsule swallow karta hai — size aik badi vitamin capsule jaisi. Capsule naturally GI tract se travel karta hai — 8 ghante recording. Patient normal activities kar sakta hai (baith na, chalna) — heavy exercise avoid. No sedation required. Capsule naturally 24-48 ghante mein stool mein pass hoti hai. Data recorder doctor ko — 50,000+ images review hoti hain. Report: 1-2 din mein.",
+      },
+      {
+        heading: "Capsule Endoscopy — Limitations Bhi Samjhein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein capsule endoscopy ke limitations bhi explain karte hain: Cannot do biopsy — sirf imaging. Capsule retention risk: GI stricture mein capsule phans sakta hai — pehle patency capsule (dissolvable) test hoti hai. Battery life: 8-12 ghante — complete small bowel may not always be visualized. Cost: expensive compared to standard endoscopy. No therapeutic capability. Kab avoid karein: known stricture, implanted cardiac devices (certain models), swallowing difficulty, pregnancy. Dr. Akhilesh Yadav appropriately select karte hain kab capsule endoscopy vs MR Enterography better option hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Capsule Endoscopy",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Capsule endoscopy ek patient-friendly procedure hai — koi sedation nahi, koi scope nahi, bas ek capsule nigalo. Ranchi mein main isey select cases mein recommend karta hoon — jab upper aur lower endoscopy normal ho aur anemia ya bleeding source pata nahi chal raha ho. Small bowel Crohn's ke liye bhi ek valuable tool hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Capsule endoscopy ke liye specialist se consultation zaroor karein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Capsule endoscopy Ranchi mein available hai?",
+        a: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein capsule endoscopy arrange karte hain — availability aur scheduling ke liye +91 74919 25047 contact karein. Kuch cases mein referral bhi suggest karte hain appropriate center ko agar zaroor ho.",
+      },
+      {
+        q: "Kya capsule body mein reh jaati hai?",
+        a: "Normal GI tract mein — nahi. Capsule 24-48 ghante mein naturally stool mein pass ho jaati hai. Confirm karne ke liye: patient dekhta hai (ya abdominal X-ray). GI stricture ya obstruction mein capsule retain ho sakti hai — isliye pehle patency capsule test hoti hai. Dr. Akhilesh Yadav Ranchi mein iska appropriate screening karte hain.",
+      },
+      {
+        q: "Capsule endoscopy ka kharcha kitna hoga?",
+        a: "Capsule endoscopy standard endoscopy se zyada expensive hai — capsule disposable hoti hai, imported equipment. India mein cost ranges hain. Exact Orchid Medical Centre pricing ke liye +91 74919 25047 contact karein. Insurance coverage: select plans mein covered, confirm karein apni policy se.",
+      },
+      {
+        q: "Capsule endoscopy MRI se better hai?",
+        a: "Dono alag information dete hain. Capsule endoscopy: mucosal lesions — villi, small ulcers, angiectasia clearly. MR Enterography: full-thickness bowel wall, stricture, fistula, extraluminal disease — Crohn's staging. Dono complementary hain. Dr. Akhilesh Yadav decide karte hain kaunsa test kis patient ke liye appropriate hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-colonoscopy-preparation",
+    titleHi: "Ranchi Mein Colonoscopy Ki Preparation — Complete Guide | Dr. Akhilesh Yadav",
+    titleEn: "Colonoscopy Preparation Guide in Ranchi — Step-by-Step | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein colonoscopy preparation: Dr. Akhilesh Yadav — Orchid Medical Centre. Step-by-step bowel prep guide — kya khaayein, kya avoid karein, medicines aur timing.",
+    excerptEn: "Complete colonoscopy preparation guide for Ranchi patients by Dr. Akhilesh Yadav at Orchid Medical Centre. Diet, bowel prep, medications & what to expect.",
+    category: "procedures",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "📋",
+    tags: ["colonoscopy preparation ranchi", "bowel prep ranchi", "colonoscopy diet ranchi", "colonoscopy guide ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Colonoscopy Preparation Guide Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Complete colonoscopy preparation guide for Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Diet, bowel prep solution, medication guide & what to expect.",
+    sections: [
+      {
+        heading: "Colonoscopy Preparation — Kyun Itna Important Hai",
+        type: "text",
+        content: "Colonoscopy ki success 50% preparation par depend karti hai — baaki 50% endoscopist pe. Agar colon properly clean nahi hua toh: polyps miss ho sakte hain (even >1cm polyps!), procedure longer hoti hai, repeat colonoscopy karni pad sakti hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein kehte hain: 'Main preparation ko utna hi important maanta hoon jitna procedure ko.' Yeh guide Ranchi ke patients ke liye hai jo Orchid Medical Centre mein colonoscopy karwa rahe hain.",
+      },
+      {
+        heading: "2 Din Pehle Se Preparation Shuru — Diet Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein colonoscopy diet instructions clearly dete hain: 2-3 din pehle: high-fiber foods avoid karein — seeds, nuts, whole grains, raw vegetables, fruits with seeds (angoor, strawberry). White rice, white bread, eggs, chicken — theek hain. 1 din pehle: Clear liquid diet sirf: Plain paani. Coconut water (nariyal paani). Nimbu paani (nimbu + paani + sugar — bina pulp). Clear soup (broth — vegetables ya chicken, strain karein). Black chai ya coffee (bina doodh). Avoid karein: doodh, dahi, solid food. Red/purple colored drinks bilkul avoid — colon lining se confuse ho sakta hai.",
+      },
+      {
+        heading: "Bowel Preparation Solution — PEG Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein PEG (Polyethylene Glycol) solution bowel prep recommend karte hain. Split-dose schedule (most commonly): Evening before: 2 litre PEG over 2-3 ghante (5 PM–8 PM). Morning of procedure: 1-2 litre PEG over 1-2 ghante (minimum 4 ghante before procedure time). How to make it tolerable: Chill the solution — refrigerate. Drink with a straw. Small sips, not large gulps — 240ml har 15 min. Clear liquid (paani ya coconut water) baad mein peeyein. Menthol sugar-free candy — taste reduce karta hai. Effects: 1-2 ghante ke baad loose motions shuru — normal. Raat bhar bathroom trips — yeh normal hai, matlab colon clean ho rahi hai.",
+      },
+      {
+        heading: "Medications — Kya Lein, Kya Bandh Karein",
+        type: "list",
+        content: "Colonoscopy se pehle medications ke baare mein Dr. Akhilesh Yadav ka guide:",
+        list: [
+          "Blood pressure medications: sahi waqt par paani ke ghoomt ke saath — continue",
+          "Diabetes medications: doctor se confirm — typically insulin dose adjust, oral meds hold",
+          "Blood thinners (warfarin, clopidogrel): 5-7 din pehle bandh — cardiac risk assess karke",
+          "Aspirin: chhote polyps ke liye continue ho sakta — Dr. Akhilesh Yadav specific instructions dete hain",
+          "Iron supplements: 1 hafte pehle bandh — colon mein daag jaisi appearance aati hai",
+          "NSAIDs: colonoscopy ke din hold",
+          "Diabetes: morning dose hold on procedure day — last consultation mein confirm",
+        ],
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Colonoscopy Prep",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Colonoscopy preparation mein jo cheez patients ko sabse zyada pareshan karti hai woh hai PEG solution aur raat bhar bathroom jana. Main patients ko clearly kehta hoon — yeh ek raat ki takleef hai, badle mein aap colon cancer prevention ka highest standard paate hain. Prep ka quality = colonoscopy ka quality. Ranchi ke patients — preparation seriously lein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Colonoscopy preparation ke liye Orchid Medical Centre se written instructions zaroor lein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Agar bowel prep ke baad stool clear nahi hua toh kya karein?",
+        a: "Agar 4 ghante baad bhi unclear/brown stool aa raha hai — Dr. Akhilesh Yadav se contact karein (+91 74919 25047). Possible additional prep ya procedure reschedule. Brown murky stool means colon not clean enough — polyps miss ho sakte hain.",
+      },
+      {
+        q: "Kya PEG solution peena zaroori hai ya koi alternative hai?",
+        a: "PEG most effective aur commonly used hai. Alternatives: low-volume prep (2L PEG + bisacodyl). Sodium Picosulfate-based (Picolax). These are prescribed — patient cannot choose on own. Dr. Akhilesh Yadav Ranchi mein appropriate prep recommend karte hain based on patient factors.",
+      },
+      {
+        q: "Diabetes hai — colonoscopy prep mein extra care kya?",
+        a: "Clear liquid mein sugar-containing drinks careful — glucose spike. Coconut water aur plain water safer. Oral diabetes medications hold on prep day. Insulin dose — doctor se adjust karwayein. Blood sugar monitor karte rahein. Dr. Akhilesh Yadav Ranchi mein diabetic patients ko specific prep instructions dete hain.",
+      },
+      {
+        q: "Colonoscopy ke kitni der baad normal khaana kha sakte hain?",
+        a: "Procedure ke baad: liquid diet se start. 2-4 ghante: light meal (khichdi, chhachh, toast). Same day: normal light diet. Polypectomy ke baad: 24-48 ghante bland diet. Heavy meals aur alcohol: 1 din wait. Dr. Akhilesh Yadav discharge ke waqt post-procedure diet instructions dete hain.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
