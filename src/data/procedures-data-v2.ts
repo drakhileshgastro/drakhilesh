@@ -800,6 +800,153 @@ export const PROCEDURES_DATA_V2: Record<string, ProcedureDataV2> = {
     doctorAdvice: "For patients with liver cirrhosis, a ruptured vein in the stomach can lead to rapid, life-threatening blood loss. Endoscopic glue injection is a vital tool that stops bleeding instantly and keeps patients safe.",
     relatedConditions: ["liver-cirrhosis", "jaundice"],
     relatedBlogs: ["jaundice-symptoms-causes", "endoscopy-kya-hota-hai"]
+  },
+  fibroscan: {
+    slug: "fibroscan",
+    title: "FibroScan (Liver Elastography)",
+    hindiTitle: "फाइब्रोस्कैन — लिवर फाइब्रोसिस जांच",
+    metaTitle: "FibroScan Liver Test in Ranchi | Dr. Akhilesh Yadav — Orchid Medical Centre",
+    metaDescription: "Get painless FibroScan liver stiffness test in Ranchi at Orchid Medical Centre. Expert assessment of liver fibrosis, fatty liver, cirrhosis, and hepatitis damage. No biopsy needed. Book today.",
+    simpleExplanation: "फाइब्रोस्कैन (FibroScan) एक दर्दरहित, अल्ट्रासाउंड-आधारित जांच है जो लिवर की कठोरता (stiffness) और फैट की मात्रा को बिना किसी चीरे या इंजेक्शन के मापती है। इसे 'ट्रांजिएंट इलास्टोग्राफी' भी कहते हैं। यह जांच सिर्फ 5-10 मिनट में होती है और डॉक्टर को बताती है कि लिवर में फाइब्रोसिस (निशान) और फैट किस स्तर पर है। FibroScan की रीडिंग से डॉ. अखिलेश यादव यह जान पाते हैं कि मरीज का फैटी लिवर, हेपेटाइटिस बी/सी, या लिवर सिरोसिस कितना गंभीर है — बिना लिवर बायोप्सी के।",
+    summaryPurpose: "लिवर में फाइब्रोसिस (scarring) और फैट की मात्रा को मापना, लिवर सिरोसिस की गंभीरता जानना, हेपेटाइटिस और फैटी लिवर का मूल्यांकन करना।",
+    summaryDuration: "5 - 10 Minutes",
+    summaryAnaesthesia: "None — completely painless, no sedation required (कोई सुन्न या नींद की दवा नहीं)",
+    summaryHospitalStay: "OPD procedure — walk in, walk out within 30 minutes",
+    summaryRecovery: "Instant — no recovery time needed. Resume all activities immediately.",
+    summaryOperator: "Dr. Akhilesh Yadav, DM Gastroenterology",
+    neededSymptoms: [
+      "Diagnosed fatty liver disease — to track progression or improvement",
+      "Hepatitis B or C infection — to assess liver damage without biopsy",
+      "Elevated liver enzymes (SGOT, SGPT, ALP) on blood tests",
+      "Known or suspected liver cirrhosis — to grade severity (F0 to F4)",
+      "Alcohol-related liver disease monitoring",
+      "Before and after treatment response in chronic liver disease"
+    ],
+    doctorRecommendation: "Dr. Akhilesh Yadav recommends FibroScan for all patients with chronic liver disease because it provides an objective, reproducible measure of liver stiffness without the risks or discomfort of a liver biopsy. It is especially valuable for tracking whether fatty liver or hepatitis is progressing or responding to treatment.",
+    preparationFasting: "Fasting required for 2 hours before the test. A light meal 2-3 hours earlier is fine — avoid heavy meals.",
+    preparationDiet: "Avoid a heavy, fatty meal on the day of the test. Light breakfast or a small snack 2+ hours before is acceptable.",
+    preparationMedicines: "No specific medication changes. Continue all regular medicines as prescribed.",
+    preparationDocuments: "Bring previous liver ultrasound reports, LFT blood tests, hepatitis B/C reports, and fibroscan results if any previous scans were done.",
+    preparationCompanion: "No companion required — no sedation is given. You can drive yourself home.",
+    steps: [
+      { phase: "Positioning", desc: "You lie on your back on the examination table with your right arm raised above your head to expose the right side of your abdomen." },
+      { phase: "Probe Placement", desc: "Dr. Yadav places the FibroScan probe (similar to an ultrasound probe) on the skin over the liver area. A small amount of gel is applied." },
+      { phase: "Vibration Measurement", desc: "The probe sends a mild vibration pulse into the liver. The speed at which the wave travels through the liver is measured — a stiffer liver (more fibrosis) transmits vibrations faster." },
+      { phase: "CAP Score", desc: "Simultaneously, the device measures the Controlled Attenuation Parameter (CAP) — a score reflecting the amount of fat in the liver. Both readings are displayed immediately on screen." }
+    ],
+    recoveryExpectations: "There is absolutely no recovery time needed. The procedure causes no discomfort — most patients describe it as similar to an ultrasound.",
+    recoveryReturnHome: "You can leave the clinic immediately after the test. No waiting period required.",
+    recoveryDiet: "No dietary restrictions after the test. Resume normal meals immediately.",
+    recoveryActivity: "Resume all activities immediately — work, driving, and exercise. No restrictions.",
+    recoveryWarningSigns: [
+      "No specific warning signs — FibroScan is non-invasive and carries no risks",
+      "Contact clinic if you have any questions about interpreting your result"
+    ],
+    safetyRisks: "FibroScan (Transient Elastography) is completely non-invasive and carries zero procedural risks. No radiation, no needles, no sedation. It is safe for pregnant women, patients on blood thinners, and elderly patients.",
+    safetyBenefits: [
+      "Zero pain, zero risk — a completely non-invasive outpatient test completed in 10 minutes.",
+      "Eliminates the need for liver biopsy in most patients with chronic liver disease.",
+      "Provides instant, reproducible liver stiffness values (kPa) and fat content (CAP dB/m).",
+      "Serial scans track treatment response over time objectively."
+    ],
+    safetySuccessRate: "Valid FibroScan results are obtained in 95%+ of patients. Obesity can occasionally reduce signal quality — Dr. Yadav uses the appropriate probe size.",
+    safetyMonitoring: "No monitoring required — no anaesthesia or invasive elements are involved.",
+    faqs: [
+      {
+        q: "क्या FibroScan दर्दनाक होती है?",
+        a: "नहीं, FibroScan पूरी तरह दर्दरहित (painless) और बिना सुई या चीरे वाली जांच है। यह अल्ट्रासाउंड की तरह होती है और 5-10 मिनट में पूरी हो जाती है।"
+      },
+      {
+        q: "FibroScan और लिवर बायोप्सी में क्या अंतर है?",
+        a: "लिवर बायोप्सी में सुई से लिवर का एक छोटा टुकड़ा निकाला जाता है जो थोड़ा दर्दनाक होता है और अस्पताल में कुछ घंटे रुकना पड़ता है। FibroScan बिल्कुल दर्दरहित है और 10 मिनट में OPD में हो जाती है। 85-90% मामलों में FibroScan बायोप्सी की जरूरत खत्म कर देती है।"
+      },
+      {
+        q: "FibroScan score का क्या मतलब है?",
+        a: "FibroScan result दो संख्याओं में आता है: 1) Liver Stiffness (kPa) — जितना ज्यादा kPa, उतना ज्यादा फाइब्रोसिस। F0-F1 (normal to mild), F2-F3 (significant fibrosis), F4 (cirrhosis)। 2) CAP Score (dB/m) — लिवर में फैट की मात्रा। S1 (mild steatosis), S2 (moderate), S3 (severe)। डॉ. अखिलेश यादव आपको पूरी रिपोर्ट समझाएंगे।"
+      },
+      {
+        q: "क्या रांची में FibroScan उपलब्ध है?",
+        a: "हाँ। FibroScan जांच ऑर्किड मेडिकल सेंटर, HB रोड, रांची में उपलब्ध है। डॉ. अखिलेश यादव द्वारा परीक्षण किया जाता है। अपॉइंटमेंट के लिए +91-74919-25047 पर कॉल या WhatsApp करें।"
+      }
+    ],
+    doctorAdvice: "Fatty liver is now the most common liver disease in Jharkhand. Most patients don't know whether their fatty liver is grade 1 (harmless) or grade 4 (cirrhosis). FibroScan gives us a precise, objective number in 10 minutes — allowing us to make the right treatment decision without putting patients through a biopsy.",
+    relatedConditions: ["fatty-liver", "liver-cirrhosis", "jaundice"],
+    relatedBlogs: ["fatty-liver-treatment-ranchi-hindi", "liver-cirrhosis-stages-treatment-india"]
+  },
+  "liver-biopsy": {
+    slug: "liver-biopsy",
+    title: "Liver Biopsy",
+    hindiTitle: "लिवर बायोप्सी (जांच के लिए लिवर का टुकड़ा)",
+    metaTitle: "Liver Biopsy in Ranchi | Dr. Akhilesh Yadav — Orchid Medical Centre",
+    metaDescription: "Expert liver biopsy procedure in Ranchi at Orchid Medical Centre. Accurate diagnosis of cirrhosis, autoimmune hepatitis, and unexplained liver disease. Performed by Dr. Akhilesh Yadav (DM Gastroenterology). Book today.",
+    simpleExplanation: "लिवर बायोप्सी (Liver Biopsy) एक जांच है जिसमें एक पतली सुई की मदद से लिवर का एक बहुत छोटा टुकड़ा (tissue sample) निकाला जाता है और माइक्रोस्कोप के नीचे जांचा जाता है। यह जांच तब की जाती है जब खून की जांच, अल्ट्रासाउंड या FibroScan से लिवर की बीमारी का सटीक कारण पता नहीं चल पाता। लिवर बायोप्सी से ऑटोइम्यून हेपेटाइटिस, दवाओं से होने वाली लिवर बीमारी (DILI), और हेपेटाइटिस बी/सी के इलाज के प्रभाव का पता लगाया जाता है। यह जांच अल्ट्रासाउंड-गाइडेड होती है और डॉ. अखिलेश यादव इसे हल्के सेडेशन के साथ करते हैं।",
+    summaryPurpose: "लिवर के टिशू की माइक्रोस्कोपिक जांच करना, फाइब्रोसिस की मात्रा, सूजन का प्रकार और लिवर बीमारी का सटीक कारण जानना।",
+    summaryDuration: "15 - 20 Minutes (procedure); 4-6 hours observation post-procedure",
+    summaryAnaesthesia: "Local anaesthesia + light IV sedation (हल्की सुन्न और नींद की दवा)",
+    summaryHospitalStay: "Daycare — 4 to 6 hours observation, same-day discharge in most cases",
+    summaryRecovery: "Rest for 24 hours after the procedure. Avoid strenuous activity for 1 week.",
+    summaryOperator: "Dr. Akhilesh Yadav, DM Gastroenterology",
+    neededSymptoms: [
+      "Unexplained liver disease when FibroScan and blood tests are inconclusive",
+      "Suspected autoimmune hepatitis — where biopsy defines treatment",
+      "Monitoring treatment response in hepatitis B or C",
+      "Suspected drug-induced liver injury (DILI)",
+      "Pre-transplant liver assessment or Wilson's disease workup",
+      "Unexplained portal hypertension"
+    ],
+    doctorRecommendation: "Dr. Akhilesh Yadav reserves liver biopsy for situations where non-invasive tests cannot provide the diagnosis needed to guide treatment. With FibroScan and advanced blood markers, biopsy is now needed far less often — but when it is required, it provides definitive tissue-level diagnosis that changes treatment decisions.",
+    preparationFasting: "Fasting required for 6 to 8 hours before the procedure. Do not eat or drink anything after midnight if the biopsy is scheduled in the morning.",
+    preparationDiet: "Light meal the night before. Avoid spicy or heavy food. Do not drink alcohol for at least 48 hours before the procedure.",
+    preparationMedicines: "CRITICAL: Stop blood thinners (Aspirin, Clopidogrel, Warfarin) 5-7 days in advance. Stop NSAIDs (Ibuprofen, Diclofenac) 3 days before. Inform Dr. Yadav about all medications, including herbal supplements.",
+    preparationDocuments: "Bring: blood test reports (CBC, PT/INR, LFT, KFT), ultrasound reports, hepatitis B/C reports, FibroScan result, current prescription list, and a government ID.",
+    preparationCompanion: "Mandatory — you must bring a family member or companion to assist with transport home. You will not be allowed to drive for 24 hours.",
+    steps: [
+      { phase: "Pre-Biopsy Blood Tests", desc: "Platelet count and PT/INR are checked to ensure clotting is safe. A platelet count > 60,000 and INR < 1.5 are typically required." },
+      { phase: "Ultrasound Marking", desc: "Dr. Yadav performs a bedside ultrasound to identify the ideal liver entry point — typically in the right lower rib area — and marks the site." },
+      { phase: "Local Anaesthesia", desc: "The skin and tissue over the marked site are numbed with local anaesthesia (lidocaine). You may feel a brief sting, then numbness." },
+      { phase: "Biopsy Needle Pass", desc: "Using ultrasound guidance, a special biopsy needle is passed into the liver in a single, rapid motion (< 1 second) to collect a thin liver tissue core. You will be asked to hold your breath momentarily." },
+      { phase: "Observation", desc: "You rest under monitoring for 4-6 hours. Pulse, blood pressure, and pain are checked regularly. A post-procedure ultrasound confirms there is no internal bleeding." }
+    ],
+    recoveryExpectations: "Most patients feel a mild ache or pressure at the biopsy site for a few hours. Serious pain, significant bleeding, or fever are uncommon but require immediate medical attention.",
+    recoveryReturnHome: "Discharge typically in 4-6 hours once vitals are stable and post-procedure ultrasound is clear. Rest at home for the remainder of the day.",
+    recoveryDiet: "Resume light diet (khichdi, dal, rice) in the evening. Normal diet from the next day. Avoid alcohol for 1 week.",
+    recoveryActivity: "Complete rest for 24 hours. Avoid heavy lifting, vigorous exercise, and driving for 7 days.",
+    recoveryWarningSigns: [
+      "Severe, worsening abdominal or shoulder pain after returning home",
+      "Rapid heartbeat, dizziness, or fainting — possible internal bleeding",
+      "High fever (above 38.5°C) within 48 hours",
+      "Heavy bleeding or discharge from the biopsy site"
+    ],
+    safetyRisks: "Liver biopsy is a safe, well-established procedure when performed by an experienced gastroenterologist. Serious complications (major bleeding, infection) occur in less than 1 in 500 procedures. Dr. Yadav uses ultrasound guidance to minimise risk.",
+    safetyBenefits: [
+      "Gold-standard tissue diagnosis — reveals exact type, grade, and stage of liver disease.",
+      "Guides treatment decisions that cannot be made with non-invasive tests alone.",
+      "Ultrasound guidance significantly reduces complication risk.",
+      "Definitively diagnoses autoimmune hepatitis, saving patients from years of uncertain treatment."
+    ],
+    safetySuccessRate: "Diagnostic-quality tissue is obtained in over 95% of biopsies performed by an experienced hepatologist.",
+    safetyMonitoring: "Continuous pulse oximetry and blood pressure monitoring during and for 4-6 hours after the procedure. A post-procedure ultrasound is performed before discharge.",
+    faqs: [
+      {
+        q: "क्या लिवर बायोप्सी बहुत दर्दनाक है?",
+        a: "नहीं। लोकल एनेस्थीसिया (सुन्न करने की दवा) और हल्के सेडेशन के कारण प्रक्रिया के दौरान दर्द बहुत कम होता है। बाद में कुछ घंटों के लिए हल्की तकलीफ हो सकती है जो पेनकिलर से ठीक हो जाती है।"
+      },
+      {
+        q: "क्या FibroScan करने के बाद भी लिवर बायोप्सी की जरूरत होती है?",
+        a: "अधिकतर मामलों में नहीं। FibroScan 85-90% मामलों में लिवर बायोप्सी की जरूरत खत्म कर देती है। लेकिन कुछ विशेष बीमारियों जैसे ऑटोइम्यून हेपेटाइटिस या Wilson's disease में बायोप्सी ही एकमात्र निश्चित जांच है।"
+      },
+      {
+        q: "लिवर बायोप्सी रिपोर्ट कितने दिनों में आती है?",
+        a: "हिस्टोपैथोलॉजी रिपोर्ट आने में 5-7 कार्यदिवस (working days) लगते हैं। रिपोर्ट मिलने के बाद डॉ. अखिलेश यादव आपको सारी जानकारी समझाएंगे।"
+      },
+      {
+        q: "क्या रांची में लिवर बायोप्सी उपलब्ध है?",
+        a: "हाँ। लिवर बायोप्सी ऑर्किड मेडिकल सेंटर, HB रोड, रांची में उपलब्ध है। डॉ. अखिलेश यादव अल्ट्रासाउंड-गाइडेड लिवर बायोप्सी झारखंड में बेहद कम रिस्क के साथ करते हैं।"
+      }
+    ],
+    doctorAdvice: "We always try to avoid liver biopsy when non-invasive tests like FibroScan and blood markers can give us the answer. But for autoimmune liver diseases, certain treatment decisions, and pre-transplant workups, biopsy provides information that no other test can. When we do perform it, ultrasound guidance and careful patient selection make it very safe.",
+    relatedConditions: ["liver-cirrhosis", "jaundice", "fatty-liver"],
+    relatedBlogs: ["liver-cirrhosis-stages-treatment-india", "jaundice-symptoms-causes"]
   }
 };
 
