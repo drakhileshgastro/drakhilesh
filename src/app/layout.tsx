@@ -31,9 +31,9 @@ const mukta = Mukta({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Akhilesh Yadav — Best Gastroenterologist in Ranchi | Liver & Stomach Specialist",
+  title: "Dr. Akhilesh Yadav — DM Gastroenterologist in Ranchi | Liver & Stomach Specialist",
   description:
-    "Dr. Akhilesh Yadav is a leading Gastroenterologist & Hepatologist at Orchid Medical Centre, Ranchi. Expert treatment for liver disease, fatty liver, jaundice, endoscopy & all digestive conditions. Serving patients from Jharkhand, Bihar & Chhattisgarh.",
+    "Dr. Akhilesh Yadav is a DM Gastroenterologist & Hepatologist at Orchid Medical Centre, Ranchi. Expert care for liver disease, fatty liver, jaundice, endoscopy & all digestive conditions. Serving patients from Jharkhand, Bihar & Chhattisgarh.",
   keywords: [
     "gastroenterologist in Ranchi",
     "best gastroenterologist in Ranchi",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://drakhileshgastro.com",
     siteName: "Dr. Akhilesh Yadav — Gastroenterologist Ranchi",
-    title: "Best Gastroenterologist in Ranchi | Dr. Akhilesh Yadav",
+    title: "DM Gastroenterologist in Ranchi | Dr. Akhilesh Yadav",
     description: "Expert Gastroenterology & Hepatology care at Orchid Medical Centre, Ranchi. Book appointment online.",
   },
   twitter: {
@@ -93,6 +93,16 @@ const GLOBAL_SCHEMA = {
       telephone: "+919031669888",
       medicalSpecialty: ["Gastroenterology", "Hepatology"],
       knowsLanguage: ["hi", "en"],
+      hasCredential: [
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "MBBS" },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "MD (Internal Medicine)" },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "DM (Gastroenterology)" },
+      ],
+      knowsAbout: [
+        "Gastroenterology", "Hepatology", "Endoscopy", "Colonoscopy", "ERCP", "EUS",
+        "Fatty Liver", "Liver Cirrhosis", "Inflammatory Bowel Disease", "Pancreatitis",
+        "GERD", "IBS", "Jaundice", "H. pylori", "Peptic Ulcer", "Colon Polyps"
+      ],
       alumniOf: [{ "@type": "CollegeOrUniversity", name: "DM Gastroenterology — Medical University of India" }],
       memberOf: [
         { "@type": "MedicalOrganization", name: "Indian Medical Association (IMA)" },
@@ -128,6 +138,9 @@ const GLOBAL_SCHEMA = {
       sameAs: [
         "https://www.facebook.com/drakhileshgastro",
         "https://www.instagram.com/drakhileshgastro",
+        "https://www.youtube.com/@drakhileshgastro",
+        "https://www.linkedin.com/in/drakhileshyadav",
+        "https://maps.google.com/?q=Orchid+Medical+Centre+HB+Road+Ranchi",
       ],
       aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "200", bestRating: "5" },
     },

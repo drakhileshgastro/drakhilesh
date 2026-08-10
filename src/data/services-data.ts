@@ -692,7 +692,7 @@ export const ALL_SERVICES: ServiceData[] = [
     targetKeyword: "peptic ulcer treatment Ranchi",
     emoji: "🩺",
     color: "teal",
-    introEn: "Peptic ulcer disease involves painful sores or ulcers that develop in the lining of the stomach (gastric ulcers) or the first part of the small intestine (duodenal ulcers). The primary causes are infection with H. pylori bacteria and long-term use of NSAID pain relievers. Dr. Akhilesh Yadav provides comprehensive diagnostic endoscopy, H. pylori eradication therapy, and lifestyle modification counseling to cure peptic ulcers permanently.",
+    introEn: "Peptic ulcer disease involves painful sores or ulcers that develop in the lining of the stomach (gastric ulcers) or the first part of the small intestine (duodenal ulcers). The primary causes are infection with H. pylori bacteria and long-term use of NSAID pain relievers. Dr. Akhilesh Yadav provides comprehensive diagnostic endoscopy, H. pylori eradication therapy, and lifestyle modification counseling to treat and manage peptic ulcers effectively.",
     introHi: "पेप्टिक अल्सर पेट (gastric) या छोटी आंत के ऊपरी भाग (duodenum) में होने वाले घाव या छाले होते हैं। यह अत्यधिक एसिड, H. pylori बैक्टीरिया के संक्रमण या दर्द निवारक दवाओं (painkillers) के अधिक इस्तेमाल से होता है। डॉ. अखिलेश यादव एंडोस्कोपी द्वारा इसका सटीक निदान और इलाज करते हैं।",
     symptoms: [
       "पेट के ऊपरी हिस्से में तेज जलन या दर्द",

@@ -58,7 +58,7 @@ const reviews = [
 const trustBadges = [
   { icon: GraduationCap, label: "DM Gastroenterology", sub: "Super-specialist" },
   { icon: Star, label: "4.9 / 5.0 Rating", sub: "Google Trusted" },
-  { icon: Users, label: "4,000+ Patients", sub: "Successfully Treated" },
+  { icon: Users, label: "4,000+ Consultations", sub: "Across Ranchi & Jharkhand" },
   { icon: Heart, label: "Hindi Consultation", sub: "Clear & Empathetic" },
 ];
 
