@@ -321,7 +321,7 @@ export const BLOG_POSTS: BlogPost[] = [
     titleHi: "रांची में बिना दर्द के एंडोस्कोपी (Painless Endoscopy) — पूरी जानकारी और खर्च",
     titleEn: "Painless Endoscopy in Ranchi — Procedure, Anesthesia, & Cost",
     excerptHi: "एंडोस्कोपी के नाम से डर लगता है? जानिए कैसे conscious sedation (हल्की बेहोशी) से एंडोस्कोपी पूरी तरह दर्दरहित और आसान होती है।",
-    excerptEn: "Learn how conscious sedation makes upper GI endoscopy 100% painless and comfortable at Orchid Medical Centre, Ranchi, along with price estimates.",
+    excerptEn: "Learn how conscious sedation makes upper GI endoscopy comfortable and well-tolerated at Orchid Medical Centre, Ranchi, along with price estimates.",
     category: "Diagnostics",
     readTimeMins: 6,
     publishedAt: "July 18, 2026",
@@ -454,7 +454,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "gerd-acid-reflux-cure-ranchi",
     image: "/images/gerd-reflux-blog.png",
     titleHi: "एसिडिटी और सीने में जलन से हमेशा के लिए छुटकारा कैसे पाएं?",
-    titleEn: "How to Cure GERD & Acid Reflux Permanently",
+    titleEn: "How to Control GERD & Acid Reflux Long-Term — Treatment & Lifestyle Guide",
     excerptHi: "क्या आप हर दिन गैस/एसिडिटी की दवा (Pantocid/Omez) खाते हैं? जानिए इसे हमेशा के लिए रोकने के सुरक्षित तरीके और लाइफस्टाइल नियम।",
     excerptEn: "Taper off daily antacids and heal chronic GERD/acid reflux with structural lifestyle changes and clinical guidance from Dr. Akhilesh Yadav.",
     category: "Stomach Care",
@@ -542,7 +542,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "chronic-constipation-cure-indian-diet",
     image: "/images/constipation-diet-blog.png",
     titleHi: "पुरानी कब्ज से हमेशा के लिए छुटकारा कैसे पाएं? सही डाइट और लाइफस्टाइल",
-    titleEn: "How to Cure Chronic Constipation Permanently — Indian Diet & Exercises",
+    titleEn: "How to Relieve Chronic Constipation — Indian Diet & Exercise Guide",
     excerptHi: "क्या आप पुरानी कब्ज (Constipation) से परेशान हैं और हर दिन चूर्ण या जुलाब लेते हैं? जानिए इसे हमेशा के लिए ठीक करने के सुरक्षित तरीके और सही डाइट प्लान।",
     excerptEn: "Learn the structural approach to curing chronic constipation permanently using high-fiber Indian foods, proper hydration, and healthy bowel habits.",
     category: "Stomach Care",
@@ -2221,7 +2221,962 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+
+  // === BATCH 1: Cluster 0 — Local Doctor Ranchi ===
+  {
+    slug: "gastroenterologist-in-ranchi",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
+    titleHi: "रांची में गैस्ट्रोएंटेरोलॉजिस्ट — Dr. Akhilesh Yadav से कब मिलना चाहिए?",
+    titleEn: "Gastroenterologist in Ranchi — When to See Dr. Akhilesh Yadav",
+    excerptHi: "पेट, लिवर और आँतों की किसी भी बीमारी के लिए Ranchi में DM Gastroenterologist से कब और क्यों मिलना चाहिए — Dr. Akhilesh Yadav, Orchid Medical Centre।",
+    excerptEn: "When do you need a gastroenterologist in Ranchi? Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre, explains which symptoms must not be ignored.",
+    category: "Local SEO",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["Gastroenterologist", "Ranchi", "Stomach Doctor", "Local", "Hindi"],
+    metaTitle: "Gastroenterologist in Ranchi | Dr. Akhilesh Yadav Orchid Medical",
+    metaDescription: "Gastroenterologist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterology, Orchid Medical Centre, HB Road. Expert digestive care. Call: +91 74919 25047",
+    sections: [
+      {
+        type: "text",
+        content: "Ranchi ke Bariatu area ke rehne wale 52-saal ke Ramesh Prasad ji pichhle 4 mahine se pet mein discomfort, gas aur bhookh na lagne ki takleef uthate rahe. Local doctor ne antacids diye — thodi der acha lagta, phir wahi haal. Jab unki beti ne Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology specialist — se appointment dilwayi, toh pehli hi visit mein endoscopy mein H. Pylori infection ke saath Grade 2 gastritis diagnose hua. Sirf 2 hafte ke sahi treatment ke baad unka condition dramatically improve hua. 'Kash main pehle hi aa jaata' — yeh baat Ranchi ke hazaron patients ke mann mein hoti hai. Agar aap bhi 4+ hafte se pet ki koi bhi problem uthaa rahe hain, toh yeh guide aapke liye hai.",
+      },
+      {
+        heading: "Gastroenterologist Kaun Hota Hai?",
+        type: "text",
+        content: "Gastroenterologist yaani pet, liver, aanton, pancreas (अग्न्याशय) aur biliary system ka visheshagya doctor. Dr. Akhilesh Yadav — MBBS, MD (Internal Medicine), DM Gastroenterology — Jharkhand ke senior DM Gastroenterologists mein se hain jo Orchid Medical Centre, HB Road, Ranchi mein practice karte hain. DM Gastroenterology degree MBBS ke baad 8-10 saal ki additional training ke baad milti hai. Yeh sirf digestive tract ki bimariyon ke expert hote hain — general physician se zyada specialised hote hain. Ranchi aur poori Jharkhand ke patients [gastroenterologist Ranchi mein](/blog/best-gastroenterologist-ranchi) dhundhte hain toh Orchid Medical Centre sabse reliable choice hai. [Conditions ki poori list dekhein](/conditions) ya [procedures ke baare mein jaanein](/procedures).",
+      },
+      {
+        heading: "🔴 Kab Turant Gastroenterologist se Milein?",
+        type: "list",
+        content: "Yeh symptoms ignore mat karein — ek hafte ke andar specialist se milein:",
+        list: [
+          "Khoon ki ulti (hematemesis — खून की उल्टी) ya mala mein khoon — GI bleeding ka sign, turant jayein",
+          "Aankhon ya skin ka peela hona (Jaundice — पीलिया) — liver problem ka sign",
+          "Achanak 5+ kg wajan kam hona bina kisi obvious karan ke",
+          "Pura pet phula hua rehna (Ascites — पेट में पानी) ya bahut tight feel hona",
+          "Nigalne mein takleef (Dysphagia — खाना निगलने में दिक्कत) ya khaana atkna",
+          "Persistent ulti jo 2-3 din mein theek na ho",
+          "Pet mein achanak bahut tej dard — emergency room jayein",
+        ],
+      },
+      {
+        heading: "🟡 Kab 1-2 Hafte mein Appointment Lein?",
+        type: "list",
+        content: "Yeh symptoms bhi doctor se zaroori hain — ignore nahi karna:",
+        list: [
+          "4 hafte se zyada bani reh rahi acidity ya seene mein jalan (GERD)",
+          "Kabj ya diarrhea jo baar baar aata ho (2+ months)",
+          "Khane ke baad hamesha bloating ya gas ki problem",
+          "Liver tests mein SGPT/SGOT high aana — liver enzymes badhna",
+          "Ultrasound mein 'fatty liver' ya 'enlarged liver' mention hona",
+          "Hepatitis B/C positive test result — ek hafte mein milein",
+          "Piles (bawasir — बवासीर) mein khoon aana jo 1 hafte mein na ruke",
+        ],
+      },
+      {
+        heading: "Ranchi mein Gastroenterologist se Tests Kaise Hote Hain?",
+        type: "text",
+        content: "Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — sabse pehle comprehensive history lenge aur physical examination karenge. Zaroorat ke hisaab se blood tests (LFT, CBC, CRP, H. Pylori), Ultrasound abdomen, ya advanced tests recommend hote hain. Ranchi mein hi Upper GI Endoscopy (OGD Scopy), Colonoscopy, ERCP, aur EUS sab available hain — bade shahar jaane ki zaroorat nahi. WHO ke data ke mutaabik, India mein 40% se zyada GI cancers late stage mein diagnose hote hain kyunki log symptoms ignore karte hain. Early diagnosis se outcomes significantly better hote hain. [Endoscopy ke baare mein jaanein](/blog/endoscopy-kya-hota-hai) ya [painless colonoscopy Ranchi](/blog/painless-colonoscopy-ranchi-cost-preparation) padhen.",
+      },
+      {
+        heading: "Dr. Akhilesh Yadav — Ranchi ke Senior Gastroenterologist",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — MBBS, MD, DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein 10+ saal se hazaron patients ka ilaj kar rahe hain. Fatty liver, jaundice, endoscopy, ERCP, colonoscopy, liver cirrhosis, IBD — sab mein expert hain. Bokaro, Hazaribagh, Jamshedpur, Dhanbad aur Deoghar se bhi patients Ranchi aate hain unse milne ke liye. Jharkhand mein DM Gastroenterology trained doctors ki sankhya bahut kam hai — is liye Dr. Akhilesh Yadav ki seva poore region ke liye mahatvapurna hai. [Appointment book karein](/book) ya seedha call karein +91 74919 25047.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein bahut log stomach problems ko ghar par nuskhon se treat karte hain — kuch hafton tak theek lagta hai, phir wahi problem wapas aati hai. Agar aapko 4+ hafte se koi bhi digestive problem hai, toh ek baar specialist se milna zaroori hai. Early diagnosis mein cost bhi kam hoti hai aur result bhi better hota hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein Mon–Sat available hain.\n\nYeh article sirf educational purpose ke liye hai. Kisi bhi health problem ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Gastroenterologist Ranchi",
+        type: "text",
+        content: "Neeche kuch common sawaalon ke jawab hain jo Ranchi ke patients gastroenterologist ke baare mein aksar poochte hain:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Ranchi mein gastroenterologist ki fees kitni hoti hai?",
+        a: "Orchid Medical Centre mein Dr. Akhilesh Yadav ki consultation fees reasonable hai. Pehli consultation ke liye call karein: +91 74919 25047. Appointment prefer karein — walk-in bhi available hai lekin wait time zyada ho sakta hai.",
+      },
+      {
+        q: "Gastroenterologist aur general physician mein kya fark hai?",
+        a: "General physician sabhi bimariyon ka basic treatment karte hain. Gastroenterologist specifically pet, liver, pancreas aur aanton ke specialist hain — DM Gastroenterology ki degree mein 8+ saal ki advanced training hoti hai. Complex liver ya gut problems mein specialist se milna zaroori hai.",
+      },
+      {
+        q: "Kya Ranchi mein endoscopy hoti hai?",
+        a: "Haan — Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav OGD Scopy (Upper Endoscopy), Colonoscopy, ERCP aur EUS perform karte hain. Anesthesia ke saath procedure hoti hai, bahut kam discomfort hoti hai.",
+      },
+      {
+        q: "Kya appointment ke bina aa sakte hain?",
+        a: "Walk-in possible hai, lekin appointment lena better hai kyunki wait time kam hogi. Call karein: +91 74919 25047. Online appointment bhi milti hai.",
+      },
+      {
+        q: "Gastroenterologist se milne ke baad kitne time mein treatment shuru hoti hai?",
+        a: "Dr. Akhilesh Yadav same-day diagnosis karne ki koshish karte hain. Agar endoscopy ki zaroorat ho toh 1-3 din mein schedule hoti hai. Blood tests ki report usi din ya next day mil jaati hai. Emergency cases mein same-day treatment bhi possible hai.",
+      },
+      {
+        q: "Bokaro ya Hazaribagh se Ranchi kab aana chahiye?",
+        a: "Agar local doctor se 4-6 hafte mein improvement na ho, ya serious symptoms hon, toh Ranchi mein Dr. Akhilesh Yadav se milein. Orchid Medical Centre mein ek din mein consultation + tests + treatment sab ho sakti hai. Bokaro se sirf 90 km, Hazaribagh se bhi 90 km hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "stomach-specialist-ranchi",
+    image: "/images/stomach-specialist-ranchi-blog.png",
+    titleHi: "पेट के Specialist Doctor रांची — Dr. Akhilesh Yadav से मिलें",
+    titleEn: "Stomach Specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical",
+    excerptHi: "Ranchi mein pet ke specialist doctor — Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre. Pet, aant aur liver ki har bimari ka expert ilaj.",
+    excerptEn: "Stomach specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre, treats all digestive, liver and stomach conditions.",
+    category: "Local SEO",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🫃",
+    tags: ["Stomach Specialist", "Ranchi", "Pet ka Doctor", "Gastroenterologist", "Hindi"],
+    metaTitle: "Stomach Specialist Ranchi | Dr. Akhilesh Yadav Orchid Medical",
+    metaDescription: "Stomach specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterology, Orchid Medical Centre, HB Road. Expert digestive care for all stomach problems. +91 74919 25047",
+    sections: [
+      {
+        type: "text",
+        content: "Ranchi ke Kanke Road ki 38-saal ki Priya Devi pichhle chhe mahine se pet mein jalan, nausea aur khane ke baad discomfort se pareshan thi. Kai general doctors se antacids, digestive enzymes, vitamins le chuki thi — kuch dino ke liye acha lagta, phir wahi haal. Jab ek sahelion ne suggest kiya Orchid Medical Centre, Ranchi mein pet ke specialist doctor — Dr. Akhilesh Yadav, DM Gastroenterology — se milne ka, toh pehli hi consultation mein upper endoscopy se pata chala ki unhe GERD (Gastroesophageal Reflux Disease — आमाशय एसिड का वापस आना) ke saath mild esophagitis thi. Proper treatment se 6 hafte mein Priya ji ki condition normal ho gayi. 'Main socha tha yeh toh normal hai' — yeh ek bahut common galati hai jo Ranchi ke patients karte hain.",
+      },
+      {
+        heading: "Pet ka Specialist Doctor — Kya Treat Karte Hain?",
+        type: "text",
+        content: "Pet ke specialist doctor yaani Gastroenterologist poori digestive tract — esophagus (food pipe — भोजन नली) se le kar anus tak — ki bimariyon ka ilaj karte hain. Isme liver, pancreas (अग्न्याशय) aur gallbladder (पित्ताशय) bhi shamil hain. Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi — yeh sab conditions treat karte hain: Acidity/GERD, IBS, IBD (Crohn's, Ulcerative Colitis), Fatty Liver, Hepatitis B aur C, Liver Cirrhosis, Jaundice, Piles, aur Colon Cancer Screening. [Conditions ki poori list dekhein](/conditions) ya [procedures ke baare mein padhen](/procedures). Ranchi ke aas-paas Bokaro, Hazaribagh se bhi log unse milne aate hain.",
+      },
+      {
+        heading: "🔴 Yeh Symptoms Hain Toh Pet ka Specialist Zaroori Hai",
+        type: "list",
+        content: "Inhe ignore karna serious ho sakta hai:",
+        list: [
+          "Baar-baar acidity ya seene mein jalan jo antacid se control na ho (4+ hafte)",
+          "Mala mein khoon ya kaala pakhana (melaena — पुरानी GI bleeding ka sign)",
+          "Wajan jo bina koshish ke kam ho raha ho (unexplained weight loss)",
+          "Khane ke baad hamesha nausea (जी मिचलाना) ya ulti",
+          "Pura pet phula hua ya tight feel hona (Bloating/Distension)",
+          "Pairo ya aankhon mein peelaahat (Jaundice — पीलिया) — liver sign",
+          "Kabj ya diarrhea jo teen hafte se zyada chal raha ho",
+          "Pet mein gaanth ya kuch hard feel hona — turant milein",
+        ],
+      },
+      {
+        heading: "Pet ki Common Bimariyon ke Karan",
+        type: "list",
+        content: "Ranchi aur Jharkhand mein in kaaranon se zyada pet ki problems hoti hain:",
+        list: [
+          "Bahar ka khana — teekha, masaledar, processed food zyada khaana",
+          "Paani ki quality — contaminated water se H. Pylori aur Hepatitis A",
+          "Stress aur anxiety — IBS aur GERD ka sabse bada trigger",
+          "Alcohol ka sevan — fatty liver aur gastritis ka mukhya karan",
+          "NSAIDs ya painkillers ka lambe samay tak use — ulcer ka risk",
+          "Raat ka khana bahut late khaana aur so jaana — acid reflux badhta hai",
+        ],
+      },
+      {
+        heading: "Ranchi mein Pet ki Bimari ki Jach — Dr. Akhilesh Yadav",
+        type: "text",
+        content: "Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ek structured diagnostic approach follow karte hain. Pehle detailed history aur physical examination, phir zaroorat ke hisaab se tests: CBC, LFT, H. Pylori stool antigen test, Ultrasound abdomen. Complex cases mein Upper GI Endoscopy ya Colonoscopy hoti hai — Orchid Medical Centre mein hi available hai. AIIMS ke ek study ke mutaabik, India mein 60% se zyada peptic ulcer cases H. Pylori infection se hote hain — jo ek treatable infection hai. [Endoscopy ke baare mein jaanein](/blog/endoscopy-kya-hota-hai) ya [jaundice ke lakshan padhen](/blog/jaundice-symptoms-causes).",
+      },
+      {
+        heading: "Pet ki Bimariyon ka Ilaj — Dr. Akhilesh Yadav ka Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi — ka maanna hai ki har patient ka treatment personalized hona chahiye. Simple cases mein diet modification aur medications se kaam hota hai. Ranchi ke local food mein — litti-chokha, dal-bhat, dahi — ko gut-friendly banana bhi Dr. Akhilesh Yadav sikhate hain. Complex cases mein endoscopic procedures zaroori hote hain — ERCP se bile duct stone nikalna, colonoscopy se polyp remove karna — sab Orchid Medical Centre mein available hai. Regular follow-up se outcomes behtar hote hain. [ERCP procedure](/blog/ercp-procedure-cbd-stones-ranchi) ke baare mein padhen ya [appointment book karein](/book).",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Specialist Advice",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Pet ki bimariyon mein sabse badi galati hai — thoda theek laga toh doctor ke paas nahi gaye. Agar aapka symptom 3-4 hafte se chal raha hai, toh pet ke specialist se milna zaroori hai. Ranchi mein hi poori facilities available hain — Patna ya Delhi jaane ki zaroorat nahi.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein available hain.\n\nYeh article sirf educational purpose ke liye hai. Kisi bhi health problem ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Stomach Specialist Ranchi",
+        type: "text",
+        content: "Ranchi ke patients stomach specialist ke baare mein yeh sawaal aksar poochte hain:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Pet ke specialist aur general doctor mein kya antar hai?",
+        a: "General doctor sabhi bimariyon ka basic treatment karte hain. Pet ke specialist (Gastroenterologist) specifically digestive tract, liver aur pancreas ki bimariyon mein expert hote hain. DM Gastroenterology degree mein 3+ saal ki additional super-specialty training hoti hai. Complex stomach problems mein specialist se milein.",
+      },
+      {
+        q: "Ranchi mein stomach specialist kahan hain?",
+        a: "Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein practice karte hain. Appointment ke liye call karein: +91 74919 25047.",
+      },
+      {
+        q: "Pet ki jach mein endoscopy kab zaroor hoti hai?",
+        a: "4+ hafte ki acidity jo medications se control na ho, mala mein khoon, unintentional weight loss, ya swallowing problem mein endoscopy zaroori hoti hai. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav yeh procedure safely karte hain.",
+      },
+      {
+        q: "Kya diet se pet ki bimari theek ho sakti hai?",
+        a: "Mild cases mein diet modification se significant improvement hoti hai. Lekin chronic conditions — jaise GERD, IBD, H. Pylori — mein doctor ki guidance se treatment zaroori hai. Diet sirf ek component hai, pure treatment plan ka hissa.",
+      },
+      {
+        q: "Jharkhand ke chhote shehar se Ranchi kab aana chahiye?",
+        a: "Agar local doctor se 4-6 hafte mein improvement na ho, ya serious symptoms hon, toh Ranchi mein Dr. Akhilesh Yadav se milein. Orchid Medical Centre mein ek din mein consultation + tests + initial treatment sab ho sakti hai.",
+      },
+      {
+        q: "Stomach specialist ke paas jaane se pehle koi test karwana chahiye?",
+        a: "Agar aapke paas recent blood tests ya ultrasound reports hain toh laayein — time bachega. Agar nahi hain toh koi baat nahi — Dr. Akhilesh Yadav pehle examination karenge, phir zaroorat ke hisaab se tests recommend karenge.",
+      },
+    ],
+  },
+
+  {
+    slug: "stomach-doctor-ranchi",
+    image: "/images/stomach-doctor-ranchi-blog.png",
+    titleHi: "रांची के Stomach Doctor — कब और क्यों मिलें Dr. Akhilesh Yadav से",
+    titleEn: "Stomach Doctor in Ranchi — When to See Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein stomach doctor ki talaash? Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre mein pet, liver aur aanton ki bimariyon ka expert ilaj karte hain.",
+    excerptEn: "Find the right stomach doctor in Ranchi. Dr. Akhilesh Yadav, DM Gastroenterology at Orchid Medical Centre, HB Road — expert digestive care for all conditions.",
+    category: "Local SEO",
+    readTimeMins: 5,
+    publishedAt: "August 2026",
+    emoji: "🩺",
+    tags: ["Stomach Doctor", "Ranchi", "Pet ka Doctor", "Gastro", "Hindi", "Jharkhand"],
+    metaTitle: "Stomach Doctor Ranchi | Dr. Akhilesh Yadav Orchid Medical Centre",
+    metaDescription: "Stomach doctor in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterology, Orchid Medical Centre. Treatment for acidity, IBS, liver problems. Call: +91 74919 25047",
+    sections: [
+      {
+        type: "text",
+        content: "Ranchi ke Morabadi mohalle ke 55-saal ke Dinesh Kumar Verma 2 saal se intermittent pet dard mein antacids lete rahe. Local clinic ne kabhi antibiotic, kabhi antacid diya — koi permanent solution nahi mila. Phir ek din ulti mein thoda khoon nazar aaya. Turant unhe Orchid Medical Centre, Ranchi laya gaya. Dr. Akhilesh Yadav — DM Gastroenterology — ne same day endoscopy ki: ek bleeding peptic ulcer tha. Timely endoscopic treatment ne unhe major surgery se bachaya. 'Agar main pehle stomach doctor ke paas jaata, toh yeh naabat nahi aati' — yeh Dinesh ji ka message hai Ranchi ke saare patients ke liye.",
+      },
+      {
+        heading: "Stomach Doctor — Kya Treat Karte Hain?",
+        type: "text",
+        content: "Stomach doctor — yaani Gastroenterologist — pet se le kar poori digestive tract ka specialist hota hai. Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi — stomach ke saath liver, pancreas aur gallbladder ki bimariyon mein bhi expert hain. Sirf stomach pain nahi — acidity, ulcer, jaundice, fatty liver, hepatitis, piles — sab mein specialist training hai. Ranchi ke 10+ saal ke experience mein unhone hazaron patients ka ilaj kiya hai. [Gastroenterologist Ranchi mein](/blog/best-gastroenterologist-ranchi) se jude sawaalon ke liye yeh guide helpful hai. [Conditions ki poori list](/conditions) ya [procedures Ranchi](/procedures) dekhein.",
+      },
+      {
+        heading: "🚨 In Symptoms Mein Stomach Doctor Se Milna Zaroori Hai",
+        type: "list",
+        content: "Inhe kabhi ignore na karein:",
+        list: [
+          "Pet mein dard jo 2 hafte se zyada ho aur painkillers se na chhoothe",
+          "Khoon ki ulti (hematemesis — खून की उल्टी) — yeh emergency hai",
+          "Kale ya dark red rang ka mala — internal bleeding ka sign (melaena)",
+          "Jaundice — aankhon ya skin ka peela hona (Jaundice — पीलिया)",
+          "Achanak wajan ghat jaana bina kisi karan ke",
+          "Nigalne mein takleef ya khaana food pipe mein atkna (Dysphagia)",
+          "Chronic diarrhea jo 2 hafte se zyada ho",
+          "Alcohol pine ke baad bahut tej pet dard — pancreatitis ho sakta hai",
+        ],
+      },
+      {
+        heading: "Pet ki Problems ke Pramukh Karan",
+        type: "list",
+        content: "Ranchi aur aas-paas ke ilakon mein yeh karan zyada common hain:",
+        list: [
+          "H. Pylori bacteria — contaminated paani aur khane se failta hai",
+          "Alcohol aur gutka/tobacco — liver aur stomach dono ko nuksaan",
+          "NSAIDs (aspirin, ibuprofen) — gastric ulcer ka sabse bada karan",
+          "Stress aur anxiety — IBS ka major trigger",
+          "Unhygienic food — hepatitis A, typhoid, amoebiasis ka risk",
+          "Obesity — GERD, fatty liver ka risk badhta hai",
+          "Genetic factors — family mein colon cancer ya IBD hone se risk zyada",
+        ],
+      },
+      {
+        heading: "Ranchi mein Stomach Doctor se Jach aur Diagnosis",
+        type: "text",
+        content: "Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ek systematic diagnostic process follow karte hain. Pehle detailed clinical history aur abdominal examination, phir zaroorat ke hisaab se basic blood tests (CBC, LFT, amylase) ya H. Pylori test. Complex cases mein Ultrasound, CT Scan ya Endoscopy hoti hai. WHO ke data ke mutaabik, gastric cancer ki 5-year survival rate early stage mein 90%+ hoti hai lekin late stage mein 30% se bhi kam — isliye early diagnosis zaroori hai. [Fatty liver diet guide](/blog/fatty-liver-diet-hindi) ya [liver cirrhosis stages](/blog/liver-cirrhosis-stages-treatment-india) padhen.",
+      },
+      {
+        heading: "Stomach Problems ka Ilaj — Dr. Akhilesh Yadav ka Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi — ka treatment approach patient-centered hai. Simple acidity ya H. Pylori mein medicines aur diet guidance se kaam hota hai — Ranchi ke local food sattu, dahi-chura ko gut-friendly banana bhi batate hain. Moderate cases mein combination therapy. Severe cases ya complications mein endoscopic ya surgical intervention — ERCP se bile duct stones nikaalna, colonoscopy se polyp remove karna — sab Orchid Medical Centre mein available hai. [ERCP ke baare mein padhen](/blog/ercp-procedure-cbd-stones-ranchi) ya [appointment book karein](/book).",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Stomach Doctor Ranchi",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Main Ranchi mein hazaron patients dekha hai jinhe 6-12 mahine baad pata chala ki unhe kya tha. Stomach pain ko ghar par 4 hafte se zyada mat handle karein — ek baar specialist se milein. Early treatment mein time, paisa aur stress — teeno bachte hain.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein Mon–Sat available hain.\n\nYeh article sirf educational purpose ke liye hai. Kisi bhi health problem ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Stomach Doctor Ranchi",
+        type: "text",
+        content: "Ranchi ke patients stomach doctor ke baare mein yeh sawaal aksar poochte hain:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Ranchi mein stomach doctor aur gastroenterologist mein kya antar hai?",
+        a: "Dono ek hi hain — 'stomach doctor' common language mein use hota hai jabki 'gastroenterologist' medical term hai. Dr. Akhilesh Yadav DM Gastroenterology qualified stomach specialist hain Orchid Medical Centre, Ranchi mein.",
+      },
+      {
+        q: "Stomach pain mein kab doctor ke paas jaana chahiye?",
+        a: "Agar pain 2 hafte se zyada ho, raat ko uthaye, ya khoon ki ulti ke saath ho — turant doctor se milein. Mild pain jo khud theek ho jaaye toh wait kar sakte hain.",
+      },
+      {
+        q: "Kya Ranchi mein stomach ke liye saare tests available hain?",
+        a: "Haan — Orchid Medical Centre, Ranchi mein blood tests, ultrasound, endoscopy, colonoscopy, ERCP, EUS sab available hain. Patna ya Kolkata jaane ki zaroorat nahi padti zyada tar cases mein.",
+      },
+      {
+        q: "Pet dard mein kya khaana chahiye?",
+        a: "Dahi, khichdi, plain dal-bhat, chhachh (buttermilk) — yeh gut ke liye gentle hote hain. Teekha, maida, processed food, cold drinks avoid karein. Specific diet ke liye Dr. Akhilesh Yadav se milna better hai — diagnosis ke hisaab se alag hoti hai.",
+      },
+      {
+        q: "Stomach doctor ka wait time kitna hota hai Orchid Medical Centre mein?",
+        a: "Appointment ke saath wait time bahut kam hota hai. Walk-in mein thoda zyada wait ho sakta hai. Call karein +91 74919 25047 pehle appointment ke liye.",
+      },
+      {
+        q: "Kya stomach cancer Ranchi mein common hai?",
+        a: "Dr. Akhilesh Yadav recommend karte hain ki 45+ age ke logo ko endoscopy ya colon cancer screening zaroor karwani chahiye, especially agar family history ho ya chronic symptoms hain. Early detection bahut zaroori hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "jaundice-treatment-ranchi",
+    image: "/images/jaundice-treatment-ranchi-blog.png",
+    titleHi: "रांची में Jaundice (पीलिया) का इलाज — Types, Tests और Treatment",
+    titleEn: "Jaundice Treatment in Ranchi — Types, Tests and Treatment Guide",
+    excerptHi: "Ranchi mein jaundice ka ilaj — hepatitis A se le kar bile duct blockage tak, Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre mein sahi diagnosis milti hai.",
+    excerptEn: "Jaundice treatment in Ranchi — from hepatitis A to bile duct obstruction, Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre, provides expert care.",
+    category: "Liver Health",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🟡",
+    tags: ["Jaundice", "Ranchi", "Liver", "Piliya", "Treatment", "Hindi", "Jharkhand"],
+    metaTitle: "Jaundice Treatment Ranchi | Dr. Akhilesh Yadav Orchid Medical",
+    metaDescription: "Jaundice (piliya) treatment in Ranchi by Dr. Akhilesh Yadav, DM Gastroenterology. Types of jaundice, liver tests, treatment at Orchid Medical Centre. +91 74919 25047",
+    sections: [
+      {
+        type: "text",
+        content: "Ranchi ke Doranda mohalle ki 32-saal ki Kavita Singh ko ek hafte se aankhein aur skin peeli ho rahi thi. Ghabrahat mein pahle ek jyotishi ke paas gayi, phir ek neem-hakim ne kuch dawa di. Jab ek hafte mein koi sudhar nahi hua aur ulti aur bukhar bhi aane lage, tab pariwarik log unhe Orchid Medical Centre, Ranchi le gaye. Dr. Akhilesh Yadav — DM Gastroenterology — ne blood tests (LFT, hepatitis panel) karaye — Hepatitis A infection confirm hua. Proper medical treatment se 10 din mein Kavita ji poori tarah recover ho gayi. Sahi waqt par sahi diagnosis ne unhe complications se bachaya. Pilia ko ghar ke nuskhon par mat chhodein.",
+      },
+      {
+        heading: "Jaundice (पीलिया) Kya Hota Hai?",
+        type: "text",
+        content: "Jaundice — pehle ise 'pilia' bolte the — ek condition nahi balki ek sign hai. Jab khoon mein bilirubin (पित्त रंजक — bile pigment) badhta hai, toh aankhein, skin aur nails peeli ho jaati hain. Bilirubin liver mein process hota hai — agar liver theek se kaam na kare, bile duct block ho, ya red blood cells zyada toote, toh bilirubin badh jaata hai. Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre — jaundice ke teen types diagnose karte hain: Pre-hepatic (blood disorder se), Hepatic (liver ki bimari se), aur Post-hepatic (bile duct blockage se). Har type ka treatment alag hota hai. [Jaundice ke lakshan](/blog/jaundice-symptoms-causes) padhen ya [liver problem doctor](/blog/best-gastroenterologist-ranchi) se milein.",
+      },
+      {
+        heading: "🔴 Jaundice ke Symptoms Jo Doctor Ko Dikhane Chahiye",
+        type: "list",
+        content: "Yeh symptoms hone par turant Ranchi mein doctor se milein:",
+        list: [
+          "Aankhon ka safed hissa (sclera) peela hona — sabse pehla sign",
+          "Skin ka peela padna — fingers, palms, face",
+          "Peshab (urine) ka dark yellow ya brown hona — bilirubin zyada hai",
+          "Mala (stool) ka pale, grey ya chalk-white hona — bile duct blockage",
+          "Thakan, bhookh na lagna aur nausea (जी मिचलाना)",
+          "Pet mein dard — especially right side mein liver ke area mein",
+          "Bukhar aur khaamp lagna — hepatitis infection ka sign",
+          "Itching (khujli) — bile salts skin mein jamane se hoti hai",
+        ],
+      },
+      {
+        heading: "Jaundice ke Karan — Types aur Causes",
+        type: "list",
+        content: "Jharkhand mein in kaaranon se jaundice zyada hota hai:",
+        list: [
+          "Hepatitis A — contaminated paani ya khane se (Ranchi mein monsoon mein zyada)",
+          "Hepatitis B aur C — blood contact, infected needle ya sexual contact se",
+          "Alcohol-related liver disease (ALD — मद्यजनित यकृत रोग)",
+          "Gallstones — bile duct mein pathri se blockage (Obstructive Jaundice)",
+          "Fatty liver disease advancing to liver damage",
+          "Drug-induced liver injury — kuch medicines se liver damage",
+          "Liver Cirrhosis (यकृत का सिकुड़ना) — chronic liver scarring",
+        ],
+      },
+      {
+        heading: "Ranchi mein Jaundice ki Jach — Tests aur Diagnosis",
+        type: "text",
+        content: "Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — structured approach se jaundice diagnose karte hain. Sabse pehle LFT (Liver Function Tests) — SGPT, SGOT, Alkaline Phosphatase, Bilirubin (total aur direct) aur PT/INR. Phir viral hepatitis panel — Hepatitis A IgM, HBsAg, Anti-HCV. Ultrasound abdomen se liver size, texture aur bile duct check hoti hai. Agar gallstone ya bile duct obstruction ho toh MRCP ya ERCP recommend karte hain. WHO ke data ke mutaabik, India mein har saal 30 lakh se zyada hepatitis A cases hote hain — zyada tar monsoon ke baad. [ERCP procedure](/blog/ercp-procedure-cbd-stones-ranchi) aur [hepatitis treatment](/blog/hepatitis-b-c-prevention-treatment-facts) padhen.",
+      },
+      {
+        heading: "Ranchi mein Jaundice ka Ilaj — Treatment Options",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi — treatment cause ke hisaab se decide karte hain. Hepatitis A mein rest, hydration aur supportive care se theek hota hai — 4-6 hafte mein. Hepatitis B mein antiviral medicines lagte hain. Hepatitis C mein naye DAA (Direct Acting Antivirals) se 8-12 hafte mein 95%+ recovery rate hai — India mein yeh medicines accessible hain. Obstructive Jaundice mein ERCP se bile duct ki pathri nikalna ya stent daalna hota hai. Alcohol-related liver disease mein strict alcohol band aur liver support medicines. Ghar ke nuskhe — ganne ka ras, kutki — sirf mild supportive role mein hain; severe jaundice mein medical treatment essential hai. [Appointment book karein](/book).",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Jaundice",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein jaundice ke patients aksar jhola-chhap doctor ya ghar ke nushkhe try karte hain — 2-3 hafte waste hote hain aur condition serious ho jaati hai. Jaundice ek medical condition hai jisme liver involved hota hai. Turant blood tests karwayein aur gastroenterologist se milein. Jaundice ka cause pata karna zaroori hai — har type ka ilaj alag hota hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein available hain.\n\nYeh article sirf educational purpose ke liye hai. Kisi bhi health problem ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Jaundice Treatment Ranchi",
+        type: "text",
+        content: "Ranchi ke patients jaundice ke baare mein yeh sawaal aksar poochte hain:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Jaundice mein kya khaana chahiye?",
+        a: "Jaundice mein light easily digestible food best hai — khichdi, dal ka paani, coconut water, plain rice. Oily, fried, spicy food avoid karein. Alcohol bilkul band karein. Dr. Akhilesh Yadav ki guidance se diet tay karein — cause ke hisaab se recommendations alag hoti hain.",
+      },
+      {
+        q: "Kya jaundice contagious (sankramak) hota hai?",
+        a: "Hepatitis A aur E contagious hote hain (contaminated food/water se). Hepatitis B aur C blood/sexual contact se faila sakte hain. Hepatitis A aur B dono ke liye vaccination available hai. Orchid Medical Centre mein Dr. Akhilesh Yadav se vaccination advice lein.",
+      },
+      {
+        q: "Jaundice mein ganne ka ras peena chahiye?",
+        a: "Mild supportive hoga lekin medical treatment ki jagah nahi le sakta. Obstructive jaundice ya severe hepatitis mein sirf ganne ka ras se theek nahi hoga — proper diagnosis aur treatment zaroori hai.",
+      },
+      {
+        q: "Ranchi mein jaundice ke liye blood test kahan hoti hai?",
+        a: "Orchid Medical Centre, Ranchi mein ya kisi bhi registered diagnostic lab mein LFT (Liver Function Test) karwa sakte hain. Dr. Akhilesh Yadav specific tests recommend karenge symptoms ke hisaab se. Call karein: +91 74919 25047.",
+      },
+      {
+        q: "Jaundice kitne din mein theek hota hai?",
+        a: "Hepatitis A mein 4-6 hafte. Hepatitis B mein treatment ke saath 6-12 months (chronic ho sakta hai). Obstructive jaundice mein ERCP ke baad 1-2 hafte. Cause ke hisaab se timing alag hoti hai — Dr. Akhilesh Yadav accurate prognosis bata sakte hain.",
+      },
+      {
+        q: "Kya Ranchi mein Hepatitis C ka ilaj hota hai?",
+        a: "Haan — naye Direct Acting Antivirals (DAA) se Hepatitis C ka 8-12 hafte mein 95%+ recovery rate hai. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, Ranchi mein Hepatitis C ka complete treatment karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "acidity-doctor-ranchi",
+    image: "/images/acidity-doctor-ranchi-blog.png",
+    titleHi: "रांची में Acidity का Doctor — बिना Antacid के Permanent Relief कैसे?",
+    titleEn: "Acidity Doctor in Ranchi — Long-term Relief Without Daily Antacids",
+    excerptHi: "Ranchi mein acidity ka doctor — Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre. GERD, chronic acidity aur ulcer ka sahi diagnosis aur lasting treatment.",
+    excerptEn: "Acidity doctor in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre, treats chronic GERD and acidity with lasting results without daily antacids.",
+    category: "Stomach Care",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🔥",
+    tags: ["Acidity", "Ranchi", "GERD", "Stomach", "Doctor", "Hindi", "Treatment"],
+    metaTitle: "Acidity Doctor Ranchi | Dr. Akhilesh Yadav GERD Treatment",
+    metaDescription: "Acidity doctor in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterology, Orchid Medical Centre. Chronic GERD, reflux and ulcer treatment. Call: +91 74919 25047",
+    sections: [
+      {
+        type: "text",
+        content: "Ranchi ke Ashok Nagar ke 42-saal ke Mukesh Tiwari roz subah uthte toh seene mein jalan hoti thi. 3 saal se woh chemist se antacid tablet le lete aur kaam chalate rahe. Jab jalan raat ko so ne nahi dene lagi aur khaasi bhi shuru ho gayi, tab unki patni zordar argue karke Orchid Medical Centre, Ranchi le gayi. Dr. Akhilesh Yadav — DM Gastroenterology — ne Upper Endoscopy ki: Grade B esophagitis (food pipe mein sujan) aur Barrett's esophagus ka early sign mila. Sirf antacid nahi — proper PPI therapy aur lifestyle changes se 8 hafte mein Mukesh ji ko lasting relief mili. 'Main sochta tha yeh toh normal hai' — yeh soch hazaron Ranchi ke patients mein hai.",
+      },
+      {
+        heading: "Acidity aur GERD — Fark Samjhein",
+        type: "text",
+        content: "Acidity aur GERD (Gastroesophageal Reflux Disease — आमाशय से भोजन-नलिका में एसिड का वापस आना) mein fark hai. Occasional acidity normal hai — teekha khaya, late night khaya. GERD tab hota hai jab yeh hafte mein 2 ya zyada baar ho, ya 4+ hafte se continuously ho. GERD mein acid esophagus mein repeatedly aata hai, jisse esophagitis, ulcer, ya Barrett's esophagus ho sakta hai — jo cancer risk hai. Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre — aksar dekhte hain ki log saalon tak antacid lete hain bina proper diagnosis ke. [Gastroenterologist Ranchi mein](/blog/best-gastroenterologist-ranchi) ya [endoscopy ke baare mein](/blog/endoscopy-kya-hota-hai) padhen.",
+      },
+      {
+        heading: "🔴 Acidity ke Yeh Symptoms Hain Toh Doctor Se Milein",
+        type: "list",
+        content: "Sirf antacid se kaam mat chalayein — yeh hone par doctor zaroori hai:",
+        list: [
+          "Seene mein jalan (heartburn) jo raat ko zyada ho ya loatey waqt badhe",
+          "Gala kharab rehna ya khaasi aana — acid larynx mein ja raha hai",
+          "Khana nigalne mein takleef ya khaana atkna (Dysphagia — खाना निगलने में दिक्कत)",
+          "Antacid se 4+ hafte mein koi faida nahi ho raha",
+          "Bhookh na lagna ya wajan kam ho jaana",
+          "Kaala ya dark stool — ulcer bleeding ka sign, turant milein",
+          "Raat ko seene mein dard se uthna",
+        ],
+      },
+      {
+        heading: "Chronic Acidity ke Karan — Ranchi ke Patients Mein Common Triggers",
+        type: "list",
+        content: "Ranchi ki lifestyle mein yeh triggers zyada dekhe jaate hain:",
+        list: [
+          "Raat ka khana bahut late khaana aur turant so jaana",
+          "Teekha-masaledar food — litti-chokha bahut zyada ghee ke saath",
+          "Chai aur coffee ki zyada consumption — acid production badhta hai",
+          "Stress aur anxiety — cortisol acid secretion badhata hai",
+          "H. Pylori infection — gastric acid dysregulation ka karan",
+          "Zyada wajan (Obesity) — LES (Lower Esophageal Sphincter) par pressure badhta hai",
+        ],
+      },
+      {
+        heading: "Ranchi mein Acidity ki Jach — Dr. Akhilesh Yadav ka Approach",
+        type: "text",
+        content: "Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — chronic acidity mein systematic approach lete hain. Pehle 4+ hafte ki history lena, PPI (Proton Pump Inhibitor — एसिड रोकने की दवा) trial response dekhna. Agar response partial ho ya red-flag symptoms hon, toh Upper GI Endoscopy (OGD Scopy) karte hain — Orchid Medical Centre mein hi available hai. H. Pylori test (stool antigen test) bhi recommend karte hain. AIIMS ke study ke mutaabik, India mein 50-60% GERD cases mein H. Pylori positive hota hai. Timely endoscopy se Barrett's esophagus ya early cancer bhi detect hoti hai. [Piles vs fissure](/blog/piles-fissure-fistula-differences-treatment) ya [appointment book karein](/book).",
+      },
+      {
+        heading: "Acidity aur GERD ka Ilaj — Sirf Antacid Nahi",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi — ka maanna hai ki GERD ka solution multidimensional hai. Sabse pehle cause identify karna — H. Pylori hai toh 14-day eradication therapy. Phir PPI ka proper course — akele antacid se zyada effective hota hai. Lifestyle mein: raat ka khana so ne se 3 ghante pehle khaana, bed ka head 6-8 inch uthana, wajan control, alcohol avoid karna. Ranchi ke local food mein — sattu ka paani, plain dahi (curd), chhachh — yeh sab acidity mein helpful hain. Severe Barrett's esophagus cases mein endoscopic ablation ya surgery bhi possible hai, lekin zyada tar cases conservative treatment se theek hote hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Acidity",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main roz 10-15 acidity patients dekhta hoon. Inme se aadhe se zyada log saalon se antacid le rahe hote hain bina kisi doctor ke advice ke. Yeh dangerous ho sakta hai — chronic acid reflux se esophageal damage aur cancer risk hota hai. 4 hafte se zyada acidity hai toh ek baar endoscopy zaroor karwa lein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein available hain.\n\nYeh article sirf educational purpose ke liye hai. Kisi bhi health problem ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Acidity Doctor Ranchi",
+        type: "text",
+        content: "Ranchi ke patients acidity aur GERD ke baare mein yeh sawaal aksar poochte hain:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya antacid zyada lene se nuksaan hota hai?",
+        a: "Haan — long-term antacid use se kidney stones, magnesium deficiency aur rebound acidity ho sakti hai. PPI (Omeprazole, Pantoprazole) bhi bina supervision ke months tak lena theek nahi. Dr. Akhilesh Yadav se proper assessment karwa ke hi treatment lein.",
+      },
+      {
+        q: "Acidity mein kya nahi khaana chahiye?",
+        a: "Avoid karein: citrus fruits (nimbu, orange), tomatoes, chocolate, mint, alcohol, coffee, fried/fatty food. Ranchi mein litti-chokha bahut oily hota hai — thoda kam ghee use karein GERD mein. Plain dahi aur lassi theek hote hain.",
+      },
+      {
+        q: "GERD aur heart attack mein kaise pehchaan karein?",
+        a: "GERD mein jalan esophagus mein hoti hai — khane ke baad zyada, loatane par zyada. Heart attack mein chest pressure/squeezing, left arm mein dard, sweating hoti hai. Doubt hone par turant emergency room jayein — Dr. Akhilesh Yadav bhi yehi recommend karte hain.",
+      },
+      {
+        q: "Kya yoga se acidity theek hoti hai?",
+        a: "Kuch yoga poses (jaise Vajrasana after meals) acidity mein helpful hain. Lekin GERD mein certain poses (jaise headstand, forward bends) acid reflux badhate hain. Dr. Akhilesh Yadav se specific recommendations lein apni condition ke hisaab se.",
+      },
+      {
+        q: "Ranchi mein endoscopy ke bina acidity diagnose ho sakti hai?",
+        a: "Mild cases mein clinical history aur PPI trial se diagnosis possible hai. Lekin 4+ hafte ki acidity, red-flag symptoms ya medications se relief na ho toh endoscopy zaroori hai — Orchid Medical Centre, Ranchi mein available hai.",
+      },
+      {
+        q: "Kya bacchon mein acidity ka treatment alag hota hai?",
+        a: "Haan — bacchon mein acid reflux (GERD) ka presentation alag hota hai. Sirf adult medicines use karna theek nahi. Dr. Akhilesh Yadav — DM Gastroenterology — adult aur pediatric gastro conditions dono mein expert hain Orchid Medical Centre, Ranchi mein.",
+      },
+    ],
+  },
+
+  // ── BATCH 2: BLOGS 6–10 ─────────────────────────────────────────────────────
+
+  {
+    slug: "piles-doctor-ranchi",
+    titleHi: "बवासीर (Piles) के लिए Ranchi में Doctor — Dr. Akhilesh Yadav",
+    titleEn: "Piles Doctor in Ranchi — Diagnosis & Treatment by Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein bawaseer ke liye best gastroenterologist kaun hain? Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre mein hemorrhoids ka advanced, surgery-free ilaj karte hain.",
+    excerptEn: "Looking for a piles doctor in Ranchi? Dr. Akhilesh Yadav offers advanced, non-surgical hemorrhoid treatment at Orchid Medical Centre.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🩺",
+    tags: ["piles doctor ranchi", "bawaseer ka ilaj ranchi", "hemorrhoids ranchi", "gastroenterologist ranchi", "piles treatment jharkhand"],
+    metaTitle: "Piles Doctor in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Piles (hemorrhoids) treatment in Ranchi by Dr. Akhilesh Yadav — DM Gastroenterologist at Orchid Medical Centre. Non-surgical options available. Book now.",
+    sections: [
+      {
+        heading: "Ranchi ke Patient ki Kahani — Bawaseer ka Dard",
+        type: "text",
+        content: "Ramgarh se aaye 42-saal ke Ram Kishore — unhe 8 mahine se malbandh (constipation) aur toilet ke baad bleeding ho rahi thi. Unke padosi ne kaha 'piles hai toh surgery hi hogi.' Lekin Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne proctoscopy se diagnosis ki aur bataya ki unhe Grade 2 Internal Hemorrhoids hain jo bina surgery ke theek ho sakte hain. Aaj woh bilkul theek hain. Ranchi aur Jharkhand mein piles (bawaseer / बबासीर) ek common problem hai — lekin zyada tar log ya toh share karne se sharm aate hain ya galat treatment lete hain.",
+      },
+      {
+        heading: "Piles Kya Hota Hai — Samjhein Aasaan Bhasha Mein",
+        type: "text",
+        content: "Piles yani Hemorrhoids — rectum (मलाशय) aur anus (गुदा) ke andar ya bahar ki swollen veins hoti hain. Jaise pair mein varicose veins hoti hain, waisi hi rectum mein bhi ho sakti hain. Internal Hemorrhoids (andar): generally pain-free, lekin toilet ke baad bright red blood aata hai. External Hemorrhoids (bahar): dard, khujli, aur ek hard lump feel hoti hai. Prolapsed Hemorrhoids (bahar nikal aaye): Grade 3-4, jisme tissue anus ke bahar aa jaata hai. Ranchi mein Dr. Akhilesh Yadav daily 8-10 piles patients dekhte hain — aur majority ko surgery ki zaroorat nahi hoti.",
+      },
+      {
+        heading: "Piles ke Karan — Ranchi ke Context Mein",
+        type: "list",
+        content: "Ranchi aur Jharkhand mein piles ke yeh common karan hain:",
+        list: [
+          "Chronic constipation — fiber-poor diet, kam paani peena — Jharkhand ke rural areas mein zyada",
+          "Oily-spicy food ka zyada sevan — dal-baati, litti-chokha mein ghee ki matra",
+          "Lambe waqt tak toilet par baithna aur strain karna",
+          "Pregnancy — especially 3rd trimester mein pelvic pressure",
+          "Motaapa (Obesity) — abdominal pressure badhta hai",
+          "Hereditery factors — agar family mein hai toh risk zyada",
+          "Sedentary lifestyle — zyada der baithna, exercise nahi karna",
+        ],
+      },
+      {
+        heading: "Dr. Akhilesh Yadav ka Diagnosis Approach — Orchid Medical Centre Ranchi",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — DM Gastroenterology — pehle detailed history lete hain: kitne din se, blood ka colour kya hai (bright red vs dark), dard hai ya nahi, prolapse hai ya nahi. Phir Proctoscopy (एक छोटा instrument jo anus mein daala jaata hai — generally painless) se exact grade determine karte hain. Agar bleeding excessive ho ya age 40+ ho, toh Colonoscopy bhi recommend karte hain colon cancer ya polyps rule out karne ke liye — Orchid Medical Centre mein hi available hai. Ek baar diagnosis clear ho, toh treatment plan decide hota hai.",
+      },
+      {
+        heading: "Piles ka Ilaj — Surgery Zaroor Nahi",
+        type: "text",
+        content: "Dr. Akhilesh Yadav, Ranchi ke patients ko explain karte hain: Grade 1-2 hemorrhoids mein lifestyle + medication se 80% improvement hota hai. High-fiber diet (sabjiyan, daalein, isabgol), 2-3 litre paani roz, stool softeners, topical creams. Grade 2-3 mein Rubber Band Ligation (RBL) — ek OPD procedure jisme hemorrhoid ko band se bandha jaata hai aur woh shrink ho jaata hai — no general anesthesia, no admission. Grade 3-4 severe cases mein Stapler Hemorrhoidopexy ya Hemorrhoidectomy — lekin yeh sirf minority mein zaroor hoti hai. Ranchi mein Dr. Akhilesh Yadav Orchid Medical Centre mein yeh sab options provide karte hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Piles",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Bawaseer mein sharmane ki zaroorat nahi — yeh ek medical condition hai. Ranchi mein main roz patients dekhta hoon jinhone 2-3 saal tak chhupaaya aur phir problem badh gayi. Jitni jaldi milein, utna behtar — Grade 1-2 mein koi surgery nahi chahiye.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein available hain.\n\nYeh article sirf educational purpose ke liye hai. Kisi bhi health problem ke liye qualified doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Piles Doctor Ranchi",
+        type: "text",
+        content: "Ranchi ke patients piles ke baare mein yeh sawaal aksar poochte hain:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya piles mein hamesha operation karna padta hai?",
+        a: "Nahi — Grade 1 aur 2 hemorrhoids mein medication, diet change aur Rubber Band Ligation (OPD procedure) se theek ho jaata hai. Surgery sirf severe Grade 3-4 cases mein lagti hai. Dr. Akhilesh Yadav Ranchi mein sabse pehle non-surgical options try karte hain.",
+      },
+      {
+        q: "Piles mein konsa doctor dikhana chahiye?",
+        a: "Gastroenterologist ya Colorectal specialist dikhana best hai. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, Ranchi mein hemorrhoids ke sab cases dekhte hain — OPD procedure se lekar surgery tak.",
+      },
+      {
+        q: "Toilet mein bright red blood aane par kya karein?",
+        a: "Piles ka common sign hai, lekin kabhi kabhi colon polyp ya early cancer bhi ho sakta hai, isliye ignore mat karein. 40+ age mein especially — turant Dr. Akhilesh Yadav ya kisi gastroenterologist se milein Ranchi mein.",
+      },
+      {
+        q: "Piles mein kya khaana chahiye?",
+        a: "High fiber foods — isabgol (psyllium), green leafy vegetables, fruits with skin, daalein. Roz 2-3 litre paani. Avoid karein: refined flour (maida), oily-spicy food, alcohol. Ranchi ke local food mein sattu ka paani aur chhachh helpful hain.",
+      },
+      {
+        q: "Rubber Band Ligation kya hota hai aur dard hota hai kya?",
+        a: "RBL ek OPD procedure hai jisme hemorrhoid ke base par ek rubber band daal dete hain — blood supply cut hoti hai aur woh 7-10 din mein apne aap gir jaata hai. Most patients mein sirf halki discomfort ya heaviness hoti hai. Dr. Akhilesh Yadav yeh procedure Orchid Medical Centre, Ranchi mein karte hain.",
+      },
+      {
+        q: "Piles dobara ho sakti hai surgery ke baad bhi?",
+        a: "Haan — agar diet aur lifestyle nahi badalee toh recurrence ho sakta hai. Dr. Akhilesh Yadav surgery ke baad bhi detailed diet plan aur follow-up ka schedule dete hain Ranchi ke patients ko.",
+      },
+    ],
+  },
+
+  {
+    slug: "ibs-doctor-ranchi",
+    titleHi: "IBS (Irritable Bowel Syndrome) Doctor Ranchi — Dr. Akhilesh Yadav",
+    titleEn: "IBS Doctor in Ranchi — Expert IBS Diagnosis & Management | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein IBS ke liye specialist doctor kaun hain? Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre mein irritable bowel syndrome ka scientific, patient-centric ilaj karte hain.",
+    excerptEn: "Best IBS doctor in Ranchi. Dr. Akhilesh Yadav at Orchid Medical Centre offers personalised IBS management — diet, lifestyle, medication and gut-health guidance.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🫁",
+    tags: ["ibs doctor ranchi", "irritable bowel syndrome ranchi", "pet ki takleef ranchi", "gastroenterologist ranchi", "ibs treatment jharkhand"],
+    metaTitle: "IBS Doctor in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "IBS specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Personalised diet, medication & lifestyle plan for IBS.",
+    sections: [
+      {
+        heading: "Ranchi ki Patient ki Kahani — Saalon ki Takleef",
+        type: "text",
+        content: "Hazaribagh se aaye 28-saal ki Priya Devi — 3 saal se pet mein dard, baar baar loose motions, aur phir kuch din bilkul constipation. Doctors ne kai tests kiye — sab normal. 'Stress hai' bolke dismiss kar diya. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne diagnosis ki: IBS (Irritable Bowel Syndrome). 'Yeh real condition hai — aapki imagination nahi,' unka pehla shabd tha. 4 mahine ke structured treatment ke baad Priya ki life normal ho gayi. Ranchi mein IBS ek underdiagnosed condition hai — lakho patients saalon tak suffer karte hain.",
+      },
+      {
+        heading: "IBS Kya Hai — Aur Kyun Itna Confusing Hai",
+        type: "text",
+        content: "IBS (Irritable Bowel Syndrome) ek functional gut disorder hai — matlab, aapki intestine (aanth) mein koi structural damage nahi hota, lekin function abnormal hota hai. Brain-gut connection disturbed rehta hai. Yeh ek spectrum hai: IBS-D (Diarrhea predominant) — aksar loose motions. IBS-C (Constipation predominant) — aksar kabj. IBS-M (Mixed) — dono baar baar aata-jaata hai. Ranchi mein Dr. Akhilesh Yadav ke anusaar, India mein 10-15% adults ko IBS hai — aur bahut kam ko sahi diagnosis milti hai. Tests 'normal' aate hain, toh log sochte hain kuch nahi hai — jo galat hai.",
+      },
+      {
+        heading: "IBS ke Symptoms — Kya Aap Pehchante Hain?",
+        type: "list",
+        content: "IBS ke yeh common symptoms hain:",
+        list: [
+          "Recurrent abdominal pain (pet mein dard) jo toilet ke baad better ho jaata hai",
+          "Stool consistency mein change — kabhi loose, kabhi hard",
+          "Bloating aur gas — pet phula hua lagta hai",
+          "Feeling of incomplete evacuation — toilet ke baad bhi lagta hai poori tarah nahi hua",
+          "Mucus in stool (aant ka fluid motions mein)",
+          "Symptoms stress ya certain foods se worse hote hain",
+          "Bina kisi obvious cause ke baar baar bathroom jaana",
+        ],
+      },
+      {
+        heading: "IBS ka Diagnosis — Dr. Akhilesh Yadav ka Rome IV Criteria Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein IBS diagnosis ke liye Rome IV Criteria use karte hain: recurrent abdominal pain minimum 1 day/week for last 3 months, related to defecation, associated with stool frequency or form change. Saath mein, yeh rule out karte hain: Inflammatory Bowel Disease (IBD — Crohn's/Colitis), Celiac Disease (gluten intolerance), Colon Cancer. Iske liye blood tests (CBC, CRP, Celiac markers), stool tests, aur zaroorat padne par Colonoscopy. Red flags — rectal bleeding, weight loss, night symptoms, age 50+ — mein pehle investigation zaroori hai.",
+      },
+      {
+        heading: "IBS ka Ilaj — Sirf Dawa Nahi, Life Change",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre, Ranchi mein IBS ka multidimensional treatment dete hain. Diet: Low-FODMAP diet trial (fermentable carbohydrates avoid karna — onion, garlic, wheat, milk, lentils temporarily reduce karna). Local foods mein — plain rice, moong dal, banana, curd (in moderation) IBS-safe hote hain. Medication: Anti-spasmodics (pet dard ke liye), probiotics (gut bacteria balance), fiber supplements (IBS-C mein), loperamide (IBS-D mein). Stress Management: IBS mein gut-brain axis ka bada role hai — meditation, yoga, aur consistent sleep schedule help karte hain. CBT (Cognitive Behavioral Therapy) bhi evidence-based hai severe cases mein.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — IBS",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'IBS ke patients ko sabse pehle yeh assurance chahiye ki yeh real condition hai aur inki imagination nahi. Ranchi mein main dekh raha hoon ki patients bina diagnosis ke saalon tak anxiety aur dard mein rehte hain. Ek simple structured plan se 70% patients mein significant improvement hota hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein available hain.\n\nYeh article sirf educational purpose ke liye hai. Apni condition ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein.\n\nAppointment ke liye call karein: +91 74919 25047 ya [WhatsApp karein](https://wa.me/917491925047). Orchid Medical Centre, HB Road, Ranchi. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — IBS Doctor Ranchi",
+        type: "text",
+        content: "IBS ke baare mein Ranchi ke patients ke common sawaal:",
+      },
+    ],
+    faqs: [
+      {
+        q: "IBS aur IBD mein kya fark hai?",
+        a: "IBS (Irritable Bowel Syndrome) ek functional disorder hai — tests normal aate hain, koi structural damage nahi. IBD (Inflammatory Bowel Disease — Crohn's/Ulcerative Colitis) mein actual inflammation aur damage hoti hai — tests mein abnormality dikhti hai. Dr. Akhilesh Yadav Ranchi mein dono conditions treat karte hain.",
+      },
+      {
+        q: "IBS mein kaunsa khana avoid karein?",
+        a: "Low-FODMAP approach follow karein: avoid karein onion, garlic, wheat (roti thodi kam), milk, rajma/chole, apple, mango in excess. Ranchi ke local safe foods: plain rice, moong daal, banana, curd (limited), sattu (in IBS-C). Dr. Akhilesh Yadav ke paas personalized diet plan milega.",
+      },
+      {
+        q: "Kya IBS mein colonoscopy zaroor hai?",
+        a: "IBS-C/D ke typical cases mein under 45 age mein zaroor nahi. Lekin red flags hain toh: rectal bleeding, weight loss, family history of colon cancer, anemia — toh Colonoscopy zaroori hai. Dr. Akhilesh Yadav decide karte hain Orchid Medical Centre, Ranchi mein.",
+      },
+      {
+        q: "IBS ki wajah se kitne din mein theek ho sakte hain?",
+        a: "IBS ek chronic condition hai — 'theek' nahi, 'manage' karna hota hai. 4-8 hafte ke structured treatment mein zyada tar patients ko significant relief milta hai. Lifestyle changes long-term maintain karne se symptoms bahut kam rehte hain. Dr. Akhilesh Yadav regular follow-up karte hain.",
+      },
+      {
+        q: "IBS mein stress ka kitna role hai?",
+        a: "Bahut bada role hai — IBS ek gut-brain axis disorder hai. Stress se symptoms worsen hote hain. Dr. Akhilesh Yadav medication ke saath stress management techniques bhi suggest karte hain — breathing exercises, yoga, consistent sleep schedule.",
+      },
+      {
+        q: "Kya probiotics IBS mein help karte hain?",
+        a: "Haan — research-backed hain kuch specific strains (Lactobacillus, Bifidobacterium). Plain dahi mein natural probiotics hote hain. Over-the-counter probiotic supplements bhi effective ho sakte hain. Dr. Akhilesh Yadav Ranchi mein patient-specific probiotic recommendation dete hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "constipation-doctor-ranchi",
+    titleHi: "कब्ज (Constipation) के Doctor Ranchi — Dr. Akhilesh Yadav",
+    titleEn: "Constipation Doctor in Ranchi — Diagnosis & Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein kabj (constipation) ke liye specialist doctor: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Chronic constipation ke karan, ilaj aur diet guide.",
+    excerptEn: "Chronic constipation treatment in Ranchi by Dr. Akhilesh Yadav, DM Gastroenterologist. Causes, diet tips, medication & when to seek specialist care.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💊",
+    tags: ["constipation doctor ranchi", "kabj ka ilaj ranchi", "chronic constipation ranchi", "gastroenterologist ranchi", "pet ki samasya jharkhand"],
+    metaTitle: "Constipation Doctor in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Chronic constipation specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Diet, lifestyle & medication for lasting relief from kabj.",
+    sections: [
+      {
+        heading: "Jab Kabj Sirf 'Aam Baat' Nahi Rahi",
+        type: "text",
+        content: "Giridih se aaye 55-saal ke Shyam Lal ji — 6 mahine se sirf hafte mein 2-3 baar bathroom jaana, baar baar strain, aur toilet mein 20-25 minute spend karna. Unhe laga yeh umar ka sign hai. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne unhe detail mein assess kiya. Pata chala unhe Slow Transit Constipation tha — aur unke stool mein occult blood bhi tha. Timely colonoscopy ne ek colon polyp pakda jo early stage mein remove kar diya gaya. Kabj — chronic constipation — sirf takleef nahi, kabhi kabhi kuch serious ka sign bhi ho sakta hai.",
+      },
+      {
+        heading: "Constipation Kab 'Chronic' Kehlaata Hai?",
+        type: "text",
+        content: "Rome IV Criteria ke mutaabik, Chronic Constipation diagnosis hoti hai agar 6+ mahine se koi bhi 2 symptoms hon: Hafte mein 3 se kam bowel movements. 25% se zyada times hard/lumpy stools. 25% se zyada times excessive straining. 25% se zyada times incomplete evacuation ki feeling. Manual maneuvers ki zaroorat (apni ungli se help karna). Ranchi mein Dr. Akhilesh Yadav ke anusaar, India mein 14-22% adults Chronic Constipation suffer karte hain — aur majority sirf self-medication karte hain.",
+      },
+      {
+        heading: "Kabj ke Karan — Kab Doctor Zaroori Hai",
+        type: "list",
+        content: "Kabj ke common karan aur warning signs:",
+        list: [
+          "Low fiber diet — maida roti, processed food, kam sabji",
+          "Insufficient water intake — 2 litre se kam roz",
+          "Sedentary lifestyle — exercise nahi karna",
+          "Hypothyroidism (thyroid ki kami) — constipation ka hormonal cause",
+          "Certain medications — iron tablets, calcium, certain pain killers",
+          "Diabetes — bowel motility affect hoti hai",
+          "Warning: rectal bleeding, weight loss, age 50+ mein naya constipation — turant doctor",
+        ],
+      },
+      {
+        heading: "Dr. Akhilesh Yadav ka Constipation Assessment — Ranchi",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein constipation assessment mein karte hain: detailed history (diet, medications, lifestyle), physical examination including rectal exam. Basic tests: thyroid function, blood sugar, CBC. Agar 50+ age, rectal bleeding, weight loss, ya family history ho toh Colonoscopy zaroori — colon polyp ya cancer rule out karne ke liye. Functional constipation mein colonic transit study ya anorectal manometry bhi kabhi kabhi lagti hai. Yeh structured approach ensure karta hai ki underlying cause miss na ho.",
+      },
+      {
+        heading: "Kabj ka Ilaj — Dr. Akhilesh Yadav ka Step-by-Step Plan",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko step-by-step plan dete hain. Step 1 — Diet: Isabgol (psyllium husk) 1 tbsp roz raat ko paani ke saath, high-fiber vegetables (palak, lauki, karela), whole grains, fruits with skin, roz 2.5-3 litre paani. Ranchi ke local helpful foods: sattu ka paani (natural fiber), papaya, guava, chhachh. Step 2 — Lifestyle: Roz 30 min walk, fixed bathroom time (morning, after chai), Squatty Potty position (ek stool rakhen paon ke neeche — physiologically better). Step 3 — Medication (doctor ke guidance mein): osmotic laxatives (lactulose, PEG), stool softeners — sirf short-term. Long-term laxative dependence dangerous hai. Step 4 — Advanced: Biofeedback therapy (pelvic floor dysfunction mein) ya rare cases mein surgery.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Constipation",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main roz 5-7 chronic constipation patients dekhta hoon. Sabse badi problem yeh hai ki log saalon tak laxatives khate rehte hain bina diagnosis ke — aur kabhi kabhi serious condition miss ho jaati hai. 3 mahine se zyada kabj hai, toh ek baar proper evaluation zaroor karwa lein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Apni condition ke liye qualified doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Constipation Doctor Ranchi",
+        type: "text",
+        content: "Kabj ke baare mein Ranchi ke patients ke common sawaal:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Roz laxative lena safe hai?",
+        a: "Nahi — long-term stimulant laxatives (senna, bisacodyl) se colon dependent ho jaata hai aur function aur worse ho sakta hai. Short-term use theek hai. Dr. Akhilesh Yadav Ranchi mein underlying cause treat karte hain taaki laxative dependency na bane.",
+      },
+      {
+        q: "Kabj mein sabse achha gharelu nuskha kya hai?",
+        a: "Isabgol (psyllium husk) raat ko paani ke saath sabse effective evidence-based remedy hai. Saath mein roz 2.5 litre paani aur walk. Papaya, guava, sattu ka paani bhi helpful hain. Lekin 3 mahine se zyada problem ho toh doctor zaroor dikhayein.",
+      },
+      {
+        q: "Kya kabj se colon cancer hota hai?",
+        a: "Constipation apne aap colon cancer nahi karta, lekin chronic constipation colon cancer ka symptom ho sakta hai. Isliye 50+ age mein naya onset constipation, rectal bleeding, weight loss — colonoscopy zaroor karwa lein Dr. Akhilesh Yadav se Ranchi mein.",
+      },
+      {
+        q: "Bacchon mein kabj ka kya karein?",
+        a: "Bacchon mein bhi fiber aur paani pehli line hai. Lekin persistent constipation mein pediatric evaluation zaroori hai — Hirschsprung's disease ya other structural issues rule out karne ke liye. Dr. Akhilesh Yadav adult cases handle karte hain — bacchon ke liye pediatric gastro refer karein.",
+      },
+      {
+        q: "Pregnancy mein kabj normal hai kya?",
+        a: "Haan — progesterone hormone bowel motility slow karta hai pregnancy mein. Safe options: isabgol, lactulose, fiber increase, paani zyada peena. Iron tablets bhi constipate karte hain — doctor se iron form change karwa sakte hain. Dr. Akhilesh Yadav pregnancy-safe options guide karenge.",
+      },
+    ],
+  },
+
+  {
+    slug: "stomach-ulcer-doctor-ranchi",
+    titleHi: "Stomach Ulcer (Peptic Ulcer) Doctor Ranchi — Dr. Akhilesh Yadav",
+    titleEn: "Stomach Ulcer Doctor in Ranchi — Peptic Ulcer Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein peptic ulcer (stomach ulcer) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. H. Pylori se lekar endoscopy tak, complete care.",
+    excerptEn: "Stomach ulcer (peptic ulcer) specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. H. Pylori treatment, endoscopy & complete ulcer management.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🔬",
+    tags: ["stomach ulcer doctor ranchi", "peptic ulcer ranchi", "h pylori treatment ranchi", "gastroenterologist ranchi", "ulcer specialist jharkhand"],
+    metaTitle: "Stomach Ulcer Doctor Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Peptic ulcer specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist. H. Pylori eradication, endoscopy & complete ulcer treatment at Orchid Medical Centre.",
+    sections: [
+      {
+        heading: "Ranchi ke Patient ki Kahani — Ulcer Ka Dard",
+        type: "text",
+        content: "Dhanbad se aaye 35-saal ke Manoj Kumar — 2 mahine se khaane ke 1-2 ghante baad pet mein jalan aur dard. Raat ko bhi uthate the. Gaon mein neem-hakeem ne 'gas ki problem' boli aur antacid diya — kuch din theek, phir wapas. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne Endoscopy ki. Report: Duodenal Ulcer (first part of small intestine mein ghav) aur H. Pylori positive. 14-day eradication therapy ke baad Manoj ki problem bilkul khatam. Ranchi aur Jharkhand mein H. Pylori infection bahut common hai — aur yeh peptic ulcer ka main cause hai.",
+      },
+      {
+        heading: "Peptic Ulcer Kya Hai — Stomach vs Duodenal",
+        type: "text",
+        content: "Peptic Ulcer — stomach (Gastric Ulcer) ya duodenum (Duodenal Ulcer) ki inner lining mein open sore (ghav) hota hai. Stomach ki mucus lining normally acid se protect karti hai — jab yeh protective layer damage ho, toh acid tissue ko hurt karta hai. Gastric Ulcer: khane ke saath ya baad mein dard. Duodenal Ulcer: khaane ke 2-3 ghante baad ya raat ko dard — khane se temporarily theek lagta hai. H. Pylori infection aur NSAIDs (aspirin, ibuprofen) — yeh do sabse bade causes hain. Ranchi mein Dr. Akhilesh Yadav ke clinic mein 40-50% ulcer cases mein H. Pylori positive aata hai.",
+      },
+      {
+        heading: "Peptic Ulcer ke Warning Signs",
+        type: "list",
+        content: "Inme se koi bhi ho toh turant doctor se milein:",
+        list: [
+          "Khaane ke baad ya raat ko burning/gnawing pain upper abdomen mein",
+          "Nausea ya vomiting — sometimes blood ya coffee-ground jaise",
+          "Black tarry stools (kala paakhana) — bleeding ulcer ka sign",
+          "Suddenly severe stomach pain — perforated ulcer emergency hai",
+          "Weight loss without trying",
+          "Khana khaane ke baad bhi pet bhar gaya lagta hai (early satiety)",
+        ],
+      },
+      {
+        heading: "Diagnosis — Dr. Akhilesh Yadav ka Endoscopy Approach Ranchi",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre, Ranchi mein ulcer diagnosis mein pehle detailed history lete hain: dard pattern, NSAID use history, stress level. H. Pylori test: stool antigen test ya urea breath test (blood test se zyada accurate). Definitive diagnosis: Upper GI Endoscopy (OGD Scopy) — ulcer directly dekhna, biopsy lena (malignancy rule out karne ke liye Gastric Ulcer mein), aur H. Pylori rapid urease test. Orchid Medical Centre mein advanced endoscopy available hai. 45+ age mein ya alarm features mein endoscopy zaroori hai.",
+      },
+      {
+        heading: "Peptic Ulcer ka Ilaj — Dr. Akhilesh Yadav ka Protocol",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein ulcer treatment mein yeh approach follow karte hain. H. Pylori positive cases: Triple therapy — 2 antibiotics (clarithromycin + amoxicillin) + PPI (Pantoprazole) — 14 days. Eradication rate 85-90%. NSAIDs-induced ulcer: NSAID bandh karo, PPI shuru karo. PPI (Proton Pump Inhibitor): stomach acid reduce karna zaroori hai — 4-8 hafte. Follow-up endoscopy (Gastric Ulcer mein 6-8 hafte baad) — healing confirm karne aur malignancy rule out karne ke liye. Diet: avoid karein NSAIDs, alcohol, smoking, oily-spicy food. Ranchi ke local safe foods: plain rice, dahi, moong daal soup.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Stomach Ulcer",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main aksar dekhta hoon ki patients saalon tak antacid khate hain bina yeh jaane ki unhe H. Pylori infection hai. Yeh 14-din ki antibiotic therapy se theek hoti hai — lekin pehle diagnosis zaroori hai. Kala paakhana ya ulti mein blood — yeh emergency hai, turant aaein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Diagnosis aur treatment ke liye qualified doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Stomach Ulcer Doctor Ranchi",
+        type: "text",
+        content: "Peptic ulcer ke baare mein Ranchi ke patients ke common sawaal:",
+      },
+    ],
+    faqs: [
+      {
+        q: "H. Pylori kaise failta hai?",
+        a: "H. Pylori contaminated paani ya khane se, ya infected vyakti ke saath close contact se fail sakta hai. Ranchi aur Jharkhand mein piped water quality variable hai — isliye infection rate zyada hai. Dr. Akhilesh Yadav stool test ya urea breath test se H. Pylori diagnose karte hain.",
+      },
+      {
+        q: "Ulcer mein kya khaana safe hai?",
+        a: "Safe: dahi, plain rice, moong daal soup, cooked vegetables, banana, oatmeal. Avoid: NSAIDs (ibuprofen, aspirin), alcohol, smoking, very spicy food, coffee. Koi ek 'ulcer diet' nahi hoti — jo trigger kare woh avoid karein. Dr. Akhilesh Yadav se personalized guidance lein.",
+      },
+      {
+        q: "Kala paakhana hone par kya karein?",
+        a: "Kala tarry stool (Melena) bleeding ulcer ka serious sign hai — upper GI tract se blood aa raha hai. Yeh emergency hai — turant Orchid Medical Centre ya nearest emergency room jayein. Dr. Akhilesh Yadav urgent endoscopy karte hain aise cases mein.",
+      },
+      {
+        q: "Ulcer aur acid reflux (GERD) mein kya fark hai?",
+        a: "GERD mein acid esophagus mein aata hai — chest mein jalan (heartburn) hoti hai, khane ke baad zyada. Ulcer mein stomach ya duodenum mein ghav hota hai — upper abdomen mein dard, often khaane se related. Dono conditions alag hain aur different treatment chahte hain. Dr. Akhilesh Yadav endoscopy se clearly differentiate karte hain.",
+      },
+      {
+        q: "Kya stress se ulcer hota hai?",
+        a: "Pure stress se ulcer nahi hota (yeh myth hai), lekin stress H. Pylori infection aur NSAID use ke saath ulcer severity badha sakta hai. Physiological stress (ICU patients) se 'Stress Ulcer' hoti hai — lekin yeh alag context hai. Dr. Akhilesh Yadav Ranchi mein patients ko yeh confusion clear karte hain.",
+      },
+      {
+        q: "Gastric ulcer mein follow-up endoscopy kyun zaroori hai?",
+        a: "Gastric ulcer (stomach ulcer) mein rare cases mein early gastric cancer ulcer jaisi dikhti hai. Isliye 6-8 hafte ke treatment ke baad follow-up endoscopy se confirm karte hain ki ulcer heal hua aur malignancy nahi hai. Duodenal ulcer mein generally follow-up endoscopy zaroor nahi hoti.",
+      },
+    ],
+  },
+
+  {
+    slug: "colon-cancer-screening-ranchi",
+    titleHi: "Colon Cancer Screening Ranchi — Dr. Akhilesh Yadav | Colonoscopy",
+    titleEn: "Colon Cancer Screening in Ranchi — Colonoscopy & Prevention | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein colon cancer screening ke liye colonoscopy: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. 50+ age mein screening kyun zaroori hai — poori guide.",
+    excerptEn: "Colon cancer screening in Ranchi — colonoscopy by Dr. Akhilesh Yadav at Orchid Medical Centre. Who needs screening, what to expect, and why early detection matters.",
+    category: "procedures",
+    readTimeMins: 9,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["colon cancer screening ranchi", "colonoscopy ranchi", "colorectal cancer prevention ranchi", "gastroenterologist ranchi", "cancer screening jharkhand"],
+    metaTitle: "Colon Cancer Screening Ranchi | Colonoscopy | Dr. Akhilesh Yadav",
+    metaDescription: "Colon cancer screening & colonoscopy in Ranchi by Dr. Akhilesh Yadav, DM Gastroenterologist. Who needs it, cost & what to expect at Orchid Medical Centre.",
+    sections: [
+      {
+        heading: "Ranchi ke Patient ki Kahani — Polyp Jo Cancer Banta",
+        type: "text",
+        content: "Bokaro se aaye 58-saal ke Ramnath ji — unhe koi symptoms nahi the. Unki beti ne zid karke colonoscopy karwai kyunki unke bade bhai ko 5 saal pehle colon cancer hua tha. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne colonoscopy ki. Mili: ek 18mm adenomatous polyp. Endoscopy ke dauran hi remove kar diya — colonoscopic polypectomy. Biopsy mein high-grade dysplasia (pre-cancerous) thi. Agar 5 saal aur wait karte, cancer ho sakta tha. 'Dr. Sahab ne meri jaan bachi' — Ramnath ji ke shabd. Colon cancer India mein tera rahe cancers mein hai — aur early screening se yeh rokable hai.",
+      },
+      {
+        heading: "Colon Cancer Screening Kyun Zaroori Hai",
+        type: "text",
+        content: "Colon cancer (colorectal cancer) dheerey dheerey develop hota hai — pehle colon mein polyp (chhota growth) banta hai, phir saalon mein cancer mein badal sakta hai. Colonoscopy screening mein yeh polyps cancer banne se pehle dekhkar remove kar diye jaate hain. AIIMS aur Indian Council of Medical Research (ICMR) guideline ke mutaabik: Average risk mein 45-50 saal se shuru karein screening. High risk mein (family history, IBD, Lynch syndrome) pehle shuru karein. Ranchi mein Dr. Akhilesh Yadav ke anusaar, Jharkhand mein colon cancer cases badh rahe hain — awareness aur screening bahut zaroori hai.",
+      },
+      {
+        heading: "Kise Screening Ki Zaroorat Hai — Ranchi ke Patients",
+        type: "list",
+        content: "Aapko colon cancer screening ki zaroorat hai agar:",
+        list: [
+          "Age 45+ aur average risk — regular colonoscopy har 10 saal",
+          "First-degree relative (parents/sibling) mein colon cancer — 40 saal se ya 10 saal pehle jitni umra mein unhe hua",
+          "Personal history of colon polyps ya colon cancer",
+          "Inflammatory Bowel Disease (Crohn's ya Ulcerative Colitis)",
+          "Lynch Syndrome ya FAP (familial adenomatous polyposis) genetic condition",
+          "Rectal bleeding, unexplained weight loss, change in bowel habits — kisi bhi age mein",
+          "Kala (tarry/dark) stool jo explain na ho",
+        ],
+      },
+      {
+        heading: "Colonoscopy Experience — Orchid Medical Centre Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre, Ranchi mein colonoscopy se pehle patients ko poori tarah explain karte hain. Preparation (1 din pehle): liquid diet, bowel preparation solution (PEG — polyethylene glycol) pine se colon clean hoti hai. Yeh process thoda uncomfortable lagta hai, lekin zaroori hai. Procedure: sedation (IV medication se neend aata hai — procedure dard nahi hota mostly). Flexible scope colon mein daala jaata hai. Duration: 30-45 minute. Agar polyp mile toh same time mein remove kar sakte hain (polypectomy). Recovery: sedation se 1-2 ghante mein utha sakte hain. Koi cuts nahi, koi taakon nahi. Driving avoid karein us din.",
+      },
+      {
+        heading: "Colon Cancer ke Warning Signs — Ignore Mat Karein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko yeh warning signs yaad rakhne ko kehte hain: Rectal bleeding ya stool mein blood (bright red ya dark). Stool ki width ya shape mein change — 'pencil thin' stools. Unexplained weight loss. Persistent abdominal discomfort — gas, cramps, pain. Feeling of incomplete bowel emptying. Unexplained iron deficiency anemia. In symptoms mein se koi bhi ho — kisi bhi age mein — colonoscopy zaroori hai. Colon cancer early stage mein detect ho toh outcomes significantly better hote hain. Late stage mein treatment complex aur prognosis alag hoti hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Cancer Screening",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Colonoscopy se log darte hain — lekin jo patients ek baar karwa lete hain, woh kehte hain itna bura nahi tha. Aur jo polyp hum nikaalte hain — woh theek nahi karte, cancer rokta hai. Ranchi mein main chahta hoon ki har 45+ individual ek baar colonoscopy karwa le.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Apni screening ke liye qualified gastroenterologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "अक्सर पूछे जाने वाले सवाल — Colon Cancer Screening Ranchi",
+        type: "text",
+        content: "Colonoscopy aur colon cancer screening ke baare mein Ranchi ke patients ke common sawaal:",
+      },
+    ],
+    faqs: [
+      {
+        q: "Colonoscopy kitni baar karwani chahiye?",
+        a: "Average risk mein 45-50 saal se shuru, har 10 saal mein. Agar polyp mile toh 3-5 saal mein follow-up. High risk (family history, IBD) mein Dr. Akhilesh Yadav zyada frequent schedule recommend karte hain Orchid Medical Centre, Ranchi mein.",
+      },
+      {
+        q: "Colonoscopy dardnak hoti hai?",
+        a: "Sedation ke saath generally nahi. Most patients ko sirf minor bloating ya cramping yaad rehti hai. Preparation (bowel prep) zyada uncomfortable lagta hai kuch logon ko. Dr. Akhilesh Yadav Ranchi mein procedure se pehle poori preparation explain karte hain.",
+      },
+      {
+        q: "Ranchi mein colonoscopy ka kharcha kitna hai?",
+        a: "Orchid Medical Centre, Ranchi mein colonoscopy cost reasonable hai aur Jharkhand mein kisi bhi government hospital comparable hai. Polypectomy sath ho toh additional charge. Exact cost ke liye +91 74919 25047 par call karein ya WhatsApp karein.",
+      },
+      {
+        q: "Kya colon cancer ke symptoms hamesha hote hain?",
+        a: "Nahi — early stage colon cancer mein symptoms ho bhi nahi sakte. Jab symptoms aate hain (rectal bleeding, weight loss) toh cancer already advanced stage mein ho sakta hai. Isliye asymptomatic logon mein bhi 45+ age mein screening zaroori hai.",
+      },
+      {
+        q: "Colonoscopy se pehle kya khaana chahiye aur kya nahi?",
+        a: "1 din pehle clear liquid diet — paani, clear soup, nimbu paani (pulp ke bina), coconut water. Red ya purple colored drinks avoid karein. Bowel prep solution (PEG) raat ko peena hota hai — Dr. Akhilesh Yadav detailed written instructions dete hain.",
+      },
+      {
+        q: "Family mein colon cancer history hai — kab se screening shuru karein?",
+        a: "Agar ek first-degree relative (parent/sibling) ko colon cancer hua — 40 saal ya unki age se 10 saal pehle (jo bhi pehle ho). Agar Lynch syndrome ya FAP genetic condition ho — aur bhi pehle. Dr. Akhilesh Yadav family history ke hisaab se personalized screening schedule banate hain.",
+      },
+    ],
+  },
 ];
+
+// ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
+/** Parses "June 2026", "August 12, 2026", or ISO strings → Date */
+function parsePublishedDate(publishedAt: string): Date {
+  const s = publishedAt.trim();
+  // ISO / YYYY-MM-DD with no letters
+  if (!s.match(/[A-Za-z]/)) return new Date(s);
+  // "Month YYYY" (e.g. "June 2026") — split on spaces, no comma
+  const parts = s.split(/[\s,]+/).filter(Boolean);
+  if (parts.length === 2) {
+    // "June 2026" → treat as the 1st of that month
+    return new Date(`${parts[0]} 1, ${parts[1]}`);
+  }
+  // "August 12, 2026" or "July 15, 2026" — native Date handles this fine
+  return new Date(s);
+}
 
 export function getBlogBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
@@ -2229,4 +3184,12 @@ export function getBlogBySlug(slug: string): BlogPost | undefined {
 
 export function getAllBlogSlugs(): string[] {
   return BLOG_POSTS.map((p) => p.slug);
+}
+
+/** For sitemap — slug + ISO publish date for every post */
+export function getAllBlogsForSitemap(): { slug: string; isoDate: string }[] {
+  return BLOG_POSTS.map((p) => ({
+    slug: p.slug,
+    isoDate: parsePublishedDate(p.publishedAt).toISOString(),
+  }));
 }

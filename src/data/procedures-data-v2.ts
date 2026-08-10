@@ -45,7 +45,7 @@ export const PROCEDURES_DATA_V2: Record<string, ProcedureDataV2> = {
     safetyRisks: "Upper Endoscopy is exceptionally safe. Major risks like perforation or heavy bleeding are extremely rare (less than 1 in 10,000 diagnostic procedures).",
     safetyBenefits: [
       "Accurate direct visual diagnosis of ulcers, inflammation, and tumors.",
-      "Completely painless and stress-free under light sedation.",
+      "Well-tolerated under light sedation; most patients experience minimal or no discomfort.",
       "Concurrent biopsy and treatment capability (like bleeding control or dilatation)."
     ],
     safetySuccessRate: "Over 99% diagnostic accuracy.",
@@ -55,7 +55,7 @@ export const PROCEDURES_DATA_V2: Record<string, ProcedureDataV2> = {
       { q: "क्या एंडोस्कोपी के बाद अस्पताल में भर्ती होना पड़ता है?", a: "नहीं, यह एक ओपीडी आधार पर की जाने वाली डेकेयर प्रक्रिया है। जांच के 2 घंटे के भीतर मरीज घर जा सकते हैं।" },
       { q: "एंडोस्कोपी की रिपोर्ट कब मिलती है?", a: "दूरबीन जांच की विजुअल रिपोर्ट तुरंत दे दी जाती. है। यदि कोई बायोप्सी (टुकड़ा) ली गई है, तो उसकी हिस्टोपैथोलॉजी रिपोर्ट आने में 3 से 4 दिन का समय लगता है।" }
     ],
-    doctorAdvice: "Stomach issues should not be ignored or self-treated with antacids forever. A quick, 10-minute painless endoscopy can help us find the exact cause and start targeted treatment early.",
+    doctorAdvice: "Stomach issues should not be ignored or self-treated with antacids forever. A quick, 10-minute endoscopy — performed under sedation so patients feel minimal discomfort — can help us find the exact cause and start targeted treatment early.",
     relatedConditions: ["fatty-liver", "jaundice"],
     relatedBlogs: ["endoscopy-kya-hota-hai", "jaundice-symptoms-causes"]
   },
@@ -672,7 +672,7 @@ export const PROCEDURES_DATA_V2: Record<string, ProcedureDataV2> = {
     ],
     safetyRisks: "Polypectomy is a standard and safe procedure. Complications like bleeding or perforation occur in less than 1% of cases, and can usually be treated instantly during the procedure using metallic clips.",
     safetyBenefits: [
-      "100% prevention of colon cancer by removing pre-cancerous growths.",
+      "Significantly reduces colon cancer risk by removing pre-cancerous growths before they turn malignant.",
       "Painless removal without requiring cuts or stitches on the abdomen.",
       "Determines if the growth was benign or malignant."
     ],
