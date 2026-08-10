@@ -3540,6 +3540,362 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 4: BLOGS 16–20 ─────────────────────────────────────────────────────
+
+  {
+    slug: "endoscopy-cost-ranchi",
+    titleHi: "Endoscopy Cost Ranchi — OGD Scopy Kharcha | Dr. Akhilesh Yadav",
+    titleEn: "Endoscopy Cost in Ranchi — OGD Scopy Price & What to Expect | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein endoscopy (OGD Scopy) ka kharcha kitna hai? Dr. Akhilesh Yadav — Orchid Medical Centre — mein affordable endoscopy aur complete procedure guide.",
+    excerptEn: "Endoscopy cost in Ranchi at Orchid Medical Centre. OGD scopy price, preparation, what to expect, and why Dr. Akhilesh Yadav is Ranchi's trusted endoscopist.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔭",
+    tags: ["endoscopy cost ranchi", "OGD scopy ranchi", "endoscopy price ranchi", "gastroenterologist ranchi", "endoscopy clinic ranchi"],
+    metaTitle: "Endoscopy Cost in Ranchi | OGD Scopy | Dr. Akhilesh Yadav",
+    metaDescription: "Endoscopy (OGD Scopy) cost in Ranchi at Orchid Medical Centre. Affordable pricing, sedation available, expert gastroenterologist Dr. Akhilesh Yadav.",
+    sections: [
+      {
+        heading: "Endoscopy Se Kyun Darte Hain — Aur Kyun Nahi Darna Chahiye",
+        type: "text",
+        content: "Ranchi se aaye 39-saal ke Deepak Kumar — doctor ne endoscopy recommend ki thi chronic acidity ke liye. Unka pehla sawaal: 'Kharcha kitna hoga? Dard toh nahi hoga na?' Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — ne unhe bataya: procedure sedation mein hoti hai (anesthesia jaise neend aa jaati hai), dard nahi hota, aur Ranchi mein cost reasonable hai. Deepak ki endoscopy mein Barrett's Esophagus (pre-cancerous condition) early stage mein detect hua — jo treatment se control ho gaya. Sahi time par endoscopy life-changing hoti hai.",
+      },
+      {
+        heading: "Endoscopy (OGD Scopy) Kya Hoti Hai?",
+        type: "text",
+        content: "Upper GI Endoscopy ya OGD Scopy (OesophagoGastroDuodenoscopy) — ek thin, flexible camera tube (endoscope) jo mooh se daali jaati hai aur esophagus (food pipe), stomach, aur duodenum (first part of small intestine) ko examine karti hai. Kya dekha ja sakta hai: ulcers, inflammation, bleeding, tumors, strictures, H. Pylori. Kya kiya ja sakta hai: biopsy (tissue sample), H. Pylori test, bleeding control, polyp removal, esophageal dilation. Ranchi mein Dr. Akhilesh Yadav Orchid Medical Centre mein high-definition endoscopy karte hain — best imaging clarity ke saath.",
+      },
+      {
+        heading: "Endoscopy Kab Zaroor Hai?",
+        type: "list",
+        content: "In situations mein endoscopy zaroori hai:",
+        list: [
+          "4+ hafte se persistent acidity ya GERD jo medications se theek nahi ho rahi",
+          "Swallowing mein difficulty (dysphagia)",
+          "Ulti mein blood ya dark brown material (coffee grounds)",
+          "Kala tarry stool (upper GI bleeding sign)",
+          "Unexplained weight loss",
+          "Upper abdominal pain — H. Pylori ya ulcer rule out karne ke liye",
+          "Age 45+ mein naya onset dyspepsia (indigestion)",
+        ],
+      },
+      {
+        heading: "Endoscopy Cost Ranchi — Orchid Medical Centre",
+        type: "text",
+        content: "Orchid Medical Centre, Ranchi mein endoscopy ki cost Jharkhand ke government aur private hospitals ke comparable hai. Basic OGD Scopy (diagnostic): budget-friendly — sedation included. Biopsy additional charge (agar tissue sample lena ho). H. Pylori Rapid Urease Test: additional. Sedation (IV medication): patient zyada comfortable rehte hain — recommended. Insurance: zyada tar health insurance plans mein endoscopy covered hoti hai — apni policy check karein. Exact current pricing ke liye: +91 74919 25047 ya WhatsApp pe poochein — transparent billing, koi hidden charges nahi.",
+      },
+      {
+        heading: "Endoscopy Preparation aur Recovery — Step by Step",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein patients ko detailed preparation instructions dete hain. Pehle din raat tak: normal dinner le sakte hain. Procedure se 6-8 ghante pehle: kuch nahi khaana peena (NPO — nil per oral). Kuch specific medications continue rakhein — doctor se confirm karein. Procedure ke din: Orchid Medical Centre pahuncho, IV line lagegi. Sedation diya jayega — aap neend mein hoge (conscious sedation — poori anesthesia nahi). Procedure: 15-20 minute. Recovery: 30-60 minute baad discharge. Driving khud mat karein us din — kisi ke saath aayen. Report: day end tak mil jaati hai Orchid Medical Centre mein.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Endoscopy",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main roz 8-10 endoscopies karta hoon. Zyada tar patients procedurse ke baad kehte hain: yeh toh kitna aasaan tha! Darr se zyada imagination mein hota hai. Aur jo conditions hum early mein detect karte hain — ulcer, Barrett's, early cancer — unka treatment bahut aasaan hota hai early stage mein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Endoscopy ki zaroorat ke liye doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Endoscopy kitna dardnak hota hai?",
+        a: "Sedation ke saath generally dard nahi hota — mild discomfort ya bloating feel ho sakti hai. Bina sedation ke gag reflex hota hai jo uncomfortable hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein sedation ke saath endoscopy karte hain for maximum comfort.",
+      },
+      {
+        q: "Endoscopy kitne time mein hoti hai?",
+        a: "Diagnostic OGD Scopy: 15-20 minute. Agar therapeutic procedure (biopsy, polyp removal, bleeding control) ho toh 30-45 minute. Total time Orchid Medical Centre mein (registration se discharge tak): 2-3 ghante.",
+      },
+      {
+        q: "Kya endoscopy safe hai?",
+        a: "Haan — endoscopy bahut safe procedure hai. Complications rare hain (<0.1% major complications). Minor: sore throat, bloating. Sedation reactions bahut rare. Dr. Akhilesh Yadav DM Gastroenterology hain — extensive endoscopy training ke saath.",
+      },
+      {
+        q: "Endoscopy report kitne din mein milti hai?",
+        a: "Orchid Medical Centre, Ranchi mein: endoscopy report same day ya next day milti hai. Biopsy report: 5-7 din (pathology lab processing time). Dr. Akhilesh Yadav results explain karte hain aur next steps discuss karte hain.",
+      },
+      {
+        q: "Kya endoscopy mein anesthesia hoti hai?",
+        a: "Full anesthesia nahi — Conscious Sedation (IV midazolam/propofol) diya jaata hai. Aap neend mein hoge lekin breathe normally karte rahenge. Anesthesiologist ki zaroorat nahi hoti routine cases mein. Orchid Medical Centre mein yeh safely manage hota hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "colonoscopy-cost-ranchi",
+    titleHi: "Colonoscopy Cost Ranchi — Kharcha, Preparation aur Doctor | Dr. Akhilesh Yadav",
+    titleEn: "Colonoscopy Cost in Ranchi — Price, Preparation & Expert Care | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein colonoscopy ka kharcha kitna hai? Dr. Akhilesh Yadav — Orchid Medical Centre — mein affordable colonoscopy, complete preparation guide aur expert colonoscopist.",
+    excerptEn: "Colonoscopy cost in Ranchi at Orchid Medical Centre. Affordable pricing, full preparation guide & expert colonoscopy by Dr. Akhilesh Yadav, DM Gastroenterologist.",
+    category: "procedures",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["colonoscopy cost ranchi", "colonoscopy price ranchi", "colonoscopy preparation ranchi", "colon cancer screening ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Colonoscopy Cost in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Colonoscopy cost & preparation in Ranchi at Orchid Medical Centre. Affordable colonoscopy with sedation by expert DM Gastroenterologist Dr. Akhilesh Yadav.",
+    sections: [
+      {
+        heading: "Colonoscopy Ka Darr — Aur Ek Real Case Jo Zindagi Bachaa Gaya",
+        type: "text",
+        content: "Dhanbad se aaye 60-saal ke Ramchandra Prasad ji — unhe koi symptoms nahi the, lekin beti ne 'baba, umra ho gayi, ek baar scope karwa lo' bola. Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne colonoscopy ki. Mila: 3 polyps (ek 2.5cm large adenoma). Same sitting mein sab remove kar diye. Biopsy mein high-grade dysplasia — agar 2 saal aur ruk jaate, cancer ho sakta tha. Colonoscopy mein 'dard hoga' ki wajah se logon ki bahut baar procrastination hoti hai — lekin yeh procedure sedation mein hoti hai aur zyada tar patients ke liye manageable hai.",
+      },
+      {
+        heading: "Colonoscopy Kya Hai — Endoscopy Se Kaise Alag",
+        type: "text",
+        content: "Colonoscopy mein ek flexible camera tube (colonoscope) anus se daali jaati hai aur poore colon (large intestine) ko — ileocecal junction (small-large intestine junction) tak — examine kiya jaata hai. Kya dekha ja sakta hai: polyps, colon cancer, IBD (Crohn's/Colitis), diverticulosis, bleeding source. Kya kiya ja sakta hai: polyp removal (polypectomy), biopsy, bleeding control. Endoscopy vs Colonoscopy: Endoscopy (OGD) — upper GI (esophagus-stomach-duodenum). Colonoscopy — lower GI (large intestine). Dono Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav karte hain.",
+      },
+      {
+        heading: "Colonoscopy Cost Ranchi — Transparent Pricing",
+        type: "text",
+        content: "Orchid Medical Centre, Ranchi mein colonoscopy ki cost Jharkhand state ke best value mein hai. Diagnostic Colonoscopy (bina polyp removal): standard charge — sedation included. Colonoscopy + Polypectomy (polyp removal): additional charge per polyp depending on size/technique. Biopsy: additional. Sedation (IV): recommended for comfort — included in package. Insurance: most major health insurance plans mein colonoscopy covered hoti hai (especially cancer screening ke context mein). Cashless facility: available for select insurers. Exact pricing ke liye: +91 74919 25047 ya WhatsApp. Transparent billing — koi surprise charge nahi.",
+      },
+      {
+        heading: "Colonoscopy Preparation — Ranchi ke Patients Ke Liye Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein colonoscopy preparation written instructions dete hain. 2 din pehle se: high-fiber foods avoid karein (seeds, nuts, whole grains). 1 din pehle: Clear liquid diet sirf — paani, coconut water, clear soup, nimbu paani (bina pulp), black tea/coffee (bina milk). Red/purple colored drinks avoid karein (colon lining se confuse ho sakti hai blood ke saath). Shyam ko: Bowel Preparation Solution (PEG — polyethylene glycol) peena hota hai — 2-4 litre, split dose. Pehle half raat ko, doosra half procedure se 4-6 ghante pehle (subah sujha dosage ke hisaab se). Raat mein 'gas aur loose motions' hogi — yeh normal hai, matlab preparation ho rahi hai. Procedure ke din: NPO (kuch mat peeyein) prescribed time se. Iron supplements ek hafte pehle bandh karein (daagtey hain colon mein).",
+      },
+      {
+        heading: "Colonoscopy Recovery — Kya Expect Karein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein post-colonoscopy care mein batate hain: Sedation se 1-2 ghante mein recover hote hain. Bloating/gas feel ho sakta hai — normal, toot jaata hai thodi der mein. Agar polypectomy hui hai: bland diet 24-48 ghante, heavy exercise avoid. Minor rectal bleeding (speck of blood) ek-do din tak: normal agar polypectomy hui. Alarming signs (doctor ko call karein): significant rectal bleeding, severe abdominal pain, fever. Driving: us din nahi — kisi ke saath aayen. Next day se generally normal activities.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Colonoscopy",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main colonoscopy ke baad patients se poochta hoon — kaisa laga? 90% log kehte hain: preparation se zyada darta tha, procedure toh neend mein hi ho gayi. Bowel prep uncomfortable hota hai, lekin woh ek raat ki baat hai. Colon cancer jo hum rokate hain — woh zindagi bhar ka fayda hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Colonoscopy ki zaroorat ke liye doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Colonoscopy kitne ghante ki hoti hai?",
+        a: "Procedure khud: 30-45 minute (diagnostic). Polyp removal ho toh 60-90 minute. Total Orchid Medical Centre mein: arrival se discharge tak 3-4 ghante — preparation, sedation recovery include karke. Dr. Akhilesh Yadav Ranchi mein efficient aur thorough colonoscopy karte hain.",
+      },
+      {
+        q: "Bowel prep kitna mushkil hai?",
+        a: "PEG solution peena aur frequent loose motions — uncomfortable hota hai, lekin manageable. Chilled karein solution ko — easier hota hai. Lemon flavor available hai kuch brands mein. Dr. Akhilesh Yadav Ranchi mein alternative split-dose schedule bhi discuss karte hain.",
+      },
+      {
+        q: "Colonoscopy mein anesthesia hoti hai kya?",
+        a: "Full general anesthesia nahi — Conscious Sedation (IV medication) diya jaata hai. Aap deeply relaxed ya neend mein hoge. Anesthesiologist nahi chahiye routine cases mein. Orchid Medical Centre Ranchi mein yeh safely manage hota hai.",
+      },
+      {
+        q: "Agar polyp mile toh kya hoga?",
+        a: "Same colonoscopy ke dauran remove kar diya jaata hai (polypectomy) — zyada tar cases mein. Biopsy pathology lab mein jaati hai — 5-7 din mein result. Polyp size aur type ke hisaab se next colonoscopy ka schedule Dr. Akhilesh Yadav decide karte hain.",
+      },
+      {
+        q: "Kya colonoscopy se pehle koi test hota hai?",
+        a: "Blood tests: CBC, coagulation profile (PT-INR) — agar anticoagulants par ho. Diabetes control check. Blood thinners (warfarin, aspirin, clopidogrel) — Dr. Akhilesh Yadav batayenge kab bandh karni hain. Hypertension/cardiac medicines: generally continue.",
+      },
+    ],
+  },
+
+  {
+    slug: "eus-ranchi",
+    titleHi: "EUS (Endoscopic Ultrasound) Ranchi — Dr. Akhilesh Yadav | Orchid Medical Centre",
+    titleEn: "EUS (Endoscopic Ultrasound) in Ranchi — Advanced GI Diagnosis | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein EUS (Endoscopic Ultrasound) — advanced GI diagnostic procedure — Dr. Akhilesh Yadav karte hain Orchid Medical Centre mein. Pancreas, bile duct, submucosal lesions.",
+    excerptEn: "EUS (Endoscopic Ultrasound) in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Advanced diagnosis for pancreas, bile duct stones, submucosal tumors & more.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔬",
+    tags: ["EUS ranchi", "endoscopic ultrasound ranchi", "pancreas test ranchi", "advanced endoscopy ranchi", "gastroenterologist ranchi"],
+    metaTitle: "EUS Endoscopic Ultrasound Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "EUS (Endoscopic Ultrasound) in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Advanced pancreas, bile duct & GI tumour assessment. Expert care.",
+    sections: [
+      {
+        heading: "Jab Normal Tests Jawab Nahi Dete — EUS Ka Role",
+        type: "text",
+        content: "Bokaro se aaye 50-saal ke Sunil Tiwari — recurrent upper abdominal pain, CT scan normal, MRCP inconclusive. Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne EUS (Endoscopic Ultrasound) ki. Result: small common bile duct stone detect hua jo CT scan mein miss ho gaya tha. ERCP se same visit mein stone nikaal diya. Yeh case EUS ki power dikhata hai — jab conventional imaging enough nahi hoti. EUS Ranchi mein available hai Orchid Medical Centre mein.",
+      },
+      {
+        heading: "EUS Kya Hai — Aur Normal Ultrasound Se Kaise Alag",
+        type: "text",
+        content: "EUS (Endoscopic Ultrasound) mein endoscope ke tip par ek ultrasound probe hoti hai. Yeh probe GI tract ke andar se adjacent organs ko image karta hai — bahar se skin ke through nahi. Isliye: Resolution bahut zyada hoti hai — 1mm tak structures clearly dikhte hain. Pancreas, bile duct, gallbladder, stomach wall layers, mediastinal lymph nodes — sab clearly assess hota hai. Normal ultrasound limitation: bowel gas interfere karta hai — pancreas aur bile duct clear nahi dikhte. EUS limitation: nahi. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav EUS karte hain — Jharkhand ke limited centers mein yeh available hai.",
+      },
+      {
+        heading: "EUS Kab Lagti Hai?",
+        type: "list",
+        content: "EUS in conditions mein recommend ki jaati hai:",
+        list: [
+          "Bile duct stones — MRCP ya CT mein nahi dikh rahe lekin suspicion hai",
+          "Pancreatic masses — cyst, tumor — CT ke baad characterization",
+          "Chronic pancreatitis — detailed pancreatic duct assessment",
+          "Submucosal GI tumors (GIST, carcinoid) — layer-by-layer imaging",
+          "Esophageal/gastric cancer staging — T aur N staging",
+          "Gallbladder polyps — malignancy risk assessment",
+          "EUS-guided biopsy (FNA/FNB) — pancreas ya lymph node se tissue sample",
+        ],
+      },
+      {
+        heading: "EUS-Guided FNA/FNB — Bina Surgery Ke Tissue Diagnosis",
+        type: "text",
+        content: "EUS ka ek powerful application hai EUS-guided Fine Needle Aspiration (FNA) ya Fine Needle Biopsy (FNB). Pancreatic mass ya lymph node mein EUS se needle daali jaati hai (ultrasound guidance mein) aur tissue sample liya jaata hai — biopsy ke liye. Yeh avoid karta hai: separate surgical biopsy, CT-guided biopsy. Accuracy: 85-95% diagnostic yield. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh procedure karte hain — Jharkhand ke patients ko bade cities nahi jaana padta is advanced procedure ke liye.",
+      },
+      {
+        heading: "EUS Preparation aur Procedure — Ranchi Mein",
+        type: "text",
+        content: "EUS preparation similar to endoscopy: NPO 6-8 ghante. Procedure sedation mein hoti hai — generally comfortable. Upper EUS (pancreas/bile duct/stomach): scope mooh se — 45-60 minute. Rectal EUS (rectal cancer staging): scope anus se — 20-30 minute. Recovery: 1-2 ghante baad discharge. Results discuss: Dr. Akhilesh Yadav same day ya next visit mein imaging report explain karte hain. FNA/FNB biopsy report: 5-7 din pathology se. Cost inquiry ke liye: +91 74919 25047 ya WhatsApp.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — EUS",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'EUS ek baar mein woh information deta hai jo multiple tests se bhi nahi milti. Pancreatic cyst hai jo benign dikhti hai — EUS FNA se tissue leke confirm karte hain. Ranchi ke patients ke liye yeh ek big advantage hai ki yeh facility locally available hai — Patna ya Delhi nahi jaana padta.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Advanced GI procedures ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "EUS aur ERCP mein kya fark hai?",
+        a: "EUS diagnostic hai — organs dekhna, biopsy lena. ERCP therapeutic hai — bile duct mein directly work karna (stones nikalna, stent daalna). Often dono saath ya ek ke baad doosra kiya jaata hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein dono karte hain.",
+      },
+      {
+        q: "Kya EUS safe hai?",
+        a: "Haan — regular endoscopy jitni safe. Complications rare (<0.5%). FNA ke saath: pancreatitis ka slight risk (<2%), infection (<1%). Overall risk-benefit ratio bahut favorable hai accurate diagnosis ke liye.",
+      },
+      {
+        q: "EUS mein dard hota hai?",
+        a: "Sedation ke saath nahi. Procedure ke dauran aap comfortably neend mein hoge. Baad mein mild bloating ya sore throat ho sakta hai — 1-2 din mein theek ho jaata hai.",
+      },
+      {
+        q: "Pancreatic cyst ke liye EUS kab zaroor hai?",
+        a: "Agar CT/MRI mein pancreatic cyst mile — size >1cm, main duct connect, mural nodule, solid component — toh EUS with FNA recommend hai characterization ke liye. Dr. Akhilesh Yadav Ranchi mein worrisome cysts ko surgery ke liye refer aur benign ones ko monitor karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "liver-biopsy-ranchi",
+    titleHi: "Liver Biopsy Ranchi — Procedure, Cost aur Kab Zaroori Hai | Dr. Akhilesh Yadav",
+    titleEn: "Liver Biopsy in Ranchi — Procedure, Cost & When Needed | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein liver biopsy kab zaroor hai aur kaise hoti hai? Dr. Akhilesh Yadav — Orchid Medical Centre — mein liver biopsy ki poori guide aur FibroScan alternative.",
+    excerptEn: "Liver biopsy in Ranchi — when it's needed, how it's done, and FibroScan alternatives. Expert hepatology by Dr. Akhilesh Yadav at Orchid Medical Centre.",
+    category: "procedures",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["liver biopsy ranchi", "liver test ranchi", "FibroScan ranchi", "hepatologist ranchi", "liver disease ranchi"],
+    metaTitle: "Liver Biopsy in Ranchi | FibroScan | Dr. Akhilesh Yadav",
+    metaDescription: "Liver biopsy in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Know when biopsy vs FibroScan is recommended. Expert hepatology care for Jharkhand.",
+    sections: [
+      {
+        heading: "Liver Biopsy — Kyun Zaroorat Hoti Hai?",
+        type: "text",
+        content: "Hazaribagh se aaye 41-saal ki Meena Devi — elevated liver enzymes 1 saal se, HBsAg negative, alcohol nahi — cause unclear. FibroScan mein F2 fibrosis suggest hua. Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology, Orchid Medical Centre Ranchi — ne liver biopsy recommend ki cause confirm karne ke liye. Biopsy result: Autoimmune Hepatitis. Correct diagnosis se sahi treatment start hua — steroids aur immunosuppressants. 6 mahine mein enzymes normal. Liver biopsy ek invasive procedure hai, lekin kuch cases mein diagnosis ki gold standard hai.",
+      },
+      {
+        heading: "Liver Biopsy Kab Zaroor Hoti Hai?",
+        type: "list",
+        content: "Liver biopsy in situations mein recommend hoti hai:",
+        list: [
+          "Unknown cause ka liver disease — non-invasive tests se clear nahi hua",
+          "Autoimmune Hepatitis diagnosis aur activity grading",
+          "NASH vs simple fatty liver — grade aur stage determine karna",
+          "Primary Biliary Cholangitis (PBC) ya Primary Sclerosing Cholangitis (PSC)",
+          "Drug-induced liver injury (DILI) — confirmation",
+          "Liver mass — FNA (fine needle aspiration) se diagnosis",
+          "Agar FibroScan result inconclusive ho ya body habitus (obesity/ascites) limit kare",
+        ],
+      },
+      {
+        heading: "FibroScan vs Liver Biopsy — Pehle FibroScan Try Karein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein FibroScan ko prefer karte hain jab bhi possible. FibroScan: 10 minute ka non-invasive test — ultrasound jaise. Liver stiffness measure karta hai — fibrosis estimate. F0-F1 (minimal), F2-F3 (significant), F4 (cirrhosis). No sedation, no risk. Accuracy: 85-90% fibrosis staging ke liye. Liver Biopsy: invasive, 10-15% discomfort/pain risk, rare complications. Lekin: tissue directly dekhte hain — exact cause, grade, stage. When FibroScan is used: routine staging of Hepatitis B/C/NAFLD. When biopsy needed: unclear diagnosis, autoimmune, specific cause confirmation.",
+      },
+      {
+        heading: "Liver Biopsy Procedure — Orchid Medical Centre Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein ultrasound-guided liver biopsy karte hain — safer aur more accurate. Preparation: blood tests (PT-INR, platelet count), blood group. Blood thinners bandh karna (doctor advise karega). NPO 4-6 ghante. Procedure: local anesthesia + mild sedation. Ultrasound guidance se needle target location par daali jaati hai. Tissue sample (needle core) liya jaata hai — 15-20 mm piece. Duration: 20-30 minute. Post-biopsy: 2-4 ghante observation (blood pressure monitoring, pain check). Discharge same day zyada tar. Pain: mild to moderate upper right abdomen — analgesics se manage. Biopsy report: 5-7 din pathology se.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Liver Biopsy",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Liver biopsy se patients darte hain — lekin aaj FibroScan se bahut kam cases mein biopsy lagti hai. Jab biopsy zaroor ho — ultrasound guidance se bahut safe ho gayi hai. Sahi diagnosis ke liye correct procedure choose karna zaroori hai — FibroScan pehle, biopsy sirf jab zaroor.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Liver procedures ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Liver biopsy mein bahut dard hota hai?",
+        a: "Local anesthesia diya jaata hai — needle insertion par chubhan ya pressure feel hota hai. Procedure ke baad 4-6 ghante tak dull aching pain right side mein — paracetamol se manage. Serious pain (<5% cases) mein doctor ko immediately batayein. Dr. Akhilesh Yadav Ranchi mein sedation bhi consider karte hain anxious patients ke liye.",
+      },
+      {
+        q: "Liver biopsy ke complications kya hain?",
+        a: "Pain (most common, 20-30%). Bleeding (significant: <1%). Bile peritonitis (<0.1%). Organ puncture (<0.1%). Overall serious complication rate bahut low hai, khaas karke ultrasound guidance ke saath. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein post-biopsy 2-4 ghante monitor karte hain.",
+      },
+      {
+        q: "FibroScan kab fail hoti hai?",
+        a: "FibroScan ki accuracy kam hoti hai agar: morbid obesity (BMI >35), ascites (pet mein paani), narrow intercostal spaces. In cases mein liver biopsy alternative hai. Dr. Akhilesh Yadav assess karke decide karte hain Ranchi mein.",
+      },
+      {
+        q: "Kya liver biopsy se cancer phailta hai?",
+        a: "Yeh ek common misconception hai. Modern ultrasound-guided biopsy mein needle tract seeding (cancer spreading along needle path) extremely rare (<0.01%) hai. Risk-benefit ratio ke liye — diagnosis clear karne ka fayda zyada hota hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "colon-polyp-removal-ranchi",
+    titleHi: "Colon Polyp Removal Ranchi — Colonoscopic Polypectomy | Dr. Akhilesh Yadav",
+    titleEn: "Colon Polyp Removal in Ranchi — Polypectomy | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein colon polyp removal (colonoscopic polypectomy) — Dr. Akhilesh Yadav — Orchid Medical Centre mein. Cancer hone se pehle polyp removal kaise cancer rokti hai — guide.",
+    excerptEn: "Colon polyp removal (polypectomy) in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Cancer prevention through colonoscopy — how it works, risks & recovery.",
+    category: "procedures",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["colon polyp removal ranchi", "polypectomy ranchi", "colonoscopy polyp ranchi", "colon cancer prevention ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Colon Polyp Removal Ranchi | Polypectomy | Dr. Akhilesh Yadav",
+    metaDescription: "Colon polyp removal (polypectomy) in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Cancer prevention colonoscopy — what to expect & follow-up care.",
+    sections: [
+      {
+        heading: "Polyp Jo Cancer Nahi Bana — Ek Success Story",
+        type: "text",
+        content: "Ranchi se hi 54-saal ke Jagdish Prasad ji — routine colonoscopy cancer screening ke liye aaye (unke bade bhai ko colon cancer tha). Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre — ne 3 polyps find kiye: ek 12mm, ek 6mm, ek 4mm. Teeno same session mein remove kar diye — biopsy mein 12mm polyp tubular adenoma with low-grade dysplasia (pre-cancerous). Jagdish ji cancer se bache — sirf ek colonoscopy ki wajah se. Colon polyp removal (polypectomy) cancer prevention ka sabse effective tool hai.",
+      },
+      {
+        heading: "Colon Polyp Kya Hai — Aur Kab Khatra Banta Hai?",
+        type: "text",
+        content: "Colon Polyp — large intestine (colon) ki lining mein ek abnormal growth hai. Zyada tar polyps benign (harmless) hote hain, lekin kuch types cancer mein badal sakte hain. Types: Hyperplastic Polyps — generally benign, cancer risk nahi. Adenomatous Polyps (Adenomas) — pre-cancerous. Tubular, villous, tubulovillous. Size matters: <1cm: low risk. 1-2cm: moderate. >2cm: high risk. High-grade dysplasia mein — cancer very close hai. Ranchi mein Dr. Akhilesh Yadav ke anusaar, colonoscopy mein milne wale 70-80% polyps adenomas hote hain jinhe timely remove karna cancer rokta hai.",
+      },
+      {
+        heading: "Polypectomy Kaise Hoti Hai — Orchid Medical Centre Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav colonoscopy ke dauran hi polyp remove karte hain — same procedure, koi alag surgery nahi. Techniques: Cold Snare Polypectomy: small polyps (<1cm) ke liye — snare (loop) se cut kar dete hain, no electricity, minimal risk. Hot Snare Polypectomy (EMR — Endoscopic Mucosal Resection): larger polyps ke liye — electrocautery use hoti hai. EMR (Endoscopic Mucosal Resection): flat/sessile large polyps ke liye — saline lift karke remove. ESD (Endoscopic Submucosal Dissection): very large flat polyps, early mucosal cancer — highly skilled procedure. Removed tissue biopsy ke liye lab jaati hai. Results 5-7 din mein.",
+      },
+      {
+        heading: "Polypectomy ke Baad — Kya Expect Karein aur Follow-up",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein post-polypectomy care mein batate hain: Diet: bland soft diet 24-48 ghante (khaas karke large polyp removal ke baad). Strenuous activity 1 week avoid. Blood thinners: doctor se confirm karein kab start karein. Minor rectal bleeding (1-2 din) — normal. Alarming (emergency): significant rectal bleeding (large clots), severe abdominal pain, fever — hospital aayein immediately. Follow-up Colonoscopy: Polyp type aur size ke hisaab se schedule karta hai Dr. Akhilesh Yadav. Low-risk adenoma (<1cm, 1-2 polyps): 5-10 saal. High-risk adenoma (large, multiple, villous): 1-3 saal mein repeat.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Polyp Removal",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Colon polyp removal sabse underrated cancer prevention procedure hai. Koi dawa nahi — sirf ek colonoscopy. Polyp nikalte hain, cancer prevent hota hai. Ranchi mein main yeh message patients tak pahunchana chahta hoon: 45+ age hai, ek baar colonoscopy zaroor karwa lein — chahe koi symptoms na hon.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Colon cancer screening ke liye gastroenterologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Polypectomy mein dard hota hai?",
+        a: "Sedation ke saath nahi — aap neend mein hoge. Baad mein mild cramping ya discomfort ho sakti hai — paracetamol se manage. Large polyp removal ke baad thodi zyada discomfort ho sakti hai. Dr. Akhilesh Yadav Ranchi mein post-procedure pain management clearly guide karte hain.",
+      },
+      {
+        q: "Kya polyp wapas aa sakta hai?",
+        a: "Completely removed polyp wapas nahi aata. Lekin naaye polyps colon mein develop ho sakte hain — isliye follow-up colonoscopy schedule zaroori hai. High-risk adenoma mein 1-3 saal mein, low-risk mein 5-10 saal mein Dr. Akhilesh Yadav repeat colonoscopy schedule karte hain.",
+      },
+      {
+        q: "Agar biopsy mein cancer aaya toh?",
+        a: "Early mucosal cancer (T1a) — colonoscopic removal hi kaafi hota hai usually. Deeper invasion (T1b, T2+) — surgical resection ki zaroorat. Dr. Akhilesh Yadav Ranchi mein cancer surgery ke liye appropriate surgical oncologist ko refer karte hain aur care coordinate karte hain.",
+      },
+      {
+        q: "Blood thinners par hoon — polypectomy safe hai?",
+        a: "Aspirin: chhote polyps ke liye continue kar sakte hain. Warfarin/clopidogrel: 5-7 din pehle bandh karni hoti hai (cardiac risk assess karke — cardiologist se coordinate). Anticoagulant bridging kabhi kabhi zaroor hoti hai. Dr. Akhilesh Yadav Ranchi mein case-by-case decide karte hain.",
+      },
+      {
+        q: "Ek colonoscopy mein kitne polyps remove kar sakte hain?",
+        a: "Generally ek session mein 3-5 polyps comfortably remove ho jaate hain. Bahut zyada aur large polyps mein staged procedure (2 sessions) safe hoti hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein safety pehle rakhte hain — ek session mein over-aggressive polypectomy avoid karte hain.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
