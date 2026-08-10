@@ -3896,6 +3896,372 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 5: BLOGS 21–25 (Hindi-first) ──────────────────────────────────────
+
+  {
+    slug: "ranchi-mein-pet-ke-doctor",
+    titleHi: "Ranchi Mein Pet Ke Doctor — Dr. Akhilesh Yadav | Gastroenterologist",
+    titleEn: "Pet Ke Doctor in Ranchi — Best Stomach Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein pet ke doctor kaun hain? Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre mein stomach, intestine aur liver ki sabhi samasya ka ilaj karte hain.",
+    excerptEn: "Looking for a stomach doctor in Ranchi? Dr. Akhilesh Yadav — DM Gastroenterologist at Orchid Medical Centre — treats all stomach, gut & liver conditions.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🩺",
+    tags: ["ranchi mein pet ke doctor", "pet ka doctor ranchi", "stomach doctor ranchi", "gastroenterologist ranchi", "pet specialist ranchi"],
+    metaTitle: "Pet Ke Doctor Ranchi | Dr. Akhilesh Yadav Gastroenterologist",
+    metaDescription: "Ranchi mein pet ke doctor — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. All stomach, intestine & liver conditions treated. Book now.",
+    sections: [
+      {
+        heading: "Pet Ki Problem — Sahi Doctor Kon Hai?",
+        type: "text",
+        content: "Ranchi ke bahut se log confused rehte hain — 'pet mein dard hai toh kis doctor ke paas jaayein?' General physician? Surgeon? Ya koi specialist? Jab baat stomach, intestine, liver ya pancreas ki ho — toh sahi specialist hai: Gastroenterologist. Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — Jharkhand ke experienced super-specialists mein hain. Din mein 20-25 patients aate hain — Ranchi, Bokaro, Dhanbad, Hazaribagh, Jamshedpur, Deoghar se. Ek dedicated pet ke doctor ka fayda: correct diagnosis, sahi treatment, unnecessary surgery se bachao.",
+      },
+      {
+        heading: "Dr. Akhilesh Yadav Kya Treat Karte Hain?",
+        type: "list",
+        content: "Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav in conditions ka ilaj karte hain:",
+        list: [
+          "Acidity aur GERD (acid reflux, seene mein jalan)",
+          "Peptic Ulcer — H. Pylori infection sametey",
+          "IBS (Irritable Bowel Syndrome) — baar baar loose motions ya kabj",
+          "IBD (Crohn's disease, Ulcerative Colitis)",
+          "Fatty Liver (NAFLD/NASH), Hepatitis B/C, Liver Cirrhosis",
+          "Jaundice (peela hona — skin aur aankhein)",
+          "Gallstones aur biliary conditions",
+          "Piles (bawaseer), constipation, rectal bleeding",
+          "Pancreatitis (pancreas ki soojan)",
+          "Colon cancer screening aur polyp removal",
+        ],
+      },
+      {
+        heading: "Orchid Medical Centre Ranchi — Suvidha Aur Procedures",
+        type: "text",
+        content: "Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav ke paas advanced gastroenterology suvidhayen hain: Upper GI Endoscopy (OGD Scopy) — esophagus, stomach, duodenum. Colonoscopy — full colon examination, polyp removal. ERCP — bile duct stones, stenting. EUS (Endoscopic Ultrasound) — pancreas, bile duct advanced imaging. FibroScan — liver fibrosis non-invasive assessment. Kaphi saari conditions ka diagnosis aur treatment ek hi jagah — Ranchi se bahar jaana nahi padta. Appointment ke liye: +91 74919 25047. Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+      {
+        heading: "Kab Pet Ke Doctor Ko Dikhana Zaroor Hai",
+        type: "list",
+        content: "In symptoms mein delay mat karein — gastroenterologist se milein:",
+        list: [
+          "4+ hafte se pet mein dard — theek nahi ho raha",
+          "Toilet mein blood aana — bright red ya kala",
+          "Bina wajah ka wajan ghatna",
+          "Peela hona (jaundice) — skin ya aankhein",
+          "Nigalna mushkil lagna (dysphagia)",
+          "Baar baar ulti ya nausea",
+          "Liver ya pancreas tests mein abnormality",
+        ],
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi ke patients mujhse kehte hain ki pehle sochte the itna bada doctor hai, milenge kaise. Lekin main chahta hoon ki har marz ka patient — chahe Bokaro se aaye ya Deoghar se — Ranchi mein world-class gastro care paye. Symptoms ignore mat karein, milne aayein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Pet ke doctor aur surgeon mein kya fark hai?",
+        a: "Gastroenterologist medical treatment karta hai — endoscopy, medications, lifestyle management. Surgeon operation karta hai. Zyada tar GI conditions mein pehle gastroenterologist see karte hain — zaroorat padne par surgical referral. Dr. Akhilesh Yadav Ranchi mein coordinate karte hain jab zaroor ho.",
+      },
+      {
+        q: "Kya bina appointment ke aa sakte hain?",
+        a: "Orchid Medical Centre, Ranchi mein appointment preferred hai — wait time kam hoti hai. Emergency cases immediate attend hote hain. +91 74919 25047 par call karein ya WhatsApp karein appointment ke liye.",
+      },
+      {
+        q: "Ranchi se kitni door hai Orchid Medical Centre?",
+        a: "Orchid Medical Centre HB Road, Ranchi mein hai — city center ke kareeb. Ranchi station se 15-20 minute. Bokaro se ~2 ghante, Hazaribagh se ~1.5 ghante, Dhanbad se ~2.5 ghante. Patients Bihar aur Chhattisgarh se bhi aate hain.",
+      },
+      {
+        q: "Hindi mein consultation milti hai?",
+        a: "Haan — Dr. Akhilesh Yadav fluent Hindi mein consultation dete hain. Jharkhand ke local patients ke liye yeh ek bada comfort hai — medical terms Hindi mein samjhaye jaate hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-liver-ka-doctor",
+    titleHi: "Ranchi Mein Liver Ka Doctor — Dr. Akhilesh Yadav | Hepatologist",
+    titleEn: "Liver Doctor in Ranchi — Hepatologist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein liver ka doctor kaun hai? Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre mein fatty liver, hepatitis, jaundice, cirrhosis ka expert ilaj.",
+    excerptEn: "Liver doctor in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist & Hepatologist at Orchid Medical Centre. Fatty liver, hepatitis, jaundice & all liver conditions.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["ranchi mein liver ka doctor", "liver doctor ranchi", "hepatologist ranchi", "jaundice doctor ranchi", "liver specialist jharkhand"],
+    metaTitle: "Liver Doctor in Ranchi | Dr. Akhilesh Yadav Hepatologist",
+    metaDescription: "Liver doctor in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist & Hepatologist at Orchid Medical Centre. Expert liver care: fatty liver, hepatitis, jaundice, cirrhosis.",
+    sections: [
+      {
+        heading: "Ranchi Mein Liver Doctor Ki Zaroorat — Kyon?",
+        type: "text",
+        content: "Jharkhand mein liver diseases ek growing problem hai. Hepatitis B ka prevalence national average se zyada hai — kai logon ko pata hi nahi hota. Fatty liver (NAFLD) diabetes aur motaape ke saath badh raha hai. Alcohol-related liver disease bhi common hai. Deoghar se lekar Bokaro tak — Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Jharkhand ka ek experienced liver specialist hain. Liver diseases mein dedicated specialist zaroor dikhayein — general physician ki expertise yahan limited hoti hai.",
+      },
+      {
+        heading: "Liver Ki Koi Bhi Problem — Dr. Akhilesh Yadav Se Milein",
+        type: "list",
+        content: "Orchid Medical Centre Ranchi mein yeh liver conditions treat hoti hain:",
+        list: [
+          "Fatty Liver (NAFLD/NASH) — Grade 1-3, advanced fibrosis tak",
+          "Alcoholic Liver Disease (ALD) — early se advanced cirrhosis",
+          "Hepatitis B — antiviral therapy, long-term monitoring",
+          "Hepatitis C — modern DAA se 8-12 week mein virus clear",
+          "Hepatitis A/E — acute management",
+          "Liver Cirrhosis — ascites, varices, encephalopathy management",
+          "Autoimmune Hepatitis — steroid/immunosuppressant therapy",
+          "Jaundice (peela hona) — cause finding aur treatment",
+          "Liver Abscess — antibiotics aur drainage",
+          "Liver cancer surveillance — high-risk patients monitoring",
+        ],
+      },
+      {
+        heading: "FibroScan — Ranchi Mein Liver Test Bina Biopsy",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein FibroScan use karte hain — ek non-invasive liver test jo liver stiffness measure karta hai aur fibrosis stage batata hai. Sirf 10 minute ka procedure, koi needle nahi, koi dard nahi. Results: F0-F1 (normal-minimal), F2-F3 (significant fibrosis), F4 (cirrhosis). Hepatitis B/C patients mein annual FibroScan se disease progression monitor hoti hai. Fatty liver patients mein FibroScan se pata chalta hai ki weight loss/treatment se liver improve hua ya nahi.",
+      },
+      {
+        heading: "Jaundice Emergency — Kab Hospital Zaroor Jaayein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko warn karte hain — yeh jaundice emergency signs hain: Skin aur aankhein bright yellow. Dark brown urine (chai jaise), pale/clay-colored stools. Severe abdominal pain, especially right upper side. Confusion ya disorientation (Hepatic Encephalopathy). High fever with jaundice (infection sign). Swollen abdomen (ascites). In symptoms mein immediately Orchid Medical Centre ya nearest hospital jayein — delay life-threatening ho sakta hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Liver",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Liver ek silent organ hai — bahut kuch silently sahta hai aur late stage mein symptoms aate hain. Ranchi mein main recommend karta hoon — agar diabetes, motaapa, alcohol history, ya family mein liver disease hai — toh saal mein ek baar liver checkup zaroor karwayein. Early detection mein treatment bahut aasaan hota hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Liver symptoms ke liye hepatologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Liver ke liye konsa blood test karwayein?",
+        a: "LFT (SGPT, SGOT, ALP, GGT, Bilirubin, Albumin, PT-INR), HBsAg (Hepatitis B), anti-HCV (Hepatitis C), Ultrasound abdomen. Diabetes ya motaapa ho toh saal mein ek baar. Dr. Akhilesh Yadav Ranchi mein complete liver health workup guide karte hain.",
+      },
+      {
+        q: "Fatty liver mein kya khaana avoid karein?",
+        a: "Avoid: alcohol (completely), refined sugar (mithai, cold drinks), maida (ultra-processed), saturated fats (excessive ghee, vanaspati), fried snacks. Helpful: sattu, oats, nuts (limited), olive oil, haldi, lehsun. Dr. Akhilesh Yadav Ranchi mein detailed diet counseling dete hain.",
+      },
+      {
+        q: "Hepatitis B positive hoon — kya mujhe treatment ki zaroorat hai?",
+        a: "Sab Hepatitis B carriers ko treatment ki zaroorat nahi hoti. Viral load (HBV DNA), liver enzymes (SGPT), aur FibroScan/biopsy se decide hota hai. Dr. Akhilesh Yadav Ranchi mein complete evaluation karke decide karte hain — treatment kab start karein.",
+      },
+      {
+        q: "Liver mein paani bharna (ascites) kya hai?",
+        a: "Ascites cirrhosis ya liver failure ka complication hai — abdominal cavity mein fluid accumulate hota hai. Pet phul jaata hai. Diuretics se manage hota hai pehle, phir paracentesis (needle se paani nikaalna) zaroor hoti hai. Dr. Akhilesh Yadav Ranchi mein ascites cases regularly manage karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-acidity-ka-ilaj",
+    titleHi: "Ranchi Mein Acidity Ka Ilaj — GERD Treatment | Dr. Akhilesh Yadav",
+    titleEn: "Acidity Treatment in Ranchi — GERD Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein acidity aur GERD ka ilaj: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Sirf antacid se nahi, sahi diagnosis aur lasting management.",
+    excerptEn: "Acidity & GERD treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Correct diagnosis & long-term acid reflux management beyond just antacids.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔥",
+    tags: ["ranchi mein acidity ka ilaj", "acidity treatment ranchi", "GERD ranchi", "seene ki jalan ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Acidity Ka Ilaj Ranchi | GERD Doctor | Dr. Akhilesh Yadav",
+    metaDescription: "Acidity aur GERD ka ilaj Ranchi mein — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Correct diagnosis, lasting relief, endoscopy available.",
+    sections: [
+      {
+        heading: "Ranchi Mein Acidity — Aam Nahi Hai Jo Aap Soch Rahe Hain",
+        type: "text",
+        content: "Ranchi mein litti-chokha, dal-bati, oily khana aur chai-coffee ki badi consumption hai — aur iske saath hai acidity epidemic. Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — roz 10-15 acidity ke patients dekhte hain. Unka kehna hai: '90% patients sirf antacid khaate hain bina samjhe ki problem kya hai.' Acidity ka sahi naam hai GERD (Gastroesophageal Reflux Disease) jab yeh chronic ho jaaye — aur iska ilaj sirf antacid nahi, systematic approach chahiye.",
+      },
+      {
+        heading: "Acidity Ke Lakshan — Kab Zyada Serious Hai?",
+        type: "list",
+        content: "Yeh symptoms GERD ke hain — aur yeh alarm signs hain jab endoscopy zaroor hai:",
+        list: [
+          "Seene mein jalan (heartburn) — khaane ke baad ya loatne par badh jaaye",
+          "Mooh mein khatta aana (acid regurgitation)",
+          "Khaana nigalne mein takleef (dysphagia) — ALARM SIGN",
+          "Khana nahi khaa paana pura — early satiety",
+          "Raat ko uthna acidity se",
+          "Khaansi jo kisi dawaai se theek nahi — acid-related",
+          "Unexplained wajan ghaata — ALARM SIGN, turant doctor",
+        ],
+      },
+      {
+        heading: "Sahi Diagnosis — Antacid Se Pehle",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein GERD diagnosis mein karte hain: Detailed history: dard pattern, trigger foods, medications, weight history. H. Pylori test (stool antigen test): 50-60% Indian GERD patients mein H. Pylori positive. Endoscopy (OGD Scopy): zaroor hai agar 4+ hafte ki acidity medications se theek nahi ho rahi, ya alarm symptoms hain. Endoscopy se dekhte hain: esophagitis grade, H. Pylori status, Barrett's Esophagus (pre-cancerous — long-term acid damage), peptic ulcer. Sahi diagnosis se — sahi treatment.",
+      },
+      {
+        heading: "GERD Ka Ilaj — Dr. Akhilesh Yadav Ka Plan",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke GERD patients ke liye yeh plan dete hain: H. Pylori positive: 14-day eradication therapy — significant improvement hoti hai. PPI (Pantoprazole/Omeprazole): acid reduce karna — sirf PPI course, antacid nahi. 4-8 hafte ka course. Lifestyle: raat ka khana so ne se 3 ghante pehle. Bed head 6-8 inch uthana. Wajan ghatana agar overweight. Avoid: tea-coffee in excess, alcohol, oily-spicy. Ranchi ke helpful local foods: sattu ka paani (alkaline), chhachh, plain dahi. Barrett's Esophagus mein: regular surveillance endoscopy schedule. Severe GERD mein: anti-reflux surgery (rare cases) ka referral.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Acidity",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main log dekhta hoon jo 2-3 saal se antacid le rahe hain daily. Yeh sahi nahi — long-term antacid side effects hain. Aur kuch cases mein jo hum 'simple acidity' samajhte hain woh actually Barrett's ya early cancer nikalta hai. 4 hafte se zyada acidity hai — ek baar endoscopy zaroor karwayein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. GERD ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Acidity mein konsa khana safe hai Ranchi ke context mein?",
+        a: "Safe: sattu ka paani (alkaline nature), plain dahi/chhachh (probiotic), banana, oatmeal, boiled vegetables, plain rice. Avoid: litti-chokha bahut zyada ghee ke saath, tamatar, khatta fal, chai-coffee zyada, oily fried snacks. Dr. Akhilesh Yadav condition-specific diet guide karte hain.",
+      },
+      {
+        q: "Antacid aur PPI mein kya fark hai?",
+        a: "Antacid (eno, gelusil): turant neutralize karta hai acid — short-term relief, minutes mein. PPI (omeprazole, pantoprazole): acid production ki factory bandh karta hai — asar 2-3 din mein aata hai, lekin lasting. Chronic GERD mein PPI zyada effective hai — lekin sirf doctor ke guidance mein.",
+      },
+      {
+        q: "Kya pregnancy mein acidity ka ilaj alag hai?",
+        a: "Haan — pregnancy mein antacids (calcium/magnesium based) generally safe. Certain PPIs safe category mein hain. H2 blockers (ranitidine) bhi use hote hain. Dr. Akhilesh Yadav Ranchi mein pregnancy-safe options clearly guide karte hain.",
+      },
+      {
+        q: "Barrett's Esophagus kya hai — kya yeh dangerous hai?",
+        a: "Barrett's Esophagus: chronic acid damage se normal esophageal cells change ho jaate hain — pre-cancerous state. Risk: esophageal adenocarcinoma. Regular surveillance endoscopy se early changes detect hote hain. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein Barrett's patients ka regular follow-up karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-ka-gastroenterologist",
+    titleHi: "Ranchi Ka Gastroenterologist — Dr. Akhilesh Yadav | Best GI Doctor",
+    titleEn: "Best Gastroenterologist in Ranchi — Dr. Akhilesh Yadav | Orchid Medical Centre",
+    excerptHi: "Ranchi ka sabse trusted gastroenterologist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road. Jharkhand ke patients ki pehli choice.",
+    excerptEn: "Best gastroenterologist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Trusted by thousands of patients from Jharkhand, Bihar & Chhattisgarh.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "⭐",
+    tags: ["ranchi ka gastroenterologist", "best gastroenterologist ranchi", "top gastro doctor ranchi", "DM gastroenterologist ranchi", "Orchid Medical Centre ranchi"],
+    metaTitle: "Best Gastroenterologist in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Best gastroenterologist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Expert GI care for all stomach, liver & intestine conditions.",
+    sections: [
+      {
+        heading: "Ranchi Ka Gastroenterologist — Qualification Kya Hai Sahi Doctor Ki?",
+        type: "text",
+        content: "Ranchi mein kai 'pet ke doctor' hain — lekin ek DM Gastroenterologist ka matlab kya hai? MBBS (5.5 saal) → MD Internal Medicine (3 saal) → DM Gastroenterology (3 saal super-specialization) — kul 11.5 saal ki medical education. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein practice karte hain. Is level ki qualification ensure karta hai ki GI conditions mein deepest expertise ho — endoscopy, hepatology, advanced procedures sab mein. Jharkhand mein DM Gastroenterologists ki sankhya bahut limited hai.",
+      },
+      {
+        heading: "Dr. Akhilesh Yadav — Ranchi Mein Kyun Choose Karein",
+        type: "list",
+        content: "Dr. Akhilesh Yadav choose karne ke reasons:",
+        list: [
+          "DM Gastroenterology — highest GI qualification in India",
+          "Orchid Medical Centre mein advanced procedures: Endoscopy, Colonoscopy, ERCP, EUS, FibroScan",
+          "4,000+ consultations — Ranchi aur Jharkhand ke patients",
+          "Hindi mein consultation — Jharkhand ke local patients ke liye comfort",
+          "Ranchi mein kareeb — Bokaro, Hazaribagh, Dhanbad, Jamshedpur, Deoghar se accessible",
+          "GERD se liver cirrhosis tak — complete GI care ek jagah",
+          "Online appointment available — +91 74919 25047 ya WhatsApp",
+        ],
+      },
+      {
+        heading: "Orchid Medical Centre — Ranchi Ka Advanced GI Centre",
+        type: "text",
+        content: "Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav ke paas hain: High-definition Endoscopy — esophagus, stomach, duodenum visualize. Colonoscopy with polypectomy — colon cancer prevention. ERCP (Endoscopic Retrograde Cholangiopancreatography) — bile duct stones, stenting. EUS (Endoscopic Ultrasound) — pancreas, bile duct advanced imaging. FibroScan — liver fibrosis non-invasive test. Sedation facilities — comfortable procedures. Yeh all-in-one GI center Jharkhand mein rare hai — patients ko bade cities nahi jana padta.",
+      },
+      {
+        heading: "Patient Reviews — Ranchi Mein Dr. Akhilesh Yadav Ka Trust",
+        type: "text",
+        content: "Ranchi aur Jharkhand ke hazaron patients ne Dr. Akhilesh Yadav se ilaj liya hai. Google Reviews mein: 4.9/5.0 rating. Patients ki kahaniyan: fatty liver Grade 3 jo lifestyle program se Grade 1 ho gayi. Hepatitis C jo 12 hafte mein cure hua. Chronic IBS jo 4 saal baad sahi diagnosis aur treatment se theek hua. Colon polyp jo cancer banne se pehle nikala gaya. 'Hindi mein samjhate hain — itne bade doctor hoke bhi.' 'Ranchi mein hi yeh facility milna bahut bada relief hai.' Appointment ke liye: +91 74919 25047 ya WhatsApp.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ka Sandesh Ranchi Ke Patients Ko",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Main chahta hoon ki Jharkhand ke har patient ko — chahe Ranchi mein ho ya Bokaro, Hazaribagh, Deoghar mein — sahi gastroenterology care milein. Pet ki takleef ignore karna sahi nahi. Aur Ranchi se bahar jaane ki zaroorat nahi — yahan Orchid Medical Centre mein sab milta hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "DM Gastroenterologist aur MD Medicine mein kya fark hai?",
+        a: "MD Medicine general internal medicine specialist hai — broad training. DM Gastroenterology 3 saal ki additional super-specialization hai — sirf GI system focus. Endoscopy, colonoscopy, ERCP, hepatology — sab mein DM Gastroenterologist zyada expert hai. Dr. Akhilesh Yadav Ranchi mein DM Gastroenterology hain.",
+      },
+      {
+        q: "Kya Orchid Medical Centre mein cashless insurance hai?",
+        a: "Haan — select insurance plans ke liye cashless facility available hai. Exact insurance eligibility confirm karne ke liye +91 74919 25047 par call karein. Most major insurance procedures cover karte hain — endoscopy, colonoscopy included.",
+      },
+      {
+        q: "Kya telemedicine ya phone consultation milti hai?",
+        a: "Follow-up consultations phone/WhatsApp pe possible hain. First consultation aur procedures ke liye in-person visit zaroor hai Orchid Medical Centre, Ranchi mein. +91 74919 25047 par call karein guidance ke liye.",
+      },
+      {
+        q: "Kya Sunday ko OPD milti hai?",
+        a: "Dr. Akhilesh Yadav Monday se Saturday available hain: 10 AM–2 PM aur 5 PM–8 PM. Sunday generally holiday hai. Emergency cases ke liye contact karein — +91 74919 25047.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-fatty-liver-ka-ilaj",
+    titleHi: "Ranchi Mein Fatty Liver Ka Ilaj — Diet, Exercise & Treatment | Dr. Akhilesh Yadav",
+    titleEn: "Fatty Liver Treatment in Ranchi — Diet, Exercise & Medical Care | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein fatty liver (NAFLD/NASH) ka ilaj: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Weight loss, diet, exercise aur medication ka complete guide.",
+    excerptEn: "Fatty liver treatment in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Complete guide: diet, exercise, weight loss & medical management of NAFLD/NASH.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🥗",
+    tags: ["ranchi mein fatty liver ka ilaj", "fatty liver treatment ranchi", "NAFLD ranchi", "liver diet ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Fatty Liver Ka Ilaj Ranchi | NAFLD Treatment | Dr. Akhilesh Yadav",
+    metaDescription: "Fatty liver (NAFLD/NASH) treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Diet, exercise, weight loss & medical management. Book now.",
+    sections: [
+      {
+        heading: "Fatty Liver — Ranchi Mein Epidemic",
+        type: "text",
+        content: "Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — ke paas roz 4-5 fatty liver patients aate hain. Kahin se — 'routine ultrasound mein fatty liver aa gaya.' Zyada tar ko koi symptoms nahi the. Jharkhand mein fatty liver (NAFLD — Non-Alcoholic Fatty Liver Disease) ka prevalence badh raha hai — diabetes, motaapa, sedentary lifestyle ke saath. Sabse important baat: fatty liver zyada tar stages mein lifestyle changes se significantly improve hota hai. Lekin correct guidance zaroori hai — sirf 'khaana mat khao' nahi.",
+      },
+      {
+        heading: "Fatty Liver Grade aur Kya Matlab Hai",
+        type: "text",
+        content: "Ultrasound mein fatty liver 3 grades mein bataya jaata hai: Grade 1 (Mild): liver mein 5-33% fat — typically reversible with lifestyle. Grade 2 (Moderate): 33-66% fat — significant lifestyle change zaroori. Grade 3 (Severe/NASH): >66% fat + inflammation (NASH) — medical treatment bhi required. FibroScan se fibrosis stage pata chalta hai — F0 se F4 (cirrhosis). Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein FibroScan se stage assess karte hain aur treatment accordingly decide karte hain.",
+      },
+      {
+        heading: "Fatty Liver Ka Ilaj — Dr. Akhilesh Yadav Ka Protocol",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi ke fatty liver patients ko yeh protocol dete hain:",
+        list: [
+          "Weight loss: 7-10% body weight reduce karo — yeh liver fat significantly ghataata hai",
+          "Diet: refined carbs (maida, sugar, cold drinks) avoid. Vegetables, fruits (portion control), lean protein, good fats",
+          "Exercise: roz 30-45 min walk ya aerobic exercise — liver fat pe direct asar",
+          "Alcohol: bilkul nahi — ek drink bhi fatty liver worsen karta hai",
+          "Diabetes aur thyroid control: agar hai toh manage karo — liver health pe direct impact",
+          "NASH mein medications: Vitamin E (non-diabetic NASH), Pioglitazone (diabetic NASH), newer agents",
+          "FibroScan monitoring: treatment response check karne ke liye saal mein ek baar",
+        ],
+      },
+      {
+        heading: "Ranchi Mein Fatty Liver Ke Liye Diet — Local Foods Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ke liye local food context mein diet guide karte hain: Helpful: Sattu (chana sattu — high protein, fiber, low GI), chhachh aur lassi (plain, low-fat), moong daal, palak, lauki, karela, haldi (anti-inflammatory), amlaa (Vitamin C, liver support), papaya, guava. Avoid karein: litti-chokha bahut zyada ghee ke saath (occasional theek hai, roz nahi), mithai aur kheer, dalda/vanaspati, biscuit-cookies (maida+sugar), cold drinks. Intermediate: Roti — 2-3 phulka theek hai, zyada nahi. Chawal — thoda control. Non-veg — grilled/boiled — fry nahi.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Fatty Liver",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Fatty liver mein sabse powerful medicine exercise aur weight loss hai. Main roz patients ko yeh kehta hoon — koi supplement ya dawa lifestyle se zyada effective nahi hogi. 6 mahine mein 7-10% weight loss ho jaaye — ultrasound mein liver improve hoga, enzymes normalize hoge. Ranchi ke patients mein yeh possible hai — main baar baar dekh raha hoon.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Fatty liver ke liye gastroenterologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Fatty liver mein liver enzymes (SGPT) kitne high ho sakte hain?",
+        a: "NAFLD mein SGPT mild-moderately elevated hoti hai (1.5-3x normal). NASH mein zyada elevated. Lekin SGPT normal bhi ho sakti hai even with significant fatty liver — isliye ultrasound aur FibroScan dono zaroori hain. Dr. Akhilesh Yadav Ranchi mein complete assessment karte hain.",
+      },
+      {
+        q: "Kya fatty liver mein koi dawa hoti hai?",
+        a: "NAFLD (bina inflammation) mein main treatment lifestyle hai — koi specific FDA-approved drug abhi nahi. NASH (inflammation ke saath) mein: Vitamin E (non-diabetic), Pioglitazone (diabetic). Newer drugs (semaglutide, lanifibranor) research mein hain. Dr. Akhilesh Yadav latest evidence-based treatment Ranchi mein provide karte hain.",
+      },
+      {
+        q: "Fatty liver se cirrhosis hone mein kitna time lagta hai?",
+        a: "Simple NAFLD se cirrhosis: 10-20 saal typically. NASH se faster — 5-10 saal mein advanced fibrosis. Yeh individual factors pe depend karta hai — diabetes, obesity, genetics. FibroScan se progression monitor hoti hai. Dr. Akhilesh Yadav Ranchi mein high-risk patients ka intensive follow-up karte hain.",
+      },
+      {
+        q: "Kya yoga se fatty liver theek hota hai?",
+        a: "Yoga + aerobic exercise combination helpful hai. Surya namaskar, brisk walk, cycling — sab liver fat reduce karte hain. Lekin 'yoga se fatty liver theek' claim overstatement hai — exercise ek part hai treatment ka, akele nahi. Diet control equally important. Dr. Akhilesh Yadav holistic approach recommend karte hain.",
+      },
+      {
+        q: "Bacchon mein fatty liver hota hai?",
+        a: "Haan — childhood obesity ke saath Pediatric NAFLD badh raha hai India mein. Bacchon mein treatment focus hai weight management aur diet. Dr. Akhilesh Yadav adult cases treat karte hain — bacchon ke liye pediatric gastroenterologist ya pediatrician appropriate hai.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
