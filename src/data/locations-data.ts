@@ -363,5 +363,90 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
         a: "Yes. Booking in advance ensures you get a preferred slot and avoid waiting times, especially since travel is under an hour.",
       }
     ]
+  },
+  // ── PRIMARY CITY ─────────────────────────────────────────────────────────
+  // Ranchi is the clinic city — page targets "gastroenterologist in ranchi"
+  // (3,600/mo) and acts as the local SEO hub with full clinic schema.
+  ranchi: {
+    slug: "ranchi",
+    name: "Ranchi",
+    hindiName: "रांची",
+    travelDistance: "0 km",
+    travelDuration: "In-City",
+    travelRoute: "HB Road, Orchid Medical Centre",
+    roadInstructions: "Orchid Medical Centre is located on HB Road, Ranchi — easily reachable from all parts of the city by auto, cab, or bus. Major landmarks nearby include HEC, Main Road, and Ranchi Club.",
+    trainInstructions: "Ranchi Junction railway station is 4 km from the clinic. Autos and cabs are available outside the station directly to Orchid Medical Centre, HB Road.",
+    metaTitle: "Best Gastroenterologist in Ranchi | Dr. Akhilesh Yadav — Orchid Medical Centre",
+    metaDescription: "Looking for the best gastroenterologist in Ranchi? Consult Dr. Akhilesh Yadav (DM Gastroenterology) at Orchid Medical Centre, HB Road. Expert liver, stomach & digestive care. Endoscopy, colonoscopy, ERCP. Book today.",
+    h1: "रांची में पेट, लिवर एवं पाचन रोगों का विशेषज्ञ इलाज — डॉ. अखिलेश यादव",
+    whyChoose: [
+      "Ranchi's only DM Gastroenterologist — the highest clinical qualification in digestive & liver medicine",
+      "Located at Orchid Medical Centre, HB Road — Ranchi's most trusted GI specialty centre",
+      "Same-day endoscopy, colonoscopy, FibroScan & ERCP with same-day reports",
+      "Advanced liver disease management — cirrhosis, hepatitis B & C, fatty liver, ascites",
+      "Pain-free scoped procedures under light sedation — no fear, no discomfort",
+      "Hindi consultation with written prescription and diet chart at every visit"
+    ],
+    faqs: [
+      {
+        q: "रांची में सबसे अच्छा गैस्ट्रोएंटेरोलॉजिस्ट कौन है?",
+        a: "डॉ. अखिलेश यादव रांची के एकमात्र DM गैस्ट्रोएंटेरोलॉजिस्ट हैं — जो पेट, लिवर और पाचन रोगों में भारत की सर्वोच्च चिकित्सा विशेषज्ञता रखते हैं। वे ऑर्किड मेडिकल सेंटर, HB रोड, रांची में OPD करते हैं।",
+      },
+      {
+        q: "Which is the best gastroenterology clinic in Ranchi?",
+        a: "Dr. Akhilesh Yadav's clinic at Orchid Medical Centre, HB Road, Ranchi is Jharkhand's premier gastroenterology centre. It offers full diagnostic services including Endoscopy, Colonoscopy, FibroScan, ERCP, and EUS — all under one roof.",
+      },
+      {
+        q: "Can I get endoscopy done in Ranchi on the same day?",
+        a: "Yes. Diagnostic endoscopy and colonoscopy at Orchid Medical Centre take 15–20 minutes under light sedation. Reports are typically ready within 30–60 minutes, allowing same-day discharge.",
+      },
+      {
+        q: "What are Dr. Akhilesh Yadav's OPD timings in Ranchi?",
+        a: "OPD is available Monday to Saturday: Morning 10:00 AM – 2:00 PM and Evening 5:00 PM – 8:00 PM. Sunday OPD is closed. Call +91-74919-25047 or WhatsApp to book a slot.",
+      },
+      {
+        q: "Does Dr. Akhilesh Yadav treat liver diseases in Ranchi?",
+        a: "Yes. Dr. Akhilesh Yadav is both a Gastroenterologist and Hepatologist — specializing in all liver conditions including fatty liver, jaundice, hepatitis B & C, liver cirrhosis, ascites, and liver failure. He is Jharkhand's most experienced liver specialist.",
+      },
+    ]
+  },
+  latehar: {
+    slug: "latehar",
+    name: "Latehar",
+    hindiName: "लातेहार",
+    travelDistance: "100 km",
+    travelDuration: "2 Hours",
+    travelRoute: "NH-39 via Barwadih",
+    roadInstructions: "Drive East from Latehar on NH-39 towards Ranchi. The highway passes through Barwadih and connects directly to Ranchi city. Journey takes approximately 2 hours.",
+    trainInstructions: "Barwadih Junction (near Latehar) has direct trains to Ranchi Junction on several express routes. Shared taxis and local buses from Latehar town to Ranchi also run daily.",
+    metaTitle: "Gastroenterologist in Latehar | Dr. Akhilesh Yadav — Ranchi Specialist",
+    metaDescription: "Looking for a gastroenterologist in Latehar? Consult Dr. Akhilesh Yadav (DM Gastroenterology) at Orchid Medical Centre, Ranchi — 100 km via NH-39. Expert liver, stomach & digestive care. Book today.",
+    h1: "लातेहार के मरीजों के लिए गैस्ट्रोएंटेरोलॉजिस्ट — डॉ. अखिलेश यादव, रांची",
+    whyChoose: [
+      "Specialist DM Gastroenterology care not available locally in Latehar district",
+      "NH-39 direct connectivity — reach Ranchi in just 2 hours from Latehar town",
+      "Same-day endoscopy, colonoscopy, FibroScan with same-day results and discharge",
+      "Liver disease specialist — fatty liver, jaundice, hepatitis B & C, cirrhosis",
+      "Priority appointment slots reserved for outstation Latehar patients",
+      "Hindi-friendly consultation with written prescription and diet chart"
+    ],
+    faqs: [
+      {
+        q: "Is there a gastroenterologist in Latehar?",
+        a: "Latehar district does not have a specialist DM Gastroenterologist. Patients from Latehar travel to Orchid Medical Centre, Ranchi (approximately 100 km via NH-39) to consult Dr. Akhilesh Yadav — Jharkhand's most experienced GI specialist with 10+ years practice and 4,000+ patients treated.",
+      },
+      {
+        q: "How far is Latehar from Dr. Akhilesh Yadav's clinic in Ranchi?",
+        a: "Latehar is approximately 100 km from Orchid Medical Centre, HB Road, Ranchi. By road via NH-39, the journey takes about 2 hours. Trains from nearby Barwadih Junction and shared taxis are also available.",
+      },
+      {
+        q: "Can Latehar patients get endoscopy done and return the same day?",
+        a: "Yes. Diagnostic endoscopy and colonoscopy at Orchid Medical Centre take 15–20 minutes under light sedation. After 1 hour recovery and report collection, patients from Latehar can comfortably return the same day. Book a 10:00 AM slot for best results.",
+      },
+      {
+        q: "How do I book an appointment from Latehar?",
+        a: "Call or WhatsApp +91-74919-25047. Mention that you are travelling from Latehar so we can schedule a priority morning slot — allowing you to complete consultation, diagnostics, and collect your report all within the same visit.",
+      },
+    ]
   }
 };
