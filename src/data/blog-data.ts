@@ -6028,6 +6028,368 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 11: BLOGS 51–55 ─────────────────────────────────────────────────────
+
+  {
+    slug: "hazaribagh-se-ranchi-gastroenterologist",
+    titleHi: "Hazaribagh Se Ranchi Mein Gastroenterologist — Dr. Akhilesh Yadav",
+    titleEn: "Gastroenterologist from Hazaribagh — Ranchi Specialist Dr. Akhilesh Yadav",
+    excerptHi: "Hazaribagh se Ranchi gastroenterologist dekhne ki zaroorat hai? Dr. Akhilesh Yadav — Orchid Medical Centre, HB Road. Hazaribagh ke patients ke liye guide — kaise aayein, kya expect karein.",
+    excerptEn: "Gastroenterologist in Ranchi for Hazaribagh patients — Dr. Akhilesh Yadav at Orchid Medical Centre. How to plan your visit, what to expect & appointment guide.",
+    category: "locations",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🗺️",
+    tags: ["gastroenterologist hazaribagh", "hazaribagh se ranchi gastro", "stomach doctor hazaribagh", "best gastroenterologist ranchi hazaribagh", "liver doctor hazaribagh"],
+    metaTitle: "Gastroenterologist for Hazaribagh Patients — Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Hazaribagh se Ranchi gastroenterologist Dr. Akhilesh Yadav — Orchid Medical Centre, HB Road. Expert GI care, endoscopy, liver disease for Hazaribagh patients. Book today.",
+    sections: [
+      {
+        heading: "Hazaribagh Ke Patients Ranchi Kyun Aate Hain Gastro Ke Liye",
+        type: "text",
+        content: "Hazaribagh se Ravi Shankar ji — 52 saal, chronic liver disease — ne kai months local level par treatment kiya lekin specialist ki zaroorat thi. Ranchi sirf 95 km door — 2-2.5 ghante ka safar. Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — se unka first consultation hua. Dr. Akhilesh Yadav Hazaribagh, Chatra, Ramgarh, Koderma — in sabhi districts ke patients ko regularly dekhte hain. Advanced GI care ke liye Hazaribagh se nearest DM Gastroenterologist Ranchi mein available hai.",
+      },
+      {
+        heading: "Hazaribagh Se Ranchi Kaise Aayein — Practical Guide",
+        type: "text",
+        content: "Hazaribagh se Ranchi (Orchid Medical Centre, HB Road): Distance: ~95 km. Time: 2-2.5 ghante (NH 33 via Ramgarh). Bus: Hazaribagh se Ranchi regular JKTC/private buses — Bus Stand se Ranchi Ranchi Main Bus Stand. Auto ya Ola/Uber: Ranchi Bus Stand se Orchid Medical Centre, HB Road — 15-20 minute. Private vehicle: National Highway 33 — Ramgarh hote hue — straight road. Train: Limited direct trains from Hazaribagh — bus recommended. Appointment: Pehle call karein +91 74919 25047 (Mon–Sat: 10 AM–2 PM, 5 PM–8 PM) — same-day ya next-day availability usually milti hai urgent cases mein.",
+      },
+      {
+        heading: "Hazaribagh Ke Patients Ke Liye Kya Services Available Hain",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein Hazaribagh patients ke liye:",
+        list: [
+          "Consultation: liver disease, fatty liver, jaundice, hepatitis B/C",
+          "Endoscopy (OGD Scopy): GERD, ulcer, H. Pylori, bleeding — same-day",
+          "Colonoscopy: colon cancer screening, IBD, rectal bleeding",
+          "ERCP: bile duct stone, stenting — Hazaribagh mein nahi hota",
+          "EUS: pancreatic cyst/mass, advanced imaging",
+          "IBD management: Crohn's, Ulcerative Colitis",
+          "Pancreatitis management: acute aur chronic",
+          "Ascites aur liver cirrhosis management",
+          "Same-day procedures + follow-up plan — sirf ek trip mein complete",
+        ],
+      },
+      {
+        heading: "Hazaribagh Se Aane Se Pehle Kya Laayein",
+        type: "list",
+        content: "Orchid Medical Centre visit ke liye Hazaribagh se laane wali cheezein:",
+        list: [
+          "Purani reports: ultrasound, blood tests, endoscopy reports (agar hain)",
+          "Current medications list — all tablets + doses",
+          "Symptoms ka history — kab se, kya worse karta hai",
+          "Insurance card agar applicable",
+          "Appointment confirmation (SMS/WhatsApp)",
+          "Pani aur light snack — wait hoti hai kabhi kabhi",
+        ],
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Hazaribagh Patients",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Hazaribagh aur surrounding districts ke patients mere paas regular aate hain. Main unhe ek hi visit mein maximum value dene ki koshish karta hoon — consultation + procedure + follow-up plan. Taki baar baar Ranchi na aana pade. Ek din mein endoscopy bhi ho sakti hai agar NPO rule follow kiya ho — call karke confirm zaroor karein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya Hazaribagh se Ranchi ka ek hi din mein aana aur consultation + endoscopy possible hai?",
+        a: "Haan — agar aap NPO (khaali pet, minimum 6 ghante) aate hain aur pehle se appointment le chuke hain. Morning appointment book karein (10-11 AM). Consultation + endoscopy + report same day. Evening ko Hazaribagh wapas ja sakte hain. Call karke confirm karein: +91 74919 25047.",
+      },
+      {
+        q: "Kya Hazaribagh ke patients ke liye koi referral zaroor hai?",
+        a: "Nahi — Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein direct consultation available hai. Koi referral letter ki requirement nahi. Direct appointment lein — +91 74919 25047.",
+      },
+      {
+        q: "Hazaribagh mein follow-up kaise hoga Ranchi visit ke baad?",
+        a: "Dr. Akhilesh Yadav digital follow-up facilitate karte hain — WhatsApp pe reports share, phone consultation for routine follow-ups. Major changes ya procedures ke liye Ranchi visit. Kuch cases mein 3-6 month mein ek visit sufficient hoti hai.",
+      },
+      {
+        q: "Hazaribagh ke paas koi gastroenterologist nahi hai?",
+        a: "Hazaribagh mein general physician available hain. DM Gastroenterologist (advanced GI specialist) ke liye Ranchi nearest option hai. Dr. Akhilesh Yadav Ranchi mein regularly Hazaribagh district ke patients dekhte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "dhanbad-se-ranchi-gastroenterologist",
+    titleHi: "Dhanbad Se Ranchi Gastroenterologist — Dr. Akhilesh Yadav GI Specialist",
+    titleEn: "Gastroenterologist from Dhanbad — Ranchi GI Specialist Dr. Akhilesh Yadav",
+    excerptHi: "Dhanbad se Ranchi mein gastroenterologist ki zaroorat? Dr. Akhilesh Yadav — Orchid Medical Centre. DM Gastroenterologist — liver, endoscopy, IBD, ERCP — complete GI care.",
+    excerptEn: "Dhanbad to Ranchi gastroenterologist — Dr. Akhilesh Yadav at Orchid Medical Centre. Complete GI care for Dhanbad patients: liver, endoscopy, IBD & advanced procedures.",
+    category: "locations",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🏙️",
+    tags: ["gastroenterologist dhanbad", "dhanbad se ranchi gastro", "liver doctor dhanbad", "endoscopy dhanbad ranchi", "best gastroenterologist dhanbad"],
+    metaTitle: "Gastroenterologist for Dhanbad Patients — Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Dhanbad se Ranchi gastroenterologist — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre, HB Road. Advanced GI care, endoscopy, ERCP for Dhanbad patients.",
+    sections: [
+      {
+        heading: "Dhanbad Se Ranchi — Kyun Patients Aate Hain GI Care Ke Liye",
+        type: "text",
+        content: "Dhanbad — Jharkhand ka coal capital — aur aas paas ke areas (Sindri, Jharia, Katras) mein patients advanced GI care ke liye Ranchi aate hain. Dhanbad se Ranchi: ~160 km, 3-3.5 ghante via NH 2/NH 19. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi. Dhanbad district ke patients ke liye advanced procedures jo locally available nahi: ERCP, EUS, capsule endoscopy, biologics for IBD. Dhanbad mein liver specialist aur advanced GI endoscopy ki availability limited hai — Ranchi nearest comprehensive GI centre hai.",
+      },
+      {
+        heading: "Dhanbad Se Ranchi — Travel Options",
+        type: "text",
+        content: "Dhanbad to Ranchi (Orchid Medical Centre, HB Road): By Bus: Dhanbad Bus Stand se Ranchi direct — multiple daily routes. 3-4 ghante. By Train: Dhanbad to Ranchi — multiple trains (Jharkhand Express, etc.) — 3.5-4 ghante. By Car/Taxi: NH 2 via Govindpur/Hazaribagh — 3-3.5 ghante. Fastest: Private car — early morning departure recommended. Orchid Medical Centre, HB Road: Bus Stand/Railway Station se auto ya Ola — 20-25 minute. Appointment: +91 74919 25047 — confirm before leaving. Emergency cases: call ahead for priority.",
+      },
+      {
+        heading: "Dhanbad Patients — Dr. Akhilesh Yadav Se Kya Milega",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein Dhanbad patients ke liye advanced GI care:",
+        list: [
+          "Chronic Liver Disease — hepatitis B/C, cirrhosis, portal hypertension",
+          "Fatty Liver (NAFLD/MASLD) — grading, advanced fibrosis assessment",
+          "Jaundice workup — infectious vs obstructive vs hepatocellular",
+          "Endoscopy (OGD Scopy) — same-day procedure possible",
+          "Colonoscopy — bowel cancer screening, IBD, rectal bleeding",
+          "ERCP — bile duct stones, Dhanbad mein nahi milta",
+          "IBD (Crohn's/Colitis) management — biologics, step-up therapy",
+          "Pancreatitis — acute/chronic management, EUS",
+        ],
+      },
+      {
+        heading: "Dhanbad Se Same-Day Visit — Kaise Plan Karein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav ke saath Dhanbad se same-day visit planning: Pehle din: Call karein +91 74919 25047 — appointment book karein. Endoscopy chahiye toh NPO ka time batao (6-8 ghante khaali pet). Travel: Raat ko ya very early morning nikal sakte hain. Orchid Medical Centre pahunchein: 10 AM appointment mein. Consultation + procedure (agar pre-arranged): done by early afternoon. Return: Evening tak Dhanbad wapas. Ek din mein complete GI assessment possible hai — sir darbaar ek baar.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Dhanbad Patients",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Dhanbad aur mining belt ke patients ko pata hai ki serious GI condition mein Ranchi aana padega. Main koshish karta hoon ki unka ek visit productive ho — sari zarori cheezein ek din mein ho jayein. ERCP, colonoscopy, endoscopy — sab plan karta hoon pehle se unke convenience ke hisaab se.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Dhanbad mein koi gastroenterologist nahi milta kya?",
+        a: "Dhanbad mein kuch GI doctors available hain — lekin DM Gastroenterology qualified specialist aur advanced procedures (ERCP, EUS, biologics, complex IBD) ke liye Ranchi aana padta hai. Dr. Akhilesh Yadav Ranchi mein Dhanbad patients regularly dekhte hain.",
+      },
+      {
+        q: "Dhanbad se Ranchi ek hi baar mein sab ho jayega?",
+        a: "Haan — properly plan karo: appointment + NPO for endoscopy if needed + reports saath lao. Ek din mein consultation + endoscopy ya colonoscopy complete ho sakta hai. ERCP/EUS ke liye kuch cases mein 2 trips zaroor ho sakti hain depending on case complexity.",
+      },
+      {
+        q: "Kya Dr. Akhilesh Yadav Dhanbad aate hain ya only Ranchi?",
+        a: "Dr. Akhilesh Yadav Orchid Medical Centre, HB Road, Ranchi mein practice karte hain. Dhanbad mein visiting clinic nahi hai currently. Patients Ranchi aate hain consultation ke liye.",
+      },
+    ],
+  },
+
+  {
+    slug: "deoghar-se-ranchi-gastroenterologist",
+    titleHi: "Deoghar Se Ranchi Gastroenterologist — Dr. Akhilesh Yadav Liver Specialist",
+    titleEn: "Gastroenterologist from Deoghar — Ranchi Liver Specialist Dr. Akhilesh Yadav",
+    excerptHi: "Deoghar aur Santhal Pargana se Ranchi mein gastroenterologist — Dr. Akhilesh Yadav — Orchid Medical Centre. Liver disease, endoscopy, ERCP — complete GI care for Deoghar patients.",
+    excerptEn: "Deoghar to Ranchi gastroenterologist — Dr. Akhilesh Yadav, DM Gastroenterologist. Liver disease, jaundice, endoscopy & ERCP for Deoghar and Santhal Pargana patients.",
+    category: "locations",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🙏",
+    tags: ["gastroenterologist deoghar", "deoghar se ranchi gastro", "liver doctor deoghar", "endoscopy deoghar", "best gastroenterologist deoghar"],
+    metaTitle: "Gastroenterologist for Deoghar Patients — Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Deoghar se Ranchi gastroenterologist — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Liver disease, jaundice, ERCP for Deoghar patients.",
+    sections: [
+      {
+        heading: "Deoghar Se Patients Ranchi Kyun Aate Hain — Gastro Ke Liye",
+        type: "text",
+        content: "Deoghar — Jharkhand ka religious aur cultural hub — se kai patients Orchid Medical Centre, Ranchi aate hain Dr. Akhilesh Yadav ke paas. Deoghar aur Santhal Pargana mein jaundice, liver disease, hepatitis ka burden zyada hai — Ganga basin area mein waterborne hepatitis A/E common hai. Dr. Akhilesh Yadav kehte hain: 'Deoghar aur Dumka, Godda, Sahibganj se bahut patients aate hain — liver disease, jaundice, aur ERCP ke liye khaastan.' Deoghar se Ranchi: ~220 km, 4-4.5 ghante. Typically ek raat Ranchi ruk ke procedures complete karna better hota hai.",
+      },
+      {
+        heading: "Deoghar Se Ranchi Travel — Practical Information",
+        type: "text",
+        content: "Deoghar to Ranchi (Orchid Medical Centre): Distance: ~220 km. Time: 4-4.5 ghante by road. Route: NH 2 via Giridih ya Jamtara — Ranchi. By Train: Limited direct option — road travel faster typically. By Bus: Deoghar se Ranchi direct — JKTC/private 5-6 ghante typically. Recommend: Private car/taxi — more comfortable for patients who are unwell. Plan: 1-2 din Ranchi mein rukhein agar multiple procedures — endoscopy + consultation. Orchid Medical Centre accommodation options: nearby dharamshalas/budget hotels HB Road area. Appointment: +91 74919 25047 — early call for planning.",
+      },
+      {
+        heading: "Deoghar Patients Ke Liye Specific Conditions — Dr. Akhilesh Yadav",
+        type: "list",
+        content: "Deoghar aur Santhal Pargana ke common GI conditions jo Dr. Akhilesh Yadav treat karte hain:",
+        list: [
+          "Hepatitis A/E (waterborne) — acute liver disease, jaundice",
+          "Hepatitis B — chronic liver disease, cirrhosis prevention",
+          "Obstructive Jaundice — bile duct stone, gallstone — ERCP",
+          "Alcoholic Liver Disease — common in tribal areas",
+          "Peptic Ulcer — H. Pylori — endoscopy aur treatment",
+          "Iron Deficiency Anemia — GI cause workup",
+          "Kala-azar related liver splenomegaly",
+          "Intestinal tuberculosis — misdiagnosed IBD",
+        ],
+      },
+      {
+        heading: "Deoghar Se Ranchi Visit — Kaise Plan Karein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav ke saath Deoghar se visit planning: Step 1: Sabse pehle call karein +91 74919 25047 — symptoms aur previous reports discuss karein. Step 2: Appointment book karein — agar endoscopy ya ERCP zaroor toh 2-din trip plan karein. Step 3: Sabhi purani reports, test results, medicines saath laayein. Step 4: 1 din pehle Ranchi pahunchein agar ERCP/colonoscopy hai — bowel prep ya fasting ensure karna padta hai. Step 5: Procedure ke baad Dr. Akhilesh Yadav results explain karte hain — follow-up plan dete hain. Step 6: Routine follow-ups often telephonic ya WhatsApp pe — agle visit ki frequency case pe depend karti hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Deoghar Patients",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Deoghar aur Santhal Pargana ke patients ke liye main especially concerned rehta hoon — yahan liver disease ka burden kaafi hai aur awareness kam. Hepatitis B ka vaccine aur timely treatment liver cirrhosis rokta hai. Main unhe encourage karta hoon ki diagnosis mein der na karein — Ranchi aana zaroor hai agar local mein kuch nahi ho raha.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Deoghar mein koi DM Gastroenterologist hai?",
+        a: "Deoghar mein specialist GI care limited hai. DM Gastroenterology qualified doctor ke liye nearest comprehensive center Ranchi hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein available hain.",
+      },
+      {
+        q: "Kya jaundice mein Deoghar se Ranchi le jaana theek hai?",
+        a: "Haan — agar jaundice severe hai, obstructive jaundice suspect ho (pale stool, dark urine, itching), ya local doctors ne refer kiya ho — Ranchi aana chahiye. Dr. Akhilesh Yadav Ranchi mein jaundice workup aur ERCP (agar bile duct stone) karte hain. Emergency mein: immediately Ranchi ke liye niklo aur call karein.",
+      },
+      {
+        q: "Deoghar mein waterborne jaundice ka kaafi problem hai — kya vaccination help karti hai?",
+        a: "Hepatitis A vaccine (2 doses) aur Hepatitis B vaccine (3 doses) — dono recommended. Hepatitis A/E ka koi antiviral treatment nahi — supportive care. Prevention: safe water, hand hygiene. Deoghar mein public water quality — purification zaroor. Dr. Akhilesh Yadav vaccination counseling karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "orchid-medical-centre-gastro-ranchi",
+    titleHi: "Orchid Medical Centre Ranchi — Gastroenterology Clinic | Dr. Akhilesh Yadav",
+    titleEn: "Orchid Medical Centre Ranchi — Gastroenterology Clinic | Dr. Akhilesh Yadav",
+    excerptHi: "Orchid Medical Centre, HB Road, Ranchi — Dr. Akhilesh Yadav — DM Gastroenterology. Facilities, timing, procedures, location guide aur appointment information — complete guide.",
+    excerptEn: "Orchid Medical Centre Ranchi gastroenterology clinic — Dr. Akhilesh Yadav, DM Gastroenterologist. Facilities, appointment, procedures, timing & location guide.",
+    category: "locations",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["orchid medical centre ranchi", "orchid medical centre gastroenterologist", "HB road ranchi gastro", "orchid medical centre dr akhilesh", "gastroenterologist ranchi orchid"],
+    metaTitle: "Orchid Medical Centre Ranchi — Gastroenterology | Dr. Akhilesh Yadav",
+    metaDescription: "Orchid Medical Centre, HB Road, Ranchi — gastroenterology clinic. Dr. Akhilesh Yadav, DM Gastroenterologist. Timing, facilities, appointment guide & location.",
+    sections: [
+      {
+        heading: "Orchid Medical Centre Ranchi — Gastroenterology Ka Hub",
+        type: "text",
+        content: "Orchid Medical Centre, HB Road, Ranchi — yahan Dr. Akhilesh Yadav, DM Gastroenterology, apni specialized GI practice chalate hain. HB Road Ranchi ka medical corridor hai — accessible from all directions. Orchid Medical Centre established multi-specialty facility hai jahan Dr. Akhilesh Yadav ke pass dedicated gastroenterology consultation aur procedure facility hai. Jharkhand, Bihar, aur Chhattisgarh ke patients yahan aate hain — liver disease, endoscopy, ERCP, IBD management ke liye. Full address: Orchid Medical Centre, HB Road, Ranchi, Jharkhand — 834001.",
+      },
+      {
+        heading: "Orchid Medical Centre Timing — Dr. Akhilesh Yadav",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre, Ranchi mein consultation timing:",
+        list: [
+          "Monday to Saturday: 10:00 AM – 2:00 PM (Morning OPD)",
+          "Monday to Saturday: 5:00 PM – 8:00 PM (Evening OPD)",
+          "Sunday: Closed (emergency consultation: call +91 74919 25047)",
+          "Endoscopy: typically morning slot — pre-arranged appointment zaroor",
+          "ERCP/EUS: pre-booked procedure days — call to schedule",
+          "Colonoscopy: morning procedure — bowel prep day before",
+        ],
+      },
+      {
+        heading: "Orchid Medical Centre — Gastroenterology Facilities",
+        type: "list",
+        content: "Dr. Akhilesh Yadav ke saath Orchid Medical Centre mein available:",
+        list: [
+          "Dedicated Gastroenterology OPD — private consultation",
+          "HD Video Endoscopy Suite — upper GI (OGD Scopy)",
+          "Colonoscopy — lower GI — HD video",
+          "ERCP — bile duct procedure",
+          "EUS — Endoscopic Ultrasound",
+          "Biopsy, H. Pylori testing — therapeutic endoscopy",
+          "IV Sedation — comfortable conscious sedation",
+          "Digital reporting — same-day results",
+          "UPI/Card/Cash payment — insurance coordination available",
+        ],
+      },
+      {
+        heading: "Orchid Medical Centre Ranchi — Kaise Pahunchein",
+        type: "text",
+        content: "Orchid Medical Centre, HB Road, Ranchi pahunchne ke liye: HB Road Ranchi ka central aur well-connected road hai. Ranchi Main Bus Stand se: Auto/Ola — 15-20 minute. Ranchi Railway Station se: Auto/Ola — 20-25 minute. Birsa Munda Airport se: 30-35 minute. Parking: limited on HB Road — nearby parking spots available. Google Maps: Search 'Orchid Medical Centre HB Road Ranchi' — accurate location. Landmarks: Dr. Akhilesh Yadav ke clinic signage visible — HB Road main road par.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Orchid Medical Centre",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Orchid Medical Centre mein main dedicated gastroenterology care deta hoon — sirf pet aur liver ke liye. Patients ko yahan ek experienced DM Gastroenterologist milta hai jo unhein clearly explain karta hai — Hindi mein — kya ho raha hai aur kya karna hai. Jharkhand ke patients deserve karte hain world-class GI care locally.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Orchid Medical Centre mein walk-in possible hai ya appointment zaroor hai?",
+        a: "Walk-in possible hai — lekin appointment lena better hai, especially procedures ke liye (endoscopy, ERCP). Walk-in mein wait zyada ho sakta hai. Appointment: +91 74919 25047. WhatsApp bhi available hai.",
+      },
+      {
+        q: "Kya Orchid Medical Centre mein emergency endoscopy hoti hai?",
+        a: "Upper GI bleeding (hematemesis — khoon ki ulti) emergency mein: immediately +91 74919 25047 call karein. Dr. Akhilesh Yadav emergency endoscopy coordinate karte hain Orchid Medical Centre mein agar available ho. Critical cases hospital admission ke liye coordinate hote hain.",
+      },
+      {
+        q: "Kya Dr. Akhilesh Yadav ke alawa bhi gastroenterologist hain Orchid Medical Centre mein?",
+        a: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein gastroenterology practice karte hain. Clinic mein other specialists bhi hain different specialties ke liye. Gastroenterology specifically Dr. Akhilesh Yadav ka department hai.",
+      },
+      {
+        q: "Orchid Medical Centre mein cashless insurance kaise claim karein?",
+        a: "Appointment ke waqt insurance card laayein. Orchid Medical Centre coordination karta hai select insurers ke saath. Pre-authorization zaroor hoti hai planned procedures ke liye. Dr. Akhilesh Yadav clinic staff aapki help karega insurance process mein.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-liver-test",
+    titleHi: "Ranchi Mein Liver Test — Kaunsa Test, Kab Karwayein | Dr. Akhilesh Yadav",
+    titleEn: "Liver Tests in Ranchi — Which Test, When & Why | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein liver test guide: LFT, viral markers, fibroscan, liver biopsy — kaunsa test kab zaroor hai. Dr. Akhilesh Yadav — Orchid Medical Centre — complete liver test guide.",
+    excerptEn: "Liver test guide for Ranchi patients — LFT, hepatitis markers, fibroscan & biopsy explained by Dr. Akhilesh Yadav. When each test is needed & what results mean.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🧪",
+    tags: ["liver test ranchi", "LFT test ranchi", "fibroscan ranchi", "liver biopsy ranchi", "hepatitis test ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Liver Tests in Ranchi — LFT, Fibroscan, Biopsy Guide | Dr. Akhilesh Yadav",
+    metaDescription: "Liver test guide for Ranchi patients — LFT, hepatitis markers, fibroscan, liver biopsy by Dr. Akhilesh Yadav, DM Gastroenterologist. What each test means.",
+    sections: [
+      {
+        heading: "Liver Test Kyun Zaroor Hai — Aur Kaunsa Pehle Karwayein",
+        type: "text",
+        content: "Ranchi ke ek 45-saal ke patient — Mahesh Kumar — 2 saal se thakaan aur pet mein bhari feeling tha. Annual health check mein LFT (Liver Function Test) mein SGOT/SGPT slightly raised mili. Local doctor ne kaha 'chinta mat karo' — par Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre mein milne ke baad pata chala ki Grade 2 fatty liver hai. Liver tests kai prakar ke hote hain — aur ek test se pura picture nahi milta. Dr. Akhilesh Yadav Ranchi mein systematically liver test recommend karte hain based on clinical picture.",
+      },
+      {
+        heading: "Liver Tests — Kaunsa Kya Batata Hai",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh liver tests use karte hain:",
+        list: [
+          "LFT (Liver Function Test): SGOT/SGPT (liver cell damage), Bilirubin (jaundice level), ALP/GGT (bile duct), Albumin (liver function), PT/INR (clotting function)",
+          "Hepatitis Panel: HBsAg (Hep B surface antigen), Anti-HCV (Hep C antibody), Hep B DNA/Hep C RNA (viral load)",
+          "Ultrasound Abdomen: liver size, echogenicity (fatty vs normal), focal lesions, spleen size",
+          "Fibroscan (Transient Elastography): liver stiffness = fibrosis stage — F0 to F4",
+          "ARFI/SWE (Shear Wave Elastography): ultrasound-based fibrosis assessment",
+          "Liver Biopsy: definitive — inflammation grade, fibrosis stage; invasive",
+          "Serum Ferritin, Ceruloplasmin: hemochromatosis, Wilson's disease",
+          "ANA, Anti-LKM: autoimmune hepatitis",
+        ],
+      },
+      {
+        heading: "Fibroscan — Ranchi Mein Kaise Hota Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein Fibroscan coordinate karte hain. Fibroscan — Transient Elastography — liver fibrosis assess karta hai bina biopsy ke. A probe skin par rakha jaata hai (right side, intercostal) — ultrasound wave bheja jaata hai — stiffness measure hoti hai kPa mein. Results: F0-F1 (<7.1 kPa): no/minimal fibrosis — normal. F2 (7.1-9.5 kPa): significant fibrosis. F3 (9.5-12.5 kPa): advanced fibrosis. F4 (>12.5 kPa): cirrhosis likely. CAP (Controlled Attenuation Parameter): fatty liver grade (S0-S3). Fibroscan + LFT + viral markers = complete liver assessment. Dr. Akhilesh Yadav results interpret karte hain aur next steps guide karte hain.",
+      },
+      {
+        heading: "Liver Test Results — Kab Urgent Hai, Kab Wait Ho Sakta Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein liver test results ke baad urgency assess karte hain: URGENT — immediately milein: Bilirubin >5 mg/dL (severe jaundice). PT/INR >1.5 (coagulation impaired). Albumin <3 g/dL (liver failing). Acute hepatitis + altered consciousness. SOON (within 1-2 weeks): SGPT >3x normal. New hepatitis B/C diagnosis. Fatty liver grade 2+ with fibrosis. ROUTINE (1-3 months): Mild SGPT elevation (<2x). Stable chronic liver disease monitoring. Hepatitis B carrier — annual surveillance. Dr. Akhilesh Yadav specifically guide karte hain — report lekar seedha milein.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Liver Tests",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Liver tests ek panel hai — ek report se sab nahi pata chalta. Main patients ko bolta hoon: sirf SGPT dekh ke pareshaan mat ho, aur sirf normal LFT dekh ke nishshchint mat ho. Fibroscan bata sakta hai ki fatty liver se fibrosis shuru hua hai ya nahi. Early detection — treatment se zyada effective hoti hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Liver reports lekar Dr. Akhilesh Yadav se milein for expert interpretation.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Normal LFT mein bhi fatty liver ho sakti hai?",
+        a: "Haan — bilkul. 20-30% fatty liver patients mein SGPT/SGOT normal hoti hai. Diagnosis ke liye ultrasound better initial test hai. Fibroscan — fibrosis assess karta hai chahe LFT normal ho. Dr. Akhilesh Yadav Ranchi mein fatty liver ke liye complete assessment karte hain — sirf LFT nahi.",
+      },
+      {
+        q: "Fibroscan Ranchi mein available hai?",
+        a: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein fibroscan coordinate karte hain. Availability aur scheduling ke liye +91 74919 25047 contact karein. Kuch cases mein referral diagnostic centre bhi suggest karte hain.",
+      },
+      {
+        q: "Liver biopsy kab zaroor hoti hai?",
+        a: "Liver biopsy tab zaroor hai jab: fibroscan aur LFT se diagnosis unclear ho, autoimmune hepatitis diagnose karna ho, fibrosis stage treatment decision change kare (e.g., antiviral ya not). Dr. Akhilesh Yadav Ranchi mein liver biopsy (endoscopic/percutaneous) karte hain — select cases mein.",
+      },
+      {
+        q: "Hepatitis B positive aaya — abhi kya karein?",
+        a: "Immediately Dr. Akhilesh Yadav se milein. Assess karwana padega: HBsAg + Hep B DNA viral load + LFT + Fibroscan + HBeAg/anti-HBe status. Treatment decision (antiviral — tenofovir/entecavir) is complete assessment ke baad. Panic nahi — hepatitis B treatable/manageable hai early detection mein.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
