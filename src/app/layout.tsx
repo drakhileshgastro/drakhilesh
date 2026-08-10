@@ -3,6 +3,8 @@ import { Manrope, Inter, Mukta } from "next/font/google";
 import { headers } from "next/headers";
 import Script from "next/script";
 import { Toaster } from "sonner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import AnalyticsProvider from "@/components/analytics-provider";
 import "./globals.css";
 
@@ -186,6 +188,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         {children}
         <Toaster position="top-center" richColors />
         <AnalyticsProvider />
+        <SpeedInsights />
+        <Analytics />
       </body>
       <Script
         nonce={nonce}
