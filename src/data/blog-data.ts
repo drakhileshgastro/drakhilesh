@@ -5324,6 +5324,360 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 9: BLOGS 41–45 ─────────────────────────────────────────────────────
+
+  {
+    slug: "ranchi-mein-ibd-treatment",
+    titleHi: "Ranchi Mein IBD Treatment — Crohn's & Colitis Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "IBD Treatment in Ranchi — Crohn's & Colitis | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein Inflammatory Bowel Disease (IBD) ka advanced treatment: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Biologics aur complete IBD management.",
+    excerptEn: "IBD treatment in Ranchi — Crohn's disease & ulcerative colitis by Dr. Akhilesh Yadav at Orchid Medical Centre. Biologics, mesalamine & comprehensive IBD management.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🫁",
+    tags: ["ranchi mein IBD treatment", "IBD ranchi", "crohns colitis ranchi", "biologics ranchi", "gastroenterologist ranchi"],
+    metaTitle: "IBD Treatment Ranchi | Crohn's & Colitis | Dr. Akhilesh Yadav",
+    metaDescription: "IBD (Crohn's & Colitis) treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Biologics, step-up therapy & complete IBD management for Jharkhand.",
+    sections: [
+      {
+        heading: "IBD Ranchi Mein — Diagnosis Se Biologics Tak",
+        type: "text",
+        content: "Inflammatory Bowel Disease (IBD) — Crohn's Disease aur Ulcerative Colitis — India mein badh rahi hai aur Jharkhand koi exception nahi hai. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — Jharkhand ke IBD patients ke liye comprehensive care dete hain: diagnosis, induction therapy, maintenance, biologics aur surgical coordination. Ek dedicated IBD specialist ki zaroorat yahan hai kyunki IBD complex chronic condition hai jisme lifelong monitoring aur treatment adjustment lagti hai.",
+      },
+      {
+        heading: "IBD Diagnosis Kaise Hoti Hai Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein IBD diagnosis mein karte hain: Symptoms: recurrent diarrhea (often bloody), abdominal pain, weight loss, fatigue — 6+ hafte. Blood tests: CBC (anemia), CRP/ESR (inflammation), albumin (nutrition). Stool: fecal calprotectin (IBD vs IBS distinguish — single most useful non-invasive test), culture (infection rule out), C. diff. Colonoscopy with biopsy: gold standard — mucosal appearance + histology. MR Enterography: Crohn's mein small bowel extent assess. Perianal MRI: perianal Crohn's mein.",
+      },
+      {
+        heading: "IBD Treatment Approach — Step Up Therapy",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein IBD treatment:",
+        list: [
+          "Mild UC: Mesalamine oral + rectal — first-line, effective 70-80%",
+          "Moderate UC/Crohn's: Corticosteroids (induction) + Azathioprine (maintenance)",
+          "Refractory/Severe: Biologics — Infliximab (anti-TNF), Adalimumab, Vedolizumab, Ustekinumab",
+          "New: Small molecules — Tofacitinib (JAK inhibitor) for UC",
+          "Nutrition: Exclusive Enteral Nutrition (EEN) — Crohn's children mein mucosal healing",
+          "Surgery referral: when medical therapy fails or complications",
+          "Goal: mucosal healing (endoscopic remission) not just symptom control",
+        ],
+      },
+      {
+        heading: "Biologics — IBD Mein Game Changer",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein IBD mein biologics prescribe karte hain jab conventional therapy fail ho. Biologics — anti-TNF agents (Infliximab, Adalimumab), anti-integrins (Vedolizumab), anti-IL12/23 (Ustekinumab) — yeh inflammation ke specific pathways block karte hain. India mein biosimilars available hain — original biologics se zyada affordable. Pre-biologic workup: TB test (IGRA ya Mantoux), Hepatitis B status, chest X-ray. Monitoring: regular infusions (Infliximab IV) ya subcutaneous injections (Adalimumab). Dr. Akhilesh Yadav Ranchi ke IBD patients ko biologic selection, initiation aur monitoring mein guide karte hain.",
+      },
+      {
+        heading: "IBD Mein Long-Term Care — Ranchi Ke Patients Ke Liye",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein IBD long-term care mein karte hain: Regular follow-up: disease activity monitoring, medication adjustment. Surveillance colonoscopy: extensive UC mein 8-10 saal ke baad annual — cancer risk. Nutrition assessment: IBD mein malabsorption common — vitamin D, B12, iron, folate deficiency. Vaccination: IBD patients (immunosuppressed) mein specific vaccines update karna. Mental health: IBD patients mein depression/anxiety common — screen aur refer. Flare management: rescue therapy plan — steroid taper protocol patients ko deta hoon.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — IBD",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'IBD mein main patients ko ek baat clearly kehta hoon: medication band mat karo jab better lagta hai. IBD chronic hai — remission mein bhi maintenance therapy zaroori hai. Ranchi mein mujhe khushi hai ki ab biologics available hain reasonable cost par — Jharkhand ke patients ko Delhi ya Kolkata nahi jaana padta IBD management ke liye.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. IBD ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Fecal Calprotectin test kahan hota hai Ranchi mein?",
+        a: "Fecal calprotectin test major diagnostic labs mein available hai — SRL, Thyrocare, Metropolis. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein test recommend karte hain aur sample collection guide karte hain.",
+      },
+      {
+        q: "IBD mein TB se kaise bachein (biologics start karte waqt)?",
+        a: "Biologics (anti-TNF) start karne se pehle latent TB screen karna mandatory hai — IGRA blood test ya Mantoux. Latent TB positive mein: isoniazid prophylaxis 1 mahina pehle start karo, phir biologic. Dr. Akhilesh Yadav Ranchi mein yeh protocol follow karte hain.",
+      },
+      {
+        q: "Kya IBD mein pregnancy safe hai?",
+        a: "Remission mein pregnancy safer hoti hai. Active disease mein: miscarriage, premature birth risk badhta hai. Mesalamine pregnancy safe. Azathioprine — risk-benefit discussion. Biologics (Infliximab, Adalimumab) — often continue ki jaati hain pregnancy mein agar zaroor ho. Dr. Akhilesh Yadav pre-pregnancy counseling karte hain Ranchi mein.",
+      },
+      {
+        q: "IBD aur IBS simultaneously ho sakta hai?",
+        a: "Haan — IBD remission mein bhi IBS-like symptoms ho sakte hain (IBS-IBD overlap). Fecal calprotectin + colonoscopy se differentiate hota hai active IBD vs IBS. Treatment alag hoti hai. Dr. Akhilesh Yadav Ranchi mein yeh distinction karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "swallowing-problem-ranchi",
+    titleHi: "Swallowing Problem Ranchi — Nigalne Mein Takleef | Dr. Akhilesh Yadav",
+    titleEn: "Swallowing Problem (Dysphagia) in Ranchi — Diagnosis & Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein nigalne mein takleef (dysphagia) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Endoscopy se sahi diagnosis aur treatment.",
+    excerptEn: "Swallowing difficulty (dysphagia) specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert endoscopic diagnosis & treatment for all causes of dysphagia.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🩺",
+    tags: ["swallowing problem ranchi", "dysphagia ranchi", "nigalna mushkil ranchi", "esophagus problem ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Swallowing Problem Ranchi | Dysphagia | Dr. Akhilesh Yadav",
+    metaDescription: "Swallowing difficulty (dysphagia) specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Endoscopic diagnosis & treatment for all causes.",
+    sections: [
+      {
+        heading: "Nigalne Mein Takleef — Kabhi Ignore Mat Karein",
+        type: "text",
+        content: "Dhanbad se aaye 62-saal ke Ramesh ji — 3 mahine se solid food nigalte waqt ruka-ruka lagta hai. Weight 5 kg ghat gaya. 'Budhaape mein hota hai' soch ke ignore kiya. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne urgently endoscopy ki. Mila: esophageal stricture (benign) — chronic acid damage se. Endoscopic dilation (stretching) se significant improvement. Swallowing difficulty (dysphagia) ek ALARM symptom hai — kabhi ignore mat karein. Isme se kuch cases early cancer bhi nikalta hai.",
+      },
+      {
+        heading: "Dysphagia Ke Karan — GI Se Neurological Tak",
+        type: "list",
+        content: "Nigalne ki takleef ke causes:",
+        list: [
+          "Esophageal Stricture (benign): chronic GERD acid damage se food pipe narrowing",
+          "Esophageal Cancer: progressive dysphagia (pehle solids, phir liquids) + weight loss — ALARM",
+          "Achalasia Cardia: food pipe ki muscle dysfunction — food pass nahi hoti",
+          "Esophageal Rings/Webs: congenital ya acquired narrowings",
+          "Eosinophilic Esophagitis: immune-mediated — food bolus stuck hota hai",
+          "Zenker's Diverticulum: pharyngeal pouch mein food collect hota hai",
+          "Neurological: stroke, Parkinson's, MND — swallowing muscle control affected",
+        ],
+      },
+      {
+        heading: "Endoscopy — Dysphagia Ka Primary Investigation",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein dysphagia ke liye urgently endoscopy recommend karte hain. Endoscopy (OGD Scopy) se: Food pipe ka direct visualization. Stricture, mass, inflammation clearly dikhta hai. Biopsy — malignancy rule out. Achalasia: barium swallow + manometry se better diagnosed. Barium swallow / esophagogram: structural problems outline deta hai — Dr. Akhilesh Yadav refer karte hain. Esophageal Manometry: motility disorders assess karne ke liye (achalasia, diffuse esophageal spasm).",
+      },
+      {
+        heading: "Dysphagia Ka Treatment — Endoscopic Se Surgical",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein dysphagia treatment mein karte hain: Benign Stricture: Endoscopic Dilation (bougie ya balloon) — stricture ko stretch karte hain. Multiple sessions may be needed. Achalasia: Pneumatic Dilation ya POEM (Per-Oral Endoscopic Myotomy — advanced procedure). Surgery: Heller Myotomy. Esophageal Cancer: oncology team referral — staging ke hisaab se chemotherapy/radiation/surgery. Eosinophilic Esophagitis: steroids (swallowed budesonide), proton pump inhibitors, food trigger elimination. GERD-related stricture: PPI + dilation.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Dysphagia",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Dysphagia ek alarm symptom hai — 2 hafte se zyada ho toh endoscopy zaroor. Ranchi mein main dekhta hoon ki patients mahino tak nigalne ki takleef ke saath rehte hain sochke ki budhaapa hai ya khaana solid hai. Yeh galat hai. Early diagnosis mein benign conditions easily treat hoti hain, aur cancer early stage mein milta hai toh outcomes better hote hain.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Dysphagia ke liye urgently doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Achalasia Cardia kya hai aur kaise treat hoti hai?",
+        a: "Achalasia mein esophagus ki lower muscle (LES) relax nahi karti — food stomach mein nahi jaata. Regurgitation, weight loss, chest pain common. Treatment: Pneumatic balloon dilation ya POEM (advanced endoscopic procedure) ya Heller Myotomy. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein achalasia diagnose karte hain aur appropriate treatment/referral dete hain.",
+      },
+      {
+        q: "Kya solid food khaane mein ruk-ruk lagta hai — kya karein?",
+        a: "Yeh esophageal stricture, ring, ya cancer ka sign ho sakta hai. Urgently endoscopy karwayein. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein urgently evaluate karte hain — ek hafte ke andar appointment try karte hain aise symptoms ke liye.",
+      },
+      {
+        q: "Kya lukewarm paani peene se dysphagia theek hoti hai?",
+        a: "Kuch motility disorders (like diffuse esophageal spasm) mein warm liquids temporarily better lagta hai. Lekin yeh cause treat nahi karta. Endoscopy se cause pata karo — phir appropriate treatment. Ghar pe manage karne ki koshish mein delay se serious conditions miss ho sakti hain.",
+      },
+      {
+        q: "Kya neurological dysphagia mein GI doctor help kar sakta hai?",
+        a: "Neurological dysphagia (stroke, Parkinson's) mein primary treatment neurologist aur speech therapist handle karte hain. GI doctor ki role: aspiration related complications manage karna, PEG tube placement (jab required) — Dr. Akhilesh Yadav Ranchi mein coordinate karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "rectal-bleeding-ranchi",
+    titleHi: "Rectal Bleeding Ranchi — Toilet Mein Blood Ka Doctor | Dr. Akhilesh Yadav",
+    titleEn: "Rectal Bleeding in Ranchi — Blood in Stool Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein rectal bleeding (toilet mein blood) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Causes, diagnosis aur treatment guide.",
+    excerptEn: "Rectal bleeding specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Causes from hemorrhoids to colon cancer — expert diagnosis & treatment.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🚨",
+    tags: ["rectal bleeding ranchi", "blood in stool ranchi", "toilet mein blood ranchi", "pakhana mein blood ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Rectal Bleeding Ranchi | Blood in Stool | Dr. Akhilesh Yadav",
+    metaDescription: "Rectal bleeding specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert diagnosis from hemorrhoids to colon cancer — never ignore blood in stool.",
+    sections: [
+      {
+        heading: "Toilet Mein Blood — Kabhi Bhi Ignore Mat Karein",
+        type: "text",
+        content: "Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — kehte hain: 'Toilet mein blood dekhna — chahe thoda sa ho — doctor ko dikhao, ignore mat karo.' Bahut se patients sochte hain 'piles hai, theek ho jaayega' aur months tak wait karte hain. 40+ age mein rectal bleeding mein colonoscopy zaroori hai — colon polyp ya early cancer miss ho sakta hai. Piles aur colon cancer dono mein rectal bleeding hoti hai — differentiate karna ek gastroenterologist ka kaam hai.",
+      },
+      {
+        heading: "Rectal Bleeding Ke Causes — Simple Se Serious",
+        type: "list",
+        content: "Rectal bleeding (hematochezia) ke causes:",
+        list: [
+          "Hemorrhoids (Piles): most common — bright red blood on toilet paper ya bowl",
+          "Anal Fissure: tear in anal lining — blood + severe pain on defecation",
+          "Diverticular Bleeding: colon diverticula se sudden painless large bleed — 50+ age",
+          "Inflammatory Bowel Disease (UC, Crohn's): blood + mucus + diarrhea",
+          "Colon Polyps: larger polyps kabhi kabhi bleed karte hain",
+          "Colorectal Cancer: blood mixed with stool, change in bowel habit, weight loss",
+          "Infectious Colitis: bloody diarrhea + fever (Salmonella, Shigella, E. coli O157)",
+          "Upper GI Bleeding (melena): kala stool — not bright red typically",
+        ],
+      },
+      {
+        heading: "Rectal Bleeding Ki Investigation — Kab Kya",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein rectal bleeding assessment mein karte hain: History: color (bright red vs maroon vs dark), amount, with stool or separate, associated symptoms. Age: 40+ mein always colonoscopy. Proctoscopy/Anoscopy: hemorrhoids, fissure quickly diagnose. Colonoscopy: complete colon visualization — polyps, cancer, IBD, diverticular bleeding. Stool tests: culture (infectious cause), calprotectin (IBD). Blood tests: CBC (anemia level), coagulation. Urgent colonoscopy: massive rectal bleeding mein — after hemodynamic stabilization.",
+      },
+      {
+        heading: "Rectal Bleeding Ka Treatment — Cause-Specific",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein rectal bleeding treatment cause ke hisaab se karte hain: Hemorrhoids: Grade 1-2 — diet + RBL (OPD). Grade 3-4 — surgical options. Anal Fissure: topical nitrates/calcium channel blockers + stool softeners. Severe/chronic — sphincterotomy. Polyps: colonoscopic polypectomy — same sitting mein. IBD: mesalamine, steroids — UC/Crohn's protocol. Infectious Colitis: appropriate antibiotics. Colorectal Cancer: surgical oncology + oncology team referral. Diverticular Bleeding: mostly self-limiting — angiographic embolization ya surgery agar persistent.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Rectal Bleeding",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main baar baar dekhta hoon — patient ki colonoscopy hoti hai jo aaya tha 'piles' ke liye — aur polyp milta hai, ya early colitis. Agar woh 2-3 mahine aur wait karta toh kya hota? Rectal bleeding = colonoscopy, khaas karke 40+. Yeh rule hai, exception nahi.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Rectal bleeding ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya piles mein colonoscopy zaroor hai?",
+        a: "40+ age mein rectal bleeding mein haan — colonoscopy zaroori hai chahe piles obvious ho. Piles aur colon cancer simultaneously ho sakta hai. Under 40 mein typical hemorrhoid presentation mein proctoscopy se start hoti hai, colonoscopy agar red flags hain. Dr. Akhilesh Yadav Ranchi mein case-by-case decide karte hain.",
+      },
+      {
+        q: "Anal fissure mein kitna dard hota hai?",
+        a: "Anal fissure mein defecation ke waqt aur baad mein severe burning/cutting pain hoti hai — burning sensation hours tak reh sakta hai. Blood: bright red, small amount. Constipation se worse hota hai. Dr. Akhilesh Yadav Ranchi mein fissure treat karte hain — topical medications pehle, refractory cases mein procedure.",
+      },
+      {
+        q: "Diverticular disease kya hai?",
+        a: "Colon mein small pouches (diverticula) banati hain — low fiber diet, aging, constipation. Zyada tar asymptomatic. Diverticulitis: infection/inflammation — left lower pain, fever. Diverticular bleed: painless large bright red bleed — 50+ mein. Dr. Akhilesh Yadav Ranchi mein colonoscopy se diagnose karte hain.",
+      },
+      {
+        q: "Blood loss se anemia ho sakti hai?",
+        a: "Haan — chronic small rectal bleeding (like hemorrhoids, polyps) se iron deficiency anemia ho sakti hai — gradually. Unexplained iron deficiency anemia mein colonoscopy zaroori hai bleeding source find karne ke liye. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein anemia workup mein colonoscopy include karte hain zaroor hone par.",
+      },
+    ],
+  },
+
+  {
+    slug: "unexplained-weight-loss-ranchi",
+    titleHi: "Unexplained Weight Loss Ranchi — Bina Wajah Wajan Ghatna | Dr. Akhilesh Yadav",
+    titleEn: "Unexplained Weight Loss in Ranchi — GI Causes & Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein bina wajah wajan ghatna (unexplained weight loss) ke GI specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Alarm symptom ki complete investigation guide.",
+    excerptEn: "Unexplained weight loss specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert GI workup for involuntary weight loss — cancer screening & complete diagnosis.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "⚠️",
+    tags: ["unexplained weight loss ranchi", "wajan ghatna ranchi", "involuntary weight loss ranchi", "cancer screening ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Unexplained Weight Loss Ranchi | Dr. Akhilesh Yadav GI Specialist",
+    metaDescription: "Unexplained weight loss specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert GI workup including endoscopy & colonoscopy for involuntary weight loss.",
+    sections: [
+      {
+        heading: "⚠️ Bina Wajah Wajan Ghatna — ALARM Symptom",
+        type: "warning",
+        content: "Agar 6 mahine mein bina diet change ya exercise ke 5% se zyada wajan ghat gaya ho — yeh medical evaluation ka indication hai. Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — kehte hain: 'Unexplained weight loss top alarm symptoms mein hai. Yeh GI cancer ka sign ho sakta hai, ya thyroid problem, ya malabsorption. Kabhi bhi wait mat karo.'\n\nDr. Akhilesh Yadav ya apne doctor se zaroor milein agar unexplained weight loss ho raha hai.",
+      },
+      {
+        heading: "GI Causes of Unexplained Weight Loss",
+        type: "list",
+        content: "Unexplained weight loss ke GI-related causes:",
+        list: [
+          "Esophageal Cancer: dysphagia + weight loss — ALARM",
+          "Gastric Cancer: early satiety + weight loss + upper abdominal pain",
+          "Colon/Rectal Cancer: change in bowel habit + blood + weight loss",
+          "Pancreatic Cancer: weight loss + jaundice + upper abdominal pain",
+          "Celiac Disease: gluten malabsorption — diarrhea + weight loss",
+          "IBD (Crohn's, Colitis): active disease mein weight loss prominent",
+          "SIBO (Small Intestinal Bacterial Overgrowth): malabsorption",
+          "Chronic Pancreatitis: exocrine insufficiency — fat malabsorption, weight loss",
+        ],
+      },
+      {
+        heading: "Non-GI Causes — Gastroenterologist Ka Role Rule-Out Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein unexplained weight loss mein GI workup karte hain lekin non-GI causes bhi ध्यान mein rakhte hain: Diabetes (uncontrolled): glucose loss mein weight loss. Hyperthyroidism: metabolism fast — weight loss. Tuberculosis: systemic wasting. Cancer anywhere: paraneoplastic weight loss. Depression: appetite loss. HIV/AIDS: wasting. Renal failure: chronic. Agar GI cause nahi mila — appropriate specialist refer karte hain. Complete workup ensure karta hai ki cause miss na ho.",
+      },
+      {
+        heading: "Workup — Dr. Akhilesh Yadav Ka Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein unexplained weight loss workup mein karte hain: History: rate of loss, diet changes, associated symptoms. Blood tests: CBC, LFT, RFT, TSH, blood sugar, ESR, LDH, CA19-9 (pancreatic marker), CEA (colorectal marker). Stool: occult blood, fat (steatorrhea), calprotectin. Imaging: chest X-ray, CT scan abdomen+pelvis (most important — masses, lymphadenopathy). Upper GI Endoscopy: esophageal, gastric, duodenal pathology. Colonoscopy: colorectal cancer, polyps. Additional: PET scan (malignancy staging), bone marrow (hematological causes) if needed.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Weight Loss",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein patients khush hote hain jab bina koshish ke wajan ghatata hai — 'pahle se fit ho gaya.' Yeh ek concerning mindset hai. Bina effort ke weight loss investigation ka indication hai. Haan, thyroid ya diabetes bhi ho sakta hai — lekin cancer rule out karna zaroori hai pehle. Early detection mein outcomes bahut better hote hain.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Unexplained weight loss ke liye urgently doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kitna weight loss 'concerning' maana jaata hai?",
+        a: "6 mahine mein 5% ya zyada involuntary weight loss — concerning. 65 kg ke vyakti mein: 3.25 kg in 6 months without trying. Elderly mein lower threshold. Dr. Akhilesh Yadav Ranchi mein standard criteria use karte hain assessment mein.",
+      },
+      {
+        q: "Weight loss mein pehle kaunsa doctor dikhayein?",
+        a: "GI symptoms (diarrhea, abdominal pain, dysphagia, rectal bleeding) ke saath — directly gastroenterologist. GI symptoms nahi — general physician ya internal medicine specialist. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein comprehensive workup karte hain GI angle se.",
+      },
+      {
+        q: "CT scan ya PET scan — kab choose karein?",
+        a: "CT abdomen/pelvis first step — most malignancies detect hoti hain. PET scan: known malignancy mein staging ya occult malignancy search mein jab CT inconclusive. PET scan is expensive — targeted use mein zyada value. Dr. Akhilesh Yadav appropriate imaging recommend karte hain.",
+      },
+      {
+        q: "Celiac disease mein weight loss kyon hota hai?",
+        a: "Celiac mein gluten se small intestine ki villi damage hoti hai — absorption impaired. Fat, protein, carbs — sab malabsorb hote hain — weight loss. Anti-tTG antibody test + small bowel biopsy se diagnose. Gluten-free diet se villi heal hoti hai aur weight normalize hota hai. Dr. Akhilesh Yadav Ranchi mein celiac diagnose karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "liver-cirrhosis-ranchi",
+    titleHi: "Liver Cirrhosis Ranchi — Cirrhosis Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "Liver Cirrhosis Treatment in Ranchi — Expert Hepatology | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein liver cirrhosis ka ilaj: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Ascites, varices, encephalopathy ka complete management.",
+    excerptEn: "Liver cirrhosis treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert management of ascites, varices, hepatic encephalopathy & all cirrhosis complications.",
+    category: "conditions",
+    readTimeMins: 9,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["liver cirrhosis ranchi", "cirrhosis treatment ranchi", "ascites treatment ranchi", "hepatologist ranchi", "liver doctor ranchi"],
+    metaTitle: "Liver Cirrhosis Treatment Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Liver cirrhosis specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert management of ascites, varices & all cirrhosis complications.",
+    sections: [
+      {
+        heading: "Liver Cirrhosis — Ranchi Mein Badh Raha Burden",
+        type: "text",
+        content: "Jharkhand mein liver cirrhosis ke cases badh rahe hain — alcoholic liver disease, Hepatitis B, NASH — teen major causes. Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — cirrhosis ke complex cases manage karte hain. Cirrhosis mein liver ka normal tissue scar tissue (fibrosis) se replace ho jaata hai — function dheerey dheerey khatam hota jaata hai. Lekin early diagnosis aur sahi management se cirrhosis ki progression rokna aur complications manage karna possible hai.",
+      },
+      {
+        heading: "Cirrhosis Ke Stages — Child-Pugh Aur MELD",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein cirrhosis severity score karte hain: Child-Pugh Score: A (5-6 points, compensated), B (7-9), C (10-15, decompensated). Parameters: bilirubin, albumin, PT-INR, ascites, encephalopathy. MELD Score (Model for End-stage Liver Disease): bilirubin + creatinine + INR — 3-month mortality predict karta hai, transplant listing ke liye use hota hai. Compensated Cirrhosis: koi major symptoms nahi — strict monitoring, alcohol bandh, cause treat karo. Decompensated: ascites, variceal bleed, encephalopathy — intensive management.",
+      },
+      {
+        heading: "Cirrhosis Complications — Management",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein cirrhosis complications manage karte hain:",
+        list: [
+          "Ascites: Spironolactone/furosemide (diuretics). Salt restriction (<2g/day). Large volume paracentesis (paani nikaalna) + albumin infusion",
+          "Spontaneous Bacterial Peritonitis (SBP): ascites fluid mein infection — IV antibiotics urgently",
+          "Esophageal Varices: endoscopic banding (EVL) prophylaxis/treatment. Non-selective beta-blockers (carvedilol/propranolol) — primary prophylaxis",
+          "Variceal Bleeding: emergency banding + terlipressin (IV). TIPS procedure agar refractory",
+          "Hepatic Encephalopathy: lactulose (3-4 soft stools/day), rifaximin, low protein triggers avoid",
+          "Hepatorenal Syndrome: terlipressin + albumin. Dialysis bridge. Transplant",
+          "Hepatocellular Carcinoma (HCC): 6-monthly AFP + ultrasound surveillance",
+        ],
+      },
+      {
+        heading: "Cirrhosis Mein Diet — Dr. Akhilesh Yadav Ka Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein cirrhosis diet clearly guide karte hain: Protein: maintain karein — 1.2-1.5 g/kg/day (muscle preserve karna zaroori hai). Old 'protein restrict karo' advice outdated hai — sirf overt encephalopathy mein temporary restrict. Salt (Sodium): agar ascites hai — <2g/day (low sodium diet). Zyada namak = paani zyada. Alcohol: bilkul nahi — even ek drink. Vitamins: Vitamin D, B12, zinc — deficiencies common, supplement karo. Small frequent meals: hypoglycemia risk kam karta hai cirrhosis mein. Ranchi ke local safe foods: plain rice, moong dal soup, chhachh (low-fat), banana, papaya.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Cirrhosis",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Cirrhosis mein main patients ko teen cheezein clearly kehta hoon: pehla — alcohol bandh, ek drop bhi nahi. Doosra — salt kam karo agar ascites hai. Teesra — regular follow-up — 3 mahine mein LFT, 6 mahine mein AFP + ultrasound. Ranchi mein main dekh raha hoon ki jo patients follow-up karte hain unka outcome bahut better hota hai unke comparison mein jo ek baar treatment le ke gayab ho jaate hain.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Cirrhosis ke liye hepatologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya cirrhosis reversible hai?",
+        a: "Early fibrosis (F2-F3) reversible ho sakta hai agar cause remove karein — Hepatitis C cure (DAA), alcohol abstinence, weight loss (NASH). Advanced cirrhosis (F4) ka scarring fully reverse nahi hota, lekin progression rok sakte hain. Dr. Akhilesh Yadav FibroScan se stage assess karte hain Orchid Medical Centre Ranchi mein.",
+      },
+      {
+        q: "Pet mein paani (ascites) baar baar kyun aata hai?",
+        a: "Ascites portal hypertension + low albumin se hota hai cirrhosis mein. Diuretics se manage hota hai — lekin cause (cirrhosis) nahi treat hota. Regular diuretics + salt restriction se recurrence kam hota hai. Baar baar paracentesis ki zaroorat hai toh TIPS procedure consider hota hai. Dr. Akhilesh Yadav Ranchi mein ascites management karte hain.",
+      },
+      {
+        q: "Esophageal varices kya hain aur kaise rokein?",
+        a: "Portal hypertension mein esophagus ki veins dilated hoti hain — varices. Ruptured varices: massive upper GI bleed — life-threatening. Primary prophylaxis: non-selective beta-blockers (carvedilol) ya endoscopic banding. Diagnosis: endoscopy se. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein variceal screening aur banding karte hain.",
+      },
+      {
+        q: "Liver transplant ke liye kahan jaayein?",
+        a: "Liver transplant ke liye major centers: AIIMS New Delhi, Medanta Gurugram, Apollo Chennai, AMRI Kolkata. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi se pre-transplant evaluation, MELD scoring, aur appropriate center referral coordinate karte hain. Post-transplant follow-up bhi Ranchi mein possible hai.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
