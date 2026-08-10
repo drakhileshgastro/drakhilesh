@@ -98,13 +98,73 @@ const DEMO: GA4Summary = {
 };
 
 export default function VisitorsAnalytics() {
-  const [data] = useState<GA4Summary>(DEMO);
-  const [isDemo] = useState(true);
-  const [days, setDays] = useState(28);
+  const [data, setData]     = useState<GA4Summary>(DEMO);
+  const [isDemo, setIsDemo] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [ga4Error, setGa4Error] = useState<string | null>(null);
+  const [days, setDays]     = useState(28);
 
-  // Placeholder: in production, fetch from /api/admin/ga4?days=N
   useEffect(() => {
-    // TODO: fetch(`/api/admin/ga4?days=${days}`) once GA4 Data API is wired
+    async function loadGA4() {
+      setLoading(true); setGa4Error(null);
+      try {
+        // Fetch summary, pages, devices, sources, cities in parallel
+        const [sumRes, pagesRes, devRes, srcRes, cityRes] = await Promise.all([
+          fetch(`/api/admin/ga4?days=${days}&report=summary`),
+          fetch(`/api/admin/ga4?days=${days}&report=pages`),
+          fetch(`/api/admin/ga4?days=${days}&report=devices`),
+          fetch(`/api/admin/ga4?days=${days}&report=sources`),
+          fetch(`/api/admin/ga4?days=${days}&report=cities`),
+        ]);
+
+        const [sum, pages, dev, src, cities] = await Promise.all([
+          sumRes.json(), pagesRes.json(), devRes.json(), srcRes.json(), cityRes.json(),
+        ]);
+
+        // If GA4 not configured, keep demo
+        if (!sum.success || sum.error === "GA4 not configured") {
+          setGa4Error(sum.setup ? "GA4 not configured — see setup steps below." : sum.error ?? "GA4 error");
+          setIsDemo(true); setData(DEMO);
+          return;
+        }
+
+        const totalDevSessions = (dev.data ?? []).reduce((t: number, d: {sessions:number}) => t + d.sessions, 0);
+        const totalSrcSessions = (src.data ?? []).reduce((t: number, s: {sessions:number}) => t + s.sessions, 0);
+
+        setData({
+          sessions:           sum.data.sessions,
+          users:              sum.data.totalUsers,
+          newUsers:           sum.data.newUsers,
+          pageviews:          sum.data.pageviews,
+          bounceRate:         +(sum.data.bounceRate * 100).toFixed(1),
+          avgSessionDuration: Math.round(sum.data.avgSessionDurationS),
+          topPages: (pages.data ?? []).map((p: {path:string;title:string;views:number;avgDur:number}) => ({
+            page:    p.path,
+            views:   p.views,
+            avgTime: Math.round(p.avgDur),
+          })),
+          deviceBreakdown: (dev.data ?? []).map((d: {device:string;sessions:number}) => ({
+            device:   d.device,
+            sessions: d.sessions,
+            pct:      totalDevSessions > 0 ? Math.round((d.sessions / totalDevSessions) * 100) : 0,
+          })),
+          topCities: (cities.data ?? []).map((c: {city:string;sessions:number}) => ({
+            city:     c.city,
+            sessions: c.sessions,
+          })),
+          channelBreakdown: (src.data ?? []).map((s: {channel:string;sessions:number}) => ({
+            channel:  s.channel,
+            sessions: s.sessions,
+            pct:      totalSrcSessions > 0 ? Math.round((s.sessions / totalSrcSessions) * 100) : 0,
+          })),
+        });
+        setIsDemo(false);
+      } catch {
+        setGa4Error("Failed to load GA4 data — check API route.");
+        setIsDemo(true); setData(DEMO);
+      } finally { setLoading(false); }
+    }
+    loadGA4();
   }, [days]);
 
   const maxPage    = Math.max(...data.topPages.map(p => p.views));
@@ -133,12 +193,37 @@ export default function VisitorsAnalytics() {
         </div>
       </div>
 
+      {/* Loading state */}
+      {loading && (
+        <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 12, padding: "12px 16px" }}>
+          <p style={{ margin: 0, fontSize: 12, color: "#15803d", fontWeight: 600 }}>
+            ⟳ Loading GA4 data from Google Analytics…
+          </p>
+        </div>
+      )}
+
       {/* Demo banner */}
-      {isDemo && (
-        <div style={{ background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 12, padding: "12px 16px" }}>
-          <p style={{ margin: 0, fontSize: 12, color: "#1d4ed8", fontWeight: 600 }}>
-            📊 Demo data shown — connect GA4 Data API to see live numbers.
-            Add <code style={{ background: "#dbeafe", padding: "1px 4px", borderRadius: 4, fontSize: 11 }}>GA4_PROPERTY_ID</code> env var and build <code style={{ background: "#dbeafe", padding: "1px 4px", borderRadius: 4, fontSize: 11 }}>/api/admin/ga4</code> endpoint (Phase 4).
+      {!loading && isDemo && (
+        <div style={{ background: ga4Error ? "#fef3c7" : "#eff6ff", border: `1px solid ${ga4Error ? "#fde68a" : "#bfdbfe"}`, borderRadius: 12, padding: "12px 16px" }}>
+          <p style={{ margin: 0, fontSize: 12, color: ga4Error ? "#92400e" : "#1d4ed8", fontWeight: 600 }}>
+            {ga4Error
+              ? `⚠️ ${ga4Error} Demo data shown instead.`
+              : "📊 Demo data — add GA4_PROPERTY_ID env var (Vercel) + grant service account Viewer access in GA4 to see live data."}
+          </p>
+          {ga4Error && (
+            <p style={{ margin: "6px 0 0", fontSize: 11, color: "#92400e" }}>
+              Setup: Vercel → Environment Variables → Add GA4_PROPERTY_ID (numeric Property ID from GA4 Admin → Property settings).
+              Then grant your service account email Viewer access in GA4 Admin → Account Access Management.
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* Real data banner */}
+      {!loading && !isDemo && (
+        <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 12, padding: "10px 16px" }}>
+          <p style={{ margin: 0, fontSize: 12, color: "#15803d", fontWeight: 600 }}>
+            ✅ Live GA4 data — last {days} days · drakhileshgastro.com · G-ZYE92TKM0W
           </p>
         </div>
       )}

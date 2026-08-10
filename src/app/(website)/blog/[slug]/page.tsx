@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export const revalidate = 86400; // ISR: regenerate every 24h
 import { Clock, ArrowLeft, MessageCircle, Phone, AlertTriangle, Lightbulb, HelpCircle, CheckCircle2, Calendar } from "lucide-react";
@@ -83,8 +84,10 @@ export default async function BlogPostPage({ params }: Props) {
     "datePublished": getIsoDate(post.publishedAt),
     "dateModified": getIsoDate(post.publishedAt),
     "author": {
-      "@type": "Organization",
-      "name": "Dr. Akhilesh Yadav Gastroenterology Clinic"
+      "@type": "Physician",
+      "name": DOCTOR.name,
+      "medicalSpecialty": "Gastroenterology",
+      "affiliation": { "@type": "Hospital", "name": DOCTOR.hospital }
     },
     "reviewedBy": {
       "@type": "Physician",
@@ -182,10 +185,13 @@ export default async function BlogPostPage({ params }: Props) {
 
             {post.image && (
               <div className="aspect-[16/9] w-full bg-primary-light rounded-3xl overflow-hidden relative shadow-xs border border-border/20 my-6">
-                <img
+                <Image
+                  fill
                   src={post.image}
                   alt={post.titleEn}
-                  className="w-full h-full object-cover object-center"
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  priority
                 />
               </div>
             )}
@@ -332,6 +338,39 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 )}
 
+                {/* ── Author / Reviewer Box — E-E-A-T signal ─────────────── */}
+                <div className="bg-bg-sand/40 border border-border/60 rounded-3xl p-6 space-y-4">
+                  <p className="text-[9px] text-primary uppercase font-bold tracking-wider font-sans">Clinically Reviewed By</p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-2xl overflow-hidden relative border border-border/30 flex-shrink-0 bg-primary-light">
+                      <Image
+                        src="/dr-akhilesh-improved.png"
+                        alt={`${DOCTOR.name} — DM Gastroenterologist`}
+                        width={64}
+                        height={64}
+                        className="object-cover object-top"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-forest font-sans font-bold text-base leading-tight">{DOCTOR.name}</h4>
+                      <p className="text-muted text-xs font-sans mt-0.5">{DOCTOR.qualification}</p>
+                      <p className="text-primary text-xs font-bold font-sans mt-1">{DOCTOR.specialty} · {DOCTOR.hospital}, Ranchi</p>
+                    </div>
+                  </div>
+                  <p className="text-muted text-xs font-sans leading-relaxed">
+                    This article has been clinically reviewed and approved by {DOCTOR.name} ({DOCTOR.qualification}). Dr. Yadav practises at {DOCTOR.hospital}, HB Road, Ranchi, with 10+ years of specialist experience in gastroenterology and hepatology.
+                  </p>
+                  <p className="text-[10px] text-red-700/70 font-sans leading-relaxed border-t border-border/40 pt-3">
+                    <strong>Medical Disclaimer:</strong> This content is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified physician for personal health decisions.
+                  </p>
+                  <Link
+                    href="/about"
+                    className="inline-flex items-center gap-1 text-primary text-[10px] font-bold uppercase tracking-wider font-sans hover:text-primary-dark transition-colors"
+                  >
+                    About Dr. Akhilesh →
+                  </Link>
+                </div>
+
                 {/* WhatsApp Share Card */}
                 <div className="bg-forest text-white rounded-3xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-sm">
                   <div>
@@ -396,10 +435,12 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="bg-bg-sand/35 border border-border/80 rounded-3xl p-6 shadow-xs space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-primary-light rounded-xl overflow-hidden relative border border-border/20 flex-shrink-0">
-                      <img
+                      <Image
                         src="/dr-akhilesh-improved.png"
                         alt="Dr. Akhilesh Yadav"
-                        className="w-full h-full object-cover object-top"
+                        width={48}
+                        height={48}
+                        className="object-cover object-top"
                       />
                     </div>
                     <div>

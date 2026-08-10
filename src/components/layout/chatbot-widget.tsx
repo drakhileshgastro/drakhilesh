@@ -15,7 +15,7 @@ const DISCLAIMER =
 
 const INITIAL_MESSAGE: Message = {
   role: "assistant",
-  content: `Namaskar! 🙏 Main Dr. Akhilesh ka virtual assistant hoon.\n\nMain aapko liver, pet aur digestive conditions ke baare mein guide kar sakta hoon, ya appointment book karne mein help kar sakta hoon.\n\nAap kya jaanna chahte hain?`,
+  content: `Namaskar! 🙏 Main Dr. Akhilesh ka appointment assistant hoon.\n\nMain aapke liye Dr. Akhilesh Yadav ke saath appointment fix karne mein help kar sakta hoon.\n\nApna naam aur mobile number share karein — hamaari team 2 ghante mein call karegi. 📞`,
 };
 
 function generateSessionId() {
@@ -166,7 +166,7 @@ export default function ChatbotWidget() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-              placeholder="Hindi ya English mein likhein..."
+              placeholder="Apna naam ya mobile number likhein..."
               className="flex-1 text-xs px-3.5 py-2.5 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors min-h-[44px] text-forest placeholder:text-muted bg-white font-sans"
             />
             <button

@@ -11,9 +11,22 @@ import SymptomFAQSection from "@/components/symptom/symptom-faq"; // Reuse accor
 
 export const metadata: Metadata = {
   title: "Dr. Akhilesh Yadav — DM Gastroenterologist in Ranchi | Orchid Medical Centre",
-  description: "Dr. Akhilesh Yadav is Ranchi's leading DM Gastroenterologist & Hepatologist at Orchid Medical Centre, HB Road. 10+ years experience, 4,000+ patients treated. Book OPD today.",
+  description: "Dr. Akhilesh Yadav is a DM Gastroenterologist & Hepatologist at Orchid Medical Centre, HB Road, Ranchi. 10+ years of clinical experience. Book OPD today.",
   alternates: { canonical: "https://drakhileshgastro.com/about" },
   keywords: ["dr akhilesh yadav", "gastroenterologist ranchi", "liver specialist ranchi", "dm gastroenterology ranchi", "orchid medical centre ranchi"],
+  openGraph: {
+    type: "profile",
+    url: "https://drakhileshgastro.com/about",
+    title: "Dr. Akhilesh Yadav — DM Gastroenterologist in Ranchi",
+    description: "Dr. Akhilesh Yadav is a DM Gastroenterologist & Hepatologist at Orchid Medical Centre, HB Road, Ranchi. Expert in endoscopy, colonoscopy, ERCP, and liver diseases. 4,000+ patients treated.",
+    images: [{ url: "https://drakhileshgastro.com/dr-akhilesh-improved.png", width: 1200, height: 630, alt: "Dr. Akhilesh Yadav — DM Gastroenterologist Ranchi" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Akhilesh Yadav — DM Gastroenterologist in Ranchi",
+    description: "Expert Gastroenterologist at Orchid Medical Centre, Ranchi. 10+ years, 4,000+ patients.",
+    images: ["https://drakhileshgastro.com/dr-akhilesh-improved.png"],
+  },
 };
 
 const EDUCATION = [

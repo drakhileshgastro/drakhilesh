@@ -1,6 +1,6 @@
 ---
 name: blog-indexer
-description: Post-publish indexing agent for drakhileshgastro.com. Takes a published blog slug and runs: internal linking (adds links from 3 existing related posts), Google Search Console URL inspection ping, sitemap verification, and social media content generation. Maximizes crawl speed and indexing of new medical content.
+description: Post-publish indexing agent for drakhileshgastro.com. Takes a published blog slug and runs: internal linking (adds links from 3 existing related posts), Google sitemap ping, Bing sitemap ping, IndexNow instant ping (Bing + Yandex via /api/admin/ping-indexnow), sitemap verification, and social media content generation. Maximizes crawl speed and indexing of new medical content.
 model: claude-sonnet-5
 tools:
   - Read
@@ -54,12 +54,11 @@ After adding all 3 links:
 - Stage all modified blog-data.ts changes
 - Commit: `git commit -m "seo: add internal links to /blog/[new-slug]"`
 
-## Task 2: Google Search Console URL Inspection
+## Task 2: Search Engine Pings
 
-The GSC URL Inspection API allows submitting a URL for indexing.
+Run ALL three pings — Google sitemap, Bing sitemap, and IndexNow (instant Bing/Yandex indexing).
 
-**Method 1 — Direct URL fetch (recommended):**
-Submit the URL to Google's ping endpoint:
+### 2a — Google Sitemap Ping
 
 ```bash
 curl "https://www.google.com/ping?sitemap=https://drakhileshgastro.com/sitemap.xml"
@@ -67,22 +66,40 @@ curl "https://www.google.com/ping?sitemap=https://drakhileshgastro.com/sitemap.x
 
 This tells Google to re-crawl the sitemap and discover the new URL.
 
-**Method 2 — GSC API (if API key configured):**
-If `GOOGLE_SEARCH_CONSOLE_KEY` is in `.env.local`, use the API:
+### 2b — Bing Sitemap Ping
 
-```bash
-curl -X POST \
-  "https://searchconsole.googleapis.com/v1/urlTestingTools/mobileFriendlyTest:run" \
-  -H "Authorization: Bearer $GSC_TOKEN" \
-  -d '{"url": "https://drakhileshgastro.com/blog/[slug]"}'
-```
-
-For now, use Method 1 (sitemap ping). GSC API setup is a future enhancement.
-
-**Also ping Bing:**
 ```bash
 curl "https://www.bing.com/ping?sitemap=https://drakhileshgastro.com/sitemap.xml"
 ```
+
+### 2c — IndexNow (Instant Bing/Yandex Indexing — PRIORITY)
+
+IndexNow sends the exact URL directly to Bing and Yandex — much faster than sitemap crawl.
+Call the admin API endpoint on the live site:
+
+```bash
+curl -X POST "https://drakhileshgastro.com/api/admin/ping-indexnow" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <SUPABASE_ADMIN_TOKEN>" \
+  -d '{"slug": "[slug]"}'
+```
+
+Replace `[slug]` with the actual blog slug. Replace `<SUPABASE_ADMIN_TOKEN>` with a valid Supabase session token.
+
+**Expected successful response:**
+```json
+{
+  "success": true,
+  "pinged": ["/blog/[slug]", "/blog", "/sitemap.xml"],
+  "engine": "IndexNow (Bing + Yandex)"
+}
+```
+
+**If you get `INDEXNOW_KEY not configured`:**
+```
+Setup steps printed in response — remind user to add INDEXNOW_KEY to Vercel env vars.
+```
+In that case, the Bing sitemap ping (2b) still covers Bing — just slower.
 
 ## Task 3: Verify Sitemap
 
@@ -165,6 +182,7 @@ Internal Links Added:
 Search Engine Pings:
   ✓ Google sitemap ping sent
   ✓ Bing sitemap ping sent
+  ✓ IndexNow ping sent → /blog/[slug] (Bing + Yandex instant indexing)
 
 Sitemap Status:
   [URL in sitemap: YES (after deploy) / PENDING (deploy not yet run)]

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllServiceSlugs } from "@/data/services-data";
-import { getAllBlogSlugs } from "@/data/blog-data";
+import { getAllBlogsForSitemap } from "@/data/blog-data";
 import { getAllProcedureSlugs } from "@/data/procedures-data-v2";
 import { getAllSymptomSlugs } from "@/data/symptoms-data";
 import { LOCATIONS_DATA } from "@/data/locations-data";
@@ -9,13 +9,13 @@ const BASE = "https://drakhileshgastro.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceSlugs = getAllServiceSlugs();
-  const blogSlugs = getAllBlogSlugs();
+  const blogs = getAllBlogsForSitemap();
   const procedureSlugs = getAllProcedureSlugs();
   const symptomSlugs = getAllSymptomSlugs();
   const locationSlugs = Object.keys(LOCATIONS_DATA);
 
-  // Stable lastModified date (July 14, 2026) to prevent Google from flag-triggering fake updates
-  const stableDate = new Date("2026-07-14T00:00:00.000Z");
+  // Stable lastModified for static pages — set to last deployment date, not dynamic new Date()
+  const stableDate = new Date("2026-08-09T00:00:00.000Z");
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE, lastModified: stableDate, changeFrequency: "weekly", priority: 1.0 },
@@ -61,9 +61,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+  const blogPages: MetadataRoute.Sitemap = blogs.map(({ slug, isoDate }) => ({
     url: `${BASE}/blog/${slug}`,
-    lastModified: stableDate,
+    lastModified: new Date(isoDate),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
