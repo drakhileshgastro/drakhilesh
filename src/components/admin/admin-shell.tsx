@@ -8,31 +8,40 @@ import {
   LayoutDashboard, Users, IndianRupee, FileText,
   BarChart2, Settings, LogOut, Stethoscope,
   UserCog, Globe, Phone, X, Menu, ChevronRight,
+  Target, TrendingUp, Brain, ClipboardCheck, Activity,
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 const NAV = [
-  { href: "/admin",           label: "Dashboard",   icon: LayoutDashboard, exact: true },
-  { href: "/admin/leads",     label: "All Leads",   icon: Users },
-  { href: "/admin/revenue",   label: "Revenue",     icon: IndianRupee },
-  { href: "/admin/blog",      label: "Blog CMS",    icon: FileText },
-  { href: "/admin/users",     label: "User Mgmt",   icon: UserCog },
-  { href: "/admin/pages",     label: "Website",     icon: Globe },
-  { href: "/admin/analytics", label: "Analytics",   icon: BarChart2 },
-  { href: "/admin/settings",  label: "Settings",    icon: Settings },
+  { href: "/admin",             label: "Dashboard",     icon: LayoutDashboard, exact: true },
+  { href: "/admin/leads",       label: "All Leads",     icon: Users },
+  { href: "/admin/revenue",     label: "Revenue",       icon: IndianRupee },
+  { href: "/admin/blog",        label: "Blog Mgmt",     icon: FileText },
+  // SEO & Content Intelligence
+  { href: "/admin/pages",       label: "Website Pages", icon: Globe },
+  { href: "/admin/keywords",    label: "Keywords",      icon: Target },
+  { href: "/admin/traffic",     label: "Traffic (GSC)", icon: TrendingUp },
+  { href: "/admin/visitors",    label: "Visitors (GA4)",icon: Activity },
+  { href: "/admin/blog-leads",  label: "Blog → Leads",  icon: Brain },
+  { href: "/admin/sop-audit",   label: "SOP Audit",     icon: ClipboardCheck },
+  // Settings
+  { href: "/admin/users",       label: "User Mgmt",     icon: UserCog },
+  { href: "/admin/analytics",   label: "Analytics",     icon: BarChart2 },
+  { href: "/admin/settings",    label: "Settings",      icon: Settings },
 ];
 
 const BOTTOM_NAV = [
-  { href: "/admin",           label: "Home",     icon: LayoutDashboard, exact: true },
-  { href: "/admin/leads",     label: "Leads",    icon: Users },
-  { href: "/admin/revenue",   label: "Revenue",  icon: IndianRupee },
-  { href: "/admin/blog",      label: "Blog",     icon: FileText },
-  { href: "/admin/settings",  label: "Settings", icon: Settings },
+  { href: "/admin",          label: "Home",     icon: LayoutDashboard, exact: true },
+  { href: "/admin/leads",    label: "Leads",    icon: Users },
+  { href: "/admin/blog",     label: "Blog",     icon: FileText },
+  { href: "/admin/traffic",  label: "Traffic",  icon: TrendingUp },
+  { href: "/admin/settings", label: "Settings", icon: Settings },
 ];
 
 const NAV_GROUPS = [
-  { title: "Clinical", items: NAV.slice(0, 4) },
-  { title: "Manage",   items: NAV.slice(4) },
+  { title: "Clinical",     items: NAV.slice(0, 4) },
+  { title: "SEO & Content",items: NAV.slice(4, 10) },
+  { title: "Manage",       items: NAV.slice(10) },
 ];
 
 function isActive(pathname: string, href: string, exact?: boolean) {
