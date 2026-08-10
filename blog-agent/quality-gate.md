@@ -1,163 +1,186 @@
-# Quality Gate — Medical Blog (15-Point E-E-A-T Rubric)
+# Blog Quality Gate — drakhileshgastro.com
+## 15-Point E-E-A-T Checklist + TypeScript Format Validation
 
-## Publish Threshold: 10/15 minimum
-
-Below 10: Do not publish. Return to writer with specific feedback.
-10-12: Publish with revisions noted for the next update.
-12-15: Publish immediately. Strong content.
-
----
-
-## PART A: EXPERIENCE SIGNALS (0-5 points)
-
-### A1. Patient Opening Scenario (+2 points)
-The blog opens with a SPECIFIC patient scenario — not a generic statement.
-
-✅ **PASS (2 pts)**: "Ranchi ke ek 45-saal ke teacher, Ramesh ji, pichhle 3 mahine se pet ke daayi taraf dard mehsoos kar rahe the. Ultrasound mein 'Grade 2 Fatty Liver' aaya — woh ghabra gaye..."
-
-❌ **FAIL (0 pts)**: "Fatty liver aaj kal ek common problem ban gayi hai."
-❌ **FAIL (0 pts)**: "Pet ki takleef se pareshan hain? Is article mein..."
-
-The scenario must:
-- Have a character (real or composite)
-- Have a specific symptom or test result
-- Reference Ranchi/Jharkhand if possible
-- Lead naturally into the topic
-
-### A2. Specific Result or Recovery Mention (+1 point)
-Blog includes at least one specific outcome — even anonymized.
-
-✅ **PASS**: "Dr. Akhilesh ke marizo mein se ek Bokaro ke patient ne 3 mahine ki lifestyle changes se Grade 2 fatty liver ko normal kar liya."
-✅ **PASS**: "Hamare zyada tar patients 6-8 hafte mein symptoms mein improvement mehsoos karte hain."
-❌ **FAIL**: Generic "most patients recover"
-
-### A3. Expert Attribution (+1 point)
-Uses attribution language that signals lived experience:
-
-✅ "10+ saalon ke experience mein, Dr. Akhilesh Yadav ne dekha hai ki..."
-✅ "Ranchi aur Jharkhand ke patients mein yeh pattern common hai..."
-❌ No attribution at all = FAIL
-
-### A4. India/Jharkhand Context (+1 point)
-Blog includes specific India/regional context — not just generic medical info.
-
-✅ Mentions Ranchi, Jharkhand, Bihar, local food, local climate, local lifestyle factors
-✅ Mentions regional patient patterns
-❌ Could have been written for patients anywhere in the world = FAIL
+Every blog MUST score **12/15 minimum** before being published.
+Score below 12 → revise before commit.
+Any YMYL violation → automatic reject regardless of score.
 
 ---
 
-## PART B: EXPERTISE SIGNALS (0-3 points)
+## PART A — YMYL Safety Check (Auto-Fail if Any Violated)
 
-### B1. Gastroenterology-Specific Advice (+1 point)
-Every key piece of advice must be SPECIFIC to gastroenterology — not general health advice.
+These are hard stops. ONE violation = reject the entire draft.
 
-✅ "Fatty liver mein sabse pehle refined carbohydrates band karein — maida, sugar, white rice"
-❌ "Exercise karein aur healthy khaye" (too generic)
+| # | Rule | Check |
+|---|---|---|
+| A1 | No dosage advice ("1 tablet twice daily", "500mg") | [ ] |
+| A2 | No diagnostic claims ("This means you have X disease") | [ ] |
+| A3 | No treatment promises ("This will cure your condition") | [ ] |
+| A4 | No claims discouraging hospital/doctor visits | [ ] |
+| A5 | No unverified statistics (% without source) | [ ] |
+| A6 | No specific drug brand names without prescription context | [ ] |
+| A7 | No emergency minimization (downplaying serious symptoms) | [ ] |
+| A8 | No absolute outcome claims ("painless", "100% safe", "permanent cure") | [ ] |
 
-### B2. Medical Terms Explained in Hindi (+1 point)
-Every English medical term used in the blog is explained in Hindi on first use.
-
-✅ "Bilirubin — yeh ek pigment hai jo liver mein red blood cells ke toote waqt banta hai"
-✅ "ERCP (endoscopic retrograde cholangiopancreatography) — pittashay ki nali se pathri nikalane ki procedure"
-❌ Using "bilirubin" without explaining what it is = FAIL
-
-### B3. Verified Fact/Statistic (+1 point)
-Blog includes at least ONE verified medical fact or statistic with implicit or explicit source.
-
-✅ "India mein lagbhag 9-32% adults mein fatty liver hota hai — AIIMS research ke anusaar"
-✅ "Liver mein 500 se zyada biochemical reactions hote hain ek din mein"
-❌ No statistics at all = FAIL
+**If ALL A1–A8 pass → proceed to Part B scoring.**
 
 ---
 
-## PART C: AUTHORITY SIGNALS (0-4 points)
+## PART B — E-E-A-T Score (15 points)
 
-### C1. Doctor Credential Mention (+1 point)
-Dr. Akhilesh Yadav's full credentials mentioned at least ONCE, and name appears ≥ 3 times total.
+### Experience Signals (0–5 points)
 
-✅ "Dr. Akhilesh Yadav — DM Gastroenterology specialist aur Orchid Medical Centre, Ranchi ke hepatologist..."
-❌ Just "the doctor says" without naming = FAIL
+| # | Criteria | Points | Check |
+|---|---|---|---|
+| E1 | Opens with a specific patient scenario (name, city, condition, result) — not a generic statement | +2 | [ ] |
+| E2 | Mentions a specific patient outcome or recovery (anonymized is fine) | +1 | [ ] |
+| E3 | Includes Ranchi/Jharkhand-specific context (local food, geography, disease burden) | +1 | [ ] |
+| E4 | Uses "Dr. Akhilesh Yadav ne note kiya / dekha / kehte hain" style attribution | +1 | [ ] |
 
-### C2. Location/Clinic Mention (+1 point)
-"Orchid Medical Centre" AND "Ranchi" both appear ≥ 2 times in the content.
+**Experience subtotal: ___ / 5**
 
-✅ Mentioned in intro + expert section + CTA = PASS
-❌ Only in the footer CTA = FAIL
+### Expertise Signals (0–4 points)
 
-### C3. Internal Links (+1 point)
-At least 5 internal links using descriptive Hindi/Hinglish anchor text.
+| # | Criteria | Points | Check |
+|---|---|---|---|
+| X1 | Advice is gastroenterology-specific — not generic "drink water and eat vegetables" | +1 | [ ] |
+| X2 | Medical terms explained in Hindi immediately after use | +1 | [ ] |
+| X3 | At least one verified medical fact or clinical guideline mentioned | +1 | [ ] |
+| X4 | Condition covered with appropriate diagnostic nuance (not oversimplified) | +1 | [ ] |
 
-✅ 5+ links to /conditions/, /procedures/, /blog/, /book = PASS
-❌ Fewer than 5 = FAIL
-❌ "Click here" or "yahan click karein" anchors = FAIL
+**Expertise subtotal: ___ / 4**
 
-### C4. Appointment CTA (+1 point)
-At least ONE clear appointment CTA with phone number OR WhatsApp link in the content body.
+### Authority Signals (0–3 points)
 
-✅ "Call karein: +91 74919 25047" or WhatsApp link in body = PASS
-❌ CTA only in header/footer components (not in blog content) = FAIL
+| # | Criteria | Points | Check |
+|---|---|---|---|
+| AU1 | "Dr. Akhilesh Yadav" mentioned ≥ 3 times with credentials | +1 | [ ] |
+| AU2 | "Orchid Medical Centre, Ranchi" mentioned ≥ 2 times | +1 | [ ] |
+| AU3 | Minimum 3 internal links (to conditions, procedures, or /book) | +1 | [ ] |
 
----
+**Authority subtotal: ___ / 3**
 
-## PART D: TRUST SIGNALS (0-3 points)
+### Trust Signals (0–3 points)
 
-### D1. FAQ Section (+1 point)
-Blog has:
-- A readable FAQ section in `content` (H2 "Aksar Puche Jane Wale Sawaal") AND
-- A populated `faqs` array with ≥ 5 Q&A objects for JSON-LD schema
+| # | Criteria | Points | Check |
+|---|---|---|---|
+| T1 | FAQs array has ≥ 4 items, each with specific accurate answers | +1 | [ ] |
+| T2 | Disclaimer present: "Yeh article sirf educational purpose ke liye hai" | +1 | [ ] |
+| T3 | Appointment CTA present with phone number and WhatsApp link | +1 | [ ] |
 
-❌ Only one of the two = FAIL
-❌ Fewer than 5 FAQs = FAIL
+**Trust subtotal: ___ / 3**
 
-### D2. Medical Disclaimer (+1 point)
-Blog includes at least ONE line telling readers to consult a doctor.
+### TOTAL E-E-A-T SCORE: ___ / 15
 
-✅ "Yeh information educational purpose ke liye hai. Apni situation ke liye Dr. Akhilesh Yadav ya apne doctor se zaroor milein."
-✅ "Har patient ki condition alag hoti hai — apne doctor ki salah zaroor lein."
-❌ No disclaimer anywhere = FAIL
-
-### D3. YMYL Safety (+1 point)
-NO unsafe medical content. All of these must be absent:
-- Specific dosage recommendations ("500mg daily")
-- Diagnostic claims ("aapko fatty liver hai")
-- Treatment guarantees ("yeh zaroor thik kar dega")
-- Content discouraging hospital visits
-- Unverified statistics or false claims
-
-✅ None of the above present = PASS (1 pt)
-❌ ANY of the above present = FAIL (0 pts) + YMYL violation flag
+**12–15**: APPROVE ✅
+**10–11**: APPROVE WITH MINOR REVISIONS ⚠️
+**Below 10**: REJECT — revise and recheck ❌
 
 ---
 
-## SCORING SUMMARY
+## PART C — SEO Quality Check
 
-| Section | Max | Your Score |
-|---------|-----|------------|
-| A1 Patient opening scenario | 2 | |
-| A2 Specific result/recovery | 1 | |
-| A3 Expert attribution | 1 | |
-| A4 India/Jharkhand context | 1 | |
-| B1 Gastro-specific advice | 1 | |
-| B2 Medical terms explained | 1 | |
-| B3 Verified fact/stat | 1 | |
-| C1 Doctor credential | 1 | |
-| C2 Location/clinic | 1 | |
-| C3 Internal links (≥5) | 1 | |
-| C4 Appointment CTA | 1 | |
-| D1 FAQ section + array | 1 | |
-| D2 Medical disclaimer | 1 | |
-| D3 YMYL safety | 1 | |
-| **TOTAL** | **15** | |
+| Field | Rule | Pass/Fail |
+|---|---|---|
+| `metaTitle` | ≤ 60 characters, contains primary keyword | |
+| `metaDescription` | ≤ 155 characters, contains keyword + CTA hint | |
+| `slug` | lowercase, hyphens only, no Hindi characters, no spaces | |
+| Primary keyword | Appears in: titleHi/titleEn, metaTitle, first section heading | |
+| Secondary keywords | At least 3 secondary keywords spread across sections | |
+| Tags | 4–6 tags, all relevant to the topic | |
 
 ---
 
-## Publish Decision Matrix
+## PART D — TypeScript Format Validation
 
-| Score | YMYL | Decision |
-|-------|------|----------|
-| 12-15 | PASS | ✅ Publish immediately |
-| 10-11 | PASS | ✅ Publish with revision notes for next update |
-| 8-9   | PASS | ⚠️ Revise and resubmit — list specific fixes |
-| <8    | PASS | ❌ Reject — significant rewrite needed |
-| Any   | FAIL | ❌ REJECT — fix YMYL issues first, regardless of score |
+The BlogPost object MUST match this exact interface:
+
+```typescript
+interface BlogPost {
+  slug: string;               // URL-safe, hyphens only
+  titleHi: string;            // Hindi/Hinglish title for page H1
+  titleEn: string;            // English title (for meta/OG fallback)
+  excerptHi: string;          // 1-2 sentence Hindi summary (for blog card)
+  excerptEn: string;          // 1-2 sentence English summary
+  category: string;           // See valid categories below
+  readTimeMins: number;       // integer, typically 6–9
+  publishedAt: string;        // "Month Year" format e.g. "August 2026"
+  emoji: string;              // single emoji (for visual accent)
+  image?: string;             // optional image path
+  tags: string[];             // 4–6 tags as string array
+  metaTitle: string;          // SEO title ≤ 60 chars
+  metaDescription: string;    // SEO description ≤ 155 chars
+  sections: BlogSection[];    // 4–6 sections (see below)
+  faqs?: { q: string; a: string }[];  // 3–6 FAQs
+}
+
+interface BlogSection {
+  heading?: string;           // H2/H3 heading text
+  content: string;            // paragraph text
+  list?: string[];            // bullet points (if type="list")
+  type?: "text" | "list" | "tip" | "warning";
+}
+```
+
+### Valid Categories
+```
+"conditions" | "procedures" | "symptoms" | "diet" | "locations" | "tests"
+```
+
+### Section Type Guide
+| type | When to use |
+|---|---|
+| "text" | Narrative paragraphs — most common |
+| "list" | When content is naturally a list (symptoms, foods, steps) |
+| "tip" | Expert advice section — always the LAST section with CTA |
+| "warning" | Red flags / emergency symptoms — use sparingly |
+
+### Standard Last Section (tip type — MANDATORY in every blog)
+```typescript
+{
+  heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — [topic]",
+  type: "tip",
+  content: "[2-3 sentences of Dr. Akhilesh's advice]\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+}
+```
+
+### Format Checklist
+| Field | Check |
+|---|---|
+| `sections` array exists (not `content` string) | [ ] |
+| Last section has `type: "tip"` with CTA | [ ] |
+| At least one section has `type: "list"` with `list: []` array | [ ] |
+| `faqs` array present with ≥ 4 items | [ ] |
+| Every FAQ has both `q` and `a` keys | [ ] |
+| `readTimeMins` is a number (not a string like "7 min") | [ ] |
+| `emoji` is a single emoji character | [ ] |
+| `publishedAt` matches "Month Year" format | [ ] |
+| No TypeScript syntax errors visible | [ ] |
+
+---
+
+## PART E — Brand Voice Check
+
+| Rule | Check |
+|---|---|
+| Opens with a patient scenario (not generic) | [ ] |
+| 70% Hindi / 30% English medical terms maintained | [ ] |
+| No "pilia" — only "jaundice" used | [ ] |
+| No AI-sounding opener ("In today's digital age...") | [ ] |
+| No "Namaskar doston..." opener | [ ] |
+| Local food/context references included (sattu, chhachh, Jharkhand) | [ ] |
+| Appointment phone + WhatsApp present | [ ] |
+
+---
+
+## Scoring Summary
+
+```
+YMYL Safety:        PASS / FAIL (auto-fail if any violation)
+E-E-A-T Score:      ___ / 15
+SEO Check:          PASS / NEEDS REVISION
+TypeScript Format:  PASS / NEEDS REVISION
+Brand Voice:        PASS / NEEDS REVISION
+
+FINAL DECISION:     APPROVE ✅ / REVISE ⚠️ / REJECT ❌
+```

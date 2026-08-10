@@ -83,29 +83,36 @@ Check against `brand-voice.md`:
 
 ### Dimension 5: TypeScript Format
 
-Check the object structure:
-- [ ] `slug` field present and URL-safe
-- [ ] `title` field present
+The ACTUAL BlogPost interface uses `sections: BlogSection[]` — NOT a `content` string. Check:
+- [ ] `slug` — URL-safe, lowercase, hyphens only, no Hindi chars
+- [ ] `titleHi` — Hindi/Hinglish title present
+- [ ] `titleEn` — English title present
+- [ ] `excerptHi` — 1-2 sentence Hindi summary present
+- [ ] `excerptEn` — English summary present
 - [ ] `metaTitle` ≤ 60 chars
 - [ ] `metaDescription` ≤ 155 chars
-- [ ] `h1` field present
-- [ ] `targetKeyword` field present
-- [ ] `category` is a valid category from the allowed list
-- [ ] `publishedAt` in "Month Year" format
-- [ ] `readTime` in "N min read" format
-- [ ] `excerpt` field present (2-3 sentences)
-- [ ] `tags` array with 4-6 items
-- [ ] `content` is a template literal string (backticks)
-- [ ] `faqs` array with ≥ 5 objects each having `q` and `a` keys
-- [ ] No trailing comma after last FAQ item would cause TypeScript error
+- [ ] `category` is one of: "conditions" | "procedures" | "symptoms" | "diet" | "locations" | "tests"
+- [ ] `publishedAt` in "Month Year" format (e.g. "August 2026")
+- [ ] `readTimeMins` is a NUMBER (not "7 min read" — just the integer 7)
+- [ ] `emoji` is a single emoji character
+- [ ] `tags` array with 4–6 string items
+- [ ] `sections` is an ARRAY of BlogSection objects (NOT a `content` string)
+- [ ] Each section has `content: string` field
+- [ ] List sections have `type: "list"` AND `list: string[]` array
+- [ ] Last section has `type: "tip"` with appointment CTA in content
+- [ ] `faqs` array with ≥ 4 objects each having `q` and `a` string keys
+- [ ] No TypeScript syntax errors (unclosed strings, missing commas)
 
 ### Dimension 6: Completeness
 
-- [ ] All 8 sections present in `content`?
-- [ ] Section 7 (Dr. Expert Section) present?
-- [ ] Appointment CTA in content?
-- [ ] Internal links in content (≥ 5)?
-- [ ] FAQs in both `content` (readable) and `faqs` array (schema)?
+- [ ] `sections` array has 4–6 sections?
+- [ ] At least one `type: "list"` section with `list:[]` present?
+- [ ] Final section is `type: "tip"` with Dr. Akhilesh expert quote + CTA?
+- [ ] Appointment phone (+91 74919 25047) in tip section?
+- [ ] WhatsApp link (wa.me/917491925047) in tip section?
+- [ ] Disclaimer "Yeh article sirf educational purpose ke liye hai" present?
+- [ ] Internal links (≥ 3) spread across sections?
+- [ ] `faqs` array populated (≥ 4 items)?
 
 ## Output Format
 
