@@ -4262,6 +4262,361 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 6: BLOGS 26–30 ─────────────────────────────────────────────────────
+
+  {
+    slug: "ranchi-mein-piles-ka-ilaj",
+    titleHi: "Ranchi Mein Piles Ka Ilaj — Bawaseer Treatment | Dr. Akhilesh Yadav",
+    titleEn: "Piles Treatment in Ranchi — Bawaseer Ka Ilaj | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein piles (bawaseer) ka ilaj bina surgery ke — Dr. Akhilesh Yadav — Orchid Medical Centre. Rubber Band Ligation, diet tips aur complete hemorrhoid guide.",
+    excerptEn: "Piles (hemorrhoid) treatment in Ranchi — non-surgical options by Dr. Akhilesh Yadav at Orchid Medical Centre. RBL, diet tips & complete bawaseer guide.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💊",
+    tags: ["ranchi mein piles ka ilaj", "bawaseer ka ilaj ranchi", "piles treatment ranchi", "hemorrhoids ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Piles Ka Ilaj Ranchi | Bawaseer Treatment | Dr. Akhilesh Yadav",
+    metaDescription: "Piles (bawaseer) ka ilaj Ranchi mein — Dr. Akhilesh Yadav at Orchid Medical Centre. Non-surgical RBL, diet guide & complete hemorrhoid treatment.",
+    sections: [
+      {
+        heading: "Bawaseer — Sharmane Ki Nahi, Ilaaj Ki Zaroorat Hai",
+        type: "text",
+        content: "Bawaseer (hemorrhoids/piles) ek aisi takleef hai jise Ranchi ke bahut se patients share nahi karte — sharm aati hai. Lekin Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ke paas roz 8-10 piles patients aate hain. 'Yeh ek medical condition hai — iska ilaj hai,' Dr. Akhilesh Yadav kehte hain. Aur achhi baat yeh hai ki zyada tar cases mein surgery ki zaroorat nahi hoti. Ranchi mein bawaseer ka karan bhi local factors hain — oily food, kam fiber, lambe waqt tak baithna.",
+      },
+      {
+        heading: "Bawaseer Ke Prakar Aur Koi Bhi Ho Sakta Hai",
+        type: "text",
+        content: "Internal Hemorrhoids (andar): toilet ke baad bright red blood — generally dard nahi. Prolapse (tissue bahar aa jaata hai) Grade 3-4 mein. External Hemorrhoids (bahar): anus ke around swelling, dard, khujli. Thrombosed External Hemorrhoid: ek clot ban jaata hai — bahut dard, emergency mein release karna padta hai. Ranchi mein Dr. Akhilesh Yadav proctoscopy se exact grade diagnose karte hain aur uske hisaab se treatment plan karte hain. Grade 1-2: bina surgery ke theek. Grade 3-4: minimally invasive ya surgery.",
+      },
+      {
+        heading: "Bawaseer Ka Ilaj — Dawa Se Lekar Procedure Tak",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi ke bawaseer patients ke liye yeh options rakhte hain:",
+        list: [
+          "Grade 1: high-fiber diet, paani, stool softeners, topical creams",
+          "Grade 2: Rubber Band Ligation (RBL) — OPD mein, no anesthesia, 20-30 minute",
+          "Grade 2-3: Sclerotherapy — injection treatment, shrink hota hai hemorrhoid",
+          "Grade 3-4: Stapler Hemorrhoidopexy — minimally invasive surgery",
+          "Grade 4/large external: Open Hemorrhoidectomy — surgical removal",
+          "Prevention: isabgol roz, 2.5 litre paani, squat position, 5 min se zyada strain nahi",
+          "Ranchi ke helpful foods: sattu ka paani, chhachh, papaya, guava",
+        ],
+      },
+      {
+        heading: "Kab Seriously Lein — Warning Signs",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko warn karte hain — yeh signs ignore mat karein: Bright red bleeding jo zyada ho raha ho. Kala tarry stool — upper GI bleeding ka sign, serious. Dard zyada badh jaaye suddenly (thrombosed hemorrhoid). 40+ age mein rectal bleeding — colonoscopy zaroor. Unexplained weight loss + rectal bleeding — turant specialist se milein. Bawaseer ki diagnosis confirm karna zaroor hai — kabhi kabhi rectal bleeding colon cancer ka sign bhi hota hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Piles",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main roz dekhta hoon ki Grade 2 ke patients surgery ka darr leke 2-3 saal wait karte hain aur Grade 4 mein aa jaate hain. Rubber Band Ligation OPD procedure hai — 30 minute mein ho jaata hai, uski subah se ghar aakar kaam kar sakte hain. Sharmane ki wajah se delay mat karein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Bawaseer mein Ayurvedic treatment kaargaar hai?",
+        a: "Kuch Ayurvedic formulations (Arshkalp Vati, Abhayarishta) mild cases mein help karte hain. Lekin Grade 2-4 mein evidence-based procedures (RBL, surgery) zyada effective hain. Ayurvedic treatment se delay se problem badh sakti hai. Dr. Akhilesh Yadav Ranchi mein grade-based best treatment guide karte hain.",
+      },
+      {
+        q: "Kya piles mein operation ke baad dobara hota hai?",
+        a: "Complete hemorrhoidectomy ke baad recurrence rate low (<5-10%) hai long-term mein. Lekin agar diet aur lifestyle nahi badalee toh naye hemorrhoids ban sakte hain. RBL ke baad same hemorrhoid wapas aane ka chance 15-20% hai — lekin repeat procedure possible hai. Dr. Akhilesh Yadav Ranchi mein prevention plan dete hain.",
+      },
+      {
+        q: "Kya pregnancy mein bawaseer ka ilaj ho sakta hai?",
+        a: "Pregnancy mein conservative treatment — fiber, paani, sitz bath, topical creams. Invasive procedures generally delivery ke baad. Zyada tar cases delivery ke baad improve ho jaate hain. Dr. Akhilesh Yadav safe options guide karte hain.",
+      },
+      {
+        q: "Piles ke saath kya khaana chahiye?",
+        a: "Daily isabgol (psyllium husk) — 1 tbsp raat ko warm paani ke saath. High fiber: sabji, daal, phal ke chilke ke saath. Roz 2.5 litre paani. Ranchi mein: sattu ka paani, papaya, guava, chhachh — sab helpful hain. Avoid: maida, oily fried snacks, zyada masala.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-jaundice-ka-ilaj",
+    titleHi: "Ranchi Mein Jaundice Ka Ilaj — Peeliya Treatment | Dr. Akhilesh Yadav",
+    titleEn: "Jaundice Treatment in Ranchi — Peeliya Ka Ilaj | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein jaundice (peeliya) ka ilaj: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Cause diagnosis aur complete liver care.",
+    excerptEn: "Jaundice (peeliya) treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Cause-based diagnosis & complete management of all types of jaundice.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🌟",
+    tags: ["ranchi mein jaundice ka ilaj", "peeliya ka ilaj ranchi", "jaundice doctor ranchi", "hepatologist ranchi", "liver doctor ranchi"],
+    metaTitle: "Jaundice Ka Ilaj Ranchi | Peeliya Doctor | Dr. Akhilesh Yadav",
+    metaDescription: "Jaundice (peeliya) ka ilaj Ranchi mein — Dr. Akhilesh Yadav, DM Gastroenterologist & Hepatologist at Orchid Medical Centre. Cause-based diagnosis & treatment.",
+    sections: [
+      {
+        heading: "Peeliya — Sirf Akele Ek Bimari Nahi, Ek Sign Hai",
+        type: "text",
+        content: "Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — ko roz peeliya ke patients aate hain. Sabse common galat dharna: 'peeliya mein sirf ganne ka ras peena chahiye aur aaram karna chahiye.' Yeh partial sach hai. Jaundice (peeliya) khud ek bimari nahi — yeh liver ya bile system ki kisi problem ka sign hai. Iska cause janana sabse zaroori hai. Hepatitis A ya E mein rest aur diet theek hai. Bile duct stone mein ERCP procedure zaroori ho sakti hai. Liver cancer mein oncology team coordinate karni padti hai.",
+      },
+      {
+        heading: "Peeliya Ke Prakar — Dr. Akhilesh Yadav Ka Classification",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein jaundice ko 3 categories mein classify karte hain: Pre-hepatic (liver se pehle): hemolytic anemia (red blood cells zyada toot rahe hain) — bilirubin production zyada. Hepatic (liver mein): Hepatitis A/B/C/E, alcoholic hepatitis, autoimmune hepatitis, drug-induced liver injury (DILI), liver cirrhosis. Post-hepatic (bile duct blockage): gallstones in bile duct, pancreatic cancer, bile duct stricture — yeh surgical/endoscopic emergency ho sakti hai. Ranchi mein Dr. Akhilesh Yadav blood tests aur imaging se type determine karke treatment plan karte hain.",
+      },
+      {
+        heading: "Peeliya Ka Ilaj — Cause Ke Hisaab Se",
+        type: "list",
+        content: "Jaundice treatment cause-specific hai:",
+        list: [
+          "Hepatitis A/E (viral): rest, hydration, high-carb diet, alcohol avoid — generally self-limiting",
+          "Hepatitis B acute: supportive care, severe cases mein antivirals",
+          "Hepatitis C: DAA therapy — 8-12 hafte mein virus clear",
+          "Alcoholic Hepatitis: alcohol bandh, nutrition support, steroids severe cases mein",
+          "Bile duct stone: ERCP se stone removal — Orchid Medical Centre Ranchi mein available",
+          "Drug-induced jaundice: offending drug bandh karo",
+          "Liver failure: intensive management, transplant evaluation",
+        ],
+      },
+      {
+        heading: "Peeliya Mein Kya Khayein — Sahi Diet Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke peeliya patients ke liye diet guide karte hain. Khayein: High-carbohydrate foods — rice, khichdi, sabudana, potato (boiled). Fruits — papaya, banana, coconut water. Ganne ka ras — beneficial as high-carb, energy source (hygienic source se). Nimbu paani (diluted). Chhachh, plain dahi (probiotics). Avoid karein: Alcohol — completely. Heavy ghee-oil wala khana. Raw/undercooked food (infection ka risk). NSAIDs (paracetamol limited dose safe hai). Ranchi ke patients Hepatitis E ke cases mein especially hydration important hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Peeliya",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein peeliya mein ganne ka ras aur neem hakim ke paas jaana common hai. Kuch cases mein yeh fine hai — Hepatitis A/E mein natural recovery hoti hai. Lekin bile duct blockage ya severe hepatitis mein delay dangerous ho sakta hai. Peeliya hua toh pehle doctor se milein — cause pata karo, phir treatment.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Jaundice ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Peeliya mein hospital admit karna zaroor hai?",
+        a: "Mild Hepatitis A/E mein ghar mein theek ho sakte hain — rest, diet, hydration. Severe cases mein (PT-INR badha, confusion, inability to eat): admit zaroori. Bile duct blockage: hospital + ERCP. Dr. Akhilesh Yadav Ranchi mein severity assess karke admit/discharge decide karte hain.",
+      },
+      {
+        q: "Peeliya ek vyakti se doosre ko phail sakta hai?",
+        a: "Depends on cause. Hepatitis A/E: faecal-oral route se phailta hai (contaminated water/food) — infectious. Hepatitis B/C: blood/body fluid se — close contact se protect karein. Bile duct stone ya drug-induced: infectious nahi. Dr. Akhilesh Yadav Ranchi mein cause bataate hain taaki family precautions lein.",
+      },
+      {
+        q: "Peeliya mein aankhein kyun peeli hoti hain?",
+        a: "Bilirubin (waste product jo red blood cells tootne par banta hai) blood mein accumulate hota hai. Aankhon ka sclera (safed hissa) bilirubin absorb karta hai — isliye peela hota hai. Skin bhi affected hoti hai. Bilirubin >2.5 mg/dL hone par clinically visible jaundice hoti hai.",
+      },
+      {
+        q: "Kya neem pani ya tulsi se peeliya theek hoti hai?",
+        a: "Koi scientific evidence nahi hai ki yeh hepatitis ya bile duct jaundice treat karte hain. Hepatitis A/E mein natural recovery hoti hai — chahe kuch bhi karo. Lekin in home remedies ki wajah se critical treatment mein delay dangerous ho sakta hai. Dr. Akhilesh Yadav Ranchi mein evidence-based guidance dete hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "kabj-ka-doctor-ranchi",
+    titleHi: "Kabj Ka Doctor Ranchi — Chronic Constipation Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Kabj Doctor in Ranchi — Chronic Constipation Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein kabj (constipation) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Saalon ki kabj ka sahi diagnosis aur ilaj.",
+    excerptEn: "Chronic constipation specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Diagnosis, diet tips & medical treatment for long-term kabj relief.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💊",
+    tags: ["kabj ka doctor ranchi", "constipation specialist ranchi", "kabj ka ilaj ranchi", "pet ki takleef ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Kabj Ka Doctor Ranchi | Constipation Specialist | Dr. Akhilesh Yadav",
+    metaDescription: "Kabj (constipation) ka doctor Ranchi mein — Dr. Akhilesh Yadav at Orchid Medical Centre. Chronic kabj ka sahi diagnosis, diet aur medical treatment.",
+    sections: [
+      {
+        heading: "Kabj — Sirf Diet Problem Nahi, Kabhi Kabhi Serious Sign",
+        type: "text",
+        content: "Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — roz kabj ke patients dekhte hain. Ek 55-saal ke patient ne 8 mahine se kabj ki shikayat ki — unhe thyroid problem thi jo diagnose hi nahi hui thi. Thyroid treat hote hi kabj bhi theek ho gayi. Dusre patient ki kabj mein colonoscopy se early colon polyp mila. Kabj sirf 'kam pani' ya 'khaana theek nahi' wali problem nahi — khaas karke 50+ age mein ya naya onset ho toh specialist se milein.",
+      },
+      {
+        heading: "Kabj Ke Karan — Ranchi Ke Patients Mein Common",
+        type: "list",
+        content: "Ranchi aur Jharkhand mein kabj ke yeh common karan hain:",
+        list: [
+          "Low fiber diet: maida roti, processed snacks, kam sabji",
+          "Insufficient paani: 1 litre se kam roz — bahut common rural areas mein",
+          "Sedentary lifestyle: desk job, exercise nahi",
+          "Hypothyroidism (thyroid deficiency) — bahut common, khaas karke mahilaon mein",
+          "Diabetes — bowel motility slow hoti hai",
+          "Iron tablets — constipation ka side effect",
+          "Calcium supplements — common osteoporosis mein, constipating",
+          "IBS-C (Irritable Bowel Syndrome — Constipation type)",
+          "50+ mein naya kabj — colon cancer rule out zaroor",
+        ],
+      },
+      {
+        heading: "Kabj Ka Diagnosis Aur Kab Colonoscopy",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein kabj assessment mein karte hain: History: kitne din se, diet pattern, medications, stress level. Blood tests: thyroid function (TSH), blood sugar, CBC — underlying cause rule out. Colonoscopy: zaroor hai agar: 50+ age mein naya onset kabj. Rectal bleeding ke saath kabj. Weight loss. Family history colon cancer. Iron deficiency anemia. Anorectal examination: pelvic floor dysfunction ya rectal prolapse check. Yeh structured approach ensure karta hai ki serious cause miss na ho.",
+      },
+      {
+        heading: "Kabj Ka Ilaj — Gharelu Se Lekar Medical Tak",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke kabj patients ko step-by-step plan dete hain. Diet: Isabgol (psyllium husk) raat ko warm paani ke saath — sab se effective evidence-based approach. High fiber: sabji, dal, fruits ke saath. Roz 2.5-3 litre paani. Ranchi ke local helpful foods: sattu ka paani, papaya, guava, imli-imli ka ras (limited). Lifestyle: Roz 30 min walk. Fixed bathroom time (morning routine banana). Squat position (paon ke neeche stool). Medications (doctor ke under): Lactulose ya PEG (osmotic laxatives — safe for regular use). Stimulant laxatives (bisacodyl, senna) — sirf short-term. Long-term laxative dependence avoid karein.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Kabj",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Kabj mein ek baat zaroori hai: laxatives khate rehna bina diagnosis ke nahi. Kai patients saalon se daily senna ya bisacodyl kha rahe hain — yeh colon ka function aur bigaad deta hai. 3 mahine se zyada kabj hai — ek baar specialist se milein. Aur 50+ mein kabj — colonoscopy zaroor.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Chronic kabj ke liye doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Roz ek baar toilet nahi jaana — kya yeh kabj hai?",
+        a: "Nahi necessarily — 'normal' bowel frequency 3/day to 3/week tak hai. Kabj diagnosis hoti hai agar: hafte mein 3 se kam, excessive straining, hard stools, incomplete evacuation feeling. Dr. Akhilesh Yadav Ranchi mein Rome IV Criteria se kabj assess karte hain.",
+      },
+      {
+        q: "Isabgol roz lena safe hai?",
+        a: "Haan — isabgol (psyllium husk) ek natural fiber supplement hai, safe for long-term use unlike stimulant laxatives. Plenty of water ke saath lena zaroori hai — warna block ho sakta hai. Paani se leke hain toh bahut safe aur effective hai.",
+      },
+      {
+        q: "Kabj mein enema dena theek hai?",
+        a: "Occasional enema short-term mein theek hai. Regular enema use se bowel dependence ho sakti hai — avoid karein. Chronic kabj ke liye proper diagnosis aur treatment zaroori hai — enema symptomatic relief deta hai, cause nahi treat karta. Dr. Akhilesh Yadav Ranchi mein long-term safe options guide karte hain.",
+      },
+      {
+        q: "Bacche ko kabj hai — kya karein?",
+        a: "Bacchon mein kabj mein fiber (fruits, vegetables), paani, physical activity pehle try karein. Persist kare toh pediatric evaluation — Hirschsprung's disease ya functional constipation. Dr. Akhilesh Yadav adult GI specialist hain — bacchon ke liye pediatrician appropriate hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "pet-ki-jalan-ka-ilaj-ranchi",
+    titleHi: "Pet Ki Jalan Ka Ilaj Ranchi — Heartburn & GERD | Dr. Akhilesh Yadav",
+    titleEn: "Heartburn & Pet Ki Jalan Treatment in Ranchi | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein pet ki jalan aur seene ki jalan (heartburn/GERD) ka ilaj: Dr. Akhilesh Yadav — Orchid Medical Centre. Antacid se aage — sahi diagnosis aur lasting relief.",
+    excerptEn: "Heartburn & pet ki jalan treatment in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Beyond antacids — proper GERD diagnosis, endoscopy & long-term relief.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔥",
+    tags: ["pet ki jalan ranchi", "heartburn ranchi", "seene ki jalan ranchi", "GERD ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Pet Ki Jalan Ka Ilaj Ranchi | Heartburn | Dr. Akhilesh Yadav",
+    metaDescription: "Pet ki jalan (heartburn/GERD) ka ilaj Ranchi mein — Dr. Akhilesh Yadav at Orchid Medical Centre. Proper diagnosis, endoscopy & lasting acid reflux management.",
+    sections: [
+      {
+        heading: "Pet Ki Jalan — Antacid Se Zyada Kuch Chahiye",
+        type: "text",
+        content: "Ranchi mein seene ki jalan aur pet ki jalan — aksar yahi sunne milta hai ki '2-3 saal se antacid le raha hoon.' Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — roz aise patients dekhte hain jinhe saalon se GERD hai lekin kabhi sahi diagnosis nahi hui. Antacid symptomatic relief deta hai — cause nahi treat karta. GERD (Gastroesophageal Reflux Disease) — stomach ka acid upar food pipe mein aana — ek chronic condition hai jise proper management chahiye. Aur kuch cases mein — yeh Barrett's Esophagus ya esophageal cancer ki taraf bhi ja sakta hai.",
+      },
+      {
+        heading: "Pet Ki Jalan Ke Karan — Ranchi Ke Context Mein",
+        type: "list",
+        content: "Ranchi mein GERD/heartburn ke common karan:",
+        list: [
+          "Oily-spicy food: litti-chokha bahut zyada ghee, samosa, namkeen — trigger foods",
+          "Chai-coffee: zyada cups — acid production badhta hai",
+          "Late night dinner: so ne se pehle hi khaana — acid reflux badhta hai",
+          "Obesity/motaapa: pelvic pressure se LES (lower esophageal sphincter) weak hota hai",
+          "Tight clothing aur belt: abdominal pressure badhaate hain",
+          "H. Pylori infection: 50-60% Indian GERD patients mein positive",
+          "NSAIDs: aspirin/ibuprofen regular use",
+          "Pregnancy: hormonal + physical pressure",
+        ],
+      },
+      {
+        heading: "Endoscopy — Kab Zaroor Hai Jalan Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein endoscopy recommend karte hain agar: 4+ hafte ki jalan jo medications se theek nahi ho rahi. Swallowing mein takleef. Weight loss unexplained. Ulti mein blood. 45+ age mein naya onset. Anemia (iron deficiency). Endoscopy se pata chalta hai: Erosive Esophagitis (acid se damage), Barrett's Esophagus (pre-cancerous — regular surveillance zaroori), H. Pylori. Sahi diagnosis se — PPI course, H. Pylori treatment, ya Barrett's surveillance plan — jo bhi chahiye.",
+      },
+      {
+        heading: "GERD Ka Ilaj Aur Ranchi Ke Liye Diet Guide",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke GERD patients ke liye: Lifestyle (primary treatment): so ne se 3 ghante pehle last meal. Bed head 15-20 cm uthana. Wajan ghatana agar overweight. Quit alcohol aur smoking. Diet mein avoid: oily-spicy food, chai-coffee (2 se zyada cups), citrus fruits (nimbu zyada), chocolate, tomatoes, mint. Ranchi ke safe options: sattu ka paani (alkaline), plain chhachh, banana, oatmeal, boiled dal-rice. Medical: PPI proper course (4-8 hafte). H. Pylori positive — eradication therapy. Zyada tar GERD cases lifestyle + PPI se manage hote hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Pet Ki Jalan",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Pet ki jalan ya seene ki jalan mein ek cheez main clearly keh sakta hoon: agar 4 hafte se zyada ho rahi hai aur antacid se poora theek nahi ho raha — ek baar endoscopy zaroor karwayein. Barrett's Esophagus early mein detect ho toh treatment aasaan hai. Late mein detect ho toh mushkil.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. GERD symptoms ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Seene ki jalan aur heart attack mein kaise pehchaan karein?",
+        a: "GERD: burning sensation, acid taste in mouth, worse after eating, lying down. Heart attack: pressure/squeezing chest pain, left arm/jaw radiation, sweating, shortness of breath. Doubt hone par — emergency mein jaayein pehle. Heart safe karna pehle, GERD baad mein. Dr. Akhilesh Yadav Ranchi mein cardiac causes rule out karke GERD confirm karte hain.",
+      },
+      {
+        q: "Kya raat ko antacid lena safe hai roz?",
+        a: "Short-term mein theek hai. Long-term regular antacid se: magnesium deficiency, kidney issues (calcium antacids), rebound acidity. PPI bhi long-term bina monitoring ke safe nahi. Dr. Akhilesh Yadav Ranchi mein proper treatment plan dete hain taaki antacid dependence na ho.",
+      },
+      {
+        q: "Kya yoga se pet ki jalan mein faayda hota hai?",
+        a: "Kuch poses helpful hain: Vajrasana (after meals), Shavasana. Avoid: inversions (headstand, shoulder stand) — acid reflux worse karte hain. Forward bends bhi avoid karein active GERD mein. Brisk walk after meals helpful hai.",
+      },
+      {
+        q: "H. Pylori ke liye test kaise karein?",
+        a: "Stool antigen test: most accurate, convenient. Urea Breath Test (UBT): gold standard. Blood antibody test: less accurate (past infection vs active). Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein stool antigen test recommend karte hain — affordable aur accurate.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-hepatitis-treatment",
+    titleHi: "Ranchi Mein Hepatitis Treatment — Hepatitis B & C Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "Hepatitis Treatment in Ranchi — Hepatitis B & C | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein Hepatitis B aur C ka advanced ilaj: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Modern DAA se Hepatitis C cure.",
+    excerptEn: "Hepatitis B & C treatment in Ranchi by Dr. Akhilesh Yadav at Orchid Medical Centre. Modern antiviral therapy, monitoring & long-term liver protection.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "💉",
+    tags: ["ranchi mein hepatitis treatment", "hepatitis B doctor ranchi", "hepatitis C treatment ranchi", "liver doctor ranchi", "hepatologist ranchi"],
+    metaTitle: "Hepatitis Treatment Ranchi | Hepatitis B & C | Dr. Akhilesh Yadav",
+    metaDescription: "Hepatitis B & C treatment in Ranchi — Dr. Akhilesh Yadav, DM Hepatologist at Orchid Medical Centre. Modern antivirals, monitoring & liver protection.",
+    sections: [
+      {
+        heading: "Hepatitis — Ranchi Mein Samajhna Zaroori",
+        type: "text",
+        content: "Jharkhand mein Hepatitis B ka prevalence national average se zyada hai — aur bahut se log carriers hain bina jaane. Hepatitis C bhi puri tarah se curable ho gayi hai aaj. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Hepatitis B/C ka scientific, modern treatment dete hain. 'Hepatitis B hai toh kya treatment karna chahiye?' — yeh confusion bahut common hai. Har patient ka case alag hota hai — viral load, liver damage degree, family status — sab factors matter karte hain.",
+      },
+      {
+        heading: "Hepatitis B Ka Ilaj — Kab Aur Kaise",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein Hepatitis B management mein karte hain: HBV DNA (viral load) + HBeAg status check. LFT (SGPT/SGOT). FibroScan — liver fibrosis stage. Treatment indication: High viral load (>2000 IU/mL) + SGPT elevated. Significant fibrosis (F2+). Or special populations (pregnancy, immunosuppression, family planning). Treatment: Tenofovir disoproxil fumarate (TDF) ya Tenofovir alafenamide (TAF) — first-line antivirals. Long-term therapy — HBsAg clear hone tak ya lifelong. Annual monitoring: HBV DNA, SGPT, FibroScan, AFP (liver cancer screening). Hepatitis B ke saath liver cancer risk hota hai — regular surveillance zaroori hai.",
+      },
+      {
+        heading: "Hepatitis C — Ab Curable Hai (95%+ Success)",
+        type: "list",
+        content: "Hepatitis C treatment aaj India mein available hai aur bahut effective hai:",
+        list: [
+          "Modern DAA (Direct-Acting Antivirals): Sofosbuvir/Velpatasvir combination",
+          "Treatment duration: 8-12 hafte — genotype-dependent",
+          "SVR (Sustained Virological Response) = virus permanently clear — 95%+ cases",
+          "Ab koi painful interferon injections nahi",
+          "Mild side effects: headache, fatigue — manageable",
+          "Government scheme mein subsidized pricing available hai India mein",
+          "Post-treatment: SVR 12 hafte baad confirm, then annual LFT monitoring",
+          "Orchid Medical Centre Ranchi mein complete DAA therapy available",
+        ],
+      },
+      {
+        heading: "Hepatitis Prevention — Ranchi Ke Patients Ke Liye",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko yeh prevention guide karte hain. Hepatitis B: Vaccination — 3 dose schedule. Family members of HBsAg positive patient — test karwayein aur vaccine lagwayein jo negative hain. Safe sex practices. Sterilized instruments — tattoo, piercing mein. Hepatitis A/E: Clean paani peena — Ranchi mein piped water quality variable hai. Cooked food. Hand hygiene. Hepatitis C: Sterile needles — injecting drug use mein sab se bada risk. Unsterilized medical/dental equipment — risk hota hai India mein kuch settings mein. Blood transfusion — modern screening se risk bahut kam hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Hepatitis",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main roz dekhta hoon ki Hepatitis B carrier patients ko koi ne bola hi nahi tha ki treatment kab zaroori hai — silently cirrhosis develop ho gayi. Aur Hepatitis C ke patients ko nahi pata tha ki yeh ab curable hai. Ek simple test — aur sahi treatment — liver ka poora future change kar sakta hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Hepatitis ke liye hepatologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Hepatitis B positive hoon aur koi symptoms nahi — kya treatment zaroor hai?",
+        a: "Sab HBsAg positive logon ko turant treatment nahi chahiye. Viral load, liver enzymes, FibroScan se decide hota hai. 'Inactive carrier' phase mein sirf monitoring. Active phase ya fibrosis mein antiviral start karni chahiye. Dr. Akhilesh Yadav Ranchi mein complete evaluation ke baad decide karte hain.",
+      },
+      {
+        q: "Hepatitis B positive ke paas rehne wale family members ko kya karein?",
+        a: "Saare family members — HBsAg test aur anti-HBs test karwayein. Jo negative hain unhe Hepatitis B vaccine lagwayein (3 doses). Jo positive hain — evaluation aur follow-up. Dr. Akhilesh Yadav Ranchi mein family screening guide karte hain.",
+      },
+      {
+        q: "Hepatitis C treatment kitne mein aata hai?",
+        a: "India mein government Hepatitis C program ke under kaafi subsidized hai. Generic Sofosbuvir/Velpatasvir available hai. Exact cost inquiry ke liye Orchid Medical Centre Ranchi mein contact karein: +91 74919 25047. Cost accessibility ensure ki jaati hai.",
+      },
+      {
+        q: "Kya Hepatitis B se liver cancer hota hai?",
+        a: "Haan — chronic Hepatitis B (especially without antiviral treatment) mein liver cancer (Hepatocellular Carcinoma — HCC) ka risk hota hai. Isliye antiviral therapy cancer risk reduce karti hai. Dr. Akhilesh Yadav Ranchi mein HBsAg positive patients ka regular 6-monthly AFP test aur ultrasound surveillance karte hain.",
+      },
+      {
+        q: "Hepatitis A kab theek hoti hai?",
+        a: "Hepatitis A generally self-limiting hai — 4-8 hafte mein theek hoti hai. Treatment: rest, hydration, high-carb low-fat diet. Rarely — acute liver failure mein hospitalization. Lifelong immunity develop hoti hai. Vaccine available hai — travel ya high-risk logon ke liye.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
