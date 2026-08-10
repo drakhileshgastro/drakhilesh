@@ -6390,6 +6390,367 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 12: BLOGS 56–60 ─────────────────────────────────────────────────────
+
+  {
+    slug: "ranchi-mein-stomach-cancer-screening",
+    titleHi: "Ranchi Mein Stomach Cancer Screening — Gastric Cancer Detection | Dr. Akhilesh Yadav",
+    titleEn: "Stomach Cancer Screening in Ranchi — Early Gastric Cancer Detection | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein stomach cancer (gastric cancer) screening: Dr. Akhilesh Yadav — Orchid Medical Centre. Kise karwana chahiye, kab karwana chahiye, aur kya expect karein.",
+    excerptEn: "Stomach cancer (gastric cancer) screening in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Who needs screening, when & what to expect from early detection.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🔭",
+    tags: ["stomach cancer screening ranchi", "gastric cancer ranchi", "cancer screening ranchi", "gastroenterologist ranchi", "early cancer detection ranchi"],
+    metaTitle: "Stomach Cancer Screening Ranchi | Early Detection | Dr. Akhilesh Yadav",
+    metaDescription: "Stomach cancer screening in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Early gastric cancer detection with endoscopy. Know your risk & when to screen.",
+    sections: [
+      {
+        heading: "Stomach Cancer — Ranchi Aur Jharkhand Mein Iska Burden",
+        type: "text",
+        content: "Gastric cancer (stomach cancer) India mein 5th most common cancer hai aur mortality mein upar hai — kyunki zyada cases late stage mein diagnose hote hain. Jharkhand mein specific risk factors: H. Pylori infection (very common in Jharkhand), smoked aur salted food (litti-chokha mein salt content), kuch areas mein water quality, alcohol, family history. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein kehte hain: 'Jharkhand mein gastric cancer ke cases main regularly dekhta hoon — aur agar 2-3 saal pehle endoscopy hui hoti toh early stage mein milta.' Early detection = better outcomes.",
+      },
+      {
+        heading: "Kise Stomach Cancer Screening Karwani Chahiye — Risk Factors",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein in patients ko screening recommend karte hain:",
+        list: [
+          "Age 40+ with any GI symptoms — upper abdominal pain, loss of appetite, weight loss",
+          "H. Pylori infection history — especially if not treated",
+          "Family history of gastric cancer (first-degree relative)",
+          "Chronic atrophic gastritis ya intestinal metaplasia diagnosis",
+          "Previous gastric polyps",
+          "Pernicious anemia",
+          "Smoking + alcohol combination",
+          "Long-term NSAID use with GI symptoms",
+          "Post-gastrectomy patients (remaining stomach after surgery)",
+        ],
+      },
+      {
+        heading: "Stomach Cancer Screening — Endoscopy Kya Dikhata Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein upper GI endoscopy se stomach cancer screening karte hain: Early gastric cancer: flat or slightly raised lesion, subtle color change — HD endoscopy + NBI (Narrow Band Imaging) se detect hota hai. Suspicious findings: irregular mucosa, non-healing ulcer, mass. Biopsy: suspicious areas se tissue liya jaata hai — pathology mein cancer confirm ya rule out. Pre-cancerous conditions: intestinal metaplasia, dysplasia — surveillance schedule plan ki jaati hai. Dr. Akhilesh Yadav chromoendoscopy aur advanced imaging techniques use karte hain subtle early lesions detect karne ke liye.",
+      },
+      {
+        heading: "Alarm Symptoms — Immediate Endoscopy Karwayein",
+        type: "list",
+        content: "Yeh symptoms mein Dr. Akhilesh Yadav Ranchi mein urgent endoscopy recommend karte hain:",
+        list: [
+          "Unexplained weight loss >5% in 3 months",
+          "Persistent upper abdominal pain (>4 weeks, not responding to antacids)",
+          "Dysphagia — khana nigalne mein takleef",
+          "Vomiting blood (hematemesis) ya coffee-ground vomiting",
+          "Tarry black stools (melena)",
+          "New-onset iron deficiency anemia in adults 40+",
+          "Loss of appetite with early satiety",
+          "Progressive dyspepsia starting after age 40",
+        ],
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Stomach Cancer Screening",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Stomach cancer mein survival directly stage se linked hai. Stage 1 mein — 80-90% 5-year survival. Stage 4 mein — 5% se kam. Endoscopy ek simple procedure hai — agar koi alarm symptom hai ya age 45+ se upar ho aur family history ho, toh ek baar zaroor karwao. Miss mat karo.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Cancer screening ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya stomach cancer endoscopy se pakad mein aata hai?",
+        a: "Haan — upper GI endoscopy best tool hai early gastric cancer ke liye. HD endoscopy + NBI se subtle mucosal changes detect hoti hain. Biopsy se confirm hota hai. Ranchi mein Dr. Akhilesh Yadav Orchid Medical Centre mein advanced endoscopy karte hain — early lesion miss nahi honi chahiye.",
+      },
+      {
+        q: "H. Pylori treatment se stomach cancer ka risk kam hota hai?",
+        a: "Haan — H. Pylori eradication se gastric cancer risk 30-40% reduce hota hai (evidence-based). Isliye Dr. Akhilesh Yadav Ranchi mein H. Pylori detect aur treat karte hain proactively. Triple/quadruple therapy se H. Pylori eradicate hota hai — confirmation test (urea breath test) 4-6 hafte baad.",
+      },
+      {
+        q: "Stomach cancer ka dard kaisa hota hai?",
+        a: "Early stage mein: often no pain ya mild epigastric discomfort — ulcer jaisa. Isliye early cancer miss ho jaata hai. Advanced stage mein: persistent pain, fullness, weight loss, vomiting. Dard se cancer stage judge nahi hota — endoscopy se pata chalta hai. Alarm symptoms mein se koi bhi ho — immediately milein.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-food-allergy-doctor",
+    titleHi: "Ranchi Mein Food Allergy Doctor — GI Food Intolerance | Dr. Akhilesh Yadav",
+    titleEn: "Food Allergy Doctor in Ranchi — GI Food Intolerance Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein food allergy aur food intolerance specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Celiac disease, lactose intolerance, IBS-food triggers — diagnosis aur management.",
+    excerptEn: "Food allergy and GI food intolerance specialist in Ranchi — Dr. Akhilesh Yadav. Celiac disease, lactose intolerance & IBS food triggers diagnosed & managed at Orchid Medical Centre.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🌾",
+    tags: ["food allergy doctor ranchi", "food intolerance ranchi", "celiac disease ranchi", "lactose intolerance ranchi", "gluten intolerance ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Food Allergy Doctor Ranchi | Celiac Disease, Food Intolerance | Dr. Akhilesh Yadav",
+    metaDescription: "Food allergy & GI food intolerance specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Celiac disease, lactose intolerance & IBS food triggers.",
+    sections: [
+      {
+        heading: "Food Allergy vs Food Intolerance — Fark Kya Hai Aur Ranchi Mein Doctor Kaun",
+        type: "text",
+        content: "Ranchi ki 28-saal ki Neha — roti khaate hi bloating, dast, aur thakaan. Doctor ne 'IBS' bola aur antacid diya — 2 saal tak better nahi hui. Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — ne celiac disease diagnose ki (anti-tTG antibody + duodenal biopsy). Gluten-free diet se 3 mahine mein dramatic improvement. Food allergy: immune response — immediate symptoms (hives, throat tightening) — severe cases anaphylaxis. Food intolerance: digestive enzyme deficiency ya gut sensitivity — delayed GI symptoms. GI food intolerance (celiac, lactose, fructose malabsorption) — gastroenterologist ki field hai.",
+      },
+      {
+        heading: "GI Food Intolerances — Dr. Akhilesh Yadav Ranchi Mein Kya Diagnose Karte Hain",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh GI food conditions diagnose karte hain:",
+        list: [
+          "Celiac Disease: anti-tTG IgA blood test + duodenal biopsy — gluten (wheat/roti/maida) se triggered",
+          "Non-Celiac Gluten Sensitivity: celiac markers negative, lekin gluten se symptoms",
+          "Lactose Intolerance: lactase enzyme deficiency — doodh/dahi se gas, bloating, diarrhea",
+          "Fructose Malabsorption: excess fructose from fruits, honey, aloo — GI symptoms",
+          "FODMAP Intolerance: fermentable carbohydrates — IBS trigger",
+          "Food Protein-Induced Enterocolitis (FPIES): infants mein — serious food reactions",
+          "Eosinophilic Esophagitis/Gastritis: eosinophil-driven GI inflammation",
+        ],
+      },
+      {
+        heading: "Celiac Disease Ranchi — Jharkhand Mein Underdiagnosed",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein kehte hain: 'Celiac disease Jharkhand mein bahut underdiagnosed hai — patients saalon tak IBS, anemia, ya general weakness ke label mein rehte hain.' Celiac disease: small intestine mein villi damage — gluten se. India mein prevalence ~1% — lekin diagnosis rate kaafi kam hai. Jharkhand mein wheat-based roti, maida — daily staple. Celiac patients mein chronic diarrhea, anemia, weight loss, bloating common. Testing: anti-tTG IgA + total IgA. Confirmation: upper endoscopy + duodenal biopsy (Marsh grading). Treatment: strict lifetime gluten-free diet — jowar, bajra, rice, makka okay — gehun, jau, rye avoid.",
+      },
+      {
+        heading: "Low-FODMAP Diet — IBS Food Triggers Ranchi Context Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein IBS patients ko low-FODMAP diet explain karte hain. High-FODMAP (Jharkhand diet mein common): Onion (pyaaz), garlic (lahsun) — HIGH FODMAP. Milk (doodh), yogurt (dahi) — lactose. Wheat (roti, maida) — fructans. Litti (sattu + ghee) — check karna padega. Mango, watermelon — excess fructose. Beans (daal) — galactans. Low-FODMAP (Jharkhand mein available): Rice, poha, rice flour roti. Lauki, karela, palak, gajar. Banana (ripe), papaya. Dahi (small amount — lactose lower). Chhachh (low-FODMAP if small serving). Dr. Akhilesh Yadav Ranchi ke patients ko local food context mein FODMAP guide karte hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Food Allergy/Intolerance",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Food intolerance mein self-diagnosis dangerous ho sakta hai — bina testing ke gluten-free ya dairy-free mat jao. Celiac test ke liye gluten khaana zaroor hai pre-test — nahi toh result false negative aayega. Ranchi mein main properly test karta hoon, diagnose karta hoon, phir diet plan karta hoon — sirf guess nahi.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya dahi aur chhachh celiac disease mein kha sakte hain?",
+        a: "Haan — dairy naturally gluten-free hai. Celiac disease mein dahi, chhachh, doodh okay hain (lactose intolerance alag cheez hai). Dhyan rakho: flavored yogurt, packaged dairy products mein wheat starch ya malt — label check karo. Dr. Akhilesh Yadav Ranchi mein celiac diet counseling dete hain.",
+      },
+      {
+        q: "Kya sattu (Jharkhand/Bihar staple food) celiac mein safe hai?",
+        a: "Traditional sattu: roasted chana (chickpea) — gluten-free. Lekin market sattu mein wheat mix hoti hai often (cost cutting). Celiac patients: pure chana sattu ya certified gluten-free product use karein. Dr. Akhilesh Yadav Ranchi mein patients ko Jharkhand-specific foods ke baare mein guide karte hain.",
+      },
+      {
+        q: "Lactose intolerance aur celiac disease dono saath ho sakte hain?",
+        a: "Haan — secondary lactose intolerance active celiac disease mein hoti hai (damaged villi = less lactase enzyme). Strict gluten-free diet se villi heal hoti hai aur lactase improve hoti hai — secondary lactose intolerance resolve ho jaati hai typically 6-12 mahine mein. Primary lactose intolerance (genetic) alag condition hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-ascites-treatment",
+    titleHi: "Ranchi Mein Ascites Treatment — Pet Mein Paani Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "Ascites Treatment in Ranchi — Abdominal Fluid Management | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein ascites (pet mein paani) ka treatment: Dr. Akhilesh Yadav — Orchid Medical Centre. Liver cirrhosis se judi ascites — diuretics, paracentesis, SBP prevention — complete guide.",
+    excerptEn: "Ascites treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Liver cirrhosis ascites management: diuretics, therapeutic paracentesis & SBP prevention.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💧",
+    tags: ["ascites treatment ranchi", "pet mein paani ranchi", "liver cirrhosis ascites ranchi", "paracentesis ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Ascites Treatment Ranchi | Pet Mein Paani | Dr. Akhilesh Yadav",
+    metaDescription: "Ascites (pet mein paani) treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Liver cirrhosis ascites management, paracentesis & SBP prevention.",
+    sections: [
+      {
+        heading: "Ascites — Pet Mein Paani Kyon Aata Hai",
+        type: "text",
+        content: "Ascites matlab pet mein abnormal fluid accumulation. Ranchi mein commonly liver cirrhosis se hota hai — Jharkhand mein alcohol-related liver disease aur hepatitis B/C dominant cause hain. Kaise hota hai: Liver cirrhosis → portal hypertension (liver ka blood pressure badh jaata hai) → fluid portal veins se abdomen mein leak hota hai → ascites. Secondary ascites: cancer (peritoneal), heart failure, kidney disease, tuberculosis. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein ascites patients regularly aate hain — especially liver disease se.",
+      },
+      {
+        heading: "Ascites — Diagnosis Kaise Hoti Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein ascites diagnosis: Clinical: shifting dullness, fluid thrill — exam se detect hoti hai moderate-large ascites. Ultrasound Abdomen: even small amount detect — 100mL se kam bhi. Diagnostic Paracentesis (fluid tap): important step. 50-100mL fluid liya jaata hai analysis ke liye. SAAG (Serum-Ascites Albumin Gradient): ≥1.1 → portal hypertension (cirrhosis, heart failure). <1.1 → malignancy, TB, pancreatitis. Cell count: SBP (spontaneous bacterial peritonitis) rule out — PMN >250 cells. Protein, LDH, ADA, cytology — as needed. Cause-specific workup: LFT, viral markers, liver imaging.",
+      },
+      {
+        heading: "Ascites Treatment — Dr. Akhilesh Yadav Ranchi Ka Approach",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein cirrhotic ascites manage karte hain:",
+        list: [
+          "Salt restriction: 2g/day sodium — Jharkhand food mein — achaar, papad, namkeen avoid",
+          "Diuretics: Spironolactone (aldactone) + Furosemide (lasix) — standard combination",
+          "Monitoring: daily weight, urine output, electrolytes (potassium especially)",
+          "Large Volume Paracentesis (LVP): >5L ascites — albumin infusion saath zaroor",
+          "TIPS (Transjugular Intrahepatic Portosystemic Shunt): refractory ascites — specialized procedure",
+          "SBP Prevention: norfloxacin prophylaxis in high-risk patients",
+          "Liver transplant evaluation: end-stage liver disease — timely referral",
+          "Avoid NSAIDs, nephrotoxic drugs — worsens kidney function",
+        ],
+      },
+      {
+        heading: "SBP — Ascites Ki Dangerous Complication",
+        type: "text",
+        content: "SBP (Spontaneous Bacterial Peritonitis) — ascitic fluid mein infection — cirrhosis patients mein 10-30% hota hai. Dangerous: 20-30% mortality agar late diagnose ho. Dr. Akhilesh Yadav Ranchi mein SBP ke baare mein patients ko alert karte hain. Symptoms: fever, abdominal pain, mental confusion (encephalopathy) — ya koi symptom nahi bhi. Diagnosis: paracentesis — PMN >250 cells/mm3. Treatment: IV antibiotics (cefotaxime/ceftriaxone) + albumin infusion. Prevention: norfloxacin (400mg daily) — high-risk patients mein. Message: ascites patient mein fever ya pain hone par immediately Dr. Akhilesh Yadav se contact karein — SBP emergency hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Ascites",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ascites ek warning sign hai ki liver disease advanced ho chuki hai. Lekin proper management se patients saalon tak quality life jee sakte hain. Salt restriction, diuretics, aur regular monitoring — yeh simple steps bahut important hain. Aur koi bhi fever, confusion, ya sudden pain — immediately aao — SBP emergently treat honi chahiye.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Ascites ke liye DM Gastroenterologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Ascites mein diet mein kya avoid karein — Jharkhand ke context mein?",
+        a: "Salt restriction <2g/day: avoid karein — achaar (bahut high salt), papad, namkeen, packaged foods, ketchup. Limit karein: daal mein namak (less), chatni mein namak. Okay hai: sattu ka paani (bina namak), chhachh (bina namak), plain rice, dal without salt. Dr. Akhilesh Yadav Ranchi mein detailed diet counseling dete hain.",
+      },
+      {
+        q: "Paracentesis kitni baar karwani padti hai?",
+        a: "Depends on ascites re-accumulation rate. Refractory ascites (diuretics nahi sunti) mein: har 2-4 hafte. Controlled ascites mein: zaroorat nahi — diet + diuretics kaafi. Dr. Akhilesh Yadav Ranchi mein frequency decide karte hain ultrasound aur clinical assessment ke baad.",
+      },
+      {
+        q: "Kya ascites se liver transplant zaroor hai?",
+        a: "Ascites hona matlab transplant nahi — lekin liver disease evaluation zaroor hai. Refractory ascites (diuretics resistant) mein MELD score high hota hai — transplant evaluation consider hoti hai. Dr. Akhilesh Yadav Ranchi mein MELD/Child-Pugh score assess karte hain aur timely referral karte hain agar zaroor ho.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-fatty-liver-diet",
+    titleHi: "Ranchi Mein Fatty Liver Diet — Kya Khaayein Kya Na Khaayein | Dr. Akhilesh Yadav",
+    titleEn: "Fatty Liver Diet in Ranchi — What to Eat & Avoid | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein fatty liver diet guide: Dr. Akhilesh Yadav — Orchid Medical Centre. Jharkhand ke local foods mein kya theek hai, kya avoid karein — complete diet plan.",
+    excerptEn: "Fatty liver diet guide for Ranchi patients — Dr. Akhilesh Yadav. Jharkhand food context: what to eat, what to avoid, local food choices & lifestyle changes.",
+    category: "diet",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🥗",
+    tags: ["fatty liver diet ranchi", "fatty liver kya khaayein", "fatty liver food ranchi", "NAFLD diet ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Fatty Liver Diet Guide Ranchi | What to Eat & Avoid | Dr. Akhilesh Yadav",
+    metaDescription: "Fatty liver diet guide for Ranchi patients — Dr. Akhilesh Yadav at Orchid Medical Centre. Jharkhand food context, what to eat, avoid & lifestyle changes for fatty liver.",
+    sections: [
+      {
+        heading: "Fatty Liver Diet — Kyun Itna Important Hai",
+        type: "text",
+        content: "Ranchi ke Suresh Prasad — 48 saal, Grade 2 fatty liver — ne Dr. Akhilesh Yadav se mila. Dr. ne unhe medicines dene ke bajaye pehle diet aur lifestyle change ki baat ki. 6 mahine baad: SGPT normal, ultrasound Grade 1 fatty liver. Diet alone ne grade reduce kar diya. Fatty liver (NAFLD/MASLD) mein koi specific approved medicine nahi hai abhi tak — diet aur exercise hi primary treatment hai. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein kehte hain: 'Fatty liver mein sahi khaana aadhi battle jeet leta hai.'",
+      },
+      {
+        heading: "Fatty Liver Mein Kya AVOID Karein — Jharkhand Context",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein fatty liver patients ko yeh avoid karne ki salah dete hain:",
+        list: [
+          "Maida (refined flour): litti ka atta theek hai (sattu/wheat), maida (poori, samosa, bread) avoid",
+          "Refined sugar: shakkar, mithai — liver mein fat convert hoti hai",
+          "Alcohol: bilkul avoid — alcoholic fatty liver mein major trigger",
+          "Deep-fried foods: jalebi, pakoda, tele hua khaana",
+          "Packaged/processed: biscuit, chips, namkeen — transfat + refined carbs",
+          "Fructose-rich drinks: soft drinks (Coca-Cola, Pepsi), packaged fruit juices",
+          "Full-fat dairy excess: too much cream, paneer in large amounts",
+          "White rice in excess: low fiber, high glycemic index — replace with brown rice or millets",
+        ],
+      },
+      {
+        heading: "Fatty Liver Mein Kya KHAAYEIN — Jharkhand Ke Local Foods",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi mein yeh foods fatty liver patients ke liye recommend karte hain:",
+        list: [
+          "Sattu ka paani (bina shakkar/namak) — high protein, low glycemic — excellent for fatty liver",
+          "Chhachh (bina namak, chilled) — probiotics, low fat",
+          "Makka (maize) roti ya poha — better than maida",
+          "Bajra/jowar roti — high fiber, low glycemic — excellent grain choice",
+          "Papaya — liver-friendly, low sugar, high fiber",
+          "Lauki (bottle gourd), karela (bitter gourd), palak — all good for liver",
+          "Dal (arhar, masoor, moong) — high protein, low fat",
+          "Fish (rahu, katla — freshwater) — omega-3, low saturated fat",
+          "Ajwain paani, haldi doodh (limited quantity) — anti-inflammatory",
+          "Green tea — catechins, mild liver benefit evidence",
+        ],
+      },
+      {
+        heading: "Fatty Liver Diet — Exercise Bhi Zaroori Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein emphasize karte hain: 'Diet ke saath exercise nahi toh results half honge.' Recommended: 150-180 min/week moderate exercise — tez chalna (brisk walk) best. 10,000 steps/day target. Strength training 2-3 times/week — muscle mass increases fat burning. Weight loss: 5-10% body weight loss se NAFLD grade improve hoti hai. 10%+ loss se NASH (inflammation) bhi reduce hoti hai. Even without weight loss — exercise liver fat reduce karti hai. Ranchi mein morning walk spots: Jubilee Park, Kanke Dam road, XLRI road — sabhi accessible hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Fatty Liver Diet",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Jharkhand ke patients ke paas actually bahut saari liver-friendly cheezein available hain — sattu ka paani, chhachh, papaya, bajra roti, fresh fish — main unhe global Mediterranean diet recommend karne ki jagah unki local food culture mein hi solution dhundta hoon. Sustainable diet woh hai jo local, affordable, aur tasty ho.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Personalized diet ke liye consultation zaroor lein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya litti-chokha fatty liver mein kha sakte hain?",
+        a: "Litti-chokha: sattu filling (theek hai — high protein), lekin traditional litti ghee mein pakti hai — calories zyada. Baked/roasted litti (tandoor/tawa) — better option. Chokha (roasted eggplant/tomato + pyaaz + hari mirch — bina excess ghee) — okay. Ghee quantity limit karein — 1-2 chammach per day total.",
+      },
+      {
+        q: "Kya coconut water (nariyal paani) fatty liver mein theek hai?",
+        a: "Haan — moderate amount (1 glass/day) okay hai. Natural electrolytes, low calorie. Packaged coconut water mein sugar add hota hai — avoid karein. Fresh nariyal paani better.",
+      },
+      {
+        q: "Fatty liver mein weight loss kaafi fast karna chahiye?",
+        a: "Nahi — rapid weight loss (>1.5 kg/week) paradoxically fatty liver worsen kar sakta hai — especially if on very low-calorie diet. Safe rate: 0.5-1 kg per week. Dr. Akhilesh Yadav Ranchi mein sustainable weight loss plan — crash diet recommend nahi karte.",
+      },
+      {
+        q: "Kya haldi (turmeric) fatty liver mein help karti hai?",
+        a: "Curcumin (haldi ka active compound) mein anti-inflammatory evidence hai — small clinical trials mein NAFLD mein mild benefit. Haldi doodh ya daily cooking mein haldi — safe addition. Supplement dose alag hai — Dr. se poochhen before taking curcumin supplements.",
+      },
+    ],
+  },
+
+  {
+    slug: "ranchi-mein-h-pylori-treatment",
+    titleHi: "Ranchi Mein H. Pylori Treatment — H Pylori Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "H. Pylori Treatment in Ranchi — Helicobacter Pylori Cure | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein H. Pylori (Helicobacter Pylori) treatment: Dr. Akhilesh Yadav — Orchid Medical Centre. Triple therapy, quadruple therapy, resistance patterns — complete treatment guide.",
+    excerptEn: "H. Pylori treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Triple/quadruple therapy, antibiotic resistance, eradication confirmation & recurrence prevention.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🦠",
+    tags: ["h pylori treatment ranchi", "helicobacter pylori ranchi", "h pylori ka ilaj ranchi", "peptic ulcer h pylori ranchi", "gastroenterologist ranchi"],
+    metaTitle: "H. Pylori Treatment Ranchi | Helicobacter Pylori Cure | Dr. Akhilesh Yadav",
+    metaDescription: "H. Pylori (Helicobacter Pylori) treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Triple therapy, quadruple therapy & eradication confirmation.",
+    sections: [
+      {
+        heading: "H. Pylori — Ranchi Mein Kitna Common Hai",
+        type: "text",
+        content: "H. Pylori (Helicobacter Pylori) ek bacteria hai jo stomach ki lining mein rehta hai — ulcer aur gastric cancer ka major risk factor. India mein prevalence: 50-70% adults. Jharkhand mein — safe drinking water access ki kami se H. Pylori transmission zyada hai. Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi mein kehte hain: 'Ranchi mein endoscopy pe jo patients aate hain, unme se 40-50% mein H. Pylori positive milta hai — ulcer ke saath ya bina.' H. Pylori treatable hai — lekin antibiotic resistance increasing hai India mein.",
+      },
+      {
+        heading: "H. Pylori Kaisa Spread Hota Hai — Aur Kise Zyada Risk",
+        type: "list",
+        content: "H. Pylori transmission aur risk factors jo Dr. Akhilesh Yadav Ranchi mein discuss karte hain:",
+        list: [
+          "Contaminated water — main route in Jharkhand/Ranchi",
+          "Fecal-oral route — hygiene practices",
+          "Crowded living conditions — family clustering common",
+          "Childhood acquisition — most infections acquired in childhood",
+          "Low socioeconomic status — indirect marker",
+          "Same utensils/water sources",
+          "Family history of H. Pylori or peptic ulcer",
+        ],
+      },
+      {
+        heading: "H. Pylori Treatment — Triple vs Quadruple Therapy",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein H. Pylori ke liye evidence-based treatment dete hain: Standard Triple Therapy (14 days): PPI (omeprazole 20mg BD) + Clarithromycin 500mg BD + Amoxicillin 1g BD. Eradication rate: ~70-80% (clarithromycin resistance badh rahi hai India mein). Bismuth Quadruple Therapy (14 days): PPI + Bismuth + Metronidazole + Tetracycline. Eradication rate: ~85-90% — preferred in high clarithromycin resistance areas. Sequential Therapy: 5 days amoxicillin + 5 days clarithromycin/metronidazole combination. Salvage Therapy (failed first-line): levofloxacin-based regimen. Dr. Akhilesh Yadav local resistance patterns dekh ke appropriate regimen choose karte hain.",
+      },
+      {
+        heading: "H. Pylori Eradication Confirm Karna Zaroor Hai",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein emphasize karte hain: H. Pylori treatment ke baad eradication confirm karna mandatory hai — sirf symptoms theek hone se nahi pata chalta. Urea Breath Test (UBT): Gold standard non-invasive. 4-6 hafte after completing treatment. 2 hafte pehle PPI bandh karna zaroor. Stool Antigen Test: alternative — less commonly used in India. Repeat Endoscopy: agar ulcer tha — heal hone ka confirm karna zaroor (especially gastric ulcer — cancer rule out). Failed first-line: salvage therapy — Dr. Akhilesh Yadav Ranchi mein guide karte hain. Reinfection: possible — hand hygiene, safe water important.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — H. Pylori Treatment",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'H. Pylori treatment mein teen cheezein important hain: sahi regimen, poora course (14 din — beech mein mat chhodo), aur eradication confirm karna. Ranchi mein main often bismuth quadruple therapy use karta hoon kyunki clarithromycin resistance local mein kaafi hai. Aur patient ko bolta hoon: antibiotics ka poora course lo — varna bacteria wapas aa sakta hai aur mushkil ho jaata hai treat karna.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. H. Pylori ke liye gastroenterologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "H. Pylori test Ranchi mein kaise hota hai?",
+        a: "Multiple options: Endoscopy + biopsy (RUT — rapid urease test + histology): most common in India — Dr. Akhilesh Yadav Orchid Medical Centre mein karte hain. Urea Breath Test (UBT): available at select labs — eradication confirmation ke liye better. Stool Antigen Test: less commonly used. Blood H. Pylori IgG: past infection batata hai — current active infection ke liye better tests preferred.",
+      },
+      {
+        q: "H. Pylori positive hai par koi symptoms nahi — treatment karni chahiye?",
+        a: "Haan — agar H. Pylori positive hai, treatment recommended hai even without symptoms. Reasons: ulcer prevention, gastric cancer risk reduction, family clustering prevention. Dr. Akhilesh Yadav Ranchi mein individual case ke basis par decide karte hain.",
+      },
+      {
+        q: "H. Pylori treatment ke baad kya khaayein?",
+        a: "During treatment: probiotics (dahi, probiotic capsule) saath lena antibiotics se antibiotic-associated diarrhea reduce karta hai. After treatment: regular balanced diet. Avoid: NSAIDs (ibuprofen, naproxen) — ulcer risk. Alcohol: avoid during treatment. Smoking: quit — healing slow karta hai.",
+      },
+      {
+        q: "Kya H. Pylori family mein ek se doosre ko ho sakta hai?",
+        a: "Haan — H. Pylori family clusters mein milta hai. Agar ek member positive hai: screen other family members (especially jo symptomatic hain). Shared utensils, water sources se spread. Hand hygiene, safe drinking water — prevention keys. Dr. Akhilesh Yadav Ranchi mein family screening guide karte hain.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
