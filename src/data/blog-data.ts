@@ -4617,6 +4617,361 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 7: BLOGS 31–35 ─────────────────────────────────────────────────────
+
+  {
+    slug: "crohns-disease-ranchi",
+    titleHi: "Crohn's Disease Ranchi — IBD Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Crohn's Disease Specialist in Ranchi — Diagnosis & Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein Crohn's disease (IBD) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Advanced diagnosis, biologics aur complete IBD care.",
+    excerptEn: "Crohn's disease specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert IBD diagnosis, treatment, biologics & long-term management.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🫁",
+    tags: ["crohns disease ranchi", "IBD specialist ranchi", "inflammatory bowel disease ranchi", "gastroenterologist ranchi", "crohn's treatment jharkhand"],
+    metaTitle: "Crohn's Disease Specialist Ranchi | IBD | Dr. Akhilesh Yadav",
+    metaDescription: "Crohn's disease (IBD) specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert diagnosis, biologics & complete IBD management.",
+    sections: [
+      {
+        heading: "Ranchi Mein Crohn's Disease — Ek Underdiagnosed Condition",
+        type: "text",
+        content: "Bokaro se aaye 25-saal ki Priya — 3 saal se recurrent abdominal pain, diarrhea, weight loss. Kai doctors ne 'IBS' ya 'stress' bola. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne colonoscopy aur small bowel imaging ki. Diagnosis: Crohn's Disease (ileum involved). Sahi treatment se 6 mahine mein remission. Crohn's disease India mein zyada se zyada diagnosed ho rahi hai — aur Ranchi mein bhi ek dedicated IBD specialist ki zaroorat hai.",
+      },
+      {
+        heading: "Crohn's Disease Kya Hai?",
+        type: "text",
+        content: "Crohn's Disease ek Inflammatory Bowel Disease (IBD) hai — chronic, immune-mediated condition jisme GI tract ke kisi bhi hisse mein (mooh se anus tak) transmural (full thickness) inflammation hoti hai. Most commonly: terminal ileum (small intestine ka end) aur colon. IBS se fark: IBS functional disorder hai — koi structural damage nahi. Crohn's mein actual inflammation aur tissue damage hoti hai — endoscopy aur imaging mein dikh jaata hai. Ulcerative Colitis se fark: UC sirf colon mein, mucosal layer. Crohn's anywhere, full thickness.",
+      },
+      {
+        heading: "Crohn's Ke Symptoms — Kaise Pehchanen",
+        type: "list",
+        content: "Crohn's disease ke characteristic symptoms:",
+        list: [
+          "Recurrent abdominal pain — often right lower abdomen (terminal ileum area)",
+          "Chronic diarrhea — 6+ hafte (blood ho bhi sakta hai, nahi bhi)",
+          "Unexplained weight loss aur fatigue",
+          "Fever — low-grade recurrent",
+          "Perianal disease: fistula, fissure, abscess — Crohn's ka distinctive feature",
+          "Extra-intestinal: joint pain, skin rashes (erythema nodosum), eye inflammation",
+          "Growth retardation in children",
+        ],
+      },
+      {
+        heading: "Diagnosis — Dr. Akhilesh Yadav Ka Approach Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein Crohn's diagnosis mein karte hain: Blood tests: CBC (anemia check), CRP/ESR (inflammation markers), fecal calprotectin (gut inflammation specific marker). Colonoscopy with ileoscopy: mucosal appearance, biopsy — histology confirm karta hai Crohn's. Small bowel imaging: MR Enterography (MRE) — ya CT Enterography — small bowel extent assess karna. Capsule Endoscopy: agar small bowel assessment better chahiye. Perianal MRI: perianal fistula assessment. Complete workup se disease extent, severity, aur complications assess hote hain.",
+      },
+      {
+        heading: "Crohn's Ka Ilaj — Step-Up Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke Crohn's patients ke liye step-up treatment dete hain. Mild Crohn's: Mesalamine (5-ASA), budesonide (ileocecal Crohn's ke liye). Moderate Crohn's: Azathioprine/6-MP (immunomodulators). Steroid induction, phir taper. Severe/Fistulizing Crohn's: Biologics — Anti-TNF agents (Infliximab, Adalimumab) ya newer agents (Vedolizumab, Ustekinumab). Surgery: stricture resection, fistula surgery — kuch cases mein zaroori. Nutrition: Exclusive Enteral Nutrition (EEN) — children mein mucosal healing ke liye. Diet: specific carbohydrate diet, low-FODMAP — symptom management mein helpful.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Crohn's Disease",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Crohn's mein sabse important hai: early diagnosis aur aggressive treatment jab disease active ho. Sirf symptoms manage karna nahi — mucosal healing aur remission achieve karna. Ranchi mein main dekh raha hoon ki young patients saalon tak suffer karte hain bina sahi IBD diagnosis ke. Fecal calprotectin ek simple stool test hai jo IBD vs IBS differentiate karta hai — khaas karke agar 6 hafte se diarrhea hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. IBD ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya Crohn's disease curable hai?",
+        a: "Crohn's chronic condition hai — iska koi permanent cure abhi nahi. Lekin sahi treatment se long-term remission possible hai jisme patients normal life jee sakte hain. Modern biologics se outcomes dramatically better hue hain. Dr. Akhilesh Yadav Ranchi mein goal-based treatment dete hain — mucosal healing aur remission.",
+      },
+      {
+        q: "Crohn's mein kya khaana chahiye?",
+        a: "No universal Crohn's diet. Active flare mein: low-fiber, low-residue diet (white rice, white bread, cooked vegetables without skin). Remission mein: balanced nutrition — avoid trigger foods (individual basis). Fats: limited. Alcohol: avoid. Dr. Akhilesh Yadav Ranchi mein patient-specific diet counseling dete hain.",
+      },
+      {
+        q: "Kya Crohn's mein surgery zaroor hoti hai?",
+        a: "25-30% Crohn's patients ko life mein ek baar surgery lagti hai — stricture, fistula, abscess, perforation ke liye. Modern biologics ne surgery rate reduce kiya hai. Dr. Akhilesh Yadav Ranchi mein surgical team coordinate karte hain jab zaroor ho.",
+      },
+      {
+        q: "Fecal calprotectin test kya hai?",
+        a: "Stool mein inflammatory protein measure karta hai — IBD (Crohn's/Colitis) mein elevated, IBS mein normal. Colonoscopy se pehle ek non-invasive screening test. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh test recommend karte hain chronic diarrhea assessment mein.",
+      },
+    ],
+  },
+
+  {
+    slug: "colitis-doctor-ranchi",
+    titleHi: "Colitis Doctor Ranchi — Ulcerative Colitis Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Colitis Doctor in Ranchi — Ulcerative Colitis Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein Ulcerative Colitis ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Bleeding diarrhea se remission tak — complete IBD care.",
+    excerptEn: "Ulcerative colitis specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert diagnosis, treatment & long-term UC management for Jharkhand patients.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["colitis doctor ranchi", "ulcerative colitis ranchi", "IBD ranchi", "bloody diarrhea doctor ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Colitis Doctor Ranchi | Ulcerative Colitis | Dr. Akhilesh Yadav",
+    metaDescription: "Ulcerative colitis specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert IBD diagnosis, mesalamine, biologics & long-term UC management.",
+    sections: [
+      {
+        heading: "Ranchi Mein Colitis — Bleeding Diarrhea Ka Sahi Ilaj",
+        type: "text",
+        content: "Hazaribagh se aaye 32-saal ke Santosh — 4 mahine se har din 6-8 baar loose motions, blood ke saath. Weight 6 kg ghat gaya. Local doctor ne 'infection' bola aur antibiotics diye — koi faida nahi. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne colonoscopy ki: Ulcerative Colitis (pancolitis). Structured treatment se 3 mahine mein remission. Ulcerative Colitis (UC) India mein badh rahi hai — aur Ranchi mein bhi ek IBD specialist zaroori hai.",
+      },
+      {
+        heading: "Ulcerative Colitis Kya Hai — Aur IBD Ka Fark",
+        type: "text",
+        content: "Ulcerative Colitis ek Inflammatory Bowel Disease (IBD) hai — colon (large intestine) ki mucosal lining mein chronic inflammation. Rectum se shuru hoti hai aur proximal direction mein extend ho sakti hai. Types: Proctitis (sirf rectum), Left-sided Colitis (descending colon), Pancolitis (poora colon). Crohn's vs UC: Crohn's — anywhere GI tract, full thickness, skip lesions. UC — sirf colon, mucosal, continuous. Alag diagnosis alag treatment demand karta hai — isliye colonoscopy with biopsy zaroori hai.",
+      },
+      {
+        heading: "UC Ke Symptoms — Kab Doctor Zaroor",
+        type: "list",
+        content: "Ulcerative Colitis ke symptoms aur emergency signs:",
+        list: [
+          "Frequent diarrhea — often bloody, mucusy",
+          "Urgency — toilet ki sudden zaroorat",
+          "Tenesmus — toilet ke baad bhi incomplete lagta hai",
+          "Abdominal cramps — mostly lower left",
+          "Rectal bleeding aur mucus",
+          "Fatigue aur anemia",
+          "Emergency: >6 bloody stools/day, fever, rapid pulse — Fulminant Colitis, admit immediately",
+        ],
+      },
+      {
+        heading: "UC Ka Ilaj — Dr. Akhilesh Yadav Ka Protocol Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein UC treatment step-wise dete hain. Mild-Moderate UC: Mesalamine (5-ASA) — oral + rectal (suppository/enema) combination. Most effective mild-moderate mein. Moderate-Severe UC: Corticosteroids — induction ke liye. Azathioprine/6-Mercaptopurine — maintenance. Severe UC/Refractory: Biologics — Infliximab, Vedolizumab. Tofacitinib (JAK inhibitor). Severe/Acute Severe UC: Hospital admission — IV steroids, monitoring, surgery evaluation. Surgery (Colectomy): medical therapy fail hone par ya dysplasia/cancer mein — colectomy UC ko 'cure' kar sakta hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Colitis",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'UC mein patients aksar apni medication band kar dete hain jab symptoms theek ho jaate hain. Yeh galat hai — UC mein maintenance therapy zaroori hai, nahi toh relapse hota hai. Aur long-term UC mein colon cancer screening bhi zaroori hai. Ranchi mein main regular follow-up ensure karta hoon apne UC patients ke saath.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. IBD ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Ulcerative Colitis aur Amoebic Dysentery mein kya fark hai?",
+        a: "Dono mein bloody diarrhea hoti hai. Amoebic dysentery: infection (Entamoeba histolytica), acute onset, metronidazole se treat hoti hai. UC: chronic, immune-mediated, alag treatment. Stool examination aur colonoscopy se differentiate hota hai. Dr. Akhilesh Yadav Ranchi mein pehle infection rule out karte hain phir UC diagnose karte hain.",
+      },
+      {
+        q: "Kya UC mein specific diet zaroori hai?",
+        a: "Active flare mein: low-residue diet, avoid raw vegetables, seeds, nuts. Remission mein: balanced diet. Dairy: kuch UC patients lactose intolerant hote hain. Probiotics helpful ho sakte hain. Dr. Akhilesh Yadav Ranchi mein UC patients ke liye individualized diet guidance dete hain.",
+      },
+      {
+        q: "UC mein pregnancy safe hai?",
+        a: "Remission mein pregnancy safe hai. Active disease mein: risk badhta hai complications ka. Kuch UC medications (mesalamine) pregnancy safe hain. Azathioprine, steroids — doctor ke guidance mein. Dr. Akhilesh Yadav Ranchi mein UC patients ke liye pre-pregnancy counseling karte hain.",
+      },
+      {
+        q: "UC mein colon cancer risk kitna hai?",
+        a: "8+ saal ke extensive UC mein colon cancer risk badhta hai — normal population se zyada. Isliye surveillance colonoscopy zaroori hai: extensive UC mein 8-10 saal ke baad har 1-2 saal. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein UC patients ka cancer surveillance schedule maintain karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "digestive-disease-ranchi",
+    titleHi: "Digestive Disease Ranchi — Paachan Rog Ke Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Digestive Disease Specialist in Ranchi — Expert GI Care | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein digestive diseases ke expert: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. GERD se liver cirrhosis tak — sabhi paachan rog ka advanced ilaj.",
+    excerptEn: "Digestive disease specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert treatment for all GI diseases — GERD, IBD, liver, pancreas & more.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["digestive disease ranchi", "paachan rog ranchi", "GI disease ranchi", "gastrointestinal specialist ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Digestive Disease Specialist Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Digestive disease specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert GI care: all stomach, intestine, liver & pancreas conditions.",
+    sections: [
+      {
+        heading: "Digestive Diseases — Ranchi Ka Growing Burden",
+        type: "text",
+        content: "Jharkhand mein digestive diseases ek major health burden hain. Fatty liver (NAFLD) — diabetes aur obesity ke saath badh raha hai. IBD (Crohn's, Colitis) — urbanization ke saath India mein increasing. Liver disease — Hepatitis B/C, alcoholic liver disease, cirrhosis. Colon polyps aur colon cancer — increasing 45+ age group mein. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — Jharkhand ke patients ke liye comprehensive digestive disease care provide karte hain. Ek dedicated GI specialist ka fayda: accurate diagnosis, evidence-based treatment, unnecessary procedures se bachao.",
+      },
+      {
+        heading: "Common Digestive Diseases — Ranchi Mein",
+        type: "list",
+        content: "Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav yeh digestive diseases treat karte hain:",
+        list: [
+          "GERD / Acid Reflux — chronic seene ki jalan, Barrett's Esophagus",
+          "Peptic Ulcer — H. Pylori-related, NSAID-induced",
+          "IBS (Irritable Bowel Syndrome) — functional gut disorder",
+          "IBD (Crohn's Disease, Ulcerative Colitis) — immune-mediated",
+          "Fatty Liver (NAFLD/NASH) — metabolic liver disease",
+          "Hepatitis B/C — viral liver disease",
+          "Liver Cirrhosis — with ascites, varices, encephalopathy",
+          "Pancreatitis — acute aur chronic",
+          "Colon polyps aur colorectal cancer screening",
+          "Celiac Disease — gluten intolerance",
+        ],
+      },
+      {
+        heading: "Advanced Procedures — Orchid Medical Centre Ranchi",
+        type: "text",
+        content: "Dr. Akhilesh Yadav ke paas Orchid Medical Centre Ranchi mein Jharkhand ke limited centers mein available advanced procedures hain: Endoscopy (OGD Scopy) — upper GI. Colonoscopy — colon cancer screening, polyp removal. ERCP — bile duct stones, stenting. EUS (Endoscopic Ultrasound) — pancreas/bile duct advanced imaging. FibroScan — liver fibrosis non-invasive staging. Capsule Endoscopy — small bowel imaging (referral). Yeh comprehensive setup ensure karta hai ki zyada tar digestive conditions ek hi jagah diagnose aur treat ho jayein — Ranchi mein hi.",
+      },
+      {
+        heading: "Digestive Health Kaise Maintain Karein — General Tips",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein patients ko general digestive health guidance dete hain: Fiber: roz 25-30g — fruits, vegetables, daalein. Paani: 2.5-3 litre daily. Exercise: 30 min walk daily — gut motility improve hoti hai. Alcohol: minimum ya zero — liver health ke liye. NSAIDs: avoid regular use — ulcer aur GI bleeding risk. Stress management: gut-brain axis — stress directly digestive health affect karta hai. 45+ screening: saal mein ek baar LFT, blood sugar, colonoscopy har 10 saal. Early detection: GI symptoms 4+ hafte — doctor se milein, ignore mat karein.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Digestive Health",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Digestive diseases mein ek trend dekh raha hoon Ranchi mein — patients symptoms 6-12 mahine baad doctor ke paas aate hain. Jab aate hain toh condition advanced ho chuki hoti hai. GI symptoms early stage mein manageable hote hain — late stage mein complex. 4 hafte se zyada pet ki koi bhi problem — please specialist se milein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Celiac disease kya hai — aur Ranchi mein kaise diagnose hoti hai?",
+        a: "Celiac disease: gluten (wheat, barley, rye) se immune reaction — small intestine damage. Symptoms: diarrhea, bloating, weight loss, anemia. Blood test: anti-tTG antibody. Confirm: small bowel biopsy (endoscopy se). Gluten-free diet — lifelong treatment. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein diagnose karte hain.",
+      },
+      {
+        q: "SIBO (Small Intestinal Bacterial Overgrowth) kya hai?",
+        a: "Small intestine mein normally kam bacteria hote hain — SIBO mein excess bacteria grow karte hain. Symptoms: bloating, gas, diarrhea. Diagnosis: hydrogen breath test. Treatment: antibiotics (rifaximin). Dr. Akhilesh Yadav IBS-like symptoms mein SIBO rule out karte hain Ranchi mein.",
+      },
+      {
+        q: "Kya digestive problems mental health se connected hain?",
+        a: "Haan — gut-brain axis bidirectional hai. Anxiety/depression IBS worsen karte hain. IBS patients mein anxiety rates zyada hain. Stress acute GI flares trigger kar sakta hai IBD mein. Dr. Akhilesh Yadav Ranchi mein mental health aspects bhi discuss karte hain chronic GI disease management mein.",
+      },
+      {
+        q: "Blood in stool kab emergency hai?",
+        a: "Emergency: massive bright red bleeding (large amount), black tarry stool (melena — upper GI bleeding), dizziness/fainting ke saath bleeding. Non-emergency lekin zaroor doctor dikhayein: small amounts of blood, on toilet paper, no other symptoms. Dr. Akhilesh Yadav Ranchi mein emergency ya OPD — severity ke hisaab se guide karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "pet-dard-doctor-ranchi",
+    titleHi: "Pet Dard Doctor Ranchi — Abdominal Pain Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Abdominal Pain Doctor in Ranchi — Pet Dard Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein pet dard (abdominal pain) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Chronic ya severe pet dard ka sahi diagnosis aur ilaj.",
+    excerptEn: "Abdominal pain specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Correct diagnosis & treatment for all types of stomach & abdominal pain.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🩺",
+    tags: ["pet dard doctor ranchi", "abdominal pain ranchi", "stomach pain specialist ranchi", "gastroenterologist ranchi", "pet ki samasya ranchi"],
+    metaTitle: "Pet Dard Doctor Ranchi | Abdominal Pain | Dr. Akhilesh Yadav",
+    metaDescription: "Abdominal pain specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Correct diagnosis & treatment for acute & chronic stomach pain.",
+    sections: [
+      {
+        heading: "Pet Mein Dard — Kabhi Aam, Kabhi Serious",
+        type: "text",
+        content: "Pet mein dard (abdominal pain) — bahut common complaint hai Ranchi aur Jharkhand mein. Kuch cases mein: gas ya indigestion se mild discomfort. Kuch cases mein: kidney stone emergency. Kuch mein: appendicitis — operation zaroori. Kuch mein: liver ya pancreas ki serious problem. Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — systematic approach se abdominal pain assess karte hain — location, character, duration, associated symptoms — aur sahi diagnosis nikaalte hain.",
+      },
+      {
+        heading: "Pet Dard Ka Location — Kya Batata Hai",
+        type: "list",
+        content: "Abdominal pain location se possible diagnosis:",
+        list: [
+          "Upper right (right hypochondrium): liver, gallbladder, bile duct — jaundice, gallstone colic",
+          "Upper left (left hypochondrium): spleen, stomach, colon (splenic flexure)",
+          "Upper center (epigastric): stomach, duodenum, pancreas — ulcer, GERD, pancreatitis",
+          "Right lower (right iliac fossa): appendix, terminal ileum (Crohn's), ovary (women)",
+          "Left lower (left iliac fossa): sigmoid colon, diverticulitis, ovary",
+          "Lower center (hypogastric): bladder, uterus, rectum",
+          "Diffuse (everywhere): peritonitis, IBS, generalized infection",
+        ],
+      },
+      {
+        heading: "Emergency Pet Dard — Kab Turant Hospital Jayein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko clearly batate hain — yeh signs emergency hain: Sudden severe 'worst pain of life' — perforated ulcer, ruptured ectopic, mesenteric ischemia. Rigidity (peth board jaisa sakht) — peritonitis. Blood in vomit ya stool + severe pain — GI bleeding. Fever + severe right upper pain — cholangitis. Pain after trauma — internal injury. Severe pain with rapid deterioration. In cases mein: immediately nearest emergency room ya hospital. Diagnosis baad mein, safety pehle.",
+      },
+      {
+        heading: "Chronic Pet Dard — Dr. Akhilesh Yadav Ka Diagnostic Approach",
+        type: "text",
+        content: "Chronic abdominal pain (3+ mahine) mein Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein karte hain: Detailed history aur physical examination. Blood tests: CBC, LFT, RFT, Lipase/Amylase, thyroid, blood sugar. Stool tests: occult blood, calprotectin, H. Pylori antigen. Ultrasound abdomen — pehli line imaging. CT scan ya MRI — zyada detail ke liye zaroor hone par. Endoscopy ya Colonoscopy — suspected GI source mein. Yeh systematic approach ensure karta hai ki chronic pain ka cause correctly identify ho — unnecessary surgery ya medications se bachao.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Pet Dard",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Pet mein dard — sirf pain killer mat lo aur ignore mat karo. Kuch conditions mein pain killer temporarily dard chhupa deti hai aur serious condition miss ho jaati hai. Chronic pain mein diagnosis pehle — phir treatment. Ranchi mein main roz aisa dekhta hoon ki correct diagnosis se patient ki problem ki root cause solve hoti hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Pet dard ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Gallstone pain kaisa hota hai?",
+        a: "Biliary colic: sudden onset, severe right upper abdominal pain — back ya right shoulder tak jaata hai. Fatty food ke baad trigger. Nausea/vomiting ke saath. 30 min se 4-6 ghante tak reh sakta hai. Ultrasound se gallstones diagnose hote hain. Dr. Akhilesh Yadav Ranchi mein gallstone management guide karte hain.",
+      },
+      {
+        q: "Appendicitis pain kaisa hota hai?",
+        a: "Classically: navel ke around dard shuru hota hai, phir right lower abdomen mein shift. Fever, nausea, vomiting ke saath. Walking se worse. Surgical emergency hai — appendectomy. Dr. Akhilesh Yadav emergency mein surgical team ko refer karte hain Orchid Medical Centre Ranchi se.",
+      },
+      {
+        q: "Period (menstrual) pain aur appendicitis mein kaise differentiate karein?",
+        a: "Period pain: cyclic, predictable timing, responds to NSAIDs. Appendicitis: acute onset, fever, right lower abdomen specifically, nausea. Doubt mein — doctor se milein immediately. Ultrasound ya CT scan se differentiate hota hai. Dr. Akhilesh Yadav Ranchi mein appropriate diagnosis karte hain.",
+      },
+      {
+        q: "Stress se pet mein dard ho sakta hai?",
+        a: "Haan — stress visceral hypersensitivity badhaata hai. IBS patients mein stress ke saath cramping aur diarrhea common hai. Functional abdominal pain (no organic cause) bhi anxiety se related hoti hai. Lekin organic causes rule out karna zaroori hai — phir psychosomatic causes address. Dr. Akhilesh Yadav Ranchi mein dono aspects address karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "kala-pakhana-doctor-ranchi",
+    titleHi: "Kala Paakhana Doctor Ranchi — Black Stool Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Black Stool (Kala Paakhana) Doctor in Ranchi — GI Bleeding | Dr. Akhilesh Yadav",
+    excerptHi: "Kala paakhana (black/tarry stool) — upper GI bleeding ka sign. Ranchi mein Dr. Akhilesh Yadav — Orchid Medical Centre — emergency endoscopy aur complete GI bleeding management.",
+    excerptEn: "Black stool (melena/kala paakhana) in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Emergency upper GI bleeding diagnosis & endoscopic treatment.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🚨",
+    tags: ["kala pakhana ranchi", "black stool ranchi", "GI bleeding ranchi", "melena ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Kala Paakhana Doctor Ranchi | GI Bleeding | Dr. Akhilesh Yadav",
+    metaDescription: "Kala paakhana (black stool/melena) in Ranchi — upper GI bleeding emergency. Dr. Akhilesh Yadav at Orchid Medical Centre for urgent endoscopy & treatment.",
+    sections: [
+      {
+        heading: "IMPORTANT: Kala Paakhana — Emergency Sign",
+        type: "warning",
+        content: "⚠️ Kala, tarry, sticky, foul-smelling stool (Melena) — upper gastrointestinal (GI) bleeding ka sign hai. Yeh emergency hai. Turant hospital jayein — Dr. Akhilesh Yadav ya nearest emergency room. Delay life-threatening ho sakta hai. Is article mein symptoms, causes aur treatment explain hai — lekin agar kala paakhana ho raha hai ABHI toh pehle medical help lein.\n\nOrchid Medical Centre, HB Road, Ranchi: +91 74919 25047.",
+      },
+      {
+        heading: "Kala Paakhana — Kya Hota Hai Aur Kyon",
+        type: "text",
+        content: "Melena (kala paakhana) ka matlab: blood jo upper GI tract (esophagus, stomach, duodenum) mein hai woh digestion process se guzarta hai. Blood hemoglobin + bowel bacteria → digested → kala/tarry stool banta hai. Kala paakhana = khoon esophagus, stomach, ya small intestine ke pehle hisse se aa raha hai. Bright red rectal bleeding = lower GI (colon/rectum) — kuch alag causes. Ranchi mein Dr. Akhilesh Yadav emergency mein endoscopy se bleeding source locate karte hain.",
+      },
+      {
+        heading: "Kala Paakhana Ke Causes",
+        type: "list",
+        content: "Upper GI bleeding ke common causes (kala paakhana):",
+        list: [
+          "Peptic Ulcer (most common) — duodenal ya gastric ulcer se bleeding",
+          "Esophageal Varices — liver cirrhosis mein dilated veins rupt hoti hain — severe",
+          "Mallory-Weiss Tear — severe vomiting ke baad esophageal junction mein tear",
+          "Erosive Gastritis — NSAIDs, alcohol, stress se stomach lining damage",
+          "Esophagitis — severe acid damage ya pill-induced",
+          "Gastric/Esophageal Cancer — advanced cases mein bleeding",
+          "Iron supplements — iron tablets se black stool (non-urgent, non-tarry)",
+        ],
+      },
+      {
+        heading: "Emergency Management — Dr. Akhilesh Yadav Ka Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein upper GI bleeding emergency mein karte hain: Stabilization: IV access, blood pressure monitoring, IV fluids, blood transfusion agar zaroor. IV PPI (pantoprazole infusion) — acid suppress karna, clot protect karna. Risk stratification: Glasgow-Blatchford Score — decide karta hai urgent endoscopy vs wait. Urgent Endoscopy (within 24 hours, often sooner): bleeding source locate karna. Endoscopic therapy: injection (epinephrine), thermal (APC), clips — bleeding control. Varices mein: Band Ligation ya Sclerotherapy. Post-endoscopy: PPI course, address underlying cause (ulcer treatment, cirrhosis management).",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — GI Bleeding",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Kala paakhana dekhkar log ghabra jaate hain — aur sahi bhi hai. Yeh emergency hai. Lekin aaj endoscopy se zyada tar GI bleeding endoscopically control ho jaati hai — surgery ki zaroorat bahut kam cases mein. Ranchi mein Orchid Medical Centre mein urgent endoscopy facility available hai. Delay mat karein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Kala paakhana mein turant medical help lein — emergency hai.\n\nEmergency Contact: +91 74919 25047 ya nearest hospital emergency room.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Iron tablet lene se kala paakhana hota hai — kya yeh normal hai?",
+        a: "Haan — iron supplements se stool dark/black ho jaata hai. Lekin yeh non-tarry hota hai (shiny/sticky nahi) aur foul smell nahi hoti. Doubt hone par — doctor se confirm karein. Dr. Akhilesh Yadav Ranchi mein iron-induced vs melena differentiate karte hain.",
+      },
+      {
+        q: "Kala paakhana ke saath chakkar ya behooshi — kya karein?",
+        a: "Yeh significant blood loss ka sign hai — emergency. Turant nearest hospital emergency room jayein ya 108 ambulance call karein. Sit/lie down immediately — gir na jaayein. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein emergencies immediately attend karte hain.",
+      },
+      {
+        q: "Upper GI bleeding mein kya khana safe hai?",
+        a: "Active bleeding mein NPO (kuch nahi) — endoscopy se pehle. Endoscopy ke baad: soft bland diet se start. Liquids pehle. Solid food gradually. Ulcer mein: PPI course ke saath avoid NSAIDs, alcohol. Dr. Akhilesh Yadav Ranchi mein post-discharge diet clearly guide karte hain.",
+      },
+      {
+        q: "Kya endoscopy se bleeding permanently theek ho jaati hai?",
+        a: "Endoscopic treatment bleeding episode control karta hai. Underlying cause ka treatment zaroor: ulcer mein H. Pylori treat karo, NSAIDs band karo. Cirrhosis mein varices — regular banding sessions + liver management. Without treating cause — rebleeding possible. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein long-term plan dete hain.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
