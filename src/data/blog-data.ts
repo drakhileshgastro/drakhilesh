@@ -556,7 +556,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Learn the structural approach to curing chronic constipation permanently using high-fiber Indian foods, proper hydration, and healthy bowel habits.",
     category: "Stomach Care",
     readTimeMins: 6,
-    publishedAt: "August 12, 2026",
+    publishedAt: "August 9, 2026",
     emoji: "🍎",
     tags: [
       "Constipation",
@@ -608,7 +608,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Understand Liver Cirrhosis, its development stages, life expectancy factors, and medical advancements to manage liver health under Dr. Akhilesh Yadav.",
     category: "Liver Health",
     readTimeMins: 8,
-    publishedAt: "August 20, 2026",
+    publishedAt: "August 9, 2026",
     emoji: "🩺",
     image: "/images/fatty-liver-diet-blog.png",
     tags: [
