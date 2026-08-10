@@ -3160,6 +3160,386 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  // ── BATCH 3: BLOGS 11–15 ─────────────────────────────────────────────────────
+
+  {
+    slug: "hemorrhoids-treatment-ranchi",
+    titleHi: "Hemorrhoids Treatment Ranchi — बिना Surgery के Bawaseer ka Ilaj",
+    titleEn: "Hemorrhoids Treatment in Ranchi — Non-Surgical Options | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein hemorrhoids (bawaseer) ka advanced non-surgical treatment: Rubber Band Ligation, sclerotherapy aur lifestyle changes. Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre.",
+    excerptEn: "Advanced non-surgical hemorrhoid treatment in Ranchi by Dr. Akhilesh Yadav — Rubber Band Ligation, sclerotherapy & complete management at Orchid Medical Centre.",
+    category: "procedures",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "💉",
+    tags: ["hemorrhoids treatment ranchi", "bawaseer treatment ranchi", "rubber band ligation ranchi", "piles non-surgical ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Hemorrhoids Treatment Ranchi | Non-Surgical | Dr. Akhilesh Yadav",
+    metaDescription: "Non-surgical hemorrhoid treatment in Ranchi — Rubber Band Ligation & sclerotherapy by Dr. Akhilesh Yadav at Orchid Medical Centre. No admission needed.",
+    sections: [
+      {
+        heading: "Bawaseer Mein Surgery Ka Darr — Ek Galat Dharna",
+        type: "text",
+        content: "Ranchi se aaye 48-saal ke Vijay Sinha — Grade 2 internal hemorrhoids ki taqleef 8 mahine se. Unka pehla sawaal tha: 'Operation toh nahi hogi na?' Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre — ne unhe samjhaaya ki Grade 2 mein Rubber Band Ligation (RBL) ek simple OPD procedure hai — koi anesthesia nahi, koi admission nahi, 20-30 minute ka procedure. 6 hafte mein Vijay ki problem resolve ho gayi. Ranchi mein bahut se patients surgery ke darr se doctor nahi jaate — aur problem badh jaati hai. Aaj advanced non-surgical options bahut effective hain.",
+      },
+      {
+        heading: "Hemorrhoids Grade aur Treatment Mapping",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein hemorrhoid treatment grade ke hisaab se decide karte hain. Grade 1 (internal, no prolapse): Lifestyle + diet + stool softeners. Fiber badhana, paani peena, strain avoid karna. Grade 2 (prolapse during straining, reduces spontaneously): Rubber Band Ligation (RBL) — most effective OPD procedure. Grade 3 (manual reduction needed): RBL ya Stapler Hemorrhoidopexy (minimally invasive surgery). Grade 4 (permanent prolapse, cannot be reduced): Hemorrhoidectomy — surgical removal. Overall, 75-80% hemorrhoid patients non-surgical treatment se theek ho jaate hain.",
+      },
+      {
+        heading: "Rubber Band Ligation (RBL) — Kya, Kaise, Kitna Effective",
+        type: "text",
+        content: "RBL Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav karte hain. Procedure: Anoscope (ek chota instrument) se internal hemorrhoid ko dekha jaata hai. Hemorrhoid ke base par ek tight rubber band apply ki jaati hai — blood supply cut hoti hai. 7-10 din mein hemorrhoid shrink hokar apne aap gir jaata hai. Patient ko sirf halki discomfort ya heaviness feel hoti hai ek-do din. No general anesthesia — local ya no anesthesia. OPD procedure — admission nahi chahiye. Effectiveness: 80-85% patients mein significant relief. Ek session mein 1-2 hemorrhoids treat ho sakte hain — multiple sessions 4-6 hafte mein.",
+      },
+      {
+        heading: "Sclerotherapy aur Infrared Coagulation — Aur Bhi Options",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein RBL ke alawa yeh bhi karte hain. Sclerotherapy: ek chemical solution inject kiya jaata hai hemorrhoid mein — shrink hota hai. Grade 1-2 mein effective, bleeding control ke liye bhi use hoti hai. Infrared Coagulation (IRC): infrared energy se hemorrhoid tissue destroy hota hai — smaller internal hemorrhoids ke liye. Surgical options (jab zaroor ho): Stapler Hemorrhoidopexy — minimally invasive, kam dard, fast recovery. Open Hemorrhoidectomy — large/external hemorrhoids mein. Dr. Akhilesh Yadav grade aur patient preference ke hisaab se best option suggest karte hain.",
+      },
+      {
+        heading: "Hemorrhoids Wapas Na Aayein — Prevention Plan",
+        type: "list",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko yeh prevention tips dete hain:",
+        list: [
+          "Roz 25-30g fiber — isabgol, fruits, vegetables, whole grains",
+          "2.5-3 litre paani daily",
+          "Toilet mein 5 min se zyada mat baithein, strain mat karein",
+          "Squat position (stool under feet) — natural defecation posture",
+          "Regular 30 min walk — bowel motility improve hoti hai",
+          "NSAIDs avoid karein (aspirin, ibuprofen) — agar blood thinners pe ho toh doctor se poochein",
+          "Ranchi mein sattu ka paani, chhachh, papaya — natural fiber sources",
+        ],
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Hemorrhoids",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main dekhta hoon ki Grade 2 ke patients 2-3 saal tak wait karte hain aur Grade 4 mein aa jaate hain. RBL ek OPD procedure hai — zyada tar log 30 minute mein wapas ghar chale jaate hain. Jitna jaldi aaein, utna simple treatment.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Apni condition ke liye doctor se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "RBL procedure ke baad kitne din rest chahiye?",
+        a: "Zyada tar patients same day wapas jaate hain. 1-2 din light pain ya discomfort ho sakta hai — paracetamol se manage hota hai. Heavy lifting ya strenuous exercise 2-3 din avoid karein. Dr. Akhilesh Yadav Ranchi mein procedure ke baad detailed instructions dete hain.",
+      },
+      {
+        q: "Kya external hemorrhoids bhi RBL se treat hote hain?",
+        a: "RBL sirf internal hemorrhoids ke liye hai. External hemorrhoids (bahar ki skin par) mein dardnak RBL nahi ki jaati — unke liye sclerotherapy, excision, ya surgical options consider hoti hai. Dr. Akhilesh Yadav proctoscopy se type confirm karte hain Orchid Medical Centre, Ranchi mein.",
+      },
+      {
+        q: "Pregnancy mein hemorrhoids ka kya karein?",
+        a: "Pregnancy mein conservative treatment pehli line hai — fiber, paani, sitz bath (warm water mein baithna), topical creams. Invasive procedures generally delivery ke baad karte hain. Zyada tar cases delivery ke baad improve ho jaate hain. Dr. Akhilesh Yadav safe options guide karenge.",
+      },
+      {
+        q: "Hemorrhoids aur colon cancer mein rectal bleeding alag kaise hoti hai?",
+        a: "Hemorrhoid bleeding: bright red, surface par, toilet ke baad — generally painless internal mein. Colon cancer bleeding: dark, stool ke saath mixed, weight loss/change in bowel habit ke saath. Lekin certainty ke liye — 40+ age mein ya symptoms alarming hon toh colonoscopy zaroor karwa lein Dr. Akhilesh Yadav se Ranchi mein.",
+      },
+    ],
+  },
+
+  {
+    slug: "pancreatitis-doctor-ranchi",
+    titleHi: "Pancreatitis Doctor Ranchi — अग्नाशयशोथ का Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Pancreatitis Doctor in Ranchi — Acute & Chronic Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein pancreatitis (pancreas ki soojan) ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Acute aur chronic pancreatitis ka complete ilaj.",
+    excerptEn: "Pancreatitis specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert diagnosis, acute management & chronic pancreatitis care for Jharkhand patients.",
+    category: "conditions",
+    readTimeMins: 9,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["pancreatitis doctor ranchi", "pancreas specialist ranchi", "acute pancreatitis ranchi", "chronic pancreatitis ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Pancreatitis Doctor Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Pancreatitis specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Acute & chronic pancreatitis treatment for Jharkhand patients.",
+    sections: [
+      {
+        heading: "Ranchi ke Patient ki Kahani — Achanak Severe Dard",
+        type: "text",
+        content: "Jamshedpur se aaye 44-saal ke Arvind Kumar — unhone raat ko heavy dawat khai aur alcohol piya. Aadhi raat mein upper abdomen mein severe dard shuru hua — peethe mein bhi ja raha tha. Ulti bhi hui. Emergency mein admit kiya gaya. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne evaluate kiya: Acute Pancreatitis (gallstone-induced). 5 din hospital mein IV fluids, pain management, aur monitoring ke baad discharge. Phir elective laparoscopic cholecystectomy. Yeh case Ranchi aur Jharkhand mein ek aam problem hai — pancreatitis ka awareness zaroori hai.",
+      },
+      {
+        heading: "Pancreas Kya Karta Hai — Aur Pancreatitis Kyun Hoti Hai",
+        type: "text",
+        content: "Pancreas ek important organ hai jo do kaam karta hai: Exocrine function — digestive enzymes (amylase, lipase) banata hai jo food digest karne mein help karte hain. Endocrine function — insulin aur glucagon banata hai (blood sugar regulate). Pancreatitis: jab pancreatic enzymes pancreas ke andar hi activate ho jaate hain aur organ ko khud damage karte hain. Acute Pancreatitis: sudden onset, severe dard — gallstones (60%) aur alcohol (20-30%) main causes. Chronic Pancreatitis: progressive damage — recurrent attacks, abdominal pain, malabsorption, diabetes. Ranchi mein Dr. Akhilesh Yadav dono types treat karte hain.",
+      },
+      {
+        heading: "Pancreatitis ke Symptoms — Emergency vs Chronic",
+        type: "list",
+        content: "Acute Pancreatitis — emergency symptoms (turant hospital):",
+        list: [
+          "Severe upper abdominal pain — often peethe (back) mein bhi jaata hai",
+          "Nausea aur vomiting",
+          "Abdominal tenderness — chhuone par dard",
+          "Fever",
+          "Accelerated heart rate",
+          "Chronic Pancreatitis: recurrent dard, fatty stools (steatorrhea), weight loss, diabetes",
+          "Jaundice (agar bile duct involved ho)",
+        ],
+      },
+      {
+        heading: "Diagnosis — Dr. Akhilesh Yadav ka Systematic Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre, Ranchi mein pancreatitis diagnosis mein karte hain: Blood tests: Serum amylase aur lipase (3x normal se zyada — acute pancreatitis confirm). CBC, LFT, RFT, blood sugar. Imaging: CT scan abdomen (severity assess karna, complications dekhna). MRCP (Magnetic Resonance Cholangiopancreatography) — bile duct aur pancreatic duct ke liye superior imaging, koi radiation nahi. Ultrasound — gallstones detect karne ke liye. EUS (Endoscopic Ultrasound) — detailed pancreatic assessment ke liye. Orchid Medical Centre Ranchi mein ERCP bhi available hai — complicated bile duct stones ke liye.",
+      },
+      {
+        heading: "Pancreatitis ka Ilaj — Acute se Chronic Tak",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko explain karte hain: Acute Pancreatitis: Main treatment — aggressive IV hydration (fluids), pain management (IV analgesics), bowel rest initially, gradual oral refeeding (low-fat diet se shuru). Antibiotics sirf infected necrosis mein. Gallstone pancreatitis mein cholecystectomy (gallbladder removal) prevent karta hai recurrence. ERCP — agar bile duct mein stone fansa ho. Chronic Pancreatitis: Pain management (analgesics, nerve blocks, EUS-guided celiac plexus block). Pancreatic enzyme supplementation (malabsorption ke liye). Diabetes management. Alcohol completely band — recurrence rokne ka ek zaroori step. Surgery (rare cases mein — Frey's procedure, Whipple).",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Pancreatitis",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Pancreatitis mein alcohol bandh karna mandatory hai — yeh sirf advice nahi, yeh treatment ka hissa hai. Ranchi mein main dekhta hoon ki chronic pancreatitis ke patients alcohol nahi chodte aur repeated admissions hote hain. Ek severe episode life-threatening ho sakta hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Pancreatitis emergency hoti hai — hospital zaroor jaayein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya pancreatitis se pancreatic cancer hota hai?",
+        a: "Chronic pancreatitis long-term mein pancreatic cancer ka risk thoda badhata hai, lekin yeh common nahi hai. Risk factors mein smoking bhi add hoti hai. Dr. Akhilesh Yadav Ranchi mein chronic pancreatitis patients ka regular surveillance karte hain.",
+      },
+      {
+        q: "Pancreatitis mein kya khaana chahiye?",
+        a: "Acute episode mein: pehle NPO (kuch nahi), phir liquid diet, phir low-fat solid diet. Long-term: very low fat diet (20-30g fat per day), alcohol completely avoid, small frequent meals. Ranchi ke local safe foods: plain rice, dal pani, khichdi, boiled vegetables.",
+      },
+      {
+        q: "ERCP kya hoti hai aur kab lagti hai?",
+        a: "ERCP (Endoscopic Retrograde Cholangiopancreatography) ek advanced endoscopic procedure hai jisme bile duct mein scope daala jaata hai — stones nikaalte hain, stent daalte hain. Gallstone pancreatitis mein jab bile duct mein stone fansa ho. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav ERCP karte hain.",
+      },
+      {
+        q: "Pancreatitis se diabetes ho sakti hai?",
+        a: "Haan — chronic pancreatitis mein progressive beta cell damage se Type 3c Diabetes ho sakti hai. Yeh regular Type 2 diabetes se alag hai — management bhi different hoti hai. Dr. Akhilesh Yadav endocrinologist ke saath coordinate karke treat karte hain.",
+      },
+      {
+        q: "Pancreatitis ke baad gallbladder nikaalna zaroor hai?",
+        a: "Gallstone-induced pancreatitis mein haan — same admission ya discharge ke baad jaldi laparoscopic cholecystectomy recommended hai recurrence rokne ke liye. Dr. Akhilesh Yadav Ranchi mein surgical team ke saath coordinate karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "liver-problem-doctor-ranchi",
+    titleHi: "Liver Problem Doctor Ranchi — लीवर रोग के Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Liver Problem Doctor in Ranchi — Hepatology Expert | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein liver ki samasya ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Fatty liver, hepatitis, cirrhosis, jaundice — complete liver care.",
+    excerptEn: "Liver specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist & Hepatologist at Orchid Medical Centre. Expert care for fatty liver, hepatitis, cirrhosis & all liver conditions.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["liver problem doctor ranchi", "liver specialist ranchi", "hepatologist ranchi", "liver disease ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Liver Problem Doctor Ranchi | Dr. Akhilesh Yadav Hepatologist",
+    metaDescription: "Liver specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist & Hepatologist. Fatty liver, hepatitis, cirrhosis & all liver conditions treated at Orchid Medical Centre.",
+    sections: [
+      {
+        heading: "Jab Liver Ki Baat Aati Hai — Ranchi Mein Sahi Doctor Kaun",
+        type: "text",
+        content: "Bokaro se aaye 52-saal ke Ramesh Prasad ji — routine checkup mein SGPT (liver enzyme) 3x normal tha. Ultra sound mein fatty liver Grade 2. Koi symptoms nahi the. Local doctor ne kaha 'wait karo.' 6 mahine baad SGPT aur badh gaya. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — ne complete liver workup kiya: NASH (Non-Alcoholic SteatoHepatitis) diagnose hua. Structured lifestyle program aur medication se 8 mahine mein liver enzymes normalize ho gaye. Ranchi mein liver diseases common hain — early assessment aur correct specialist kaafi zaroori hai.",
+      },
+      {
+        heading: "Liver Kya Karta Hai — Kyun Itna Important Hai",
+        type: "text",
+        content: "Liver human body ka sabse bada internal organ hai — 500+ functions karta hai. Key functions: detoxification (blood filter karna), bile production (fat digestion), protein synthesis (albumin, clotting factors), glucose storage (glycogen), vitamin/mineral storage. Jab liver damage hoti hai — yeh sab functions affect hote hain. Ranchi mein Dr. Akhilesh Yadav ke anusaar, common liver conditions hain: Fatty Liver (NAFLD/NASH), Alcoholic Liver Disease, Hepatitis B/C, Liver Cirrhosis, Jaundice, Liver Abscess. Aur har condition ka alag approach chahiye.",
+      },
+      {
+        heading: "Liver Problems ke Symptoms — Kai Baar Quiet Hote Hain",
+        type: "list",
+        content: "Liver disease ke symptoms:",
+        list: [
+          "Jaundice (skin/eyes yellow hona) — bilirubin processing fail hone par",
+          "Fatigue aur weakness — unexplained",
+          "Upper right abdomen mein discomfort ya heaviness",
+          "Nausea, appetite loss",
+          "Dark urine (chai jaise), pale stools",
+          "Ascites (pet mein paani) — advanced liver disease mein",
+          "Confusion ya disorientation — Hepatic Encephalopathy (serious sign)",
+        ],
+      },
+      {
+        heading: "Liver Tests aur Diagnosis — Dr. Akhilesh Yadav ka Approach",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein liver assessment mein karte hain: Liver Function Tests (LFT): SGPT, SGOT, ALP, GGT, Bilirubin, Albumin, PT-INR. Viral Hepatitis panel: HBsAg, anti-HCV, HBeAg. Imaging: Ultrasound abdomen (first line), CT scan, MRI liver (MRCP). FibroScan — liver stiffness measure karta hai bina biopsy ke — cirrhosis staging ke liye non-invasive tool. Liver Biopsy — agar non-invasive tests unclear hon. ERCP/EUS — bile duct complications mein. Complete workup se correct diagnosis aur treatment plan milta hai.",
+      },
+      {
+        heading: "Liver Ka Ilaj — Condition Ke Hisaab Se",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi mein liver treatment tailored approach se karte hain. Fatty Liver (NAFLD): weight loss (7-10% body weight), exercise, diabetes control — zyada tar cases mein main treatment yahi hai. NASH mein specific medications bhi consider hoti hain. Alcoholic Liver Disease: alcohol complete abstinence — mandatory. Hepatitis B: antiviral therapy (Tenofovir/Entecavir) — lifelong monitoring. Hepatitis C: modern DAA (Direct-Acting Antivirals) se 8-12 hafte mein 95%+ patients mein virus clear hota hai. Cirrhosis: complications manage karna — ascites (diuretics), varices (endoscopic banding), encephalopathy. Liver Transplant evaluation (advanced cases). Liver Abscess: antibiotics aur drainage.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Liver Health",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Liver ki badi khaasiyat hai ki yeh bahut kuch silently sahta hai — jab symptoms aate hain, kabhi kabhi disease advanced hoti hai. Ranchi mein main kehta hoon: routine checkup mein liver tests zaroor karwayein, khaaskar agar diabetes, motaapa, ya alcohol history hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Liver symptoms hone par qualified hepatologist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Fatty liver kya apne aap theek ho sakta hai?",
+        a: "Grade 1-2 fatty liver mein lifestyle changes (weight loss, exercise, diet) se liver significantly improve ho sakta hai. Lekin NASH (inflammatory stage) mein active management zaroori hai. Dr. Akhilesh Yadav Ranchi mein FibroScan se fibrosis degree assess karte hain aur accordingly treat karte hain.",
+      },
+      {
+        q: "Liver ke liye konse tests zaroori hain?",
+        a: "Basic: LFT (SGPT, SGOT, ALP, bilirubin), HBsAg (Hepatitis B), anti-HCV (Hepatitis C), Ultrasound abdomen. Diabetes ya motaapa hai toh yeh annual tests hone chahiye. Dr. Akhilesh Yadav Ranchi mein complete liver health assessment karte hain.",
+      },
+      {
+        q: "Hepatitis B ya C mein kya khaana chahiye?",
+        a: "Koi specific 'hepatitis diet' nahi — healthy balanced diet: fruits, vegetables, whole grains, lean protein. Alcohol bilkul avoid karein. NSAIDs avoid karein. Paracetamol normal dose mein generally safe hai. Dr. Akhilesh Yadav patient-specific guidance dete hain.",
+      },
+      {
+        q: "Liver cirrhosis reversible hai?",
+        a: "Early-stage fibrosis reversible hai treatment se (Hepatitis C cure, alcohol abstinence, weight loss). Advanced cirrhosis (scarring) fully reverse nahi hota, lekin progression roka ja sakta hai aur complications manage ho sakte hain. Liver transplant last resort hai. Dr. Akhilesh Yadav Ranchi mein FibroScan se stage assess karte hain.",
+      },
+      {
+        q: "Kya desi nuskhe liver ke liye safe hain?",
+        a: "Kuch herbal supplements actually hepatotoxic (liver-damaging) hote hain — kala jeera, certain Ayurvedic combinations. 'Natural' ka matlab always safe nahi. Dr. Akhilesh Yadav Ranchi mein herb-induced liver injury (DILI) ke cases dekhte hain. Kuch bhi lene se pehle doctor se poochein.",
+      },
+    ],
+  },
+
+  {
+    slug: "digestive-specialist-ranchi",
+    titleHi: "Digestive Specialist Ranchi — पाचन तंत्र के Expert | Dr. Akhilesh Yadav",
+    titleEn: "Digestive Specialist in Ranchi — Complete GI Care | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein digestive system ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Har prakar ki paachan samasyaon ka sampurna ilaj.",
+    excerptEn: "Top digestive specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert care for all GI conditions — GERD, IBS, IBD, liver, pancreas & more.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🏥",
+    tags: ["digestive specialist ranchi", "gastro specialist ranchi", "GI specialist ranchi", "pet ka specialist ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Digestive Specialist in Ranchi | Dr. Akhilesh Yadav",
+    metaDescription: "Digestive specialist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist at Orchid Medical Centre. Expert care for all stomach, intestine & liver conditions.",
+    sections: [
+      {
+        heading: "Digestive Specialist Kyun Alag Hota Hai — General Doctor Se Fark",
+        type: "text",
+        content: "Ranchi se aaye 38-saal ki Sunita Kumari — 2 saal se pet mein dard, bloating aur weight loss. Kai doctors ne 'stress ka asar' bola. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — ne structured evaluation ki. Endoscopy aur colonoscopy ne Crohn's Disease (Inflammatory Bowel Disease) diagnose kiya. Sahi treatment se 6 mahine mein quality of life dramatically improve hui. Ek dedicated gastroenterologist ka fayda yeh hai ki woh digestive system ki har pareshani mein specialized expertise rakhte hain — esophagus se rectum tak, liver, pancreas, biliary system sab.",
+      },
+      {
+        heading: "Dr. Akhilesh Yadav — Ranchi ke Digestive Specialist Ka Portfolio",
+        type: "text",
+        content: "Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, HB Road, Ranchi — yeh conditions treat karte hain: Upper GI: GERD (acid reflux), peptic ulcer, H. Pylori infection, esophagitis, swallowing difficulties (dysphagia). Liver & Biliary: Fatty liver (NAFLD/NASH), Hepatitis B/C, liver cirrhosis, jaundice, gallstones, primary biliary cholangitis. Pancreas: acute/chronic pancreatitis, pancreatic cysts. Small Intestine: celiac disease, malabsorption, small intestinal bacterial overgrowth (SIBO). Large Intestine: IBS, IBD (Crohn's, Ulcerative Colitis), colon polyps, diverticulosis. Anorectal: hemorrhoids, anal fissure, fistula. Procedures: Endoscopy, Colonoscopy, ERCP, EUS — sab Orchid Medical Centre, Ranchi mein.",
+      },
+      {
+        heading: "Kab Ek Digestive Specialist Se Milein?",
+        type: "list",
+        content: "Inme se koi bhi ho toh gastroenterologist se milein:",
+        list: [
+          "4+ hafte se pet mein dard ya discomfort jo theek nahi ho raha",
+          "Rectal bleeding ya kala stool",
+          "Unexplained weight loss (>5% body weight bina diet change ke)",
+          "Persistent nausea/vomiting",
+          "Jaundice (eyes ya skin yellow hona)",
+          "Swallowing mein difficulty",
+          "Chronic diarrhea ya constipation (3+ mahine)",
+          "Abnormal liver tests ya ultrasound findings",
+        ],
+      },
+      {
+        heading: "Diagnostic Procedures — Orchid Medical Centre Ranchi Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav ke paas Orchid Medical Centre Ranchi mein advanced diagnostic capabilities hain. Upper GI Endoscopy (OGD Scopy): esophagus, stomach, duodenum dekhna — biopsy, H. Pylori test, bleeding control. Colonoscopy: full colon aur terminal ileum — polyp removal, IBD assessment, cancer screening. ERCP (Endoscopic Retrograde Cholangiopancreatography): bile duct stones, stenting. EUS (Endoscopic Ultrasound): pancreas, bile duct, submucous lesions ki detailed imaging. FibroScan: liver fibrosis non-invasive assessment. In procedures ka combination Ranchi mein sabse accurate GI diagnosis enable karta hai.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Digestive Health",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Digestive system ek complex machine hai — jab koi ek hissa theek nahi kaam karta, toh sab affect hota hai. Ranchi mein main dekh raha hoon ki patients symptoms ignore karte hain ya years tak self-medicate karte hain. Ek baar sahi evaluation — aur zyada tar cases mein treatment straightforward hota hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. GI symptoms ke liye qualified specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Gastroenterologist aur General Physician mein kya fark hai?",
+        a: "General physician broad care karta hai — common conditions, referral. Gastroenterologist sirf digestive system mein specialist hai — MBBS + MD + DM (3 saal super-specialization). Dr. Akhilesh Yadav DM Gastroenterology hain — Jharkhand ke top digestive specialists mein hain.",
+      },
+      {
+        q: "Kya Ranchi mein sab GI procedures available hain?",
+        a: "Haan — Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav ke paas Endoscopy, Colonoscopy, ERCP, EUS, FibroScan — advanced procedures available hain. Patients ko bade cities jane ki zaroorat nahi hoti routine GI care ke liye.",
+      },
+      {
+        q: "First visit mein kya expect karein?",
+        a: "Dr. Akhilesh Yadav detailed history lenge (symptoms, duration, diet, medications). Physical exam hogi. Previous reports review. Phir appropriate tests recommend karenge — blood, imaging, ya endoscopy. Sabse pehle differential diagnosis clear karenge. Pehle visit mein poora plan milta hai.",
+      },
+      {
+        q: "GI problems mein diet ka kitna role hai?",
+        a: "Bahut bada — khaas karke IBS, IBD, fatty liver, GERD, constipation mein diet ek important part of treatment hai. Dr. Akhilesh Yadav Ranchi mein condition-specific diet guidance dete hain — generic 'bland diet' nahi, evidence-based recommendations.",
+      },
+    ],
+  },
+
+  {
+    slug: "hepatologist-ranchi",
+    titleHi: "Hepatologist Ranchi — लीवर के Super-Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Hepatologist in Ranchi — Liver Disease Expert | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein hepatologist (liver specialist) kaun hain? Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Hepatitis, cirrhosis, fatty liver ka advanced care.",
+    excerptEn: "Best hepatologist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert hepatology: hepatitis B/C, liver cirrhosis, fatty liver, NASH & all liver conditions.",
+    category: "conditions",
+    readTimeMins: 8,
+    publishedAt: "August 2026",
+    emoji: "🫀",
+    tags: ["hepatologist ranchi", "liver specialist ranchi", "hepatitis doctor ranchi", "liver cirrhosis doctor ranchi", "gastroenterologist ranchi"],
+    metaTitle: "Hepatologist in Ranchi | Liver Specialist | Dr. Akhilesh Yadav",
+    metaDescription: "Best hepatologist in Ranchi — Dr. Akhilesh Yadav, DM Gastroenterologist & Hepatologist at Orchid Medical Centre. Expert liver care for Jharkhand patients.",
+    sections: [
+      {
+        heading: "Ranchi Mein Hepatologist Ki Zaroorat — Ek Real Case",
+        type: "text",
+        content: "Deoghar se aaye 45-saal ke Suresh Mahto — Hepatitis B positive tha kaafi saalon se. Pehle kisi ne treatment start nahi kiya — bola 'inactive carrier hai.' 3 saal mein SGPT 5x normal ho gaya, liver biopsy mein significant fibrosis mili. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — ne antiviral therapy (Tenofovir) start ki. 1 saal mein viral load undetectable, liver enzymes normal. Ranchi aur Jharkhand mein Hepatitis B prevalence national average se zyada hai — aur ek expert hepatologist ki role bahut critical hai.",
+      },
+      {
+        heading: "Hepatology Kya Hai — Gastroenterology Se Kaise Alag",
+        type: "text",
+        content: "Hepatology gastroenterology ki sub-specialty hai — specifically liver, gallbladder, bile ducts, aur pancreas ki conditions focus. Ek hepatologist liver disease mein deeper expertise rakhta hai. Dr. Akhilesh Yadav — DM Gastroenterology — hepatology mein specialized interest rakhte hain aur Orchid Medical Centre, Ranchi mein yeh conditions actively treat karte hain: Viral Hepatitis (A, B, C, D, E), Non-Alcoholic Fatty Liver Disease (NAFLD) / NASH, Alcoholic Liver Disease (ALD), Autoimmune Hepatitis, Primary Biliary Cholangitis (PBC), Liver Cirrhosis aur complications, Hepatocellular Carcinoma (liver cancer) surveillance aur early management.",
+      },
+      {
+        heading: "Liver Tests Aur Unka Matlab — Simplified",
+        type: "list",
+        content: "Common liver tests aur kya dikhate hain:",
+        list: [
+          "SGPT (ALT): liver cell damage — elevated in hepatitis, NASH, medications",
+          "SGOT (AST): liver + muscle damage — ratio matters (AST:ALT >2 alcoholic liver)",
+          "ALP / GGT: bile duct-related disease — cholestasis, PBC",
+          "Bilirubin (Total/Direct): jaundice ka cause batata hai",
+          "Albumin: liver protein synthesis — low in chronic liver disease",
+          "PT-INR: clotting — liver function ka sensitive marker",
+          "HBsAg / anti-HCV: Hepatitis B / C infection screening",
+        ],
+      },
+      {
+        heading: "FibroScan — Biopsy Ke Bina Liver Ki Stage Jaanein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein FibroScan (Transient Elastography) use karte hain — ek non-invasive tool jaise ultrasound, jo liver stiffness measure karta hai aur fibrosis ka degree batata hai. F0-F1: minimal/no fibrosis — lifestyle changes se manage. F2-F3: significant fibrosis — active treatment aur monitoring. F4 (Cirrhosis): advanced scarring — intensive management, complications monitoring, liver transplant evaluation agar zaroor ho. FibroScan se patients ko baar baar biopsy ki zaroorat nahi hoti. Ranchi mein yeh facility Orchid Medical Centre mein available hai.",
+      },
+      {
+        heading: "Hepatitis C — Ab Ilaj Mumkin Hai (95%+ Cure Rate)",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke Hepatitis C patients ko yeh good news dete hain: Modern DAA (Direct-Acting Antivirals) — Sofosbuvir/Velpatasvir combination — 8-12 hafte ki treatment se 95%+ patients mein Hepatitis C virus completely clear hota hai. Sustained Virological Response (SVR) matlab permanent cure. Ab koi painful injections (interferon) nahi. Aur PMGKY (government) scheme mein Hepatitis C medicines subsidized hain India mein. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh treatment karte hain aur proper monitoring ensure karte hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Liver Disease",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi aur Jharkhand mein Hepatitis B bahut common hai — aur bahut se log jante hi nahi. Simple blood test se pata chal jaata hai. Agar positive hain, regular monitoring aur sahi time par treatment se liver damage roka ja sakta hai. Aur Hepatitis C ab curable hai — please doctor se milein.'\n\nDr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Liver conditions ke liye hepatology expert se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Hepatitis B ka koi vaccine hai — kya adult mein bhi lagwa sakte hain?",
+        a: "Haan — Hepatitis B vaccine adult mein bhi effective hai. 3 doses (0, 1, 6 mahine). Agar negative hain aur expose hone ka risk hai (healthcare worker, family mein carrier) — zaroor lagwayein. Agar already positive hain, vaccine kaam nahi karta — treatment ki zaroorat hoti hai.",
+      },
+      {
+        q: "Hepatitis C kaise phailta hai?",
+        a: "Infected blood ke contact se: contaminated needles/syringes, unsterilized tattoo/piercing equipment, blood transfusion (1992 se pehle), mother se child. Sexual transmission possible lekin less common. Casual contact (khana, haath milana, chumna) se nahi phailta. Dr. Akhilesh Yadav Ranchi mein anti-HCV test recommend karte hain high-risk logon ko.",
+      },
+      {
+        q: "Liver cirrhosis mein kya khana band karein?",
+        a: "Alcohol completely — ek bhi drop nahi. Salt restrict karein agar ascites (pet mein paani) ho. High protein diet avoid agar encephalopathy history ho. NSAIDs avoid karein. Dr. Akhilesh Yadav Ranchi mein cirrhosis stage ke hisaab se detailed diet counseling dete hain.",
+      },
+      {
+        q: "Kya liver transplant Ranchi mein available hai?",
+        a: "Liver transplant ke liye AIIMS New Delhi, Medanta, Apollo Chennai jaise centers jana padta hai. Lekin Dr. Akhilesh Yadav Ranchi mein pre-transplant evaluation, listing, aur post-transplant follow-up coordinate karte hain Orchid Medical Centre se.",
+      },
+      {
+        q: "Autoimmune hepatitis kya hai?",
+        a: "Ek condition jisme body khud apne liver ko attack karti hai — immune system malfunction se. Symptoms: jaundice, fatigue, joint pain. Blood test mein specific autoantibodies (ANA, ASMA, LKM1) milte hain. Treatment: immunosuppressants (steroids). Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein yeh diagnose aur treat karte hain.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
