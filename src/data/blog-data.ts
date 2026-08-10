@@ -14,6 +14,15 @@ export interface BlogPost {
   metaDescription: string;
   sections: BlogSection[];
   faqs?: { q: string; a: string }[];
+  /** Image generation prompts produced by blog-writer v2.0 (AEO/GEO pipeline) */
+  imagePrompt?: {
+    /** Featured image — tall/square, used on blog post page hero */
+    featured: string;
+    /** OG image — 1200×630 landscape, used in social share previews */
+    og: string;
+    /** Card thumbnail — 400×300, used in blog listing grid */
+    card: string;
+  };
 }
 
 export interface BlogSection {
