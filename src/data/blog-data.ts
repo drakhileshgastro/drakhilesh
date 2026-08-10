@@ -4972,6 +4972,358 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── BATCH 8: BLOGS 36–40 ─────────────────────────────────────────────────────
+
+  {
+    slug: "gas-problem-doctor-ranchi",
+    titleHi: "Gas Problem Doctor Ranchi — Bloating & Gas Ka Ilaj | Dr. Akhilesh Yadav",
+    titleEn: "Gas Problem Doctor in Ranchi — Bloating & Flatulence Treatment | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein gas problem aur bloating ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Gas ke causes, diet tips aur medical treatment.",
+    excerptEn: "Gas problem & bloating specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Causes, diet guide & medical treatment for chronic gas & flatulence.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "💨",
+    tags: ["gas problem doctor ranchi", "bloating ranchi", "gas ki samasya ranchi", "gastroenterologist ranchi", "pet fulana ranchi"],
+    metaTitle: "Gas Problem Doctor Ranchi | Bloating | Dr. Akhilesh Yadav",
+    metaDescription: "Gas problem & bloating treatment in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Diagnosis, diet tips & medical care for chronic flatulence & bloating.",
+    sections: [
+      {
+        heading: "Gas Problem — Aam Nahi Hai Agar Chronic Ho",
+        type: "text",
+        content: "Ranchi ke Orchid Medical Centre mein Dr. Akhilesh Yadav — DM Gastroenterology — roz 5-6 gas problem ke patients dekhte hain. Zyada tar log sochte hain 'thoda gas problem sabko hota hai' — aur wait karte rehte hain. Lekin chronic bloating, excess gas, ya abdominal distension kabhi kabhi kisi underlying condition ka sign hoti hai: IBS, SIBO (Small Intestinal Bacterial Overgrowth), celiac disease, lactose intolerance, ya kabhi kabhi colon conditions. Ranchi mein sahi diagnosis zaroori hai.",
+      },
+      {
+        heading: "Gas Problem Ke Karan — Ranchi Ke Context Mein",
+        type: "list",
+        content: "Gas problem ke common aur less-known causes:",
+        list: [
+          "Zyada gas produce karne wali foods: rajma, chole, dal (fermentable carbs)",
+          "Lactose Intolerance: doodh, chai mein doodh — gas, bloating, loose motions",
+          "SIBO (Small Intestinal Bacterial Overgrowth): excess bacteria gas produce karte hain",
+          "IBS (Irritable Bowel Syndrome): visceral hypersensitivity — normal gas bhi zada lagta hai",
+          "Constipation: gas pass nahi hoti — bloating badhti hai",
+          "Swallowing air (aerophagia): jaldi khaana, carbonated drinks",
+          "Celiac Disease: gluten se small intestine damage — fermentation increased",
+          "Gastroparesis: stomach emptying slow — gas aur bloating",
+        ],
+      },
+      {
+        heading: "Diagnosis — Gas Problem Mein Kab Doctor Zaroor",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein gas problem assessment mein karte hain: Detailed dietary history — kaun sa food trigger hai. Lactose intolerance test: hydrogen breath test ya trial of lactose elimination. H. Pylori test — gastric symptoms ke saath. SIBO assessment: hydrogen breath test. Stool calprotectin — IBS vs IBD differentiate. Colonoscopy ya Endoscopy — agar warning signs hain: rectal bleeding, weight loss, age 50+. Alarm symptoms ke saath gas problem: investigate karo. Simple bloating bina red flags ke: diet aur lifestyle se pehle manage.",
+      },
+      {
+        heading: "Gas Problem Ka Ilaj — Dr. Akhilesh Yadav Ka Plan",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke gas patients ke liye: Dietary approach: Low-FODMAP trial (6-8 hafte) — fermentable carbs temporarily reduce. Ranchi mein avoid: rajma, chole, gobhi, broccoli, apple, mango zyada. Safe: plain rice, banana, potato (boiled), carrot, cucumber. Lactose intolerance: lactose-free milk ya doodh band karo trial ke liye. SIBO treatment: Rifaximin (antibiotic) — gut bacteria reset karta hai. IBS mein gas: antispasmodics + peppermint oil capsules — evidence-based. Probiotics: specific strains gas reduce karte hain. Lifestyle: dhire khaana, carbonated drinks avoid, post-meal walk.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Gas Problem",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Gas problem common hai — lekin chronic, daily bloating jo quality of life affect kare, woh investigate karna chahiye. Ranchi mein main frequently IBS aur SIBO diagnose karta hoon jinhe gas problem samjha ja raha tha. Correct diagnosis se correct treatment milti hai. Antiflatulents sirf temporary relief deti hain — cause treat nahi hota.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Kya dahi ya chhachh se gas hoti hai?",
+        a: "Plain dahi (curd) aur chhachh generally gas nahi banate — in fact probiotics hote hain jo gut health improve karte hain. Lekin severe lactose intolerance mein even fermented dairy bhi trigger ho sakti hai. Dr. Akhilesh Yadav Ranchi mein individual assessment karte hain.",
+      },
+      {
+        q: "Hing aur ajwain se gas theek hoti hai — kya sach hai?",
+        a: "Haan — hing (asafoetida) aur ajwain (carom seeds) traditional anti-flatulents hain. Kuch evidence hai ki yeh mild carminatives hain. Temporary/mild gas mein helpful ho sakte hain. Lekin chronic bloating mein sirf yahi nahi chalega — proper evaluation zaroori hai.",
+      },
+      {
+        q: "SIBO kya hai aur Ranchi mein kaise diagnose hoti hai?",
+        a: "SIBO mein small intestine mein excess bacteria gas produce karte hain — bloating, diarrhea. Diagnosis: hydrogen breath test (lactulose ya glucose). Treatment: Rifaximin (non-absorbable antibiotic). Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein SIBO evaluate karte hain.",
+      },
+      {
+        q: "Lactose intolerance aur milk allergy mein kya fark hai?",
+        a: "Lactose intolerance: enzyme deficiency — lactose digest nahi hoti — gas, bloating, diarrhea (no immune reaction). Milk allergy: immune-mediated — hives, breathing difficulty, anaphylaxis possible. Lactose intolerance common hai Indians mein. Dr. Akhilesh Yadav Ranchi mein differentiate karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "ulti-ka-doctor-ranchi",
+    titleHi: "Ulti Ka Doctor Ranchi — Nausea & Vomiting Specialist | Dr. Akhilesh Yadav",
+    titleEn: "Nausea & Vomiting Doctor in Ranchi — GI Specialist | Dr. Akhilesh Yadav",
+    excerptHi: "Ranchi mein baar baar ulti aur nausea ke specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Causes, diagnosis aur effective treatment.",
+    excerptEn: "Nausea & vomiting specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert GI diagnosis & treatment for all causes of chronic nausea & vomiting.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🩺",
+    tags: ["ulti ka doctor ranchi", "nausea vomiting ranchi", "chronic vomiting ranchi", "gastroenterologist ranchi", "GI specialist ranchi"],
+    metaTitle: "Ulti Ka Doctor Ranchi | Nausea Vomiting | Dr. Akhilesh Yadav",
+    metaDescription: "Nausea & vomiting specialist in Ranchi — Dr. Akhilesh Yadav at Orchid Medical Centre. Expert diagnosis & treatment for all causes of chronic nausea & vomiting.",
+    sections: [
+      {
+        heading: "Ulti — Kab Common Hai, Kab Serious",
+        type: "text",
+        content: "Ek baar ulti — food poisoning, motion sickness, pregnancy — common hai. Lekin chronic nausea ya recurrent vomiting ek underlying GI problem signal kar sakta hai. Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — systematic approach se nausea/vomiting ke cause assess karte hain. Ranchi mein patients baar baar antiemetics (ulti ki dawa) lete hain bina cause jaane — yeh sirf masking hai, treating nahi.",
+      },
+      {
+        heading: "Ulti Ke GI Causes — Gastroenterologist Ka Domain",
+        type: "list",
+        content: "GI-related nausea/vomiting ke common causes:",
+        list: [
+          "Gastroparesis: stomach emptying slow — nausea, vomiting (often undigested food), bloating",
+          "GERD/Peptic Ulcer: acid-related — nausea post-meals",
+          "H. Pylori Infection: chronic gastritis — nausea, early satiety",
+          "Intestinal Obstruction: sudden vomiting, no gas — emergency",
+          "Acute Pancreatitis: severe vomiting + upper abdominal pain",
+          "Liver failure / Hepatitis: nausea prominent symptom",
+          "Cyclic Vomiting Syndrome: recurrent severe vomiting episodes",
+          "Medications: NSAIDs, antibiotics, iron tablets — GI side effects",
+        ],
+      },
+      {
+        heading: "Emergency — Kab Turant Hospital",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Ranchi ke patients ko warn karte hain — yeh signs emergency hain: Khoon ki ulti (hematemesis) — bright red ya coffee grounds. Ulti mein bile (green/yellow) — obstruction ya serious disease. Severe dehydration — mouth dry, sunken eyes, no urine. Severe abdominal pain + vomiting — peritonitis, pancreatitis, obstruction. Neurological symptoms + vomiting — brain cause (meningitis, brain tumor). Vomiting after head injury. In cases mein: turant hospital emergency room.",
+      },
+      {
+        heading: "Diagnosis — Dr. Akhilesh Yadav Ka Approach Nausea/Vomiting Mein",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein nausea/vomiting ke cause assess karne ke liye karte hain: History: duration, pattern, what triggers, associated symptoms, medications, pregnancy status. Blood tests: CBC, LFT, RFT, blood sugar, amylase/lipase, thyroid. Urine pregnancy test: reproductive age women mein. Imaging: X-ray abdomen (obstruction check), ultrasound. Endoscopy: chronic nausea + alarm symptoms mein. Gastric emptying study: gastroparesis suspected mein. Yeh structured approach ensure karta hai ki cause miss na ho.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ki Expert Advice — Nausea & Vomiting",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Ranchi mein main dekhta hoon ki patients chronic nausea ke saath mahino tak antiemetics lete hain bina doctor ke. Kuch cases mein gastroparesis nikalta hai, kuch mein H. Pylori, kuch mein anxiety-related. Sab ka treatment alag hai. Diagnosis pehle — phir dawa.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai. Chronic nausea ke liye specialist se milein.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Gastroparesis kya hai?",
+        a: "Stomach ki muscles properly contract nahi karte — emptying slow ho jaata hai. Nausea, vomiting (often hours after eating), bloating, early satiety. Common causes: diabetes, post-viral, medications. Diagnosis: gastric emptying study. Treatment: prokinetics (domperidone, metoclopramide), diet (small frequent meals, low fiber, low fat). Dr. Akhilesh Yadav Ranchi mein diagnose aur manage karte hain.",
+      },
+      {
+        q: "Ulti mein khoon aaye toh kya karein?",
+        a: "Yeh emergency hai — turant hospital jayein ya ambulance call karein. Upper GI bleeding ka sign hai (peptic ulcer, esophageal varices, Mallory-Weiss tear). Orchid Medical Centre Ranchi mein Dr. Akhilesh Yadav emergency endoscopy karte hain.",
+      },
+      {
+        q: "Pregnancy mein ulti kab serious hoti hai?",
+        a: "Mild morning sickness first trimester mein common hai — diet aur small meals se manage. Hyperemesis Gravidarum (severe vomiting, weight loss, dehydration) mein IV fluids aur antiemetics zaroori. OB/GYN aur gastroenterologist coordinate karte hain severe cases mein.",
+      },
+      {
+        q: "Kya stress se ulti ho sakti hai?",
+        a: "Haan — severe anxiety ya stress mein psychogenic vomiting ho sakti hai. Gut-brain axis direct link hai. Cyclic Vomiting Syndrome bhi stress-triggered ho sakta hai. Organic causes rule out karne ke baad — anxiety management, biofeedback helpful hote hain. Dr. Akhilesh Yadav Ranchi mein assess karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "jharkhand-mein-gastroenterologist",
+    titleHi: "Jharkhand Mein Gastroenterologist — DM GI Doctor | Dr. Akhilesh Yadav Ranchi",
+    titleEn: "Gastroenterologist in Jharkhand — Dr. Akhilesh Yadav | Ranchi's Top GI Specialist",
+    excerptHi: "Jharkhand mein DM Gastroenterologist kaun hain? Dr. Akhilesh Yadav — Orchid Medical Centre, Ranchi — Jharkhand ke patients ke liye advanced GI care. Endoscopy, ERCP, EUS available.",
+    excerptEn: "Top gastroenterologist in Jharkhand — Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi. Serving all of Jharkhand with advanced GI care — endoscopy, colonoscopy, ERCP & more.",
+    category: "conditions",
+    readTimeMins: 7,
+    publishedAt: "August 2026",
+    emoji: "🗺️",
+    tags: ["jharkhand mein gastroenterologist", "gastroenterologist jharkhand", "GI specialist jharkhand", "DM gastroenterologist jharkhand", "Ranchi gastro doctor"],
+    metaTitle: "Gastroenterologist in Jharkhand | Dr. Akhilesh Yadav Ranchi",
+    metaDescription: "Best gastroenterologist in Jharkhand — Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi. Advanced GI care for all of Jharkhand — endoscopy, ERCP, EUS.",
+    sections: [
+      {
+        heading: "Jharkhand Mein GI Care — Challenge Aur Solution",
+        type: "text",
+        content: "Jharkhand ek aisa state hai jahan specialist doctors ki sankhya national average se kam hai — khaas karke super-specialists jaise DM Gastroenterologists. Deoghar, Giridih, Hazaribagh, Bokaro, Dhanbad, Jamshedpur, Palamu — in cities se patients pehle Ranchi, phir agle step mein Patna ya Kolkata ya Delhi jaate hain. Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — Jharkhand ke patients ke liye advanced GI care provide karte hain — taaki sabse zyada baar woh apne state mein hi theek ho sakein.",
+      },
+      {
+        heading: "Jharkhand Ke Kaunse Districts Se Patients Aate Hain?",
+        type: "list",
+        content: "Dr. Akhilesh Yadav ke paas Jharkhand ke yeh districts se patients aate hain:",
+        list: [
+          "Ranchi — city aur adjoining areas",
+          "Bokaro — HEC area, Chas, Sector areas",
+          "Hazaribagh — district headquarters aur rural",
+          "Dhanbad — Jharia, Sindri, coal belt areas",
+          "Jamshedpur — TISCO area, Adityapur",
+          "Deoghar — yatri aur local patients",
+          "Giridih, Ramgarh, Lohardaga, Gumla — district patients",
+          "Bihar border districts — Aurangabad, Gaya se bhi patients",
+          "Chhattisgarh border areas se bhi kuch cases",
+        ],
+      },
+      {
+        heading: "Jharkhand Specific Health Issues — Gastro Context",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Jharkhand ke specific GI health patterns note karte hain: Hepatitis B prevalence: Jharkhand mein national average se zyada — tattooing practices, unsterilized medical procedures, awareness kam. H. Pylori infection: water quality issues — piped water availability rural mein kam hai, contamination risk zyada. Alcohol-related liver disease: coal belt areas mein common. Jaundice (Hepatitis A/E): monsoon mein outbreaks — contaminated water. Colon cancer: increasing urban population mein. Malnutrition-related GI issues: tribal areas mein still prevalent.",
+      },
+      {
+        heading: "Orchid Medical Centre — Jharkhand Ka Advanced GI Centre",
+        type: "text",
+        content: "Dr. Akhilesh Yadav Orchid Medical Centre, HB Road, Ranchi ko Jharkhand ka advanced GI facility bana rahe hain. Available procedures: Upper GI Endoscopy, Colonoscopy, ERCP (bile duct), EUS (Endoscopic Ultrasound), FibroScan (liver assessment), Liver Biopsy (ultrasound-guided). Kya nahi jana padta Jharkhand se bahar: routine endoscopy-colonoscopy — Orchid Ranchi mein. ERCP — Orchid Ranchi mein. EUS — Orchid Ranchi mein. Liver cirrhosis management — Orchid Ranchi mein. Advanced liver transplant evaluation — coordination se Kolkata/Delhi.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ka Mission — Jharkhand Mein GI Care",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Jharkhand ke patients ka ek bada problem yeh hai ki specialist care ke liye Ranchi se bahar jaana padta tha. Main chahta hoon ki Orchid Medical Centre, Ranchi ek aisa center bane jahan se sirf critical cases hi refer hoon — baaki sab yahan ho sake. Jharkhand ke har patient ko world-class GI care milni chahiye.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Jharkhand mein DM Gastroenterologist kitne hain?",
+        a: "Jharkhand mein DM (Doctorate of Medicine) Gastroenterologists ki sankhya bahut limited hai — statewide double digits mein hi hain. Dr. Akhilesh Yadav Ranchi ke prominent DM Gastroenterologists mein hain Orchid Medical Centre mein.",
+      },
+      {
+        q: "Kya Jharkhand ke patients ko ERCP ke liye Ranchi aana padta hai?",
+        a: "Haan — ERCP (Endoscopic Retrograde Cholangiopancreatography) ek advanced procedure hai jo Jharkhand mein limited centers mein available hai. Orchid Medical Centre, Ranchi mein Dr. Akhilesh Yadav ERCP karte hain. Bokaro, Dhanbad, Hazaribagh se patients Ranchi aate hain.",
+      },
+      {
+        q: "Jamshedpur ya Bokaro se Ranchi kitne ghante mein pahuncha ja sakta hai?",
+        a: "Jamshedpur se Ranchi: NH33 se ~3-3.5 ghante (130 km). Bokaro se: ~1.5-2 ghante (75 km). Hazaribagh se: ~1.5 ghante (80 km). Dhanbad se: ~2.5 ghante (150 km). Orchid Medical Centre HB Road Ranchi — city center mein accessible location.",
+      },
+      {
+        q: "Kya AIIMS Ranchi ya Rajendra Institute mein gastro care milti hai?",
+        a: "AIIMS Ranchi mein gastroenterology department hai — government facility, waiting time zyada ho sakta hai. Rajendra Institute mein bhi. Private practice mein Dr. Akhilesh Yadav Orchid Medical Centre mein — faster appointment, personalized care, advanced procedures available. Dono options ka apna role hai.",
+      },
+    ],
+  },
+
+  {
+    slug: "bokaro-mein-gastroenterologist",
+    titleHi: "Bokaro Mein Gastroenterologist — Ranchi Mein Dr. Akhilesh Yadav",
+    titleEn: "Gastroenterologist Near Bokaro — Dr. Akhilesh Yadav in Ranchi",
+    excerptHi: "Bokaro se Ranchi mein gastroenterologist: Dr. Akhilesh Yadav — Orchid Medical Centre. Bokaro ke patients ke liye Ranchi mein advanced GI care — 1.5 ghante mein.",
+    excerptEn: "Gastroenterologist near Bokaro — Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi. Serving Bokaro patients with advanced endoscopy, colonoscopy & expert GI care.",
+    category: "conditions",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🗺️",
+    tags: ["bokaro mein gastroenterologist", "gastroenterologist near bokaro", "bokaro stomach doctor", "bokaro liver doctor", "ranchi GI specialist"],
+    metaTitle: "Gastroenterologist Near Bokaro | Dr. Akhilesh Yadav Ranchi",
+    metaDescription: "Gastroenterologist near Bokaro — Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi (~75km). Advanced GI care: endoscopy, colonoscopy, ERCP & expert hepatology.",
+    sections: [
+      {
+        heading: "Bokaro Ke Patients Ke Liye — Ranchi Mein Sahi GI Specialist",
+        type: "text",
+        content: "Bokaro Steel City — Jharkhand ka industrial heart. HEC, SAIL, coal belt workers aur unke parivaar ke liye quality healthcare access ek challenge raha hai specialist care mein. Bokaro se Ranchi: approximately 75 km, NH33 se 1.5-2 ghante. Orchid Medical Centre, HB Road, Ranchi mein Dr. Akhilesh Yadav — DM Gastroenterology — Bokaro ke patients ke liye advanced GI care provide karte hain. Bokaro ke General Hospital ya local doctors se refer hoke bhi patients aate hain. Endoscopy, ERCP, EUS, colonoscopy — sab available hai Ranchi mein.",
+      },
+      {
+        heading: "Bokaro Ke Patients Ko Dr. Akhilesh Yadav Kyun Choose Karein",
+        type: "list",
+        content: "Bokaro se Ranchi journey justify karne ke reasons:",
+        list: [
+          "DM Gastroenterology — highest GI qualification in India",
+          "ERCP available — bile duct stones, pancreatitis cases ke liye",
+          "EUS (Endoscopic Ultrasound) — pancreas, bile duct detailed imaging",
+          "FibroScan — liver fibrosis non-invasive assessment",
+          "One-stop GI center — multiple trips nahi karni padti",
+          "Hindi consultation — Jharkhand ke patients ka comfort",
+          "Ranchi mein reasonable cost vs Kolkata ya Delhi",
+          "Same day appointment availability — urgent cases mein",
+        ],
+      },
+      {
+        heading: "Bokaro Mein Common GI Conditions — Aur Ranchi Mein Solution",
+        type: "text",
+        content: "Bokaro ke steel plant workers aur unke families mein kuch GI conditions common hain: Alcoholic Liver Disease: industrial area mein alcohol consumption — liver cirrhosis common. Fatty Liver: sedentary jobs + high calorie diet — NAFLD prevalent. Peptic Ulcer: workplace stress + NSAID use (joint pain ke liye). Jaundice: Bokaro mein bhi contaminated water issues — Hepatitis A/E. Colorectal screening: 45+ Bokaro ke workers — colon cancer screening neglected. In sab ke liye, Ranchi mein Orchid Medical Centre ek visit mein sahi diagnosis aur treatment plan milta hai.",
+      },
+      {
+        heading: "Bokaro Se Ranchi — Travel Guide",
+        type: "text",
+        content: "Bokaro se Orchid Medical Centre, HB Road, Ranchi: Route: Bokaro → Ramgarh → Ranchi via NH33 — approximately 75 km. Time: 1.5-2 ghante by car/cab. Train: Bokaro Steel City → Hatia (Ranchi) — regular trains available. Orchid Medical Centre HB Road Ranchi mein Google Maps par easily find ho jaata hai. Appointment ke liye pehle call karein: +91 74919 25047 — same day ya next day usually available. Morning appointment preferred — same day wapas Bokaro pahunch sakte hain.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ka Sandesh Bokaro Ke Patients Ko",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Bokaro se baar baar patients aate hain — pehle refer se, ab directly. Mujhe khushi hai ki Jharkhand ke industrial area ke patients Ranchi mein sahi care pa rahe hain. ERCP jaise procedures ke liye Kolkata ya Delhi nahi jaana padta ab Bokaro ke patients ko — Ranchi mein hi ho jaata hai.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Bokaro mein koi DM gastroenterologist hai?",
+        a: "Bokaro mein currently DM Gastroenterologist ki availability limited hai. Bokaro General Hospital mein GI services hain, lekin advanced procedures ke liye Ranchi refer kiya jaata hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein — Bokaro patients ke most accessible DM Gastroenterologist.",
+      },
+      {
+        q: "Bokaro se Orchid Medical Centre kaise pahunchein?",
+        a: "NH33 se Bokaro → Ramgarh → Ranchi — approximately 75 km, 1.5-2 ghante. Google Maps par 'Orchid Medical Centre HB Road Ranchi' search karein. Train bhi option hai — Bokaro Steel City station se Hatia ya Ranchi station.",
+      },
+      {
+        q: "Kya Bokaro ke patients ke liye ambulance service available hai?",
+        a: "Emergency cases mein 108 Jharkhand ambulance service Bokaro se Ranchi tak available hai. Orchid Medical Centre se pehle call karein emergency mein — +91 74919 25047 — proper preparation ensure ki ja sakti hai arrival se pehle.",
+      },
+      {
+        q: "Colonoscopy ke liye Bokaro se Ranchi aana padega kya?",
+        a: "Haan — colonoscopy ke liye Orchid Medical Centre, Ranchi aana padega. Ek din ki visit hai typically — bowel prep ghar pe (previous day), procedure Orchid mein, same day ya overnight stay. Dr. Akhilesh Yadav Bokaro ke patients ke liye convenient scheduling karte hain.",
+      },
+    ],
+  },
+
+  {
+    slug: "jamshedpur-se-ranchi-gastroenterologist",
+    titleHi: "Jamshedpur Se Ranchi Gastroenterologist — Dr. Akhilesh Yadav | GI Care",
+    titleEn: "Gastroenterologist Near Jamshedpur — Dr. Akhilesh Yadav in Ranchi",
+    excerptHi: "Jamshedpur se Ranchi mein gastroenterologist: Dr. Akhilesh Yadav — Orchid Medical Centre. Jamshedpur ke patients ke liye Ranchi mein DM level GI care.",
+    excerptEn: "Gastroenterologist near Jamshedpur — Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi (~135km). Advanced GI care: endoscopy, colonoscopy, liver & complete gastroenterology.",
+    category: "conditions",
+    readTimeMins: 6,
+    publishedAt: "August 2026",
+    emoji: "🗺️",
+    tags: ["jamshedpur se ranchi gastroenterologist", "gastroenterologist near jamshedpur", "jamshedpur liver doctor", "jamshedpur stomach doctor", "ranchi GI specialist"],
+    metaTitle: "Gastroenterologist Near Jamshedpur | Dr. Akhilesh Yadav Ranchi",
+    metaDescription: "Gastroenterologist near Jamshedpur — Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi. Advanced GI care: endoscopy, colonoscopy & complete hepatology.",
+    sections: [
+      {
+        heading: "Jamshedpur Se Ranchi — Kab Worth It Hai?",
+        type: "text",
+        content: "Jamshedpur — Tata Steel city, Adityapur industrial belt — Jharkhand ka economic hub. Jamshedpur mein kuch gastroenterologists practice karte hain, lekin advanced procedures (ERCP, EUS, FibroScan, advanced colonoscopy) ke liye Ranchi better equipped hai. Jamshedpur se Ranchi: ~135 km, NH33 se 3-3.5 ghante. Worth it conditions: ERCP need (bile duct stone, stricture). EUS (pancreatic cysts, tumors). Complex liver cases (cirrhosis management, FibroScan). Colonoscopy with polypectomy (cancer screening). Complicated IBD (Crohn's/Colitis) management.",
+      },
+      {
+        heading: "Jamshedpur Patients Mein Common GI Issues",
+        type: "list",
+        content: "Jamshedpur ke patients mein Dr. Akhilesh Yadav frequently dekhte hain:",
+        list: [
+          "Gallstone disease — ERCP ke liye Ranchi referral common",
+          "Alcoholic Liver Disease — Tata Steel aur industrial workforce",
+          "Fatty Liver (NAFLD) — sedentary jobs, Jamshedpur food culture",
+          "Colorectal cancer screening — 45+ workers seeking quality screening",
+          "Chronic Hepatitis B — Jharkhand-wide issue",
+          "IBD (Crohn's, Colitis) — complex cases needing advanced evaluation",
+          "Colon polyps — follow-up colonoscopy after abnormal findings elsewhere",
+        ],
+      },
+      {
+        heading: "Why Ranchi Over Kolkata For Jamshedpur Patients",
+        type: "text",
+        content: "Jamshedpur ke patients ke liye traditionally GI treatment ke options the: local Jamshedpur hospitals ya Kolkata (250+ km). Ranchi (135 km) mein Orchid Medical Centre ke advantages: Closer than Kolkata — 3-3.5 ghante vs 5-6 ghante. Comparable advanced facilities — ERCP, EUS, FibroScan. Hindi medium consultation — local language comfort. Reasonable pricing — metro city se kam. Dr. Akhilesh Yadav DM Gastroenterology — equivalent expertise. Same state — no state boundary hassles.",
+      },
+      {
+        heading: "Jamshedpur Se Ranchi — Practical Guide",
+        type: "text",
+        content: "Jamshedpur se Orchid Medical Centre, HB Road, Ranchi: Route: Jamshedpur → Gamharia → Chandil → Ramgarh → Ranchi via NH33 — ~135 km. Time: 3-3.5 ghante by car. Train: Tatanagar Junction se multiple trains Hatia (Ranchi) — Shatabdi ya other express available. Morning start karo — Ranchi pahuncho, consultation karo, possibly same day procedures (endoscopy), wapas Jamshedpur evening. ERCP ya larger procedures ke liye: advance appointment + possible 1 day stay Ranchi mein. Contact: +91 74919 25047 pehle call karein — appointment confirm karein.",
+      },
+      {
+        heading: "💚 Dr. Akhilesh Yadav ka Sandesh Jamshedpur Ke Patients Ko",
+        type: "tip",
+        content: "Dr. Akhilesh Yadav kehte hain: 'Jamshedpur se patients aate hain — pehle hesitate karte hain, lekin jab aa jaate hain toh kehte hain ki Kolkata nahi jaana padega ab. Ranchi mein woh sab milta hai jo chahiye. Distance ek issue hai, lekin ek baar aane ke baad zyada tar cases ek visit mein resolve ho jaate hain.'\n\nDr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road, Ranchi.\n\nYeh article sirf educational purpose ke liye hai.\n\nAppointment: +91 74919 25047 ya [WhatsApp](https://wa.me/917491925047). Mon–Sat: 10 AM–2 PM aur 5 PM–8 PM.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Jamshedpur mein koi ERCP facility hai?",
+        a: "Jamshedpur ke kuch hospitals mein basic endoscopy hai, lekin ERCP (advanced bile duct procedure) ke liye Ranchi ya Kolkata refer kiya jaata hai. Dr. Akhilesh Yadav Orchid Medical Centre Ranchi mein ERCP karte hain — Jamshedpur se 3-3.5 ghante.",
+      },
+      {
+        q: "Tatanagar station se Orchid Medical Centre kaise pahunchein?",
+        a: "Tatanagar (Jamshedpur) → Hatia Station (Ranchi) → Auto/Cab se Orchid Medical Centre HB Road. Alternatively, taxi/cab booking Jamshedpur se Ranchi direct available hai.",
+      },
+      {
+        q: "Kya ek hi din mein Jamshedpur-Ranchi-Jamshedpur ho sakta hai endoscopy ke liye?",
+        a: "Haan — endoscopy (OGD Scopy) ke liye: morning Jamshedpur se niklo, 10 AM consultation Orchid Medical Centre, endoscopy afternoon, 1-2 ghante recovery, evening wapas Jamshedpur. Advance appointment zaroor lo: +91 74919 25047.",
+      },
+      {
+        q: "Liver cirrhosis ke liye Jamshedpur vs Ranchi vs Kolkata — kahan jayein?",
+        a: "Mild-moderate cirrhosis management: Ranchi mein Dr. Akhilesh Yadav Orchid Medical Centre — adequate facilities. Advanced cirrhosis with complications needing liver transplant evaluation: Kolkata (Apollo, AMRI) ya Delhi (AIIMS, Medanta). Dr. Akhilesh Yadav assess karke sahi referral dete hain.",
+      },
+    ],
+  },
+
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
