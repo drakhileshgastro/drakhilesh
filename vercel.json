@@ -12,6 +12,10 @@
     {
       "path": "/api/cron/weekly-report",
       "schedule": "30 2 * * 0"
+    },
+    {
+      "path": "/api/cron/gsc-sync",
+      "schedule": "0 3 * * *"
     }
   ]
 }
