@@ -19,15 +19,18 @@ export default function HeroSection() {
           <div className="lg:col-span-7 space-y-6">
             <div className="flex flex-wrap items-center gap-3">
               <div className="text-primary font-display text-xs font-bold tracking-wider uppercase">
-                Ranchi's Trusted Gastroenterologist
+                Ranchi · DM Gastroenterologist
               </div>
               <LiveCounter />
             </div>
 
-            <h1 className="font-hindi text-[2.75rem] sm:text-[3.25rem] lg:text-[3.75rem] font-bold text-forest leading-[1.1] tracking-tight">
-              पेट, लीवर या पाचन की<br />
-              <span className="text-primary">समस्या से परेशान हैं?</span>
+            <h1 className="font-display text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] font-bold text-forest leading-[1.15] tracking-tight">
+              Dr. Akhilesh Yadav<br />
+              <span className="text-primary">— Gastroenterologist in Ranchi</span>
             </h1>
+            <p className="font-hindi text-2xl sm:text-3xl text-forest/80 font-semibold leading-snug -mt-2">
+              पेट, लीवर और पाचन रोग विशेषज्ञ
+            </p>
 
             {/* Doctor Info Subtitle Grid */}
             <div className="flex flex-col gap-2 border-l-3 border-primary/30 pl-4 py-1">
@@ -37,14 +40,14 @@ export default function HeroSection() {
                 <span className="text-primary/35">•</span>
                 <span>10+ Years</span>
                 <span className="text-primary/35">•</span>
-                <span>4000+ Patients</span>
+                <span>4,000+ Consultations</span>
                 <span className="text-primary/35">•</span>
                 <span>Evidence-Based Treatment</span>
               </div>
             </div>
 
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl">
-              Consult Dr. Akhilesh Yadav, Ranchi's trusted stomach doctor, liver specialist, and gastrologist (DM Gastroenterology) at Orchid Medical Centre for complete digestive care.
+              Consult Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi — DM Gastroenterologist & Hepatologist specialising in liver disease, fatty liver, endoscopy, and all digestive conditions.
             </p>
 
             {/* Stats row redesigned (No dashboard cards) */}
@@ -62,8 +65,8 @@ export default function HeroSection() {
               </div>
               {/* Card 3: Patients Served */}
               <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
-                <div className="text-2xl font-display font-bold text-primary">4000+</div>
-                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Patients Treated</div>
+                <div className="text-2xl font-display font-bold text-primary">4,000+</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Consultations</div>
               </div>
               {/* Card 4: Availability */}
               <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
