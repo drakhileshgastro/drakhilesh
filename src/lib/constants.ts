@@ -239,6 +239,7 @@ export const FOOTER_COLUMNS = {
   ],
   resources: [
     { label: "About Doctor", href: "/about" },
+    { label: "Patient Guide", href: "/patient-guide" },
     { label: "Book Appointment", href: "/book" },
     { label: "Contact", href: "/contact" },
     { label: "Directions", href: DOCTOR.googleMapsUrl, external: true },
