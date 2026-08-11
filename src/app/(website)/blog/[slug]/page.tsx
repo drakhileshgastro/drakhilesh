@@ -47,6 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.metaDescription,
     keywords: post.tags,
     alternates: { canonical: `https://drakhileshgastro.com/blog/${slug}` },
+    // §15: noindex pages that cannibalize a stronger URL for the same search intent
+    ...(post.noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
