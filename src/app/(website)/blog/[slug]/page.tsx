@@ -504,6 +504,25 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 )}
 
+                {/* Cluster-0: Link to primary Ranchi local page — blog → /locations/ranchi */}
+                {isRanchiGuide && (
+                  <Link
+                    href="/locations/ranchi"
+                    className="block bg-primary text-white rounded-3xl p-5 space-y-2 hover:bg-primary-dark transition-colors"
+                  >
+                    <p className="text-[9px] text-white/70 uppercase font-bold tracking-wider font-sans">Consult in Ranchi</p>
+                    <p className="font-hindi text-white font-bold text-sm leading-snug">
+                      रांची में Gastroenterologist — Dr. Akhilesh Yadav
+                    </p>
+                    <p className="text-white/80 text-[11px] font-sans">
+                      Orchid Medical Centre, HB Road · Endoscopy, ERCP, FibroScan
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-white/90 text-[10px] font-bold font-sans uppercase tracking-wider mt-1">
+                      Book Appointment →
+                    </span>
+                  </Link>
+                )}
+
               </aside>
 
             </div>

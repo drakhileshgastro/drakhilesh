@@ -9,7 +9,10 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return Object.keys(LOCATIONS_DATA).map((slug) => ({ slug }));
+  // "ranchi" is handled by /locations/ranchi/page.tsx (static route takes precedence)
+  return Object.keys(LOCATIONS_DATA)
+    .filter((slug) => slug !== "ranchi")
+    .map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
