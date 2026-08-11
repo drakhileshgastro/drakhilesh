@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const dietSlugs = getAllDietSlugs();
   const patientGuideSlugs = getAllPatientGuideSlugs();
 
-  // Stable lastModified for static pages — set to last deployment date, not dynamic new Date()
+  // Use actual deployment date for static pages; never a future date
   const stableDate = new Date("2026-08-11T00:00:00.000Z");
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -64,7 +64,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/locations/${slug}`,
     lastModified: stableDate,
     changeFrequency: "monthly" as const,
-    priority: 0.8,
+    // /locations/ranchi is the primary local SEO page — higher priority than other city pages
+    priority: slug === "ranchi" ? 0.95 : 0.8,
   }));
 
   const dietPages: MetadataRoute.Sitemap = dietSlugs.map((slug) => ({

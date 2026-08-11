@@ -7137,10 +7137,13 @@ export function getAllBlogSlugs(): string[] {
   return BLOG_POSTS.map((p) => p.slug);
 }
 
-/** For sitemap — slug + ISO publish date for every post */
+/** For sitemap — slug + ISO publish date (capped at today, never future) */
 export function getAllBlogsForSitemap(): { slug: string; isoDate: string }[] {
-  return BLOG_POSTS.map((p) => ({
-    slug: p.slug,
-    isoDate: parsePublishedDate(p.publishedAt).toISOString(),
-  }));
+  const today = new Date();
+  return BLOG_POSTS.map((p) => {
+    const parsed = parsePublishedDate(p.publishedAt);
+    // Section 24: never expose future lastmod — cap at today's date
+    const capped = parsed > today ? today : parsed;
+    return { slug: p.slug, isoDate: capped.toISOString() };
+  });
 }
