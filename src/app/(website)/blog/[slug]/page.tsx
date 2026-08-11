@@ -6,7 +6,7 @@ import Image from "next/image";
 export const revalidate = 86400; // ISR: regenerate every 24h
 import { Clock, ArrowLeft, MessageCircle, Phone, AlertTriangle, Lightbulb, HelpCircle, CheckCircle2, Calendar } from "lucide-react";
 import { getBlogBySlug, getAllBlogSlugs } from "@/data/blog-data";
-import { getRelatedBlogsForBlog, getRelatedConditionsForBlog } from "@/data/related-content";
+import { getRelatedBlogsForBlog, getRelatedConditionsForBlog, getCluster0Related, isCluster0Blog } from "@/data/related-content";
 import { DOCTOR } from "@/lib/constants";
 import { cn } from "@/lib/cn";
 import StickyCTA from "@/components/service/sticky-cta";
@@ -113,6 +113,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   const related = getRelatedBlogsForBlog(slug, 2);
   const relatedConditions = getRelatedConditionsForBlog(slug);
+  const cluster0Related = getCluster0Related(slug, 3);
+  const isRanchiGuide = isCluster0Blog(slug);
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -122,6 +124,26 @@ export default async function BlogPostPage({ params }: Props) {
       { "@type": "ListItem", "position": 2, "name": "Health Library", "item": "https://drakhileshgastro.com/blog" },
       { "@type": "ListItem", "position": 3, "name": post.metaTitle, "item": `https://drakhileshgastro.com/blog/${post.slug}` },
     ],
+  };
+
+  // MedicalWebPage — connects this URL to the physician entity for E-E-A-T
+  const webPageLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `https://drakhileshgastro.com/blog/${post.slug}#webpage`,
+    "url": `https://drakhileshgastro.com/blog/${post.slug}`,
+    "name": post.metaTitle,
+    "description": post.metaDescription,
+    "inLanguage": "hi-IN",
+    "isPartOf": { "@id": "https://drakhileshgastro.com/#website" },
+    "about": { "@id": `https://drakhileshgastro.com/blog/${post.slug}` },
+    "reviewedBy": {
+      "@type": "Physician",
+      "@id": "https://drakhileshgastro.com/#physician",
+      "name": DOCTOR.name,
+    },
+    "lastReviewed": getIsoDate(post.publishedAt),
+    "medicalAudience": { "@type": "MedicalAudience", "audienceType": "Patients" },
   };
 
   const faqLd = post.faqs && post.faqs.length > 0 ? {
@@ -138,19 +160,11 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       )}
 
       <article className="min-h-screen pb-16 sm:pb-0 bg-white">
@@ -462,6 +476,33 @@ export default async function BlogPostPage({ params }: Props) {
                     <Phone size={13} /> Call {DOCTOR.phone}
                   </a>
                 </div>
+
+                {/* Cluster-0: "More Ranchi Guides" — only for Ranchi-targeted blogs */}
+                {isRanchiGuide && cluster0Related.length > 0 && (
+                  <div className="border border-primary/20 bg-primary-50/10 rounded-3xl p-5 space-y-3">
+                    <p className="text-[9px] text-primary uppercase font-bold tracking-wider font-sans">More Ranchi Guides</p>
+                    <div className="space-y-3">
+                      {cluster0Related.map((r) => (
+                        <Link
+                          key={r.slug}
+                          href={`/blog/${r.slug}`}
+                          className="flex items-start gap-2.5 group"
+                        >
+                          <span className="text-xl flex-shrink-0">{r.emoji}</span>
+                          <span className="font-hindi text-forest text-xs font-semibold leading-snug group-hover:text-primary transition-colors line-clamp-2">
+                            {r.titleHi}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                    <Link
+                      href="/blog"
+                      className="text-primary text-[10px] font-bold font-sans uppercase tracking-wider hover:text-primary-dark transition-colors"
+                    >
+                      All Health Guides →
+                    </Link>
+                  </div>
+                )}
 
               </aside>
 

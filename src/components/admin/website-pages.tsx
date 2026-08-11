@@ -195,7 +195,7 @@ const TOTAL_LIVE = CORE_PAGES.filter(p => p.status === "live").length
 const TOTAL_PAGES = CORE_PAGES.length
   + SECTIONS.reduce((s, sec) => s + sec.pages.length, 0);
 
-function SectionStatusBadge({ pages }: { pages: PageEntry[] }) {
+function SectionStatusBadge({ pages }: { pages: { status: PageStatus }[] }) {
   const live   = pages.filter(p => p.status === "live").length;
   const noData = pages.filter(p => p.status === "no-data").length;
   const noRoute= pages.filter(p => p.status === "no-route").length;
@@ -291,7 +291,7 @@ export default function WebsitePages() {
           <div style={{ padding: "14px 18px", borderBottom: "1px solid #e2e8f0", display: "flex", gap: 8, alignItems: "center" }}>
             <Globe size={15} style={{ color: "#27AE60" }} />
             <h3 style={{ fontWeight: 800, fontSize: 13, color: "#0f172a", margin: 0 }}>Core Pages</h3>
-            <SectionStatusBadge pages={CORE_PAGES as PageEntry[]} />
+            <SectionStatusBadge pages={CORE_PAGES} />
           </div>
           {CORE_PAGES
             .filter(p => {
