@@ -14,6 +14,10 @@ export interface BlogPost {
   metaDescription: string;
   sections: BlogSection[];
   faqs?: { q: string; a: string }[];
+  /** When true: blog is noindexed (robots: noindex,follow) to prevent cannibalization.
+   *  Use for pages that overlap an already-stronger URL for the same search intent.
+   *  The page remains accessible and linked — only removed from Google index. */
+  noindex?: boolean;
   /** Image generation prompts produced by blog-writer v2.0 (AEO/GEO pipeline) */
   imagePrompt?: {
     /** Featured image — tall/square, used on blog post page hero */
@@ -4131,6 +4135,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-ka-gastroenterologist",
+    // Cannibalization: overlaps best-gastroenterologist-ranchi (same commercial intent,
+    // same keyword cluster). Noindexed to consolidate ranking to the stronger page (§15).
+    noindex: true,
     titleHi: "Ranchi का Gastroenterologist — Dr. Akhilesh Yadav | Best GI Doctor",
     titleEn: "Best Gastroenterologist in Ranchi — Dr. Akhilesh Yadav | Orchid Medical Centre",
     excerptHi: "Ranchi का सबसे trusted gastroenterologist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre, HB Road। Jharkhand के patients की पहली choice।",
@@ -7133,17 +7140,28 @@ export function getBlogBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
+/** Slugs that 301-redirect to another blog — never build static pages for these
+ *  (redirect fires in next.config.ts before the page is served). */
+const REDIRECTED_BLOG_SLUGS = new Set(["stomach-doctor-ranchi"]);
+
 export function getAllBlogSlugs(): string[] {
-  return BLOG_POSTS.map((p) => p.slug);
+  // Exclude noindexed and redirected blogs from static build params
+  return BLOG_POSTS
+    .filter((p) => !p.noindex && !REDIRECTED_BLOG_SLUGS.has(p.slug))
+    .map((p) => p.slug);
 }
 
-/** For sitemap — slug + ISO publish date (capped at today, never future) */
+/** For sitemap — slug + ISO publish date (capped at today, never future).
+ *  Excludes noindexed blogs (robots: noindex) and 301-redirected slugs — both
+ *  should never appear in the sitemap per §15 / §24. */
 export function getAllBlogsForSitemap(): { slug: string; isoDate: string }[] {
   const today = new Date();
-  return BLOG_POSTS.map((p) => {
-    const parsed = parsePublishedDate(p.publishedAt);
-    // Section 24: never expose future lastmod — cap at today's date
-    const capped = parsed > today ? today : parsed;
-    return { slug: p.slug, isoDate: capped.toISOString() };
-  });
+  return BLOG_POSTS
+    .filter((p) => !p.noindex && !REDIRECTED_BLOG_SLUGS.has(p.slug))
+    .map((p) => {
+      const parsed = parsePublishedDate(p.publishedAt);
+      // Section 24: never expose future lastmod — cap at today's date
+      const capped = parsed > today ? today : parsed;
+      return { slug: p.slug, isoDate: capped.toISOString() };
+    });
 }

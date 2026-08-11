@@ -38,6 +38,13 @@ const nextConfig: NextConfig = {
         destination: "/conditions/:slug",
         permanent: true,
       },
+      // Blog cannibalization: stomach-doctor-ranchi is near-duplicate of stomach-specialist-ranchi
+      // 301 consolidates ranking signals to the more comprehensive page (§15)
+      {
+        source: "/blog/stomach-doctor-ranchi",
+        destination: "/blog/stomach-specialist-ranchi",
+        permanent: true,
+      },
     ];
   },
   images: {
