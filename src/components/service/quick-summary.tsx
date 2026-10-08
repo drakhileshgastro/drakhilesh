@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Quote, BookOpen } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
@@ -54,20 +55,22 @@ export default function QuickSummary({
                   <BookOpen size={16} className="text-primary" />
                 </div>
                 <span className="text-forest font-sans font-bold text-xs uppercase tracking-wider">
-                  Doctor's Insight
+                  Doctor&apos;s Insight
                 </span>
               </div>
 
               <p className="font-hindi text-forest/80 text-base sm:text-lg leading-relaxed italic relative z-10">
-                "{doctorNote || `लिवर और पेट से जुड़ी बीमारियों को नज़रअंदाज़ करना बाद में बड़ी जटिलता का कारण बन सकता है। सही समय पर परामर्श और जीवनशैली में सुधार ही इसका स्थायी समाधान है।`}"
+                &ldquo;{doctorNote || `लिवर और पेट से जुड़ी बीमारियों को नज़रअंदाज़ करना बाद में बड़ी जटिलता का कारण बन सकता है। सही समय पर परामर्श और जीवनशैली में सुधार ही इसका स्थायी समाधान है।`}&rdquo;
               </p>
 
               {/* Verified Badge */}
               <div className="pt-6 border-t border-border/40 flex items-center gap-4 relative z-10">
                 <div className="w-12 h-12 rounded-full overflow-hidden bg-primary-light border border-border/20 flex-shrink-0">
-                  <img
+                  <Image
                     src="/dr-akhilesh-improved.png"
                     alt="Dr. Akhilesh Yadav"
+                    width={48}
+                    height={48}
                     className="w-full h-full object-cover object-top"
                   />
                 </div>

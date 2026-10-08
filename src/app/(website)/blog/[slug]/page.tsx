@@ -13,17 +13,23 @@ import StickyCTA from "@/components/service/sticky-cta";
 import BookingForm from "@/components/service/booking-form";
 
 function getIsoDate(publishedAt: string) {
-  if (publishedAt.includes("-") || publishedAt.includes("T")) return publishedAt;
-  const parts = publishedAt.split(" ");
-  if (parts.length === 2) {
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const monthIdx = monthNames.indexOf(parts[0]);
-    if (monthIdx !== -1) {
-      const monthStr = String(monthIdx + 1).padStart(2, "0");
-      return `${parts[1]}-${monthStr}-15T00:00:00.000Z`;
+  let iso = "2026-07-14T00:00:00.000Z";
+  if (publishedAt.includes("-") || publishedAt.includes("T")) {
+    iso = publishedAt;
+  } else {
+    const parts = publishedAt.split(" ");
+    if (parts.length === 2) {
+      const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      const monthIdx = monthNames.indexOf(parts[0]);
+      if (monthIdx !== -1) {
+        const monthStr = String(monthIdx + 1).padStart(2, "0");
+        iso = `${parts[1]}-${monthStr}-15T00:00:00.000Z`;
+      }
     }
   }
-  return "2026-07-14T00:00:00.000Z";
+  const dateObj = new Date(iso);
+  const now = new Date();
+  return dateObj > now ? now.toISOString() : dateObj.toISOString();
 }
 
 interface Props {

@@ -61,12 +61,25 @@ export default async function ProcedurePage({ params }: Props) {
   
   const faqSchema = generateFAQSchema(procedure.faqs);
   const physicianSchema = generatePhysicianSchema();
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drakhileshgastro.com" },
+      { "@type": "ListItem", "position": 2, "name": "Procedures", "item": "https://drakhileshgastro.com/procedures" },
+      { "@type": "ListItem", "position": 3, "name": procedure.title, "item": `https://drakhileshgastro.com/procedures/${procedure.slug}` },
+    ],
+  };
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
         <script

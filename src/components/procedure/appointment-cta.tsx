@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
@@ -19,10 +20,12 @@ export default function AppointmentCTA({ title }: AppointmentCTAProps) {
           {/* Left Column — Large Doctor Photo */}
           <div className="md:col-span-5 w-full">
             <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-xs max-w-xs mx-auto">
-              <img
+              <Image
                 src="/dr-akhilesh-improved.png"
                 alt="Dr. Akhilesh Yadav"
-                className="w-full h-full object-cover object-top"
+                fill
+                sizes="(max-width: 768px) 100vw, 320px"
+                className="object-cover object-top"
               />
             </div>
           </div>

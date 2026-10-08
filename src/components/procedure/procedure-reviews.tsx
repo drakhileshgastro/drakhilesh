@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import { DOCTOR } from "@/lib/constants";
 
 interface Review {
   name: string;
@@ -99,7 +98,7 @@ export default function ProcedureReviews({ title, procedureSlug }: ProcedureRevi
                 </div>
 
                 <p className="font-hindi text-forest text-sm leading-relaxed mb-4 italic">
-                  "{review.text}"
+                  &ldquo;{review.text}&rdquo;
                 </p>
               </div>
               

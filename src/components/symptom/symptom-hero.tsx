@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
@@ -83,9 +84,12 @@ export default function SymptomHero({
           {/* Right Column — Doctor Photo */}
           <div className="lg:col-span-5 w-full">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
-              <img
+              <Image
                 src="/dr-akhilesh-improved.png"
                 alt="Dr. Akhilesh Yadav"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 448px"
                 className="w-full h-full object-cover object-top"
               />
             </div>

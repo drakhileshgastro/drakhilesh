@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "Dr Akhilesh Yadav Reviews Ranchi | Patient Success Stories",
   description: "Read verified Dr Akhilesh Yadav reviews in Ranchi. See recovery stories and testimonials for fatty liver, jaundice, endoscopy, and IBS treatment.",
   alternates: { canonical: "https://drakhileshgastro.com/patient-stories" },
+  openGraph: {
+    type: "website",
+    url: "https://drakhileshgastro.com/patient-stories",
+    title: "Dr Akhilesh Yadav Reviews Ranchi | Patient Success Stories",
+    description: "Read verified reviews and recovery stories for liver disease, fatty liver, jaundice, endoscopy & IBS at Orchid Medical Centre, Ranchi.",
+    images: [{ url: "https://drakhileshgastro.com/dr-akhilesh-improved.png", width: 1200, height: 630, alt: "Patient Reviews & Stories - Dr. Akhilesh Yadav" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr Akhilesh Yadav Reviews Ranchi | Patient Success Stories",
+    description: "Verified patient recovery stories and testimonials from Ranchi.",
+    images: ["https://drakhileshgastro.com/dr-akhilesh-improved.png"],
+  },
 };
 
 const PATIENT_STORIES = [
@@ -87,10 +100,38 @@ export default function PatientStoriesPage() {
     "description": "Verified recovery stories, reviews, and testimonials from patients treated by Dr. Akhilesh Yadav.",
     "url": "https://drakhileshgastro.com/patient-stories",
     "about": {
-      "@type": "Physician",
-      "name": DOCTOR.name,
-      "medicalSpecialty": "Gastroenterology"
-    }
+      "@id": "https://drakhileshgastro.com/#physician",
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drakhileshgastro.com" },
+        { "@type": "ListItem", "position": 2, "name": "Patient Stories", "item": "https://drakhileshgastro.com/patient-stories" },
+      ],
+    },
+  };
+
+  const reviewsLd = {
+    "@context": "https://schema.org",
+    "@graph": PATIENT_STORIES.map((s, idx) => ({
+      "@type": "Review",
+      "@id": `https://drakhileshgastro.com/patient-stories#review-${idx + 1}`,
+      "itemReviewed": {
+        "@type": "Physician",
+        "@id": "https://drakhileshgastro.com/#physician",
+        "name": DOCTOR.name,
+      },
+      "author": {
+        "@type": "Person",
+        "name": s.name,
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": s.rating,
+        "bestRating": "5",
+      },
+      "reviewBody": s.englishQuote,
+    })),
   };
 
   const whatsappHref = `https://wa.me/${DOCTOR.whatsappNumber}?text=${encodeURIComponent(
@@ -102,6 +143,10 @@ export default function PatientStoriesPage() {
       <script 
         type="application/ld+json" 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
+      />
+      <script 
+        type="application/ld+json" 
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsLd) }} 
       />
 
       <article className="min-h-screen pb-16 sm:pb-0">

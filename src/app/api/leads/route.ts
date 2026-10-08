@@ -58,7 +58,8 @@ export async function POST(req: NextRequest) {
 
     if (existing) {
       try {
-        await supabase
+        const updateClient = serviceClient ?? supabase;
+        await updateClient
           .from("gastro_leads")
           .update({
             notes: `Re-enquiry via ${source ?? "Website"} for: ${condition}. Original source: ${existing.source}.`,

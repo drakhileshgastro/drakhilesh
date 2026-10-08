@@ -47,12 +47,12 @@ export default function SymptomQuickSummary({
                   <BookOpen size={16} className="text-primary" />
                 </div>
                 <h3 className="text-forest font-sans font-bold text-sm uppercase tracking-wider">
-                  Doctor's Reassurance
+                  Doctor&apos;s Reassurance
                 </h3>
               </div>
 
               <p className="font-hindi text-forest/80 text-base leading-relaxed italic relative z-10">
-                "{doctorReassurance}"
+                &ldquo;{doctorReassurance}&rdquo;
               </p>
 
               <div className="border-t border-border/60 pt-4 relative z-10">

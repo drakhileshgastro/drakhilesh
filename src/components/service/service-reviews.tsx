@@ -1,5 +1,4 @@
 import { Star, CheckCircle } from "lucide-react";
-import { DOCTOR } from "@/lib/constants";
 
 interface Review {
   name: string;
@@ -10,7 +9,7 @@ interface Review {
 }
 
 interface ServiceReviewsProps {
-  title: string;
+  title?: string;
   conditionSlug: string;
 }
 
@@ -51,7 +50,7 @@ const allReviews: Record<string, Review[]> = {
   ]
 };
 
-export default function ServiceReviews({ title, conditionSlug }: ServiceReviewsProps) {
+export default function ServiceReviews({ conditionSlug }: ServiceReviewsProps) {
   const reviews = allReviews[conditionSlug] || [
     {
       name: "Amit Singh",
@@ -113,7 +112,7 @@ export default function ServiceReviews({ title, conditionSlug }: ServiceReviewsP
 
                 {/* Content Text */}
                 <p className="font-hindi text-forest/90 text-sm leading-relaxed italic">
-                  "{review.text}"
+                  &ldquo;{review.text}&rdquo;
                 </p>
 
               </div>

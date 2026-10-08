@@ -21,12 +21,12 @@ export default function DoctorAdvice({ advice }: DoctorAdviceProps) {
               <Award size={16} className="text-primary" />
             </div>
             <h3 className="text-forest font-sans font-bold text-sm uppercase tracking-wider">
-              Doctor's Personal Advice
+              Doctor&apos;s Personal Advice
             </h3>
           </div>
 
           <p className="font-hindi text-forest/90 text-lg leading-relaxed italic relative z-10">
-            "{advice}"
+            &ldquo;{advice}&rdquo;
           </p>
 
           <div className="border-t border-border/65 pt-4 relative z-10">

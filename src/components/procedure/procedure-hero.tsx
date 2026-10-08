@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
@@ -91,10 +92,13 @@ export default function ProcedureHero({
           {/* Right Block — Procedure / Doctor photograph */}
           <div className="lg:col-span-5 w-full">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto border border-border/20">
-              <img
+              <Image
                 src={procedureImage}
                 alt={title}
-                className="w-full h-full object-cover object-center"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 448px"
+                className="object-cover object-center"
               />
             </div>
           </div>

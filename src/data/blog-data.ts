@@ -1579,7 +1579,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Compare Upper GI Endoscopy and Colonoscopy. Understand their procedure differences, prep differences, sedation usage, and clinical conditions for each.",
     category: "Diagnostics",
     readTimeMins: 7,
-    publishedAt: "January 4, 2027",
+    publishedAt: "August 4, 2026",
     emoji: "🔬",
     image: "/images/endoscopy-equipment.png",
     tags: [
@@ -1625,7 +1625,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Prepare for laparoscopic cholecystectomy. Discover surgery steps, recovery guidelines, price ranges in Ranchi, and why open surgery is rarely needed now.",
     category: "Stomach Care",
     readTimeMins: 7,
-    publishedAt: "January 11, 2027",
+    publishedAt: "August 11, 2026",
     emoji: "🟢",
     image: "/images/gallstones-myths-blog.png",
     tags: [
@@ -1673,7 +1673,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Learn about Celiac disease (gluten allergy). Find a comprehensive Indian gluten-free diet chart containing grains like Ragi, Bajra, and Jowar.",
     category: "Gut Health",
     readTimeMins: 8,
-    publishedAt: "January 18, 2027",
+    publishedAt: "August 18, 2026",
     emoji: "🌾",
     image: "/images/celiac-gluten-blog.png",
     tags: [
@@ -1732,7 +1732,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Struggling with dairy? Understand Lactose Intolerance, why milk causes bloating and diarrhea, and how to manage calcium needs using curd, paneer, and plant milk.",
     category: "Gut Health",
     readTimeMins: 7,
-    publishedAt: "January 25, 2027",
+    publishedAt: "August 25, 2026",
     emoji: "🥛",
     image: "/images/lactose-intolerance-blog.png",
     tags: [
@@ -1775,7 +1775,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Why does H. Pylori infection recur? Understand antibiotic resistance, household transmission vectors, and strict hygiene steps to cure it permanently.",
     category: "Stomach Care",
     readTimeMins: 7,
-    publishedAt: "February 1, 2027",
+    publishedAt: "September 1, 2026",
     emoji: "🦠",
     image: "/images/gerd-reflux-blog.png",
     tags: [
@@ -1823,7 +1823,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Explore the metabolic link between hyperlipidemia and fatty liver. Discover foods and exercise plans to lower LDL cholesterol and liver fat simultaneously.",
     category: "Liver Health",
     readTimeMins: 7,
-    publishedAt: "February 8, 2027",
+    publishedAt: "September 8, 2026",
     emoji: "⚖️",
     image: "/images/fatty-liver-diet-blog.png",
     tags: [
@@ -1957,7 +1957,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Understand your bilirubin test results. Learn about normal bilirubin range, causes of high bilirubin (jaundice, hepatitis, cirrhosis) and when to see a liver specialist in Ranchi.",
     category: "Liver Health",
     readTimeMins: 6,
-    publishedAt: "February 15, 2027",
+    publishedAt: "September 15, 2026",
     emoji: "🧪",
     image: "/images/liver-icon.png",
     tags: [
@@ -2035,7 +2035,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerptEn: "Looking for a liver specialist doctor in Ranchi? Understand the difference between a General Physician, Gastroenterologist, and Hepatologist — and why Dr. Akhilesh Yadav's DM degree makes the difference.",
     category: "Liver Health",
     readTimeMins: 5,
-    publishedAt: "February 22, 2027",
+    publishedAt: "September 22, 2026",
     emoji: "🩺",
     image: "/images/liver-icon.png",
     tags: [
@@ -2746,6 +2746,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "piles-doctor-ranchi",
+    image: "/images/constipation-diet-blog.png",
     titleHi: "बवासीर (Piles) के लिए Ranchi में Doctor — Dr. Akhilesh Yadav",
     titleEn: "Piles Doctor in Ranchi — Diagnosis & Treatment by Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में बवासीर के लिए best gastroenterologist कौन हैं? Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre में hemorrhoids का advanced, surgery-free इलाज करते हैं।",
@@ -2833,6 +2834,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ibs-doctor-ranchi",
+    image: "/images/ibs-stress-blog.png",
     titleHi: "IBS (Irritable Bowel Syndrome) Doctor Ranchi — Dr. Akhilesh Yadav",
     titleEn: "IBS Doctor in Ranchi — Expert IBS Diagnosis & Management | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में IBS के लिए specialist doctor कौन हैं? Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre में irritable bowel syndrome का scientific, patient-centric इलाज करते हैं।",
@@ -2920,6 +2922,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "constipation-doctor-ranchi",
+    image: "/images/constipation-diet-blog.png",
     titleHi: "कब्ज (Constipation) के डॉक्टर Ranchi — Dr. Akhilesh Yadav",
     titleEn: "Constipation Doctor in Ranchi — Diagnosis & Treatment | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में कब्ज (constipation) के लिए specialist डॉक्टर: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Chronic constipation के कारण, इलाज और diet guide.",
@@ -3003,6 +3006,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "stomach-ulcer-doctor-ranchi",
+    image: "/images/stomach-specialist-ranchi-blog.png",
     titleHi: "Stomach Ulcer (Peptic Ulcer) डॉक्टर Ranchi — Dr. Akhilesh Yadav",
     titleEn: "Stomach Ulcer Doctor in Ranchi — Peptic Ulcer Treatment | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में peptic ulcer (stomach ulcer) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. H. Pylori से लेकर endoscopy तक, complete care.",
@@ -3089,6 +3093,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "colon-cancer-screening-ranchi",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "Colon Cancer Screening Ranchi — Dr. Akhilesh Yadav | Colonoscopy",
     titleEn: "Colon Cancer Screening in Ranchi — Colonoscopy & Prevention | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में colon cancer screening के लिए colonoscopy: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. 50+ age में screening क्यों ज़रूरी है — पूरी guide.",
@@ -3177,6 +3182,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "hemorrhoids-treatment-ranchi",
+    image: "/images/constipation-diet-blog.png",
     titleHi: "Hemorrhoids Treatment Ranchi — बिना Surgery के बवासीर का इलाज",
     titleEn: "Hemorrhoids Treatment in Ranchi — Non-Surgical Options | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में hemorrhoids (बवासीर) का advanced non-surgical treatment: Rubber Band Ligation, sclerotherapy और lifestyle changes. Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre.",
@@ -3251,6 +3257,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pancreatitis-doctor-ranchi",
+    image: "/images/pancreatitis-diet-blog.png",
     titleHi: "Ranchi में Pancreatitis का इलाज — अग्नाशयशोथ Specialist | Dr. Akhilesh Yadav",
     titleEn: "Pancreatitis Doctor in Ranchi — Acute & Chronic Treatment | Dr. Akhilesh Yadav",
     excerptHi: "रांची में pancreatitis (pancreas की सूजन) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre। Acute और chronic pancreatitis का complete इलाज।",
@@ -3329,6 +3336,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "liver-problem-doctor-ranchi",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Ranchi में Liver Problem Doctor — लीवर रोग के Specialist | Dr. Akhilesh Yadav",
     titleEn: "Liver Problem Doctor in Ranchi — Hepatology Expert | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में liver की समस्या के specialist: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre। Fatty liver, hepatitis, cirrhosis, jaundice — complete liver care।",
@@ -3407,6 +3415,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "digestive-specialist-ranchi",
+    image: "/images/stomach-specialist-ranchi-blog.png",
     titleHi: "रांची में Digestive Specialist — पाचन तंत्र के Expert | Dr. Akhilesh Yadav",
     titleEn: "Digestive Specialist in Ranchi — Complete GI Care | Dr. Akhilesh Yadav",
     excerptHi: "रांची में digestive system के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre। हर प्रकार की पाचन समस्याओं का सम्पूर्ण इलाज।",
@@ -3477,6 +3486,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "hepatologist-ranchi",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Hepatologist Ranchi — लीवर के Super-Specialist | Dr. Akhilesh Yadav",
     titleEn: "Hepatologist in Ranchi — Liver Disease Expert | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में hepatologist (liver specialist) कौन हैं? Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre। Hepatitis, cirrhosis, fatty liver का advanced care।",
@@ -3557,6 +3567,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "endoscopy-cost-ranchi",
+    image: "/images/painless-endoscopy-blog.png",
     titleHi: "Endoscopy Cost Ranchi — OGD Scopy खर्चा | Dr. Akhilesh Yadav",
     titleEn: "Endoscopy Cost in Ranchi — OGD Scopy Price & What to Expect | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में endoscopy (OGD Scopy) का खर्चा कितना है? Dr. Akhilesh Yadav — Orchid Medical Centre — में affordable endoscopy और complete procedure guide।",
@@ -3635,6 +3646,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "colonoscopy-cost-ranchi",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "रांची में Colonoscopy का खर्चा — Preparation और डॉक्टर | Dr. Akhilesh Yadav",
     titleEn: "Colonoscopy Cost in Ranchi — Price, Preparation & Expert Care | Dr. Akhilesh Yadav",
     excerptHi: "रांची में colonoscopy का खर्चा कितना है? Dr. Akhilesh Yadav — Orchid Medical Centre — में affordable colonoscopy, complete preparation guide और expert colonoscopist।",
@@ -3704,6 +3716,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "eus-ranchi",
+    image: "/images/procedure-room.png",
     titleHi: "रांची में EUS (Endoscopic Ultrasound) — Dr. Akhilesh Yadav | Orchid Medical Centre",
     titleEn: "EUS (Endoscopic Ultrasound) in Ranchi — Advanced GI Diagnosis | Dr. Akhilesh Yadav",
     excerptHi: "रांची में EUS (Endoscopic Ultrasound) — advanced GI diagnostic procedure — Dr. Akhilesh Yadav करते हैं Orchid Medical Centre में। Pancreas, bile duct, submucosal lesions।",
@@ -3778,6 +3791,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "liver-biopsy-ranchi",
+    image: "/images/fibroscan-test-blog.png",
     titleHi: "रांची में Liver Biopsy — Procedure, Cost और कब ज़रूरी है | Dr. Akhilesh Yadav",
     titleEn: "Liver Biopsy in Ranchi — Procedure, Cost & When Needed | Dr. Akhilesh Yadav",
     excerptHi: "रांची में liver biopsy कब ज़रूरी है और कैसे होती है? Dr. Akhilesh Yadav — Orchid Medical Centre — में liver biopsy की पूरी guide और FibroScan alternative।",
@@ -3847,6 +3861,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "colon-polyp-removal-ranchi",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "रांची में Colon Polyp Removal — Colonoscopic Polypectomy | Dr. Akhilesh Yadav",
     titleEn: "Colon Polyp Removal in Ranchi — Polypectomy | Dr. Akhilesh Yadav",
     excerptHi: "रांची में colon polyp removal (colonoscopic polypectomy) — Dr. Akhilesh Yadav — Orchid Medical Centre में। Cancer होने से पहले polyp removal कैसे cancer रोकती है — guide।",
@@ -3913,6 +3928,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-pet-ke-doctor",
+    image: "/images/stomach-doctor-ranchi-blog.png",
     titleHi: "Ranchi में पेट के Doctor — Dr. Akhilesh Yadav | Gastroenterologist",
     titleEn: "Pet Ke Doctor in Ranchi — Best Stomach Specialist | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में पेट के doctor कौन हैं? Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre में stomach, intestine और liver की सभी समस्या का इलाज करते हैं।",
@@ -3994,6 +4010,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-liver-ka-doctor",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Ranchi में Liver का Doctor — Dr. Akhilesh Yadav | Hepatologist",
     titleEn: "Liver Doctor in Ranchi — Hepatologist | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में liver का doctor कौन है? Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre में fatty liver, hepatitis, jaundice, cirrhosis का expert इलाज।",
@@ -4066,6 +4083,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-acidity-ka-ilaj",
+    image: "/images/acidity-doctor-ranchi-blog.png",
     titleHi: "Ranchi में Acidity का इलाज — GERD Treatment | Dr. Akhilesh Yadav",
     titleEn: "Acidity Treatment in Ranchi — GERD Specialist | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में acidity और GERD का इलाज: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. सिर्फ antacid से नहीं, सही diagnosis और lasting management.",
@@ -4135,6 +4153,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-ka-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     // Cannibalization: overlaps best-gastroenterologist-ranchi (same commercial intent,
     // same keyword cluster). Noindexed to consolidate ranking to the stronger page (§15).
     noindex: true,
@@ -4207,6 +4226,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-fatty-liver-ka-ilaj",
+    image: "/images/fatty-liver-diet-blog.png",
     titleHi: "Ranchi में Fatty Liver का इलाज — Diet, Exercise & Treatment | Dr. Akhilesh Yadav",
     titleEn: "Fatty Liver Treatment in Ranchi — Diet, Exercise & Medical Care | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में fatty liver (NAFLD/NASH) का इलाज: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Weight loss, diet, exercise और medication का complete guide.",
@@ -4282,6 +4302,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-piles-ka-ilaj",
+    image: "/images/constipation-diet-blog.png",
     titleHi: "Ranchi में Piles का इलाज — बवासीर Treatment | Dr. Akhilesh Yadav",
     titleEn: "Piles Treatment in Ranchi — Bawaseer Ka Ilaj | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में piles (बवासीर) का इलाज बिना surgery के — Dr. Akhilesh Yadav — Orchid Medical Centre. Rubber Band Ligation, diet tips और complete hemorrhoid guide.",
@@ -4351,6 +4372,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-jaundice-ka-ilaj",
+    image: "/images/jaundice-treatment-ranchi-blog.png",
     titleHi: "Ranchi में Jaundice का इलाज — पीलिया Treatment | Dr. Akhilesh Yadav",
     titleEn: "Jaundice Treatment in Ranchi — Peeliya Ka Ilaj | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में jaundice (पीलिया) का इलाज: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Cause diagnosis और complete liver care.",
@@ -4420,6 +4442,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "kabj-ka-doctor-ranchi",
+    image: "/images/constipation-diet-blog.png",
     titleHi: "कब्ज का डॉक्टर Ranchi — Chronic Constipation Specialist | Dr. Akhilesh Yadav",
     titleEn: "Kabj Doctor in Ranchi — Chronic Constipation Specialist | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में कब्ज (constipation) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. सालों की कब्ज का सही diagnosis और इलाज.",
@@ -4491,6 +4514,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pet-ki-jalan-ka-ilaj-ranchi",
+    image: "/images/acidity-doctor-ranchi-blog.png",
     titleHi: "पेट की जलन का इलाज Ranchi — Heartburn & GERD | Dr. Akhilesh Yadav",
     titleEn: "Heartburn & Pet Ki Jalan Treatment in Ranchi | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में पेट की जलन और सीने की जलन (heartburn/GERD) का इलाज: Dr. Akhilesh Yadav — Orchid Medical Centre. Antacid से आगे — सही diagnosis और lasting relief.",
@@ -4561,6 +4585,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-hepatitis-treatment",
+    image: "/images/jaundice-treatment-ranchi-blog.png",
     titleHi: "Ranchi में Hepatitis Treatment — Hepatitis B & C का इलाज | Dr. Akhilesh Yadav",
     titleEn: "Hepatitis Treatment in Ranchi — Hepatitis B & C | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में Hepatitis B और C का advanced इलाज: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Modern DAA से Hepatitis C cure.",
@@ -4637,6 +4662,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "crohns-disease-ranchi",
+    image: "/images/ibs-stress-blog.png",
     titleHi: "रांची में Crohn's Disease — IBD Specialist | Dr. Akhilesh Yadav",
     titleEn: "Crohn's Disease Specialist in Ranchi — Diagnosis & Treatment | Dr. Akhilesh Yadav",
     excerptHi: "रांची में Crohn's disease (IBD) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Advanced diagnosis, biologics और complete IBD care.",
@@ -4711,6 +4737,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "colitis-doctor-ranchi",
+    image: "/images/ibs-stress-blog.png",
     titleHi: "रांची में Colitis Doctor — Ulcerative Colitis Specialist | Dr. Akhilesh Yadav",
     titleEn: "Colitis Doctor in Ranchi — Ulcerative Colitis Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में Ulcerative Colitis के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Bleeding diarrhea से remission तक — complete IBD care.",
@@ -4780,6 +4807,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "digestive-disease-ranchi",
+    image: "/images/stomach-specialist-ranchi-blog.png",
     titleHi: "Digestive Disease Ranchi — पाचन रोग के Specialist | Dr. Akhilesh Yadav",
     titleEn: "Digestive Disease Specialist in Ranchi — Expert GI Care | Dr. Akhilesh Yadav",
     excerptHi: "रांची में digestive diseases के expert: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. GERD से liver cirrhosis तक — सभी पाचन रोग का advanced इलाज।",
@@ -4852,6 +4880,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pet-dard-doctor-ranchi",
+    image: "/images/stomach-doctor-ranchi-blog.png",
     titleHi: "पेट दर्द Doctor Ranchi — Abdominal Pain Specialist | Dr. Akhilesh Yadav",
     titleEn: "Abdominal Pain Doctor in Ranchi — Pet Dard Specialist | Dr. Akhilesh Yadav",
     excerptHi: "Ranchi में पेट दर्द (abdominal pain) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre। Chronic या severe पेट दर्द का सही diagnosis और इलाज।",
@@ -4921,6 +4950,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "kala-pakhana-doctor-ranchi",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "काला पाखाना Doctor Ranchi — Black Stool Specialist | Dr. Akhilesh Yadav",
     titleEn: "Black Stool (Kala Paakhana) Doctor in Ranchi — GI Bleeding | Dr. Akhilesh Yadav",
     excerptHi: "काला पाखाना (black/tarry stool) — upper GI bleeding का sign। Ranchi में Dr. Akhilesh Yadav — Orchid Medical Centre — emergency endoscopy और complete GI bleeding management।",
@@ -4992,6 +5022,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "gas-problem-doctor-ranchi",
+    image: "/images/stomach-specialist-ranchi-blog.png",
     titleHi: "Gas Problem Doctor Ranchi — Bloating & Gas का इलाज | Dr. Akhilesh Yadav",
     titleEn: "Gas Problem Doctor in Ranchi — Bloating & Flatulence Treatment | Dr. Akhilesh Yadav",
     excerptHi: "रांची में gas problem और bloating के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Gas के causes, diet tips और medical treatment।",
@@ -5062,6 +5093,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ulti-ka-doctor-ranchi",
+    image: "/images/acidity-doctor-ranchi-blog.png",
     titleHi: "उल्टी का Doctor Ranchi — Nausea & Vomiting Specialist | Dr. Akhilesh Yadav",
     titleEn: "Nausea & Vomiting Doctor in Ranchi — GI Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में बार-बार उल्टी और nausea के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Causes, diagnosis और effective treatment।",
@@ -5132,6 +5164,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "jharkhand-mein-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Jharkhand में Gastroenterologist — DM GI Doctor | Dr. Akhilesh Yadav Ranchi",
     titleEn: "Gastroenterologist in Jharkhand — Dr. Akhilesh Yadav | Ranchi's Top GI Specialist",
     excerptHi: "Jharkhand में DM Gastroenterologist कौन हैं? Dr. Akhilesh Yadav — Orchid Medical Centre, Ranchi — Jharkhand के patients के लिए advanced GI care. Endoscopy, ERCP, EUS available।",
@@ -5203,6 +5236,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "bokaro-mein-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Bokaro में Gastroenterologist — Ranchi में Dr. Akhilesh Yadav",
     titleEn: "Gastroenterologist Near Bokaro — Dr. Akhilesh Yadav in Ranchi",
     excerptHi: "Bokaro से Ranchi में gastroenterologist: Dr. Akhilesh Yadav — Orchid Medical Centre. Bokaro के patients के लिए Ranchi में advanced GI care — 1.5 घंटे में।",
@@ -5273,6 +5307,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "jamshedpur-se-ranchi-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Jamshedpur से Ranchi Gastroenterologist — Dr. Akhilesh Yadav | GI Care",
     titleEn: "Gastroenterologist Near Jamshedpur — Dr. Akhilesh Yadav in Ranchi",
     excerptHi: "Jamshedpur से Ranchi में gastroenterologist: Dr. Akhilesh Yadav — Orchid Medical Centre. Jamshedpur के patients के लिए Ranchi में DM level GI care।",
@@ -5344,6 +5379,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-ibd-treatment",
+    image: "/images/ibs-stress-blog.png",
     titleHi: "रांची में IBD Treatment — Crohn's & Colitis का इलाज | Dr. Akhilesh Yadav",
     titleEn: "IBD Treatment in Ranchi — Crohn's & Colitis | Dr. Akhilesh Yadav",
     excerptHi: "रांची में Inflammatory Bowel Disease (IBD) का advanced treatment: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Biologics और complete IBD management।",
@@ -5418,6 +5454,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "swallowing-problem-ranchi",
+    image: "/images/stomach-specialist-ranchi-blog.png",
     titleHi: "Swallowing Problem Ranchi — निगलने में तकलीफ | Dr. Akhilesh Yadav",
     titleEn: "Swallowing Problem (Dysphagia) in Ranchi — Diagnosis & Treatment | Dr. Akhilesh Yadav",
     excerptHi: "रांची में निगलने में तकलीफ (dysphagia) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Endoscopy से सही diagnosis और treatment।",
@@ -5487,6 +5524,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "rectal-bleeding-ranchi",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "Rectal Bleeding Ranchi — Toilet में Blood का Doctor | Dr. Akhilesh Yadav",
     titleEn: "Rectal Bleeding in Ranchi — Blood in Stool Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में rectal bleeding (toilet में blood) के specialist: Dr. Akhilesh Yadav — DM Gastroenterology — Orchid Medical Centre. Causes, diagnosis और treatment guide।",
@@ -5557,6 +5595,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "unexplained-weight-loss-ranchi",
+    image: "/images/doctor-explaining-procedure.png",
     titleHi: "Unexplained Weight Loss Ranchi — बिना वजह वज़न घटना | Dr. Akhilesh Yadav",
     titleEn: "Unexplained Weight Loss in Ranchi — GI Causes & Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में बिना वजह वज़न घटना (unexplained weight loss) के GI specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Alarm symptom की complete investigation guide।",
@@ -5627,6 +5666,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "liver-cirrhosis-ranchi",
+    image: "/images/liver-icon.png",
     titleHi: "Liver Cirrhosis Ranchi — Cirrhosis का इलाज | Dr. Akhilesh Yadav",
     titleEn: "Liver Cirrhosis Treatment in Ranchi — Expert Hepatology | Dr. Akhilesh Yadav",
     excerptHi: "रांची में liver cirrhosis का इलाज: Dr. Akhilesh Yadav — DM Gastroenterology & Hepatology — Orchid Medical Centre. Ascites, varices, encephalopathy का complete management।",
@@ -5698,6 +5738,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "endoscopy-clinic-ranchi",
+    image: "/images/painless-endoscopy-blog.png",
     titleHi: "Endoscopy Clinic Ranchi — Best OGD Scopy Centre | Dr. Akhilesh Yadav",
     titleEn: "Best Endoscopy Clinic in Ranchi — OGD Scopy Centre | Dr. Akhilesh Yadav",
     excerptHi: "रांची में best endoscopy clinic: Orchid Medical Centre — Dr. Akhilesh Yadav — DM Gastroenterology. HD endoscopy, sedation, same-day results. OGD Scopy Ranchi।",
@@ -5768,6 +5809,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-ercp-cost",
+    image: "/images/endoscopy-equipment.png",
     titleHi: "रांची में ERCP Cost — Bile Duct Procedure का खर्चा | Dr. Akhilesh Yadav",
     titleEn: "ERCP Cost in Ranchi — Bile Duct Procedure Price | Dr. Akhilesh Yadav",
     excerptHi: "रांची में ERCP (Endoscopic Retrograde Cholangiopancreatography) का खर्चा: Dr. Akhilesh Yadav — Orchid Medical Centre. Bile duct stones, stenting — complete guide और cost।",
@@ -5838,6 +5880,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-eus-test",
+    image: "/images/procedure-room.png",
     titleHi: "रांची में EUS Test — Endoscopic Ultrasound क्या है | Dr. Akhilesh Yadav",
     titleEn: "EUS Test in Ranchi — Endoscopic Ultrasound Explained | Dr. Akhilesh Yadav",
     excerptHi: "रांची में EUS (Endoscopic Ultrasound) test: Dr. Akhilesh Yadav — Orchid Medical Centre. Pancreas, bile duct, submucosal tumors की best imaging — कब और क्यों ज़रूरी है।",
@@ -5908,6 +5951,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "capsule-endoscopy-ranchi",
+    image: "/images/endoscopy-equipment.png",
     titleHi: "Capsule Endoscopy Ranchi — Small Bowel Imaging | Dr. Akhilesh Yadav",
     titleEn: "Capsule Endoscopy in Ranchi — Small Intestine Imaging | Dr. Akhilesh Yadav",
     excerptHi: "रांची में capsule endoscopy (capsule camera) — small intestine की imaging के लिए Dr. Akhilesh Yadav — Orchid Medical Centre. कब ज़रूरी है और क्या expect करें।",
@@ -5977,6 +6021,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-colonoscopy-preparation",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "रांची में Colonoscopy की Preparation — Complete Guide | Dr. Akhilesh Yadav",
     titleEn: "Colonoscopy Preparation Guide in Ranchi — Step-by-Step | Dr. Akhilesh Yadav",
     excerptHi: "रांची में colonoscopy preparation: Dr. Akhilesh Yadav — Orchid Medical Centre. Step-by-step bowel prep guide — क्या खाएं, क्या avoid करें, medicines और timing।",
@@ -6048,6 +6093,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "hazaribagh-se-ranchi-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Hazaribagh से Ranchi में Gastroenterologist — Dr. Akhilesh Yadav",
     titleEn: "Gastroenterologist from Hazaribagh — Ranchi Specialist Dr. Akhilesh Yadav",
     excerptHi: "Hazaribagh से Ranchi gastroenterologist देखने की ज़रूरत है? Dr. Akhilesh Yadav — Orchid Medical Centre, HB Road. Hazaribagh के patients के लिए guide — कैसे आएं, क्या expect करें।",
@@ -6127,6 +6173,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "dhanbad-se-ranchi-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Dhanbad से Ranchi Gastroenterologist — Dr. Akhilesh Yadav GI Specialist",
     titleEn: "Gastroenterologist from Dhanbad — Ranchi GI Specialist Dr. Akhilesh Yadav",
     excerptHi: "Dhanbad से Ranchi में gastroenterologist की ज़रूरत? Dr. Akhilesh Yadav — Orchid Medical Centre. DM Gastroenterologist — liver, endoscopy, IBD, ERCP — complete GI care।",
@@ -6193,6 +6240,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "deoghar-se-ranchi-gastroenterologist",
+    image: "/images/gastroenterologist-in-ranchi-blog.png",
     titleHi: "Deoghar से Ranchi Gastroenterologist — Dr. Akhilesh Yadav Liver Specialist",
     titleEn: "Gastroenterologist from Deoghar — Ranchi Liver Specialist Dr. Akhilesh Yadav",
     excerptHi: "Deoghar और Santhal Pargana से Ranchi में gastroenterologist — Dr. Akhilesh Yadav — Orchid Medical Centre. Liver disease, endoscopy, ERCP — complete GI care for Deoghar patients।",
@@ -6259,6 +6307,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "orchid-medical-centre-gastro-ranchi",
+    image: "/images/hero-consultation.jpg",
     titleHi: "Orchid Medical Centre Ranchi — Gastroenterology Clinic | Dr. Akhilesh Yadav",
     titleEn: "Orchid Medical Centre Ranchi — Gastroenterology Clinic | Dr. Akhilesh Yadav",
     excerptHi: "Orchid Medical Centre, HB Road, Ranchi — Dr. Akhilesh Yadav — DM Gastroenterology। Facilities, timing, procedures, location guide और appointment information — complete guide।",
@@ -6338,6 +6387,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-liver-test",
+    image: "/images/sgpt-sgot-blog.png",
     titleHi: "रांची में Liver Test — कौनसा Test, कब करवाएं | Dr. Akhilesh Yadav",
     titleEn: "Liver Tests in Ranchi — Which Test, When & Why | Dr. Akhilesh Yadav",
     excerptHi: "रांची में liver test guide: LFT, viral markers, fibroscan, liver biopsy — कौनसा test कब ज़रूरी है। Dr. Akhilesh Yadav — Orchid Medical Centre — complete liver test guide।",
@@ -6410,6 +6460,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-stomach-cancer-screening",
+    image: "/images/colonoscopy-equipment.png",
     titleHi: "रांची में Stomach Cancer Screening — Gastric Cancer Detection | Dr. Akhilesh Yadav",
     titleEn: "Stomach Cancer Screening in Ranchi — Early Gastric Cancer Detection | Dr. Akhilesh Yadav",
     excerptHi: "रांची में stomach cancer (gastric cancer) screening: Dr. Akhilesh Yadav — Orchid Medical Centre. किसे करवाना चाहिए, कब करवाना चाहिए, और क्या expect करें।",
@@ -6487,6 +6538,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-food-allergy-doctor",
+    image: "/images/celiac-gluten-blog.png",
     titleHi: "रांची में Food Allergy Doctor — GI Food Intolerance | Dr. Akhilesh Yadav",
     titleEn: "Food Allergy Doctor in Ranchi — GI Food Intolerance Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में food allergy और food intolerance specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Celiac disease, lactose intolerance, IBS-food triggers — diagnosis और management।",
@@ -6552,6 +6604,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-ascites-treatment",
+    image: "/images/liver-icon.png",
     titleHi: "रांची में Ascites Treatment — पेट में पानी का इलाज | Dr. Akhilesh Yadav",
     titleEn: "Ascites Treatment in Ranchi — Abdominal Fluid Management | Dr. Akhilesh Yadav",
     excerptHi: "रांची में ascites (पेट में पानी) का treatment: Dr. Akhilesh Yadav — Orchid Medical Centre. Liver cirrhosis से जुड़ी ascites — diuretics, paracentesis, SBP prevention — complete guide।",
@@ -6618,6 +6671,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-fatty-liver-diet",
+    image: "/images/fatty-liver-diet-blog.png",
     titleHi: "रांची में Fatty Liver Diet — क्या खाएं क्या ना खाएं | Dr. Akhilesh Yadav",
     titleEn: "Fatty Liver Diet in Ranchi — What to Eat & Avoid | Dr. Akhilesh Yadav",
     excerptHi: "रांची में fatty liver diet guide: Dr. Akhilesh Yadav — Orchid Medical Centre. Jharkhand के local foods में क्या ठीक है, क्या avoid करें — complete diet plan।",
@@ -6700,6 +6754,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-h-pylori-treatment",
+    image: "/images/stomach-specialist-ranchi-blog.png",
     titleHi: "रांची में H. Pylori Treatment — H Pylori का इलाज | Dr. Akhilesh Yadav",
     titleEn: "H. Pylori Treatment in Ranchi — Helicobacter Pylori Cure | Dr. Akhilesh Yadav",
     excerptHi: "रांची में H. Pylori (Helicobacter Pylori) treatment: Dr. Akhilesh Yadav — Orchid Medical Centre. Triple therapy, quadruple therapy, resistance patterns — complete treatment guide।",
@@ -6771,6 +6826,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "gallstone-doctor-ranchi",
+    image: "/images/gallstones-myths-blog.png",
     titleHi: "Gallstone Doctor Ranchi — पित्थे की पथरी का इलाज | Dr. Akhilesh Yadav",
     titleEn: "Gallstone Doctor in Ranchi — Gallbladder Stone Treatment | Dr. Akhilesh Yadav",
     excerptHi: "रांची में gallstone (पित्थे की पथरी) के specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Gallstone diagnosis, ERCP (bile duct stone), और surgical referral — complete guide।",
@@ -6840,6 +6896,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-diarrhea-doctor",
+    image: "/images/ibs-stress-blog.png",
     titleHi: "रांची में Diarrhea Doctor — दस्त का Specialist | Dr. Akhilesh Yadav",
     titleEn: "Diarrhea Doctor in Ranchi — Loose Motion Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में diarrhea (दस्त/loose motion) specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Acute vs chronic diarrhea — कब alarm है, कब routine — diagnosis और treatment।",
@@ -6907,6 +6964,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-nausea-doctor",
+    image: "/images/acidity-doctor-ranchi-blog.png",
     titleHi: "रांची में Nausea Doctor — उल्टी की Feeling का Specialist | Dr. Akhilesh Yadav",
     titleEn: "Nausea Doctor in Ranchi — Chronic Nausea & Vomiting Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में nausea (उल्टी आने की feeling) specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Chronic nausea, vomiting causes — GI, neurological, metabolic — diagnosis guide।",
@@ -6985,6 +7043,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-abdominal-pain-doctor",
+    image: "/images/stomach-doctor-ranchi-blog.png",
     titleHi: "रांची में Abdominal Pain Doctor — पेट दर्द Specialist | Dr. Akhilesh Yadav",
     titleEn: "Abdominal Pain Doctor in Ranchi — Stomach Pain Specialist | Dr. Akhilesh Yadav",
     excerptHi: "रांची में पेट दर्द (abdominal pain) specialist: Dr. Akhilesh Yadav — Orchid Medical Centre. Acute vs chronic abdominal pain — causes, red flags, diagnosis और treatment।",
@@ -7052,6 +7111,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "ranchi-mein-liver-cancer-screening",
+    image: "/images/liver-icon.png",
     titleHi: "रांची में Liver Cancer Screening — HCC Detection | Dr. Akhilesh Yadav",
     titleEn: "Liver Cancer Screening in Ranchi — HCC Early Detection | Dr. Akhilesh Yadav",
     excerptHi: "रांची में liver cancer (HCC) screening: Dr. Akhilesh Yadav — Orchid Medical Centre. Cirrhosis patients में 6-महीने का surveillance — ultrasound + AFP — early detection guide।",

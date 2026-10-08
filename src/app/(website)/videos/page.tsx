@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   description:
     "Watch educational videos on liver disease, fatty liver, endoscopy, gastroenterology, and digestive health by Dr. Akhilesh Yadav, DM Gastroenterologist, Ranchi.",
   alternates: { canonical: "https://drakhileshgastro.com/videos" },
+  openGraph: {
+    type: "website",
+    url: "https://drakhileshgastro.com/videos",
+    title: "Patient Education Videos | Dr. Akhilesh Yadav, Ranchi",
+    description: "Watch educational videos on liver disease, fatty liver, endoscopy & gut health by Dr. Akhilesh Yadav, Ranchi.",
+    images: [{ url: "https://drakhileshgastro.com/dr-akhilesh-improved.png", width: 1200, height: 630, alt: "Patient Education Videos - Dr. Akhilesh Yadav" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Patient Education Videos | Dr. Akhilesh Yadav, Ranchi",
+    description: "Educational videos on digestive and liver health in Hindi.",
+    images: ["https://drakhileshgastro.com/dr-akhilesh-improved.png"],
+  },
 };
 
 const VIDEO_TOPICS = [
@@ -31,7 +44,7 @@ export default function VideosPage() {
             स्वास्थ्य शिक्षा Videos
           </h1>
           <p className="text-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-            Dr. Akhilesh Yadav explain complex digestive and liver conditions in simple Hindi — so you understand your health better.
+            Dr. Akhilesh Yadav explains complex digestive and liver conditions in simple Hindi — so you understand your health better.
           </p>
         </div>
       </section>

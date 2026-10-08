@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { Phone, MessageCircle, Star, CheckCircle, ChevronDown, Check } from "lucide-react";
+import Image from "next/image";
+import { CheckCircle, ChevronDown, Check } from "lucide-react";
 import { cn } from "@/lib/cn";
-import { DOCTOR, CONDITIONS, TRUST_STATS } from "@/lib/constants";
+import { DOCTOR, CONDITIONS } from "@/lib/constants";
 import LiveCounter from "@/components/layout/live-counter";
 
 export default function HeroSection() {
@@ -79,11 +79,14 @@ export default function HeroSection() {
           {/* Right Block — Custom Consultation Reassuring Image */}
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
-              <img
+              <Image
                 src="/images/hero-consultation.jpg"
                 alt="Dr. Akhilesh Yadav consulting a patient in a warm and bright clinic room"
                 title="Dr. Akhilesh Yadav - Gastroenterology Consultation Ranchi"
-                className="w-full h-full object-cover object-center"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 448px"
+                className="object-cover object-center"
               />
             </div>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { GraduationCap, Award, Users, Heart, Building2, Calendar } from "lucide-react";
+import Image from "next/image";
+import { Building2, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/constants";
 
 const credentialsTimeline = [
@@ -19,10 +20,12 @@ export default function MeetDoctorSection() {
           {/* Left — Doctor Photo & Quick Affiliations */}
           <div className="space-y-6">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto lg:mx-0">
-              <img
+              <Image
                 src="/dr-akhilesh-improved.png"
                 alt="Dr. Akhilesh Yadav - DM Gastroenterology, Liver Doctor in Ranchi"
                 title="Dr. Akhilesh Yadav - Hepatologist & Gastroenterologist"
+                fill
+                sizes="(max-width: 1024px) 100vw, 448px"
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -58,10 +61,10 @@ export default function MeetDoctorSection() {
                 Why I Became a Gastroenterologist
               </h3>
               <p className="italic text-forest/90 font-medium">
-                "Many patients reach me after suffering for months because they assume stomach problems are 'normal.' My goal is to diagnose the root cause early and explain treatment in language every patient understands."
+                &ldquo;Many patients reach me after suffering for months because they assume stomach problems are &apos;normal.&apos; My goal is to diagnose the root cause early and explain treatment in language every patient understands.&rdquo;
               </p>
               <p className="font-hindi text-forest font-semibold leading-relaxed pt-3 border-t border-border/40">
-                "मेरा उद्देश्य केवल बीमारी का इलाज करना नहीं है। मैं चाहता हूँ कि हर मरीज अपनी बीमारी को समझे, सही सलाह पाए, और बिना किसी संकोच के — अपनी भाषा में — इलाज कराए।"
+                &ldquo;मेरा उद्देश्य केवल बीमारी का इलाज करना नहीं है। मैं चाहता हूँ कि हर मरीज अपनी बीमारी को समझे, सही सलाह पाए, और बिना किसी संकोच के — अपनी भाषा में — इलाज कराए।&rdquo;
               </p>
             </div>
 

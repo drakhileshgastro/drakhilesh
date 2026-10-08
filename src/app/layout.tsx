@@ -172,8 +172,6 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <link rel="preconnect" href="https://dfevnuornvrthufbrdop.supabase.co" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://dfevnuornvrthufbrdop.supabase.co" />
-        <link rel="alternate" hrefLang="en-IN" href="https://drakhileshgastro.com" />
-        <link rel="alternate" hrefLang="x-default" href="https://drakhileshgastro.com" />
         <link rel="alternate" type="application/rss+xml" title="Dr. Akhilesh Yadav — Health Blog RSS Feed" href="https://drakhileshgastro.com/rss.xml" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-72x72.png" />

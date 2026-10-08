@@ -23,6 +23,15 @@ export default function CrmDashboard() {
   const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const fetchLeads = async () => {
+    const { data } = await supabase
+      .from("gastro_leads")
+      .select("*")
+      .order("created_at", { ascending: false });
+    setLeads((data as Lead[]) ?? []);
+    setLoading(false);
+  };
+
   useEffect(() => {
     fetchLeads();
 
@@ -35,15 +44,6 @@ export default function CrmDashboard() {
 
     return () => { supabase.removeChannel(channel); };
   }, []);
-
-  async function fetchLeads() {
-    const { data } = await supabase
-      .from("gastro_leads")
-      .select("*")
-      .order("created_at", { ascending: false });
-    setLeads((data as Lead[]) ?? []);
-    setLoading(false);
-  }
 
   const today = new Date().toDateString();
   const todayLeads = leads.filter((l) => new Date(l.created_at).toDateString() === today);
