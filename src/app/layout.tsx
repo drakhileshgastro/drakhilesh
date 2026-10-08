@@ -72,6 +72,9 @@ export const metadata: Metadata = {
     description: "Expert liver & digestive care. Book appointment online.",
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: "mQ0VPMvlTRfXI8KP0gUA_VF-huP1ue_39JL86qhtXXU",
+  },
   other: {
     "theme-color": "#27AE60",
     "mobile-web-app-capable": "yes",
