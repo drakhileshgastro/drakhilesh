@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Dr Akhilesh Yadav",
     "endoscopy Ranchi",
     "fatty liver treatment Jharkhand",
-    "best gastroenterologist Jharkhand",
+    "stomach specialist Ranchi",
     "orchid medical centre Ranchi",
   ],
   alternates: {

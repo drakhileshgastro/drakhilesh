@@ -39,11 +39,11 @@ export default function DietHubPage() {
             Diet Charts by Dr. Akhilesh Yadav
           </h1>
           <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", lineHeight: 1.7, margin: "0 0 24px" }}>
-            Khane se hi zyada bimaariyaan theek hoti hain. Neeche se apni bimari ka
+            Diet needs differ with health conditions. Neeche se diet information ka
             free diet chart download karein — PDF format mein, Hindi mein.
           </p>
           <p style={{ fontSize: 14, color: "#bbf7d0", fontStyle: "italic" }}>
-            All diet charts reviewed by Dr. Akhilesh Yadav, DM Gastroenterology, Orchid Medical Centre, Ranchi
+            General diet information; physician review pending. Discuss an individual diet plan with your treating team.
           </p>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function DietHubPage() {
               href={`/diet/${diet.slug}`}
               style={{ textDecoration: "none" }}
             >
-              <div style={{
+              <div className="diet-hub-card" style={{
                 background: "#fff",
                 borderRadius: 18,
                 border: "1px solid #e2e8f0",
@@ -75,18 +75,6 @@ export default function DietHubPage() {
                 flexDirection: "column",
                 gap: 12,
               }}
-                onMouseEnter={e => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.boxShadow = "0 8px 30px rgba(39,174,96,0.15)";
-                  el.style.transform = "translateY(-2px)";
-                  el.style.borderColor = "#27AE60";
-                }}
-                onMouseLeave={e => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.boxShadow = "";
-                  el.style.transform = "";
-                  el.style.borderColor = "#e2e8f0";
-                }}
               >
                 <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 8 }}>
                   <div>

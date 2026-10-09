@@ -280,7 +280,7 @@ export default function DietChartPage({ diet }: Props) {
           {/* Tips section */}
           <div style={{ background: "#fff", borderRadius: 16, border: "1px solid #e2e8f0", padding: "20px 24px" }}>
             <h2 style={{ fontWeight: 800, fontSize: 15, color: "#1A2E1A", margin: "0 0 16px" }}>
-              💡 Dr. Akhilesh ke Important Tips
+              💡 General Diet Information
             </h2>
             <ol style={{ margin: 0, paddingLeft: 20, display: "flex", flexDirection: "column", gap: 12 }}>
               {diet.tips.map((tip, i) => (

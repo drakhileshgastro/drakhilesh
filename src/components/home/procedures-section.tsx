@@ -30,7 +30,7 @@ const PROCEDURES_DATA: ProcedureItem[] = [
     type: "diagnostic",
     image: "/images/doctor-explaining-procedure.png",
     duration: "10 - 15 Mins",
-    sedation: "Light Sedation (Painless)",
+    sedation: "Sedation options: discuss suitability",
     recovery: "Same Day (1-2 Hours)",
     clinicalNote: "Essential for evaluating acid reflux, chronic stomach pain, or persistent nausea.",
     link: "/procedures/endoscopy",
@@ -43,7 +43,7 @@ const PROCEDURES_DATA: ProcedureItem[] = [
     type: "diagnostic",
     image: "/images/doctor-explaining-procedure.png",
     duration: "20 - 30 Mins",
-    sedation: "Light Sedation (Painless)",
+    sedation: "Sedation options: discuss suitability",
     recovery: "Same Day (2-3 Hours)",
     clinicalNote: "Recommended for chronic diarrhea, constipation, rectal bleeding, or colitis screening.",
     link: "/procedures/colonoscopy",
@@ -56,7 +56,7 @@ const PROCEDURES_DATA: ProcedureItem[] = [
     type: "diagnostic",
     image: "/images/doctor-explaining-procedure.png",
     duration: "30 - 40 Mins",
-    sedation: "Light Sedation (Painless)",
+    sedation: "Sedation options: discuss suitability",
     recovery: "Same Day",
     clinicalNote: "Combines endoscopy and ultrasound to view deeper tissues and perform needle biopsy (FNA/FNB) without surgery.",
     link: "/procedures/eus",
@@ -137,7 +137,7 @@ const PROCEDURES_DATA: ProcedureItem[] = [
     duration: "15 - 30 Mins",
     sedation: "Light Sedation",
     recovery: "Same Day",
-    clinicalNote: "Painless removal of precancerous growths directly during scopes, preventing future cancer risk.",
+    clinicalNote: "endoscopic removal of precancerous growths directly during scopes, preventing future cancer risk.",
   },
   {
     slug: "tumour-removal",
@@ -457,7 +457,7 @@ export default function ProceduresSection() {
             ज़्यादातर जांच और इलाज उसी दिन हो जाते हैं — बड़े ऑपरेशन की ज़रूरत नहीं।
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-forest/80 font-sans font-semibold pt-2 border-t border-border/60">
-            <span className="flex items-center gap-1.5"><CheckCircle2 size={14} className="text-primary" /> Painless &amp; Safe</span>
+            <span className="flex items-center gap-1.5"><CheckCircle2 size={14} className="text-primary" /> Comfort &amp; Risks</span>
             <span className="flex items-center gap-1.5"><CheckCircle2 size={14} className="text-primary" /> 15–30 Mins Procedure</span>
             <span className="flex items-center gap-1.5"><CheckCircle2 size={14} className="text-primary" /> Same-day Discharge</span>
           </div>

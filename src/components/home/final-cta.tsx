@@ -96,7 +96,7 @@ export default function FinalCTA() {
               <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-sm border border-border/25">
                 <img
                   src="/dr-akhilesh-improved.png"
-                  alt="Dr. Akhilesh Yadav - Best Gastroenterologist & Liver Specialist in Ranchi, Jharkhand"
+                  alt="Dr. Akhilesh Yadav - Gastroenterologist & Liver Specialist in Ranchi, Jharkhand"
                   title="Dr. Akhilesh Yadav - Gastroenterology Consultation"
                   className="w-full h-full object-cover object-top"
                 />
@@ -105,9 +105,9 @@ export default function FinalCTA() {
               {/* Quick info */}
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "4,000+", label: "Patients Treated" },
-                  { value: "10+", label: "Years Experience" },
-                  { value: "4.9 Rating", label: "Google Verified" },
+                  { value: "Ranchi", label: "Clinic Location" },
+                  { value: "DM Gastro", label: "Qualification" },
+                  { value: "Mon–Sat", label: "OPD Days" },
                   { value: "Hindi", label: "Clear Consultation" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center border border-border rounded-xl p-4 bg-white shadow-xs">

@@ -16,7 +16,7 @@ const QUESTIONS = [
   },
   {
     q: "क्या एंडोस्कोपी दर्दनाक होती है?",
-    sub: "Does endoscopy hurt? The truth about painless sedation.",
+    sub: "Does endoscopy hurt? Discomfort, sedation options and risks.",
     href: "/procedures/endoscopy",
   },
   {

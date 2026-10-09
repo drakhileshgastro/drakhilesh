@@ -7,8 +7,8 @@ const credentialsTimeline = [
   { label: "MBBS", detail: "Undergraduate" },
   { label: "MD", detail: "Internal Medicine" },
   { label: "DM Gastro", detail: "Super-specialty" },
-  { label: "10+ Years", detail: "Experience" },
-  { label: "4,000+", detail: "Patients Served" },
+  { label: "Hindi", detail: "Consultation" },
+  { label: "Ranchi", detail: "Clinic Location" },
 ];
 
 export default function MeetDoctorSection() {

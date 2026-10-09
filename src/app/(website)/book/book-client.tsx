@@ -70,7 +70,8 @@ export default function BookClient() {
               </h1>
               
               <p className="text-white/80 text-base max-w-2xl leading-relaxed">
-                Consult Ranchi's trusted Gastroenterologist & Hepatologist. Get expert treatment for liver diseases, fatty liver, acidity, IBS, and advanced endoscopic procedures at Orchid Medical Centre.
+                
+                Consult Gastroenterologist & Hepatologist. Get expert treatment for liver diseases, fatty liver, acidity, IBS, and advanced endoscopic procedures at Orchid Medical Centre.
               </p>
 
               {/* Reviews & Trust Badge */}
@@ -83,7 +84,8 @@ export default function BookClient() {
                 </div>
                 <div className="h-4 w-px bg-white/20 hidden sm:block" />
                 <p className="text-white/60 text-xs sm:text-sm font-hindi">
-                  रांची और झारखंड के 4,000+ मरीजों द्वारा विश्वसनीय परामर्श
+                  
+                  रांची और झारखंड के individual consultation and follow-up
                 </p>
               </div>
 
@@ -101,7 +103,7 @@ export default function BookClient() {
               <div className="flex items-center gap-3 bg-accent/10 border border-accent/20 px-5 py-4 rounded-2xl max-w-lg">
                 <ShieldCheck size={28} className="text-accent flex-shrink-0" />
                 <div>
-                  <h4 className="text-accent font-bold text-sm">2-Hour Callback Guarantee</h4>
+                  <h4 className="text-accent font-bold text-sm">Callback Request</h4>
                   <p className="text-white/70 text-xs mt-0.5 font-hindi">कार्य समय के दौरान आपको 2 घंटे के भीतर पुष्टि के लिए कॉल किया जाएगा।</p>
                 </div>
               </div>
@@ -199,7 +201,7 @@ export default function BookClient() {
                   <MapPin size={20} />
                 </div>
                 <h3 className="text-primary-dark font-display font-bold text-base mb-2">OPD Clinic Location</h3>
-                <p className="text-muted text-xs mb-4">Located in Ranchi's premier multi-specialty care hospital:</p>
+                <p className="text-muted text-xs mb-4">Clinic location in Ranchi:</p>
                 <p className="text-primary-dark font-bold text-sm">{DOCTOR.hospital}</p>
                 <p className="text-muted text-xs leading-relaxed mt-1.5">
                   HB Road, Opposite Plaza Cinema, Plaza Chowk,<br />Ranchi, Jharkhand — 834001

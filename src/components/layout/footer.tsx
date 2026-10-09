@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, MessageCircle, Star, MapPin, Clock } from "lucide-react";
+import DoctorRegistration from "@/components/doctor-registration";
+import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
 import { DOCTOR, FOOTER_COLUMNS } from "@/lib/constants";
 
 export default function Footer() {
@@ -14,7 +15,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <h3 className="text-white font-display font-semibold text-lg sm:text-xl">
-              Consult Ranchi's Leading Gastroenterologist
+              Gastroenterology Clinic in Ranchi
             </h3>
             <p className="text-white/60 text-sm mt-1">
               Expert advice, diagnostic procedures, and personalized treatment plans.
@@ -84,17 +85,19 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Google Reviews badge */}
+            <DoctorRegistration />
+            <p className="text-white/65 text-xs leading-relaxed">This website includes AI-assisted educational content. Physician review is pending where indicated. Information does not replace individual medical advice.</p>
+            {/* Contact Details badge */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
-                href={DOCTOR.googleReviewUrl}
+                href="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4.5 py-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors text-sm"
               >
-                            <Star size={14} className="text-accent fill-accent" />
-            <span className="text-white font-bold">{DOCTOR.googleRating}</span>
-            <span className="text-white/75">Google Reviews</span>
+                            <MapPin size={14} className="text-primary-light" />
+            <span className="text-white font-bold">Clinic</span>
+            <span className="text-white/75">Contact Details</span>
           </a>
           <Link
             href="/book"

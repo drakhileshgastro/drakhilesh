@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ConditionLink from "@/components/condition-link";
 import { ChevronRight } from "lucide-react";
 
 interface RelatedConditionsProps {
@@ -39,9 +39,9 @@ export default function RelatedConditions({ conditions }: RelatedConditionsProps
         {/* Condition Cards Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {list.map((cond, idx) => (
-            <Link
+            <ConditionLink
               key={idx}
-              href={`/conditions/${cond.slug}`}
+              slug={cond.slug}
               className="bg-bg-sand/20 border border-border hover:border-primary-light transition-all rounded-2xl p-6 shadow-xs flex flex-col justify-between group"
             >
               <div>
@@ -57,7 +57,7 @@ export default function RelatedConditions({ conditions }: RelatedConditionsProps
               <div className="flex items-center gap-1.5 text-xs text-primary font-bold font-sans uppercase tracking-wider mt-6 border-t border-border/40 pt-4">
                 View Details <ChevronRight size={13} className="group-hover:translate-x-1 transition-transform" />
               </div>
-            </Link>
+            </ConditionLink>
           ))}
         </div>
 

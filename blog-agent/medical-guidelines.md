@@ -8,11 +8,18 @@ This document governs ALL medical claims on drakhileshgastro.com. Every writer a
 ## 1. Governing Authorities
 
 ### NMC (National Medical Commission)
-The NMC Code of Medical Ethics 2023 governs doctor advertising in India:
+**Updated 9 October 2026:** Use the [NMC ethical advertising guidelines dated 6 October 2026](https://nmc.org.in/whats-new/download/1874), read alongside the 2002 ethics regulations. The 2023 professional-conduct regulations were held in abeyance; do not describe them as the operative code.
+
+The examples below require review under the current guidelines. In particular, promotional patient counts, success stories and testimonials are not made acceptable simply by changing “cured” to “consulted,” obtaining consent, or attaching a disclaimer. Use factual specialty/location information, verify credentials and registration disclosures, and disclose material AI assistance. Never invent patient stories or doctor quotations.
+
+Core editorial restrictions:
 - Doctors may share educational health content
 - Doctors may NOT make comparative claims ("best doctor in India")
 - Doctors may NOT guarantee outcomes ("100% cure rate")
 - Doctors may NOT use patient testimonials that imply guaranteed results
+
+### Publication and review records
+AI-assisted drafts must set `aiAssisted: true` and `medicalReviewPending: true`. Do not set a `medicalReview` record or represent content as physician-approved until the practice supplies a real reviewer name and review date. Publication dates are not review dates. The website renderer requires a documented review record before displaying completed-review labels or schema. Never create promotional patient stories, procedure counts, success percentages, rating badges or doctor quotations without appropriate evidence and an applicable non-promotional purpose.
 
 ### ASCI (Advertising Standards Council of India)
 ASCI Chapter I.3 — Healthcare:
@@ -33,7 +40,7 @@ FORBIDDEN:
 "We have cured 4,000+ patients" (implies all cured)
 
 ALLOWED:
-"Dr. Akhilesh Yadav ne 4,000+ patients ki consult ki hai"
+"Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi"
 "Most patients show improvement with appropriate treatment"
 "Early-stage fatty liver can improve significantly with lifestyle changes"
 ```
@@ -71,8 +78,8 @@ FORBIDDEN:
 
 ALLOWED:
 "Dr. Akhilesh Yadav — DM Gastroenterology specialist in Ranchi"
-"4.9/5.0 Google Rating" (verifiable, from Google)
-"One of Ranchi's experienced DM Gastroenterologists" (qualified claim)
+"Dr. Akhilesh Yadav — DM Gastroenterology, Orchid Medical Centre, Ranchi"
+Ratings/testimonials require separate provenance and promotional-context review; do not treat a numerical rating as automatic permission to advertise.
 ```
 
 ### Category E — Procedure Claims (Absolute safety claims)
@@ -85,7 +92,7 @@ FORBIDDEN:
 ALLOWED:
 "Endoscopy mein IV sedation diya jaata hai — most patients minimal discomfort report karte hain"
 "Modern endoscopy ek well-established safe procedure hai — risks rare hain"
-"Dr. Akhilesh Yadav sedation ke saath comfortable experience ensure karte hain"
+"Sedation ke options, suitability aur risks procedure team se samjhein; discomfort alag-alag ho sakta hai"
 ```
 
 ---
@@ -148,7 +155,7 @@ WRONG: "Fatty liver 70% Indians mein hota hai"
 RIGHT: "Fatty liver estimates vary — India mein prevalence increasing hai, especially urban areas mein"
 
 WRONG: "ERCP 99% success rate hai"
-RIGHT: "ERCP mein experienced hands mein success rate kaafi high hai — Dr. Akhilesh Yadav se discuss karein"
+RIGHT: "ERCP ke expected benefits, limitations aur risks procedure team se discuss karein"
 ```
 
 ### Claims to Avoid Entirely

@@ -23,6 +23,7 @@ const CLUSTER0_GROUPS: Record<string, string[]> = {
     "jaundice-treatment-ranchi",
   ],
   "procedure-ranchi": [
+    "fibroscan-liver-test-ranchi-cost-procedure",
     "endoscopy-cost-ranchi",
     "colonoscopy-cost-ranchi",
     "eus-ranchi",
@@ -270,6 +271,7 @@ const CONDITION_TO_BLOGS: Record<string, string[]> = {
     "ercp-procedure-cbd-stones-ranchi",
   ],
   "pancreatitis": [
+    "eus-fna-fnb-biopsy-preparation-report-hindi",
     "pancreatitis-doctor-ranchi",
     "ranchi-mein-eus-test",
     "eus-ranchi",
@@ -301,6 +303,7 @@ const CONDITION_TO_BLOGS: Record<string, string[]> = {
     "blood-in-stool-causes-piles-vs-cancer",
   ],
   "abdominal-pain": [
+    "endoscopy-ke-baad-pet-dard-recovery-hindi",
     "ranchi-mein-abdominal-pain-doctor",
     "pet-dard-doctor-ranchi",
     "ranchi-mein-pet-ke-doctor",
@@ -321,6 +324,7 @@ const CONDITION_TO_BLOGS: Record<string, string[]> = {
     "early-signs-alcoholic-liver-disease-prevention",
   ],
   "peptic-ulcer": [
+    "h-pylori-kitne-din-me-thik-hota-hai",
     "stomach-ulcer-doctor-ranchi",
     "ranchi-mein-h-pylori-treatment",
     // general:
@@ -342,6 +346,7 @@ const CONDITION_TO_BLOGS: Record<string, string[]> = {
     "endoscopy-kya-hota-hai",
   ],
   "h-pylori-dyspepsia": [
+    "h-pylori-kitne-din-me-thik-hota-hai",
     "ranchi-mein-h-pylori-treatment",
     "acidity-doctor-ranchi",
     "stomach-ulcer-doctor-ranchi",
@@ -394,9 +399,12 @@ const BLOG_TO_CONDITIONS: Record<string, string[]> = {
   "understand-abdomen-ultrasound-report-findings": ["abdominal-pain"],
   "peptic-ulcer-h-pylori-diet-cure":           ["peptic-ulcer", "h-pylori-dyspepsia"],
   "h-pylori-recurrence-prevention-tips":       ["h-pylori-dyspepsia", "peptic-ulcer"],
+  "h-pylori-kitne-din-me-thik-hota-hai":       ["h-pylori-dyspepsia", "peptic-ulcer"],
   "blood-in-stool-causes-piles-vs-cancer":     ["gi-bleeding"],
   "piles-fissure-fistula-differences-treatment": ["gi-bleeding"],
   "endoscopy-kya-hota-hai":                    ["gi-bleeding"],
+  "endoscopy-ke-baad-pet-dard-recovery-hindi": ["gi-bleeding", "abdominal-pain"],
+  "eus-fna-fnb-biopsy-preparation-report-hindi": ["pancreatitis"],
 
   // ── Cluster-0 / Ranchi-local blogs ───────────────────────────────────────
   "bilirubin-test-meaning-ranchi":              ["jaundice", "liver-cirrhosis"],

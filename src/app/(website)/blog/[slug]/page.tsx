@@ -3,9 +3,24 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
+// Blog data uses Markdown links; render only local paths and HTTPS references.
+function renderBlogLinks(text: string) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, index) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+    const [, label, href] = match;
+    if (!/^\/(?!\/)|^https:\/\//.test(href)) return label;
+    return (
+      <Link key={index} href={href} className="text-primary underline underline-offset-2">
+        {label}
+      </Link>
+    );
+  });
+}
+
 export const revalidate = 86400; // ISR: regenerate every 24h
 import { Clock, ArrowLeft, MessageCircle, Phone, AlertTriangle, Lightbulb, HelpCircle, CheckCircle2, Calendar } from "lucide-react";
-import { getBlogBySlug, getAllBlogSlugs } from "@/data/blog-data";
+import { getBlogBySlug, getAllBlogSlugs, getDocumentedMedicalReview } from "@/data/blog-data";
 import { getRelatedBlogsForBlog, getRelatedConditionsForBlog, getCluster0Related, isCluster0Blog } from "@/data/related-content";
 import { DOCTOR } from "@/lib/constants";
 import { cn } from "@/lib/cn";
@@ -49,7 +64,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : "https://drakhileshgastro.com/dr-akhilesh-improved.png";
 
   return {
-    title: `${post.metaTitle} | Dr. Akhilesh Yadav`,
+    title: /Dr\.?\s*Akhilesh/i.test(post.metaTitle)
+      ? post.metaTitle
+      : `${post.metaTitle} | Dr. Akhilesh Yadav`,
     description: post.metaDescription,
     keywords: post.tags,
     alternates: { canonical: `https://drakhileshgastro.com/blog/${slug}` },
@@ -82,6 +99,8 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogBySlug(slug);
   if (!post) notFound();
+  const review = getDocumentedMedicalReview(post);
+  const reviewPending = !review;
 
     const jsonLd = {
     "@context": "https://schema.org",
@@ -91,13 +110,16 @@ export default async function BlogPostPage({ params }: Props) {
     "image": post.image ? `https://drakhileshgastro.com${post.image}` : "https://drakhileshgastro.com/dr-akhilesh-improved.png",
     "datePublished": getIsoDate(post.publishedAt),
     "dateModified": getIsoDate(post.publishedAt),
-    "author": {
+    "author": reviewPending ? {
+      "@type": "Organization",
+      "name": "Dr. Akhilesh Yadav Gastroenterology Care",
+    } : {
       "@type": "Physician",
       "name": DOCTOR.name,
       "medicalSpecialty": "Gastroenterology",
       "affiliation": { "@type": "Hospital", "name": DOCTOR.hospital }
     },
-    "reviewedBy": {
+    "reviewedBy": reviewPending ? undefined : {
       "@type": "Physician",
       "name": DOCTOR.name,
       "medicalSpecialty": "Gastroenterology",
@@ -145,12 +167,12 @@ export default async function BlogPostPage({ params }: Props) {
     "inLanguage": "hi-IN",
     "isPartOf": { "@id": "https://drakhileshgastro.com/#website" },
     "about": { "@id": `https://drakhileshgastro.com/blog/${post.slug}` },
-    "reviewedBy": {
+    "reviewedBy": reviewPending ? undefined : {
       "@type": "Physician",
       "@id": "https://drakhileshgastro.com/#physician",
       "name": DOCTOR.name,
     },
-    "lastReviewed": getIsoDate(post.publishedAt),
+    "lastReviewed": review ? getIsoDate(review.reviewedAt) : undefined,
     "medicalAudience": { "@type": "MedicalAudience", "audienceType": "Patients" },
   };
 
@@ -164,7 +186,7 @@ export default async function BlogPostPage({ params }: Props) {
     })),
   } : null;
 
-  const whatsappShareText = `${post.titleHi}\n\nRead this health guide reviewed by Dr. Akhilesh Yadav:\nhttps://drakhileshgastro.com/blog/${post.slug}`;
+  const whatsappShareText = `${post.titleHi}\n\n${reviewPending ? "Read this patient education guide:" : "Read this health guide reviewed by Dr. Akhilesh Yadav:"}\nhttps://drakhileshgastro.com/blog/${post.slug}`;
 
   return (
     <>
@@ -224,7 +246,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                   <CheckCircle2 size={14} className="fill-current text-white" />
                 </div>
-                <span>Medical Reviewer: <strong className="text-forest font-bold">{DOCTOR.name}</strong> (DM Gastro)</span>
+                <span>{reviewPending ? "Medical review pending" : <>Medical Reviewer: <strong className="text-forest font-bold">{DOCTOR.name}</strong> (DM Gastro)</>}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Calendar size={13} />
@@ -249,8 +271,15 @@ export default async function BlogPostPage({ params }: Props) {
                   <div className="space-y-0.5">
                     <span className="text-[9px] text-red-700 font-bold uppercase tracking-wider block font-sans">Medical Disclaimer</span>
                     <p className="leading-relaxed font-sans">
-                      This health guide is researched and prepared by Dr. Akhilesh's clinical medical team and reviewed by Dr. Akhilesh Yadav. It is for general educational purposes only and does not constitute expert clinical advice. Always consult a physician for individual diagnostics.
+                      {reviewPending
+                        ? "This patient education draft is based on the medical references below and awaits physician review. It does not replace individual medical advice or your hospital discharge instructions."
+                        : "This article has a recorded physician review. It is for general education and does not replace individual medical advice."}
                     </p>
+                    {post.aiAssisted && (
+                      <p className="leading-relaxed font-sans mt-2">
+                        AI-assisted educational content; medical review status is shown above.
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -286,7 +315,7 @@ export default async function BlogPostPage({ params }: Props) {
 
                       {section.content && section.content.split("\n\n").map((para, pIdx) => (
                         <p key={pIdx} className="font-hindi text-muted text-base leading-relaxed last:mb-0">
-                          {para}
+                          {renderBlogLinks(para)}
                         </p>
                       ))}
 
@@ -295,7 +324,7 @@ export default async function BlogPostPage({ params }: Props) {
                           {section.list.map((item, lIdx) => (
                             <li key={lIdx} className="flex items-start gap-2.5">
                               <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                              <span className="font-hindi text-muted text-base leading-relaxed">{item}</span>
+                              <span className="font-hindi text-muted text-base leading-relaxed">{renderBlogLinks(item)}</span>
                             </li>
                           ))}
                         </ul>
@@ -362,7 +391,7 @@ export default async function BlogPostPage({ params }: Props) {
 
                 {/* ── Author / Reviewer Box — E-E-A-T signal ─────────────── */}
                 <div className="bg-bg-sand/40 border border-border/60 rounded-3xl p-6 space-y-4">
-                  <p className="text-[9px] text-primary uppercase font-bold tracking-wider font-sans">Clinically Reviewed By</p>
+                  <p className="text-[9px] text-primary uppercase font-bold tracking-wider font-sans">{reviewPending ? "Consultation and Follow-up" : "Clinically Reviewed By"}</p>
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 rounded-2xl overflow-hidden relative border border-border/30 flex-shrink-0 bg-primary-light">
                       <Image
@@ -380,7 +409,9 @@ export default async function BlogPostPage({ params }: Props) {
                     </div>
                   </div>
                   <p className="text-muted text-xs font-sans leading-relaxed">
-                    This article has been clinically reviewed and approved by {DOCTOR.name} ({DOCTOR.qualification}). Dr. Yadav practises at {DOCTOR.hospital}, HB Road, Ranchi, with 10+ years of specialist experience in gastroenterology and hepatology.
+                    {reviewPending
+                      ? `This draft awaits physician review. For individual advice, consult ${DOCTOR.name} (${DOCTOR.qualification}) at ${DOCTOR.hospital}, Ranchi.`
+                      : `This article has a recorded physician review. For individual advice, contact your treating clinician.`}
                   </p>
                   <p className="text-[10px] text-red-700/70 font-sans leading-relaxed border-t border-border/40 pt-3">
                     <strong>Medical Disclaimer:</strong> This content is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified physician for personal health decisions.
@@ -474,7 +505,8 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
 
                   <p className="text-muted text-xs leading-relaxed font-hindi border-t border-border/40 pt-3">
-                    ऑर्किड मेडिकल सेंटर, रांची में 10+ वर्षों का विशेषज्ञ अनुभव। 4,000+ मरीज़ों का सफल उपचार।
+                    
+                    ऑर्किड मेडिकल सेंटर, रांची में पेट, आंत और लिवर संबंधी परामर्श।
                   </p>
 
                   <a

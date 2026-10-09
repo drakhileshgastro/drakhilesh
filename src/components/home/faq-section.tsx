@@ -8,8 +8,8 @@ import Link from "next/link";
 const faqs = [
   {
     q: "क्या डॉ. अखिलेश रांची में पेट और लीवर के विशेषज्ञ डॉक्टर (Pet ka Doctor) हैं?",
-    a: "हाँ, डॉ. अखिलेश यादव रांची में पेट, आंत और लीवर के सबसे बेहतरीन विशेषज्ञ डॉक्टरों में से एक हैं (Best Stomach Doctor / Gastrologist in Ranchi)। उन्हें सुपर-स्पेशलिटी DM (Gastroenterology) की डिग्री प्राप्त है और वे पेट दर्द, गैस, एसिडिटी, कब्ज व लीवर से जुड़ी गंभीर समस्याओं के विशेषज्ञ हैं।",
-    eng: "Yes, Dr. Akhilesh Yadav is recognized as a leading stomach doctor, gastrologist, and liver specialist (pet ka doctor) in Ranchi, Jharkhand, providing advanced care at Orchid Medical Centre.",
+    a: "डॉ. अखिलेश यादव DM (Gastroenterology) हैं और Orchid Medical Centre, रांची में पेट, आंत और लीवर से संबंधित समस्याओं के लिए consultation करते हैं। Gastroenterologist को आम बोलचाल में पेट का डॉक्टर या gastrologist भी कहा जाता है।",
+    eng: "Dr. Akhilesh Yadav is a DM Gastroenterologist at Orchid Medical Centre, Ranchi, consulting for stomach, intestinal and liver conditions.",
   },
   {
     q: "डॉ. अखिलेश यादव किन बीमारियों का इलाज करते हैं?",
@@ -23,8 +23,8 @@ const faqs = [
   },
   {
     q: "क्या एंडोस्कोपी में दर्द होता है?",
-    a: "नहीं। आधुनिक एंडोस्कोपी लगभग दर्दरहित होती है। हल्की बेहोशी (sedation) दी जाती है जिससे मरीज को कुछ भी महसूस नहीं होता। पूरी प्रक्रिया 15–20 मिनट में हो जाती है।",
-    eng: "No. Modern endoscopy is nearly painless with light sedation. The procedure takes 15–20 minutes and you won't feel anything.",
+    a: "Endoscopy में discomfort व्यक्ति और procedure के अनुसार बदल सकता है। Throat spray या sedation से comfort में मदद मिल सकती है; doctor suitability और risks समझाते हैं। तैयारी और recovery के लिए procedure team के निर्देश लें।",
+    eng: "Discomfort varies. Throat spray or sedation may help with comfort; discuss options, suitability, risks and recovery with the procedure team.",
   },
   {
     q: "फैटी लिवर क्या बिना दवाई के ठीक हो सकता है?",

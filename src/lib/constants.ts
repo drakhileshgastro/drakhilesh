@@ -9,14 +9,11 @@ export const DOCTOR = {
   whatsappNumber: "919031669888",
   whatsappPrefilledMessage: "Namaskar, mujhe Dr. Akhilesh Yadav se appointment chahiye",
   experience: "10+",
-  patientsServed: "4,000+",
   timings: "Mon–Sat: 10:00 AM – 2:00 PM & 5:00 PM – 8:00 PM",
   timingsMorning: "10:00 AM – 2:00 PM",
   timingsEvening: "5:00 PM – 8:00 PM",
   googleMapsUrl: "https://maps.google.com/?q=Orchid+Medical+Centre+HB+Road+Ranchi",
   googleReviewUrl: "https://g.page/r/orchid-medical-centre-ranchi/review",
-  googleRating: "4.9",
-  totalReviews: "200+",
   youtubeChannel: "https://youtube.com/@drakhileshgastro",
   socialLinks: {
     facebook: "https://facebook.com/drakhileshgastro",
@@ -26,11 +23,14 @@ export const DOCTOR = {
   },
 } as const;
 
+/** Populate only from doctor-verified SMR/NMR records; never invent registration details. */
+export const DOCTOR_REGISTRATION: { number: string; council: string; status: string } | null = null;
+
 export const TRUST_STATS = [
-  { value: "4,000+", label: "Patients Treated", labelHindi: "मरीज़ ठीक हुए" },
-  { value: "10+", label: "Years Experience", labelHindi: "वर्षों का अनुभव" },
-  { value: "4.9 ⭐", label: "Google Rating", labelHindi: "Google रेटिंग" },
-  { value: "Mon–Sat", label: "Available Daily", labelHindi: "उपलब्धता" },
+  { value: "DM Gastro", label: "Qualification", labelHindi: "योग्यता" },
+  { value: "Ranchi", label: "Clinic Location", labelHindi: "क्लिनिक का स्थान" },
+  { value: "Hindi", label: "Consultation", labelHindi: "परामर्श" },
+  { value: "Mon–Sat", label: "OPD Days", labelHindi: "ओपीडी के दिन" },
 ] as const;
 
 export const SYMPTOMS_LIST = [
@@ -68,7 +68,7 @@ export const PROCEDURES_LIST = [
     title: "Upper GI Endoscopy",
     hindiTitle: "एंडोस्कोपी",
     slug: "endoscopy",
-    description: "पेट और आहार नली की जांच — दर्दरहित, 15 मिनट में",
+    description: "पेट और आहार नली की जांच — तैयारी और recovery की जानकारी",
     benefit: "Diagnose ulcers, bleeding & cancer early",
     icon: "🔭",
   },
@@ -140,7 +140,7 @@ export const PROCEDURES_LIST = [
     title: "Polypectomy",
     hindiTitle: "पॉलिपेक्टोमी",
     slug: "polypectomy",
-    description: "कैंसर से बचाव के लिए पॉलिप्स को दर्दरहित निकालना",
+    description: "पॉलिप्स निकालने की प्रक्रिया — जरूरत, तैयारी और risks",
     benefit: "Prevent colon cancer by removing precancerous growths",
     icon: "✂️",
   },
@@ -191,7 +191,7 @@ export const PATIENT_RESOURCE_LINKS = [
   { label: "Book Appointment", href: "/book" },
   { label: "Clinic Timings", href: "/contact#timings" },
   { label: "Patient Stories", href: "/patient-stories" },
-  { label: "Google Reviews", href: DOCTOR.googleReviewUrl, external: true },
+  { label: "Clinic Contact", href: "/contact", external: false },
   { label: "Directions", href: DOCTOR.googleMapsUrl, external: true },
   { label: "Contact Us", href: "/contact" },
   { label: "Emergency Info", href: "/contact#emergency" },

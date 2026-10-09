@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CheckCircle, ChevronDown, Check } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { DOCTOR, CONDITIONS } from "@/lib/constants";
-import LiveCounter from "@/components/layout/live-counter";
+
 
 export default function HeroSection() {
   return (
@@ -21,7 +21,7 @@ export default function HeroSection() {
               <div className="text-primary font-display text-xs font-bold tracking-wider uppercase">
                 Ranchi · DM Gastroenterologist
               </div>
-              <LiveCounter />
+
             </div>
 
             <h1 className="font-display text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] font-bold text-forest leading-[1.15] tracking-tight">
@@ -38,9 +38,9 @@ export default function HeroSection() {
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm text-muted font-sans font-semibold">
                 <span>DM Gastroenterologist</span>
                 <span className="text-primary/35">•</span>
-                <span>10+ Years</span>
+                <span>Orchid Medical Centre</span>
                 <span className="text-primary/35">•</span>
-                <span>4,000+ Consultations</span>
+                <span>Hindi Consultation</span>
                 <span className="text-primary/35">•</span>
                 <span>Evidence-Based Treatment</span>
               </div>
@@ -54,19 +54,19 @@ export default function HeroSection() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
               {/* Card 1: Google Reviews (Stars first) */}
               <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
-                <div className="text-amber-500 font-bold text-xs tracking-tight flex gap-0.5">⭐⭐⭐⭐⭐</div>
-                <div className="text-base font-display font-bold text-forest mt-1.5 leading-none">4.9 Rating</div>
-                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">200+ Reviews</div>
+                <div className="text-amber-500 font-bold text-xs tracking-tight flex gap-0.5">DM Gastro</div>
+                <div className="text-base font-display font-bold text-forest mt-1.5 leading-none">Qualification</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Gastroenterology</div>
               </div>
               {/* Card 2: Years Experience */}
               <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
-                <div className="text-2xl font-display font-bold text-primary">10+ Years</div>
-                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Experience</div>
+                <div className="text-2xl font-display font-bold text-primary">Ranchi</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Clinic Location</div>
               </div>
               {/* Card 3: Patients Served */}
               <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
-                <div className="text-2xl font-display font-bold text-primary">4,000+</div>
-                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Consultations</div>
+                <div className="text-2xl font-display font-bold text-primary">Hindi</div>
+                <div className="text-[10px] text-muted font-sans font-semibold uppercase tracking-wider mt-1.5">Consultation</div>
               </div>
               {/* Card 4: Availability */}
               <div className="bg-white border border-border/50 rounded-2xl p-4 shadow-xs text-center flex flex-col justify-center items-center">
@@ -80,8 +80,8 @@ export default function HeroSection() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-primary-light rounded-3xl overflow-hidden relative shadow-sm max-w-md mx-auto">
               <Image
-                src="/images/hero-consultation.jpg"
-                alt="Dr. Akhilesh Yadav consulting a patient in a warm and bright clinic room"
+                src="/dr-akhilesh-improved.png"
+                alt="Dr. Akhilesh Yadav — DM Gastroenterology"
                 title="Dr. Akhilesh Yadav - Gastroenterology Consultation Ranchi"
                 fill
                 priority
@@ -154,7 +154,7 @@ function HeroHorizontalBookingBar() {
 
   const checklistItems = [
     "Appointment Confirmation within 30 minutes",
-    "No Spam Guaranteed",
+    "Privacy and Contact Preferences",
     "WhatsApp Confirmation",
     "Hindi Support (हिंदी सहायता)",
   ];

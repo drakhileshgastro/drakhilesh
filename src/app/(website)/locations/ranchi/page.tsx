@@ -14,7 +14,7 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Gastroenterologist in Ranchi | Dr. Akhilesh Yadav — Orchid Medical Centre",
   description:
-    "Consult Dr. Akhilesh Yadav (DM Gastroenterology) — Ranchi's leading gastroenterologist at Orchid Medical Centre, HB Road. Expert care for liver, stomach & digestive diseases. Endoscopy, Colonoscopy, ERCP, FibroScan. Book today.",
+    "Dr. Akhilesh Yadav, DM Gastroenterology, at Orchid Medical Centre, HB Road, Ranchi. Find clinic contact details and information on stomach, liver and digestive conditions.",
   alternates: { canonical: "https://drakhileshgastro.com/locations/ranchi" },
   openGraph: {
     title: "Gastroenterologist in Ranchi | Dr. Akhilesh Yadav — Orchid Medical Centre",
@@ -52,7 +52,7 @@ const CONDITIONS = [
 ];
 
 const PROCEDURES = [
-  { title: "Upper GI Endoscopy", hindiTitle: "एंडोस्कोपी",         slug: "endoscopy",    icon: "🔭", desc: "Pain-free upper GI scope — 15 min" },
+  { title: "Upper GI Endoscopy", hindiTitle: "एंडोस्कोपी",         slug: "endoscopy",    icon: "🔭", desc: "Upper GI scope — preparation & recovery" },
   { title: "Colonoscopy",        hindiTitle: "कोलोनोस्कोपी",       slug: "colonoscopy",  icon: "🔬", desc: "Colon exam & cancer screening" },
   { title: "ERCP",               hindiTitle: "ERCP",                slug: "ercp",         icon: "⚕️", desc: "Bile duct stone removal" },
   { title: "EUS",                hindiTitle: "EUS अल्ट्रासाउंड",   slug: "eus",          icon: "📡", desc: "Deep GI ultrasound imaging" },
@@ -83,12 +83,12 @@ const FAQS = [
     a: "Consult a gastroenterologist if you have persistent stomach pain (more than 2 weeks), blood in stool, unexplained weight loss, yellowing of skin or eyes (jaundice), difficulty swallowing, chronic acidity, altered bowel habits, or elevated liver enzymes on blood tests. You may consult directly or on referral from your physician.",
   },
   {
-    q: "रांची में सबसे अच्छा गैस्ट्रोएंटेरोलॉजिस्ट कौन है?",
-    a: "डॉ. अखिलेश यादव रांची के प्रमुख DM गैस्ट्रोएंटेरोलॉजिस्ट हैं — जो पेट, लिवर और पाचन रोगों में भारत की सर्वोच्च चिकित्सा विशेषज्ञता (DM Gastroenterology) रखते हैं। वे ऑर्किड मेडिकल सेंटर, HB रोड, रांची में OPD करते हैं और 4,000 से अधिक मरीजों का इलाज कर चुके हैं।",
+    q: "डॉ. अखिलेश यादव रांची में कहां consultation करते हैं?",
+    a: "डॉ. अखिलेश यादव DM Gastroenterology हैं और ऑर्किड मेडिकल सेंटर, HB रोड, रांची में consultation करते हैं। Visit से पहले current timings और availability की पुष्टि करें।",
   },
   {
-    q: "Which is the best gastroenterology clinic in Ranchi?",
-    a: "Dr. Akhilesh Yadav's clinic at Orchid Medical Centre, HB Road, Ranchi offers comprehensive GI diagnostic services — Endoscopy, Colonoscopy, FibroScan, ERCP, and EUS — all under one roof with same-day reports and a 4.9 Google rating.",
+    q: "Where is Dr. Akhilesh Yadav’s clinic in Ranchi?",
+    a: "Dr. Akhilesh Yadav consults at Orchid Medical Centre, HB Road, Ranchi. Confirm procedure availability, preparation instructions, report timing and charges with the hospital.",
   },
   {
     q: "Can I get endoscopy done in Ranchi on the same day?",
@@ -192,7 +192,7 @@ const webPageLd = {
   "name": "Gastroenterologist in Ranchi | Dr. Akhilesh Yadav",
   "isPartOf": { "@id": "https://drakhileshgastro.com/#website" },
   "about": { "@id": "https://drakhileshgastro.com/#physician" },
-  "lastReviewed": "2026-08-11",
+  
 };
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -259,9 +259,9 @@ export default function RanchiGastroPage() {
                 {/* Trust stats */}
                 <div className="flex flex-wrap gap-5 py-4 border-t border-b border-border/40">
                   {[
-                    { icon: <ShieldCheck size={15} className="text-primary" />, value: "10+ Years", label: "DM Experience" },
-                    { icon: <Star size={15} className="text-accent fill-accent" />, value: "4.9 ⭐", label: "Google Rating" },
-                    { icon: <CheckCircle2 size={15} className="text-primary" />, value: "4,000+", label: "Patients Treated" },
+                    { icon: <ShieldCheck size={15} className="text-primary" />, value: "DM Gastro", label: "Qualification" },
+                    { icon: <Star size={15} className="text-accent fill-accent" />, value: "Hindi", label: "Consultation" },
+                    { icon: <CheckCircle2 size={15} className="text-primary" />, value: "Ranchi", label: "Clinic Location" },
                     { icon: <Clock size={15} className="text-primary" />, value: "Mon–Sat", label: "OPD Available" },
                   ].map(({ icon, value, label }, i) => (
                     <div key={i} className={`space-y-0.5 ${i > 0 ? "border-l border-border/40 pl-5" : ""}`}>
@@ -335,9 +335,8 @@ export default function RanchiGastroPage() {
                     <h2 className="text-2xl font-display font-bold text-forest">Dr. Akhilesh Yadav — DM Gastroenterologist, Ranchi</h2>
                   </div>
                   <p className="text-muted text-base leading-relaxed font-sans">
-                    Dr. Akhilesh Yadav holds MBBS, MD (Medicine), and DM Gastroenterology — the highest specialist
-                    qualification in digestive and liver medicine in India. With over 10 years of clinical experience
-                    and 4,000+ patients treated across Jharkhand, he practices at Orchid Medical Centre, HB Road, Ranchi.
+                    
+                    Dr. Akhilesh Yadav holds MBBS, MD and DM Gastroenterology and consults at Orchid Medical Centre, HB Road, Ranchi.
                   </p>
                   <p className="text-muted text-base leading-relaxed font-sans">
                     His clinical focus includes liver diseases (fatty liver, cirrhosis, hepatitis, jaundice),
@@ -350,7 +349,7 @@ export default function RanchiGastroPage() {
                       { label: "Specialty",      value: "Gastroenterology & Hepatology" },
                       { label: "Qualification",  value: "MBBS · MD · DM Gastroenterology" },
                       { label: "Hospital",       value: "Orchid Medical Centre, HB Road" },
-                      { label: "Experience",     value: "10+ Years · 4,000+ Patients" },
+                      { label: "Consultation",   value: "Hindi · Confirm OPD availability" },
                     ].map(({ label, value }) => (
                       <div key={label} className="bg-bg-sand/30 border border-border/50 rounded-2xl px-5 py-4">
                         <span className="text-[9px] text-primary uppercase font-bold tracking-wider block font-sans mb-0.5">{label}</span>
@@ -608,7 +607,7 @@ export default function RanchiGastroPage() {
                       Book Appointment
                     </span>
                     <h3 className="text-forest font-sans font-bold text-base">परामर्श के लिए अनुरोध करें</h3>
-                    <p className="text-muted text-xs font-sans mt-0.5">30-minute callback guaranteed.</p>
+                    <p className="text-muted text-xs font-sans mt-0.5">The clinic team will respond when available.</p>
                   </div>
                   <BookingForm compact />
                 </div>

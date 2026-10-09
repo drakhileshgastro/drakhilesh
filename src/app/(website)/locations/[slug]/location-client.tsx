@@ -75,23 +75,24 @@ export default function LocationClient({ location }: LocationClientProps) {
                 {location.h1}
               </h1>
               <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl">
-                Consult Ranchi's leading Gastroenterologist, <strong>Dr. Akhilesh Yadav (DM Gastroenterology)</strong>, at Orchid Medical Centre. Trusted, superspecialist care for stomach pain, liver cirrhosis, jaundice, acidity, and advanced diagnostic endoscopy.
+                
+                Consult Gastroenterologist, <strong>Dr. Akhilesh Yadav (DM Gastroenterology)</strong>, at Orchid Medical Centre. Trusted, superspecialist care for stomach pain, liver cirrhosis, jaundice, acidity, and advanced diagnostic endoscopy.
               </p>
               
               <div className="flex flex-wrap gap-4 py-4 border-t border-b border-border/40 max-w-lg font-sans">
                 <div className="space-y-1">
                   <div className="flex items-center gap-1">
                     <Star className="text-accent fill-accent" size={16} />
-                    <span className="text-forest font-bold text-sm">4.9 Rating</span>
+                    <span className="text-forest font-bold text-sm">DM Gastro</span>
                   </div>
-                  <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Google Reviews</span>
+                  <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Qualification</span>
                 </div>
                 <div className="space-y-1 border-l border-border/40 pl-4">
                   <div className="flex items-center gap-1">
                     <ShieldCheck className="text-primary" size={16} />
-                    <span className="text-forest font-bold text-sm">10+ Years</span>
+                    <span className="text-forest font-bold text-sm">Ranchi</span>
                   </div>
-                  <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">DM Experience</span>
+                  <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Clinic Location</span>
                 </div>
                 <div className="space-y-1 border-l border-border/40 pl-4">
                   <div className="flex items-center gap-1">
@@ -151,20 +152,20 @@ export default function LocationClient({ location }: LocationClientProps) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center font-sans">
             <div>
-              <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">10+ Years</span>
-              <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Clinical Experience</span>
+              <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">Ranchi</span>
+              <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Clinic Location</span>
             </div>
             <div>
-              <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">4,000+</span>
-              <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Patients Served</span>
+              <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">Hindi</span>
+              <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Consultation Language</span>
             </div>
             <div>
               <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">{location.travelDistance}</span>
               <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Travel Distance</span>
             </div>
             <div>
-              <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">Painless</span>
-              <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Sedated Endoscopy</span>
+              <span className="text-2xl sm:text-3xl font-display font-bold text-forest block">Discuss</span>
+              <span className="text-[10px] text-muted uppercase font-bold tracking-wider">Sedation Options</span>
             </div>
           </div>
         </div>
@@ -184,7 +185,7 @@ export default function LocationClient({ location }: LocationClientProps) {
                   {location.name} से रांची क्यों आएं? — Complete Patient Reassurance
                 </h2>
                 <p className="text-muted text-sm sm:text-base leading-relaxed font-sans">
-                  Gastroenterology is a highly specialized branch of medicine. By traveling to Orchid Medical Centre, you connect directly with a DM Gastroenterology super-specialist. This guarantees diagnostic precision, preventing misdiagnosis and unnecessary operational procedures.
+                  A gastroenterology consultation considers symptoms, medical history and previous reports. Discuss whether further tests are needed, what they can show, and their limitations.
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-4 pt-2">
@@ -294,7 +295,7 @@ export default function LocationClient({ location }: LocationClientProps) {
                     </div>
                     <div>
                       <h4 className="text-forest font-bold text-sm leading-snug group-hover:text-primary transition-colors">Endoscopy Procedure</h4>
-                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">दर्दरहित एंडोस्कोपी जांच, तैयारी और प्रक्रिया</p>
+                      <p className="text-muted text-xs leading-relaxed mt-1 font-hindi">एंडोस्कोपी जांच, तैयारी और recovery की जानकारी</p>
                     </div>
                   </Link>
 
@@ -419,7 +420,7 @@ export default function LocationClient({ location }: LocationClientProps) {
                 )}
 
                 <div className="pt-2 border-t border-border/40 text-[10px] text-muted font-sans font-medium uppercase tracking-wider flex justify-between">
-                  <span>No Spam Guarantee</span>
+                  <span>Privacy and Contact Preferences</span>
                   <span>🔒 Secure Form</span>
                 </div>
               </div>

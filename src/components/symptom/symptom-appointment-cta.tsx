@@ -22,7 +22,7 @@ export default function SymptomAppointmentCTA({ title }: SymptomAppointmentCTAPr
             <div className="aspect-[4/5] bg-primary-light rounded-2xl overflow-hidden relative shadow-xs max-w-xs mx-auto border border-border/20">
               <Image
                 src="/dr-akhilesh-improved.png"
-                alt="Dr. Akhilesh Yadav - Leading Stomach and Liver Specialist in Ranchi, Jharkhand"
+                alt="Dr. Akhilesh Yadav - Stomach and Liver Specialist in Ranchi, Jharkhand"
                 title="Dr. Akhilesh Yadav - Gastroenterology Consultation"
                 fill
                 sizes="(max-width: 768px) 100vw, 320px"

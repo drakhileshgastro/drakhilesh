@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
               <li>Understanding your symptoms beforehand to ensure you receive the appropriate clinic priority.</li>
             </ul>
             <p>
-              We have a strict <strong>No Spam Guarantee</strong>. We never sell, rent, share, or disclose patient contact details to third-party marketing companies.
+              We have a strict <strong>Privacy and Contact Preferences</strong>. We never sell, rent, share, or disclose patient contact details to third-party marketing companies.
             </p>
 
             <h2 className="text-lg font-display font-bold text-forest pt-4">3. Data Security & Storage</h2>

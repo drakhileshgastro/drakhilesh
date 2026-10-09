@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { getBlogBySlug } from "@/data/blog-data";
 
 interface SymptomRelatedArticlesProps {
   articles: string[];
@@ -12,10 +13,11 @@ const ARTICLE_MAP: Record<string, { title: string; readTime: string }> = {
 };
 
 export default function SymptomRelatedArticles({ articles }: SymptomRelatedArticlesProps) {
-  const list = articles.map((slug) => ({
-    slug,
-    ...(ARTICLE_MAP[slug] || { title: slug.replace("-", " "), readTime: "5 min read" }),
-  }));
+  const list = articles.flatMap((slug) => {
+    const post = getBlogBySlug(slug);
+    return post ? [{ slug, title: ARTICLE_MAP[slug]?.title ?? post.titleHi, readTime: `${post.readTimeMins} min read` }] : [];
+  });
+  if (list.length === 0) return null;
 
   return (
     <section className="bg-white py-16 lg:py-20 border-t border-border/40">
@@ -29,7 +31,7 @@ export default function SymptomRelatedArticles({ articles }: SymptomRelatedArtic
             स्वास्थ्य गाइड और ब्लॉग — Related Articles
           </h2>
           <p className="font-sans text-muted text-base mt-2">
-            Read health articles reviewed by Dr. Akhilesh Yadav.
+            Read patient education articles; each page shows its medical review status.
           </p>
         </div>
 

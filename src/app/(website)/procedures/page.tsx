@@ -42,7 +42,8 @@ export default function ProceduresIndexPage() {
               आधुनिक एंडोस्कोपिक जांच और इलाज — Advanced Endoscopy
             </h1>
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-              Diagnostic and therapeutic procedures performed using advanced imaging scopes and pain-free sedation at Orchid Medical Centre, Ranchi.
+              
+              Diagnostic and therapeutic procedures performed using advanced imaging scopes and sedation options at Orchid Medical Centre, Ranchi.
             </p>
           </div>
         </section>
@@ -110,7 +111,7 @@ export default function ProceduresIndexPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
             <div className="text-center">
               <span className="text-primary font-display text-xs font-bold tracking-wider uppercase block mb-2">Patient Comfort Standards</span>
-              <h2 className="text-2xl font-display font-bold text-forest leading-tight font-hindi">बिना दर्द और भय के सुरक्षित जांच — High Quality Standards</h2>
+              <h2 className="text-2xl font-display font-bold text-forest leading-tight font-hindi">प्रक्रिया से पहले तैयारी, comfort और risks समझें</h2>
             </div>
             
             <div className="grid sm:grid-cols-2 gap-6">
@@ -120,7 +121,7 @@ export default function ProceduresIndexPage() {
                 <div>
                   <h4 className="text-forest font-sans font-bold text-sm">Strict Sterilization Protocols</h4>
                   <p className="text-muted text-xs mt-1 leading-relaxed">
-                    Every scope undergoes rigorous, international-standard multi-level chemical disinfection to guarantee 100% safety and zero infection transmission.
+                    Ask the procedure team about equipment cleaning, infection-control measures and the risks relevant to your procedure. No procedure can be promised to have zero risk.
                   </p>
                 </div>
               </div>
@@ -128,9 +129,9 @@ export default function ProceduresIndexPage() {
               <div className="flex gap-3.5 items-start bg-white p-5 rounded-2xl border border-border/60">
                 <HeartHandshake className="text-primary mt-0.5 flex-shrink-0" size={18} />
                 <div>
-                  <h4 className="text-forest font-sans font-bold text-sm">Sedation-Guided Painless Experience</h4>
+                  <h4 className="text-forest font-sans font-bold text-sm">Sedation and Comfort Options</h4>
                   <p className="text-muted text-xs mt-1 leading-relaxed">
-                    Most endoscopic and colonoscopic procedures are performed under light conscious sedation, ensuring the patient experiences absolutely no pain or discomfort.
+                    Discuss sedation options, suitability, monitoring and possible discomfort with the team. Your plan depends on the procedure and your health.
                   </p>
                 </div>
               </div>

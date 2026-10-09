@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ConditionLink from "@/components/condition-link";
 import { ChevronRight, Info } from "lucide-react";
 
 interface PossibleConditionsListProps {
@@ -38,9 +38,9 @@ export default function PossibleConditionsList({
           {possibleConditions.map((slug) => {
             const cond = CONDITION_MAP[slug] || { title: slug.replace("-", " "), hindi: "" };
             return (
-              <Link
+              <ConditionLink
                 key={slug}
-                href={`/conditions/${slug}`}
+                slug={slug}
                 className="bg-white border border-border hover:border-primary-light transition-all rounded-xl p-5 flex items-center justify-between group shadow-xs cursor-pointer"
               >
                 <div>
@@ -52,7 +52,7 @@ export default function PossibleConditionsList({
                   )}
                 </div>
                 <ChevronRight size={16} className="text-muted group-hover:translate-x-1 group-hover:text-primary transition-all flex-shrink-0" />
-              </Link>
+              </ConditionLink>
             );
           })}
         </div>

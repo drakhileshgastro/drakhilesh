@@ -81,7 +81,7 @@ export default function NotFound() {
                 <span className="text-sm font-bold text-forest font-sans block group-hover:text-primary transition-colors">
                   Endoscopy & Procedures
                 </span>
-                <span className="text-xs text-muted font-hindi">दर्दरहित एंडोस्कोपी, कोलोनोस्कोपी</span>
+                <span className="text-xs text-muted font-hindi">एंडोस्कोपी, कोलोनोस्कोपी की जानकारी</span>
               </div>
             </Link>
 

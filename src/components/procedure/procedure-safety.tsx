@@ -17,7 +17,7 @@ export default function ProcedureSafety({
 }: ProcedureSafetyProps) {
   const blocks = [
     { icon: ShieldCheck, title: "Procedural Risks", desc: risks },
-    { icon: Award, title: "Success Rate", desc: successRate },
+    { icon: Award, title: "Limitations & Follow-up", desc: successRate },
     { icon: Eye, title: "Continuous Monitoring", desc: monitoring },
   ];
 
@@ -30,7 +30,7 @@ export default function ProcedureSafety({
             Safety &amp; Outcomes
           </span>
           <h2 className="text-3xl font-display font-bold text-forest leading-tight font-hindi">
-            सुरक्षा, लाभ और सफलता दर
+            सुरक्षा, लाभ और सीमाएं
           </h2>
           <p className="font-sans text-muted text-base mt-2">
             Clinical safety protocols and therapeutic benefits of undergoing {title}.

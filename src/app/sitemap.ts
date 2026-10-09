@@ -27,7 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/conditions`,           lastModified: stableDate, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/procedures`,           lastModified: stableDate, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/symptoms`,             lastModified: stableDate, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/patient-stories`,      lastModified: stableDate, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/patient-guide`,        lastModified: stableDate, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/book`,                 lastModified: stableDate, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${BASE}/blog`,                 lastModified: stableDate, changeFrequency: "weekly",  priority: 0.7 },

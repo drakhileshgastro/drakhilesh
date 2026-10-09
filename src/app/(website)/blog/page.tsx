@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, ArrowRight, MessageCircle, AlertTriangle, ShieldCheck, HeartHandshake, Phone, Calendar } from "lucide-react";
-import { BLOG_POSTS } from "@/data/blog-data";
+import { BLOG_POSTS, getDocumentedMedicalReview } from "@/data/blog-data";
 import { DOCTOR } from "@/lib/constants";
 import StickyCTA from "@/components/service/sticky-cta";
 
@@ -52,7 +52,7 @@ export default function BlogPage() {
               लिवर और पेट की बीमारियों पर स्वास्थ्य लेख
             </h1>
             <p className="font-sans text-muted text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
-              Evidence-based medical guides and dietary advice prepared by the clinical team of Dr. Akhilesh Yadav in simple Hindi.
+              AI-assisted patient education guides in simple Hindi. Each article shows its medical review status. These guides do not replace individual medical advice.
             </p>
           </div>
         </section>
@@ -146,7 +146,7 @@ export default function BlogPage() {
                         </div>
                         <div className="text-[10px] text-muted font-medium">
                           <span className="text-forest font-bold block">{DOCTOR.nameShort} Team</span>
-                          <span>Reviewed · {post.publishedAt}</span>
+                          <span>{getDocumentedMedicalReview(post) ? `Reviewed · ${getDocumentedMedicalReview(post)!.reviewedAt}` : `Review pending · ${post.publishedAt}`}</span>
                         </div>
                       </div>
                       <span className="text-primary text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -174,9 +174,9 @@ export default function BlogPage() {
                 />
               </div>
               <div className="space-y-2 text-center md:text-left">
-                <h3 className="text-forest font-sans font-bold text-base">Written by Clinical Specialists &amp; Reviewed by Dr. Akhilesh</h3>
+                <h3 className="text-forest font-sans font-bold text-base">Patient Education Library — Medical Review Status</h3>
                 <p className="text-muted text-xs leading-relaxed font-sans">
-                  The health library is compiled by Dr. Akhilesh's clinical content team comprising medical professionals, dieticians, and health writers. Every article undergoes rigorous clinical validation and fact-checking by Dr. Akhilesh Yadav (DM Gastroenterology) to ensure high medical accuracy and compliance with E-E-A-T guidelines.
+                  These AI-assisted educational articles explain general health topics and do not replace individual medical advice. Article pages identify the medical reviewer when a completed review is recorded.
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function BlogPage() {
                 </h2>
                 
                 <p className="font-sans text-muted text-base leading-relaxed">
-                  Join thousands of patients who successfully recovered under Dr. Akhilesh's clinical care at Orchid Medical Centre, Ranchi.
+                  Find clinic contact details and discuss your symptoms, reports and individual care plan.
                 </p>
 
                 <div className="flex flex-wrap gap-3 pt-2">

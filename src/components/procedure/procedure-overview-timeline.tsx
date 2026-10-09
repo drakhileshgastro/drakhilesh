@@ -14,7 +14,7 @@ export default function ProcedureOverviewTimeline({ title }: ProcedureOverviewTi
     {
       icon: Stethoscope,
       label: "2. Procedure (दौरान)",
-      desc: "15-30 minute check under comfortable sedation; direct HD imaging & painless biopsy if needed.",
+      desc: "15-30 minute check under comfortable sedation; direct HD imaging & biopsy when indicated if needed.",
     },
     {
       icon: HeartHandshake,

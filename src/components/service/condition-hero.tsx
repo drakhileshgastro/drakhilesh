@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, MessageCircle, Star, ShieldCheck, Clock, Award } from "lucide-react";
+import { Phone, MessageCircle, GraduationCap, ShieldCheck, Clock, Award } from "lucide-react";
 import BookingForm from "./booking-form";
 import { DOCTOR } from "@/lib/constants";
 import {
@@ -82,24 +82,24 @@ export default function ConditionHero({
             <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-border/40 max-w-lg font-sans">
               <div className="space-y-1">
                 <div className="flex items-center gap-1">
-                  <Star className="text-accent fill-accent" size={16} />
-                  <span className="text-forest font-bold text-base">4.9 Rating</span>
+                  <GraduationCap className="text-primary" size={16} />
+                  <span className="text-forest font-bold text-base">DM Gastro</span>
                 </div>
-                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Google Verified</span>
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Qualification</span>
               </div>
               <div className="space-y-1 border-l border-border/40 pl-4">
                 <div className="flex items-center gap-1">
                   <ShieldCheck className="text-primary" size={16} />
-                  <span className="text-forest font-bold text-base">10+ Years</span>
+                  <span className="text-forest font-bold text-base">Ranchi</span>
                 </div>
-                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">DM Experience</span>
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Clinic Location</span>
               </div>
               <div className="space-y-1 border-l border-border/40 pl-4">
                 <div className="flex items-center gap-1">
                   <Award className="text-primary" size={16} />
-                  <span className="text-forest font-bold text-base">4k+ Patients</span>
+                  <span className="text-forest font-bold text-base">Hindi</span>
                 </div>
-                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Successfully Cured</span>
+                <span className="text-[10px] text-muted uppercase font-bold tracking-wider block">Consultation</span>
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export default function ConditionHero({
                 </div>
                 <div className="flex items-center gap-1">
                   <ShieldCheck size={11} className="text-primary" />
-                  <span>No Spam Guarantee</span>
+                  <span>Privacy and Contact Preferences</span>
                 </div>
               </div>
 

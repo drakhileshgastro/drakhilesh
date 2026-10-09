@@ -137,30 +137,28 @@ export default function ContactClient() {
                 </div>
               </div>
 
-              {/* Reviews & Patient Stories Redirect */}
+              {/* Reviews & Follow-up Information Redirect */}
               <div className="bg-bg-sand/20 border border-border/60 rounded-3xl p-6 shadow-3xs grid grid-cols-2 gap-4">
                 
-                {/* Google Reviews */}
+                {/* Patient Visit Guide */}
                 <a
-                  href={DOCTOR.googleReviewUrl}
+                  href="/patient-guide"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white border border-border/60 hover:border-primary-light transition-all rounded-2xl p-4 flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center gap-0.5 mb-1.5">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} size={11} className="text-accent fill-accent" />
-                      ))}
+                      <MapPin size={16} className="text-primary" />
                     </div>
-                    <h4 className="text-forest font-sans font-bold text-xs">Google Reviews</h4>
+                    <h4 className="text-forest font-sans font-bold text-xs">Patient Visit Guide</h4>
                   </div>
                   <span className="text-[10px] text-primary font-bold uppercase tracking-wider mt-3 block">
-                    Write Review →
+                    Read guide →
                   </span>
                 </a>
 
-                {/* Patient Stories Link */}
+                {/* Follow-up Information Link */}
                 <Link
                   href="/patient-stories"
                   className="bg-white border border-border/60 hover:border-primary-light transition-all rounded-2xl p-4 flex flex-col justify-between"
@@ -168,9 +166,9 @@ export default function ContactClient() {
                   <div className="w-6 h-6 rounded-lg bg-primary-50 flex items-center justify-center mb-1.5">
                     <HeartHandshake className="text-primary" size={13} />
                   </div>
-                  <h4 className="text-forest font-sans font-bold text-xs">Patient Stories</h4>
+                  <h4 className="text-forest font-sans font-bold text-xs">Follow-up Information</h4>
                   <span className="text-[10px] text-primary font-bold uppercase tracking-wider mt-3 block">
-                    Read stories →
+                    Read information →
                   </span>
                 </Link>
 
