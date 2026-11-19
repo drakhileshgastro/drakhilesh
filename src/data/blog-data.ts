@@ -52,6 +52,491 @@ export function getDocumentedMedicalReview(post: BlogPost) {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+      "slug": "fatty-liver-grade-1-vs-grade-2-when-dangerous",
+      "titleHi": "\u092b\u0948\u091f\u0940 \u0932\u093f\u0935\u0930 \u0917\u094d\u0930\u0947\u0921 1 \u0914\u0930 \u0917\u094d\u0930\u0947\u0921 2 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092b\u0930\u094d\u0915 \u0939\u0948? \u0915\u092c \u092f\u0939 \u0916\u0924\u0930\u0928\u093e\u0915 \u092c\u0928 \u091c\u093e\u0924\u093e \u0939\u0948",
+      "titleEn": "Fatty Liver Grade 1 vs Grade 2: When Does It Become Dangerous?",
+      "excerptHi": "\u0905\u0932\u094d\u091f\u094d\u0930\u093e\u0938\u093e\u0909\u0902\u0921 \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u092e\u0947\u0902 \u0917\u094d\u0930\u0947\u0921 1 \u092f\u093e \u0917\u094d\u0930\u0947\u0921 2 \u092b\u0948\u091f\u0940 \u0932\u093f\u0935\u0930 \u0906\u092f\u093e \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0926\u094b\u0928\u094b\u0902 \u092e\u0947\u0902 \u0905\u0902\u0924\u0930, \u0932\u093f\u0935\u0930 \u0938\u093f\u0930\u094b\u0938\u093f\u0938 \u0915\u093e \u0916\u0924\u0930\u093e \u0915\u092c \u092c\u0922\u093c\u0924\u093e \u0939\u0948 \u0914\u0930 \u0907\u0938\u0947 \u0915\u0948\u0938\u0947 \u0930\u094b\u0915\u0947\u0902\u0964",
+      "excerptEn": "Understand the difference between Grade 1 and Grade 2 fatty liver, when fat triggers inflammation, and how to stop progression before scarring starts.",
+      "category": "Liver Health",
+      "readTimeMins": 7,
+      "publishedAt": "September 15, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-09-16",
+          "verified": true
+      },
+      "emoji": "\ud83e\udec0",
+      "image": "/images/fatty-liver-diet-blog.png",
+      "tags": [
+          "Fatty Liver",
+          "Grade 1 Fatty Liver",
+          "Grade 2 Fatty Liver",
+          "NASH",
+          "Liver Specialist",
+          "Ranchi"
+      ],
+      "metaTitle": "Fatty Liver Grade 1 vs Grade 2: When Does It Turn Dangerous?",
+      "metaDescription": "Understand the difference between Grade 1 and Grade 2 fatty liver, when fat triggers inflammation, and how to stop progression before scarring starts.",
+      "faqs": [
+          {
+              "q": "What is the difference between Grade 1 and Grade 2 fatty liver?",
+              "a": "Grade 1 means light fat accumulation involving under 33 percent of liver cells. Grade 2 means moderate fat deposits between 33 and 66 percent, with deeper blood vessels harder to see on ultrasound."
+          },
+          {
+              "q": "Can Grade 2 fatty liver lead to cirrhosis?",
+              "a": "If fat triggers ongoing inflammation (NASH) and remains unaddressed for years, it can form scar tissue that gradually progresses toward cirrhosis."
+          },
+          {
+              "q": "How can I tell if my fatty liver is getting worse?",
+              "a": "Rising SGPT/SGOT enzymes on liver function tests and increased stiffness on a FibroScan test indicate active cellular inflammation and scarring."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "The Silent Progression of Liver Fat",
+              "type": "text",
+              "content": "Finding fatty liver on an ultrasound is common today, but ignoring it because you feel no pain is a mistake. The liver lacks sensory pain nerves inside its tissue, so fat accumulates silently for years. Understanding whether your liver is in Grade 1 or Grade 2 helps you take corrective action before permanent scar tissue forms. [Read our complete guide to fatty liver disease](/conditions/fatty-liver)."
+          },
+          {
+              "heading": "Comparing Grade 1 and Grade 2 on Ultrasound",
+              "type": "list",
+              "content": "Radiologists classify liver steatosis based on how sound waves bounce off internal tissue:",
+              "list": [
+                  "Grade 1 (Mild Steatosis): Fat droplets occupy less than 33 percent of hepatocytes. The liver appears slightly brighter than normal, but deeper portal veins and the diaphragm line remain clearly visible.",
+                  "Grade 2 (Moderate Steatosis): Fat occupies between 33 and 66 percent of liver cells. The organ appears distinctly dense and bright, attenuating sound waves so deeper vessels become blurred.",
+                  "Grade 3 (Severe Steatosis): Over 66 percent of cells contain fat droplets, significantly obscuring the diaphragm line."
+              ]
+          },
+          {
+              "heading": "When Does Liver Fat Turn Dangerous?",
+              "type": "text",
+              "content": "Fat alone is simply stored fuel. The critical turning point occurs when fat accumulation triggers oxidative stress and ballooning of liver cells, a condition called Non-Alcoholic Steatohepatitis (NASH). Damaged cells leak SGPT enzymes into the bloodstream. Over months, the body lays down microscopic collagen fibers to repair the injury, leading to progressive fibrosis and cirrhosis. [Consult Dr. Akhilesh Yadav](/contact) for a comprehensive liver stiffness check."
+          }
+      ]
+  },
+  {
+      "slug": "fibroscan-vs-liver-ultrasound-stiffness-accuracy",
+      "titleHi": "\u092b\u093e\u0907\u092c\u094d\u0930\u094b\u0938\u094d\u0915\u0948\u0928 \u092c\u0928\u093e\u092e \u0905\u0932\u094d\u091f\u094d\u0930\u093e\u0938\u093e\u0909\u0902\u0921: \u0932\u093f\u0935\u0930 \u0915\u0940 \u091c\u093e\u0902\u091a \u0915\u0947 \u0932\u093f\u090f \u0915\u094c\u0928 \u0938\u093e \u091f\u0947\u0938\u094d\u091f \u0938\u092c\u0938\u0947 \u0938\u0939\u0940 \u0939\u0948?",
+      "titleEn": "FibroScan vs Liver Ultrasound: Which Test Gives the True Status of Liver Stiffness?",
+      "excerptHi": "\u0932\u093f\u0935\u0930 \u092e\u0947\u0902 \u091a\u0930\u094d\u092c\u0940 \u092f\u093e \u0938\u0942\u091c\u0928 \u0939\u0948 \u0924\u094b \u0938\u093f\u0930\u094d\u092b \u0905\u0932\u094d\u091f\u094d\u0930\u093e\u0938\u093e\u0909\u0902\u0921 \u0915\u093e\u092b\u0940 \u0915\u094d\u092f\u094b\u0902 \u0928\u0939\u0940\u0902 \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u092b\u093e\u0907\u092c\u094d\u0930\u094b\u0938\u094d\u0915\u0948\u0928 \u0915\u0948\u0938\u0947 \u092c\u093f\u0928\u093e \u091a\u0940\u0930-\u092b\u093e\u0921\u093c \u0915\u0947 \u0932\u093f\u0935\u0930 \u0915\u0940 \u0915\u0920\u094b\u0930\u0924\u093e \u0914\u0930 \u092b\u093e\u0907\u092c\u094d\u0930\u094b\u0938\u093f\u0938 \u0928\u093e\u092a\u0924\u093e \u0939\u0948\u0964",
+      "excerptEn": "Why a standard ultrasound is not enough for liver assessment. Discover how FibroScan measures liver stiffness and fat percentage accurately in minutes.",
+      "category": "Liver Health",
+      "readTimeMins": 7,
+      "publishedAt": "September 22, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-09-23",
+          "verified": true
+      },
+      "emoji": "\ud83d\udcca",
+      "image": "/images/fibroscan-test-blog.png",
+      "tags": [
+          "FibroScan",
+          "Ultrasound",
+          "Liver Stiffness",
+          "Cirrhosis",
+          "Hepatology",
+          "Ranchi"
+      ],
+      "metaTitle": "FibroScan vs Ultrasound: Which Test Gives True Liver Stiffness?",
+      "metaDescription": "Why a standard ultrasound is not enough for liver assessment. Discover how FibroScan measures liver stiffness and fat percentage accurately in minutes.",
+      "faqs": [
+          {
+              "q": "Why is ultrasound not enough for fatty liver?",
+              "a": "Ultrasound only sees visual brightness caused by fat. It cannot measure tissue elasticity, hardness, or early microscopic scar tissue."
+          },
+          {
+              "q": "What is a normal FibroScan reading?",
+              "a": "A healthy liver measures between 2 and 6 kilopascals (kPa). Readings above 7 kPa indicate significant fibrosis, while values above 12 to 14 kPa suggest advanced cirrhosis."
+          },
+          {
+              "q": "Is the FibroScan procedure painful?",
+              "a": "No. FibroScan is completely non-invasive and painless. It places an acoustic probe on your right side for five to ten minutes with zero needles or sedation."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "The Difference Between Imaging Fat and Measuring Stiffness",
+              "type": "text",
+              "content": "Most patients in Jharkhand discover liver problems when an abdominal ultrasound notes fatty liver. While ultrasound is an excellent first screening tool, it has an inherent limitation: it cannot measure whether your liver tissue is soft and elastic, or stiff and scarred. Two people with identical Grade 2 ultrasound reports can have completely different liver health profiles."
+          },
+          {
+              "heading": "How FibroScan Technology Works",
+              "type": "text",
+              "content": "FibroScan (Transient Elastography) uses a specialized vibration transducer placed against the skin between your lower right ribs. It emits a gentle acoustic shear wave through the liver. Shear waves travel quickly through hard, fibrotic scar tissue and slowly through healthy, supple liver cells. The machine computes exact elasticity in kilopascals (kPa) along with a Controlled Attenuation Parameter (CAP) that quantifies fat percentage."
+          },
+          {
+              "heading": "Comparing Both Tests Side by Side",
+              "type": "list",
+              "content": "Understanding the clinical role of each test:",
+              "list": [
+                  "Ultrasound: Best for detecting gallstones, bile duct dilation, liver cysts, and gross organ enlargement. Cannot quantify fibrosis.",
+                  "FibroScan: The gold standard non-invasive tool to track fibrosis progression, monitor response to weight loss, and detect early cirrhosis without liver biopsy.",
+                  "Specialist Recommendation: Combining both tests provides a complete picture of liver anatomy and cellular elasticity."
+              ]
+          },
+          {
+              "heading": "Where to Get a Liver Assessment in Ranchi",
+              "type": "text",
+              "content": "At Orchid Medical Centre in Ranchi, Dr. Akhilesh Yadav conducts comprehensive hepatology consultations integrating laboratory liver panels, high-resolution ultrasound, and FibroScan elastography. [Schedule your liver consultation](/contact) to know your true liver score."
+          }
+      ]
+  },
+  {
+      "slug": "how-to-prepare-for-colonoscopy-diet-peg-prep",
+      "titleHi": "\u0915\u094b\u0932\u094b\u0928\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0915\u0940 \u0924\u0948\u092f\u093e\u0930\u0940 \u0915\u0948\u0938\u0947 \u0915\u0930\u0947\u0902: \u0926\u0935\u093e, \u0921\u093e\u0907\u091f \u0914\u0930 \u092a\u0947\u091f \u0938\u093e\u092b \u0915\u0930\u0928\u0947 \u0915\u0940 \u092a\u0942\u0930\u0940 \u0917\u093e\u0907\u0921",
+      "titleEn": "How to Prepare for a Colonoscopy: Bowel Prep Drink & Diet Guidelines",
+      "excerptHi": "\u0915\u094b\u0932\u094b\u0928\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0938\u0947 \u092a\u0939\u0932\u0947 \u092a\u0947\u091f \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0938\u093e\u092b \u0939\u094b\u0928\u093e \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948? \u091c\u093e\u0928\u093f\u090f PEG \u0918\u094b\u0932 \u092a\u0940\u0928\u0947 \u0915\u093e \u0938\u0939\u0940 \u0924\u0930\u0940\u0915\u093e, 3 \u0926\u093f\u0928 \u092a\u0939\u0932\u0947 \u0915\u0940 \u0921\u093e\u0907\u091f \u0914\u0930 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u0915\u093e \u0926\u093f\u0928 \u0915\u0948\u0938\u093e \u0930\u0939\u0924\u093e \u0939\u0948\u0964",
+      "excerptEn": "A clear, practical guide to colonoscopy preparation. Learn how to take bowel prep solution, dietary rules 3 days prior, and tips for a clean colon.",
+      "category": "Procedures",
+      "readTimeMins": 8,
+      "publishedAt": "September 25, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-09-26",
+          "verified": true
+      },
+      "emoji": "\ud83d\udccb",
+      "image": "/images/colonoscopy-equipment.png",
+      "tags": [
+          "Colonoscopy",
+          "Bowel Prep",
+          "PEG Solution",
+          "Colon Health",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "How to Prepare for Colonoscopy: Diet & Bowel Prep Guide",
+      "metaDescription": "A clear, practical guide to colonoscopy preparation. Learn how to take bowel prep solution, dietary rules 3 days prior, and tips for a clean colon.",
+      "faqs": [
+          {
+              "q": "Why is bowel preparation so important before colonoscopy?",
+              "a": "Residual stool coats the colon wall, hiding small bleeding polyps and early flat lesions from the camera. A clean colon ensures a safe, accurate test."
+          },
+          {
+              "q": "How does the bowel preparation solution taste?",
+              "a": "PEG solutions taste slightly salty and sweet. Chilling the liquid in the refrigerator and drinking it through a straw with lemon drops makes it easier to take."
+          },
+          {
+              "q": "What should my stool look like before starting the procedure?",
+              "a": "Your bowel movements should look completely clear or pale yellowish with zero solid matter, similar to clear tea or apple juice."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Why Bowel Cleanliness Determines Colonoscopy Accuracy",
+              "type": "text",
+              "content": "A colonoscopy allows a specialist to inspect the entire large intestine using a flexible camera. However, the camera cannot see through stool. If the colon wall is coated with residual waste, tiny pre-cancerous polyps or small bleeding ulcers remain invisible. Taking your bowel cleansing preparation conscientiously is the single most important step for an accurate test. [Learn more about our colonoscopy procedure](/procedures/colonoscopy)."
+          },
+          {
+              "heading": "Dietary Rules: Three Days Prior",
+              "type": "list",
+              "content": "Switch to a low-fiber diet three days before your appointment to minimize solid residue:",
+              "list": [
+                  "Foods to Avoid: Stop eating whole grains, multigrain roti, raw salads, corn, nuts, and fruits with tiny seeds (such as tomatoes, guava, kiwi, and watermelon).",
+                  "Foods to Enjoy: Eat white rice, peeled boiled potatoes, soft white bread, plain clear moong dal water, and steamed eggs.",
+                  "The Day Before: Stick to clear liquids only for dinner, such as strained vegetable broth, coconut water, and plain water."
+              ]
+          },
+          {
+              "heading": "Taking the Bowel Preparation Solution (PEG)",
+              "type": "text",
+              "content": "Your doctor will prescribe a polyethylene glycol (PEG) bowel cleansing powder to dissolve in water. Drink one glass every fifteen to twenty minutes until finished. Frequent watery bowel movements start within an hour. Keep the solution chilled and sip slowly through a straw to prevent nausea. By morning, bowel output should be pale yellow and transparent with zero solid flecks."
+          },
+          {
+              "heading": "What Happens During the Procedure",
+              "type": "text",
+              "content": "You will rest comfortably under short conscious sedation. The specialist advances the scope through the rectum into the cecum. If small polyps are discovered, they are removed painlessly using miniature snare tools. Most patients wake up half an hour later feeling relaxed and ready for light meals. [Contact our team](/contact) for preparation guidance."
+          }
+      ]
+  },
+  {
+      "slug": "h-pylori-quadruple-therapy-antibiotic-resistance",
+      "titleHi": "H. Pylori \u0915\u093e \u0907\u0932\u093e\u091c \u092b\u0947\u0932 \u0915\u094d\u092f\u094b\u0902 \u0939\u094b\u0924\u093e \u0939\u0948? \u091c\u093e\u0928\u093f\u090f Quadruple \u0925\u0947\u0930\u0947\u092a\u0940 \u0914\u0930 \u0938\u0939\u0940 \u0924\u0930\u0940\u0915\u093e",
+      "titleEn": "H. Pylori Infection: Why Standard Antibiotic Courses Fail & What Quadruple Therapy Involves",
+      "excerptHi": "\u090f\u0902\u091f\u0940\u092c\u093e\u092f\u094b\u091f\u093f\u0915 \u0932\u0947\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092d\u0940 H. pylori \u092c\u0948\u0915\u094d\u091f\u0940\u0930\u093f\u092f\u093e \u0916\u0924\u094d\u092e \u0928\u0939\u0940\u0902 \u0939\u0941\u0906? \u091c\u093e\u0928\u093f\u090f \u0915\u094d\u0932\u0948\u0930\u093f\u0925\u094d\u0930\u094b\u092e\u093e\u0907\u0938\u093f\u0928 \u0930\u0947\u0938\u093f\u0938\u094d\u091f\u0947\u0902\u0938, \u092c\u093f\u0938\u094d\u092e\u0925 \u0915\u094d\u0935\u093e\u0921\u094d\u0930\u092a\u0932 \u0925\u0947\u0930\u0947\u092a\u0940 \u0914\u0930 \u092a\u0915\u094d\u0915\u0947 \u0907\u0932\u093e\u091c \u0915\u0947 \u0928\u093f\u092f\u092e\u0964",
+      "excerptEn": "Why standard 14-day triple therapy fails against resistant H. pylori. Discover modern Bismuth quadruple therapy and clinical rules for complete cure.",
+      "category": "Digestive Health",
+      "readTimeMins": 7,
+      "publishedAt": "October 01, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-02",
+          "verified": true
+      },
+      "emoji": "\ud83d\udc8a",
+      "image": "/images/gerd-reflux-blog.png",
+      "tags": [
+          "H Pylori",
+          "Antibiotic Resistance",
+          "Quadruple Therapy",
+          "Gastritis",
+          "Ulcers",
+          "Ranchi"
+      ],
+      "metaTitle": "Why H. Pylori Antibiotics Fail & What Quadruple Therapy Does",
+      "metaDescription": "Why standard 14-day triple therapy fails against resistant H. pylori. Discover modern Bismuth quadruple therapy and clinical rules for complete cure.",
+      "faqs": [
+          {
+              "q": "Why did my first H. pylori antibiotic course fail?",
+              "a": "High rates of clarithromycin and metronidazole antibiotic resistance in India cause standard triple therapies to fail in over twenty to thirty percent of patients."
+          },
+          {
+              "q": "What is Bismuth Quadruple Therapy?",
+              "a": "It is a potent 14-day regimen combining a high-dose proton pump inhibitor, Bismuth subsalicylate, Tetracycline, and Metronidazole, overcoming bacterial resistance."
+          },
+          {
+              "q": "How can I avoid getting re-infected with H. pylori?",
+              "a": "H. pylori spreads via contaminated food, water, and saliva. Drink boiled or filtered water, practice strict hand hygiene, and treat symptomatic family members."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "The Rise of Antibiotic Resistance in India",
+              "type": "text",
+              "content": "Decades ago, standard triple therapy combining a proton pump inhibitor with clarithromycin and amoxicillin cleared Helicobacter pylori in over ninety percent of cases. Today, widespread over-the-counter antibiotic use has created high bacterial resistance. In eastern India, clarithromycin resistance exceeds twenty-five percent, causing standard therapy regimens to fail repeatedly."
+          },
+          {
+              "heading": "Why Incomplete Courses Worsen the Problem",
+              "type": "text",
+              "content": "Taking antibiotics for only seven days instead of the mandatory fourteen days, or skipping doses because of nausea or bitter taste, allows surviving bacteria to mutate. Mutated bacteria build thicker cell walls and pump mechanisms that neutralize future antibiotics. When treatment is restarted with the same old medicines, the bacteria remain untouched."
+          },
+          {
+              "heading": "What Bismuth Quadruple Therapy Involves",
+              "type": "list",
+              "content": "International gastroenterology guidelines recommend Bismuth Quadruple Therapy as the premier second-line or primary strategy in regions with high resistance:",
+              "list": [
+                  "Bismuth Subsalicylate: Directly coats the stomach lining, disrupts bacterial cell membranes, and prevents bacteria from adhering to mucosal tissue.",
+                  "Tetracycline and Metronidazole: Two synergistic antimicrobial agents that overcome clarithromycin resistance pathways.",
+                  "Double-Dose Acid Suppression: Raising stomach pH is essential because antibiotics degrade in acidic environments."
+              ]
+          },
+          {
+              "heading": "Rules for Complete Eradication",
+              "type": "text",
+              "content": "Take every dose with full glasses of water as scheduled. Four weeks after finishing the regimen, take an objective stool antigen or Urea Breath Test to verify total cure. [Consult Dr. Akhilesh Yadav in Ranchi](/contact) for personalized second-line eradication planning."
+          }
+      ]
+  },
+  {
+      "slug": "general-physician-vs-dm-gastroenterologist-difference",
+      "titleHi": "\u091c\u0928\u0930\u0932 \u092b\u093f\u091c\u093f\u0936\u093f\u092f\u0928 \u092c\u0928\u093e\u092e DM \u0917\u0948\u0938\u094d\u091f\u094d\u0930\u094b\u090f\u0902\u091f\u0947\u0930\u094b\u0932\u0949\u091c\u093f\u0938\u094d\u091f: \u092a\u0947\u091f \u0914\u0930 \u0932\u093f\u0935\u0930 \u0915\u0947 \u0932\u093f\u090f \u0915\u093f\u0938\u0938\u0947 \u092e\u093f\u0932\u0947\u0902?",
+      "titleEn": "General Physician vs DM Gastroenterologist: Who Should Treat Chronic Stomach & Liver Diseases?",
+      "excerptHi": "\u092a\u0947\u091f \u0926\u0930\u094d\u0926, \u0917\u0948\u0938 \u092f\u093e \u092a\u0940\u0932\u093f\u092f\u093e \u092e\u0947\u0902 \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0921\u0949\u0915\u094d\u091f\u0930 \u0914\u0930 \u0917\u0948\u0938\u094d\u091f\u094d\u0930\u094b \u0938\u0941\u092a\u0930 \u0938\u094d\u092a\u0947\u0936\u0932\u093f\u0938\u094d\u091f \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u0905\u0902\u0924\u0930 \u0939\u094b\u0924\u093e \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0915\u092c \u092b\u093f\u091c\u093f\u0936\u093f\u092f\u0928 \u0915\u0940 \u0926\u0935\u093e \u0915\u093e\u092b\u0940 \u0939\u0948 \u0914\u0930 \u0915\u092c \u0921\u0940\u090f\u092e \u0921\u0949\u0915\u094d\u091f\u0930 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948\u0902\u0964",
+      "excerptEn": "Understand the clinical difference between a general physician and a DM Gastroenterologist, and when super-specialist care is vital for stomach and liver issues.",
+      "category": "Patient Guides",
+      "readTimeMins": 6,
+      "publishedAt": "October 07, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-08",
+          "verified": true
+      },
+      "emoji": "\ud83d\udc68\u200d\u2695\ufe0f",
+      "image": "/images/gastroenterologist-in-ranchi-blog.png",
+      "tags": [
+          "DM Gastroenterologist",
+          "Doctor in Ranchi",
+          "Super Specialist",
+          "Stomach Doctor",
+          "Jharkhand"
+      ],
+      "metaTitle": "General Physician vs DM Gastroenterologist: When to Consult?",
+      "metaDescription": "Understand the clinical difference between a general physician and a DM Gastroenterologist, and when super-specialist care is vital for stomach and liver issues.",
+      "faqs": [
+          {
+              "q": "What qualifications does a DM Gastroenterologist hold?",
+              "a": "A DM Gastroenterologist completes 5.5 years of MBBS, 3 years of MD in General Medicine, followed by 3 years of dedicated super-specialty DM training in digestive and liver diseases."
+          },
+          {
+              "q": "When should I see a gastroenterologist instead of a general physician?",
+              "a": "Consult a gastroenterologist if symptoms persist beyond three weeks, if you have blood in stool, persistent vomiting, jaundice, difficulty swallowing, or need endoscopy."
+          },
+          {
+              "q": "Can general physicians perform endoscopies and colonoscopies?",
+              "a": "Endoscopy and therapeutic procedures require specialized fellowship or DM training to interpret mucosal pathology accurately and perform interventions safely."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Understanding Medical Qualifications in India",
+              "type": "text",
+              "content": "When suffering from persistent stomach problems, patients often visit neighborhood general clinics. While MBBS and MD physicians excel at primary care, chronic gastrointestinal and hepatobiliary conditions require super-specialist training. A DM (Doctorate of Medicine) in Gastroenterology represents six additional years of post-MBBS medical and procedural mastery."
+          },
+          {
+              "heading": "When a General Physician Is Appropriate",
+              "type": "list",
+              "content": "Primary care physicians are well suited for acute, self-limiting issues:",
+              "list": [
+                  "A single episode of traveler diarrhea or mild seasonal food poisoning.",
+                  "Occasional mild indigestion after eating heavy party food.",
+                  "Routine seasonal viral fever with mild digestive sluggishness."
+              ]
+          },
+          {
+              "heading": "When You Urgently Need a DM Gastroenterologist",
+              "type": "list",
+              "content": "Seek a super-specialist without delay if you notice:",
+              "list": [
+                  "Persistent symptoms failing to resolve after three weeks of standard medication.",
+                  "Alimentary tract bleeding, including bright red blood in stool or black tarry melena.",
+                  "Elevated liver enzymes (SGPT/SGOT), [Grade 2 or 3 fatty liver](/conditions/fatty-liver), or chronic hepatitis.",
+                  "Need for advanced daycare diagnostic or therapeutic endoscopy, colonoscopy, or ERCP."
+              ]
+          },
+          {
+              "heading": "Specialist Care at Orchid Medical Centre, Ranchi",
+              "type": "text",
+              "content": "Dr. Akhilesh Yadav holds MD and DM qualifications, bringing tertiary hospital expertise to Ranchi and surrounding districts. [Schedule your specialist consultation](/contact) for personalized clinical diagnosis."
+          }
+      ]
+  },
+  {
+      "slug": "traveling-dhanbad-bokaro-palamu-ranchi-endoscopy-guide",
+      "titleHi": "\u0927\u0928\u092c\u093e\u0926, \u092c\u094b\u0915\u093e\u0930\u094b \u0914\u0930 \u092a\u0932\u093e\u092e\u0942 \u0938\u0947 \u0930\u093e\u0902\u091a\u0940 \u090f\u0902\u0921\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0915\u0947 \u0932\u093f\u090f \u0915\u0948\u0938\u0947 \u0906\u090f\u0902? \u0938\u0947\u092e-\u0921\u0947 \u0930\u093f\u091f\u0930\u094d\u0928 \u0917\u093e\u0907\u0921",
+      "titleEn": "Traveling from Dhanbad, Bokaro, or Palamu to Ranchi for Endoscopy: Same-Day Return Guide",
+      "excerptHi": "\u0905\u0928\u094d\u092f \u091c\u093f\u0932\u094b\u0902 \u0938\u0947 \u0930\u093e\u0902\u091a\u0940 \u0906\u0915\u0930 \u090f\u0915 \u0939\u0940 \u0926\u093f\u0928 \u092e\u0947\u0902 \u091c\u093e\u0902\u091a, \u0921\u0949\u0915\u094d\u091f\u0930 \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u0914\u0930 \u0918\u0930 \u0935\u093e\u092a\u0938\u0940 \u0915\u0948\u0938\u0947 \u092a\u094d\u0932\u093e\u0928 \u0915\u0930\u0947\u0902? \u091f\u094d\u0930\u0947\u0928, \u0930\u094b\u0921 \u0930\u0942\u091f, \u0916\u093e\u0932\u0940 \u092a\u0947\u091f \u0930\u0939\u0928\u0947 \u0915\u0947 \u0928\u093f\u092f\u092e \u0914\u0930 \u0921\u0947\u0915\u0947\u092f\u0930 \u0921\u093f\u0938\u094d\u091a\u093e\u0930\u094d\u091c \u0917\u093e\u0907\u0921\u0964",
+      "excerptEn": "A complete same-day travel and logistics guide for patients from Dhanbad, Bokaro, and Palamu traveling to Orchid Medical Centre, Ranchi for endoscopy.",
+      "category": "Patient Guides",
+      "readTimeMins": 7,
+      "publishedAt": "October 14, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-15",
+          "verified": true
+      },
+      "emoji": "\ud83d\ude86",
+      "image": "/images/doctor-explaining-procedure.png",
+      "tags": [
+          "Dhanbad",
+          "Bokaro",
+          "Palamu",
+          "Ranchi Travel",
+          "Daycare Endoscopy",
+          "Outstation Patients"
+      ],
+      "metaTitle": "Traveling to Ranchi for Endoscopy: Same-Day Return Guide",
+      "metaDescription": "A complete same-day travel and logistics guide for patients from Dhanbad, Bokaro, and Palamu traveling to Orchid Medical Centre, Ranchi for endoscopy.",
+      "faqs": [
+          {
+              "q": "Can I travel to Ranchi and return home on the same day for an endoscopy?",
+              "a": "Yes. Patients arriving fasting by 9:30 AM can complete consultation, procedure, and recovery, collecting final reports by early afternoon."
+          },
+          {
+              "q": "Do I need to be admitted overnight for an endoscopy or colonoscopy?",
+              "a": "No. Endoscopy and colonoscopy are daycare outpatient procedures requiring only two to three hours of total hospital time."
+          },
+          {
+              "q": "What travel arrangements should I make after receiving sedation?",
+              "a": "Because conscious sedation temporarily slows reflexes for two to three hours, having an adult family member accompany you is essential."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Planning Your Day Trip for Specialist Gastro Care",
+              "type": "text",
+              "content": "Districts like Dhanbad, Bokaro, Palamu, Hazaribagh, and Giridih have general healthcare facilities, but lack dedicated DM Gastroenterologists and advanced daycare endoscopy suites. Thousands of families travel to Ranchi for care. With structured planning, you do not need expensive hotel stays in Ranchi. You can finish your consultation and procedure in a single morning."
+          },
+          {
+              "heading": "District-Wise Transit Options to Orchid Medical Centre",
+              "type": "list",
+              "content": "Plan your journey to arrive at Plaza Chowk, HB Road, Ranchi by 9:00 to 10:00 AM:",
+              "list": [
+                  "From Dhanbad: Board early trains like the Vande Bharat or Intercity Express, or travel by road via NH320 (approx. 3 hours). [Read Dhanbad guide](/locations/dhanbad).",
+                  "From Bokaro Steel City: Travel via NH320 or passenger train (approx. 2 to 2.5 hours). [Read Bokaro guide](/locations/bokaro).",
+                  "From Palamu (Daltonganj): Take early morning road transport via Tori/Kuru or passenger trains arriving at Ranchi Junction (approx. 4 hours). [Read Palamu guide](/locations/palamu).",
+                  "From Hazaribagh: Travel smoothly down NH20 four-lane highway (approx. 1.5 to 2 hours). [Read Hazaribagh guide](/locations/hazaribagh)."
+              ]
+          },
+          {
+              "heading": "Fasting and Preparation Rules on Travel Day",
+              "type": "text",
+              "content": "Remain strictly fasting from 6:00 AM. Do not drink morning tea, milk, or breakfast. You may sip two to three spoonfuls of plain water to moisten your mouth during travel. Carry all previous blood tests, ultrasound scans, and prescription slips in an organized folder. Ensure one adult relative accompanies you."
+          },
+          {
+              "heading": "Same-Day Hospital Flow and Departure",
+              "type": "text",
+              "content": "Upon arrival, register at the endoscopy daycare counter. Dr. Akhilesh Yadav reviews your history, performs the procedure under gentle conscious sedation within an hour, and reviews the high-definition images with you over tea once you wake up. By 2:00 PM, you receive your printed report and medication plan, leaving plenty of time for a comfortable trip home. [Book your morning slot](/contact)."
+          }
+      ]
+  },
+  {
+      "slug": "emergency-gi-care-ranchi-jaundice-vomiting-blood",
+      "titleHi": "\u0907\u092e\u0930\u091c\u0947\u0902\u0938\u0940 \u092a\u0947\u091f \u0914\u0930 \u0932\u093f\u0935\u0930 \u0938\u092e\u0938\u094d\u092f\u093e\u090f\u0902: \u0916\u0942\u0928 \u0915\u0940 \u0909\u0932\u094d\u091f\u0940, \u092a\u0940\u0932\u093f\u092f\u093e \u092f\u093e \u0924\u0947\u091c \u092a\u0947\u091f \u0926\u0930\u094d\u0926 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u0915\u0930\u0947\u0902?",
+      "titleEn": "Emergency GI Care in Ranchi: When to Visit the Hospital for Acute Jaundice, Vomiting Blood, or Severe Abdominal Pain",
+      "excerptHi": "\u0916\u0942\u0928 \u0915\u0940 \u0909\u0932\u094d\u091f\u0940, \u0915\u093e\u0932\u093e \u092e\u0932 \u092f\u093e \u0905\u091a\u093e\u0928\u0915 \u0924\u0947\u091c \u092a\u0947\u091f \u0926\u0930\u094d\u0926 \u092e\u0947\u0902 \u090f\u0915-\u090f\u0915 \u092e\u093f\u0928\u091f \u0915\u0940\u092e\u0924\u0940 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u091c\u093e\u0928\u093f\u090f \u0915\u092c \u0924\u0941\u0930\u0902\u0924 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u092a\u0939\u0941\u0902\u091a\u0928\u093e \u091c\u0930\u0942\u0930\u0940 \u0939\u0948 \u0914\u0930 \u0930\u093e\u0902\u091a\u0940 \u092e\u0947\u0902 \u0907\u092e\u0930\u091c\u0947\u0902\u0938\u0940 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e\u090f\u0902 \u0915\u0948\u0938\u0947 \u0939\u094b\u0924\u0940 \u0939\u0948\u0902\u0964",
+      "excerptEn": "Recognize life-threatening gastroenterology emergencies. Learn what to do for acute hematemesis, severe jaundice, or pancreatitis, and how emergency ERCP saves lives.",
+      "category": "Patient Guides",
+      "readTimeMins": 8,
+      "publishedAt": "October 20, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-21",
+          "verified": true
+      },
+      "emoji": "\ud83d\udea8",
+      "image": "/images/jaundice-treatment-ranchi-blog.png",
+      "tags": [
+          "GI Emergency",
+          "Vomiting Blood",
+          "Acute Pancreatitis",
+          "ERCP",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "Emergency GI Care in Ranchi: When to Rush to Hospital",
+      "metaDescription": "Recognize life-threatening gastroenterology emergencies. Learn what to do for acute hematemesis, severe jaundice, or pancreatitis, and how emergency ERCP saves lives.",
+      "faqs": [
+          {
+              "q": "What should I do immediately if someone vomits blood?",
+              "a": "Do not give any food, water, or home remedies. Keep the patient sitting upright or on their side to prevent choking, and rush directly to an accredited emergency department."
+          },
+          {
+              "q": "How is acute upper GI bleeding stopped in the hospital?",
+              "a": "Emergency endoscopy delivers targeted therapies\u2014such as band ligation for esophageal varices or hemoclip application for bleeding peptic ulcers\u2014stopping blood loss immediately."
+          },
+          {
+              "q": "What causes sudden severe upper abdominal pain radiating to the back?",
+              "a": "Acute pancreatitis, often triggered by migrating gallstones or heavy alcohol use, causes agonizing pain and requires urgent intensive hospital care."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Recognizing Red-Flag Digestive Emergencies",
+              "type": "text",
+              "content": "While most digestive complaints are chronic and managed in outpatient clinics, certain GI symptoms represent acute medical emergencies. When massive internal bleeding or organ inflammation strikes, immediate intervention at a hospital equipped with round-the-clock endoscopy and intensive care determines survival."
+          },
+          {
+              "heading": "Four GI Emergencies Demanding Immediate Hospitalization",
+              "type": "list",
+              "content": "Rush to the nearest emergency department if you observe:",
+              "list": [
+                  "Hematemesis (Vomiting Blood): Bright red blood or dark coffee-ground emesis, commonly caused by ruptured esophageal varices in liver cirrhosis or bleeding peptic ulcers.",
+                  "Melena (Jet Black Stool): Foul-smelling tarry stools indicating massive upper gastrointestinal hemorrhage.",
+                  "Acute Ascending Cholangitis: Rapidly worsening jaundice accompanied by high fevers with shaking chills and right upper abdominal pain.",
+                  "Acute Pancreatitis: Sudden, agonizing upper stomach pain boring through to the back, with persistent vomiting and rapid heart rate."
+              ]
+          },
+          {
+              "heading": "Emergency Endoscopic Interventions at Orchid Medical Centre",
+              "type": "text",
+              "content": "At Orchid Medical Centre in Ranchi, emergency gastro care provides rapid therapeutic solutions without major incisions. Variceal band ligation (EVL) places elastic bands around bleeding veins in the food pipe, hemoclips clamp bleeding stomach ulcers, and emergency [ERCP stenting](/procedures/ercp) clears infected, obstructed bile ducts to relieve septic cholangitis within hours."
+          },
+          {
+              "heading": "Emergency Advice for Families",
+              "type": "text",
+              "content": "Keep the patient strictly nil-by-mouth (no food or water). Bring all current medications, prior discharge summaries, and blood group cards. Contact the hospital emergency desk in advance while traveling so the endoscopy and critical care teams are primed for immediate admission. [Find clinic location and contact details](/contact)."
+          }
+      ]
+  },
+  {
       "slug": "blood-in-stool-causes-piles-vs-serious-bleed",
       "titleHi": "\u092e\u0932 \u092e\u0947\u0902 \u0916\u0942\u0928 \u0906\u0928\u093e: \u092c\u0935\u093e\u0938\u0940\u0930 (Piles) \u092f\u093e \u0915\u094b\u0908 \u0917\u0902\u092d\u0940\u0930 \u092c\u0940\u092e\u093e\u0930\u0940? \u0915\u0948\u0938\u0947 \u092a\u0939\u091a\u093e\u0928\u0947\u0902",
       "titleEn": "Blood in Stool: When It Is Piles, and When It Signals Something Deeper",
