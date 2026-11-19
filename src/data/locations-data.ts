@@ -150,7 +150,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
       },
       {
         "q": "How do I book a priority appointment from Palamu?",
-        "a": "Call or WhatsApp +91-7764028474. Mention that you are travelling from Palamu so we can schedule a priority 10:00 AM slot — allowing you to complete consultation, diagnostics, and collect your report all within the same visit."
+        "a": "Call or WhatsApp +91 74919 25047. Mention that you are travelling from Palamu so we can schedule a priority 10:00 AM slot — allowing you to complete consultation, diagnostics, and collect your report all within the same visit."
       }
     ]
   },
@@ -276,7 +276,7 @@ export const LOCATIONS_DATA: Record<string, LocationData> = {
       },
       {
         "q": "How do I book an appointment from Chaibasa?",
-        "a": "Call or WhatsApp +91-7764028474 to book a slot. Mention that you are travelling from Chaibasa so we can schedule a priority morning appointment (10:00 AM–12:00 PM) to allow same-day return travel."
+        "a": "Call or WhatsApp +91 74919 25047 to book a slot. Mention that you are travelling from Chaibasa so we can schedule a priority morning appointment (10:00 AM–12:00 PM) to allow same-day return travel."
       }
     ]
   },

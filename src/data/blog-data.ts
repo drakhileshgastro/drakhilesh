@@ -3041,7 +3041,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "q": "Ascites में डॉक्टर से कब मिलें? — Ranchi में Liver Specialist",
-        "a": "अगर पेट तेजी से बढ़ रहा हो, पैरों में सूजन हो, बुखार के साथ पेट दर्द हो (SBP का खतरा), या सांस लेने में तकलीफ हो — तो तुरंत liver specialist से मिलें। रांची में Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre में ascites और liver cirrhosis का विशेष उपचार करते हैं। अपॉइंटमेंट: 7764028474।"
+        "a": "अगर पेट तेजी से बढ़ रहा हो, पैरों में सूजन हो, बुखार के साथ पेट दर्द हो (SBP का खतरा), या सांस लेने में तकलीफ हो — तो तुरंत liver specialist से मिलें। रांची में Dr. Akhilesh Yadav, DM Gastroenterologist, Orchid Medical Centre में ascites और liver cirrhosis का विशेष उपचार करते हैं। अपॉइंटमेंट: 7491925047।"
       }
     ],
     "medicalReviewPending": false,
@@ -3115,7 +3115,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "q": "एसिडिटी बार-बार होती है — डॉक्टर से कब मिलें?",
-        "a": "अगर एसिडिटी हफ्ते में 2 से ज़्यादा बार हो, रात को सोते समय acid throat तक आए, खाना निगलने में तकलीफ हो, या आवाज बैठ जाए — तो यह simple acidity नहीं बल्कि GERD हो सकती है। ऐसे में Gastroenterologist से मिलना ज़रूरी है। रांची में Dr. Akhilesh Yadav से संपर्क करें: 7764028474।"
+        "a": "अगर एसिडिटी हफ्ते में 2 से ज़्यादा बार हो, रात को सोते समय acid throat तक आए, खाना निगलने में तकलीफ हो, या आवाज बैठ जाए — तो यह simple acidity नहीं बल्कि GERD हो सकती है। ऐसे में Gastroenterologist से मिलना ज़रूरी है। रांची में Dr. Akhilesh Yadav से संपर्क करें: 7491925047।"
       }
     ],
     "medicalReviewPending": false,
@@ -3734,7 +3734,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         "heading": "🏥 रांची में Bilirubin Test और Liver Specialist",
         "type": "text",
-        "content": "रांची में Liver Function Test (LFT) किसी भी अच्छी pathology lab से करवाया जा सकता है। लेकिन रिपोर्ट समझने और आगे का इलाज तय करने के लिए DM Gastroenterologist से मिलना ज़रूरी है। Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre Ranchi में लिवर की सभी समस्याओं का निदान और उपचार करते हैं। अपॉइंटमेंट के लिए: 7764028474।"
+        "content": "रांची में Liver Function Test (LFT) किसी भी अच्छी pathology lab से करवाया जा सकता है। लेकिन रिपोर्ट समझने और आगे का इलाज तय करने के लिए DM Gastroenterologist से मिलना ज़रूरी है। Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre Ranchi में लिवर की सभी समस्याओं का निदान और उपचार करते हैं। अपॉइंटमेंट के लिए: 7491925047।"
       }
     ],
     "faqs": [
@@ -3752,7 +3752,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "q": "Bilirubin कम करने के लिए क्या करें?",
-        "a": "बिलीरुबिन कम करने का तरीका इसके कारण पर निर्भर है। Hepatitis में आराम और antiviral दवाएं, पित्त नली की रुकावट में ERCP या surgery, और cirrhosis में liver care। खुद से कोई दवा न लें — पहले कारण पता करें। रांची में Dr. Akhilesh Yadav: 7764028474।"
+        "a": "बिलीरुबिन कम करने का तरीका इसके कारण पर निर्भर है। Hepatitis में आराम और antiviral दवाएं, पित्त नली की रुकावट में ERCP या surgery, और cirrhosis में liver care। खुद से कोई दवा न लें — पहले कारण पता करें। रांची में Dr. Akhilesh Yadav: 7491925047।"
       }
     ],
     "medicalReviewPending": false,
@@ -3811,13 +3811,13 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         "heading": "📞 अपॉइंटमेंट कैसे लें?",
         "type": "text",
-        "content": "रांची में Orchid Medical Centre, Morabadi में Dr. Akhilesh Yadav सोमवार से शनिवार सुबह 10 बजे से शाम 8 बजे OPD देते हैं। अपॉइंटमेंट के लिए: 7764028474 पर call या WhatsApp करें। Same-day appointment भी available है।"
+        "content": "रांची में Orchid Medical Centre, Morabadi में Dr. Akhilesh Yadav सोमवार से शनिवार सुबह 10 बजे से शाम 8 बजे OPD देते हैं। अपॉइंटमेंट के लिए: 7491925047 पर call या WhatsApp करें। Same-day appointment भी available है।"
       }
     ],
     "faqs": [
       {
         "q": "Ranchi में Liver Specialist Doctor कौन हैं?",
-        "a": "Ranchi में Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre (Morabadi) में लिवर के सभी रोगों के specialist हैं। वे Jharkhand के चुनिंदा DM Gastroenterologists में से हैं जो fatty liver, hepatitis, cirrhosis, ascites और liver cancer का treatment करते हैं। अपॉइंटमेंट: 7764028474।"
+        "a": "Ranchi में Dr. Akhilesh Yadav, DM Gastroenterology & Hepatology, Orchid Medical Centre (Morabadi) में लिवर के सभी रोगों के specialist हैं। वे Jharkhand के चुनिंदा DM Gastroenterologists में से हैं जो fatty liver, hepatitis, cirrhosis, ascites और liver cancer का treatment करते हैं। अपॉइंटमेंट: 7491925047।"
       },
       {
         "q": "Liver Doctor और Gastroenterologist में क्या फर्क है?",

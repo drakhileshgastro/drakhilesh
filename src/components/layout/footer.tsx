@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href={`tel:${DOCTOR.phone}`}
+              href={`tel:${DOCTOR.phone.replace(/\s+/g, "")}`}
               className="flex items-center gap-2 px-5 py-3 border border-white/20 text-white font-bold text-sm rounded-xl hover:bg-white/5 transition-colors min-h-[48px]"
             >
               <Phone size={16} /> Call Now
@@ -256,7 +256,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-white/10 pb-20 lg:pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
                         <p className="text-white/70 text-xs font-sans">

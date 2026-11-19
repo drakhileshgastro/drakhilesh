@@ -251,7 +251,7 @@ export default function Navbar() {
             {/* Quick CTAs */}
             <div className="grid grid-cols-2 gap-2 mb-6">
               <a
-                href={`tel:${DOCTOR.phone}`}
+                href={`tel:${DOCTOR.phone.replace(/\s+/g, "")}`}
                 className="flex items-center justify-center gap-2 py-3.5 bg-bg-sand border border-border text-primary font-bold text-sm rounded-xl min-h-[50px]"
                 onClick={() => setMobileOpen(false)}
               >

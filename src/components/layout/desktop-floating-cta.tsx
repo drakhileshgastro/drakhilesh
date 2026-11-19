@@ -27,7 +27,7 @@ export default function DesktopFloatingCTA() {
       
       {/* Call Now */}
       <a
-        href={`tel:${DOCTOR.phone}`}
+        href={`tel:${DOCTOR.phone.replace(/\s+/g, "")}`}
         className="flex items-center gap-1.5 px-4 h-11 border border-border hover:border-primary text-forest hover:text-primary transition-all text-xs font-bold bg-bg-sand/30 rounded-xl"
         title="Call Doctor"
       >

@@ -317,7 +317,7 @@ export default function CrmShell({ children }: { children: React.ReactNode }) {
 
           <div className="flex items-center gap-2">
             <a
-              href={`tel:+919031669888`}
+              href={`tel:+917491925047`}
               className="hidden sm:flex items-center gap-1.5 text-xs font-semibold rounded-lg border transition-colors"
               style={{
                 padding: "6px 12px",

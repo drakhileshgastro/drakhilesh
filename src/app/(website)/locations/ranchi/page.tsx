@@ -96,7 +96,7 @@ const FAQS = [
   },
   {
     q: "What are Dr. Akhilesh Yadav's OPD timings in Ranchi?",
-    a: "OPD is available Monday to Saturday: Morning 10:00 AM – 2:00 PM and Evening 5:00 PM – 8:00 PM at Orchid Medical Centre, HB Road, Ranchi. Sunday OPD is closed. Call +91 9031669888 or WhatsApp to confirm availability and book a preferred slot.",
+    a: "OPD is available Monday to Saturday: Morning 10:00 AM – 2:00 PM and Evening 5:00 PM – 8:00 PM at Orchid Medical Centre, HB Road, Ranchi. Sunday OPD is closed. Call +91 74919 25047 or WhatsApp to confirm availability and book a preferred slot.",
   },
   {
     q: "Is Dr. Akhilesh Yadav also a liver specialist (hepatologist) in Ranchi?",
@@ -104,7 +104,7 @@ const FAQS = [
   },
   {
     q: "How do I book an appointment with Dr. Akhilesh Yadav in Ranchi?",
-    a: "Call or WhatsApp +91 9031669888 to book an appointment at Orchid Medical Centre, HB Road, Ranchi. You can also use the appointment form on this page. Mention your symptoms so the clinic can prepare for your visit.",
+    a: "Call or WhatsApp +91 74919 25047 to book an appointment at Orchid Medical Centre, HB Road, Ranchi. You can also use the appointment form on this page. Mention your symptoms so the clinic can prepare for your visit.",
   },
 ];
 

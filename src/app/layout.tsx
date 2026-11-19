@@ -91,7 +91,7 @@ const GLOBAL_SCHEMA = {
       description: "DM Gastroenterologist & Hepatologist specialising in liver disease, fatty liver, jaundice, endoscopy, IBS and all digestive conditions.",
       image: "https://drakhileshgastro.com/dr-akhilesh-improved.png",
       url: "https://drakhileshgastro.com",
-      telephone: "+919031669888",
+      telephone: "+917491925047",
       medicalSpecialty: ["Gastroenterology", "Hepatology"],
       knowsLanguage: ["hi", "en"],
       hasCredential: [
@@ -117,7 +117,7 @@ const GLOBAL_SCHEMA = {
       name: "Dr. Akhilesh Yadav — Gastroenterologist at Orchid Medical Centre",
       description: "Specialist gastroenterology & hepatology clinic in Ranchi, Jharkhand. Advanced Endoscopy, Colonoscopy, ERCP, FibroScan, and Liver Care serving patients from Ranchi, Dhanbad, Bokaro, Jamshedpur, and all Jharkhand.",
       url: "https://drakhileshgastro.com",
-      telephone: "+919031669888",
+      telephone: "+917491925047",
       priceRange: "₹₹",
       currenciesAccepted: "INR",
       paymentAccepted: "Cash, UPI, Card, NetBanking",

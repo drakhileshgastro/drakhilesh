@@ -23,7 +23,7 @@ export default function MobileBottomBar() {
       <div className="grid grid-cols-4 h-16 max-w-md mx-auto">
         {/* Instant Phone Call */}
         <a
-          href={`tel:${DOCTOR.phone}`}
+          href={`tel:${DOCTOR.phone.replace(/\s+/g, "")}`}
           onClick={handlePhoneClick}
           className="flex flex-col items-center justify-center gap-1 text-slate-700 hover:text-emerald-700 active:bg-emerald-50 transition-colors"
           aria-label="Call Dr. Akhilesh Yadav OPD Clinic"
