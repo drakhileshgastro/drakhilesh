@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { UserPlus, Shield, User, Mail, Eye, EyeOff, CheckCircle, AlertCircle, RefreshCw } from "lucide-react";
+import { UserPlus, Shield, User, Mail, Eye, EyeOff, CheckCircle, AlertCircle, RefreshCw, KeyRound, X } from "lucide-react";
 
 interface StaffUser {
   id: string;
@@ -36,6 +36,12 @@ export default function AdminUsers() {
   const [showPass, setShowPass] = useState(false);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState({ type: "", text: "" });
+
+  // Reset password states
+  const [resetModalUser, setResetModalUser] = useState<StaffUser | null>(null);
+  const [directPassword, setDirectPassword] = useState("");
+  const [showDirectPass, setShowDirectPass] = useState(false);
+  const [resetting, setResetting] = useState(false);
 
   useEffect(() => { fetchUsers(); }, []);
 
@@ -72,14 +78,44 @@ export default function AdminUsers() {
     setSaving(false);
   }
 
-  async function resetPassword(userId: string, email: string) {
+  async function sendResetEmail(userId: string, email: string) {
+    setResetting(true);
     const res = await fetch("/api/admin/users/reset", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, email }),
     });
     const data = await res.json();
-    setMessage({ type: data.success ? "success" : "error", text: data.success ? `Password reset email sent to ${email}` : "Failed to send reset email." });
+    setMessage({
+      type: data.success ? "success" : "error",
+      text: data.success ? `Password reset link sent to ${email}` : (data.error ?? "Failed to send reset email.")
+    });
+    setResetting(false);
+    setResetModalUser(null);
+  }
+
+  async function setPasswordDirectly(userId: string, email: string) {
+    if (!directPassword || directPassword.length < 8) {
+      setMessage({ type: "error", text: "New password must be at least 8 characters." });
+      return;
+    }
+
+    setResetting(true);
+    const res = await fetch("/api/admin/users/reset", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId, email, newPassword: directPassword }),
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      setMessage({ type: "success", text: `Password for ${email} has been updated successfully.` });
+      setDirectPassword("");
+      setResetModalUser(null);
+    } else {
+      setMessage({ type: "error", text: data.error ?? "Failed to update password directly." });
+    }
+    setResetting(false);
   }
 
   return (
@@ -99,6 +135,80 @@ export default function AdminUsers() {
         <div className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm border ${message.type === "success" ? "bg-green-50 border-green-200 text-green-700" : "bg-red-50 border-red-200 text-red-700"}`}>
           {message.type === "success" ? <CheckCircle size={15} /> : <AlertCircle size={15} />}
           {message.text}
+        </div>
+      )}
+
+      {/* Reset Password Modal / Card */}
+      {resetModalUser && (
+        <div className="bg-blue-50/50 rounded-2xl border border-blue-200 p-5 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-blue-900 font-bold text-sm">
+              <KeyRound size={16} />
+              Reset Password for {resetModalUser.email}
+            </div>
+            <button
+              onClick={() => { setResetModalUser(null); setDirectPassword(""); }}
+              className="text-gray-400 hover:text-gray-600 p-1"
+            >
+              <X size={16} />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+            {/* Option A: Send reset email */}
+            <div className="bg-white p-4 rounded-xl border border-blue-100 flex flex-col justify-between space-y-3">
+              <div>
+                <h4 className="text-gray-900 font-semibold text-xs flex items-center gap-1.5">
+                  <Mail size={13} className="text-blue-600" /> Option 1: Send Reset Link
+                </h4>
+                <p className="text-gray-500 text-[11px] mt-1 leading-relaxed">
+                  Sends an automated Supabase password reset email with a secure link to {resetModalUser.email}.
+                </p>
+              </div>
+              <button
+                onClick={() => sendResetEmail(resetModalUser.id, resetModalUser.email)}
+                disabled={resetting}
+                className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition-colors disabled:opacity-50"
+              >
+                {resetting ? "Dispatching..." : "Send Reset Email"}
+              </button>
+            </div>
+
+            {/* Option B: Set password directly */}
+            <div className="bg-white p-4 rounded-xl border border-blue-100 space-y-3">
+              <div>
+                <h4 className="text-gray-900 font-semibold text-xs flex items-center gap-1.5">
+                  <KeyRound size={13} className="text-green-600" /> Option 2: Set Password Directly
+                </h4>
+                <p className="text-gray-500 text-[11px] mt-1 leading-relaxed">
+                  Directly sets a new password in Supabase without requiring email verification.
+                </p>
+              </div>
+              <div className="relative">
+                <input
+                  type={showDirectPass ? "text" : "password"}
+                  value={directPassword}
+                  onChange={(e) => setDirectPassword(e.target.value)}
+                  placeholder="New password (min 8 chars)"
+                  className="w-full px-3 py-1.5 pr-8 text-xs border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-blue-500"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowDirectPass(!showDirectPass)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700"
+                >
+                  {showDirectPass ? <EyeOff size={13} /> : <Eye size={13} />}
+                </button>
+              </div>
+              <button
+                onClick={() => setPasswordDirectly(resetModalUser.id, resetModalUser.email)}
+                disabled={resetting || directPassword.length < 8}
+                className="w-full py-2 bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold rounded-lg transition-colors disabled:opacity-50"
+              >
+                {resetting ? "Updating..." : "Update Password Directly"}
+              </button>
+            </div>
+          </div>
         </div>
       )}
 
@@ -181,9 +291,15 @@ export default function AdminUsers() {
                     {user.last_sign_in_at && ` · Last login ${new Date(user.last_sign_in_at).toLocaleDateString("en-IN")}`}
                   </p>
                 </div>
-                <button onClick={() => resetPassword(user.id, user.email)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 border border-gray-200 text-gray-500 text-xs rounded-lg hover:border-gray-700 hover:text-gray-900 transition-colors flex-shrink-0">
-                  <Mail size={12} /> Reset Password
+                <button
+                  onClick={() => {
+                    setResetModalUser(user);
+                    setDirectPassword("");
+                    setMessage({ type: "", text: "" });
+                  }}
+                  className="flex items-center gap-1.5 px-3 py-1.5 border border-gray-200 text-gray-600 text-xs font-medium rounded-lg hover:border-blue-400 hover:text-blue-600 transition-colors flex-shrink-0"
+                >
+                  <KeyRound size={12} /> Reset Password
                 </button>
               </div>
             ))}
