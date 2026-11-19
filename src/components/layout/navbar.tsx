@@ -5,7 +5,8 @@ import Link from "next/link";
 import { 
   Menu, X, Phone, MessageCircle, ChevronDown, MapPin, Clock,
   Flame, Wind, Droplet, TrendingDown, AlertTriangle, Activity, AlertCircle, Frown, RefreshCw, Eye,
-  Shield, Heart, Sparkles, Search, Radio, Disc, Scissors, Compass, PlusCircle, HelpCircle
+  Shield, Heart, Sparkles, Search, Radio, Disc, Scissors, Compass, PlusCircle, HelpCircle,
+  BookOpen, Utensils, Navigation, Video, HeartHandshake
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 import {
@@ -29,6 +30,19 @@ const SYMPTOM_ICONS: Record<string, any> = {
   "difficulty-swallowing": AlertCircle,
   "weight-loss": TrendingDown,
   "jaundice": Eye,
+};
+
+const SYMPTOM_TARGET_MAP: Record<string, string> = {
+  "stomach-pain": "/conditions/abdominal-pain",
+  "gas-bloating": "/conditions/ibs",
+  "acidity": "/conditions/acid-reflux",
+  "constipation": "/conditions/ibs",
+  "diarrhoea": "/conditions/ibs",
+  "vomiting": "/conditions/peptic-ulcer",
+  "blood-in-stool": "/conditions/gi-bleeding",
+  "difficulty-swallowing": "/procedures/endoscopy",
+  "weight-loss": "/conditions/weight-loss",
+  "jaundice": "/conditions/jaundice",
 };
 
 const CONDITION_ICONS: Record<string, any> = {
@@ -56,7 +70,16 @@ const PROCEDURE_ICONS: Record<string, any> = {
   "gi-bleeding-treatment": PlusCircle,
 };
 
-type Dropdown = "symptoms" | "conditions" | "procedures" | "library" | "about" | null;
+type Dropdown = "conditions" | "procedures" | "guide" | null;
+
+const GUIDE_LINKS = [
+  { label: "Patient Guide & Prep", desc: "Daycare tests & first visit preparation", href: "/patient-guide", icon: BookOpen },
+  { label: "Diet & Nutrition Charts", desc: "Indian food guidelines for liver & gut", href: "/diet", icon: Utensils },
+  { label: "Outstation Travel Routes", desc: "Driving routes & train times to Ranchi", href: "/contact#routes", icon: Navigation },
+  { label: "Patient FAQs", desc: "Common questions about endoscopy & OPD", href: "/faqs", icon: HelpCircle },
+  { label: "Patient Success Stories", desc: "Real patient reviews & recovery", href: "/patient-stories", icon: HeartHandshake },
+  { label: "Educational Videos", desc: "Dr. Akhilesh explains GI procedures", href: "/videos", icon: Video },
+];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -107,11 +130,11 @@ export default function Navbar() {
   };
 
   const menuLinks = [
-    { label: "Symptoms", href: "/symptoms", dropdown: "symptoms" as const },
-    { label: "Conditions", href: "/conditions", dropdown: "conditions" as const },
+    { label: "Conditions & Symptoms", href: "/conditions", dropdown: "conditions" as const },
     { label: "Procedures", href: "/procedures", dropdown: "procedures" as const },
-    { label: "Blog", href: "/blog" },
+    { label: "Patient Guide", href: "/patient-guide", dropdown: "guide" as const },
     { label: "About Doctor", href: "/about" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -169,7 +192,8 @@ export default function Navbar() {
                     {/* Dropdown panel */}
                     <div
                       className={cn(
-                        "absolute top-full left-1/2 -translate-x-1/2 mt-1 w-80 bg-white rounded-2xl shadow-lg border border-border overflow-hidden transition-all duration-200",
+                        "absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-white rounded-2xl shadow-xl border border-border overflow-hidden transition-all duration-200",
+                        link.dropdown === "conditions" ? "w-[560px]" : "w-[340px]",
                         activeDropdown === link.dropdown
                           ? "opacity-100 translate-y-0 pointer-events-auto"
                           : "opacity-0 -translate-y-2 pointer-events-none"
@@ -271,58 +295,61 @@ export default function Navbar() {
 /* ── Dropdown Content ── */
 function DropdownContent({ type }: { type: string }) {
   switch (type) {
-    case "symptoms":
-      return (
-        <div className="p-4 w-[340px]">
-          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-3 px-1 font-sans">Common Symptoms</p>
-          <div className="grid grid-cols-1 gap-0.5">
-            {SYMPTOMS_LIST.slice(0, 8).map((s) => {
-              const IconComponent = SYMPTOM_ICONS[s.slug] || Activity;
-              return (
-                <Link
-                  key={s.slug}
-                  href={`/symptoms/${s.slug}`}
-                  className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
-                >
-                  <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
-                  <span>{s.label}</span>
-                </Link>
-              );
-            })}
-          </div>
-          <Link
-            href="/symptoms"
-            className="mt-3 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
-          >
-            All Symptoms →
-          </Link>
-        </div>
-      );
-
     case "conditions":
       return (
-        <div className="p-4 w-[340px]">
-          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-3 px-1 font-sans">Conditions Treated</p>
-          <div className="grid grid-cols-1 gap-0.5">
-            {CONDITIONS_LIST.slice(0, 6).map((c) => {
-              const IconComponent = CONDITION_ICONS[c.slug] || Shield;
-              return (
-                <Link
-                  key={c.slug}
-                  href={`/conditions/${c.slug}`}
-                  className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
-                >
-                  <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
-                  <span>{c.title}</span>
-                </Link>
-              );
-            })}
+        <div className="p-5">
+          <div className="grid grid-cols-2 gap-5">
+            {/* Column 1: Symptoms */}
+            <div className="space-y-2 border-r border-border/60 pr-5">
+              <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-2 px-1 font-sans">
+                Common Symptoms (लक्षण)
+              </p>
+              <div className="space-y-0.5">
+                {SYMPTOMS_LIST.slice(0, 6).map((s) => {
+                  const IconComponent = SYMPTOM_ICONS[s.slug] || Activity;
+                  const href = SYMPTOM_TARGET_MAP[s.slug] || "/conditions";
+                  return (
+                    <Link
+                      key={s.slug}
+                      href={href}
+                      className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
+                    >
+                      <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
+                      <span>{s.label}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Column 2: Conditions */}
+            <div className="space-y-2">
+              <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-2 px-1 font-sans">
+                Conditions Treated (बीमारियां)
+              </p>
+              <div className="space-y-0.5">
+                {CONDITIONS_LIST.slice(0, 6).map((c) => {
+                  const IconComponent = CONDITION_ICONS[c.slug] || Shield;
+                  return (
+                    <Link
+                      key={c.slug}
+                      href={`/conditions/${c.slug}`}
+                      className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
+                    >
+                      <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
+                      <span>{c.title}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
           </div>
+
           <Link
             href="/conditions"
-            className="mt-3 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
+            className="mt-4 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
           >
-            View All Conditions →
+            All Conditions & Symptoms →
           </Link>
         </div>
       );
@@ -355,6 +382,34 @@ function DropdownContent({ type }: { type: string }) {
         </div>
       );
 
+    case "guide":
+      return (
+        <div className="p-4 w-[340px]">
+          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-3 px-1 font-sans">Patient Care & Resources</p>
+          <div className="grid grid-cols-1 gap-0.5">
+            {GUIDE_LINKS.map((g) => {
+              const IconComponent = g.icon || BookOpen;
+              return (
+                <Link
+                  key={g.href}
+                  href={g.href}
+                  className="flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold text-forest hover:text-primary hover:bg-bg-sand rounded-xl transition-all font-sans"
+                >
+                  <IconComponent size={14} className="text-primary/75 flex-shrink-0" />
+                  <span>{g.label}</span>
+                </Link>
+              );
+            })}
+          </div>
+          <Link
+            href="/patient-guide"
+            className="mt-3 flex items-center justify-center py-2 text-primary text-[10px] font-bold uppercase tracking-wider border border-border rounded-xl hover:bg-bg-sand transition-colors font-sans"
+          >
+            Explore Patient Guide →
+          </Link>
+        </div>
+      );
+
     default:
       return null;
   }
@@ -362,24 +417,74 @@ function DropdownContent({ type }: { type: string }) {
 
 /* ── Mobile Dropdown Content ── */
 function MobileDropdownContent({ type, onClose }: { type: string; onClose: () => void }) {
+  if (type === "conditions") {
+    return (
+      <div className="bg-bg-sand/35 rounded-xl mx-2 my-2 p-3 border border-border/50 space-y-3">
+        <div>
+          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-1.5 px-1 font-sans">Common Symptoms</p>
+          <div className="space-y-0.5">
+            {SYMPTOMS_LIST.slice(0, 5).map((s) => {
+              const IconComponent = SYMPTOM_ICONS[s.slug] || Activity;
+              return (
+                <Link
+                  key={s.slug}
+                  href={SYMPTOM_TARGET_MAP[s.slug] || "/conditions"}
+                  className="flex items-center gap-2.5 px-3 py-2 text-xs text-forest hover:text-primary rounded-lg transition-colors font-sans font-medium"
+                  onClick={onClose}
+                >
+                  <IconComponent size={13} className="text-primary flex-shrink-0" />
+                  <span>{s.label}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="border-t border-border/40 pt-2">
+          <p className="text-[10px] font-bold text-muted uppercase tracking-wider mb-1.5 px-1 font-sans">Key Conditions</p>
+          <div className="space-y-0.5">
+            {CONDITIONS_LIST.slice(0, 5).map((c) => {
+              const IconComponent = CONDITION_ICONS[c.slug] || Shield;
+              return (
+                <Link
+                  key={c.slug}
+                  href={`/conditions/${c.slug}`}
+                  className="flex items-center gap-2.5 px-3 py-2 text-xs text-forest hover:text-primary rounded-lg transition-colors font-sans font-medium"
+                  onClick={onClose}
+                >
+                  <IconComponent size={13} className="text-primary flex-shrink-0" />
+                  <span>{c.title}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        <Link
+          href="/conditions"
+          className="block text-center py-2 text-[11px] font-bold text-primary bg-white rounded-lg border border-border/60 hover:bg-bg-sand transition-colors font-sans"
+          onClick={onClose}
+        >
+          View All Conditions & Symptoms →
+        </Link>
+      </div>
+    );
+  }
+
   const items =
-    type === "symptoms"
-      ? SYMPTOMS_LIST.map((s) => ({ label: s.label, href: `/symptoms/${s.slug}`, slug: s.slug, type: "symptom" }))
-      : type === "conditions"
-      ? CONDITIONS_LIST.map((c) => ({ label: c.title, href: `/conditions/${c.slug}`, slug: c.slug, type: "condition" }))
-      : type === "procedures"
-      ? PROCEDURES_LIST.map((p) => ({ label: p.title, href: `/procedures/${p.slug}`, slug: p.slug, type: "procedure" }))
+    type === "procedures"
+      ? PROCEDURES_LIST.map((p) => ({ label: p.title, href: `/procedures/${p.slug}`, slug: p.slug, type: "procedure" as const }))
+      : type === "guide"
+      ? GUIDE_LINKS.map((g) => ({ label: g.label, href: g.href, slug: g.href, type: "guide" as const, icon: g.icon }))
       : [];
 
   return (
     <div className="bg-bg-sand/35 rounded-xl mx-2 my-2 overflow-hidden border border-border/50">
       {items.map((item, i) => {
         let IconComponent = HelpCircle;
-        if ("type" in item) {
-          if (item.type === "symptom") IconComponent = SYMPTOM_ICONS[item.slug] || Activity;
-          else if (item.type === "condition") IconComponent = CONDITION_ICONS[item.slug] || Shield;
-          else if (item.type === "procedure") IconComponent = PROCEDURE_ICONS[item.slug] || Search;
-        }
+        if (item.type === "procedure") IconComponent = PROCEDURE_ICONS[item.slug] || Search;
+        else if (item.type === "guide" && item.icon) IconComponent = item.icon;
+
         return (
           <Link
             key={i}

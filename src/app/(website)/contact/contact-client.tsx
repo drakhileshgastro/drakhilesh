@@ -304,7 +304,7 @@ export default function ContactClient() {
       </section>
 
       {/* Driving Routes section */}
-      <section className="bg-bg-sand/30 py-16 border-t border-border/40">
+      <section id="routes" className="bg-bg-sand/30 py-16 border-t border-border/40 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           
           <div className="text-center mb-10">

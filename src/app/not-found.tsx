@@ -86,7 +86,7 @@ export default function NotFound() {
             </Link>
 
             <Link
-              href="/symptoms"
+              href="/conditions"
               className="flex items-center gap-3 p-3.5 rounded-2xl border border-border/60 hover:border-primary/40 hover:bg-bg-sand/40 transition-colors group"
             >
               <div className="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center text-primary group-hover:scale-105 transition-transform flex-shrink-0">

@@ -250,6 +250,107 @@ export default function LocationClient({ location }: LocationClientProps) {
                 </div>
               </div>
 
+              {/* Same-Day Procedure & Outstation Preparation Guide */}
+              <div className="bg-white border-2 border-primary/20 rounded-3xl p-6 lg:p-8 space-y-6 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                    <Clock size={20} />
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-primary uppercase font-bold tracking-wider block">
+                      Outstation Daycare Protocol
+                    </span>
+                    <h3 className="text-xl font-display font-bold text-forest font-hindi">
+                      {location.name} के मरीजों के लिए सेम-डे जांच और वापसी प्रोटोकॉल
+                    </h3>
+                  </div>
+                </div>
+
+                <p className="text-muted text-xs sm:text-sm leading-relaxed font-sans">
+                  यदि आप <strong>{location.name}</strong> से एंडोस्कोपी, कोलोनोस्कोपी या लिवर फाइब्रोस्कैन जांच के लिए आ रहे हैं, तो आप इस 3-चरणीय प्रोटोकॉल के साथ <strong>उसी दिन जांच कराकर सुरक्षित वापस लौट सकते हैं</strong>:
+                </p>
+
+                <div className="grid sm:grid-cols-3 gap-4 pt-2 font-sans">
+                  <div className="bg-bg-sand/30 border border-border/60 rounded-2xl p-4 space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">1</span>
+                      <span className="text-forest font-bold text-xs">सुबह खाली पेट पहुंचें</span>
+                    </div>
+                    <p className="text-muted text-[11px] leading-relaxed">
+                      रात 10 बजे के बाद कुछ न खाएं (6-8 घंटे फास्टिंग)। सुबह {location.name} से निकलकर 9:30 AM तक ऑर्किड मेडिकल सेंटर, रांची पहुंचें।
+                    </p>
+                  </div>
+
+                  <div className="bg-bg-sand/30 border border-border/60 rounded-2xl p-4 space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">2</span>
+                      <span className="text-forest font-bold text-xs">15 मिनट दर्दरहित जांच</span>
+                    </div>
+                    <p className="text-muted text-[11px] leading-relaxed">
+                      डॉ. अखिलेश यादव द्वारा हल्की नींद (sedation) में 10-15 मिनट में प्रक्रिया पूरी। मरीज को कोई दर्द या घबराहट महसूस नहीं होती।
+                    </p>
+                  </div>
+
+                  <div className="bg-bg-sand/30 border border-border/60 rounded-2xl p-4 space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">3</span>
+                      <span className="text-forest font-bold text-xs">तत्काल रिपोर्ट व वापसी</span>
+                    </div>
+                    <p className="text-muted text-[11px] leading-relaxed">
+                      1 घंटे में फोटो युक्त रिपोर्ट व परामर्श पूरा। दोपहर 1:30 - 2:00 बजे तक आप {location.name} के लिए रवाना हो सकते हैं।
+                    </p>
+                  </div>
+                </div>
+
+                {/* Priority Procedure Interlinks */}
+                <div className="pt-4 border-t border-border/40 space-y-3 font-sans">
+                  <span className="text-xs text-forest font-bold block uppercase tracking-wider">
+                    प्रमुख प्रक्रियाएं व खर्च विवरण (Click to Read):
+                  </span>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
+                    <Link
+                      href="/procedures/endoscopy"
+                      className="p-3 bg-bg-sand/20 hover:bg-primary-50 hover:border-primary border border-border rounded-xl font-semibold text-forest hover:text-primary transition-all text-center block"
+                    >
+                      🩺 एंडोस्कोपी प्रक्रिया
+                    </Link>
+                    <Link
+                      href="/procedures/colonoscopy"
+                      className="p-3 bg-bg-sand/20 hover:bg-primary-50 hover:border-primary border border-border rounded-xl font-semibold text-forest hover:text-primary transition-all text-center block"
+                    >
+                      🔬 कोलोनोस्कोपी जांच
+                    </Link>
+                    <Link
+                      href="/procedures/fibroscan"
+                      className="p-3 bg-bg-sand/20 hover:bg-primary-50 hover:border-primary border border-border rounded-xl font-semibold text-forest hover:text-primary transition-all text-center block"
+                    >
+                      📊 फाइब्रोस्कैन लिवर टेस्ट
+                    </Link>
+                    <Link
+                      href="/procedures/ercp"
+                      className="p-3 bg-bg-sand/20 hover:bg-primary-50 hover:border-primary border border-border rounded-xl font-semibold text-forest hover:text-primary transition-all text-center block"
+                    >
+                      🟢 ERCP पित्त पथरी
+                    </Link>
+                  </div>
+
+                  <div className="flex flex-wrap items-center justify-between gap-2 pt-2 text-xs">
+                    <Link
+                      href="/blog/endoscopy-cost-ranchi"
+                      className="text-primary font-bold hover:underline inline-flex items-center gap-1"
+                    >
+                      💰 रांची में एंडोस्कोपी खर्च गाइड <ArrowRight size={12} />
+                    </Link>
+                    <Link
+                      href="/blog/colonoscopy-cost-ranchi"
+                      className="text-primary font-bold hover:underline inline-flex items-center gap-1"
+                    >
+                      💰 रांची में कोलोनोस्कोपी खर्च गाइड <ArrowRight size={12} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
               {/* Clinical Guides & Services Directory Grid */}
               <div className="space-y-6 pt-10 border-t border-border/40 font-sans">
                 <div>

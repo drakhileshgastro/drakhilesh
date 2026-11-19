@@ -7,7 +7,7 @@ const QUESTIONS = [
   {
     q: "क्या गैस हमेशा सामान्य होती है?",
     sub: "Is bloating/gas always normal? When to consult a specialist.",
-    href: "/symptoms/gas-bloating",
+    href: "/conditions/ibs",
   },
   {
     q: "क्या फैटी लिवर ठीक हो सकता है?",
@@ -22,7 +22,7 @@ const QUESTIONS = [
   {
     q: "क्या पेट दर्द कैंसर का संकेत हो सकता है?",
     sub: "Can stomach pain indicate cancer? Early warning signs explained.",
-    href: "/symptoms/stomach-pain",
+    href: "/conditions/abdominal-pain",
   },
 ];
 

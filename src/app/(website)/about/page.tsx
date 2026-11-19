@@ -4,8 +4,8 @@ import Link from "next/link";
 import { DOCTOR } from "@/lib/constants";
 import DoctorRegistration from "@/components/doctor-registration";
 export const metadata: Metadata = {
-  title: "Dr. Akhilesh Yadav — DM Gastroenterologist in Ranchi",
-  description: "Clinic profile of Dr. Akhilesh Yadav, DM Gastroenterology, at Orchid Medical Centre, HB Road, Ranchi. Location, consultation and contact details.",
+  title: "About Dr. Akhilesh Yadav | DM Gastroenterologist Profile & Qualifications",
+  description: "Read the professional qualifications, credentials (DM Gastroenterology) and clinical experience of Dr. Akhilesh Yadav at Orchid Medical Centre, Ranchi.",
   alternates: { canonical: "https://drakhileshgastro.com/about" },
 };
 export default function AboutPage() {
@@ -22,6 +22,9 @@ export default function AboutPage() {
           <DoctorRegistration />
           <p className="text-muted leading-relaxed">Dr. Akhilesh Yadav consults for digestive and liver conditions at {DOCTOR.hospital}, {DOCTOR.address}. The assessment and care plan depend on symptoms, medical history and reports.</p>
           <p className="text-muted leading-relaxed">Consultation may involve discussing investigation options, treatment benefits and risks, and follow-up. A particular test or outcome cannot be promised before individual assessment.</p>
+          <p className="text-sm text-forest font-medium bg-white/80 border border-border/60 rounded-xl p-3.5">
+            Looking for appointment booking, clinic timings, and treated conditions? Visit the official <Link href="/" className="font-bold text-primary underline underline-offset-2">Dr. Akhilesh Yadav — Gastroenterologist in Ranchi</Link> homepage.
+          </p>
         </div>
       </div>
       <section className="bg-white border border-border rounded-3xl p-6 sm:p-8 space-y-4">

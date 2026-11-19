@@ -36,12 +36,12 @@ export default async function LocationPage({ params }: Props) {
   const location = LOCATIONS_DATA[slug];
   if (!location) notFound();
 
-  // ── Local Business / MedicalClinic Schema ─────────────────────
+  // ── Physician / Outstation Consultation Schema ─────────────────────
   const clinicSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": `Orchid Medical Centre - Gastroenterology Service for ${location.name} Patients`,
-    "description": location.metaDescription,
+    "@type": "Physician",
+    "name": "Dr. Akhilesh Yadav — DM Gastroenterologist",
+    "description": `Consultation and advanced endoscopy at Orchid Medical Centre, Ranchi for patients traveling from ${location.name}.`,
     "image": "https://drakhileshgastro.com/dr-akhilesh-improved.png",
     "telephone": DOCTOR.phone,
     "url": `https://drakhileshgastro.com/locations/${location.slug}`,

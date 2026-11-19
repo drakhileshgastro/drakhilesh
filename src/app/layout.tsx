@@ -115,13 +115,19 @@ const GLOBAL_SCHEMA = {
       "@type": ["MedicalClinic", "LocalBusiness"],
       "@id": "https://drakhileshgastro.com/#clinic",
       name: "Dr. Akhilesh Yadav — Gastroenterologist at Orchid Medical Centre",
-      description: "Specialist gastroenterology & hepatology clinic in Ranchi, Jharkhand. Serving patients from Jharkhand, Bihar and Chhattisgarh.",
+      description: "Specialist gastroenterology & hepatology clinic in Ranchi, Jharkhand. Advanced Endoscopy, Colonoscopy, ERCP, FibroScan, and Liver Care serving patients from Ranchi, Dhanbad, Bokaro, Jamshedpur, and all Jharkhand.",
       url: "https://drakhileshgastro.com",
       telephone: "+919031669888",
       priceRange: "₹₹",
       currenciesAccepted: "INR",
-      paymentAccepted: "Cash, UPI, Card",
+      paymentAccepted: "Cash, UPI, Card, NetBanking",
+      logo: "https://drakhileshgastro.com/icons/icon-192x192.png",
       image: "https://drakhileshgastro.com/images/procedure-room.png",
+      medicalSpecialty: [
+        "https://schema.org/Gastroenterology",
+        "Hepatology",
+        "DigestiveEndoscopy"
+      ],
       address: {
         "@type": "PostalAddress",
         streetAddress: "HB Road",
@@ -131,6 +137,25 @@ const GLOBAL_SCHEMA = {
         addressCountry: "IN",
       },
       geo: { "@type": "GeoCoordinates", latitude: "23.3441", longitude: "85.3096" },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Ranchi" },
+        { "@type": "AdministrativeArea", name: "Dhanbad" },
+        { "@type": "AdministrativeArea", name: "Bokaro" },
+        { "@type": "AdministrativeArea", name: "Jamshedpur" },
+        { "@type": "AdministrativeArea", name: "Hazaribagh" },
+        { "@type": "AdministrativeArea", name: "Ramgarh" },
+        { "@type": "AdministrativeArea", name: "Giridih" },
+        { "@type": "AdministrativeArea", name: "Deoghar" },
+        { "@type": "AdministrativeArea", name: "Jharkhand" },
+        { "@type": "AdministrativeArea", name: "Bihar" }
+      ],
+      availableService: [
+        { "@type": "MedicalProcedure", name: "Upper GI Endoscopy", url: "https://drakhileshgastro.com/procedures/endoscopy" },
+        { "@type": "MedicalProcedure", name: "Colonoscopy", url: "https://drakhileshgastro.com/procedures/colonoscopy" },
+        { "@type": "MedicalProcedure", name: "ERCP", url: "https://drakhileshgastro.com/procedures/ercp" },
+        { "@type": "MedicalProcedure", name: "FibroScan Liver Elastography", url: "https://drakhileshgastro.com/procedures/fibroscan" },
+        { "@type": "MedicalProcedure", name: "Endoscopic Ultrasound (EUS)", url: "https://drakhileshgastro.com/procedures/eus" }
+      ],
       openingHoursSpecification: [
         { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], opens: "10:00", closes: "14:00" },
         { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], opens: "17:00", closes: "20:00" },

@@ -147,6 +147,19 @@ function getSymptomIcon(slug: string) {
   }
 }
 
+const SYMPTOM_TARGET_MAP: Record<string, string> = {
+  "stomach-pain": "/conditions/abdominal-pain",
+  "gas-bloating": "/conditions/ibs",
+  "acidity": "/conditions/acid-reflux",
+  "constipation": "/conditions/ibs",
+  "diarrhoea": "/conditions/ibs",
+  "vomiting": "/conditions/peptic-ulcer",
+  "blood-in-stool": "/conditions/gi-bleeding",
+  "difficulty-swallowing": "/procedures/endoscopy",
+  "weight-loss": "/conditions/weight-loss",
+  "jaundice": "/conditions/jaundice",
+};
+
 export default function SymptomsSection() {
   return (
     <section className="bg-white py-20 lg:py-24 border-t border-border/40">
@@ -169,10 +182,11 @@ export default function SymptomsSection() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {SYMPTOMS_LIST.map((symptom) => {
             const isCommon = ["stomach-pain", "gas-bloating", "acidity"].includes(symptom.slug);
+            const targetHref = SYMPTOM_TARGET_MAP[symptom.slug] || `/conditions`;
             return (
               <Link
                 key={symptom.slug}
-                href={`/symptoms/${symptom.slug}`}
+                href={targetHref}
                 className={cn(
                   "group rounded-2xl p-6 text-center transition-all duration-200 flex flex-col items-center justify-between cursor-pointer border min-h-[190px] relative bg-white",
                   isCommon 
@@ -207,10 +221,10 @@ export default function SymptomsSection() {
         {/* View all and compact reassurance merged */}
         <div className="text-center mt-12 space-y-4">
           <Link
-            href="/symptoms"
+            href="/conditions"
             className="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-white hover:bg-primary-dark font-display font-bold text-sm rounded-xl transition-all hover:shadow-md shadow-xs cursor-pointer"
           >
-            सभी लक्षण देखें — View All Symptoms <ArrowRight size={16} />
+            सभी लक्षण एवं बीमारियां देखें — View All Conditions <ArrowRight size={16} />
           </Link>
           <p className="font-sans text-muted text-xs max-w-lg mx-auto leading-relaxed font-medium">
             Not sure what's wrong? Dr. Akhilesh Yadav will diagnose your problem in the first consultation and guide you with expert care.

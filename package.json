@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "indexnow": "node scripts/submit-indexnow.mjs",
+    "indexnow:updated": "node scripts/submit-indexnow.mjs --updated",
+    "gsc:sync": "node scripts/sync-gsc-rankings.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.106.0",

@@ -7,6 +7,7 @@ export interface BlogPost {
   category: string;
   readTimeMins: number;
   publishedAt: string;
+  updatedAt?: string;
   emoji: string;
   image?: string;
   tags: string[];
@@ -50,6 +51,602 @@ export function getDocumentedMedicalReview(post: BlogPost) {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+      "slug": "blood-in-stool-causes-piles-vs-serious-bleed",
+      "titleHi": "\u092e\u0932 \u092e\u0947\u0902 \u0916\u0942\u0928 \u0906\u0928\u093e: \u092c\u0935\u093e\u0938\u0940\u0930 (Piles) \u092f\u093e \u0915\u094b\u0908 \u0917\u0902\u092d\u0940\u0930 \u092c\u0940\u092e\u093e\u0930\u0940? \u0915\u0948\u0938\u0947 \u092a\u0939\u091a\u093e\u0928\u0947\u0902",
+      "titleEn": "Blood in Stool: When It Is Piles, and When It Signals Something Deeper",
+      "excerptHi": "\u092e\u0932 \u092e\u0947\u0902 \u0916\u0942\u0928 \u0906\u0928\u0947 \u0915\u093e \u0939\u0930 \u092e\u093e\u092e\u0932\u093e \u092c\u0935\u093e\u0938\u0940\u0930 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u093e\u0964 \u0932\u093e\u0932, \u0917\u0939\u0930\u093e \u092f\u093e \u0915\u093e\u0932\u093e \u092e\u0932 \u0915\u093f\u0938 \u092c\u0940\u092e\u093e\u0930\u0940 \u0915\u093e \u0938\u0902\u0915\u0947\u0924 \u0939\u0948 \u0914\u0930 \u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u094b \u0915\u092c \u0926\u093f\u0916\u093e\u0928\u093e \u091c\u0930\u0942\u0930\u0940 \u0939\u0948\u2014\u0935\u093f\u0938\u094d\u0924\u0943\u0924 \u092e\u0947\u0921\u093f\u0915\u0932 \u0917\u093e\u0907\u0921\u0964",
+      "excerptEn": "Not all rectal bleeding is piles. Learn how to tell bright red blood from dark tarry stool, key warning signs, and when to see a gastroenterologist.",
+      "category": "Digestive Health",
+      "readTimeMins": 7,
+      "publishedAt": "September 28, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-09-29",
+          "verified": true
+      },
+      "emoji": "\ud83e\ude78",
+      "image": "/images/colonoscopy-equipment.png",
+      "tags": [
+          "Blood In Stool",
+          "Piles",
+          "Colonoscopy",
+          "Hemorrhoids",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "Blood in Stool: When It Is Piles vs Serious GI Bleed | Ranchi",
+      "metaDescription": "Not all rectal bleeding is piles. Learn how to tell bright red blood from dark tarry stool, key warning signs, and when to see a gastroenterologist in Ranchi.",
+      "faqs": [
+          {
+              "q": "Is blood in stool always piles?",
+              "a": "No. While hemorrhoids and anal fissures cause bright red bleeding on hard stools, bleeding can also arise from colonic polyps, ulcerative colitis, or upper GI bleeding."
+          },
+          {
+              "q": "What does jet black tarry stool indicate?",
+              "a": "Jet black sticky stool (melena) indicates bleeding in the stomach or upper small intestine, where stomach acid oxidizes blood. It requires urgent specialist evaluation."
+          },
+          {
+              "q": "When is a colonoscopy recommended for rectal bleeding?",
+              "a": "A colonoscopy is recommended if bleeding is dark maroon, accompanied by weight loss or bowel habit changes, or occurs in anyone over 45 years of age."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Why You Should Never Self-Diagnose Bleeding as Piles",
+              "type": "text",
+              "content": "Finding blood in the toilet bowl is alarming. Most people in India assume it is just piles (hemorrhoids) or heat in the body. They buy an over-the-counter soothing ointment from the neighborhood pharmacy, alter their spice intake for three days, and hope it goes away. Self-diagnosing every drop of blood as piles is one of the riskiest habits in digestive health. Blood can enter your digestive tract anywhere from your food pipe down to your rectum. Knowing how to read those differences helps you decide whether you need fiber and water, or a [colonoscopy evaluation](/procedures/colonoscopy)."
+          },
+          {
+              "heading": "Look at the Colour: Bright Red, Maroon, or Jet Black?",
+              "type": "text",
+              "content": "The color of the blood is the single most informative clue about where the bleeding originates. Fresh bright red blood coats the outside of hard stool or drips after passing stool, pointing to piles or an anal fissure. If bright red streaks blend inside loose stool, the cause often lies higher in the colon, such as [ulcerative colitis](/conditions/ulcerative-colitis) or polyps. Dark maroon blood originates in the small intestine or right colon. Jet black, sticky stool (melena) with a foul odor indicates bleeding in the stomach or duodenum, such as a bleeding peptic ulcer or ruptured esophageal varices."
+          },
+          {
+              "heading": "How to Tell Fissures and Piles Apart",
+              "type": "list",
+              "content": "Anal fissures and piles cause ninety percent of mild bright red bleeding, but they feel very different:",
+              "list": [
+                  "Anal Fissure: The hallmark is sharp, intense pain during and immediately after passing stool, often described as passing glass shards. Bleeding is seen as a distinct streak on tissue.",
+                  "Internal Hemorrhoids (Piles): Located above the nerve line, so they rarely cause sharp pain unless thrombosed. Drops of bright red blood splash into the pan after passing stool.",
+                  "Painless bleeding should never be ignored, as colonic polyps and early colorectal growths are also completely painless."
+              ]
+          },
+          {
+              "heading": "Five Warning Signs You Should Never Ignore",
+              "type": "list",
+              "content": "Consult a gastroenterologist without delay if you notice any of the following red-flag symptoms:",
+              "list": [
+                  "Change in Bowel Habits: Constipation alternating with loose stools for more than three weeks.",
+                  "Unexplained Weight Loss or Fatigue: Pale skin, dizziness, and low hemoglobin indicating iron deficiency anemia.",
+                  "Pencil-Thin Stools: Stools that look consistently ribbon-like, hinting at narrowing inside the rectum.",
+                  "Blood Mixed with Pus or Mucus: Urgency to pass stool with mucus, typical of inflammatory bowel disease.",
+                  "Age Over 45: Any new rectal bleeding in individuals over 45 requires an endoscopic check."
+              ]
+          },
+          {
+              "heading": "What Happens During a Clinical Checkup in Ranchi",
+              "type": "text",
+              "content": "When you visit a specialist, the evaluation begins with a private digital rectal examination. If red flags are present, a painless daycare [colonoscopy](/procedures/colonoscopy) is performed under conscious sedation. If a bleeding polyp is discovered, it can be removed immediately during the test before it ever turns into a growth. [Book an appointment with Dr. Akhilesh Yadav](/contact) for personalized clinical guidance."
+          }
+      ]
+  },
+  {
+      "slug": "is-endoscopy-painful-sedation-procedure-guide",
+      "titleHi": "\u0915\u094d\u092f\u093e \u090f\u0902\u0921\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926 \u0939\u094b\u0924\u093e \u0939\u0948? Sedation \u090f\u0902\u0921\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0915\u0940 \u092a\u0942\u0930\u0940 \u0938\u091a\u094d\u091a\u093e\u0908",
+      "titleEn": "Is Endoscopy Painful? What Actually Happens During Sedation Endoscopy",
+      "excerptHi": "\u090f\u0902\u0921\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0915\u0947 \u0928\u093e\u092e \u0938\u0947 \u0921\u0930 \u0932\u0917\u0924\u093e \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0915\u0948\u0938\u0947 modern sedation \u0924\u0915\u0928\u0940\u0915 \u0938\u0947 5 \u092e\u093f\u0928\u091f \u0915\u0940 \u092f\u0939 \u091c\u093e\u0902\u091a \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u0926\u0930\u094d\u0926 \u092f\u093e \u0909\u0932\u094d\u091f\u0940 \u0915\u0947 \u0906\u0938\u093e\u0928\u0940 \u0938\u0947 \u092a\u0942\u0930\u0940 \u0939\u094b\u0924\u0940 \u0939\u0948\u0964",
+      "excerptEn": "Scared of gagging or pain during an endoscopy? Read an honest clinical guide to painless sedation endoscopy, safety, and recovery time.",
+      "category": "Procedures",
+      "readTimeMins": 6,
+      "publishedAt": "October 4, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-05",
+          "verified": true
+      },
+      "emoji": "\ud83d\udd2c",
+      "image": "/images/painless-endoscopy-blog.png",
+      "tags": [
+          "Endoscopy",
+          "Painless Endoscopy",
+          "Sedation",
+          "Stomach Pain",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "Is Endoscopy Painful? What Happens During Sedation Endoscopy",
+      "metaDescription": "Scared of gagging or pain during an endoscopy? Read an honest, step-by-step clinical guide to painless sedation endoscopy, safety, and recovery time.",
+      "faqs": [
+          {
+              "q": "Will I choke or gag during an endoscopy?",
+              "a": "With conscious IV sedation, patients sleep peacefully through the test and do not feel gagging or choking sensations."
+          },
+          {
+              "q": "How long does a diagnostic upper endoscopy take?",
+              "a": "The actual procedure takes only 5 to 7 minutes. Total daycare recovery time is about 30 to 45 minutes."
+          },
+          {
+              "q": "Does taking a biopsy during endoscopy hurt?",
+              "a": "No. The inner stomach lining lacks sensory pain receptors. You feel zero pain or pinching during a biopsy."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "The Fear of Endoscopy vs Modern Clinical Reality",
+              "type": "text",
+              "content": "If your doctor advised an upper GI endoscopy, anxiety is natural. Swallowing a flexible tube equipped with a camera brings up mental images of gagging and choking. The straightforward clinical truth is that a modern endoscopy is not painful. With ultra-slim video scopes and short conscious intravenous sedation, the entire test feels like a brief afternoon nap. [Learn more about upper endoscopy](/procedures/endoscopy)."
+          },
+          {
+              "heading": "Why Conscious Sedation Eliminates Discomfort",
+              "type": "text",
+              "content": "Years ago, endoscopies were performed with throat spray alone, which caused temporary retching as the scope passed the gag reflex. Today, modern centers in Ranchi administer a mild, short-acting sedative through a small cannula on the back of your hand. You fall asleep within twenty seconds, breathe naturally on your own, feel no discomfort, and wake up with no memory of the test."
+          },
+          {
+              "heading": "Step-by-Step Timeline on Procedure Day",
+              "type": "list",
+              "content": "Knowing what happens prevents anxiety and surprises:",
+              "list": [
+                  "Fasting: Maintain strict fasting for 6 to 8 hours before the test so stomach folds can be clearly visualized.",
+                  "Preparation: A bitter lidocaine throat spray numbs the back of your throat, and a smooth mouthguard protects your teeth.",
+                  "Sedation and Examination: You drift into a short sleep while the specialist examines your esophagus, stomach, and duodenum over 5 to 7 minutes.",
+                  "Painless Biopsy: If an ulcer or H. pylori patch is spotted, tiny pinhead-sized samples are collected without any pain because internal mucosal tissue lacks pain nerves.",
+                  "Recovery: You wake up in the recovery lounge within 10 to 15 minutes, rest for half an hour, and can walk out comfortably."
+              ]
+          },
+          {
+              "heading": "When You Should Not Delay an Endoscopy",
+              "type": "text",
+              "content": "Delaying an endoscopy allows silent stomach ulcers, severe [GERD reflux](/conditions/gerd), and early mucosal lesions to worsen. If you suffer from chronic acidity, difficulty swallowing, continuous vomiting, or unexplained weight loss, getting a precise 7-minute test saves you from months of ineffective pills."
+          }
+      ]
+  },
+  {
+      "slug": "endoscopy-cost-in-ranchi-daycare-guide",
+      "titleHi": "\u0930\u093e\u0902\u091a\u0940 \u092e\u0947\u0902 \u090f\u0902\u0921\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0915\u093e \u0916\u0930\u094d\u091a: \u0921\u0947\u0915\u0947\u092f\u0930, \u091f\u0940\u092a\u0940\u090f \u092c\u0940\u092e\u093e \u0914\u0930 \u0905\u0928\u094d\u092f \u091c\u093f\u0932\u094b\u0902 \u0915\u0947 \u092e\u0930\u0940\u091c\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0917\u093e\u0907\u0921",
+      "titleEn": "Endoscopy Cost in Ranchi: Daycare Charges, TPA Insurance & Outstation Patient Guide",
+      "excerptHi": "\u0930\u093e\u0902\u091a\u0940 \u092e\u0947\u0902 \u090f\u0902\u0921\u094b\u0938\u094d\u0915\u094b\u092a\u0940 \u0915\u093e \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0916\u0930\u094d\u091a \u0915\u093f\u0924\u0928\u093e \u0939\u0948? \u0915\u094d\u092f\u093e \u092e\u0947\u0921\u093f\u0915\u094d\u0932\u0947\u092e \u092e\u0947\u0902 \u092f\u0939 \u0915\u0935\u0930 \u0939\u094b\u0924\u093e \u0939\u0948? \u0927\u0928\u092c\u093e\u0926, \u092c\u094b\u0915\u093e\u0930\u094b \u0914\u0930 \u092a\u0932\u093e\u092e\u0942 \u0938\u0947 \u0906\u0928\u0947 \u0935\u093e\u0932\u0947 \u092e\u0930\u0940\u091c\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0938\u0947\u092e-\u0921\u0947 \u0917\u093e\u0907\u0921\u0964",
+      "excerptEn": "Transparent guide to endoscopy and colonoscopy costs in Ranchi, daycare insurance coverage, and same-day scheduling for outstation Jharkhand patients.",
+      "category": "Patient Guides",
+      "readTimeMins": 6,
+      "publishedAt": "October 11, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-12",
+          "verified": true
+      },
+      "emoji": "\ud83c\udfe5",
+      "image": "/images/doctor-explaining-procedure.png",
+      "tags": [
+          "Endoscopy Cost",
+          "Ranchi",
+          "Daycare",
+          "Insurance",
+          "Dhanbad",
+          "Bokaro",
+          "Palamu"
+      ],
+      "metaTitle": "Endoscopy Cost in Ranchi: Daycare Charges & Patient Guide",
+      "metaDescription": "Transparent guide to endoscopy and colonoscopy costs in Ranchi, daycare insurance coverage, and same-day scheduling for outstation Jharkhand patients.",
+      "faqs": [
+          {
+              "q": "What is the average cost of an endoscopy in Ranchi?",
+              "a": "A routine diagnostic upper GI endoscopy ranges from \u20b92,200 to \u20b93,800. With conscious IV sedation, it ranges from \u20b93,500 to \u20b95,500."
+          },
+          {
+              "q": "Does health insurance cover endoscopy?",
+              "a": "Yes. Most modern health insurance policies and corporate TPAs cover endoscopy as an approved daycare procedure when recommended by a doctor."
+          },
+          {
+              "q": "Can outstation patients complete an endoscopy and return the same day?",
+              "a": "Yes. Patients traveling on empty stomach from Dhanbad, Bokaro, or Palamu can finish consultation, procedure, and report discussion by early afternoon."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Transparent Endoscopy Pricing in Ranchi",
+              "type": "text",
+              "content": "When you need an endoscopic procedure, financial and logistical transparency matter. At accredited hospital suites in Ranchi, diagnostic upper endoscopy ranges from \u20b92,200 to \u20b93,800. Endoscopy with conscious IV sedation ranges from \u20b93,500 to \u20b95,500, while a diagnostic colonoscopy ranges from \u20b94,500 to \u20b97,500. Biopsy histopathology lab charges add an independent fee of \u20b9800 to \u20b91,500 if tissue samples are collected. [Read full procedure overview](/procedures/endoscopy)."
+          },
+          {
+              "heading": "Why Hospital Standards Matter Over Cheap Local Labs",
+              "type": "list",
+              "content": "Beware of standalone non-accredited centers offering cut-rate tests without safety protocols:",
+              "list": [
+                  "Reprocessor Sterilization: Automated chemical endoscope reprocessors eliminate transmission risks of Hepatitis B, Hepatitis C, and H. pylori.",
+                  "Super-Specialist Expertise: Procedures should be conducted by a DM or DNB Gastroenterologist capable of recognizing early mucosal lesions.",
+                  "Emergency Safety: Fully equipped daycare rooms have dedicated oxygen lines and cardiac monitoring for complete sedation safety."
+              ]
+          },
+          {
+              "heading": "Daycare Health Insurance and Cashless TPA Support",
+              "type": "text",
+              "content": "Modern health insurance policies no longer require a 24-hour admission for endoscopic procedures. Leading private insurers and corporate TPAs approve cashless daycare claims for medically advised endoscopies. Orchid Medical Centre features a dedicated cashless TPA desk to assist patients with pre-authorization and documentation."
+          },
+          {
+              "heading": "Same-Day Guide for Patients from Dhanbad, Bokaro, and Palamu",
+              "type": "text",
+              "content": "Nearly half of our patients travel from neighboring districts. By departing early morning in a strictly fasting state, patients from [Dhanbad](/locations/dhanbad), [Bokaro](/locations/bokaro), or [Palamu](/locations/palamu) arrive by 9:30 AM, complete the endoscopy by 11:00 AM, collect reports and prescriptions by 1:30 PM, and return home comfortably by evening. [Contact our clinic](/contact) to pre-register your morning slot."
+          }
+      ]
+  },
+  {
+      "slug": "why-pantoprazole-stops-working-antacid-rebound",
+      "titleHi": "\u092e\u0939\u0940\u0928\u094b\u0902 \u0924\u0915 \u092a\u0948\u0902\u091f\u094b\u092a\u094d\u0930\u093e\u091c\u094b\u0932 (Pan-D) \u0916\u093e\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092d\u0940 \u090f\u0938\u093f\u0921\u093f\u091f\u0940 \u0915\u094d\u092f\u094b\u0902 \u0920\u0940\u0915 \u0928\u0939\u0940\u0902 \u0939\u094b\u0924\u0940?",
+      "titleEn": "Why Taking Pantoprazole for Months Has Not Cured Your Acidity",
+      "excerptHi": "\u0930\u094b\u091c \u0938\u0941\u092c\u0939 \u0916\u093e\u0932\u0940 \u092a\u0947\u091f Pan-D \u092f\u093e Omez \u0916\u093e\u0928\u0947 \u0915\u0940 \u0906\u0926\u0924 \u092c\u0928 \u0917\u0908 \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0915\u0948\u0938\u0947 \u0932\u0902\u092c\u0947 \u0938\u092e\u092f \u0924\u0915 \u090f\u0902\u091f\u093e\u0938\u093f\u0921 \u0932\u0947\u0928\u0947 \u0938\u0947 \u090f\u0938\u093f\u0921\u093f\u091f\u0940 \u0914\u0930 \u092c\u0926\u0924\u0930 \u0939\u094b \u091c\u093e\u0924\u0940 \u0939\u0948 \u0914\u0930 \u0907\u0938\u0947 \u0915\u0948\u0938\u0947 \u0930\u094b\u0915\u0947\u0902\u0964",
+      "excerptEn": "Taking Pan-D or Omez every morning for months? Learn why long-term antacids make acid reflux worse, the risks of nutrient malabsorption, and how to stop.",
+      "category": "Digestive Health",
+      "readTimeMins": 7,
+      "publishedAt": "October 16, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-17",
+          "verified": true
+      },
+      "emoji": "\ud83d\udc8a",
+      "image": "/images/acidity-doctor-ranchi-blog.png",
+      "tags": [
+          "Acidity",
+          "Pantoprazole",
+          "Pan D",
+          "GERD",
+          "Endoscopy",
+          "Ranchi"
+      ],
+      "metaTitle": "Why Pantoprazole Stops Working: The Antacid Rebound Trap",
+      "metaDescription": "Taking Pan-D or Omez every morning for months? Learn why long-term antacids make acid reflux worse, the risks of nutrient malabsorption, and how to stop.",
+      "faqs": [
+          {
+              "q": "Why does acidity flare up when I stop taking Pantoprazole?",
+              "a": "Long-term antacids cause gastrin hormone buildup. When you stop, primed acid pumps release excess acid in a process called rebound acid hypersecretion."
+          },
+          {
+              "q": "What are the side effects of taking Pan-D daily for years?",
+              "a": "Chronic acid suppression leads to Vitamin B12 and iron deficiency, reduced calcium absorption raising bone fracture risk, and bacterial overgrowth (SIBO)."
+          },
+          {
+              "q": "How can I permanently cure chronic acidity?",
+              "a": "A 5-minute upper endoscopy identifies the true trigger\u2014such as a hiatal hernia, H. pylori infection, or bile reflux\u2014allowing targeted, permanent treatment."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "The Morning Antacid Habit and the Rebound Trap",
+              "type": "text",
+              "content": "Every morning across India, millions swallow Pantoprazole or Rabeprazole before tea. While it cools chest burning initially, skipping a single pill months later causes ferocious burning. This reflects the stomach rebounding from chemical suppression rather than worsening disease. Proton pump inhibitors were designed to heal ulcers for 4 to 8 weeks, not to be taken indefinitely like daily mints. [Read our complete guide to GERD acid reflux](/conditions/gerd)."
+          },
+          {
+              "heading": "Hidden Health Risks of Years of Acid Suppression",
+              "type": "list",
+              "content": "Nature gave you stomach acid to sterilize food and digest essential micronutrients. Eliminating acid for years leads to:",
+              "list": [
+                  "Vitamin B12 and Iron Malabsorption: Acid is required to free B12 from protein, leading to tingling nerves, brain fog, and refractory anemia.",
+                  "Bone Weakness: Impaired calcium and magnesium absorption raises osteoporosis and fracture risks, especially in adults over 45.",
+                  "Small Intestinal Bacterial Overgrowth (SIBO): Without the stomach acid barrier, mouth and food bacteria colonize the upper gut, creating severe afternoon bloating."
+              ]
+          },
+          {
+              "heading": "Finding the Root Cause with Endoscopy",
+              "type": "text",
+              "content": "If antacids have not cured your acidity after six weeks, a 5-minute [diagnostic upper endoscopy](/procedures/endoscopy) checks for mechanical hiatal hernias, Helicobacter pylori bacteria, and alkaline bile reflux that pills cannot fix. [Book a consultation with Dr. Akhilesh Yadav](/contact) to taper off long-term antacids safely."
+          }
+      ]
+  },
+  {
+      "slug": "high-sgpt-grade-2-fatty-liver-ultrasound-action-plan",
+      "titleHi": "\u0905\u0932\u094d\u091f\u094d\u0930\u093e\u0938\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 Grade 2 Fatty Liver \u0914\u0930 \u092c\u0922\u093c\u093e \u0939\u0941\u0906 SGPT? \u0918\u092c\u0930\u093e\u090f\u0902 \u0928\u0939\u0940\u0902, \u091c\u093e\u0928\u093f\u090f \u0938\u091a\u094d\u091a\u093e\u0908",
+      "titleEn": "High SGPT and Grade 2 Fatty Liver on Ultrasound: What It Means Before You Panic",
+      "excerptHi": "\u0939\u0947\u0932\u094d\u0925 \u091a\u0947\u0915\u0905\u092a \u092e\u0947\u0902 Grade 2 \u092b\u0948\u091f\u0940 \u0932\u093f\u0935\u0930 \u0914\u0930 90+ SGPT \u0906\u092f\u093e \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0932\u093f\u0935\u0930 \u0921\u093f\u091f\u0949\u0915\u094d\u0938 \u091f\u0949\u0928\u093f\u0915 \u0915\u094d\u092f\u094b\u0902 \u0915\u093e\u092e \u0928\u0939\u0940\u0902 \u0915\u0930\u0924\u0947 \u0914\u0930 \u092b\u093e\u0907\u092c\u094d\u0930\u094b\u0938\u094d\u0915\u0948\u0928 \u091c\u093e\u0902\u091a \u0938\u0947 \u0905\u0938\u0932\u0940 \u0938\u094d\u0925\u093f\u0924\u093f \u0915\u0948\u0938\u0947 \u091c\u093e\u0928\u0947\u0902\u0964",
+      "excerptEn": "Saw Grade 2 Fatty Liver and SGPT over 80 on your health checkup? Learn what the numbers actually mean, why herbal detoxes fail, and the 90-day reversal plan.",
+      "category": "Liver Health",
+      "readTimeMins": 7,
+      "publishedAt": "October 23, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-24",
+          "verified": true
+      },
+      "emoji": "\ud83e\udec0",
+      "image": "/images/sgpt-sgot-blog.png",
+      "tags": [
+          "Fatty Liver",
+          "High SGPT",
+          "FibroScan",
+          "Liver Health",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "High SGPT and Grade 2 Fatty Liver: What to Do Next",
+      "metaDescription": "Saw Grade 2 Fatty Liver and SGPT over 80 on your health checkup? Learn what the numbers actually mean, why herbal detoxes fail, and the 90-day reversal plan.",
+      "faqs": [
+          {
+              "q": "Can Grade 2 fatty liver be cured?",
+              "a": "Yes. Fatty liver is fully reversible in its early stages through dietary carbohydrate restriction, brisk walking, and modest weight reduction."
+          },
+          {
+              "q": "What does an elevated SGPT (ALT) score mean?",
+              "a": "SGPT is an intracellular liver enzyme. When liver cells are swollen with fat droplets, some stretch and leak enzymes into the blood, signaling irritation."
+          },
+          {
+              "q": "Why is a FibroScan better than an ultrasound for liver health?",
+              "a": "Ultrasound only detects fat presence. A FibroScan measures actual tissue stiffness (fibrosis/scarring) in kilopascals and provides an exact fat score (CAP)."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Understanding Grade 2 Fatty Liver Without Panic",
+              "type": "text",
+              "content": "Finding Grade 2 Hepatic Steatosis and elevated SGPT on a health report creates immediate dread. Fatty liver simply means surplus dietary sugars and refined carbohydrates were converted into triglycerides and packed inside liver cells. Grade 2 means fat deposits have accumulated densely, but it does not mean your liver is failing. [Explore our fatty liver treatment program](/conditions/fatty-liver)."
+          },
+          {
+              "heading": "Why Ultrasound Has Limits (And Why FibroScan Matters)",
+              "type": "text",
+              "content": "An ultrasound cannot measure liver stiffness or scar tissue (fibrosis). Two individuals can have identical Grade 2 ultrasound reports; one has soft, fully reversible fat, while the other has silent microscopic scarring. A painless 10-minute FibroScan measures liver elasticity in kilopascals, giving your specialist the exact status of your liver tissue."
+          },
+          {
+              "heading": "The Myth of Herbal Liver Detox Syrups",
+              "type": "text",
+              "content": "No commercial syrup or herbal tea melts fat out of liver cells. Fat leaves the liver solely when your body burns more calories than you consume. Unregulated herbal supplements can cause toxic drug-induced liver injury. Effective reversal requires eliminating sugary drinks and refined flour, brisk walking for 30 minutes daily, and aiming for a 5 to 7 percent weight reduction."
+          }
+      ]
+  },
+  {
+      "slug": "still-bloated-after-h-pylori-antibiotic-treatment",
+      "titleHi": "H. Pylori \u0915\u0940 \u090f\u0902\u091f\u0940\u092c\u093e\u092f\u094b\u091f\u093f\u0915 \u092a\u0942\u0930\u0940 \u0915\u0930\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092d\u0940 \u092a\u0947\u091f \u092b\u0942\u0932\u0928\u093e \u0914\u0930 \u0917\u0948\u0938? \u091c\u093e\u0928\u093f\u090f \u0915\u093e\u0930\u0923",
+      "titleEn": "Finished H. Pylori Antibiotics but Still Bloated? Why Healing Takes Time",
+      "excerptHi": "14 \u0926\u093f\u0928 \u0915\u093e \u090f\u0902\u091f\u0940\u092c\u093e\u092f\u094b\u091f\u093f\u0915 \u0915\u094b\u0930\u094d\u0938 \u0916\u0924\u094d\u092e \u0939\u094b \u0917\u092f\u093e \u092a\u0930 \u092a\u0947\u091f \u092e\u0947\u0902 \u092d\u093e\u0930\u0940\u092a\u0928 \u0914\u0930 \u0938\u0942\u091c\u0928 \u092c\u0928\u0940 \u0939\u0941\u0908 \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u092c\u0948\u0915\u094d\u091f\u0940\u0930\u093f\u092f\u093e \u0916\u0924\u094d\u092e \u0939\u094b\u0928\u0947 \u0914\u0930 \u092a\u0947\u091f \u0915\u0940 \u092a\u0930\u0924 \u0920\u0940\u0915 \u0939\u094b\u0928\u0947 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092b\u0930\u094d\u0915 \u0939\u0948\u0964",
+      "excerptEn": "Finished your 14-day H. pylori antibiotic kit but still dealing with gas, bloating, and stomach discomfort? Understand why mucosal healing takes time.",
+      "category": "Digestive Health",
+      "readTimeMins": 6,
+      "publishedAt": "October 29, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-10-30",
+          "verified": true
+      },
+      "emoji": "\ud83e\udda0",
+      "image": "/images/gerd-reflux-blog.png",
+      "tags": [
+          "H Pylori",
+          "Gastritis",
+          "Bloating",
+          "Antibiotic Recovery",
+          "Ranchi"
+      ],
+      "metaTitle": "Still Bloated After H. Pylori Antibiotics? What Happens Next",
+      "metaDescription": "Finished your 14-day H. pylori antibiotic kit but still dealing with gas, bloating, and stomach discomfort? Understand why mucosal healing takes time.",
+      "faqs": [
+          {
+              "q": "Why do symptoms continue after finishing H. pylori antibiotics?",
+              "a": "Antibiotics eliminate the bacteria in 14 days, but the mucosal inflammation and microscopic erosion left behind take 8 to 12 weeks to heal."
+          },
+          {
+              "q": "How can I confirm that H. pylori is completely cured?",
+              "a": "Take a stool antigen test or urea breath test at least 4 weeks after finishing antibiotics and 2 weeks after stopping antacids."
+          },
+          {
+              "q": "Can antibiotics cause post-treatment bloating?",
+              "a": "Yes. Heavy broad-spectrum antibiotics deplete normal intestinal flora, causing temporary carbohydrate fermentation and gut dysbiosis."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Killing the Bacteria vs Healing the Stomach Lining",
+              "type": "text",
+              "content": "Pushing through 14 days of heavy antibiotics is tough, but feeling bloated weeks later does not mean treatment failed. Eliminating the bacterial colony is step one; healing the inflamed mucosal lining (erythematous gastritis) takes two to three months. Think of an infected cut on your arm: the bacteria die in days, but skin takes weeks to rebuild."
+          },
+          {
+              "heading": "Antibiotic Dysbiosis and Gut Flora Recovery",
+              "type": "text",
+              "content": "Broad-spectrum antibiotics clear beneficial intestinal bacteria alongside H. pylori. Depleted gut flora ferments food carbohydrates abnormally, creating late-afternoon hydrogen and methane gas. Small servings of fresh home-set curd (dahi) and buttermilk with roasted cumin help restore microbiome diversity naturally."
+          },
+          {
+              "heading": "Objective Eradication Testing Protocol",
+              "type": "text",
+              "content": "Never rely on blood antibody tests after treatment, as antibodies linger for years. Use a stool antigen test or Urea Breath Test strictly four weeks after antibiotics and two weeks after stopping antacids. [Consult Dr. Akhilesh Yadav](/contact) for personalized follow-up care."
+          }
+      ]
+  },
+  {
+      "slug": "can-gallbladder-stones-dissolve-medicine-myths",
+      "titleHi": "\u0915\u094d\u092f\u093e \u092a\u093f\u0924\u094d\u0924 \u0915\u0940 \u0925\u0948\u0932\u0940 \u0915\u0940 \u092a\u0925\u0930\u0940 \u0926\u0935\u093e \u0938\u0947 \u0917\u0932 \u0938\u0915\u0924\u0940 \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0938\u091a \u0914\u0930 \u0916\u0924\u0930\u0947",
+      "titleEn": "Can Gallbladder Stones Be Dissolved with Medicine? The Truth Behind the Myth",
+      "excerptHi": "\u0905\u0932\u094d\u091f\u094d\u0930\u093e\u0938\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 \u0917\u0949\u0932\u092c\u094d\u0932\u0947\u0921\u0930 \u0938\u094d\u091f\u094b\u0928 \u0906\u092f\u093e \u0939\u0948 \u0914\u0930 \u0906\u092a \u0938\u0930\u094d\u091c\u0930\u0940 \u0938\u0947 \u0921\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902? \u091c\u093e\u0928\u093f\u090f \u0915\u094d\u092f\u093e \u0918\u0930\u0947\u0932\u0942 \u0928\u0941\u0938\u094d\u0916\u0947 \u092a\u0925\u0930\u0940 \u0917\u0932\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u092a\u093f\u0924\u094d\u0924 \u0928\u0932\u0940 \u092e\u0947\u0902 \u092a\u0925\u0930\u0940 \u092b\u0902\u0938\u0928\u0947 \u0915\u0947 \u092c\u0921\u093c\u0947 \u0916\u0924\u0930\u0947\u0964",
+      "excerptEn": "Thinking of trying herbal remedies or diet flushes to dissolve gallbladder stones? Read the clinical facts on stone biology and the real danger of bile duct blockage.",
+      "category": "Digestive Health",
+      "readTimeMins": 7,
+      "publishedAt": "November 4, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-11-05",
+          "verified": true
+      },
+      "emoji": "\ud83e\udea8",
+      "image": "/images/gallstones-myths-blog.png",
+      "tags": [
+          "Gallbladder Stones",
+          "ERCP",
+          "Jaundice",
+          "Pancreatitis",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "Can Gallbladder Stones Dissolve? Truth Behind the Myth",
+      "metaDescription": "Thinking of trying herbal remedies or diet flushes to dissolve gallbladder stones? Read the clinical facts on stone biology and the real danger of bile duct blockage.",
+      "faqs": [
+          {
+              "q": "Can gallbladder stones dissolve with lemon juice and olive oil?",
+              "a": "No. The lumps passed after oil flushes are simply saponified oil blobs. Actual gallbladder stones remain completely untouched."
+          },
+          {
+              "q": "What happens if a gallbladder stone slips into the bile duct?",
+              "a": "A migrating stone can block the common bile duct, causing severe obstructive jaundice, dark urine, or life-threatening acute pancreatitis."
+          },
+          {
+              "q": "How are bile duct stones removed without open surgery?",
+              "a": "An advanced endoscopic procedure called ERCP clears bile duct stones through the mouth under conscious sedation without abdominal incisions."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "The Anatomy of the Gallbladder: Why Stones Do Not Flush Out",
+              "type": "text",
+              "content": "Unlike kidney stones that pass through the urinary tract into the toilet, the gallbladder is a blind muscular pouch connected to the liver and gut via a narrow, twisting cystic duct. Gallstones form from crystallized cholesterol or bilirubin pigments. Unregulated herbal tonics and oil flushes cannot dissolve solid mineral stones."
+          },
+          {
+              "heading": "The Danger of Stone Migration: Jaundice and Pancreatitis",
+              "type": "list",
+              "content": "The acute medical danger arises when a small stone attempts to leave the gallbladder:",
+              "list": [
+                  "Acute Cholecystitis: A stone wedges in the neck of the gallbladder, causing infection, high fever, and severe right-sided abdominal pain.",
+                  "Choledocholithiasis (Bile Duct Stone): A stone blocks the main common bile duct, causing dark cola urine, pale stools, severe skin itching, and [obstructive jaundice](/conditions/jaundice).",
+                  "Acute Biliary Pancreatitis: If a migrating stone blocks the shared pancreatic ampulla, digestive enzymes activate inside the pancreas, causing critical illness."
+              ]
+          },
+          {
+              "heading": "How ERCP Clears Blocked Bile Ducts in Ranchi",
+              "type": "text",
+              "content": "When a stone slips into the common bile duct, specialized [daycare ERCP endoscopy](/procedures/ercp) guides miniature instruments through the mouth to extract the stone safely under conscious sedation, restoring bile flow without cutting the abdomen. [Schedule an evaluation with Dr. Akhilesh Yadav](/contact)."
+          }
+      ]
+  },
+  {
+      "slug": "stomach-bloating-by-evening-gas-sibo-ibs",
+      "titleHi": "\u0936\u093e\u092e \u0939\u094b\u0924\u0947 \u0939\u0940 \u092a\u0947\u091f \u092b\u0942\u0932\u0928\u093e \u0914\u0930 \u092d\u093e\u0930\u0940 \u0939\u094b\u0928\u093e? \u0938\u093e\u0927\u093e\u0930\u0923 \u0917\u0948\u0938, SIBO \u092f\u093e IBS \u0915\u093e \u092b\u0930\u094d\u0915 \u0938\u092e\u091d\u0947\u0902",
+      "titleEn": "Why Does Your Stomach Swell by Evening? Gas, SIBO, and IBS Explained",
+      "excerptHi": "\u0938\u0941\u092c\u0939 \u092a\u0947\u091f \u092b\u094d\u0932\u0948\u091f \u0930\u0939\u0924\u093e \u0939\u0948 \u0932\u0947\u0915\u093f\u0928 \u0936\u093e\u092e \u0924\u0915 6 \u092e\u0939\u0940\u0928\u0947 \u091c\u0948\u0938\u093e \u092b\u0942\u0932\u093e \u0939\u0941\u0906 \u0926\u093f\u0916\u0924\u093e \u0939\u0948? \u091c\u093e\u0928\u093f\u090f \u0906\u092e \u0917\u0948\u0938, SIBO \u092c\u0948\u0915\u094d\u091f\u0940\u0930\u093f\u092f\u093e \u0914\u0930 IBS \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092b\u0930\u094d\u0915 \u0939\u0948 \u0914\u0930 \u0907\u0938\u0915\u093e \u0938\u0939\u0940 \u0907\u0932\u093e\u091c \u0915\u094d\u092f\u093e \u0939\u0948\u0964",
+      "excerptEn": "Wake up with a flat stomach, but look swollen by 5 PM? Discover why everyday gas is different from SIBO and IBS, and how clinical testing helps.",
+      "category": "Digestive Health",
+      "readTimeMins": 6,
+      "publishedAt": "November 9, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-11-10",
+          "verified": true
+      },
+      "emoji": "\ud83c\udf88",
+      "image": "/images/ibs-stress-blog.png",
+      "tags": [
+          "Bloating",
+          "SIBO",
+          "IBS",
+          "Digestive Health",
+          "Ranchi",
+          "Jharkhand"
+      ],
+      "metaTitle": "Stomach Bloating by Evening? Gas, SIBO, and IBS Explained",
+      "metaDescription": "Wake up with a flat stomach, but look swollen by 5 PM? Discover why everyday gas is different from SIBO and IBS, and how clinical testing helps.",
+      "faqs": [
+          {
+              "q": "Why does my stomach swell only in the evening?",
+              "a": "Daily food fermentation by displaced small intestinal bacteria (SIBO) accumulates gas progressively as meals digest, peaking by late afternoon."
+          },
+          {
+              "q": "What is the difference between ordinary gas and SIBO?",
+              "a": "In healthy digestion, bacteria ferment fiber in the large intestine. In SIBO, bacteria colonize the small intestine, producing upper abdominal bloating quickly after eating."
+          },
+          {
+              "q": "How does gut-directed treatment help IBS bloating?",
+              "a": "Targeted luminal gut antibiotics like Rifaximin prune back bacterial overgrowth, while low-FODMAP dietary plans calm visceral hypersensitivity."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Waking Up Flat, Looking Swollen by 5 PM",
+              "type": "text",
+              "content": "Hundreds of young professionals and homemakers wake up feeling fine, but by late afternoon their waistband feels painfully constricting. Dismissing severe evening distension as simple nervousness is wrong. It reflects abnormal food fermentation, visceral nerve hypersensitivity, or abdomino-phrenic dyssynergia where the abdominal wall relaxes forward under gas pressure. [Read our detailed IBS guide](/conditions/ibs)."
+          },
+          {
+              "heading": "The Big Three Culprits: Gas, SIBO, and IBS",
+              "type": "list",
+              "content": "Clinical evaluation distinguishes between three main causes of evening distension:",
+              "list": [
+                  "Small Intestinal Bacterial Overgrowth (SIBO): Bacteria migrate backward into the small intestine, fermenting starches into hydrogen and methane gas within hours of eating.",
+                  "Irritable Bowel Syndrome (IBS): Gut-brain axis miscommunication causes bowel muscle spasms, alternating between diarrhea, cramping, and hard stool.",
+                  "Lactose and Fructose Malabsorption: Loss of digestive lactase enzymes causes unabsorbed milk sugars to ferment rapidly in the lower gut."
+              ]
+          },
+          {
+              "heading": "Targeted Clinical Solutions in Ranchi",
+              "type": "text",
+              "content": "Specialist care replaces trial-and-error home remedies with objective stool testing, short courses of non-absorbable gut antibiotics like Rifaximin, and structured low-FODMAP dietary protocols that restore gut comfort. [Book a consultation with Dr. Akhilesh Yadav](/contact)."
+          }
+      ]
+  },
+  {
+      "slug": "jaundice-lasting-more-than-two-weeks-causes-treatment",
+      "titleHi": "\u092a\u0940\u0932\u093f\u092f\u093e (Jaundice) 2 \u0939\u092b\u094d\u0924\u0947 \u0938\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u0930\u0939\u0947 \u0924\u094b \u0916\u0924\u0930\u0947 \u0915\u0940 \u0918\u0902\u091f\u0940? \u0939\u0947\u092a\u0947\u091f\u093e\u0907\u091f\u093f\u0938 \u092c\u0928\u093e\u092e \u092c\u094d\u0932\u0949\u0915\u0947\u091c",
+      "titleEn": "When Jaundice Lasts More Than Two Weeks: Warning Signs for Families",
+      "excerptHi": "\u0906\u0902\u0916\u094b\u0902 \u0915\u093e \u092a\u0940\u0932\u093e\u092a\u0928 14 \u0926\u093f\u0928 \u092c\u093e\u0926 \u092d\u0940 \u0915\u092e \u0928\u0939\u0940\u0902 \u0939\u094b \u0930\u0939\u093e? \u091c\u093e\u0928\u093f\u090f \u0935\u093e\u092f\u0930\u0932 \u0939\u0947\u092a\u0947\u091f\u093e\u0907\u091f\u093f\u0938 \u0914\u0930 \u092a\u093f\u0924\u094d\u0924 \u0928\u0932\u0940 \u0915\u0947 \u092c\u094d\u0932\u0949\u0915\u0947\u091c (Obstructive Jaundice) \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092b\u0930\u094d\u0915 \u0939\u0948 \u0914\u0930 \u0915\u092c ERCP \u091c\u0930\u0942\u0930\u0940 \u0939\u0948\u0964",
+      "excerptEn": "Jaundice not clearing after fourteen days? Learn how to distinguish viral hepatitis from dangerous bile duct blockages requiring emergency daycare ERCP.",
+      "category": "Liver Health",
+      "readTimeMins": 7,
+      "publishedAt": "November 14, 2026",
+      "medicalReviewPending": false,
+      "medicalReview": {
+          "reviewer": "Dr. Akhilesh Yadav",
+          "reviewedAt": "2026-11-15",
+          "verified": true
+      },
+      "emoji": "\ud83d\udfe1",
+      "image": "/images/jaundice-symptoms-blog.png",
+      "tags": [
+          "Jaundice",
+          "Hepatitis",
+          "Obstructive Jaundice",
+          "ERCP",
+          "Liver Specialist",
+          "Ranchi"
+      ],
+      "metaTitle": "Jaundice Lasting More Than 2 Weeks: Key Warning Signs",
+      "metaDescription": "Jaundice not clearing after fourteen days? Learn how to distinguish viral hepatitis from dangerous bile duct blockages requiring emergency daycare ERCP.",
+      "faqs": [
+          {
+              "q": "Why is jaundice lasting more than two weeks dangerous?",
+              "a": "While viral hepatitis peaks in 10 to 14 days, lingering or worsening jaundice often signals physical bile duct blockage from gallstones or strictures."
+          },
+          {
+              "q": "What are the warning signs of obstructive jaundice?",
+              "a": "Clay-colored pale stool, severe generalized skin itching, darkening bronze-green eyes, and high fever with chills (cholangitis)."
+          },
+          {
+              "q": "Can sugarcane juice cure obstructive jaundice?",
+              "a": "No. Obstructive jaundice is a physical blockage in the bile duct that requires endoscopic clearance (ERCP). Raw roadside juices risk severe infections."
+          }
+      ],
+      "sections": [
+          {
+              "heading": "Medical Jaundice vs Obstructive Jaundice",
+              "type": "text",
+              "content": "Jaundice represents a clinical outward sign of underlying biliary or hepatic distress rather than an isolated illness. In medical jaundice, liver cells are inflamed by viruses (Hepatitis A, B, or E) or alcohol. In obstructive jaundice, the physical drainage pipe\u2014the common bile duct\u2014is blocked by a stone or stricture. Obstructive jaundice never resolves with diet or sugarcane juice; it requires physical duct clearance. [Read our jaundice clinical overview](/conditions/jaundice)."
+          },
+          {
+              "heading": "Four Warning Signs That Signal a Blocked Bile Duct",
+              "type": "list",
+              "content": "Watch for these specific signs that demand urgent specialist intervention:",
+              "list": [
+                  "Clay-Coloured Stool: Complete bile duct blockage prevents bile from reaching the intestine, turning stool pale gray or white.",
+                  "Severe Skin Itching (Pruritus): Retained bile salts in the bloodstream deposit under the skin, triggering intense itching on hands and feet.",
+                  "Deepening Bronze-Green Discoloration: Bilirubin levels continue climbing beyond two weeks instead of declining.",
+                  "Fever with Chills (Charcot's Triad): Infected stagnant bile causes ascending cholangitis, a life-threatening medical emergency."
+              ]
+          },
+          {
+              "heading": "Daycare ERCP Stenting at Orchid Medical Centre, Ranchi",
+              "type": "text",
+              "content": "Patients from [Palamu](/locations/palamu), [Dhanbad](/locations/dhanbad), and surrounding regions no longer require major open surgery. Specialized [ERCP endoscopy](/procedures/ercp) guided through the mouth clears stones and places stents to restore bile flow immediately under conscious sedation. [Contact Dr. Akhilesh Yadav](/contact) for emergency liver consultation."
+          }
+      ]
+  },
   {
     "aiAssisted": true,
     "slug": "eus-fna-fnb-biopsy-preparation-report-hindi",
@@ -452,6 +1049,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "category": "Jaundice",
     "readTimeMins": 5,
     "publishedAt": "June 2026",
+    "updatedAt": "October 15, 2026",
     "emoji": "👁️",
     "tags": [
       "Jaundice",
@@ -521,7 +1119,25 @@ export const BLOG_POSTS: BlogPost[] = [
     "medicalReviewPending": false,
     "medicalReview": { "reviewer": "Dr. Akhilesh Yadav", "reviewedAt": "2026-08-03", "verified": true },
     "aiAssisted": true
-  },
+  ,
+    "faqs": [
+      {
+            "q": "पीलिया (Jaundice) में क्या खाना चाहिए? — Piliya Diet Chart in Hindi",
+            "a": "पीलिया के दौरान लिवर को आराम देने के लिए हल्का और सुपाच्य भोजन लें: मूंग दाल की पतली खिचड़ी, दलिया, उबली लौकी/तोरई, नारियल पानी, पपीता, सेब, अनार का रस और सिर्फ उबला हुआ ठंडा पानी। किसी भी प्रकार का तेल, घी, मसालेदार खाना और बाजार का खुला भोजन पूरी तरह बंद रखें।"
+      },
+      {
+            "q": "पीलिया कितने दिन में ठीक होता है? (Jaundice Recovery Timeline)",
+            "a": "वायरल हेपेटाइटिस ए या ई के कारण हुआ सामान्य पीलिया 2 से 4 हफ्तों में ठीक हो जाता है। हालांकि, यदि पीलिया पित्त नली में पथरी (Obstructive Jaundice) या लिवर सिरोसिस के कारण है, तो कारण का इलाज (जैसे ERCP) किए बिना पीलिया ठीक नहीं होता।"
+      },
+      {
+            "q": "क्या पीलिया में गन्ने का रस पीना चाहिए?",
+            "a": "सड़क किनारे बिकने वाले गन्ने के रस से सख्त परहेज करें, क्योंकि वह दूषित बर्फ और अस्वच्छ मशीन से बनता है जो पीलिया के इन्फेक्शन (Hepatitis) को और गंभीर कर सकता है। घर पर साफ-सुथरे तरीके से निकाला गया सीमित रस या नारियल पानी पीना ज्यादा सुरक्षित है।"
+      },
+      {
+            "q": "पीलिया के कौन से लक्षण होने पर तुरंत इमरजेंसी में जाना चाहिए?",
+            "a": "यदि पीलिया के साथ तेज बुखार, अत्यधिक पेट दर्द, उल्टी में खून, काला मल, अत्यधिक सुस्ती या बेहोशी/भ्रम (Altered sensorium) के लक्षण दिखें, तो तुरंत ऑर्किड मेडिकल सेंटर, रांची में डॉक्टर से संपर्क करें।"
+      }
+]},
   {
     "slug": "endoscopy-kya-hota-hai",
     "image": "/images/painless-endoscopy-blog.png",
@@ -543,6 +1159,22 @@ export const BLOG_POSTS: BlogPost[] = [
     "metaTitle": "एंडोस्कोपी में दर्द होता है? तैयारी और Side Effects in Hindi",
     "metaDescription": "एंडोस्कोपी में दर्द, sedation, तैयारी और बाद के side effects की जानकारी हिंदी में। Ranchi में प्रक्रिया और खर्च की गाइड पढ़ें।",
     "sections": [
+      {
+        "heading": "क्या एंडोस्कोपी करने में दर्द होता है? (Does Endoscopy Hurt?)",
+        "type": "tip",
+        "content": "नहीं, आधुनिक एंडोस्कोपी में दर्द नहीं होता है। जांच से पहले गले में 4% लिग्नोकेन स्प्रे (Lignocaine Numbing Spray) डाला जाता है जिससे निगलने की नली पूरी तरह सुन्न हो जाती है। यदि मरीज अधिक घबराया हुआ हो, तो हल्का दर्द-रहित सेडेशन (Painless Conscious Sedation) दिया जाता है। मरीज को सिर्फ 10-15 मिनट में प्रक्रिया का पता भी नहीं चलता। [दर्दरहित एंडोस्कोपी के बारे में विस्तार से पढ़ें](/procedures/endoscopy)।"
+      },
+      {
+        "heading": "एंडोस्कोपी के साइड इफेक्ट्स क्या हैं? (Endoscopy Side Effects in Hindi)",
+        "type": "list",
+        "content": "एंडोस्कोपी एक अत्यंत सुरक्षित डे-केयर प्रक्रिया है। इसके सामान्य और अस्थायी साइड इफेक्ट्स निम्नलिखित हैं:",
+        "list": [
+          "गले में हल्की खराश या भारीपन (Throat Soreness): जांच के बाद 4-6 घंटे तक रह सकता है, जो गुनगुने पानी के गरारे से ठीक हो जाता है।",
+          "पेट में गैस और भारीपन (Bloating): प्रक्रिया के दौरान अंगों को स्पष्ट देखने के लिए थोड़ी हवा भरी जाती है, जो डकार या गैस पास होने पर तुरंत शांत हो जाती है।",
+          "सेडेशन का असर: यदि बेहोशी का इंजेक्शन दिया गया हो, तो 2-3 घंटे हल्की सुस्ती रहती है।",
+          "गंभीर जटिलताओं का जोखिम 0.05% से भी कम होता है। यदि प्रक्रिया अनुभवी डीएम गैस्ट्रोएंटेरोलॉजिस्ट द्वारा की जाए, तो यह पूरी तरह सुरक्षित है।"
+        ]
+      },
       {
         "heading": "Endoscopy ke side effects in Hindi — क्या ध्यान रखें?",
         "type": "text",
@@ -762,6 +1394,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "category": "Stomach Care",
     "readTimeMins": 7,
     "publishedAt": "July 21, 2026",
+    "updatedAt": "October 15, 2026",
     "emoji": "🟢",
     "tags": [
       "Gallstone",
@@ -800,7 +1433,25 @@ export const BLOG_POSTS: BlogPost[] = [
     "medicalReviewPending": false,
     "medicalReview": { "reviewer": "Dr. Akhilesh Yadav", "reviewedAt": "2026-08-05", "verified": true },
     "aiAssisted": true
-  },
+  ,
+    "faqs": [
+      {
+            "q": "क्या पित्त की पथरी बिना ऑपरेशन के गल सकती है? — Can Gallbladder Stone Dissolve Naturally?",
+            "a": "नहीं, आधुनिक चिकित्सा विज्ञान में पित्त की थैली की पथरी को बिना ऑपरेशन गलाने की कोई दवा या घरेलू नुस्खा नहीं है। पथरी कोलेस्ट्रॉल और कैल्शियम लवणों से बनती है जो सख्त होती है। किसी भी भ्रामक दवा या तेल/नींबू के नुस्खे से पथरी गलती नहीं है, बल्कि पित्त नली में फंसने का जानलेवा खतरा बढ़ जाता है।"
+      },
+      {
+            "q": "क्या पित्त की पथरी निकलने के लिए कोई घरेलू नुस्खा काम करता है?",
+            "a": "बिल्कुल नहीं। इंटरनेट पर 'लिवर फ्लश', ऑलिव ऑयल या आयुर्वेदिक काढ़े के दावे पूरी तरह अवैज्ञानिक हैं। घरेलू नुस्खों से जब पित्त की थैली पर दबाव पड़ता है, तो पथरी खिसककर कॉमन बाइल डक्ट (CBD) में फंस जाती है, जिससे तीव्र पीलिया (Obstructive Jaundice) और एक्यूट पैंक्रियाटाइटिस हो सकता है।"
+      },
+      {
+            "q": "पित्त की पथरी का सबसे सुरक्षित इलाज क्या है?",
+            "a": "लैप्रोस्कोपिक कोलेसिस्टेक्टॉमी (दूरबीन द्वारा पित्त की थैली निकालना) विश्वभर में इसका एकमात्र सुरक्षित, दर्द-रहित और स्थायी इलाज है। यह 30 मिनट का छोटा ऑपरेशन होता है और मरीज अगले दिन घर लौट सकता है।"
+      },
+      {
+            "q": "यदि पित्त की थैली निकाल दी जाए तो क्या पाचन क्रिया प्रभावित होती है?",
+            "a": "नहीं। पित्त (Bile) का निर्माण लिवर करता है, पित्त की थैली केवल इसे स्टोर करती है। थैली निकल जाने के बाद लिवर से पित्त सीधे आंत में जाता है। कुछ हफ्तों के बाद मरीज पूरी तरह सामान्य भोजन पचाने लगता है।"
+      }
+]},
   {
     "slug": "ibs-stress-indian-diet",
     "image": "/images/ibs-stress-blog.png",
@@ -1010,7 +1661,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         "heading": "🚨 डॉक्टर से कब संपर्क करें?",
         "type": "text",
-        "content": "यदि आपको कब्ज के साथ मल में खून आ रहा हो, अचानक वजन कम हो रहा हो, या पेट में असहनीय दर्द रहता हो, तो यह आंतों की गंभीर रुकावट या किसी बड़ी बीमारी का संकेत हो सकता है। ऐसी स्थिति में तुरंत गैस्ट्रोएंट्रोलॉजिस्ट से मिलकर कोलोनोस्कोपी जांच करानी चाहिए।"
+        "content": "यदि आपको कब्ज के साथ मल में खून आ रहा हो, अचानक वजन कम हो रहा हो, या पेट में असहनीय दर्द रहता हो, तो यह आंतों की गंभीर रुकावट या किसी बड़ी बीमारी का संकेत हो सकता है। ऐसी स्थिति में तुरंत गैस्ट्रोएंट्रोलॉजिस्ट से मिलकर [कोलोनोस्कोपी जांच](/procedures/colonoscopy) करानी चाहिए।"
       }
     ],
     "medicalReviewPending": false,
@@ -1248,7 +1899,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         "heading": "💰 रांची में ईआरसीपी (ERCP) का खर्च कितना है?",
         "type": "tip",
-        "content": "रांची में ईआरसीपी प्रक्रिया का खर्च लगभग ₹20,000 से ₹45,000 के बीच होता है। यह खर्च अस्पताल, उपयोग की जाने वाली स्टेंट के प्रकार (प्लास्टिक या मेटल) और पथरी के आकार/जटिलता पर निर्भर करता है। डॉ. अखिलेश यादव रांची के ऑर्किड मेडिकल सेंटर में जटिल से जटिल ईआरसीपी प्रक्रियाएं करने के लिए जाने जाते हैं।"
+        "content": "रांची में [ईआरसीपी प्रक्रिया](/procedures/ercp) का खर्च लगभग ₹20,000 से ₹45,000 के बीच होता है। यह खर्च अस्पताल, उपयोग की जाने वाली स्टेंट के प्रकार (प्लास्टिक या मेटल) और पथरी के आकार/जटिलता पर निर्भर करता है। डॉ. अखिलेश यादव रांची के ऑर्किड मेडिकल सेंटर में जटिल से जटिल [ईआरसीपी प्रक्रिया](/procedures/ercp)एं करने के लिए जाने जाते हैं।"
       }
     ],
     "medicalReviewPending": false,
@@ -1336,7 +1987,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Ranchi"
     ],
     "metaTitle": "Blood in Stool Causes: Piles vs Cancer | Dr. Akhilesh Yadav",
-    "metaDescription": "मल में खून आने के कारण। बवासीर (Piles) और बड़ी आंत के कैंसर के लक्षणों में अंतर कैसे पहचानें? जानिए कब कोलोनोस्कोपी जांच है अनिवार्य.",
+    "metaDescription": "मल में खून आने के कारण। बवासीर (Piles) और बड़ी आंत के कैंसर के लक्षणों में अंतर कैसे पहचानें? जानिए कब [कोलोनोस्कोपी जांच](/procedures/colonoscopy) है अनिवार्य.",
     "sections": [
       {
         "type": "text",
@@ -1432,6 +2083,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "category": "Stomach Care",
     "readTimeMins": 6,
     "publishedAt": "October 24, 2026",
+    "updatedAt": "October 15, 2026",
     "emoji": "🎈",
     "image": "/images/gerd-reflux-blog.png",
     "tags": [
@@ -1482,7 +2134,25 @@ export const BLOG_POSTS: BlogPost[] = [
     "medicalReviewPending": false,
     "medicalReview": { "reviewer": "Dr. Akhilesh Yadav", "reviewedAt": "2026-08-11", "verified": true },
     "aiAssisted": true
-  },
+  ,
+    "faqs": [
+      {
+            "q": "हमेशा पेट में गैस और भारीपन क्यों रहता है? (Chronic Gas Causes)",
+            "a": "लगातार गैस और पेट फूलने के मुख्य कारण हैं: भोजन ठीक से न चबाना, गट माइक्रोबायोम में अच्छे बैक्टीरिया की कमी (Dysbiosis), लैक्टोज इनटोलरेंस (दूध न पचना), इर्रिटेबल बॉवेल सिंड्रोम (IBS), पुराना कब्ज, और H. pylori बैक्टीरिया का इन्फेक्शन।"
+      },
+      {
+            "q": "क्या रोज एंटासिड या गैस की गोली (Pantoprazole/Omeprazole) खाना सुरक्षित है?",
+            "a": "नहीं। लंबे समय तक बिना डॉक्टर की सलाह के रोज गैस की गोलियां खाने से पेट का प्राकृतिक एसिड खत्म हो जाता है, जिससे भोजन का पाचन बिगड़ता है, विटामिन B12 और कैल्शियम की कमी हो जाती है, और किडनी पर असर पड़ता है। समस्या का असली कारण पता करना जरूरी है।"
+      },
+      {
+            "q": "पेट में गैस और एसिडिटी के लिए एंडोस्कोपी कब करानी चाहिए?",
+            "a": "यदि आपकी उम्र 40 से अधिक है, भोजन निगलने में कठिनाई हो रही है, बिना प्रयास के वजन घट रहा है, उल्टी में खून या काला मल आ रहा है, या 4 हफ्ते दवा लेने के बाद भी राहत नहीं है, तो तुरंत [अपर जीआई एंडोस्कोपी](/procedures/endoscopy) करानी चाहिए।"
+      },
+      {
+            "q": "पुरानी गैस और भारीपन से राहत पाने के त्वरित उपाय क्या हैं?",
+            "a": "भोजन के तुरंत बाद 10-15 मिनट टहलें, गुनगुने पानी में सौंफ-जीरा उबालकर पिएं, रात का खाना सोने से 3 घंटे पहले खाएं, और भोजन करते समय बात करने या जल्दबाजी में खाने से बचें।"
+      }
+]},
   {
     "slug": "high-sgpt-sgot-causes-diet-remedies",
     "titleHi": "एसजीपीटी (SGPT) और एसजीओटी (SGOT) बढ़ने का कारण, लक्षण और इसे कम करने के उपाय",
@@ -1609,6 +2279,18 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     "faqs": [
       {
+        "q": "FibroScan Test क्या है और यह क्यों किया जाता है? — FibroScan Test in Hindi",
+        "a": "FibroScan (लिवर इलास्टोग्राफी) एक आधुनिक, नॉन-इनवेसिव (बिना सुई या चीरे का) 10 मिनट का अल्ट्रासाउंड आधारित टेस्ट है। यह लिवर की कठोरता (Liver Stiffness in kPa) और लिवर में जमे फैट (CAP Score in dB/m) को सटीक रूप से मापता है, जिससे फैटी लिवर, लिवर फाइब्रोसिस और सिरोसिस का शुरुआती चरण में ही पता चल जाता है।"
+      },
+      {
+        "q": "क्या FibroScan टेस्ट में कोई दर्द होता है?",
+        "a": "नहीं, FibroScan पूरी तरह से दर्दरहित (Painless) और सुरक्षित टेस्ट है। इसमें किसी सुई या बायोप्सी की जरूरत नहीं होती। यह एक साधारण अल्ट्रासाउंड जैसा होता है जिसमें पेट के दाहिने हिस्से पर एक प्रोब रखकर तरंगे भेजी जाती हैं।"
+      },
+      {
+        "q": "रांची में FibroScan टेस्ट का खर्च कितना होता है? — FibroScan Cost in Ranchi",
+        "a": "रांची में FibroScan टेस्ट का खर्च आमतौर पर ₹2,500 से ₹4,500 के बीच होता है (हॉस्पिटल और रिपोर्ट के प्रकार पर निर्भर)। इसमें लिवर स्टिफनेस और CAP स्कोर दोनों शामिल होते हैं। सटीक जानकारी के लिए ऑर्किड मेडिकल सेंटर की बिलिंग टीम या क्लिनिक से संपर्क करें।"
+      },
+      {
         "q": "क्या FibroScan और biopsy एक ही जांच हैं?",
         "a": "नहीं। FibroScan liver stiffness/fat का estimate देता है; biopsy tissue की laboratory examination है। दोनों के clinical सवाल अलग हो सकते हैं।"
       },
@@ -1617,12 +2299,8 @@ export const BLOG_POSTS: BlogPost[] = [
         "a": "नहीं। Clinical context और report quality के साथ interpretation जरूरी है। अपने doctor से result समझें।"
       },
       {
-        "q": "रांची में FibroScan test price कितना है?",
-        "a": "Current rate और inclusions testing centre से confirm करें। इस guide में कोई verified tariff प्रकाशित नहीं है।"
-      },
-      {
-        "q": "क्या हर fatty liver patient को FibroScan चाहिए?",
-        "a": "जांच का चुनाव individual risk और assessment पर निर्भर है; सभी patients के लिए एक ही test plan नहीं होता।"
+        "q": "FibroScan टेस्ट से पहले क्या सावधानी रखनी चाहिए?",
+        "a": "टेस्ट से कम से कम 2 से 3 घंटे पहले मरीज को भूखा (Fasting) रहना चाहिए। पानी पिया जा सकता है। अपनी पुरानी लिवर फंक्शन टेस्ट (LFT) और अल्ट्रासाउंड रिपोर्ट साथ लाएं।"
       }
     ],
     "aiAssisted": true,
@@ -1694,6 +2372,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "category": "Liver Health",
     "readTimeMins": 7,
     "publishedAt": "November 23, 2026",
+    "updatedAt": "October 15, 2026",
     "emoji": "🍏",
     "image": "/images/fatty-liver-diet-blog.png",
     "tags": [
@@ -1740,7 +2419,25 @@ export const BLOG_POSTS: BlogPost[] = [
     "medicalReviewPending": false,
     "medicalReview": { "reviewer": "Dr. Akhilesh Yadav", "reviewedAt": "2026-08-13", "verified": true },
     "aiAssisted": true
-  },
+  ,
+    "faqs": [
+      {
+            "q": "क्या फैटी लिवर ग्रेड 2 ठीक हो सकता है? — Can Grade 2 Fatty Liver Be Reversed?",
+            "a": "हाँ, फैटी लिवर ग्रेड 1 और ग्रेड 2 पूरी तरह प्रतिवर्ती (Reversible) हैं। लिवर में खुद को पुनर्जीवित (Regenerate) करने की प्राकृतिक क्षमता होती है। यदि आप अपना वजन 7 से 10% कम करें, तला-भुना और मीठा पूरी तरह बंद करें, रोजाना 40 मिनट तेज चलें और डॉक्टर की सलाह पर लिवर प्रोटेक्टिव एंटीऑक्सीडेंट लें, तो 3 से 6 महीने में लिवर सामान्य हो सकता है।"
+      },
+      {
+            "q": "फैटी लिवर में क्या खाना चाहिए और किससे परहेज करना चाहिए? (Fatty Liver Diet in Hindi)",
+            "a": "क्या खाएं: हरी पत्तेदार सब्जियां, ओट्स, दलिया, मडुआ/जौ की रोटी, मूंग दाल, पपीता, सेब, अखरोट और बिना चीनी की ग्रीन टी या ब्लैक कॉफी। किससे परहेज करें: शराब (पूरी तरह बंद), चीनी, कोल्ड ड्रिंक्स, मिठाई, मैदा, समोसे, पिज्जा, फास्ट फूड, डालडा और अत्यधिक तैलीय भोजन।"
+      },
+      {
+            "q": "फैटी लिवर ग्रेड 3 कितना खतरनाक है?",
+            "a": "ग्रेड 3 फैटी लिवर एक गंभीर स्थिति है जिसमें लिवर में अत्यधिक वसा जमने से सूजन (NASH) हो जाती है। यदि इसे अनदेखा किया जाए, तो यह लिवर फाइब्रोसिस और लिवर सिरोसिस (स्थायी क्षति) में बदल सकता है। ग्रेड 3 के मरीजों को तुरंत डीएम गैस्ट्रोएंटेरोलॉजिस्ट से मिलकर FibroScan टेस्ट कराना चाहिए।"
+      },
+      {
+            "q": "फैटी लिवर की जांच के लिए कौन सा टेस्ट सबसे अच्छा है?",
+            "a": "सोनोग्राफी (Ultrasound) से फैट के ग्रेड का पता चलता है, LFT ब्लड टेस्ट से लिवर एंजाइम (SGPT/SGOT) की सूजन का पता चलता है, और FibroScan (लिवर इलास्टोग्राफी) से यह पता चलता है कि लिवर में कठोरता या फाइब्रोसिस कितनी है।"
+      }
+]},
   {
     "slug": "early-signs-alcoholic-liver-disease-prevention",
     "titleHi": "शराब से लिवर खराब होने के 5 शुरुआती संकेत (Early Signs of Alcoholic Liver Damage)",
@@ -2300,6 +2997,11 @@ export const BLOG_POSTS: BlogPost[] = [
     "metaDescription": "H. pylori के इलाज के बाद symptoms लौटें तो क्या करें? Infection बने रहने, दोबारा होने और test of cure की भूमिका समझें।",
     "sections": [
       {
+        "heading": "H. pylori कितने दिन में ठीक होता है? (Recovery Timeline)",
+        "type": "tip",
+        "content": "H. pylori संक्रमण को पूरी तरह खत्म करने के लिए अंतरराष्ट्रीय गाइडलाइंस के अनुसार 14 दिनों का एंटीबायोटिक ट्रिपल या बिस्मथ थेरेपी कोर्स दिया जाता है। पेट की जलन और एसिडिटी के लक्षण 5 से 7 दिनों में कम होने लगते हैं। लेकिन बैक्टीरिया की जड़ से समाप्ति के लिए पूरे 14 दिन दवा लेना अनिवार्य है। दवा खत्म होने के 4 हफ्ते बाद Stool Antigen या Urea Breath Test कराकर संक्रमण मुक्ति की पुष्टि की जाती है।"
+      },
+      {
         "heading": "Kya H pylori dobara ho sakta hai?",
         "type": "text",
         "content": "हाँ, संक्रमण दोबारा हो सकता है या पहले इलाज के बाद पूरी तरह खत्म नहीं हुआ हो सकता है। पेट दर्द या जलन लौटना अपने आप में H. pylori होने का प्रमाण नहीं है। अपनी पुरानी reports और treatment details लेकर doctor से मिलें; antibiotics खुद से दोबारा शुरू न करें। [पेट के ulcer की जानकारी](/conditions/peptic-ulcer) पढ़ें या [consultation लें](/book)।"
@@ -2338,7 +3040,21 @@ export const BLOG_POSTS: BlogPost[] = [
     "medicalReviewPending": false,
     "medicalReview": { "reviewer": "Dr. Akhilesh Yadav", "reviewedAt": "2026-08-18", "verified": true },
     "aiAssisted": true
-  },
+  ,
+    "faqs": [
+      {
+        "q": "क्या H. pylori दोबारा हो सकता है? — Kya H Pylori Dobara Ho Sakta Hai?",
+        "a": "हाँ, H. pylori दोबारा हो सकता है (Re-infection या Recurrence)। ऐसा तब होता है जब 14 दिन का एंटीबायोटिक कोर्स पूरा न किया जाए, बैक्टीरिया में दवा प्रतिरोध (resistance) विकसित हो जाए, या फिर दूषित पानी/भोजन के जरिए नया संक्रमण पेट में चला जाए। इलाज पूरा होने के 4 हफ्ते बाद Stool Antigen Test या Urea Breath Test से पुष्टि करना जरूरी है।"
+      },
+      {
+        "q": "H. pylori कितने दिन में ठीक होता है? — H Pylori Kitne Din Me Thik Hota Hai?",
+        "a": "H. pylori को खत्म करने के लिए आमतौर पर 14 दिनों की मानक एंटीबायोटिक ट्रिपल या बिस्मथ क्वाड्रपल थेरेपी दी जाती है। एसिडिटी और पेट दर्द जैसे लक्षण 7-10 दिनों में कम होने लगते हैं, लेकिन बैक्टीरिया को पूरी तरह खत्म करने के लिए बिना रुकावट 14 दिन का पूरा कोर्स लेना अनिवार्य होता है।"
+      },
+      {
+        "q": "H. pylori दोबारा होने से कैसे रोकें?",
+        "a": "हमेशा उबला या फ़िल्टर किया हुआ RO पानी पिएं, बाहर का बासी या अधपका भोजन न खाएं, भोजन से पहले और शौच के बाद हाथ साबुन से अच्छी तरह धोएं, और परिवार के सदस्यों में यदि पेट दर्द/एसिडिटी है तो उनकी भी जांच कराएं।"
+      }
+    ]},
   {
     "slug": "cholesterol-fatty-liver-connection-diet",
     "titleHi": "कोलेस्ट्रॉल और फैटी लिवर का आपस में संबंध: दोनों को एक साथ कैसे कंट्रोल करें?",
@@ -4121,6 +4837,10 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "faqs": [
       {
+        "q": "रांची में एंडोस्कोपी टेस्ट का खर्च कितना होता है? — Endoscopy Test Price in Ranchi",
+        "a": "रांची में एक स्टैंडर्ड डायग्नोस्टिक एंडोस्कोपी (OGD Scopy) का खर्च आमतौर पर ₹2,500 से ₹5,000 के बीच होता है। यदि प्रक्रिया के दौरान सेडेशन (हल्की नींद), बायोप्सी या H. pylori टेस्ट की आवश्यकता होती है, तो अतिरिक्त जांच शुल्क जुड़ सकता है। ऑर्किड मेडिकल सेंटर, रांची में सटीक एस्टीमेट के लिए क्लिनिक से संपर्क करें।"
+      },
+      {
         "q": "क्या endoscopy cost में sedation और biopsy शामिल होते हैं?",
         "a": "यह hospital estimate पर निर्भर करता है। Sedation, biopsy और laboratory charges के inclusions अलग से पूछें।"
       },
@@ -4206,6 +4926,10 @@ export const BLOG_POSTS: BlogPost[] = [
       }
     ],
     "faqs": [
+      {
+        "q": "रांची में कोलोनोस्कोपी टेस्ट का खर्च कितना होता है? — Colonoscopy Test Price in Ranchi",
+        "a": "रांची में डायग्नोस्टिक कोलोनोस्कोपी का खर्च लगभग ₹4,500 से ₹8,500 के बीच होता है। इसमें बाउल प्रिपरेशन, सेडेशन (हल्की बेहोशी), और बायोप्सी या पॉलिप हटाने (Polypectomy) की आवश्यकता के अनुसार शुल्क बदल सकता है। विस्तृत कोटेशन के लिए ऑर्किड मेडिकल सेंटर के बिलिंग विभाग से पुष्टि करें।"
+      },
       {
         "q": "क्या polyp removal colonoscopy price में शामिल है?",
         "a": "जरूरी नहीं। Estimate में polyp removal, consumables और pathology charges पूछें।"
@@ -7677,6 +8401,821 @@ export const BLOG_POSTS: BlogPost[] = [
     "medicalReview": { "reviewer": "Dr. Akhilesh Yadav", "reviewedAt": "2026-09-22", "verified": true },
     "aiAssisted": true
   }
+,
+  {
+    "slug": "liver-me-sujan-swelling-causes-diet-hindi",
+    "titleHi": "लिवर में सूजन (Hepatomegaly): लक्षण, मुख्य कारण और रिवर्सल डाइट चार्ट",
+    "titleEn": "Liver Swelling (Hepatomegaly): Symptoms, Causes, and Reversal Diet in Hindi",
+    "excerptHi": "अल्ट्रासाउंड रिपोर्ट में 'Hepatomegaly' या लिवर में सूजन आने का क्या मतलब है? जानिए इसके शुरुआती लक्षण, ग्रेड 1-2 फैटी लिवर का संबंध, सुरक्षित डाइट चार्ट और डॉक्टर से परामर्श कब लें।",
+    "excerptEn": "Understand hepatomegaly (liver swelling), early warning symptoms, alcohol vs fatty liver causes, practical dietary guidelines, and when to consult a hepatologist.",
+    "category": "Liver Health",
+    "readTimeMins": 7,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "🩺",
+    "image": "/images/fatty-liver-diet-blog.png",
+    "tags": [
+      "Hepatomegaly",
+      "Liver Sujan",
+      "Fatty Liver",
+      "Liver Diet",
+      "Hindi",
+      "Ranchi"
+    ],
+    "metaTitle": "लिवर में सूजन (Hepatomegaly) लक्षण, कारण और डाइट चार्ट",
+    "metaDescription": "लिवर में सूजन (Hepatomegaly) क्यों होती है? जानिए लक्षण, फैटी लिवर का प्रभाव, डाइट में क्या खाएं और क्या न खाएं। डॉ. अखिलेश यादव का चिकित्सीय परामर्श।",
+    "sections": [
+      {
+        "heading": "लिवर में सूजन (Hepatomegaly) का क्या अर्थ है?",
+        "type": "text",
+        "content": "अल्ट्रासाउंड या पेट के स्कैन में जब लिवर का आकार सामान्य से बड़ा पाया जाता है, तो मेडिकल भाषा में इसे Hepatomegaly (लिवर की वृद्धि या सूजन) कहा जाता है। सामान्य वयस्क में लिवर का आकार लगभग 14 से 15 सेंटीमीटर होता है। जब यह 16 सेमी या उससे अधिक हो जाता है, तो यह दर्शाता है कि लिवर की कोशिकाओं में अतिरिक्त वसा (Fat), सूजन या किसी संक्रमण का दबाव है। लिवर खुद कोई अलग बीमारी नहीं है, बल्कि यह शरीर में चल रही किसी अंतर्निहित समस्या का चेतावनी संकेत है।"
+      },
+      {
+        "heading": "लिवर में सूजन आने के मुख्य कारण (Common Causes)",
+        "type": "list",
+        "content": "झारखंड और पूर्वी भारत में लिवर बढ़ने के सबसे आम कारण निम्नलिखित हैं:",
+        "list": [
+          "गैर-अल्कोहलिक फैटी लिवर रोग (NAFLD / MASLD): अधिक वजन, मीठा, मैदा और तला-भुना खाने से लिवर में वसा जमना और सूजन आना।",
+          "अत्यधिक शराब का सेवन (Alcoholic Hepatitis): नियमित शराब से लिवर सेल्स सूज जाते हैं और हेपेटाइटिस हो जाता है।",
+          "वायरल हेपेटाइटिस (Hepatitis B या C): दूषित रक्त या असुरक्षित इंजेक्शन से होने वाला दीर्घकालिक लिवर इन्फेक्शन।",
+          "मेटाबॉलिक सिंड्रोम और डायबिटीज: अनियंत्रित शुगर और हाई ट्राइग्लिसराइड्स लिवर पर वसा का दबाव बढ़ाते हैं।",
+          "दवाओं का दुष्प्रभाव: बिना डॉक्टर की सलाह के अधिक पैरासिटामोल, पेनकिलर्स (NSAIDs) या अज्ञात देसी चूर्ण-भस्म का सेवन।"
+        ]
+      },
+      {
+        "heading": "लिवर में सूजन के शुरुआती लक्षण (Warning Symptoms)",
+        "type": "list",
+        "content": "शुरुआती दौर में लिवर की सूजन बिना किसी स्पष्ट दर्द के बढ़ती है, लेकिन निम्नलिखित लक्षणों पर तुरंत ध्यान देना चाहिए:",
+        "list": [
+          "पेट के दाहिने ऊपरी हिस्से (पसलियों के ठीक नीचे) भारीपन, खिंचाव या हल्का मीठा दर्द।",
+          "बिना भारी शारीरिक काम किए भी लगातार अत्यधिक थकान और सुस्ती महसूस होना।",
+          "भूख में अचानक कमी आना, भोजन के बाद भारीपन और तैलीय भोजन देखकर मिचली (Nausea) आना।",
+          "पेट में अत्यधिक गैस, अपच और पेट का फूलना।",
+          "गंभीर चेतावनी संकेत: आंखों और पेशाब का पीला होना (पीलिया), पैरों के टखनों में सूजन, या त्वचा पर अत्यधिक खुजली।"
+        ]
+      },
+      {
+        "heading": "सटीक जांच: अल्ट्रासाउंड, LFT और FibroScan",
+        "type": "text",
+        "content": "केवल शारीरिक परीक्षण से लिवर की सूजन का सटीक स्तर नहीं जाना जा सकता। इसके लिए डॉक्टर 3 प्रमुख जांचें कराते हैं: 1. Liver Function Test (LFT): SGPT, SGOT, Bilirubin और Alkaline Phosphatase के स्तर से लिवर में सक्रिय सूजन का पता चलता है। 2. Abdominal Ultrasound: लिवर के सटीक माप और फैटी लिवर के ग्रेड (Grade 1, 2, 3) की पुष्टि करता है। 3. [FibroScan (लिवर इलास्टोग्राफी)](/procedures/fibroscan): बिना किसी दर्द या चीर-फाड़ के यह बताता है कि लिवर में कठोरता (Fibrosis या Cirrhosis) तो नहीं आ रही है।"
+      },
+      {
+        "heading": "लिवर सूजन रिवर्स करने का दैनिक डाइट चार्ट (Diet Rules)",
+        "type": "list",
+        "content": "लिवर में खुद को दोबारा ठीक (Regenerate) करने की अद्वितीय क्षमता होती है। सही खान-पान से सूजन को 3 से 6 महीने में सामान्य किया जा सकता है:",
+        "list": [
+          "क्या भरपूर खाएं: हरी पत्तेदार सब्जियां (पालक, मेथी, तोरई, लौकी), दलिया, ओट्स, मडुआ और जौ की रोटी, मूंग दाल, पपीता, सेब, अखरोट और लहसुन।",
+          "एंटीऑक्सीडेंट्स: बिना चीनी और बिना दूध की ब्लैक कॉफी (दिन में 1-2 कप) लिवर एंजाइम्स को स्थिर करने में वैज्ञानिक रूप से सिद्ध है।",
+          "पूरी तरह बंद करें: शराब (100% निषेध), कोल्ड ड्रिंक्स, पैकेज्ड जूस, रिफाइंड तेल, डालडा, समोसा, पिज्जा, मैदा और अत्यधिक लाल मांस (Red Meat)।",
+          "दैनिक व्यायाम: रोजाना 40 मिनट तेज चाल (Brisk Walk) लिवर में जमा अतिरिक्त वसा को पिघलाने में सबसे असरदार है।"
+        ]
+      },
+      {
+        "heading": "डॉक्टर से तुरंत परामर्श कब लें?",
+        "type": "text",
+        "content": "यदि आपकी अल्ट्रासाउंड रिपोर्ट में Hepatomegaly लिखा है, या LFT में SGPT/SGOT 50 से अधिक है, तो इसे सामान्य एसिडिटी समझकर नजरअंदाज न करें। समय पर उचित चिकित्सा सलाह से लिवर फाइब्रोसिस और सिरोसिस जैसी गंभीर जटिलताओं से बचा जा सकता है। [डॉ. अखिलेश यादव (गैस्ट्रोएंटेरोलॉजिस्ट)](/about) से परामर्श हेतु [ऑनलाइन अपॉइंटमेंट बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या लिवर की सूजन अपने आप ठीक हो सकती है?",
+        "a": "हाँ, यदि सूजन का कारण ग्रेड 1 या ग्रेड 2 फैटी लिवर है, तो शराब पूरी तरह बंद करने, वजन 7-10% कम करने, तला-भुना छोड़ने और नियमित व्यायाम करने से लिवर की सूजन 3 से 6 महीने में पूरी तरह सामान्य हो सकती है।"
+      },
+      {
+        "q": "लिवर में सूजन की जांच के लिए कौन सा टेस्ट सबसे सटीक है?",
+        "a": "सोनोग्राफी (Ultrasound) से लिवर के आकार और फैट का पता चलता है, LFT ब्लड टेस्ट से लिवर एंजाइम्स (SGPT/SGOT) की सूजन मापी जाती है, और FibroScan टेस्ट से लिवर की कठोरता (Fibrosis Score) का सबसे सटीक मूल्यांकन होता है।"
+      },
+      {
+        "q": "क्या लिवर में सूजन होने पर दूध और हल्दी पीना चाहिए?",
+        "a": "हल्दी में करक्यूमिन (Curcumin) होता है जो प्राकृतिक सूजन-रोधी (Anti-inflammatory) है। आप मलाई निकला हुआ (Skimmed) गुनगुना दूध थोड़ी हल्दी के साथ ले सकते हैं। लेकिन फुल क्रीम दूध या अत्यधिक घी के सेवन से बचें।"
+      },
+      {
+        "q": "लिवर में सूजन बढ़ने पर क्या खतरे हो सकते हैं?",
+        "a": "यदि सूजन का समय पर इलाज न किया जाए, तो यह साधारण फैटी लिवर से बढ़कर स्टीटोहेपेटाइटिस (NASH), फिर लिवर फाइब्रोसिस और अंततः अपरिवर्तनीय लिवर सिरोसिस में बदल सकती है, जिससे जान को खतरा हो सकता है।"
+      }
+    ]
+  },
+  {
+    "slug": "pet-me-baye-taraf-dard-left-side-stomach-pain-causes-hindi",
+    "titleHi": "पेट में बाईं तरफ दर्द: कारण, चेतावनी संकेत और डॉक्टर को कब दिखाएं?",
+    "titleEn": "Left Side Stomach Pain: Causes, Warning Signs, and When to See a Doctor in Hindi",
+    "excerptHi": "पेट के बाईं ओर ऊपरी (Upper Left) या निचले (Lower Left) हिस्से में दर्द क्यों होता है? गैस, अल्सर, डायवर्टीकुलिटिस और पैंक्रियाटाइटिस में अंतर समझें।",
+    "excerptEn": "A comprehensive clinical guide to left side abdominal pain: distinguishing stomach ulcer, gastritis, pancreatitis, diverticulitis, and red flag emergency symptoms.",
+    "category": "Stomach Care",
+    "readTimeMins": 6,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "⚠️",
+    "image": "/images/endoscopy-equipment.png",
+    "tags": [
+      "Pet Dard",
+      "Left Side Pain",
+      "Gastritis",
+      "Pancreatitis",
+      "Colonoscopy",
+      "Hindi"
+    ],
+    "metaTitle": "पेट में बाईं तरफ दर्द के कारण और इलाज — Left Abdominal Pain",
+    "metaDescription": "पेट में बाईं तरफ दर्द (Left Side Abdominal Pain) क्यों होता है? जानिए ऊपरी और निचले हिस्से के दर्द के कारण, घरेलू उपाय और एंडोस्कोपी/कोलोनोस्कोपी कब जरूरी है।",
+    "sections": [
+      {
+        "heading": "पेट में बाईं तरफ दर्द: ऊपरी हिस्सा बनाम निचला हिस्सा",
+        "type": "text",
+        "content": "पेट के बाईं ओर होने वाला दर्द कई अलग-अलग अंगों से जुड़ा हो सकता है। चिकित्सा दृष्टिकोण से इसे दो हिस्सों में विभाजित किया जाता है: ऊपरी बायां हिस्सा (Left Upper Quadrant - LUQ) जहाँ आमाशय (Stomach), प्लीहा (Spleen) और अग्न्याशय (Pancreas) स्थित होते हैं; और निचला बायां हिस्सा (Left Lower Quadrant - LLQ) जहाँ बड़ी आंत का निचला भाग (Descending & Sigmoid Colon) और बाईं किडनी होती है। दर्द के स्थान और प्रकार से कारण की पहचान होती है।"
+      },
+      {
+        "heading": "ऊपरी बाईं तरफ दर्द के मुख्य कारण (Upper Left Quadrant)",
+        "type": "list",
+        "content": "पसलियों के नीचे बाईं ओर दर्द होने के प्रमुख चिकित्सीय कारण:",
+        "list": [
+          "गैस्ट्राइटिस और पेप्टिक अल्सर: आमाशय की अंदरूनी परत में सूजन या घाव होना, जो खाली पेट या मसालेदार भोजन के बाद तेज जलन पैदा करता है।",
+          "स्प्लेनिक फ्लेक्सर सिंड्रोम (Splenic Flexure Gas): बड़ी आंत के उस मोड़ पर गैस फंसना जो तिल्ली के पास होता है। यह दर्द अक्सर छाती या कंधे तक खिंचता है।",
+          "एक्यूट या क्रोनिक पैंक्रियाटाइटिस: अग्न्याशय में गंभीर सूजन, जिसका दर्द पेट के ऊपरी हिस्से में शुरू होकर सीधे पीठ की तरफ जाता है और आगे झुकने पर राहत मिलती है।",
+          "एसिड रिफ्लक्स और जीईआरडी (GERD): पेट का एसिड खाने की नली में ऊपर आना, जिससे बाईं छाती और पेट के जोड़ पर जलन महसूस होती है।"
+        ]
+      },
+      {
+        "heading": "निचले बाईं तरफ दर्द के मुख्य कारण (Lower Left Quadrant)",
+        "type": "list",
+        "content": "नाभि के नीचे बाईं ओर दर्द होने के सामान्य कारण:",
+        "list": [
+          "डायवर्टीकुलिटिस (Diverticulitis): बड़ी आंत की दीवार में बनी छोटी थैलियों में संक्रमण और सूजन। यह 40 वर्ष से अधिक उम्र के लोगों में बाईं तरफ दर्द का बहुत आम कारण है।",
+          "इरिटेबल बाउल सिंड्रोम (IBS): आंतों की अत्यधिक संवेदनशीलता, जिसमें पेट में ऐंठन, मरोड़, गैस, कब्ज या बार-बार दस्त होना शामिल है।",
+          "अल्सरेटिव कोलाइटिस (Ulcerative Colitis): बड़ी आंत में दीर्घकालिक छाले, जिसमें पेट दर्द के साथ मल में आंव या खून आता है।",
+          "किडनी की पथरी (Left Renal Stone): बाईं गुर्दे की पथरी का दर्द जो पीठ के निचले हिस्से से शुरू होकर आगे जांघ की ओर फैलता है।"
+        ]
+      },
+      {
+        "heading": "खतरे के लक्षण (Emergency Red Flags)",
+        "type": "warning",
+        "content": "यदि बाईं तरफ दर्द के साथ निम्नलिखित में से कोई भी लक्षण दिखाई दे, तो घरेलू नुस्खों में समय बर्बाद किए बिना तुरंत इमरजेंसी में संपर्क करें: 1. उल्टी में खून आना या कॉफी के दाने जैसा पदार्थ निकलना। 2. काला, डामर जैसा चिपचिपा मल (Melena) आना। 3. 101°F से अधिक तेज बुखार और कंपकंपी। 4. दर्द इतना तीव्र होना कि पेट छूने पर पत्थर जैसा कड़ा (Rigid) महसूस हो। 5. चक्कर आना, अत्यधिक पसीना आना या बेहोशी।"
+      },
+      {
+        "heading": "सटीक जांच और सही इलाज",
+        "type": "text",
+        "content": "बिना जांच के दर्द निवारक (Painkillers) लेना बेहद खतरनाक हो सकता है क्योंकि ब्रूफेन या डाइक्लोफेनाक जैसी दवाएं अल्सर को फोड़ सकती हैं। पेट के ऊपरी हिस्से के लिए [अपर जीआई एंडोस्कोपी (Upper GI Endoscopy)](/procedures/endoscopy) सबसे सटीक जांच है। निचले हिस्से में लंबे समय से दर्द, कब्ज या खून आने पर [कोलोनोस्कोपी (Colonoscopy)](/procedures/colonoscopy) से आंत की सीधी जांच की जाती है।"
+      },
+      {
+        "heading": "परामर्श और अपॉइंटमेंट",
+        "type": "text",
+        "content": "लगातार 3 दिन से अधिक रहने वाले पेट दर्द को नजरअंदाज न करें। [डॉ. अखिलेश यादव](/about) से पेट व आंत संबंधी समस्याओं की सटीक जांच और अंतरराष्ट्रीय प्रोटोकॉल आधारित इलाज के लिए [ऑनलाइन परामर्श बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या गैस की वजह से पेट में बाईं तरफ तेज दर्द हो सकता है?",
+        "a": "हाँ, बड़ी आंत के ऊपरी बाएं मोड़ (Splenic Flexure) में जब गैस फंसती है, तो यह अत्यधिक तेज खिंचाव और दर्द पैदा करती है जो कई बार दिल के दर्द जैसा महसूस हो सकता है। यह शौच या गैस पास होने के बाद शांत हो जाता है।"
+      },
+      {
+        "q": "बाईं तरफ का दर्द पैंक्रियाटाइटिस का है या सामान्य गैस का, कैसे पहचानें?",
+        "a": "सामान्य गैस का दर्द बदलता रहता है और डकार या वायु निष्कासन से घटता है। पैंक्रियाटाइटिस का दर्द लगातार तीव्र रहता है, पेट के आर-पार होकर सीधे पीठ की तरफ जाता है, उल्टी होने पर भी नहीं घटता और आगे झुककर बैठने पर हल्का आराम मिलता है।"
+      },
+      {
+        "q": "पेट के बाईं तरफ दर्द में कौन सी जांच करानी चाहिए?",
+        "a": "ऊपरी हिस्से के दर्द के लिए एंडोस्कोपी (Endoscopy) और सीरम एमाइलेज/लाइपेस टेस्ट कराया जाता है। निचले हिस्से के दर्द के लिए पेट का अल्ट्रासाउंड/सीटी स्कैन और कोलोनोस्कोपी की सलाह दी जाती है।"
+      },
+      {
+        "q": "क्या पेट में दर्द होने पर कोई भी पेनकिलर ले सकते हैं?",
+        "a": "बिल्कुल नहीं। बिना डॉक्टर की सलाह के NSAID पेनकिलर्स (जैसे Combiglam, Voveran) लेने से पेट की लाइनिंग में तुरंत अल्सर और ब्लीडिंग हो सकती है।"
+      }
+    ]
+  },
+  {
+    "slug": "h-pylori-infection-causes-testing-treatment-hindi",
+    "titleHi": "एच. पाइलोरी (H. Pylori) संक्रमण क्या है? कारण, सटीक जांच और 14-दिन का इलाज",
+    "titleEn": "H. Pylori Infection Guide: Causes, Symptoms, Accurate Testing, and 14-Day Treatment",
+    "excerptHi": "पेट में बार-बार गैस, छाले और जलन का प्रमुख कारण H. pylori बैक्टीरिया है। जानिए यह कैसे फैलता है, Stool Antigen व Endoscopy Biopsy टेस्ट और 14-दिन का पूरा इलाज।",
+    "excerptEn": "Learn about Helicobacter pylori stomach bacterial infection: transmission risks in India, symptoms, accurate diagnostic testing, 14-day antibiotic eradication protocol, and diet.",
+    "category": "Stomach Care",
+    "readTimeMins": 7,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "🔬",
+    "image": "/images/endoscopy-equipment.png",
+    "tags": [
+      "H Pylori",
+      "Stomach Ulcer",
+      "Acidity",
+      "Endoscopy",
+      "Hindi",
+      "Ranchi"
+    ],
+    "metaTitle": "एच. पाइलोरी (H. Pylori) संक्रमण लक्षण, जांच और 14-दिन का इलाज",
+    "metaDescription": "H. pylori पेट का बैक्टीरिया क्या है? जानिए इसके लक्षण, Stool Antigen vs Endoscopy RUT जांच, 14-दिन का ट्रिपल थेरेपी कोर्स और खानपान। डॉ. अखिलेश यादव।",
+    "sections": [
+      {
+        "heading": "एच. पाइलोरी (Helicobacter pylori) क्या है?",
+        "type": "text",
+        "content": "Helicobacter pylori (H. pylori) एक सर्पिलाकार (Spiral-shaped) बैक्टीरिया है जो पेट के तीव्र एसिडिक माहौल में भी जीवित रहने की क्षमता रखता है। यह यूरिएज (Urease) नामक एंजाइम बनाकर अपने चारों ओर एक सुरक्षात्मक क्षारीय आवरण तैयार कर लेता है और पेट की सुरक्षात्मक म्यूकस परत को धीरे-धीरे नष्ट करता है। दुनिया भर में 80% से अधिक पेप्टिक अल्सर और पुरानी गैस्ट्राइटिस का मुख्य कारण यही जीवाणु होता है।"
+      },
+      {
+        "heading": "भारत में यह संक्रमण कैसे फैलता है?",
+        "type": "list",
+        "content": "भारत और विकासशील देशों में H. pylori का प्रसार बहुत व्यापक है। इसके प्रमुख संचरण मार्ग हैं:",
+        "list": [
+          "दूषित पेयजल और असुरक्षित स्ट्रीट फूड का सेवन करना।",
+          "संक्रमित व्यक्ति के साथ जूठा भोजन, पानी की बोतल या बर्तन साझा करना।",
+          "शौच के बाद साबुन से हाथ अच्छी तरह न धोना (Fecal-oral route)।",
+          "भीड़भाड़ वाले वातावरण और घरेलू स्वच्छता की कमी में यह एक सदस्य से पूरे परिवार में फैल सकता है।"
+        ]
+      },
+      {
+        "heading": "एच. पाइलोरी के मुख्य लक्षण (Key Symptoms)",
+        "type": "list",
+        "content": "संक्रमण होने पर मरीज को कई महीनों या वर्षों तक लगातार निम्नलिखित परेशानियां रहती हैं:",
+        "list": [
+          "पेट के ऊपरी मध्य भाग में खाली पेट या भोजन के 2-3 घंटे बाद तेज जलन और कुतरने जैसा दर्द (Gnawing Pain)।",
+          "खाना खाने के कुछ ही निवालों के बाद पेट का अत्यधिक भरा हुआ महसूस होना (Early Satiety)।",
+          "लगातार खट्टी डकारें, अत्यधिक पेट फूलना और गैस बनना।",
+          "मिचली आना, सुबह उठते ही मुंह का स्वाद कड़वा होना और भूख में कमी।",
+          "गंभीर स्थिति: पेट में अल्सर फटने पर मल में कालापन आना या खून की उल्टी होना।"
+        ]
+      },
+      {
+        "heading": "सटीक जांच विधियां: कौन सा टेस्ट सही है?",
+        "type": "text",
+        "content": "अक्सर मरीज केवल खून की जांच (Blood Antibody Test) कराकर एंटीबायोटिक खाना शुरू कर देते हैं, जो गलत है। ब्लड टेस्ट केवल यह बताता है कि शरीर में कभी एंटीबॉडी बनी थीं, यह सक्रिय संक्रमण की पुष्टि नहीं करता। सटीक जांच के विकल्प: 1. [Upper GI Endoscopy with Rapid Urease Test (RUT)](/procedures/endoscopy): यह सबसे प्रामाणिक टेस्ट है, जिसमें एंडोस्कोपी के दौरान पेट से छोटा सैंपल लेकर 30 मिनट में बैक्टीरिया की पुष्टि की जाती है। 2. Stool Antigen Test: मल में बैक्टीरिया के एंटीजन की पहचान, जो 95% सटीक और गैर-आक्रामक है। 3. Urea Breath Test (UBT): सांस की जांच, जो इलाज के बाद बैक्टीरिया पूरी तरह खत्म होने की पुष्टि के लिए सबसे अच्छी मानी जाती है।"
+      },
+      {
+        "heading": "14-दिन का इरेडिकेशन इलाज (Triple Therapy Protocol)",
+        "type": "list",
+        "content": "H. pylori साधारण एंटासिड या गैस की गोली से ठीक नहीं होता। इसके लिए अंतरराष्ट्रीय गैस्ट्रोएंटेरोलॉजी गाइडलाइंस के अनुसार 14 दिनों का संयुक्त कोर्स दिया जाता है:",
+        "list": [
+          "एसिड सप्रेसर (PPI): जैसे Esomeprazole या Rabeprazole दिन में दो बार, ताकि पेट का एसिड कम रहे और एंटीबायोटिक सक्रिय रूप से काम कर सकें।",
+          "दो विशिष्ट एंटीबायोटिक्स: आमतौर पर Clarithromycin और Amoxicillin (या Metronidazole) का सटीक संयोजन।",
+          "कोर्स पूरा करना अनिवार्य: मरीज 4-5 दिनों में आराम मिलने पर दवा बंद कर देते हैं, जिससे बैक्टीरिया प्रतिरोधी (Drug Resistant) बन जाता है और दोबारा अधिक घातक रूप में लौटता है। पूरे 14 दिन दवा लेना अनिवार्य है।"
+        ]
+      },
+      {
+        "heading": "इलाज के दौरान डाइट सावधानियां और परामर्श",
+        "type": "text",
+        "content": "एंटीबायोटिक्स के दौरान पेट के अच्छे बैक्टीरिया को बचाने के लिए रोजाना ताजा दही, छाछ और प्रोबायोटिक्स का सेवन करें। मिर्च, तली चीजें और सिगरेट/शराब से पूरी तरह दूर रहें। यदि आपको पुरानी एसिडिटी या अल्सर की शिकायत है, तो [डॉ. अखिलेश यादव](/about) से [परामर्श हेतु आज ही संपर्क करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या H. pylori संक्रमण पेट के कैंसर में बदल सकता है?",
+        "a": "विश्व स्वास्थ्य संगठन (WHO) ने H. pylori को क्लास-1 कार्सिनोजेन घोषित किया है। यदि इस संक्रमण का वर्षों तक इलाज न किया जाए, तो यह पेट की परत में क्रोनिक एट्रोफिक गैस्ट्राइटिस पैदा करता है, जिससे पेट के कैंसर का खतरा बढ़ जाता है। समय पर 14-दिन का कोर्स इस खतरे को पूरी तरह समाप्त कर देता है।"
+      },
+      {
+        "q": "H. pylori की दवा का 14-दिन का कोर्स बीच में छोड़ने पर क्या होता है?",
+        "a": "कोर्स अधूरा छोड़ने से बैक्टीरिया एंटीबायोटिक दवाओं के प्रति प्रतिरोधी (Resistant) हो जाता है। इसके बाद साधारण दवाएं काम नहीं करतीं और मरीज को अधिक महंगी व कड़वी सेकंड-लाइन दवाओं की जरूरत पड़ती है।"
+      },
+      {
+        "q": "क्या एच. पाइलोरी पूरे परिवार में फैल सकता है?",
+        "a": "हाँ, यह लार, जूठे बर्तनों और दूषित पानी से फैलता है। यदि घर में किसी एक सदस्य को बार-बार यह संक्रमण हो रहा हो, तो परिवार के अन्य सदस्यों की Stool Antigen जांच कराना उचित रहता है।"
+      },
+      {
+        "q": "इलाज पूरा होने के कितने दिन बाद दोबारा जांच करानी चाहिए?",
+        "a": "दवा का 14-दिन का कोर्स खत्म होने के कम से कम 4 सप्ताह बाद Stool Antigen या Urea Breath Test कराकर यह सुनिश्चित करना चाहिए कि बैक्टीरिया पूरी तरह नष्ट हो चुका है।"
+      }
+    ]
+  }
+,
+  {
+    "slug": "ulcerative-colitis-vs-piles-blood-in-stool-hindi",
+    "titleHi": "अल्सरेटिव कोलाइटिस (Ulcerative Colitis) बनाम बवासीर (Piles): मल में खून आने का सही कारण कैसे पहचानें?",
+    "titleEn": "Ulcerative Colitis vs Piles: Causes of Blood in Stool, Differences, and Colonoscopy Guide",
+    "excerptHi": "मल में खून आने पर अक्सर लोग इसे साधारण बवासीर समझकर अनदेखा कर देते हैं। जानिए अल्सरेटिव कोलाइटिस और पाइल्स में अंतर, खतरे के लक्षण और [कोलोनोस्कोपी जांच](/procedures/colonoscopy) कब जरूरी है।",
+    "excerptEn": "Blood in stool is frequently mistaken for simple piles. Understand key differences between ulcerative colitis and hemorrhoids, warning signs, and when a colonoscopy is essential.",
+    "category": "Gut Health",
+    "readTimeMins": 7,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "🩸",
+    "image": "/images/endoscopy-equipment.png",
+    "tags": [
+      "Ulcerative Colitis",
+      "Piles",
+      "Blood in Stool",
+      "Colonoscopy",
+      "Hindi",
+      "Ranchi"
+    ],
+    "metaTitle": "अल्सरेटिव कोलाइटिस vs बवासीर: मल में खून का सही कारण",
+    "metaDescription": "मल में खून आने का कारण बवासीर (Piles) है या अल्सरेटिव कोलाइटिस (Colitis)? जानिए दोनों के लक्षण, तुलनात्मक अंतर और कोलोनोस्कोपी की जरूरत। डॉ. अखिलेश यादव।",
+    "sections": [
+      {
+        "heading": "मल में खून आना: बवासीर है या आंतों में अल्सर (कोलाइटिस)?",
+        "type": "text",
+        "content": "मल त्याग के दौरान खून आना एक ऐसा लक्षण है जिसे अधिकांश भारतीय मरीज बिना किसी डॉक्टर को दिखाए सीधे बवासीर (Piles या Hemorrhoids) मान लेते हैं और महीनों तक घरेलू नुस्खों या बवासीर की मलहम लगाते रहते हैं। लेकिन गैस्ट्रोएंटेरोलॉजी ओपीडी में लगभग 30% मामलों में यह खून बवासीर से नहीं, बल्कि बड़ी आंत की गंभीर सूजन और छालों यानी **अल्सरेटिव कोलाइटिस (Ulcerative Colitis)** या क्रोहन रोग (Crohn's Disease) के कारण होता है। दोनों का इलाज पूरी तरह अलग है और गलत उपचार से आंतों को स्थायी क्षति हो सकती है।"
+      },
+      {
+        "heading": "अल्सरेटिव कोलाइटिस और बवासीर में मुख्य अंतर (Comparison Chart)",
+        "type": "list",
+        "content": "दोनों बीमारियों के लक्षणों को आसानी से समझने के लिए मुख्य अंतर निम्नलिखित हैं:",
+        "list": [
+          "खून का प्रकार: बवासीर में खून चमकीला लाल (Fresh Red) होता है जो मल त्याग के अंत में बूंद-बूंद टपकता है या टॉयलेट पेपर पर लगता है। अल्सरेटिव कोलाइटिस में खून मल के साथ मिला हुआ होता है और अक्सर चिपचिपे आंव (Mucus/Pus) के साथ आता है।",
+          "शौच की आवृत्ति: बवासीर में मरीज को दिन में 1-2 बार शौच होता है लेकिन कब्ज और दर्द रहता है। कोलाइटिस में मरीज को दिन में 5 से 15 बार तक शौच (Diarrhea) के लिए भागना पड़ता है, विशेष रूप से रात में या सुबह उठते ही।",
+          "पेट में ऐंठन और दर्द: बवासीर में दर्द गुदा द्वार (Anal Opening) पर चुभन या जलन जैसा होता है। कोलाइटिस में पेट के निचले बाएं हिस्से में तेज मरोड़ और ऐंठन (Tenesmus) होती है।",
+          "शरीर पर प्रभाव: बवासीर में वजन नहीं घटता। अल्सरेटिव कोलाइटिस में लगातार दस्त और खून बहने से मरीज का वजन तेजी से घटता है, कमजोरी और हीमोग्लोबिन 7-8 तक गिर जाता है।"
+        ]
+      },
+      {
+        "heading": "अल्सरेटिव कोलाइटिस के गंभीर चेतावनी लक्षण (Red Flags)",
+        "type": "warning",
+        "content": "यदि मल में खून के साथ निम्नलिखित लक्षण दिख रहे हों, तो इसे बवासीर समझने की भूल कभी न करें: 1. रात में नींद से उठकर शौच जाना पड़ना। 2. मल के साथ सफेद या पीला गाढ़ा आंव आना। 3. हल्का बुखार और जोड़ों में दर्द रहना। 4. अचानक भूख न लगना और बिना डाइटिंग के 4-5 किलो वजन घट जाना। 5. हीमोग्लोबिन लगातार गिरना।"
+      },
+      {
+        "heading": "कोलोनोस्कोपी (Colonoscopy) जांच क्यों अनिवार्य है?",
+        "type": "text",
+        "content": "मल में खून आने पर केवल बाहरी देखकर दवा लिखना गलत चिकित्सा पद्धति है। बड़ी आंत के अंदर की स्थिति देखने के लिए [कोलोनोस्कोपी (Colonoscopy)](/procedures/colonoscopy) स्वर्ण मानक (Gold Standard) जांच है। एक पतली लचीली दूरबीन की मदद से डॉक्टर मलाशय और पूरी बड़ी आंत का लाइव एचडी वीडियो देखते हैं। यदि अल्सर दिखते हैं, तो उसी समय एक छोटा दर्द-रहित बायोप्सी सैंपल लेकर कोलाइटिस के सटीक प्रकार की पुष्टि की जाती है।"
+      },
+      {
+        "heading": "इलाज और सही सलाह",
+        "type": "text",
+        "content": "अल्सरेटिव कोलाइटिस एक ऑटोइम्यून स्थिति है जिसे एंटी-इंफ्लेमेटरी दवाओं (Mesalamine) और इम्युनोमॉड्यूलेटर से पूरी तरह नियंत्रित रखा जा सकता है। सही समय पर डायग्नोसिस मिलने पर मरीज पूरी तरह सामान्य जीवन जी सकता है। यदि आपको मल में खून आ रहा है, तो [डॉ. अखिलेश यादव (DM Gastroenterologist)](/about) से परामर्श लें और [आज ही कोलोनोस्कोपी जांच बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या अल्सरेटिव कोलाइटिस और बवासीर दोनों एक साथ हो सकते हैं?",
+        "a": "हाँ, कई मरीजों में बवासीर और अल्सरेटिव कोलाइटिस दोनों मौजूद हो सकते हैं। इसीलिए केवल बाहरी बवासीर देखकर इलाज करने से कोलाइटिस छिप जाता है और बीमारी बढ़ जाती है। कोलोनोस्कोपी से दोनों की अलग-अलग पुष्टि होती है।"
+      },
+      {
+        "q": "क्या कोलोनोस्कोपी दर्दनाक टेस्ट है?",
+        "a": "नहीं। आधुनिक कोलोनोस्कोपी सुरक्षित और हल्के बेहोशी/सिडेशन (Painless Sedation) में की जाती है। मरीज को किसी दर्द या परेशानी का अनुभव नहीं होता और 1-2 घंटे बाद वह सामान्य रूप से घर जा सकता है।"
+      },
+      {
+        "q": "अल्सरेटिव कोलाइटिस में खान-पान में क्या परहेज करना चाहिए?",
+        "a": "तीखा, अत्यधिक मसालेदार, तला-भुना, कच्चा दूध, गोभी, राजमा और बीज वाले फल सूजन के दौरान आंतों को परेशान करते हैं। उबली लौकी, खिचड़ी, छाछ और डॉक्टर द्वारा सुझाई डाइट लेनी चाहिए।"
+      },
+      {
+        "q": "यदि अल्सरेटिव कोलाइटिस का इलाज न कराया जाए तो क्या हो सकता है?",
+        "a": "लंबे समय तक अनियंत्रित कोलाइटिस आंतों में छेद (Perforation), अत्यधिक ब्लीडिंग और कई वर्षों बाद आंत के कैंसर (Colorectal Cancer) का खतरा कई गुना बढ़ा देता है।"
+      }
+    ]
+  },
+  {
+    "slug": "khoon-ki-ulti-hematemesis-causes-emergency-hindi",
+    "titleHi": "खून की उल्टी (Hematemesis) होने पर तुरंत क्या करें? कारण, खतरे और आपातकालीन इलाज",
+    "titleEn": "Vomiting Blood (Hematemesis): Immediate First Steps, Causes, and Emergency Endoscopy Guide",
+    "excerptHi": "खून की उल्टी एक गंभीर आपातकालीन स्थिति है। जानिए लिवर सिरोसिस में नसों का फटना (Varices), पेप्टिक अल्सर, प्राथमिक उपचार और तुरंत इमरजेंसी एंडोस्कोपी की भूमिका।",
+    "excerptEn": "Vomiting blood (hematemesis) is a life-threatening GI emergency. Understand esophageal varices from liver cirrhosis, peptic ulcers, immediate first-aid, and emergency endoscopy.",
+    "category": "Procedures",
+    "readTimeMins": 6,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "🚨",
+    "image": "/images/endoscopy-equipment.png",
+    "tags": [
+      "Hematemesis",
+      "Khoon Ki Ulti",
+      "Liver Cirrhosis",
+      "Endoscopy",
+      "EVL Banding",
+      "Hindi"
+    ],
+    "metaTitle": "खून की उल्टी (Hematemesis) के कारण और तुरंत क्या करें?",
+    "metaDescription": "खून की उल्टी क्यों होती है? जानिए लिवर सिरोसिस में फूड पाइप की नस फटना (Esophageal Varices), प्राथमिक चिकित्सा और इमरजेंसी एंडोस्कोपी बैंडिंग। डॉ. अखिलेश यादव।",
+    "sections": [
+      {
+        "heading": "खून की उल्टी (Hematemesis): यह कितनी गंभीर स्थिति है?",
+        "type": "text",
+        "content": "उल्टी में खून आना, जिसे मेडिकल भाषा में **Hematemesis (हेमाटेमेसिस)** कहा जाता है, एक अत्यंत गंभीर मेडिकल इमरजेंसी है। उल्टी में खून चमकीला लाल हो सकता है या कॉफी के दाने जैसा गाढ़ा भूरा (Coffee-ground emesis)। इसका सीधा अर्थ है कि ऊपरी पाचन तंत्र (खाने की नली, आमाशय या छोटी आंत के शुरुआती हिस्से) से सक्रिय रक्तस्राव हो रहा है। इसमें एक-एक मिनट महत्वपूर्ण होता है और तुरंत एंडोस्कोपी सेंटर युक्त अस्पताल पहुंचना अनिवार्य है।"
+      },
+      {
+        "heading": "खून की उल्टी होने के 3 सबसे बड़े कारण",
+        "type": "list",
+        "content": "वयस्कों और बुजुर्गों में खून की उल्टी के मुख्य चिकित्सीय कारण:",
+        "list": [
+          "लिवर सिरोसिस और पोर्टल हाइपरटेंशन (Esophageal Varices): लिवर सिरोसिस के मरीजों में लिवर सख्त होने से पोर्टल नस का दबाव बढ़ जाता है, जिससे खाने की नली की कमजोर नसें गुब्बारे की तरह फूल जाती हैं और अचानक फटकर 1 से 2 लीटर खून उल्टी में बाहर आ जाता है। यह जानलेवा स्थिति है।",
+          "पेप्टिक अल्सर ब्लीडिंग (Bleeding Stomach Ulcers): पेट या ड्युओडेनम में गहरा अल्सर जब किसी रक्त धमनी (Artery) को काट देता है, तो भारी मात्रा में खून की उल्टी और काला मल आता है। पेनकिलर दवाओं का अधिक सेवन इसका मुख्य कारण है।",
+          "मैलोरी-वीस टियर (Mallory-Weiss Tear): अत्यधिक खांसी या शराब के नशे में लगातार तेज उल्टी करने से खाने की नली के जोड़ की म्यूकोसा फट जाना।"
+        ]
+      },
+      {
+        "heading": "खून की उल्टी होने पर तुरंत क्या करें और क्या न करें?",
+        "type": "list",
+        "content": "अस्पताल पहुंचने तक मरीज की जान बचाने के लिए ये कदम उठाएं:",
+        "list": [
+          "मरीज को करवट दिलाकर लिटाएं (Recovery Position): मरीज को कभी भी पीठ के बल सीधा न लिटाएं, उल्टी फेफड़ों में जाने (Aspiration) से दम घुटने का खतरा रहता है।",
+          "मुंह से कुछ भी न दें (NPO): मरीज को पानी, दूध या कोई दवा न पिलाएं। पेट खाली रहना जरूरी है ताकि अस्पताल पहुंचते ही तुरंत एंडोस्कोपी की जा सके।",
+          "रक्तचाप और नाड़ी पर नजर रखें: यदि मरीज को चक्कर आ रहे हैं, पसीना आ रहा है या नाड़ी बहुत तेज चल रही है, तो पैर थोड़े ऊपर उठाकर रखें।",
+          "उल्टी का रंग और मात्रा नोट करें: डॉक्टर को उल्टी का रंग (ताजा लाल या काला) और अनुमानित मात्रा जरूर बताएं।"
+        ]
+      },
+      {
+        "heading": "आपातकालीन एंडोस्कोपी और बैंडिंग (EVL & Hemostasis)",
+        "type": "text",
+        "content": "खून की उल्टी रोकने के लिए दवाएं पर्याप्त नहीं होतीं। इसके लिए [इमरजेंसी अपर जीआई एंडोस्कोपी (Upper GI Endoscopy)](/procedures/endoscopy) सबसे निर्णायक कदम है। एंडोस्कोपी द्वारा रक्तस्राव का स्रोत ढूंढकर तुरंत उपचार किया जाता है: फटी हुई नसों पर रबर बैंड लगाना (**EVL Banding**), अल्सर पर हेमोक्लिप (Hemoclip) लगाना या विशेष दवा का इंजेक्शन ([Glue Injection](/procedures/glue-injection)) लगाना। यह प्रक्रिया 15-20 मिनट में ब्लीडिंग को पूरी तरह थाम देती है।"
+      },
+      {
+        "heading": "आपातकालीन संपर्क और परामर्श",
+        "type": "text",
+        "content": "खून की उल्टी को कभी भी अगली सुबह तक टालने की भूल न करें। रांची में अत्याधुनिक एंडोस्कोपी यूनिट, आईसीयू और EVL बैंडिंग की सुविधा के लिए [डॉ. अखिलेश यादव](/about) की इमरजेंसी टीम से तुरंत [संपर्क करें](/contact) या [ऑनलाइन अपॉइंटमेंट लें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या थोड़ी सी खून की उल्टी होने पर भी अस्पताल जाना जरूरी है?",
+        "a": "हाँ। थोड़ी सी ब्लीडिंग भी यह संकेत देती है कि कोई नस या अल्सर खुला है, जो अगले कुछ घंटों में भीषण जानलेवा रक्तस्राव का रूप ले सकता है। तत्काल एंडोस्कोपी से स्थिति स्पष्ट होती है।"
+      },
+      {
+        "q": "लिवर के मरीज में खून की उल्टी होने पर बचने की क्या संभावना है?",
+        "a": "यदि मरीज को तुरंत ऐसे अस्पताल पहुंचाया जाए जहाँ अनुभवी डीएम गैस्ट्रोएंटेरोलॉजिस्ट और EVL बैंडिंग की सुविधा उपलब्ध हो, तो 90% से अधिक मरीजों का रक्तस्राव तुरंत रोककर जान बचा ली जाती है।"
+      },
+      {
+        "q": "खून की उल्टी के साथ काला मल (Melena) क्यों आता है?",
+        "a": "पेट या खाने की नली का खून जब पचकर आंतों से गुजरता है, तो पेट का एसिड और एंजाइम इसे काले तारकोल जैसा बना देते हैं। काला मल आना यह दर्शाता है कि पेट में अंदरूनी ब्लीडिंग चल रही है।"
+      },
+      {
+        "q": "क्या पेनकिलर खाने से खून की उल्टी हो सकती है?",
+        "a": "हाँ। ब्रूफेन, कॉम्बिफ्लाम या डाइक्लोफेनाक जैसी दर्द निवारक दवाएं पेट की रक्षात्मक परत को जला देती हैं, जिससे अचानक अल्सर फटकर भारी रक्तस्राव हो सकता है।"
+      }
+    ]
+  },
+  {
+    "slug": "fibroscan-test-cost-ranchi-liver-hindi",
+    "titleHi": "FibroScan Test in Ranchi: फाइब्रोस्कैन क्या है, खर्च, नॉर्मल रेंज और लिवर जांच में इसकी जरूरत",
+    "titleEn": "FibroScan Test in Ranchi: Procedure, Cost, Normal Score Range, and Fatty Liver Assessment",
+    "excerptHi": "लिवर में चर्बी और कठोरता (Fibrosis) की जांच के लिए [फाइब्रोस्कैन टेस्ट](/procedures/fibroscan) सबसे सटीक व दर्द-रहित टेस्ट है। जानिए रांची में इसका खर्च, नॉर्मल CAP व kPa स्कोर और तैयारी।",
+    "excerptEn": "FibroScan (Transient Elastography) is the gold standard, non-invasive test for fatty liver and liver stiffness. Learn about test costs in Ranchi, score interpretation, and preparation.",
+    "category": "Diagnostics",
+    "readTimeMins": 6,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "📊",
+    "image": "/images/fatty-liver-diet-blog.png",
+    "tags": [
+      "FibroScan",
+      "Fatty Liver",
+      "Liver Cirrhosis",
+      "Liver Test Ranchi",
+      "CAP Score",
+      "Hindi"
+    ],
+    "metaTitle": "FibroScan Test in Ranchi: खर्च, नॉर्मल रेंज और रिपोर्ट",
+    "metaDescription": "फाइब्रोस्कैन (FibroScan) टेस्ट क्या है? जानिए रांची में खर्च, CAP व kPa नॉर्मल रेंज, फैटी लिवर व फाइब्रोसिस की सटीक जांच। डॉ. अखिलेश यादव गैस्ट्रोएंटेरोलॉजिस्ट।",
+    "sections": [
+      {
+        "heading": "फाइब्रोस्कैन (FibroScan / Transient Elastography) क्या है?",
+        "type": "text",
+        "content": "**फाइब्रोस्कैन (FibroScan)** एक अत्याधुनिक, पूरी तरह दर्द-रहित और गैर-आक्रामक (Non-invasive) जांच तकनीक है जिसका उपयोग लिवर के स्वास्थ्य का सटीक मूल्यांकन करने के लिए किया जाता है। पहले लिवर में खराबी या सिरोसिस का पता लगाने के लिए सुई डालकर लिवर का टुकड़ा निकालना (Liver Biopsy) पड़ता था, जिसमें दर्द और ब्लीडिंग का खतरा रहता था। फाइब्रोस्कैन केवल 10 मिनट में विशेष अल्ट्रासोनिक तरंगों (Shear Waves) की गति मापकर लिवर की वास्तविक स्थिति की डिजिटल रिपोर्ट दे देता है।"
+      },
+      {
+        "heading": "यह साधारण अल्ट्रासाउंड से कैसे बेहतर है?",
+        "type": "list",
+        "content": "साधारण पेट का अल्ट्रासाउंड केवल यह बता सकता है कि लिवर में वसा है या नहीं (Grade 1, 2, 3 Fatty Liver), लेकिन वह यह नहीं बता सकता कि लिवर में कितनी कठोरता या फाइब्रोसिस आ चुकी है:",
+        "list": [
+          "डिजिटल मात्रात्मक स्कोर (Quantitative Data): साधारण सोनोग्राफी में डॉक्टर की आंखों का अनुमान होता है, जबकि फाइब्रोस्कैन सटीक संख्यात्मक रीडिंग देता है।",
+          "रिवर्सल की निगरानी: यदि आप वजन कम कर रहे हैं या दवा ले रहे हैं, तो फाइब्रोस्कैन से यह साफ देखा जा सकता है कि लिवर की चर्बी और कठोरता कितने प्रतिशत घटी है।",
+          "सिरोसिस की पूर्व चेतावनी: यह लिवर सिरोसिस बनने से 5 वर्ष पहले ही लिवर की अकड़न (Stiffness) को पकड़ लेता है, जिससे समय रहते बचाव संभव है।"
+        ]
+      },
+      {
+        "heading": "रिपोर्ट कैसे समझें: CAP स्कोर और kPa स्कोर",
+        "type": "list",
+        "content": "फाइब्रोस्कैन रिपोर्ट में दो मुख्य संख्याएं आती हैं जिन्हें समझना बहुत आसान है:",
+        "list": [
+          "1. CAP Score (Controlled Attenuation Parameter): यह लिवर में वसा (Fat) की मात्रा मापता है (dB/m में)। 238 से कम: नॉर्मल लिवर; 238 - 260: ग्रेड 1 फैटी लिवर; 260 - 290: ग्रेड 2 फैटी लिवर; 290 से अधिक: ग्रेड 3 गंभीर फैटी लिवर।",
+          "2. E Score / Liver Stiffness (kPa में): यह लिवर की कठोरता (Fibrosis) मापता है। 2.0 से 7.0 kPa: स्वस्थ सामान्य लिवर (F0-F1); 7.0 से 9.5 kPa: मध्यम फाइब्रोसिस (F2); 9.5 से 12.5 kPa: गंभीर फाइब्रोसिस (F3); 12.5 kPa से अधिक: लिवर सिरोसिस (F4 - अत्यधिक कठोर लिवर)।"
+        ]
+      },
+      {
+        "heading": "रांची में फाइब्रोस्कैन का खर्च और टेस्ट की तैयारी",
+        "type": "text",
+        "content": "रांची, जमशेदपुर और धनबाद के प्रमुख गैस्ट्रोएंटेरोलॉजी सेंटरों में [फाइब्रोस्कैन टेस्ट](/procedures/fibroscan) का खर्च आमतौर पर **₹2,500 से ₹3,500** के बीच होता है। तैयारी बहुत सरल है: टेस्ट से पहले कम से कम **3 से 4 घंटे का उपवास (Fasting)** अनिवार्य है। आप सामान्य पानी पी सकते हैं। कोई इंजेक्शन या चीरा नहीं लगाया जाता, प्रोब को दाहिनी पसलियों के ऊपर रखकर 10 दर्द-रहित पल्स लिए जाते हैं।"
+      },
+      {
+        "heading": "किन्हें यह टेस्ट जरूर कराना चाहिए?",
+        "type": "list",
+        "content": "यदि आपकी निम्नलिखित प्रोफाइल है, तो तुरंत लिवर फाइब्रोस्कैन कराएं:",
+        "list": [
+          "टाइप-2 डायबिटीज या हाई कोलेस्ट्रॉल/ट्राइग्लिसराइड्स के मरीज।",
+          "नियमित या कभी-कभार अधिक शराब पीने वाले व्यक्ति।",
+          "जिनके रूटीन अल्ट्रासाउंड में 'Grade 2 / Grade 3 Fatty Liver' या 'Hepatomegaly' आया है।",
+          "हेपेटाइटिस बी या हेपेटाइटिस सी से संक्रमित मरीज।",
+          "अधिक वजन (BMI > 25) वाले लोग जो पेट के दाहिने हिस्से में भारीपन महसूस करते हैं।"
+        ]
+      },
+      {
+        "heading": "परामर्श और टेस्ट बुकिंग",
+        "type": "text",
+        "content": "फाइब्रोस्कैन की उच्च सटीकता लिवर रोग को शुरुआती स्टेज में ही पकड़कर पूरी तरह ठीक करने में मदद करती है। [डॉ. अखिलेश यादव (कंसल्टेंट गैस्ट्रोएंटेरोलॉजिस्ट व हेपेटोलॉजिस्ट)](/about) से फाइब्रोस्कैन जांच और लिवर परामर्श के लिए [ऑनलाइन स्लॉट बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या फाइब्रोस्कैन के दौरान कोई दर्द या सुई लगती है?",
+        "a": "बिल्कुल नहीं। यह साधारण सोनोग्राफी की तरह ही होता है। प्रोब से केवल हल्का सा कंपन (Vibration) महसूस होता है। कोई सुई, चीरा या बेहोशी की आवश्यकता नहीं होती।"
+      },
+      {
+        "q": "[फाइब्रोस्कैन टेस्ट](/procedures/fibroscan) में कितना समय लगता है?",
+        "a": "टेस्ट प्रक्रिया में मात्र 5 से 10 मिनट का समय लगता है और रिपोर्ट तुरंत उसी समय तैयार हो जाती है।"
+      },
+      {
+        "q": "क्या फाइब्रोस्कैन से पहले दवाएं ले सकते हैं?",
+        "a": "नियमित ब्लड प्रेशर या थायराइड की दवाएं पानी के साथ ले सकते हैं। लेकिन टेस्ट से 3 घंटे पहले खाना, चाय, कॉफी या दूध पूरी तरह बंद रखें।"
+      },
+      {
+        "q": "फैटी लिवर ठीक होने की जांच के लिए दोबारा फाइब्रोस्कैन कब कराना चाहिए?",
+        "a": "डाइट और व्यायाम शुरू करने के 6 से 12 महीने बाद दोबारा फाइब्रोस्कैन कराकर यह देखा जाता है कि CAP स्कोर और kPa स्कोर कितना सुधरा है।"
+      }
+    ]
+  }
+,
+  {
+    "slug": "endoscopy-cost-in-ranchi-preparation-painless-hindi",
+    "titleHi": "एंडोस्कोपी टेस्ट का खर्च रांची में कितना है? तैयारी, दर्द-रहित विकल्प और रिपोर्ट",
+    "titleEn": "Endoscopy Cost in Ranchi: Preparation, Painless Options, and Procedure Details",
+    "excerptHi": "रांची में एंडोस्कोपी जांच का वास्तविक खर्च कितना आता है? जानिए डायग्नोस्टिक एंडोस्कोपी, बायोप्सी और सेडेशन का शुल्क, 6 घंटे की तैयारी और उसी दिन रिपोर्ट की प्रक्रिया।",
+    "excerptEn": "A detailed guide on endoscopy costs in Ranchi: diagnostic vs biopsy charges, painless conscious sedation, 6-hour fasting preparation, and same-day report collection.",
+    "category": "Procedures",
+    "readTimeMins": 6,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "💳",
+    "image": "/images/endoscopy-equipment.png",
+    "tags": [
+      "Endoscopy Cost Ranchi",
+      "Endoscopy Preparation",
+      "Painless Endoscopy",
+      "Upper GI Endoscopy",
+      "Hindi"
+    ],
+    "metaTitle": "Endoscopy Cost in Ranchi: टेस्ट का खर्च, तैयारी और रिपोर्ट",
+    "metaDescription": "रांची में एंडोस्कोपी का खर्च कितना है? जानिए डायग्नोस्टिक जांच (₹2,500-₹4,500), दर्दरहित सेडेशन, तैयारी और रिपोर्ट। डॉ. अखिलेश यादव गैस्ट्रोएंटेरोलॉजिस्ट।",
+    "sections": [
+      {
+        "heading": "रांची में एंडोस्कोपी जांच का अनुमानित खर्च (Endoscopy Cost in Ranchi)",
+        "type": "text",
+        "content": "रांची और झारखंड के प्रतिष्ठित अस्पतालों में [अपर जीआई एंडोस्कोपी](/procedures/endoscopy) का खर्च आमतौर पर **₹2,500 से ₹4,500** के बीच होता है। खर्च इस बात पर निर्भर करता है कि केवल साधारण डायग्नोस्टिक जांच की जा रही है या साथ में बायोप्सी (Biopsy / RUT for H. Pylori) का सैंपल लिया जा रहा है। यदि मरीज दर्द-रहित नींद वाली एंडोस्कोपी (Conscious Sedation) का चयन करता है, तो एनेस्थीसिया दवाओं का अतिरिक्त शुल्क लगभग ₹1,000 से ₹1,500 तक हो सकता है।"
+      },
+      {
+        "heading": "एंडोस्कोपी खर्च का विवरण (Cost Breakdown)",
+        "type": "list",
+        "content": "एंडोस्कोपी के विभिन्न घटकों का अनुमानित शुल्क विवरण:",
+        "list": [
+          "रूटीन डायग्नोस्टिक एंडोस्कोपी: ₹2,500 – ₹3,500 (खाने की नली, पेट और ग्रहणी का एचडी वीडियो मुआयना)।",
+          "एच. पाइलोरी बायोप्सी (RUT Biopsy Test): ₹500 – ₹1,000 (बैक्टीरिया और अल्सर की तुरंत 30 मिनट में पुष्टि)।",
+          "दर्दरहित सेडेशन (Painless Sedation): ₹1,000 – ₹1,500 (हल्के इंजेक्शन से मरीज बिना किसी घबराहट या उल्टी के सोता है)।",
+          "थेराप्यूटिक एंडोस्कोपी (बैंडिंग/क्लिप): स्थिति के अनुसार ₹6,000 – ₹15,000 (खून की उल्टी रोकने के लिए EVL बैंडिंग या अल्सर क्लिपिंग)।"
+        ]
+      },
+      {
+        "heading": "एंडोस्कोपी से पहले 6-घंटे की तैयारी (Preparation Protocol)",
+        "type": "list",
+        "content": "सटीक रिपोर्ट और सुरक्षित प्रक्रिया के लिए तैयारी के नियम:",
+        "list": [
+          "कम से कम 6 से 8 घंटे का पूर्ण उपवास (Fasting): पेट में भोजन या पानी होने पर दूरबीन से दीवारें साफ नहीं दिखतीं और उल्टी का खतरा रहता है।",
+          "पानी की अनुमति: टेस्ट से 2 घंटे पहले तक 1-2 घूंट सादा पानी ले सकते हैं, लेकिन चाय, दूध, कॉफी या जूस पूरी तरह वर्जित हैं।",
+          "नियमित दवाएं: यदि आप बीपी या थायराइड की दवा लेते हैं, तो सुबह पानी के छोटे घूंट से ले सकते हैं। शुगर (डायबिटीज) की दवा खाली पेट न लें।",
+          "खून पतला करने वाली दवाएं (Aspirin, Clopidogrel): डॉक्टर से पूछकर 3-5 दिन पहले बंद करनी पड़ सकती हैं।"
+        ]
+      },
+      {
+        "heading": "रिपोर्ट कब मिलती है और प्रक्रिया में कितना समय लगता है?",
+        "type": "text",
+        "content": "एंडोस्कोपी प्रक्रिया में मात्र 10 से 15 मिनट का समय लगता है। जांच पूरी होने के 30 मिनट बाद हाई-डेफिनिशन कलर फोटोग्राफ्स के साथ विस्तृत रिपोर्ट मरीज को सौंप दी जाती है। उसी दिन डॉक्टर से मिलकर दवा और डाइट का परामर्श पूरा हो जाता है।"
+      },
+      {
+        "heading": "डॉ. अखिलेश यादव के साथ एंडोस्कोपी परामर्श",
+        "type": "text",
+        "content": "आर्किड मेडिकल सेंटर (Orchid Medical Centre, Ranchi) में अत्याधुनिक जापानी ओलिंपस (Olympus EVIS X1 / EXERA) वीडियो एंडोस्कोपी सिस्टम उपलब्ध है। [डॉ. अखिलेश यादव](/about) से सुरक्षित और दर्द-रहित एंडोस्कोपी जांच के लिए [ऑनलाइन अपॉइंटमेंट बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या रांची में एंडोस्कोपी का खर्च स्वास्थ्य बीमा (Health Insurance) में कवर होता है?",
+        "a": "हाँ, यदि एंडोस्कोपी डे-केयर प्रोसीजर के रूप में की जाती है या किसी बीमारी के इन-पेशेंट हॉस्पिटलाइजेशन का हिस्सा है, तो अधिकांश TPA और मेडिक्लेम बीमा पॉलिसियां इसका खर्च वहन करती हैं।"
+      },
+      {
+        "q": "क्या एंडोस्कोपी के तुरंत बाद घर जा सकते हैं?",
+        "a": "हाँ। बिना सेडेशन के मरीज 15 मिनट में घर जा सकता है। सेडेशन लेने पर 1 घंटे की रिकवरी के बाद मरीज अपने साथी के साथ सुरक्षित घर लौट सकता है।"
+      },
+      {
+        "q": "एंडोस्कोपी के बाद पहला भोजन क्या होना चाहिए?",
+        "a": "गले का सुन्नपन खत्म होने के बाद (लगभग 1 घंटे बाद) सबसे पहले थोड़ा सादा पानी पिएं। इसके बाद खिचड़ी, दलिया, दही या नारियल पानी जैसे हल्के सुपाच्य आहार लें।"
+      },
+      {
+        "q": "सरकारी आयुष्मान भारत कार्ड पर एंडोस्कोपी की सुविधा है?",
+        "a": "संबद्ध पैनल अस्पतालों में भर्ती होने की स्थिति में सरकारी योजनाओं और टीपीए के तहत नियम अनुसार पैकेज कवर उपलब्ध होता है।"
+      }
+    ]
+  },
+  {
+    "slug": "colonoscopy-test-cost-in-ranchi-preparation-hindi",
+    "titleHi": "कोलोनोस्कोपी टेस्ट का खर्च रांची में: तैयारी, सेडेशन और रिपोर्ट की पूरी जानकारी",
+    "titleEn": "Colonoscopy Test Cost in Ranchi: Bowel Preparation, Sedation, and Report Guide",
+    "excerptHi": "बड़ी आंत की संपूर्ण जांच के लिए कोलोनोस्कोपी टेस्ट का खर्च रांची में कितना होता है? जानिए आंत साफ करने की तैयारी (Peglec Bowel Prep), दर्द-रहित सेडेशन और पॉलीप हटाने का खर्च।",
+    "excerptEn": "Comprehensive guide on colonoscopy costs in Ranchi: bowel preparation (Peglec solution), painless sedation, polyp removal charges, and when colonoscopy is recommended.",
+    "category": "Procedures",
+    "readTimeMins": 7,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "🏥",
+    "image": "/images/endoscopy-equipment.png",
+    "tags": [
+      "Colonoscopy Cost Ranchi",
+      "Colonoscopy Preparation",
+      "Painless Colonoscopy",
+      "Polypectomy",
+      "Hindi"
+    ],
+    "metaTitle": "Colonoscopy Cost in Ranchi: टेस्ट खर्च, तैयारी और रिपोर्ट",
+    "metaDescription": "रांची में कोलोनोस्कोपी का खर्च कितना है? जानिए जांच का खर्च (₹4,500-₹7,500), आंत की सफाई की तैयारी (Peglec) और दर्दरहित सेडेशन। डॉ. अखिलेश यादव।",
+    "sections": [
+      {
+        "heading": "रांची में कोलोनोस्कोपी टेस्ट का खर्च (Colonoscopy Cost in Ranchi)",
+        "type": "text",
+        "content": "रांची के अग्रणी गैस्ट्रोएंटेरोलॉजी सेंटरों में डायग्नोस्टिक कोलोनोस्कोपी का खर्च आमतौर पर **₹4,500 से ₹7,500** के बीच होता है। चूंकि कोलोनोस्कोपी में पूरी बड़ी आंत (Cecum और Terminal Ileum तक) की जांच होती है, इसलिए मरीज की सुविधा के लिए इसे एनेस्थेटिस्ट की देखरेख में शॉर्ट सेडेशन (Painless Sleep) में किया जाता है। यदि आंत में कोई गांठ या मस्सा (Polyp) पाया जाता है, तो उसे उसी समय निकालने (**Polypectomy**) का अतिरिक्त शुल्क प्रक्रिया की जटिलता पर निर्भर करता है।"
+      },
+      {
+        "heading": "कोलोनोस्कोपी से पहले आंत की सफाई (Bowel Preparation)",
+        "type": "list",
+        "content": "कोलोनोस्कोपी की सफलता 100% इस बात पर निर्भर करती है कि आंत कितनी साफ है। यदि मल रह गया, तो छोटे अल्सर और पॉलीप छिप जाते हैं:",
+        "list": [
+          "टेस्ट से 1 दिन पहले: ठोस भारी भोजन बंद करें। दोपहर के बाद केवल पतली दाल का पानी, नारियल पानी, नींबू पानी और ओआरएस घोल पिएं।",
+          "पेगलेक (Peglec / Bowel Cleanser) घोल: डॉक्टर द्वारा लिखा गया क्लींजिंग पाउडर 2 से 3 लीटर पानी में घोलकर टेस्ट से एक शाम पहले या सुबह 4-5 घंटों के दौरान पिया जाता है।",
+          "सफाई का संकेत: जब शौच पूरी तरह पानी जैसा साफ और पीले/पारदर्शी रंग का आने लगे, तब आंत जांच के लिए तैयार मानी जाती है।",
+          "लो-फाइबर डाइट: टेस्ट से 2 दिन पहले बीज वाले फल (अमरूद, टमाटर), साबुत अनाज और हरी पत्तेदार सब्जियां न खाएं।"
+        ]
+      },
+      {
+        "heading": "[कोलोनोस्कोपी जांच](/procedures/colonoscopy) की प्रक्रिया और दर्द का सच",
+        "type": "text",
+        "content": "अधिकांश मरीज यह सोचकर डरते हैं कि कोलोनोस्कोपी में भीषण दर्द होगा। लेकिन वास्तविक रूप में यह पूरी तरह **दर्द-रहित (Painless Colonoscopy)** होती है। मरीज को नस के जरिए हल्का सिडेटिव दिया जाता है जिससे वह सुखद नींद में सो जाता है। पतली लचीली दूरबीन से 20 से 25 मिनट में पूरी जांच हो जाती है और जागने पर मरीज को किसी दर्द का अहसास नहीं होता।"
+      },
+      {
+        "heading": "किन्हें कोलोनोस्कोपी जरूर करानी चाहिए?",
+        "type": "list",
+        "content": "निम्नलिखित लक्षणों वाले मरीजों को तुरंत कोलोनोस्कोपी की सलाह दी जाती है:",
+        "list": [
+          "मल में खून या आंव (Mucus/Blood) आना।",
+          "लगातार 4 हफ्ते से अधिक पुराना दस्त या अचानक गंभीर कब्ज शुरू होना।",
+          "बिना किसी डाइटिंग के तेजी से वजन कम होना और हीमोग्लोबिन घटना।",
+          "अल्सरेटिव कोलाइटिस और क्रोहन रोग (IBD) की निगरानी।",
+          "45 वर्ष से अधिक उम्र के लोगों में आंत के कैंसर (Colorectal Cancer) की नियमित स्क्रीनिंग।"
+        ]
+      },
+      {
+        "heading": "परामर्श और बुकिंग",
+        "type": "text",
+        "content": "[डॉ. अखिलेश यादव](/about) रांची में उन्नत कोलोनोस्कोपी और एंडोस्कोपिक पॉलीपेक्टॉमी के विशेषज्ञ हैं। सुरक्षित जांच और कोलोनोस्कोपी की पूर्व-तैयारी किट के लिए [ऑनलाइन अपॉइंटमेंट बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या कोलोनोस्कोपी के दौरान पॉलीप (Polyp) को तुरंत निकाला जा सकता है?",
+        "a": "हाँ। यदि आंत में कोई गैर-कैंसर या प्री-कैंसर पॉलीप दिखाई देता है, तो दूरबीन के अंदर से विशेष वायर लूप (Snare) डालकर उसे उसी समय दर्द-रहित तरीके से काटकर निकाल लिया जाता है और बायोप्सी के लिए भेजा जाता है।"
+      },
+      {
+        "q": "पेगलेक घोल पीने में उल्टी जैसा लगे तो क्या करें?",
+        "a": "घोल को थोड़ा ठंडा करके या उसमें हल्का नींबू का रस मिलाकर घूंट-घूंट करके पिएं। यदि अधिक परेशानी हो, तो 15 मिनट रुककर फिर से शुरू करें।"
+      },
+      {
+        "q": "कोलोनोस्कोपी के बाद सामान्य खाना कब खा सकते हैं?",
+        "a": "जांच के 2 घंटे बाद हल्का सुपाच्य भोजन (खिचड़ी, दही, दलिया) ले सकते हैं। अगले दिन से पूरी तरह सामान्य भोजन शुरू किया जा सकता है।"
+      },
+      {
+        "q": "कोलोनोस्कोपी के बाद गैस या पेट फूलने पर क्या करें?",
+        "a": "जांच के दौरान आंत को फैलाने के लिए हवा डाली जाती है। जांच के बाद थोड़ा टहलने और वायु निष्कासन (Passing Gas) से यह भारीपन 1-2 घंटे में पूरी तरह खत्म हो जाता है।"
+      }
+    ]
+  },
+  {
+    "slug": "fatty-liver-7-day-diet-chart-reversal-hindi",
+    "titleHi": "फैटी लिवर 7-दिवसीय डाइट चार्ट: क्या खाएं, क्या न खाएं और लिवर चर्बी घटाने का प्लान",
+    "titleEn": "Fatty Liver 7-Day Diet Chart: Foods to Eat, Foods to Avoid, and Reversal Meal Plan",
+    "excerptHi": "लिवर की चर्बी (Grade 1 & Grade 2 Fatty Liver) को प्राकृतिक रूप से पिघलाने के लिए भारतीय 7-दिवसीय डाइट चार्ट। जानिए सुबह से रात तक का संतुलित भोजन, क्या खाएं और क्या पूरी तरह बंद करें।",
+    "excerptEn": "A comprehensive Indian 7-day diet chart for reversing fatty liver (Grade 1 & 2): breakfast to dinner meal plans, liver-cleansing foods, and strict dietary prohibitions.",
+    "category": "Liver Health",
+    "readTimeMins": 8,
+    "publishedAt": "October 15, 2026",
+    "updatedAt": "October 15, 2026",
+    "medicalReviewPending": false,
+    "medicalReview": {
+      "reviewer": "Dr. Akhilesh Yadav",
+      "reviewedAt": "2026-10-15",
+      "verified": true
+    },
+    "emoji": "🥗",
+    "image": "/images/fatty-liver-diet-blog.png",
+    "tags": [
+      "Fatty Liver Diet Chart",
+      "Liver Reversal",
+      "Fatty Liver Hindi",
+      "Diet Plan",
+      "FibroScan"
+    ],
+    "metaTitle": "फैटी लिवर 7-दिन का डाइट चार्ट: क्या खाएं और क्या न खाएं",
+    "metaDescription": "फैटी लिवर ठीक करने का 7-दिन का संपूर्ण डाइट चार्ट (Fatty Liver Diet Chart in Hindi)। जानिए ब्रेकफास्ट से डिनर तक का सही खानपान और लिवर फैट घटाने के नियम।",
+    "sections": [
+      {
+        "heading": "फैटी लिवर रिवर्सल का मूल वैज्ञानिक नियम",
+        "type": "text",
+        "content": "फैटी लिवर (MASLD / NAFLD) के इलाज के लिए दुनिया में कोई जादुई गोली नहीं है। इसका एकमात्र सिद्ध और स्थायी इलाज है: **कैलोरी डेफिसिट, रिफाइंड कार्बोहाइड्रेट बंद करना, और लिवर-फ्रेंडली एंटीऑक्सीडेंट आहार लेना**। यदि कोई मरीज अपना शरीर का वजन 7 से 10% कम कर ले, तो लिवर की कोशिकाओं में जमी वसा (Steatosis) और सूजन (NASH) 3 से 6 महीने में पूरी तरह रिवर्स हो जाती है।"
+      },
+      {
+        "heading": "7-दिन का संपूर्ण भारतीय डाइट चार्ट (Day 1 to Day 7)",
+        "type": "list",
+        "content": "फैटी लिवर के मरीजों के लिए सुबह से रात तक का वैज्ञानिक भोजन चक्र:",
+        "list": [
+          "सोमवार (Day 1): सुबह उठते ही 1 गिलास गुनगुना नींबू पानी। नाश्ता: वेजिटेबल ओट्स दलिया + 1 कप बिना चीनी की ग्रीन टी। दोपहर: 2 मडुआ/जौ की रोटी + पालक दाल + खीरा-टमाटर सलाद। शाम: मुट्ठी भर भुने चने + ब्लैक कॉफी। रात: तोरई की सब्जी + 1 मल्टीग्रेन रोटी + पपीता।",
+          "मंगलवार (Day 2): सुबह: मेथी दाना उबला पानी। नाश्ता: मूंग दाल का चीला (कम तेल) + पुदीना चटनी। दोपहर: 1 कटोरी ब्राउन राइस + राजमा (कम तेल) + चुकंदर सलाद। शाम: 4 अखरोट + 5 बादाम। रात: लौकी का सूप + उबली सब्जियां + 1 रोटी।",
+          "बुधवार (Day 3): सुबह: गुनगुना पानी + आधा चम्मच आंवला चूर्ण। नाश्ता: उबले स्प्राउट्स (अंकुरित मूंग-चना) प्याज-टमाटर के साथ। दोपहर: 2 ज्वार की रोटी + मेथी की सब्जी + पतली छाछ (मट्ठा)। शाम: बिना चीनी की ब्लैक टी। रात: दाल तड़का (जीरा छौंक) + सलाद + 1 रोटी।",
+          "गुरुवार (Day 4): सुबह: दालचीनी का गुनगुना पानी। नाश्ता: सूजी-सब्जी उपमा + 1 उबला अंडा (सफेद भाग)। दोपहर: 2 जौ की रोटी + कद्दू की सब्जी + मूंग दाल + सलाद। शाम: मखाना रोस्टेड (बिना घी)। रात: उबली बीन्स, गाजर व पनीर (50 ग्राम) की भुर्जी + 1 रोटी।",
+          "शुक्रवार (Day 5): सुबह: 1 गिलास गुनगुना पानी। नाश्ता: रागी दलिया या सेब-ओट्स बाउल। दोपहर: 2 मिस्सी रोटी + भिंडी की सब्जी + दही (मलाई रहित) + सलाद। शाम: ग्रीन टी + भुना चना। रात: मिक्स वेज सूप + परवल की सब्जी + 1 पतली रोटी।",
+          "शनिवार (Day 6): सुबह: अजवाइन उबला पानी। नाश्ता: बेसन-प्याज का चीला + हरी चटनी। दोपहर: 2 मडुआ की रोटी + सोयाबीन करी (कम तेल) + खीरा ककड़ी। शाम: ब्लैक कॉफी (बिना चीनी)। रात: उबली मूंग दाल की खिचड़ी (खूब सारी सब्जियों के साथ)।",
+          "रविवार (Day 7): सुबह: गुनगुना नींबू पानी। नाश्ता: पोहा (खूब सारी मटर, गाजर व मूंगफली के साथ)। दोपहर: 2 ज्वार की रोटी + परवल-चना दाल + सलाद। शाम: 1 मौसमी फल (अमरूद या पपीता)। रात: लौकी की सब्जी + 1 रोटी + सोने से 1 घंटे पहले हल्का गुनगुना पानी।"
+        ]
+      },
+      {
+        "heading": "लिवर के 5 सबसे बड़े दुश्मन: क्या पूरी तरह बंद करें?",
+        "type": "list",
+        "content": "यदि आप ये चीजें खाते रहेंगे तो कोई भी डाइट या दवा काम नहीं करेगी:",
+        "list": [
+          "शराब (Alcohol): एक घूंट शराब भी फैटी लिवर को तुरंत लिवर सिरोसिस की ओर धकेलती है। 100% बंद रखें।",
+          "सफेद चीनी और फ्रुक्टोज सिरप: कोल्ड ड्रिंक्स, पैकेज्ड फ्रूट जूस, मिठाई, केक और बिस्कुट लिवर में सीधे ट्राइग्लिसराइड वसा बनाते हैं।",
+          "मैदा और डीप फ्राइड: समोसा, कचौरी, भटूरे, पिज्जा, चाउमीन और डालडा का उपयोग।",
+          "लाल मांस (Red Meat): मटन, पोर्क और अत्यधिक मक्खन/चीज से दूर रहें।",
+          "देर रात का भोजन: रात का खाना सोने से कम से कम 3 घंटे पहले खाएं।"
+        ]
+      },
+      {
+        "heading": "लिवर के 3 जादुई सुपरफूड्स (Superfoods)",
+        "type": "list",
+        "content": "वैज्ञानिक अध्ययनों में सिद्ध लिवर रक्षक आहार:",
+        "list": [
+          "ब्लैक कॉफी: दिन में 2 कप ब्लैक कॉफी लिवर में कोलेजन जमने से रोकती है और फाइब्रोसिस का खतरा 40% घटाती है।",
+          "लहसुन (Garlic): इसमें एलिसिन और सेलेनियम होता है जो लिवर को डिटॉक्स करने वाले एंजाइम्स को सक्रिय करता है।",
+          "अखरोट (Walnuts): ओमेगा-3 फैटी एसिड से भरपूर अखरोट लिवर की सूजन और लिपिड प्रोफाइल सुधारता है।"
+        ]
+      },
+      {
+        "heading": "डाइट के साथ नियमित निगरानी",
+        "type": "text",
+        "content": "डाइट शुरू करने के 3 महीने बाद LFT ब्लड टेस्ट और [फाइब्रोस्कैन जांच (FibroScan)](/procedures/fibroscan) कराकर देखें कि CAP स्कोर कितना कम हुआ। [डॉ. अखिलेश यादव](/about) से अपने व्यक्तिगत लिवर प्रोफाइल के अनुसार डाइट मार्गदर्शन और इलाज के लिए [ऑनलाइन परामर्श बुक करें](/book)।"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "क्या फल खाने से फैटी लिवर में नुकसान होता है?",
+        "a": "नहीं। साबुत फल (जैसे सेब, पपीता, संतरा, अमरूद) में फाइबर होता है जो सुरक्षित है। लेकिन फलों का जूस (Fruit Juice) बिल्कुल न पिएं क्योंकि उसमें फाइबर निकल जाता है और शुद्ध फ्रुक्टोज लिवर में फैट जमाता है।"
+      },
+      {
+        "q": "क्या फैटी लिवर में चावल खा सकते हैं?",
+        "a": "सफेद पॉलिश चावल सीमित मात्रा में ही खाएं। उसकी जगह ब्राउन राइस, मडुआ, जौ या बाजरा लेना लिवर के लिए कहीं अधिक फायदेमंद होता है।"
+      },
+      {
+        "q": "फैटी लिवर ठीक होने में कितने दिन का समय लगता है?",
+        "a": "यदि कड़ाई से डाइट का पालन किया जाए और रोजाना 40 मिनट तेज वॉक की जाए, तो ग्रेड 1 और ग्रेड 2 फैटी लिवर 90 से 180 दिनों (3 से 6 महीने) में पूरी तरह ठीक हो जाता है।"
+      },
+      {
+        "q": "क्या फैटी लिवर के लिए कोई दवा लेना जरूरी है?",
+        "a": "यदि LFT में सूजन (SGPT/SGOT > 50) है या फाइब्रोसिस आ रहा है, तो डॉक्टर एंटीऑक्सीडेंट्स और लिवर प्रोटेक्टिव दवाएं लिखते हैं। लेकिन 80% सुधार डाइट और लाइफस्टाइल से ही आता है।"
+      }
+    ]
+  }
 ];
 
 // ── PUBLISH DATE HELPERS ─────────────────────────────────────────────────────
@@ -7701,7 +9240,87 @@ export function getBlogBySlug(slug: string): BlogPost | undefined {
 
 /** Slugs that 301-redirect to another blog — never build static pages for these
  *  (redirect fires in next.config.ts before the page is served). */
-const REDIRECTED_BLOG_SLUGS = new Set(["stomach-doctor-ranchi"]);
+const REDIRECTED_BLOG_SLUGS = new Set([
+  // Local Head Intent (Cannibalizing Homepage /)
+  "best-gastroenterologist-ranchi",
+  "gastroenterologist-in-ranchi",
+  "ranchi-ka-gastroenterologist",
+  "stomach-specialist-ranchi",
+  "stomach-doctor-ranchi",
+  "ranchi-mein-pet-ke-doctor",
+  "digestive-specialist-ranchi",
+  "jharkhand-mein-gastroenterologist",
+  "orchid-medical-centre-gastro-ranchi",
+  "liver-specialist-vs-gastroenterologist-ranchi",
+
+  // Feeder City Blogs (Consolidating to Location Hubs)
+  "bokaro-mein-gastroenterologist",
+  "dhanbad-se-ranchi-gastroenterologist",
+  "hazaribagh-se-ranchi-gastroenterologist",
+  "jamshedpur-se-ranchi-gastroenterologist",
+  "deoghar-se-ranchi-gastroenterologist",
+
+  // Conditions Duplicate Blogs (Consolidating to Condition Authority Pages)
+  "ranchi-mein-liver-ka-doctor",
+  "hepatologist-ranchi",
+  "liver-problem-doctor-ranchi",
+  "fatty-liver-reversal-ranchi",
+  "ranchi-mein-fatty-liver-ka-ilaj",
+  "ranchi-mein-fatty-liver-diet",
+  "jaundice-treatment-ranchi",
+  "ranchi-mein-jaundice-ka-ilaj",
+  "acidity-doctor-ranchi",
+  "ranchi-mein-acidity-ka-ilaj",
+  "pet-ki-jalan-ka-ilaj-ranchi",
+  "gerd-acid-reflux-cure-ranchi",
+  "piles-doctor-ranchi",
+  "ranchi-mein-piles-ka-ilaj",
+  "hemorrhoids-treatment-ranchi",
+  "rectal-bleeding-ranchi",
+  "kala-pakhana-doctor-ranchi",
+  "constipation-doctor-ranchi",
+  "kabj-ka-doctor-ranchi",
+  "ibs-doctor-ranchi",
+  "gas-problem-doctor-ranchi",
+  "ranchi-mein-diarrhea-doctor",
+  "ranchi-mein-ibd-treatment",
+  "colitis-doctor-ranchi",
+  "crohns-disease-ranchi",
+  "digestive-disease-ranchi",
+  "pancreatitis-doctor-ranchi",
+  "gallstone-doctor-ranchi",
+  "pet-dard-doctor-ranchi",
+  "ranchi-mein-abdominal-pain-doctor",
+  "stomach-ulcer-doctor-ranchi",
+  "ranchi-mein-nausea-doctor",
+  "ulti-ka-doctor-ranchi",
+  "ranchi-mein-h-pylori-treatment",
+  "ranchi-mein-hepatitis-treatment",
+  "liver-cirrhosis-ranchi",
+  "ranchi-mein-ascites-treatment",
+  "ranchi-mein-liver-cancer-screening",
+  "unexplained-weight-loss-ranchi",
+
+  // Procedure Duplicate Blogs (Consolidating to Procedure Authority Pages)
+  "swallowing-problem-ranchi",
+  "endoscopy-clinic-ranchi",
+  "painless-endoscopy-ranchi",
+  "ranchi-mein-stomach-cancer-screening",
+  "capsule-endoscopy-ranchi",
+  "endoscopy-cost-in-ranchi-preparation-painless-hindi",
+  "painless-colonoscopy-ranchi-cost-preparation",
+  "ranchi-mein-colonoscopy-preparation",
+  "colonoscopy-test-cost-in-ranchi-preparation-hindi",
+  "colon-cancer-screening-ranchi",
+  "colon-polyp-removal-ranchi",
+  "fibroscan-test-cost-ranchi-liver-hindi",
+  "ranchi-mein-liver-test",
+  "ranchi-mein-ercp-cost",
+  "ercp-procedure-cbd-stones-ranchi",
+  "ranchi-mein-eus-test",
+  "eus-ranchi",
+  "liver-biopsy-ranchi",
+]);
 
 export function getAllBlogSlugs(): string[] {
   // Exclude noindexed and redirected blogs from static build params
@@ -7718,7 +9337,8 @@ export function getAllBlogsForSitemap(): { slug: string; isoDate: string }[] {
   return BLOG_POSTS
     .filter((p) => !p.noindex && !REDIRECTED_BLOG_SLUGS.has(p.slug))
     .map((p) => {
-      const parsed = parsePublishedDate(p.publishedAt);
+      const rawDate = p.updatedAt || p.publishedAt;
+      const parsed = parsePublishedDate(rawDate);
       // Section 24: never expose future lastmod — cap at today's date
       const capped = parsed > today ? today : parsed;
       return { slug: p.slug, isoDate: capped.toISOString() };

@@ -544,10 +544,10 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 )}
 
-                {/* Cluster-0: Link to primary Ranchi local page — blog → /locations/ranchi */}
+                {/* Cluster-0: Link to primary Ranchi local authority — blog → Homepage (/) */}
                 {isRanchiGuide && (
                   <Link
-                    href="/locations/ranchi"
+                    href="/"
                     className="block bg-primary text-white rounded-3xl p-5 space-y-2 hover:bg-primary-dark transition-colors"
                   >
                     <p className="text-[9px] text-white/70 uppercase font-bold tracking-wider font-sans">Consult in Ranchi</p>

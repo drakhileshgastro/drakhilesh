@@ -185,32 +185,15 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 — Symptoms */}
-          <div>
-            <h3 className="text-white font-sans font-bold text-base mb-6 uppercase tracking-wider">Symptoms</h3>
-            <ul className="space-y-4">
-              {FOOTER_COLUMNS.symptoms.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-white/60 text-[16px] hover:text-primary transition-colors font-hindi"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3 — Conditions */}
+          {/* Column 2 — Conditions */}
           <div>
             <h3 className="text-white font-sans font-bold text-base mb-6 uppercase tracking-wider">Conditions</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3.5">
               {FOOTER_COLUMNS.conditions.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-white/60 text-[16px] hover:text-primary transition-colors"
+                    className="text-white/60 text-[15px] hover:text-primary transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -219,15 +202,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4 — Procedures */}
+          {/* Column 3 — Procedures */}
           <div>
             <h3 className="text-white font-sans font-bold text-base mb-6 uppercase tracking-wider">Procedures</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3.5">
               {FOOTER_COLUMNS.procedures.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-white/60 text-[16px] hover:text-primary transition-colors"
+                    className="text-white/60 text-[15px] hover:text-primary transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -236,18 +219,32 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 5 — Patient Resources */}
+          {/* Column 4 — Patient Care */}
           <div>
-            <h3 className="text-white font-sans font-bold text-base mb-6 uppercase tracking-wider">Resources</h3>
-            <ul className="space-y-4">
+            <h3 className="text-white font-sans font-bold text-base mb-6 uppercase tracking-wider">Patient Care</h3>
+            <ul className="space-y-3.5">
               {FOOTER_COLUMNS.resources.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    {...("external" in item && item.external
-                      ? { target: "_blank", rel: "noopener noreferrer" }
-                      : {})}
-                    className="text-white/60 text-[16px] hover:text-primary transition-colors"
+                    className="text-white/60 text-[15px] hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 5 — Districts Served */}
+          <div>
+            <h3 className="text-white font-sans font-bold text-base mb-6 uppercase tracking-wider">Districts Served</h3>
+            <ul className="space-y-3.5">
+              {FOOTER_COLUMNS.locations.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-white/60 text-[15px] hover:text-primary transition-colors"
                   >
                     {item.label}
                   </Link>

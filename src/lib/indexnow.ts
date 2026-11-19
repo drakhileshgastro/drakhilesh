@@ -1,70 +1,176 @@
 /**
- * IndexNow — instant Bing/Yandex indexing ping
- * Docs: https://www.indexnow.org/documentation
+ * IndexNow — Instant search engine indexing ping
+ * Protocol: https://www.indexnow.org/documentation
+ * Participating Search Engines: Bing, Naver, Seznam, Yandex
  *
  * Setup:
- *  1. Generate a key: any random string (e.g. openssl rand -hex 16)
- *  2. Add INDEXNOW_KEY=<key> to Vercel env vars
- *  3. Create public/<key>.txt containing just the key string
- *     (IndexNow verifies ownership by fetching this file)
- *
- * Called from:
- *  - Blog publisher after a new post goes live
- *  - Sitemap regeneration
+ *  1. Verification key: 19cb8421d1717f480871a5766b5f179e
+ *  2. Verification file: public/19cb8421d1717f480871a5766b5f179e.txt
+ *  3. Hosted at: https://drakhileshgastro.com/19cb8421d1717f480871a5766b5f179e.txt
  */
 
-const SITE_HOST = "drakhileshgastro.com";
-const SITE_URL  = `https://${SITE_HOST}`;
+import { getAllServiceSlugs } from "@/data/services-data";
+import { getAllBlogsForSitemap } from "@/data/blog-data";
+import { getAllProcedureSlugs } from "@/data/procedures-data-v2";
+import { getAllSymptomSlugs } from "@/data/symptoms-data";
+import { LOCATIONS_DATA } from "@/data/locations-data";
+import { getAllDietSlugs } from "@/data/diet-data";
+import { getAllPatientGuideSlugs } from "@/data/patient-guide-data";
 
-export async function pingIndexNow(paths: string[]): Promise<{ ok: boolean; status?: number; error?: string }> {
-  const key = process.env.INDEXNOW_KEY;
+export const SITE_HOST = "drakhileshgastro.com";
+export const SITE_URL = `https://${SITE_HOST}`;
+export const DEFAULT_INDEXNOW_KEY = "19cb8421d1717f480871a5766b5f179e";
+
+const INDEXNOW_ENDPOINTS = [
+  "https://api.indexnow.org/indexnow",
+  "https://www.bing.com/indexnow",
+];
+
+export interface IndexNowResult {
+  ok: boolean;
+  status?: number;
+  count: number;
+  endpoints: { endpoint: string; status?: number; ok: boolean }[];
+  error?: string;
+}
+
+/**
+ * Pings IndexNow endpoints for an array of relative paths or full URLs.
+ * Automatically distributes to Bing, Naver, Seznam, and Yandex.
+ */
+export async function pingIndexNow(paths: string[]): Promise<IndexNowResult> {
+  const key = process.env.INDEXNOW_KEY || DEFAULT_INDEXNOW_KEY;
   if (!key) {
     console.warn("[IndexNow] INDEXNOW_KEY not set — skipping ping");
-    return { ok: false, error: "INDEXNOW_KEY env var not set" };
+    return { ok: false, count: 0, endpoints: [], error: "INDEXNOW_KEY not set" };
   }
-  if (paths.length === 0) return { ok: true };
 
-  const urlList = paths.map(p => (p.startsWith("http") ? p : `${SITE_URL}${p}`));
+  if (!paths || paths.length === 0) {
+    return { ok: true, count: 0, endpoints: [] };
+  }
 
-  try {
-    const res = await fetch("https://api.indexnow.org/indexnow", {
-      method: "POST",
-      headers: { "Content-Type": "application/json; charset=utf-8" },
-      body: JSON.stringify({
-        host:        SITE_HOST,
-        key,
-        keyLocation: `${SITE_URL}/${key}.txt`,
-        urlList,
-      }),
-    });
+  // Deduplicate and ensure full URLs
+  const rawList = paths.map((p) => (p.startsWith("http") ? p : `${SITE_URL}${p.startsWith("/") ? "" : "/"}${p}`));
+  const urlList = Array.from(new Set(rawList));
 
-    if (res.ok) {
-      console.log(`[IndexNow] Pinged ${urlList.length} URL(s) — HTTP ${res.status}`);
-      return { ok: true, status: res.status };
-    } else {
-      const body = await res.text().catch(() => "");
-      console.error(`[IndexNow] Error ${res.status}: ${body}`);
-      return { ok: false, status: res.status, error: body };
+  const payload = {
+    host: SITE_HOST,
+    key,
+    keyLocation: `${SITE_URL}/${key}.txt`,
+    urlList,
+  };
+
+  const results: { endpoint: string; status?: number; ok: boolean }[] = [];
+  let atLeastOneSuccess = false;
+
+  for (const endpoint of INDEXNOW_ENDPOINTS) {
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+
+      // IndexNow protocol defines 200 (OK) and 202 (Accepted) as successful submission
+      const isOk = res.status === 200 || res.status === 202;
+      results.push({ endpoint, status: res.status, ok: isOk });
+
+      if (isOk) {
+        atLeastOneSuccess = true;
+        console.log(`[IndexNow] Submitted ${urlList.length} URL(s) to ${endpoint} — HTTP ${res.status}`);
+      } else {
+        const body = await res.text().catch(() => "");
+        console.error(`[IndexNow] Warning from ${endpoint} (HTTP ${res.status}): ${body}`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`[IndexNow] Network error connecting to ${endpoint}:`, msg);
+      results.push({ endpoint, ok: false });
     }
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error("[IndexNow] Network error:", msg);
-    return { ok: false, error: msg };
   }
+
+  return {
+    ok: atLeastOneSuccess,
+    count: urlList.length,
+    status: results[0]?.status,
+    endpoints: results,
+    error: atLeastOneSuccess ? undefined : "All IndexNow endpoint submissions failed",
+  };
 }
 
 /**
- * Convenience: ping a single new blog post after publishing.
- * Also pings /blog (the listing page) since it changes.
+ * Convenience: ping a new or updated blog post after publishing/editing.
+ * Also pings /blog (the listing page) and /sitemap.xml so crawlers discover it immediately.
  */
-export async function pingNewBlog(slug: string): Promise<void> {
-  await pingIndexNow([`/blog/${slug}`, "/blog", "/sitemap.xml"]);
+export async function pingNewBlog(slug: string): Promise<IndexNowResult> {
+  return pingIndexNow([`/blog/${slug}`, "/blog", "/sitemap.xml"]);
 }
 
 /**
- * Ping all key pages (call once during sitemap regeneration or major content push).
+ * Ping core landing and conversion pages (call during deploys or sitemap regeneration).
  */
-export async function pingAllPages(): Promise<void> {
-  const CORE = ["/", "/about", "/conditions", "/symptoms", "/blog", "/faqs"];
-  await pingIndexNow(CORE);
+export async function pingAllPages(): Promise<IndexNowResult> {
+  const CORE = [
+    "/",
+    "/about",
+    "/conditions",
+    "/procedures",
+    "/symptoms",
+    "/blog",
+    "/book",
+    "/faqs",
+    "/contact",
+    "/sitemap.xml",
+  ];
+  return pingIndexNow(CORE);
+}
+
+/**
+ * Collect all published, indexable URLs across the entire website.
+ */
+export function getAllSiteUrls(): string[] {
+  const staticPaths = [
+    "/",
+    "/about",
+    "/conditions",
+    "/procedures",
+    "/symptoms",
+    "/patient-guide",
+    "/book",
+    "/blog",
+    "/diet",
+    "/contact",
+    "/faqs",
+    "/videos",
+  ];
+
+  const servicePaths = getAllServiceSlugs().map((s) => `/conditions/${s}`);
+  const procedurePaths = getAllProcedureSlugs().map((s) => `/procedures/${s}`);
+  const symptomPaths = getAllSymptomSlugs().map((s) => `/symptoms/${s}`);
+  const locationPaths = Object.keys(LOCATIONS_DATA).map((s) => `/locations/${s}`);
+  const dietPaths = getAllDietSlugs().map((s) => `/diet/${s}`);
+  const guidePaths = getAllPatientGuideSlugs().map((s) => `/patient-guide/${s}`);
+  const blogPaths = getAllBlogsForSitemap().map((b) => `/blog/${b.slug}`);
+
+  const allPaths = [
+    ...staticPaths,
+    ...servicePaths,
+    ...procedurePaths,
+    ...symptomPaths,
+    ...locationPaths,
+    ...dietPaths,
+    ...guidePaths,
+    ...blogPaths,
+    "/sitemap.xml",
+  ];
+
+  return Array.from(new Set(allPaths.map((p) => `${SITE_URL}${p}`)));
+}
+
+/**
+ * Ping all site URLs in bulk (batch size up to 10,000 per IndexNow spec).
+ */
+export async function pingAllSitemapUrls(): Promise<IndexNowResult> {
+  const allUrls = getAllSiteUrls();
+  return pingIndexNow(allUrls);
 }

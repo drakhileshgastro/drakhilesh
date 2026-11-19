@@ -119,10 +119,35 @@ async function getAccessToken(sa: ServiceAccountKey): Promise<string> {
   return access_token;
 }
 
-// ─── GSC API calls ────────────────────────────────────────────────────────
+function getServiceAccount(): ServiceAccountKey {
+  const raw = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
+  if (raw) {
+    try {
+      const cleaned = raw.trim().replace(/^['"]|['"]$/g, '');
+      return JSON.parse(cleaned);
+    } catch {
+      // Continue to file check
+    }
+  }
 
-const GSC_SITE = "https://drakhileshgastro.com/";
-const GSC_API  = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(GSC_SITE)}/searchAnalytics/query`;
+  try {
+    // Dynamic import/require for Node environment
+    const fs = require("fs");
+    const path = require("path");
+    const keyPath = path.resolve(process.cwd(), "gsc-service-account.json");
+    if (fs.existsSync(keyPath)) {
+      return JSON.parse(fs.readFileSync(keyPath, "utf8"));
+    }
+  } catch {}
+
+  throw new Error("GOOGLE_SERVICE_ACCOUNT_KEY env var or gsc-service-account.json not found");
+}
+
+const CANDIDATE_SITES = [
+  "https://drakhileshgastro.com/",
+  "sc-domain:drakhileshgastro.com",
+  "https://www.drakhileshgastro.com/",
+];
 
 /**
  * Fetch GSC search analytics for a date range.
@@ -135,10 +160,7 @@ export async function fetchGscData(
   startDate: string,
   endDate: string
 ): Promise<GscRecord[]> {
-  const raw = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
-  if (!raw) throw new Error("GOOGLE_SERVICE_ACCOUNT_KEY env var not set");
-
-  const sa: ServiceAccountKey = JSON.parse(raw);
+  const sa = getServiceAccount();
   const token = await getAccessToken(sa);
 
   const body = {
@@ -149,18 +171,30 @@ export async function fetchGscData(
     dataState: "final",
   };
 
-  const res = await fetch(GSC_API, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-  });
+  let res: Response | null = null;
+  let lastErrorText = "";
 
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`GSC API error ${res.status}: ${text}`);
+  for (const site of CANDIDATE_SITES) {
+    const api = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(site)}/searchAnalytics/query`;
+    const attempt = await fetch(api, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+
+    if (attempt.ok) {
+      res = attempt;
+      break;
+    } else {
+      lastErrorText = await attempt.text();
+    }
+  }
+
+  if (!res || !res.ok) {
+    throw new Error(`GSC API error: ${lastErrorText}`);
   }
 
   const json: GscResponse = await res.json();
@@ -171,10 +205,7 @@ export async function fetchGscData(
 
   return (json.rows ?? []).map((row) => {
     const [keyword, rawUrl, date, country, device] = row.keys;
-    // Convert absolute URL to path: "https://drakhileshgastro.com/blog/foo" → "/blog/foo"
-    const url = rawUrl.startsWith("https://drakhileshgastro.com")
-      ? rawUrl.replace("https://drakhileshgastro.com", "") || "/"
-      : rawUrl;
+    const url = rawUrl.replace(/^https?:\/\/(www\.)?drakhileshgastro\.com/i, "") || "/";
 
     return {
       keyword:     keyword ?? "",

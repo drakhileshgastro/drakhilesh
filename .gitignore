@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Service Account credentials
+gsc-service-account.json
+*-service-account*.json
+gsc-audit-results.json
